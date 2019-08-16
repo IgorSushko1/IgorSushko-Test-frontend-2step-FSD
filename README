@@ -50,3 +50,6 @@
 				в webpack.config.js
 		3. npm install --save-dev file-loader это утилита для загрузки файлов изображений в одну директорию
 		4. добавил в конфиг вэбпака много всего
+
+	2019 08 16
+		1. npm install --save-dev mini-css-extract-plugin

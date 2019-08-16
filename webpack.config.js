@@ -8,6 +8,7 @@ const path = require('path');
 // вызвав plagins:[ new HtmlWebpackPlugin( {template: './src/index.html' } ) ]
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // устанавливается с npm
 const webpack = require('webpack'); // получить доступ ко встроенным плагинам
+const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // добавил плагин, использую с sass
 
 
 
@@ -30,24 +31,36 @@ module.exports = {
 	// загрузики нужны чтобы конвертировать
 	//  другие типы файлов в те, что прочтет браузер
 	module: {
-		rules: [{
+		rules: [
+			{
+        test: /\.scss$/,
+        use: [
+          // fallback to style-loader in development
+          process.env.NODE_ENV !== 'production'
+            ? 'style-loader'
+            : MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+        ],
+      },
+			// {
 				// у загрузчика два свойствав конфигурации вэбпака
-				// test - определяет разрешение файла, который надо обработать
-				test: /\.scss$/,
+				// // test - определяет разрешение файла, который надо обработать
+				// test: /\.scss$/,
 				// use - это свойства указывает на тот обработчик, который должен
 				// быть использован для трансформации файлов
-				use: [
-					"style-loader", //3. Вставляет стили в DOM
-					"css-loader", //2. превращает css в common js
-					"sass-loader" //1. превращает sass в css
-				]
+				// use: [
+					// "style-loader", //3. Вставляет стили в DOM
+					// "css-loader", //2. превращает css в common js
+					// "sass-loader" //1. превращает sass в css
+				// ]
 				// эти два параметра - test и use являются конфигурацией правила
 				// для одного модуля, этот код говорит вэб паку - 
 				// "хэй - когда ты пойдешь по дереву зависимостей и встретишь там файл css
 				// который запрашивается или импортируется куда-либо
 				// используй "обработчик-css" чтобы трансформировать этот файл в нужный формат
 				// до того, как он попадет в сборку"
-			},
+			// },
 			{
 				test: /\.(svg|png|jpg|gif)$/,
 				use: {
@@ -68,7 +81,14 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: './src/index.pug'
-		})
+		}),
+		new MiniCssExtractPlugin({
+      // параметры аналогичные параметрам в  webpackOptions.output, чтобы это ни значило
+      // оба следующих условия опциональны
+      filename: '[name].css',
+      chunkFilename: '[id].css'
+    }),
+
 	],
 	module: {
 	rules: [{
