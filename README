@@ -53,3 +53,7 @@
 
 	2019 08 16
 		1. npm install --save-dev mini-css-extract-plugin
+		2. чтобы остановить dev-server - Ctrl+C дважды
+		3. npm install --save-dev node-sass
+		4. файл со стилями для основной страницы надо добавить в index.js
+			после этого файл будет билдится по настройке вебпака

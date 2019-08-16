@@ -1,3 +1,5 @@
+import "./style.scss";
+// import "./style2.scss";
 alert("Hello, World! With love from webpack!");
 let template = require("./users.pug");
 let locals = {
