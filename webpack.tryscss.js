@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // устанавливается с npm
 //const webpack = require('webpack');  получить доступ ко встроенным плагинам
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // добавил плагин, использую с sass
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 
@@ -31,6 +32,13 @@ module.exports = {
 				]
 			},
 			{
+				test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+				loader: 'file-loader?name=/src/UI-kit/library/fonts/[name].[ext]',
+				options: {
+					name: '[name].[ext]'
+				}
+			},
+			{
 				test: /\.(svg|png|jpg|gif)$/,
 				use: {
 					loader: "file-loader",
@@ -56,5 +64,9 @@ module.exports = {
 			// chunkFilename: '[id].css'
 			// template: './src/style.scss'
 		})
+		// ,
+		// new CopyWebpackPlugin({
+		// 	from: `${PATHS.src}/fonts`, to: `${PATHS.assets}fonts`
+		// })
 	]
 };
