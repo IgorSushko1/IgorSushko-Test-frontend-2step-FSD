@@ -5,5 +5,8 @@
 //- 		div(class=colorClass)
 //- 		h2 nameColor
 //- 		h2 #1f2041
-mixin article(title)
-	div&attributes(attributes)= title
+mixin article(title, color)
+	div
+		div&attributes(attributes)
+		div= title
+		div= color
