@@ -22,3 +22,7 @@ html
 		+article('Dark Shade 5%', "#1F2041")(class="rectangle dark-shade-005")
 		+article('Purple', "#BC9CFF")(class="rectangle purple")
 		+article('Green', "#6FCF97")(class="rectangle green")
+
+		include UI-kit/library/blocks/01-elements/text-field/text-field.pug
+		+form-email("email", "Your email adress", "field name")(class="text-field-email")
+		+form-date("date", "", "masked text field")(class="text-field-date")
