@@ -1,6 +1,17 @@
 //- скрипт подключается, но сам файл не переписался в общую папку, значит проблема в вэбпаке
 script(type='text/javascript' src='jquery.dropdown-subparagraph-bedroom.js')
-h3 спальня
-button#dropdown-subparagraph-minus-bedroom -
-#dropdown-subparagraph-bedrooms 0
-button#dropdown-subparagraph-plus-bedroom +
+h3 спальни
+	button#dropdown-subparagraph-bedroom-minus -
+	#dropdown-subparagraph-bedroom 0
+	button#dropdown-subparagraph-bedroom-plus +
+h3 кровати
+	button#dropdown-subparagraph-bed-minus -
+	#dropdown-subparagraph-bed 0
+	button#dropdown-subparagraph-bed-plus +
+h3 ванные комнаты
+	button#dropdown-subparagraph-bathroom-minus -
+	#dropdown-subparagraph-bathroom 0
+	button#dropdown-subparagraph-bathroom-plus +
+button.dropdown-subparagraph-apply
+	h3 Применить
+//- ИСПОЛЬЗОВАТЬ ДЛЯ ДРОПА <select name="cars" size="4" multiple> https://www.w3schools.com/html/html_form_elements.asp

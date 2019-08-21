@@ -1,19 +1,19 @@
-$("#dropdown-subparagraph-minus-bedroom").click(function () {
-	let val = $("#dropdown-subparagraph-bedrooms").text();
+$("#dropdown-subparagraph-bedroom-minus").click(function () {
+	let val = $("#dropdown-subparagraph-bedroom").text();
 	val = Number(val)-1;
 	if (val <= 0) {
-		$("#dropdown-subparagraph-bedrooms").html(0);
+		$("#dropdown-subparagraph-bedroom").html(0);
 	} else {
-		$("#dropdown-subparagraph-bedrooms").html(val);
+		$("#dropdown-subparagraph-bedroom").html(val);
 	};
 });
-$("#dropdown-subparagraph-plus-bedroom").click(function () {
-	let val = $("#dropdown-subparagraph-bedrooms").text();
+$("#dropdown-subparagraph-bedroom-plus").click(function () {
+	let val = $("#dropdown-subparagraph-bedroom").text();
 	val = Number(val)+1;
 	if (val <= 0) {
-		$("#dropdown-subparagraph-bedrooms").html(0);
+		$("#dropdown-subparagraph-bedroom").html(0);
 	} else {
-		$("#dropdown-subparagraph-bedrooms").html(val);
+		$("#dropdown-subparagraph-bedroom").html(val);
 	};
 });
 // alert("РАБОТАЕТ!!!");
