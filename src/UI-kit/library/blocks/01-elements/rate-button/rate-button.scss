@@ -1,0 +1,47 @@
+.rating {
+	// position: absolute;
+	// top: 50%;
+	// transform: translate(-50%, -50%);
+	transform: rotateY(180deg);
+	display: flex;
+	// left: 0;
+	position: absolute;
+}
+.rating input {
+	display: none;
+}
+.rating label {
+	display: block;
+	cursor: pointer;
+	width: 50px;
+	position: relative;
+	// background: #ccc;
+}
+.rating label:before {
+	font-family: "Material Icons";
+	content: "star_border";
+	position: relative;
+	display: block;
+	font-size: 24px;
+	color: #A0A0FB;
+}
+
+.rating label:after {
+	font-family: "Material Icons";
+	content: "star";
+	position: absolute;
+	display: block;
+	font-size: 24px;
+	color: #A0A0FB;
+	top: 0;
+	z-index: 100;
+	opacity: 0;
+
+}
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after {
+	opacity: 1;
+}
+
+
