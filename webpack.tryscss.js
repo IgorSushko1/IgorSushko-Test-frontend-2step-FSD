@@ -1,8 +1,10 @@
 const path = require('path');
+const webpack = require("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // устанавливается с npm
 //const webpack = require('webpack');  получить доступ ко встроенным плагинам
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // добавил плагин, использую с sass
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 
 
@@ -24,6 +26,17 @@ module.exports = {
 				}]
 			},
 			{
+				test: /\.m?js$/,
+				exclude: /(node_modules|bower_components)/,
+				use: {
+					loader: 'babel-loader',
+					// options: {
+					// 	presets: ['@babel/preset-env'],
+					// 	plugins: ['@babel/plugin-proposal-object-rest-spread']
+					// }
+				}
+			},
+			{
 				test: /\.scss$/,
 				use: [
 					MiniCssExtractPlugin.loader,
@@ -43,12 +56,13 @@ module.exports = {
 				use: {
 					loader: "file-loader",
 					// options: {
-						// name: "[name].[ext]",
-						// outputPath: "imgs"
+					// name: "[name].[ext]",
+					// outputPath: "imgs"
 					// }
 				}
 			}
-		]
+		],
+
 	},
 	devServer: {
 		contentBase: path.join(__dirname, 'dist'),
@@ -63,7 +77,12 @@ module.exports = {
 			filename: '[name].css',
 			// chunkFilename: '[id].css'
 			// template: './src/style.scss'
-		})
+		}),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }),
 		// ,
 		// new CopyWebpackPlugin({
 		// 	from: `${PATHS.src}/fonts`, to: `${PATHS.assets}fonts`

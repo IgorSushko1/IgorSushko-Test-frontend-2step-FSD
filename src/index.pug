@@ -8,6 +8,9 @@ html
 
 	body
 		main
+			button#load1 нажми здесь!
+			div#load2 просто текст
+			a(href="#") ссылка на что-то очень  важное
 			h1.test-webpack-loader Pug rules
 			div.elf Здесь должны быть поля
 			h2 Hello!
@@ -26,3 +29,5 @@ html
 		include UI-kit/library/blocks/01-elements/text-field/text-field.pug
 		+form-email("email", "Your email adress", "field name")(class="text-field-email")
 		+form-date("date", "", "masked text field")(class="text-field-date")
+
+		include /UI-kit/library/blocks/01-elements/dropdown/dropdown-subparagraph.pug
