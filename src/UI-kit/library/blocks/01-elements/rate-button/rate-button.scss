@@ -4,8 +4,8 @@
 	// transform: translate(-50%, -50%);
 	transform: rotateY(180deg);
 	display: flex;
-	// left: 0;
-	position: absolute;
+	position: relative;
+	left: -50%;
 }
 .rating input {
 	display: none;

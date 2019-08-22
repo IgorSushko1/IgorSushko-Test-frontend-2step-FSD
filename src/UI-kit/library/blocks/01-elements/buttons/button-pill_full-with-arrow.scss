@@ -1,0 +1,24 @@
+.button-pill_full-with-arrow {
+  background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+  border: none;
+  color: white;
+	padding: auto;
+	width: 320px;
+	height: 44px;
+	font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  // margin: 4px auto;
+  cursor: pointer;
+	border-radius: 22px;
+	position: relative;
+}
+
+.button-pill_full-with-arrow_arrow-for-button {
+	position: absolute;
+	top: 10px;
+	right: 14px;
+	font-size: 24px;
+	color: white;
+}

@@ -2,6 +2,7 @@ import "./style.scss";
 // import "./UI-kit/library/overall.scss";
 require ("./UI-kit/library/blocks/01-elements/dropdown/jquery.dropdown-subparagraph-bedroom");
 require ("./UI-kit/library/blocks/01-elements/checkbox/jquery.checkbox-toggle");
+require ("./src/jq-ui-1-12-1/jquery-ui");
 
 // import "./style2.scss";
 // alert("Hello, World! With love from webpack!");
