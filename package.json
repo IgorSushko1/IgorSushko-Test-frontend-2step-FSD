@@ -7,14 +7,15 @@
   "scripts": {
     "start": "webpack --config webpack.config.js",
     "scss": "webpack --config webpack.tryscss.js",
-		"scss:dev": "webpack-dev-server",
-		"start:dev": "webpack-dev-server"
+    "scss:dev": "webpack-dev-server",
+    "start:dev": "webpack-dev-server"
   },
   "author": "Igor Sushko\\igor_sushko@yahoo.com",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "air-datepicker": "^2.2.3",
     "babel-loader": "^8.0.6",
     "babel-minify-webpack-plugin": "^0.3.1",
     "copy-webpack-plugin": "^5.0.4",
