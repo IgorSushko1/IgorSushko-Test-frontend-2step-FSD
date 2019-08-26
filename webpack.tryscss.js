@@ -45,7 +45,7 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+				test: /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/,
 				loader: 'file-loader?name=/src/UI-kit/library/fonts/[name].[ext]',
 				options: {
 					name: '[name].[ext]'
