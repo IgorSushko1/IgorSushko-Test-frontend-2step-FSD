@@ -25,17 +25,17 @@ module.exports = {
 					}
 				}]
 			},
-			{
-				test: /\.m?js$/,
-				exclude: /(node_modules|bower_components)/,
-				use: {
-					loader: 'babel-loader',
-					// options: {
-					// 	presets: ['@babel/preset-env'],
-					// 	plugins: ['@babel/plugin-proposal-object-rest-spread']
-					// }
-				}
-			},
+			// {
+			// 	test: /\.m?js$/,
+			// 	exclude: /(node_modules|bower_components)/,
+			// 	use: {
+			// 		loader: 'babel-loader',
+			// 		// options: {
+			// 		// 	presets: ['@babel/preset-env'],
+			// 		// 	plugins: ['@babel/plugin-proposal-object-rest-spread']
+			// 		// }
+			// 	}
+			// },
 			{
 				test: /\.scss$/,
 				use: [
@@ -46,7 +46,8 @@ module.exports = {
 			},
 			{
 				test: /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/,
-				loader: 'file-loader?name=/src/UI-kit/library/fonts/[name].[ext]',
+				loader: 'file-loader',
+				// ?name=/src/UI-kit/library/fonts/[name].[ext]',
 				options: {
 					name: '[name].[ext]'
 				}
