@@ -7,6 +7,11 @@ $(document).ready(() => {
 		selectionText: 'item',
 		// text to show for multiple items
 		textPlural: 'items',
+		textArrayForPlural: [
+			['Спальня', 'Спальни','Спален'],
+			['Кровать', 'Кровати','Кроватей'],
+			['Ванная комната', 'Ванные комнаты', 'Ванных комнат']],
+		numericLimitArrayForPlural: [0, 2, 5]
 		// buttons to increment/decrement
 		// controls: {
 		// 	position: 'right',
