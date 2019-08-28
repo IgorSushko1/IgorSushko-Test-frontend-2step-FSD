@@ -168,7 +168,7 @@ Build date: 2018-12-11 23:23:51
 .irs--flat .irs-handle {
   top: 45px;
   width: 16px;
-  height: 18px;
+  height: 16px;
   background-color: transparent;
 }
 .irs--flat .irs-handle > i:first-child {
@@ -200,8 +200,8 @@ Build date: 2018-12-11 23:23:51
 .irs--flat .irs-from,
 .irs--flat .irs-to,
 .irs--flat .irs-single {
-  color: white;
-  /* font-size: 10px; */
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 12px;
   line-height: 1.333;
   text-shadow: none;
   padding: 1px 5px;
@@ -693,7 +693,7 @@ Build date: 2018-12-11 23:23:51
 .irs-handle.to::before {
 	content: "";
 	position: absolute;
-	left: 0px;
+	left: 0.5px;
 	top: 1px;
 	width: 16px;
 	height: 16px;

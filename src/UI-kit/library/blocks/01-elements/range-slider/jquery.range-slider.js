@@ -4,7 +4,8 @@ $("#example_id").ionRangeSlider({
   max: 15000,
 	from: 5000,
 	to: 10000,
-	step: 250
+	step: 250,
+	postfix: "₽"
 });
 // $(".irs-min").css({"color":"white",
 // "background":" white"});
