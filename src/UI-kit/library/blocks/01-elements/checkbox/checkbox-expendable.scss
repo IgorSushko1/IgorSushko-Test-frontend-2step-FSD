@@ -16,9 +16,9 @@
 	border: none;
 }
 
-.dropbtn:hover, .dropbtn:focus {
-  // background-color: #2980B9;
-}
+// .dropbtn:hover, .dropbtn:focus {
+//   // background-color: #2980B9;
+// }
 
 .dropdown {
   position: relative;
@@ -46,6 +46,7 @@
 	min-width: 160px;
 	overflow: auto;
 	z-index: 1;
+	background: white;
 	// border-top: none;
 	// border-left: 1px solid $dark-shade-075;
 	// border-right: 1px solid $dark-shade-075;
