@@ -1544,13 +1544,13 @@
 
                     if (this.result.from === this.result.to) {
                         if (this.target === "from") {
-                            this.$cache.from[0].style.visibility = "visible";
+                            this.$cache.from[0].style.visibility = "hidden";
                         } else if (this.target === "to") {
-                            this.$cache.to[0].style.visibility = "visible";
+                            this.$cache.to[0].style.visibility = "hidden";
                         } else if (!this.target) {
                             this.$cache.from[0].style.visibility = "visible";
                         }
-                        this.$cache.single[0].style.visibility = "hidden";
+                        this.$cache.single[0].style.visibility = "visible";
                         max = to_left;
                     } else {
                         this.$cache.from[0].style.visibility = "hidden";
