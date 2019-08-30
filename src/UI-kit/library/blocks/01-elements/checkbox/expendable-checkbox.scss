@@ -1,0 +1,50 @@
+.checkbox-container-list {
+	position: relative;
+}
+
+.dropbtn {
+  background-color: white;
+  color: $dark-shade-075;
+  border: none;
+	cursor: pointer;
+	width: 266px;
+	height: 44px;
+	position: relative;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  // background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+#btn-icons {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	// justify-content: center;
+}
+
+.dropdown-content {
+  display: none;
+
+}
+
+
+.show {  
+	display: block;
+	top: 44px;
+	left: 0px;
+	width: 266px;
+	position: absolute;
+	min-width: 160px;
+	overflow: auto;
+	z-index: 1;
+}
+
+.checkbox-expendable-list-h3 {
+	text-align: left;
+}
+

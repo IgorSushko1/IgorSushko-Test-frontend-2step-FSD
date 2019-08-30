@@ -15,6 +15,13 @@ body {
 	margin: 0;
 	position: inherit
 } */
+.first-iqdropdown {
+	width: 266px;
+}
+.second-iqdropdown, .third-iqdropdown {
+	width: 320px;
+}
+
 
 .iqdropdown {
 	-webkit-tap-highlight-color: transparent;
@@ -151,14 +158,14 @@ body {
 
 .iqdropdown .iqdropdown-menu-close {
 	color: #002674;
-	font-family: "OpenSans", sans-serif;
-	font-size: 14px;
-	font-weight: 600;
+	// font-family: "OpenSans", sans-serif;
+	font-size: 12px;
+	// font-weight: 600;
 	height: 20px;
 	margin: 20px 0;
 	padding: 0 15px;
 	text-align: right;
-	width: 100%
+	// width: 100%
 }
 
 .iqdropdown.menu-open .iqdropdown-menu {
@@ -178,41 +185,42 @@ body {
 
 .iqdropdown-item {
 	color: #000;
-	font-family: "OpenSans", sans-serif;
-	font-size: 17px;
-	font-weight: 400
+	// font-family: "OpenSans", sans-serif;
+	font-size: 12px;
+	// font-weight: 400
 }
 
 .iqdropdown p.iqdropdown-description {
 	color: #4A4A4A;
-	font-family: "OpenSans", sans-serif;
-	font-size: 14px;
-	font-weight: 400;
+	// font-family: "OpenSans", sans-serif;
+	font-size: 12px;
+	font-weight: bolder;
 	margin-top: 5px
 }
 
 .iqdropdown .iqdropdown-item-controls {
 	display: flex;
-	height: 45px
+	height: 30px
 }
 
 .iqdropdown .iqdropdown-item-controls .counter {
 	color: #4A4A4A;
-	font-family: "OpenSans", sans-serif;
-	font-size: 17px;
-	font-weight: 400;
-	border-bottom: 1px solid #E2E2E2;
-	border-top: 1px solid #E2E2E2;
-	padding: 11px 20px
+	// font-family: "OpenSans", sans-serif;
+	font-size: 12px;
+	// font-weight: 400;
+	// border-bottom: 1px solid #E2E2E2;
+	// border-top: 1px solid #E2E2E2;
+	padding: 7px 15px;
 }
 
 .iqdropdown .iqdropdown-item-controls button {
 	align-items: center;
 	border: 1px solid #E2E2E2;
 	display: flex;
-	height: 45px;
-	padding: 0 20px;
-	transition: all 0.2s ease-in-out
+	height: 30px;
+	width: 30px;
+	/* padding: 0 20px; */
+	transition: all 0.2s ease-in-out;
 }
 
 .iqdropdown .iqdropdown-item-controls button:hover {
@@ -220,13 +228,15 @@ body {
 }
 
 .iqdropdown .iqdropdown-item-controls button.button-decrement {
-	border-bottom-left-radius: 25px;
-	border-top-left-radius: 25px
+	// border-bottom-left-radius: 25px;
+	// border-top-left-radius: 25px
+	border-radius: 50%;
 }
 
 .iqdropdown .iqdropdown-item-controls button.button-increment {
-	border-bottom-right-radius: 25px;
-	border-top-right-radius: 25px
+	// border-bottom-right-radius: 25px;
+	// border-top-right-radius: 25px
+	border-radius: 50%;
 }
 
 .iqdropdown {
@@ -239,14 +249,14 @@ body {
 	justify-content: space-between;
 	padding: 0 15px;
 	position: relative;
-	width: 100%
+	// width: 100%
 }
 
 .iqdropdown .iqdropdown-selection {
 	color: #4A4A4A;
-	font-family: "OpenSans", sans-serif;
-	font-size: 17px;
-	font-weight: 400;
+	// font-family: "OpenSans", sans-serif;
+	font-size: 12px;
+	// font-weight: 400;
 	flex: 1;
 	position: relative
 }

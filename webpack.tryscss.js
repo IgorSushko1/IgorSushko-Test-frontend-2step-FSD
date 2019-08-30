@@ -82,7 +82,8 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
-      'window.jQuery': 'jquery'
+			'window.jQuery': 'jquery',
+			// foo: './src/UI-kit/library/blocks/01-elements/checkbox/just-a-function.js'
     }),
 		// ,
 		// new CopyWebpackPlugin({
