@@ -1,0 +1,14 @@
+.icon-advantages {
+	display: grid;
+	grid-template-columns: 48px 250px;
+	border-bottom: 1px solid $dark-shade-025;
+	max-width: 300px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+.icon-advantages img {
+	margin-top: 10px
+}
+.icon-advantages > div {
+	padding-left: 20px;
+}
