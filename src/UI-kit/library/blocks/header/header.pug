@@ -1,0 +1,22 @@
+- var links = [{types:"bold", link:"", text:"Home"},{types:"simple", link:"", text:"About Us"},{types:"arrow", link:"", text:"Services"},{types:"simple", link:"", text:"Careers"},{types:"simple", link:"", text:"News"},{types:"simple", link:"", text:"Documentation"}]
+
+.header
+	img(src="../../../../src/UI-kit/pic/logo.png", alt="" )
+	//- src\UI-kit\pic\Logo.png
+	div
+		ul.nav
+			each i in links
+					if i.types == "simple"
+						li
+							a(href=i.link).nav-link= i.text
+					else if i.types == "bold"
+						li
+							a(href=i.link class= " nav-link bold")= i.text
+					else if i.types=="arrow"
+						li
+							div.header-dropdown-list
+								span.nav-link= i.text
+								span.material-icons keyboard_arrow_down
+		div.header-button
+			+button-pill_empty("lOGIN")
+			+button-pill_full("REGISTER")

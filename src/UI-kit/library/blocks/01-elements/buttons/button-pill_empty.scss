@@ -1,34 +1,24 @@
 .button-pill_empty {
-  background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
-  border: none;
   color: #BC9CFF;
-	padding: auto;
-	width: 99px;
-	height: 44px;
+	background: white;
+	border: none;
+	width: 95px;
+	height: 40px;
 	font-weight: 700;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  // margin: 4px 2px;
   cursor: pointer;
 	border-radius: 22px;
 	position: relative;
 
 }
-.button-pill_empty-white {
-	background: white;
-	border: none;
-	width: 95px;
-	height: 40px;
-	position: relative;
-	left: -4px;
-	top: 0;
-	border-radius: 22px;
-}
-
-.button-pill_empty-h3 {
+.button-pill_empty:before {
+	content: "";
 	position: absolute;
-	top: 0;
-	/* MARGIN: auto; */
-	PADDING: 3px 12.5px;
+	width: 99px;
+	height: 44px;
+	background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+	border-radius: 22px;
+	left: -2px;
+	top: -2px;
+	z-index: -1;
 }
