@@ -1,0 +1,21 @@
+.footer-mobile {
+	width: 1440px;
+	height: 367px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.footer-mobile div {
+	margin-top: 20px;
+	max-width: 560px;
+	text-align: center;
+ font-size: 14px;
+}
+
+.footer-icons-mobile{
+	margin-top: 25px;
+	display: grid;
+	grid-template-columns: 24px 24px 24px;
+	grid-column-gap: 20px;
+}
