@@ -1,0 +1,48 @@
+.sing-in-card {
+	width: 380px;
+	height: 358px;
+	display: flex;
+	flex-direction: column;
+	// align-items: center;
+	justify-content: flex-start;
+	// background: #FFFFFF; - из-за этой настройки не видно бордеров кнопок сделанных псевдоэлементами
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.sing-in-card-1 {
+	margin-top: 20px;
+}
+.sing-in-card-2 {
+	margin-top: 10px;
+}
+
+.sing-in-card-form {
+	width: 318px;
+	height: 44px;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+	margin: 10px 0 0 0;
+}
+
+.sing-in-card-title {
+	margin-top: 40px;
+}
+.sing-in-card-button {
+	margin-top: 20px;
+}
+.sing-in-card-sing-up {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+.sing-in-card-sing-up p{
+	font-size: 14px;
+	margin: 0;
+	// padding: 0;
+}

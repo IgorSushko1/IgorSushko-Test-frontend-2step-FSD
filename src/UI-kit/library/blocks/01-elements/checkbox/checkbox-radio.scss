@@ -2,8 +2,8 @@
 .checkbox-radio_container {
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
+	padding-left: 25px;
+	margin-left: 10px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -17,7 +17,8 @@
   opacity: 0;
   cursor: pointer;
   height: 0;
-  width: 0;
+	width: 0;
+	margin-right: 10px;
 }
 
 /* Create a custom radio button */

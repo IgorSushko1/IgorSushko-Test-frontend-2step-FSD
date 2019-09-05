@@ -29,14 +29,18 @@ html
 		include UI-kit/library/blocks/01-elements/text-field/text-field.pug
 		+form-email("email", "Your email adress", "field name")(class="text-field-email")
 		+form-date("date", "", "masked text field")(class="text-field-date")
+		//- include UI-kit/library/blocks/01-elements/text-field/form-simple-mixin.pug
+		//- +form-name("email","Email", "email", "sing-up-card-form")
 		div
 			include /UI-kit/library/blocks/01-elements/dropdown/dropdown-subparagraph.pug
 		div
 			include /UI-kit/library/blocks/01-elements/checkbox/checkbox-toggle.pug
+			//- +toggle-checkbox("работает?")
 		div
 			include /UI-kit/library/blocks/01-elements/checkbox/checkbox-buttons.pug
 		div
 			include /UI-kit/library/blocks/01-elements/checkbox/checkbox-radio.pug
+			+radio-buttons
 		div
 			include /UI-kit/library/blocks/01-elements/rate-button/rate-button.pug
 		div
@@ -49,6 +53,7 @@ html
 			include /UI-kit/library/blocks/01-elements/buttons/button-text.pug
 		div
 			include /UI-kit/library/blocks/01-elements/buttons/button-pill_full-with-arrow.pug
+		+button-fill-arrow("CLICK ME")
 		div
 			include /UI-kit/library/blocks/01-elements/like-buttons/like-buttons.pug
 		div
@@ -77,6 +82,14 @@ html
 			include /UI-kit/library/blocks/footer/footer.pug
 		div
 			include /UI-kit/library/blocks/footer/footer-mobile.pug
+		div
+			include /UI-kit/library/blocks/pick-up-numbers/pick-up-numbers-card.pug
+		div
+			include /UI-kit/library/blocks/sign-up/sign-up.pug
+		div
+			include /UI-kit/library/blocks/sign-in/sign-in.pug
+		div
+			include /UI-kit/library/blocks/booking/booking.pug
 		br
 		br
 		br

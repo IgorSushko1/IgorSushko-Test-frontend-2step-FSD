@@ -12,3 +12,9 @@ mixin form-date(typeOne, description, fieldsName)
 			h3= fieldsName
 			.container-text-field
 				input(type=typeOne class="" value="16-11-2019").text-field-border&attributes(attributes)
+
+mixin form-name(typeOne, description, name, className)
+	form
+		legend
+			.container-text-field
+				input(type=typeOne, value=description, name=name class=className).text-field-border

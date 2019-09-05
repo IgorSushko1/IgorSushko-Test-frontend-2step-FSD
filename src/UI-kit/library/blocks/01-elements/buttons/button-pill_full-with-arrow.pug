@@ -1,4 +1,5 @@
-button.button-pill_full-with-arrow
-	h3 CLICK ME
-	//- input(type="submit" value="arrow_forward").material-icons.button-pill_full-with-arrow_arrow-for-button
-	div.material-icons.button-pill_full-with-arrow_arrow-for-button arrow_forward
+mixin button-fill-arrow(text)
+	button.button-pill_full-with-arrow
+		h3= text
+		//- input(type="submit" value="arrow_forward").material-icons.button-pill_full-with-arrow_arrow-for-button
+		div.material-icons.button-pill_full-with-arrow_arrow-for-button arrow_forward

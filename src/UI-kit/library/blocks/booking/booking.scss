@@ -1,0 +1,99 @@
+.booking {
+	width: 380px;
+	height: 511px;
+	display: flex;
+	flex-direction: column;
+	// align-items: center;
+	justify-content: flex-start;
+	// background: #FFFFFF; - из-за этой настройки не видно бордеров кнопок сделанных псевдоэлементами
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.booking-title{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+.booking-title > div{
+	display: flex;
+	align-items: flex-end;
+}
+.booking-title > div h3{
+	color: $purple;
+}
+.booking-title > div p{
+	margin: 0;
+	padding: 0;
+	color: $dark-shade-075;
+}
+.booking-title > div span{
+	margin: 0;
+	padding: 0;
+	color: $dark-shade-025;
+}
+.booking-calendar-title {
+	margin-top: 20px;
+}
+.booking-calendar {
+	width: 320px;
+	height: 44px;
+	margin-top: 5px;
+}
+.booking-card-quests {
+	margin-top: 20px;
+}
+// .booking-text {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	font-size: 14px;
+// }
+// .booking-text div span{
+// 	max-width: 215px;
+// 	display: inline-flex;
+// }
+// .booking-icon {
+// color: $dark-shade-025;
+// position: relative;
+// top: 7px;
+
+// }
+.booking-text {
+	display: grid;
+	// justify-content: space-between;
+	grid-template-columns: 70% 10% 20%;
+	font-size: 14px;
+}
+.booking-text div span{
+	max-width: 215px;
+	display: inline-flex;
+}
+.booking-icon {
+color: $dark-shade-025;
+transform: rotate(180deg);
+align-self: center;
+}
+.booking-text-grid-end-position {
+	justify-self: end;
+	align-self: center;
+}
+.booking-grid-item {
+	grid-column: 1 / 3;
+}
+.booking-text-1 {
+	margin-top: 20.5px;
+}
+.booking-text-2 {
+	margin-top: 10px;
+}
+.booking-text-total {
+	display: grid;
+	grid-template-columns: 20% 55% 25%;
+	font-size: 14px;
+}
+.booking-text-total-border{
+	border-bottom: 1px dotted $dark-shade-050;
+}
