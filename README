@@ -69,3 +69,41 @@
 		5. Добавил в конфиг плагин находящий JQ файлы и собирющий их самостоятельно
 		6. npm install babel-minify-webpack-plugin --save-dev
 		7. npm install -D jquery
+
+	2019 09 06
+		1. Установил postcss и autoprefixer npm i --save-dev postcss-loader autoprefixer
+		2. Внес изменения в конфиг вэбпака
+			{
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              config: {
+                path: 'postcss.config.js'
+              }
+            }
+          },
+		3. Затем создал postcss.config.js конфиг и внес туда запись
+			module.exports = {
+				plugins: [
+					require('autoprefixer')
+				]
+			};
+		4. Добавил в package.json код
+			"browserslist": [
+				"defaults",
+				"not ie < 11",
+				"last 2 versions",
+				"> 1%",
+				"iOS 7",
+				"last 3 iOS versions"
+				]
+		5. Установил npm install image-webpack-loader --save-dev
+		6. Добавил в загрузку картинок
+			{loader: 'image-webpack-loader',
+						options: {
+							// bypassOnDebug: true, // webpack@1.x
+							disable: true, // webpack@2.x and newer
+			}}
+		7. Продолжаю решать проблему с url загрузкой изображений и подменой адресов
+			npm install url-loader --save-dev -- просто меняет имя файла если он короче определнного значения
+			https://www.youtube.com/watch?v=03qQYfKMBO8

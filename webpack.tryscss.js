@@ -41,6 +41,15 @@ module.exports = {
 				use: [
 					MiniCssExtractPlugin.loader,
 					'css-loader',
+					{
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              config: {
+                path: 'postcss.config.js'
+              }
+            }
+          },
 					'sass-loader'
 				]
 			},
@@ -54,14 +63,33 @@ module.exports = {
 			},
 			{
 				test: /\.(svg|png|jpg|gif)$/,
-				use: {
-					loader: "file-loader",
-					options: {
+				use: [
+					{loader: "file-loader",
+				options: {
 					name: "[name].[ext]",
-					outputPath: "imgs"
+					// outputPath: "imgs",
+					// publicPath: "imgs"
 					}
-				}
-			}
+				},
+					// {loader: 'image-webpack-loader',
+						// options: {
+							// bypassOnDebug: true, // webpack@1.x
+							// disable: true, // webpack@2.x and newer
+						// }},
+					
+				]
+			},
+			{
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 1,
+            },
+          },
+        ],
+      },
 		],
 
 	},
@@ -72,7 +100,12 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
+			title: "Ui-kit",
 			template: './src/index.pug'
+		}),
+		new HtmlWebpackPlugin({
+			title: "1st landing page",
+			template: './src/landing-one.pug'
 		}),
 		new MiniCssExtractPlugin({
 			filename: '[name].css',
