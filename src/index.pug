@@ -43,6 +43,7 @@ html
 			+radio-buttons
 		div
 			include /UI-kit/library/blocks/01-elements/rate-button/rate-button.pug
+			+star-rating-fourth-checked("id1", "id2", "id3", "id4", "id5")
 		div
 			include /UI-kit/library/blocks/01-elements/buttons/button-pill_full.pug
 			+button-pill_full("REGISTER")
@@ -90,6 +91,11 @@ html
 			include /UI-kit/library/blocks/sign-in/sign-in.pug
 		div
 			include /UI-kit/library/blocks/booking/booking.pug
+		div
+			include /UI-kit/library/blocks/hotel-room-card/hotel-room-card.pug
+			+room-card("../../../src/UI-kit/pic/room2.png", "4", "888", "9900₽", "not lux")
+			+room-card("../../../src/UI-kit/pic/room1.png", "5", "840", "9990₽", "lux")
+
 		br
 		br
 		br

@@ -5,7 +5,7 @@
 	transform: rotateY(180deg);
 	display: flex;
 	position: relative;
-	left: -50%;
+	// left: -50%;
 }
 .rating input {
 	display: none;
@@ -13,7 +13,7 @@
 .rating label {
 	display: block;
 	cursor: pointer;
-	width: 50px;
+	width: 25px;
 	position: relative;
 	// background: #ccc;
 }
