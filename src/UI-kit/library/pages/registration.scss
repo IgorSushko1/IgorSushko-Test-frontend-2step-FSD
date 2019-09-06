@@ -1,0 +1,24 @@
+.registration-page {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: auto;
+	height: auto;
+	background-color: white;
+}
+
+.registration-background {
+	width: 1440px;
+	// height: 830px;
+}
+.registration-article-block {
+	position: relative;
+}
+.registration-sign-up {
+	position: absolute;
+	z-index: 1;
+	top: 70px;
+	left: 36.8%;;
+	background: white;
+	border-radius: 4px;
+}

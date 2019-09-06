@@ -1,25 +1,26 @@
-.sing-up-card
-	.sing-up-card-title
-		h2 Регистрация аккаунта
-	div.sing-up-card-1
-		+form-name("text","Имя", "name", "sing-up-card-form")
-	div.sing-up-card-2
-		+form-name("text","Фамилия", "surname", "sing-up-card-form")
-	div.sing-up-card-3
-		+radio-buttons("sing-up-card-radio")
-	div.sing-up-card-4
-		h3 Дата рождения
-		input(type="text"  data-range="true" data-multiple-dates-separator=" - " class="datepicker-here sign-up-numbers-card-birthday" data-position="right top")
-	div.sing-up-card-5
-		h3 данные для входа в сервис
-		div
-			+form-name("email","Email", "email", "sing-up-card-form")
-		div
-			+form-name("text", "Пароль", "password", "sing-up-card-form")
-	.sing-up-card-toggle
-			+toggle-checkbox("Получать спецпредложения")
-	.sing-up-card-button
-			+button-fill-arrow("Перейти к оплате")
-	.sing-up-card-sing-in
-		p Уже есть аккаунт на Toxin
-		+button-pill_empty("Войти")
+mixin sign-up
+	.sing-up-card
+		.sing-up-card-title
+			h2 Регистрация аккаунта
+		div.sing-up-card-1
+			+form-name("text","Имя", "name", "sing-up-card-form")
+		div.sing-up-card-2
+			+form-name("text","Фамилия", "surname", "sing-up-card-form")
+		div.sing-up-card-3
+			+radio-buttons("sing-up-card-radio")
+		div.sing-up-card-4
+			h3 Дата рождения
+			input(type="text"  data-range="true" data-multiple-dates-separator=" - " class="datepicker-here sign-up-numbers-card-birthday" data-position="right top")
+		div.sing-up-card-5
+			h3 данные для входа в сервис
+			div
+				+form-name("email","Email", "email", "sing-up-card-form")
+			div
+				+form-name("text", "Пароль", "password", "sing-up-card-form")
+		.sing-up-card-toggle
+				+toggle-checkbox("Получать спецпредложения")
+		.sing-up-card-button
+				+button-fill-arrow("Перейти к оплате")
+		.sing-up-card-sing-in
+			p Уже есть аккаунт на Toxin
+			+button-pill_empty("Войти")

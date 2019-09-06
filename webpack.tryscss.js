@@ -41,15 +41,15 @@ module.exports = {
 				use: [
 					MiniCssExtractPlugin.loader,
 					'css-loader',
-					{
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true,
-              config: {
-                path: 'postcss.config.js'
-              }
-            }
-          },
+					// {
+          //   loader: 'postcss-loader',
+          //   options: {
+          //     sourceMap: true,
+          //     config: {
+          //       path: 'postcss.config.js'
+          //     }
+          //   }
+          // },
 					'sass-loader'
 				]
 			},
@@ -63,33 +63,15 @@ module.exports = {
 			},
 			{
 				test: /\.(svg|png|jpg|gif)$/,
-				use: [
-					{loader: "file-loader",
-				options: {
+				use: [{
+					loader: "file-loader",
+					options: {
 					name: "[name].[ext]",
-					// outputPath: "imgs",
+					outputPath: "imgs",
 					// publicPath: "imgs"
 					}
-				},
-					// {loader: 'image-webpack-loader',
-						// options: {
-							// bypassOnDebug: true, // webpack@1.x
-							// disable: true, // webpack@2.x and newer
-						// }},
-					
-				]
+				}]
 			},
-			{
-        test: /\.(png|jpg|gif)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 1,
-            },
-          },
-        ],
-      },
 		],
 
 	},
@@ -100,12 +82,39 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: "Ui-kit",
+			// title: "Ui-kit",
+			// hash: true,
+			// alwaysWriteToDisk: true,
+			filename: "index.html",
 			template: './src/index.pug'
 		}),
 		new HtmlWebpackPlugin({
-			title: "1st landing page",
-			template: './src/landing-one.pug'
+			// title: "1st landing page",
+			// hash: true,
+			// alwaysWriteToDisk: true,
+			filename: "landing-one.html",
+			template: './src/UI-kit/library/pages/landing-page.pug'
+		}),
+		new HtmlWebpackPlugin({
+			// title: "1st landing page",
+			// hash: true,
+			// alwaysWriteToDisk: true,
+			filename: "registration.html",
+			template: './src/UI-kit/library/pages/registration.pug'
+		}),
+		new HtmlWebpackPlugin({
+			// title: "1st landing page",
+			// hash: true,
+			// alwaysWriteToDisk: true,
+			filename: "registration-sign-up.html",
+			template: './src/UI-kit/library/pages/registration-sign-up.pug'
+		}),
+		new HtmlWebpackPlugin({
+			// title: "1st landing page",
+			// hash: true,
+			// alwaysWriteToDisk: true,
+			filename: "registration-sign-in.html",
+			template: './src/UI-kit/library/pages/registration-sign-in.pug'
 		}),
 		new MiniCssExtractPlugin({
 			filename: '[name].css',

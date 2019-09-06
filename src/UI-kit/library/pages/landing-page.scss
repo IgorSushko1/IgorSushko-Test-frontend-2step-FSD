@@ -1,0 +1,30 @@
+.landing-page {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: auto;
+	height: auto;
+	background-color: white;
+}
+
+.landing-background {
+	width: 1440px;
+	// height: 830px;
+}
+.landing-article-block {
+	position: relative;
+}
+.landing-card-pick-numbers {
+	position: absolute;
+	z-index: 1;
+	top: 70px;
+	left: 140px;
+}
+.landing-image-description {
+	position: absolute;
+	z-index: 1;
+	bottom: 18px;
+	right: 134px;
+	width: 300px;
+	text-align: end;
+}

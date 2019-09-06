@@ -1,0 +1,32 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		title Landing page
+
+	body.registration-page
+
+		include ../blocks/header/header.pug
+		include ../blocks/footer/footer.pug
+		include ../blocks/01-elements/buttons/button-pill_empty.pug
+		include ../blocks/01-elements/buttons/button-pill_full.pug
+		include ../blocks/01-elements/buttons/button-pill_full-with-arrow.pug
+		include ../blocks/01-elements/text-field/text-field.pug
+		include ../blocks/01-elements/checkbox/checkbox-radio.pug
+		include ../blocks/01-elements/checkbox/checkbox-toggle.pug
+
+		header.registration-header
+			+header("ВОЙТИ", "ЗАРЕГИСТРИРОВАТЬСЯ")
+		main.registration-main
+			article.registration-article-block
+				.registration-background
+					img(src="../../../src/UI-kit/pic/registration-background-image-interior.png", alt="")
+				.registration-sign-up
+					block sing-up-in
+						//- include ../blocks/sign-up/sign-up.pug
+						//- +sing-up
+				//- .registration-image-description Лучшие номера для вашей работы, отдыха и просто вдохновения
+		footer.registration-footer
+			+footer

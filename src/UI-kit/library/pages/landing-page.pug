@@ -1,0 +1,28 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		title Landing page
+
+	body.landing-page
+		include ../blocks/header/header.pug
+		include ../blocks/footer/footer.pug
+		include ../blocks/01-elements/buttons/button-pill_empty.pug
+		include ../blocks/01-elements/buttons/button-pill_full.pug
+		include ../blocks/01-elements/buttons/button-pill_full-with-arrow.pug
+		include ../blocks/01-elements/text-field/text-field.pug
+		header.landing-header
+			+header("ВОЙТИ", "ЗАРЕГИСТРИРОВАТЬСЯ")
+		main.landing-main
+			article.landing-article-block
+				.landing-background
+					img(src="../../../src/UI-kit/pic/landing-background-image-interior.png", alt="")
+				.landing-card-pick-numbers
+					include ../blocks/pick-up-numbers/pick-up-numbers-card.pug
+					+pick-up-numbers
+				.landing-image-description Лучшие номера для вашей работы, отдыха и просто вдохновения
+		footer.landing-footer
+			+footer
+		//- script(src="")
