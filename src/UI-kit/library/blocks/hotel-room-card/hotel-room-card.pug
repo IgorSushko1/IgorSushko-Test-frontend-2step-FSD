@@ -1,0 +1,28 @@
+mixin room-card(imgName, numberOfStars, roomNumber, price, lux)
+	.hotel-room-card
+		img(src=imgName, alt="" )
+		.hotel-room-circle
+			div
+			div
+			div
+			div
+		.hotel-room-text
+			div
+				if (lux == "lux")
+					h3 №
+					h2= roomNumber
+					h3.lux люкс
+				else
+					h3 №
+					h2= roomNumber
+			div
+				p= price
+				span в сутки
+		.hotel-room-raiting
+			if (numberOfStars == 4)
+				+star-rating-fourth-checked("4star1", "4star2", "4star3", "4star4", "4star5")
+			if (numberOfStars == 5)
+				+star-rating-fifth-checked("5star1", "5star2", "5star3", "5star4", "5star5")
+			.hotel-room-raiting-review
+				h3 65
+				span отзывов
