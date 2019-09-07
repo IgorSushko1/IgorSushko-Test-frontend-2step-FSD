@@ -1,14 +1,15 @@
-label.checkbox-buttons_container Можно курить
-	input(type="checkbox")
-	span.checkbox-buttons_checkmark
-	span.checkbox-buttons_checkmark-white
+mixin checkbox-button_simple(text, doesItChecked)
+	label.checkbox-buttons_container= text
+		input(type="checkbox" doesItChecked)
+		span.checkbox-buttons_checkmark
+		span.checkbox-buttons_checkmark-white
 
-label.checkbox-buttons_container Можно с питомцами
-	input(type="checkbox" checked)
-	span.checkbox-buttons_checkmark
-	span.checkbox-buttons_checkmark-white
+//- label.checkbox-buttons_container Можно с питомцами
+//- 	input(type="checkbox" checked)
+//- 	span.checkbox-buttons_checkmark
+//- 	span.checkbox-buttons_checkmark-white
 
-label.checkbox-buttons_container Можно пригласить гостей (до 10 человек)
-	input(type="checkbox" checked)
-	span.checkbox-buttons_checkmark
-	span.checkbox-buttons_checkmark-white
+//- label.checkbox-buttons_container Можно пригласить гостей (до 10 человек)
+//- 	input(type="checkbox" checked)
+//- 	span.checkbox-buttons_checkmark
+//- 	span.checkbox-buttons_checkmark-white

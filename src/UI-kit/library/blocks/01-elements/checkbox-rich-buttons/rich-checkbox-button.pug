@@ -1,14 +1,15 @@
-div
-	h3 rich checkbox button
-	label.checkbox-buttons_container
-		.bold Широкий коридор
-		input(type="checkbox")
-		span.checkbox-buttons_checkmark
-		span.checkbox-buttons_checkmark-white
-		div.rich-checkbox-description Ширина коридоров в номере не менее 91см
-	label.checkbox-buttons_container
-		.bold Помощник для инвалидов
-		input(type="checkbox")
-		span.checkbox-buttons_checkmark
-		span.checkbox-buttons_checkmark-white
-		div.rich-checkbox-description На первом этаже вас встретит специалист и проводит до номера
+mixin checkbox-rich
+	div
+		h3 Доступность
+		label.checkbox-buttons_container
+			.bold Широкий коридор
+			input(type="checkbox")
+			span.checkbox-buttons_checkmark
+			span.checkbox-buttons_checkmark-white
+			div.rich-checkbox-description Ширина коридоров в номере не менее 91см
+		label.checkbox-buttons_container
+			.bold Помощник для инвалидов
+			input(type="checkbox")
+			span.checkbox-buttons_checkmark
+			span.checkbox-buttons_checkmark-white
+			div.rich-checkbox-description На первом этаже вас встретит специалист и проводит до номера

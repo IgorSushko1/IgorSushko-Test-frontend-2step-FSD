@@ -1,47 +1,48 @@
-.booking
-	.booking-title
-		div
-			h2 №888
-			h3 Люкс
-		div
-			p 9990₽
-			span в сутки
-	div.booking-calendar-title
-		h3 Прибытие - Выезд
-		input(type="text"  data-range="true" data-multiple-dates-separator=" - " class="datepicker-here booking-calendar" data-position="right top")
-	div.booking-card-quests
-		h3 Гости
-		div(class="iqdropdown second-iqdropdown")
-			p(class="iqdropdown-selection")
-			div(class="iqdropdown-menu")
-				div(class="iqdropdown-menu-option" data-id="item1")
-					div
-						p(class="iqdropdown-item bold") Взрослые
-						p(class="iqdropdown-description")
-				div(class="iqdropdown-menu-option" data-id="item2")
-					div
-						p(class="iqdropdown-item bold") Дети
-						p(class="iqdropdown-description")
+mixin booking-room
+	.booking
+		.booking-title
+			div
+				h2 №888
+				h3 Люкс
+			div
+				p 9990₽
+				span в сутки
+		div.booking-calendar-title
+			h3 Прибытие - Выезд
+			input(type="text"  data-range="true" data-multiple-dates-separator=" - " class="datepicker-here booking-calendar" data-position="right top")
+		div.booking-card-quests
+			h3 Гости
+			div(class="iqdropdown second-iqdropdown")
+				p(class="iqdropdown-selection")
+				div(class="iqdropdown-menu")
+					div(class="iqdropdown-menu-option" data-id="item1")
+						div
+							p(class="iqdropdown-item bold") Взрослые
+							p(class="iqdropdown-description")
+					div(class="iqdropdown-menu-option" data-id="item2")
+						div
+							p(class="iqdropdown-item bold") Дети
+							p(class="iqdropdown-description")
 
-				div(class="iqdropdown-menu-option" data-id="item3")
-					div
-						p(class="iqdropdown-item bold") Младенцы
-						p(class="iqdropdown-description")
-	
-	div.booking-text.booking-text-1
-		span.booking-grid-item 9 990₽ х 4 суток
-		span.booking-text-grid-end-position 39 960₽
-	div.booking-text.booking-text-2
-		span Сбор за услуги: скидка 2 179₽
-		span.material-icons.booking-icon error_outline
-		span.booking-text-grid-end-position 0₽
-	div.booking-text.booking-text-2
-		span Сбор за дополнительные услуги
-		span.material-icons.booking-icon error_outline
-		span.booking-text-grid-end-position 300₽
-	div.booking-text-total.booking-text-1
-		h2 Итого
-		div.booking-text-total-border
-		h2 38 081₽
-	div.booking-text-1
-		+button-fill-arrow("Забронировать")
+					div(class="iqdropdown-menu-option" data-id="item3")
+						div
+							p(class="iqdropdown-item bold") Младенцы
+							p(class="iqdropdown-description")
+		
+		div.booking-text.booking-text-1
+			span.booking-grid-item 9 990₽ х 4 суток
+			span.booking-text-grid-end-position 39 960₽
+		div.booking-text.booking-text-2
+			span Сбор за услуги: скидка 2 179₽
+			span.material-icons.booking-icon error_outline
+			span.booking-text-grid-end-position 0₽
+		div.booking-text.booking-text-2
+			span Сбор за дополнительные услуги
+			span.material-icons.booking-icon error_outline
+			span.booking-text-grid-end-position 300₽
+		div.booking-text-total.booking-text-1
+			h2 Итого
+			div.booking-text-total-border
+			h2 38 081₽
+		div.booking-text-1
+			+button-fill-arrow("Забронировать")

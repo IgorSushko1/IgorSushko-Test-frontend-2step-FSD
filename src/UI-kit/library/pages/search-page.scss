@@ -1,0 +1,26 @@
+.search-page__main {
+	display: flex;
+	position: relative;
+}
+
+.search-page__main_card {
+	width: 266px;
+	display:flex;
+	flex-direction: column;
+}
+.search-page__main_rooms-choose {
+	width: 834px;
+	position: relative;
+	left: 60px;
+}
+
+.search-page__main_room-pick-up {
+	display: grid;
+	grid-template-columns: 270px 270px 270px;
+	grid-column-gap: 12px;
+}
+.search-page__main_pagination {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

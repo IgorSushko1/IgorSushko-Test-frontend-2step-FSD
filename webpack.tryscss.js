@@ -116,6 +116,27 @@ module.exports = {
 			filename: "registration-sign-in.html",
 			template: './src/UI-kit/library/pages/registration-sign-in.pug'
 		}),
+		new HtmlWebpackPlugin({
+			// title: "1st landing page",
+			// hash: true,
+			// alwaysWriteToDisk: true,
+			filename: "base-page.html",
+			template: './src/UI-kit/library/pages/base-page.pug'
+		}),
+		new HtmlWebpackPlugin({
+			// title: "1st landing page",
+			// hash: true,
+			// alwaysWriteToDisk: true,
+			filename: "search-page.html",
+			template: './src/UI-kit/library/pages/search-page.pug'
+		}),
+		new HtmlWebpackPlugin({
+			// title: "1st landing page",
+			// hash: true,
+			// alwaysWriteToDisk: true,
+			filename: "room.html",
+			template: './src/UI-kit/library/pages/room-detail-page.pug'
+		}),
 		new MiniCssExtractPlugin({
 			filename: '[name].css',
 			// chunkFilename: '[id].css'

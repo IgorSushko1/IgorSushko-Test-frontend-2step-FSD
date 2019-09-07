@@ -1,0 +1,43 @@
+extends base-page.pug
+
+block main
+	include ../blocks/01-elements/checkbox/checkbox-radio.pug
+	include ../blocks/01-elements/checkbox/checkbox-toggle.pug
+	include ../blocks/01-elements/text-field/text-field_calendar copy.pug
+	include ../blocks/01-elements/dropdown/dropdown-subparagraph.pug
+	include ../blocks/01-elements/range-slider/range-slider.pug
+	include ../blocks/01-elements/checkbox-rich-buttons/rich-checkbox-button.pug
+	include ../blocks/01-elements/checkbox/checkbox-expendable.pug
+	include ../blocks/01-elements/checkbox/checkbox-buttons.pug
+	include ../blocks/hotel-room-card/hotel-room-card.pug
+	include ../blocks/01-elements/rate-button/rate-button.pug
+	include ../blocks/01-elements/pagination/pagination.pug
+	.search-page__main
+		article.search-page__main_card
+			+calendar-hidden
+			+dropdown-people
+			+range-slider
+			h3 checkbox buttons
+			+checkbox-button_simple("Можно курить", "")
+			+checkbox-button_simple("Можно с питомцами", checked)
+			+checkbox-button_simple("Можно пригласить гостей (до 10 человек)", checked)
+			+checkbox-rich
+			+dropdown-room-comfort
+			+checkbox-expendable
+		article.search-page__main_rooms-choose
+			h1 Номера, которые мы для вас подобрали
+			.search-page__main_room-pick-up
+				+room-card("../../../../src/UI-kit/pic/room1.png", "5", "888", "9990₽", "lux", "145")
+				+room-card("../../../../src/UI-kit/pic/room2.png", "4", "840", "9900₽", "", "65")
+				+room-card("../../../../src/UI-kit/pic/room-3.png", "3", "980", "8500₽", "lux", "35")
+				+room-card("../../../../src/UI-kit/pic/room-4.png", "5", "856", "7300₽", "lux", "19")
+				+room-card("../../../../src/UI-kit/pic/room-5.png", "4", "740", "6000₽", "", "44")
+				+room-card("../../../../src/UI-kit/pic/room-6.png", "3", "982", "5800₽", "", "56")
+				+room-card("../../../../src/UI-kit/pic/room-7.png", "5", "678", "5500₽", "", "45")
+				+room-card("../../../../src/UI-kit/pic/room-8.png", "4", "450", "5300₽", "", "39")
+				+room-card("../../../../src/UI-kit/pic/room-9.png", "3", "350", "5000₽", "", "77")
+				+room-card("../../../../src/UI-kit/pic/room-10.png", "5", "666", "5000₽", "", "25")
+				+room-card("../../../../src/UI-kit/pic/room-11.png", "3", "444", "5000₽", "", "15")
+				+room-card("../../../../src/UI-kit/pic/room-12.png", "3", "352", "5000₽", "", "55")
+			.search-page__main_pagination
+				+pagination

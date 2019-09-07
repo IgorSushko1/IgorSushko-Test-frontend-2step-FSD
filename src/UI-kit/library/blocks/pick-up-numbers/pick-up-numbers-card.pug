@@ -1,4 +1,5 @@
 mixin pick-up-numbers
+	//- inclide ../01-elements/dropdown/dropdown-subparagraph.pug
 	.pick-up-numbers-card
 		.pick-up-numbers-card-title
 			h2 Найдем номера под ваши желания
@@ -7,21 +8,6 @@ mixin pick-up-numbers
 			input(type="text"  data-range="true" data-multiple-dates-separator=" - " class="datepicker-here pick-up-numbers-card-arrival-wid" data-position="right top")
 		div.pick-up-numbers-card-quests
 			h3 Гости
-			div(class="iqdropdown second-iqdropdown")
-				p(class="iqdropdown-selection")
-				div(class="iqdropdown-menu")
-					div(class="iqdropdown-menu-option" data-id="item1")
-						div
-							p(class="iqdropdown-item bold") Взрослые
-							p(class="iqdropdown-description")
-					div(class="iqdropdown-menu-option" data-id="item2")
-						div
-							p(class="iqdropdown-item bold") Дети
-							p(class="iqdropdown-description")
-
-					div(class="iqdropdown-menu-option" data-id="item3")
-						div
-							p(class="iqdropdown-item bold") Младенцы
-							p(class="iqdropdown-description")
+			+dropdown-people
 		.pick-up-numbers-card-button
 			+button-fill-arrow("подобрать номер")

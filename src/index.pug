@@ -33,11 +33,17 @@ html
 		//- +form-name("email","Email", "email", "sing-up-card-form")
 		div
 			include /UI-kit/library/blocks/01-elements/dropdown/dropdown-subparagraph.pug
+			+dropdown-examples
+			+dropdown-people
+			+dropdown-room-comfort
 		div
 			include /UI-kit/library/blocks/01-elements/checkbox/checkbox-toggle.pug
 			//- +toggle-checkbox("работает?")
 		div
 			include /UI-kit/library/blocks/01-elements/checkbox/checkbox-buttons.pug
+			+checkbox-button_simple("Можно курить", "")
+			+checkbox-button_simple("Можно с питомцами", checked)
+			+checkbox-button_simple("Можно пригласить гостей (до 10 человек)", checked)
 		div
 			include /UI-kit/library/blocks/01-elements/checkbox/checkbox-radio.pug
 			+radio-buttons
@@ -61,20 +67,27 @@ html
 			include /UI-kit/library/blocks/01-elements/text-field/text-field_calendar copy.pug
 		div
 			include /UI-kit/library/blocks/01-elements/range-slider/range-slider.pug
+			+range-slider
 		div
 			include /UI-kit/library/blocks/01-elements/dropdown/dropdown-subparagraph.pug
 		div
 			include /UI-kit/library/blocks/01-elements/checkbox/checkbox-expendable.pug
+			+checkbox-expendable
 		div
 			include /UI-kit/library/blocks/01-elements/pagination/pagination.pug
+			+pagination
 		div
 			include /UI-kit/library/blocks/01-elements/checkbox-rich-buttons/rich-checkbox-button.pug
+			+checkbox-rich
 		div
 			include /UI-kit/library/blocks/01-elements/bullet-list/bullet-list.pug
 		div
 			include /UI-kit/library/blocks/01-elements/icon-advantages/icon-advantages.pug
+			+icon-advantages
 		div
 			include /UI-kit/library/blocks/01-elements/comments/comments.pug
+			+comments("../../../../src/UI-kit/pic/murad-true.png", "Мурад Сарафанов", "5 дней назад", "12", "checked", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+			+comments("../../../../src/UI-kit/pic/girl image.png", "Патрисия Стёклышкова", "Неделю назад", "2", "", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
 		div
 			include /UI-kit/library/blocks/header/header.pug
 			+header
@@ -96,6 +109,7 @@ html
 			+sign-in
 		div
 			include /UI-kit/library/blocks/booking/booking.pug
+			+booking-room
 		div
 			include /UI-kit/library/blocks/hotel-room-card/hotel-room-card.pug
 			+room-card("../../../src/UI-kit/pic/room2.png", "4", "888", "9900₽", "not lux")

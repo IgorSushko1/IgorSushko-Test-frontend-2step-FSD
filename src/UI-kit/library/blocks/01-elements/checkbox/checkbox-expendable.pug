@@ -1,23 +1,24 @@
-div.checkbox-container-list
-	//- button(class="dropbtn"id="myDropdown007" onclick="foo()") Dropdown-forever
-	//- div(id="myDropdown007" class="dropdown-content")
-	button(class="dropbtn" id="myDropdown007") 
-		h3.bold.checkbox-expendable-list-h3 expandable checkbox list
-		span.material-icons#btn-icons keyboard_arrow_down
-	div(class="dropdown-content" id="dropdownCheckboxes")
-		label.checkbox-buttons_container.checkbox-expendable-margin Завтрак
-			input(type="checkbox" checked)
-			span.checkbox-buttons_checkmark
-			span.checkbox-buttons_checkmark-white
-		label.checkbox-buttons_container.checkbox-expendable-margin Письменный стол
-			input(type="checkbox" checked)
-			span.checkbox-buttons_checkmark
-			span.checkbox-buttons_checkmark-white
-		label.checkbox-buttons_container.checkbox-expendable-margin Стул для кормления
-			input(type="checkbox")
-			span.checkbox-buttons_checkmark
-			span.checkbox-buttons_checkmark-white
-		label.checkbox-buttons_container.checkbox-expendable-margin Кроватка
-			input(type="checkbox")
-			span.checkbox-buttons_checkmark
-			span.checkbox-buttons_checkmark-white
+mixin checkbox-expendable
+	div.checkbox-container-list
+		//- button(class="dropbtn"id="myDropdown007" onclick="foo()") Dropdown-forever
+		//- div(id="myDropdown007" class="dropdown-content")
+		button(class="dropbtn" id="myDropdown007") 
+			h3.bold.checkbox-expendable-list-h3 expandable checkbox list
+			span.material-icons#btn-icons keyboard_arrow_down
+		div(class="dropdown-content" id="dropdownCheckboxes")
+			label.checkbox-buttons_container.checkbox-expendable-margin Завтрак
+				input(type="checkbox" checked)
+				span.checkbox-buttons_checkmark
+				span.checkbox-buttons_checkmark-white
+			label.checkbox-buttons_container.checkbox-expendable-margin Письменный стол
+				input(type="checkbox" checked)
+				span.checkbox-buttons_checkmark
+				span.checkbox-buttons_checkmark-white
+			label.checkbox-buttons_container.checkbox-expendable-margin Стул для кормления
+				input(type="checkbox")
+				span.checkbox-buttons_checkmark
+				span.checkbox-buttons_checkmark-white
+			label.checkbox-buttons_container.checkbox-expendable-margin Кроватка
+				input(type="checkbox")
+				span.checkbox-buttons_checkmark
+				span.checkbox-buttons_checkmark-white

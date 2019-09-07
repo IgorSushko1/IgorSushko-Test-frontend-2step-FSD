@@ -1,0 +1,29 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		block title
+	body.base-page
+		//- block includes
+		include ../blocks/header/header.pug
+		include ../blocks/footer/footer.pug
+		include ../blocks/01-elements/buttons/button-pill_empty.pug
+		include ../blocks/01-elements/buttons/button-pill_full.pug
+		include ../blocks/01-elements/buttons/button-pill_full-with-arrow.pug
+		include ../blocks/01-elements/text-field/text-field.pug
+		//- include ../blocks/01-elements/checkbox/checkbox-radio.pug
+		//- include ../blocks/01-elements/checkbox/checkbox-toggle.pug
+		//- include ../blocks/01-elements/text-field/text-field_calendar copy.pug
+		//- include ../blocks/01-elements/dropdown/dropdown-subparagraph.pug
+		//- include ../blocks/01-elements/range-slider/range-slider.pug
+		//- include ../blocks/01-elements/checkbox-rich-buttons/rich-checkbox-button.pug
+		//- include ../blocks/01-elements/checkbox/checkbox-expendable.pug
+		block header
+			header.base-header
+				+header("ВОЙТИ", "ЗАРЕГИСТРИРОВАТЬСЯ")
+		block main
+		block footer
+			footer.base-footer
+				+footer
