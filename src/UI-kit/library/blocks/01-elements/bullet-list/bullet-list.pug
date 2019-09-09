@@ -1,8 +1,6 @@
-h3 bullet list
-ul.bullet-list
-	li.list-disc
-	li Нельзя с питомцами
-	li.list-disc
-	li Без вечеринок и мероприятий
-	li.list-disc
-	li Время прибытия — после 13:00, выезд до 12:00
+mixin bullet-list(title, colors ,...text)
+	h3= title
+	ul.bullet-list
+		each item in text
+			li.list-disc
+			li(style=`color: ${colors}`)= item

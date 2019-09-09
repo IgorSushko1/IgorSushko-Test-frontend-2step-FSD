@@ -9,6 +9,7 @@ block main
 	include ../blocks/01-elements/comments/comments.pug
 	include ../blocks/01-elements/icon-advantages/icon-advantages.pug
 	include ../blocks/booking/booking.pug
+	include ../blocks/01-elements/bullet-list/bullet-list.pug
 	.room-detail__main
 		article.room-detail__main-picture
 			.room-detail__main-picture_first
@@ -16,26 +17,42 @@ block main
 			.room-detail__main-picture_second
 				img(src="../../../src/UI-kit/pic/room-details-2-1.png", alt="" width="461" height="243" style="display: block")
 				img(src="../../../src/UI-kit/pic/room-details-2-2.png", alt="" width="461" height="242")
-		article.room-detail__main_information
-			.room-detail__main_information_about-room
-				h2 Сведения о номере
-				+icon-advantages
-			.room-detail__main_information_impressions
-				h2 Впечатления о номере
-				div 260 голосов
-				.room-detail__main_information_impressions_circle
-					.left-part
-					.right-top-part
-					.right-bottom-part
-			.room-detail__main_information_comments
-				.room-detail__main_information_comments-title
-					h2 Отзывы посетителей номера
-					span 2 отзыва
-				+comments("../../../../src/UI-kit/pic/murad-true.png", "Мурад Сарафанов", "5 дней назад", "12", "checked", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
-				+comments("../../../../src/UI-kit/pic/girl image.png", "Патрисия Стёклышкова", "Неделю назад", "2", "", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
-			.room-detail__main_information_rules
-				h2 Правила
-			.room-detail__main_information_cancel
-				h2 Отмена
-		article.room-detail__main_room-card
-			+booking-room
+		article.room-detail__main_flex
+			section.room-detail__main_information
+
+				.room-detail__main_information_about-room
+					h2 Сведения о номере
+					+icon-advantages
+
+				.room-detail__main_information_impressions
+					h2 Впечатления от номера
+					.room-detail__main_information_impressions_display
+						.room-detail__main_information_text-in-circle
+							.text-in-circle-number 260
+							.text-in-circle-text голосов
+						.room-detail__main_information_impressions_circle
+							.left-part-top
+							.left-part-bottom
+							.right-top-part
+							.right-bottom-part
+					.room-detail__main_information_impressions_bullet-list
+						+bullet-list("", "rgba(31, 32, 65, 0.75)" ,"Великолепно", "Хорошо", "Удовлетворительно", "Разочарован")
+
+				.room-detail__main_information_comments
+					.room-detail__main_information_comments-title
+						h2 Отзывы посетителей номера
+						span 2 отзыва
+					+comments("../../../../src/UI-kit/pic/murad-true.png", "Мурад Сарафанов", "5 дней назад", "12", "checked", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+					+comments("../../../../src/UI-kit/pic/girl image.png", "Патрисия Стёклышкова", "Неделю назад", "2", "", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
+
+				.room-detail__main_information_rules
+					h2 Правила
+					.room-detail__main-information_rules_bullet
+						+bullet-list("", "rgba(31, 32, 65, 0.75)" ,"Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00")
+
+				.room-detail__main_information_cancel
+					h2 Отмена
+					p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+
+			section.room-detail__main_room-card
+				+booking-room

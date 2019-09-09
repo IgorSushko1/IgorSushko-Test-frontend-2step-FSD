@@ -2,8 +2,8 @@
   color: #BC9CFF;
 	background: white;
 	border: none;
-	width: 95px;
-	height: 40px;
+	width: 140%;
+	height: 30px;
 	font-weight: 700;
   text-align: center;
   cursor: pointer;
@@ -14,8 +14,8 @@
 .button-pill_empty:before {
 	content: "";
 	position: absolute;
-	width: 99px;
-	height: 44px;
+	width: 106%;
+	height: 34px;
 	background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
 	border-radius: 22px;
 	left: -2px;
