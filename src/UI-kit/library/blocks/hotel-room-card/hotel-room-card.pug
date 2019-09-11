@@ -7,17 +7,17 @@ mixin room-card(imgName, numberOfStars, roomNumber, price, lux, review)
 			div
 			div
 		.hotel-room-text
-			div
+			div.hotel-room-text-first-field
 				if (lux == "lux")
-					h3 №
-					h2= roomNumber
-					h3.lux люкс
+					h3.hotel-room-text_symbol №
+					h2.hotel-room-text_number= roomNumber
+					h3.hotel-room-text-lux люкс
 				else
-					h3 №
-					h2= roomNumber
+					h3.hotel-room-text_symbol №
+					h2.hotel-room-text_number= roomNumber
 			div
-				p= price
-				span в сутки
+				p.hotel-room-text_price= price
+				span.hotel-room-text_per-day в сутки
 		.hotel-room-raiting
 			if (numberOfStars == 1)
 				+star-rating-first-checked("1star1", "1star2", "1star3", "1star4", "1star5")
@@ -31,4 +31,4 @@ mixin room-card(imgName, numberOfStars, roomNumber, price, lux, review)
 				+star-rating-fifth-checked("5star1", "5star2", "5star3", "5star4", "5star5")
 			.hotel-room-raiting-review
 				h3= review
-				span отзывов
+				span Отзывов

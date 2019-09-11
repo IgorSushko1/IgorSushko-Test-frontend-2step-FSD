@@ -121,7 +121,7 @@
 
     var base_html =
         '<span class="irs">' +
-        '<span class="irs-line" tabindex="0"></span><span class="irs-single">0</span>' +
+        '<span class="irs-line" tabindex="0"></span><span class="irs-single" id="irs-single-my">0</span>' +
         '<span class="irs-min">0</span><span class="irs-max">1</span>' +
         '<span class="irs-from">0</span><span class="irs-to">0</span>' +
         '</span>' +

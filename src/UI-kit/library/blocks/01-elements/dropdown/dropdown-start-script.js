@@ -15,7 +15,7 @@ $(document).ready(() => {
 		uniteValue: false,
 		whichUnite: [0,1],
 		UniteTitle: [['Гость', 'Гостя', 'Гостей']],
-		openingText: "2 кровати, 2 спальни"
+		openingText: "2 спальни, 2 кровати"
 		// buttons to increment/decrement
 		// controls: {
 		// 	position: 'right',

@@ -14,6 +14,7 @@
 	// border: 1px solid $dark-shade-075;
 	// border-radius: 6px 6px 0 0;
 	border: none;
+	padding: 0;
 }
 
 // .dropbtn:hover, .dropbtn:focus {
@@ -26,7 +27,7 @@
 }
 #btn-icons {
 	position: absolute;
-	top: 10px;
+	top: 12px;
 	right: 10px;
 	color: $dark-shade-100;
 	// justify-content: center;
@@ -58,7 +59,8 @@
 }
 .checkbox-expendable-list-h3 {
 	text-align: left;
-	padding-left: 15px;
+	/* padding-left: 10px; */
+	letter-spacing: 0.0em;
 }
 .checkbox-expendable-margin {
 	margin-left: 15px;

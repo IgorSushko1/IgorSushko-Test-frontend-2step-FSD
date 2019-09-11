@@ -2,21 +2,24 @@
 	width: 241px;
 	display: inline-grid;
 	grid-template-columns: 40px 40px 40px 40px 40px 40px;
-	grid-column-gap: 3px;
+	grid-column-gap: 0px;
+	position: relative;
+	left: -7px;
+	font-size: 12px;
 }
 
 #pagination-first-number {
 	background: linear-gradient(180deg, rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
 	border-radius: 50%;
 	color: white;
-	font-weight: bold;
+	// font-weight: bold;
 }
 
-.span-forward-icon {
+#span-forward-icon {
 	background: linear-gradient(180deg, #6FCF97, #66D2EA);
 	border-radius: 50%;
 	color: white;
-	font-weight: bold;
+	// font-weight: bold;
 }
 
 .pagination-grid-item {
@@ -24,4 +27,13 @@
  justify-content: center;
  height: 40px;
  line-height: 40px;
+ color: $dark-shade-050;
+}
+.pagination-description{
+	margin-top: 10px;
+	font-size: 15px;
+	font-family: "Montserrat-Regular", Arial, sans-serif;
+	letter-spacing: 0.03em;
+	position: relative;
+	left: -9px;
 }
