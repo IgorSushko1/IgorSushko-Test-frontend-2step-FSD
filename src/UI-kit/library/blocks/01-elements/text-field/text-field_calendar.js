@@ -1,8 +1,27 @@
 $( function() {
 	$( "#datepicker" ).datepicker({
+		multipleDates: true,
+    onSelect: function (fd, dates, inst) {
+			var reg = /([0-9\.]+)\s([0-9\.]+)/g;
+        var $frst = $('#result-datepicker-first-date'),
+						// string = 'Выбранные даты: ';
+						$secnd = $('#result-datepicker-second-date'),
+						string = '';
+
+        dates.forEach(function (date) {
+            string += date.getDate().toString().padStart(2, "0")+'.' + date.getMonth().toString().padStart(2, "0")+'.' + date.getFullYear() + ' ';
+				})
+				var firstDate = string.split(reg);
+
+
+				$frst.html("<span class='pick-up-numbers-card-date-for-two-inputs' style='color:rgba(31, 32, 65, 0.75)'>" +firstDate[1] + "</span>" + " " + "<span class='material-icons pick-up-numbers-card-icon-for-date'>expand_more</span>");
+				$secnd.html("<span class='pick-up-numbers-card-date-for-two-inputs'style='color:rgba(31, 32, 65, 0.75)'>" +firstDate[2]+ "</span>" + " " + "<span class='material-icons pick-up-numbers-card-icon-for-date'>expand_more</span>");
+    },
+		// altField: '#result-datepicker',
 		showButtonPanel: true,
 		dateFormat: "yy.mm.dd",
 		duration: "slow",
+		clearButton: true,
 		// gotoCurrent: false,
 		minDate: new Date(2019, 7, 1),
 		nextText: "Later",

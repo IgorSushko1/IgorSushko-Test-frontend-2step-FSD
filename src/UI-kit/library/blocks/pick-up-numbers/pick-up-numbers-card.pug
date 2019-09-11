@@ -2,12 +2,20 @@ mixin pick-up-numbers
 	//- inclide ../01-elements/dropdown/dropdown-subparagraph.pug
 	.pick-up-numbers-card
 		.pick-up-numbers-card-title
-			h2 Найдем номера под ваши желания
+			h2 Найдём номера под ваши пожелания
 		.pick-up-numbers-card-arrival
 			h3 Прибытие - выезд
-			input(type="text"  data-range="true" data-multiple-dates-separator=" - " class="datepicker-here pick-up-numbers-card-arrival-wid" data-position="right top")
+			label.pick-up-numbers-card-input
+				input(type="checkbox" id="datepicker"  data-range="true" data-multiple-dates-separator=" - " clearButton="true" class="datepicker-here pick-up-numbers-card-arrival-wid" data-position="bottom left")
+				p(id="result-datepicker-first-date")
+					span.pick-up-numbers-card-date-for-two-inputs ДД.ММ.ГГГГ
+					span.material-icons.pick-up-numbers-card-icon-for-date expand_more
+				p(id="result-datepicker-second-date")
+					span.pick-up-numbers-card-date-for-two-inputs ДД.ММ.ГГГГ
+					span.material-icons.pick-up-numbers-card-icon-for-date expand_more
 		div.pick-up-numbers-card-quests
 			h3 Гости
-			+dropdown-people
+			.pick-up-dropdown
+				+dropdown-people
 		.pick-up-numbers-card-button
 			+button-fill-arrow("подобрать номер")

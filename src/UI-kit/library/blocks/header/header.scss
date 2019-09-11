@@ -15,11 +15,11 @@
 	display: flex;
 }
 .header ul {
-	display: flex;
-
+display: flex;
+font-size: 14px;
 }
 .header ul li {
-padding-left: 10px;
+padding-left: 19px;
 list-style-type: none;
 }
 .header ul li a, .header span.nav-link{
@@ -30,6 +30,7 @@ color: $dark-shade-075;
 .nav-link {
 	margin: 0;
 	padding: 0;
+	margin-right: 1px;
 }
 .header-dropdown-list {
 	display: inline-flex;
@@ -41,13 +42,20 @@ color: $dark-shade-075;
   height: 0px;
 }
 .header-button {
-	display: grid;
-	grid-template-columns: auto auto;
+	// display: grid;
+	// grid-template-columns: auto auto;
+	// align-items: center;
+	// column-gap: 15px;
+	// padding-left: 15px;
+	display: flex;
 	align-items: center;
-	column-gap: 15px;
-	padding-left: 15px;
 }
-
+.header-button .button-pill_full {
+	margin-left: 22px;
+}
+.header-button .button-pill_empty {
+	margin-left: 20px;
+}
 .header-login-name {
 	margin: auto;
 	border-left: 1px solid $dark-shade-010;

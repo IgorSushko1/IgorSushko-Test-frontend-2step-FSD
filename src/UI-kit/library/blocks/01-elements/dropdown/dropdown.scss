@@ -59,7 +59,8 @@ body {
 }
 
 .iqdropdown p {
-	margin: 0
+	// margin: 0
+	padding-top: 0;
 }
 
 .iqdropdown ul,
@@ -105,7 +106,7 @@ body {
 
 .iqdropdown .icon-decrement::after {
 	background: #002674;
-	content: '';
+	// content: '';
 	display: block;
 	height: 3px;
 	position: absolute;
@@ -118,7 +119,7 @@ body {
 
 .iqdropdown .icon-decrement.icon-increment::before {
 	background: #002674;
-	content: '';
+	// content: '';
 	display: block;
 	height: 3px;
 	position: absolute;
@@ -132,6 +133,7 @@ body {
 }
 
 .iqdropdown .iqdropdown-menu {
+
 	background-color: #FFFFFF;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	cursor: default;
@@ -140,16 +142,18 @@ body {
 	margin: -2px -1px -1px;
 	position: absolute;
 	right: 0;
-	top: 50px;
+	top: 42px;
 	transition: all 0.2s ease-in-out;
-	z-index: 99999
+	z-index: 99999;
+	padding-bottom: 6px;
+	padding-top: 8px;
 }
 
 .iqdropdown .iqdropdown-menu-option {
-	align-items: center;
-	display: flex;
-	height: 75px;
-	padding: 0 15px
+    align-items: center;
+    display: flex;
+    height: 37px;
+    padding-left: 14px;
 }
 
 .iqdropdown .iqdropdown-menu-option:last-child {
@@ -169,7 +173,13 @@ body {
 }
 
 .iqdropdown.menu-open .iqdropdown-menu {
-	display: block
+	display: block;
+	border: 1px solid $dark-shade-050;
+    /* width: 100%; */
+    /* height: 110%; */
+    border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		box-shadow: none;
 }
 
 @media only screen and (max-width: 640px) {
@@ -195,22 +205,22 @@ body {
 	// font-family: "OpenSans", sans-serif;
 	font-size: 12px;
 	font-weight: bolder;
-	margin-top: 5px
+	// margin-top: 5px
 }
 
 .iqdropdown .iqdropdown-item-controls {
 	display: flex;
-	height: 30px
+	height: 39px;
+	margin-right: 7px;
+	position: relative;
 }
 
 .iqdropdown .iqdropdown-item-controls .counter {
 	color: #4A4A4A;
-	// font-family: "OpenSans", sans-serif;
 	font-size: 12px;
-	// font-weight: 400;
-	// border-bottom: 1px solid #E2E2E2;
-	// border-top: 1px solid #E2E2E2;
-	padding: 7px 15px;
+	position: absolute;
+	left: -50px;
+	top: 5px;
 }
 
 .iqdropdown .iqdropdown-item-controls button {
@@ -228,15 +238,18 @@ body {
 }
 
 .iqdropdown .iqdropdown-item-controls button.button-decrement {
-	// border-bottom-left-radius: 25px;
-	// border-top-left-radius: 25px
 	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	font-size: 13px;
+	left: -92px;
 }
 
 .iqdropdown .iqdropdown-item-controls button.button-increment {
-	// border-bottom-right-radius: 25px;
-	// border-top-right-radius: 25px
 	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
 }
 
 .iqdropdown {
@@ -245,7 +258,7 @@ body {
 	border-radius: 4px;
 	cursor: pointer;
 	display: flex;
-	height: 50px;
+	height: 100%;
 	justify-content: space-between;
 	padding: 0 15px;
 	position: relative;
@@ -254,11 +267,12 @@ body {
 
 .iqdropdown .iqdropdown-selection {
 	color: #4A4A4A;
-	// font-family: "OpenSans", sans-serif;
-	font-size: 12px;
-	// font-weight: 400;
+	font-size: 14px;
 	flex: 1;
-	position: relative
+	position: relative;
+	top: -2px;
+	left: -2px;
+	letter-spacing: -0.005em;
 }
 
 .iqdropdown .iqdropdown-selection::after {
@@ -266,7 +280,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	content: '';
+	// content: '';
 	display: inline-block;
 	height: 5px;
 	width: 12px;
@@ -276,9 +290,30 @@ body {
 }
 
 .iqdropdown.menu-open {
-	border-color: #002674
+	border-color: $dark-shade-050;
 }
 
 .iqdropdown.menu-open .iqdropdown-selection::after {
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAMCAMAAABGBS09AAAAe1BMVEVMaXH///+ZmZmqqqqVlZWdnZ2Xl5eVlZWVlZWUlJSQkJCUlJSTk5ORkZGRkZGRkZGSkpKRkZGSkpKSkpKRkZGQkJCRkZGRkZGRkZGQkJCSkpKRkZGRkZGRkZGRkZGRkZGRkZGRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJAwdLQhAAAAKHRSTlMAAQUGDA0bHSQmNTdHSEpYWV1gbnKIi5SZqqqytcfJzNfZ5uf19fn+jEECQQAAAIhJREFUeNqNj+cSwkAIhLn0Znoz7dLD+z9hII6OJTruH5b9mDuAv2VKaX5BSjojLqlyxi49Huq9D2TVlG/VdaNSWy9Iy1YKOxfA7cismfZAIhopmWJxNPFEzRiJG3NaHs71+6ye8zOtwz7kbxobnmQ3vEBArkAcfHiTPyAWVI0yOTlNTUoDfmoHOBIMkOONx34AAAAASUVORK5CYII=)
+}
+
+.iqdropdown-clear-or-apply {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+}
+.iqdropdown-clear {
+	color: $dark-shade-050;
+	padding-left: 13px;
+	font-family: "Montserrat-SemiBold", Arial, sans-serif;
+	font-size: 12px;
+	margin-top: 12px;
+}
+.iqdropdown-apply {
+	color: $purple;
+	// font-weight: 500;
+	padding-right: 7px;
+	font-family: "Montserrat-SemiBold", Arial, sans-serif;
+	font-size: 12px;
+	margin-top: 12px;
 }

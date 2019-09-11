@@ -136,12 +136,12 @@
 				const $controls = $('<div />').addClass(settings.controls.controlsCls);
 				const $decrementButton = $(`
           <button class="button-decrement">
-            <i class="icon-decrement"></i>
+            <i class="icon-decrement">-</i>
           </button>
         `);
 				const $incrementButton = $(`
           <button class="button-increment">
-            <i class="icon-decrement icon-increment"></i>
+            <i class="icon-decrement icon-increment">+</i>
           </button>
         `);
 				const $counter = $(`<span>${itemCount[id]}</span>`).addClass(settings.controls.counterCls);

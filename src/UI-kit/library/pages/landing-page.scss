@@ -9,7 +9,15 @@
 
 .landing-background {
 	width: 1440px;
-	// height: 830px;
+	height: 830px;
+	overflow: hidden;
+	position: relative;
+}
+.landing-background img {
+	position: relative;
+	top: -35px;
+	left: 1px;
+	transform: scaleY(1.085);
 }
 .landing-article-block {
 	position: relative;
@@ -23,8 +31,11 @@
 .landing-image-description {
 	position: absolute;
 	z-index: 1;
-	bottom: 18px;
-	right: 134px;
-	width: 300px;
+	bottom: 21px;
+	right: 132px;
+	width: 294px;
+	letter-spacing: 0.04em;
 	text-align: end;
+	font-size: 13px;
+	line-height: 24px;
 }
