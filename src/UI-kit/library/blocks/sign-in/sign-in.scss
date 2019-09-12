@@ -14,10 +14,12 @@
 	padding-right: 30px;
 }
 .sing-in-card-1 {
-	margin-top: 20px;
+	margin-top: 14px;
+	margin-left: -3px;
 }
 .sing-in-card-2 {
-	margin-top: 10px;
+	margin-top: 8px;
+	margin-left: -3px;
 }
 
 .sing-in-card-form {
@@ -27,22 +29,33 @@
 	box-sizing: border-box;
 	border-radius: 4px;
 	margin: 10px 0 0 0;
+	padding-left: 16px;
 }
 
 .sing-in-card-title {
-	margin-top: 40px;
+	margin-top: 43px;
+	margin-left: -1px;
+	font-size: 24px;
 }
 .sing-in-card-button {
-	margin-top: 20px;
+	margin-top: 28px;
+	margin-left: -1px;
 }
 .sing-in-card-sing-up {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 20px;
+	margin-top: 30px;
+	margin-left: -1px;
 }
 .sing-in-card-sing-up p{
 	font-size: 14px;
 	margin: 0;
-	// padding: 0;
+	letter-spacing: -0.0096rem;
 }
+.sing-in-card-sing-up .button-pill-empty {
+	height: 40px;
+}
+// .sing-in-card-sing-up.button-pill-empty::before {
+// 	height: 44px;
+// }

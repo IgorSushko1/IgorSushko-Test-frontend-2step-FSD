@@ -1,16 +1,32 @@
 .comments {
 	display: grid;
 	grid-template-columns: 50px 650px;
-	grid-column-gap: 10px;
-	grid-row-gap: 0px;
+	grid-column-gap: 8px;
+	grid-row-gap: 8px;
 }
 .comments  img {
-	margin-top: 10px;
+	margin-top: -4px;
 }
-.comments >div {
-	margin-bottom: 15px;
-}
+// .comments >div {
+// 	margin-bottom: 8px;
+// }
 .comments h3 {
 	font-size: 14px;
-	margin-bottom: 5px;
+	margin-bottom: 6px;
+	text-transform: none;
+	// margin-left: -2px;
+	letter-spacing: 0.01rem;
+}
+
+// .comments-date {
+// 	margin-left: -3px;
+// }
+.comments_like-button {
+	padding-left: 4px;
+}
+.comments_description {
+	margin-top: -0.2rem;
+	letter-spacing: -0.007rem;
+	line-height: 24px;
+	width: 653px;
 }

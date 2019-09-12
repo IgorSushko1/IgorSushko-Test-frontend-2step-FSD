@@ -4,8 +4,8 @@ mixin comments(img, name, date, likes, check, text)
 			img(src=img alt="Cinque Terre" width="48" height="48")
 		div
 			h3= name
-			div= date
-		div
+			div.comments-date= date
+		div.comments_like-button
 			label.like-button_label
 				if (check == "checked")
 					input(type="checkbox" checked).like-button_input
@@ -16,7 +16,7 @@ mixin comments(img, name, date, likes, check, text)
 					.like-buttons_div= likes
 				.material-icons.like-buttons_favorite_border favorite_border
 				.material-icons.like-buttons_favorite favorite
-		div= text
+		div.comments_description= text
 
 	//- div.comments
 	//- 	div

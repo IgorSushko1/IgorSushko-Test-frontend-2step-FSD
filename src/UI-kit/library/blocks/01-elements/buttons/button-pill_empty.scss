@@ -17,8 +17,38 @@
 .button-pill_empty:before {
 	content: "";
 	position: absolute;
-	width: 105%;
+	width: 104%;
 	height: 34px;
+	background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+	border-radius: 22px;
+	left: -2px;
+	top: -2px;
+	z-index: -1;
+}
+
+.button-pill_empty-44 {
+	margin-top: 2px;
+	color: #BC9CFF;
+	background: white;
+	border: none;
+	height: 40px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 22px;
+	position: relative;
+	font-size: 11px;
+	letter-spacing: 0.8px;
+	font-family: "Montserrat-SemiBold", Arial, sans-serif;
+	padding: 0 19px;
+	text-transform: uppercase;
+	padding-left: 16px;
+}
+
+.button-pill_empty-44:before {
+	content: "";
+	position: absolute;
+	width: 104%;
+	height: 44px;
 	background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
 	border-radius: 22px;
 	left: -2px;

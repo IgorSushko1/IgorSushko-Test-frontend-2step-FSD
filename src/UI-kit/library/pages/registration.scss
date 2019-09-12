@@ -8,8 +8,17 @@
 }
 
 .registration-background {
+	// width: 1440px;
+	overflow: hidden;
+	position: relative;
+}
+.registration-background img {
+	position: relative;
+	top: -23px;
+	left: 0px;
+	transform: scaleY(1.138);
 	width: 1440px;
-	// height: 830px;
+	height: 678px;
 }
 .registration-article-block {
 	position: relative;
@@ -17,8 +26,8 @@
 .registration-sign-up {
 	position: absolute;
 	z-index: 1;
-	top: 70px;
-	left: 36.8%;;
+	top: 163px;
+	left: 36.85%;
 	background: white;
 	border-radius: 4px;
 }
