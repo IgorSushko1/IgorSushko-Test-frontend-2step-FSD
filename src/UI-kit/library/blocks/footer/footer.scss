@@ -49,6 +49,18 @@
 	grid-template-rows: 38px 71px 38px 38px;
 	line-height: 23px;
 }
+
+.footer-block-last .text-field-border {
+	width: 245px;
+	margin-left: -2px;
+	margin-top: -2px;
+	height: 40px;
+	padding-left: 13px;
+}
+.footer-block-last  .arrow-forward {
+	left: 224px;
+		top: -34.5px;
+}
 .footer-social {
 	display: flex;
 	justify-content: space-between;
