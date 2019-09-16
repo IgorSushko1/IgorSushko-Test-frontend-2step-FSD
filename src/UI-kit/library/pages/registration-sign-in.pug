@@ -1,4 +1,7 @@
 extends registration.pug
-block sing-up-in
+block registration-image
+	.registration-background-in
+		img(src="../../../src/UI-kit/pic/registration-background-image-interior.png", alt="")
+block sing-in
 	include ../blocks/sign-in/sign-in.pug
 	+sign-in

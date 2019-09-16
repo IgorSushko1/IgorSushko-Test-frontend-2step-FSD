@@ -14,8 +14,10 @@
 }
 
 .sing-up-card-title {
-	margin-left: 0px;
-	margin-top: 40px;
+	margin-left: -2px;
+	margin-top: 43px;
+	font-size: 17px;
+	letter-spacing: -0.05rem;
 }
 
 .sing-up-card-form {
@@ -24,6 +26,7 @@
 	border: 1px solid rgba(31, 32, 65, 0.25);
 	box-sizing: border-box;
 	border-radius: 4px;
+	padding-left: 15px;
 }
 .sing-up-card-radio {
 	display: flex;
@@ -36,33 +39,59 @@
 }
 
 .sing-up-card-toggle {
-	width: 80%;
+	margin-top: 10px;
 }
 .sing-up-card-button {
-	margin-top: 20px;
+	margin-top: 7px;
+	margin-left: -1px;
 }
 .sing-up-card-sing-in {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 20px;
+	margin-top: 30px;
+	margin-left: -1px;
+	letter-spacing: -0.01rem;
 }
 .sing-up-card-sing-in p{
 	font-size: 14px;
 	margin: 0;
 }
 .sing-up-card-1 {
-	margin-top: 20px;
+	margin-top: 24px;
+	margin-left: -3px;
 }
 .sing-up-card-2 {
-	margin-top: 10px;
+	margin-top: 8px;
+	margin-left: -3px;
 }
 .sing-up-card-3 {
-	margin-top: 10px;
+	margin-top: 8px;
+	margin-left: -21px;
 }
 .sing-up-card-4 {
-	margin-top: 20px;
+	margin-top: 26px;
+}
+.sing-up-card-4 h3 {
+	margin-left: -1px;
+}
+.sing-up-card-4 input {
+	margin-top: 5px;
+}
+.sing-up-card-4 .sign-up-numbers-card-birthday {
+	height: 40px;
+	width: 303px;
+	margin-left: -1px;
+	padding-left: 15px;
 }
 .sing-up-card-5 {
 	margin-top: 20px;
+}
+.sing-up-card-5 h3{
+	margin-left: -1px;
+    letter-spacing: 0.007em;
+}
+.sing-up-card-5 div{
+	MARGIN-TOP: 5px;
+	margin-left: -2px;
 }

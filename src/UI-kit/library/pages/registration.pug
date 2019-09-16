@@ -21,10 +21,11 @@ html
 			+header("ВОЙТИ", "ЗАРЕГИСТРИРОВАТЬСЯ")
 		main.registration-main
 			article.registration-article-block
-				.registration-background
-					img(src="../../../src/UI-kit/pic/registration-background-image-interior.png", alt="")
+				block registration-image
 				.registration-sign-up
-					block sing-up-in
+					block sing-up
+				.registration-sign-in
+					block sing-in
 						//- include ../blocks/sign-up/sign-up.pug
 						//- +sing-up
 				//- .registration-image-description Лучшие номера для вашей работы, отдыха и просто вдохновения

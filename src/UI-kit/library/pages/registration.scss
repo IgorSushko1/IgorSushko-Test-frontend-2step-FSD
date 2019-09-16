@@ -7,12 +7,12 @@
 	background-color: white;
 }
 
-.registration-background {
+.registration-background-in {
 	// width: 1440px;
 	overflow: hidden;
 	position: relative;
 }
-.registration-background img {
+.registration-background-in img {
 	position: relative;
 	top: -23px;
 	left: 0px;
@@ -20,10 +20,32 @@
 	width: 1440px;
 	height: 678px;
 }
+.registration-background-up {
+	// width: 1440px;
+	overflow: hidden;
+	position: relative;
+}
+.registration-background-up img {
+	position: relative;
+	top: -45px;
+	left: 0px;
+	transform: scaleY(1.07);
+	width: 1440px;
+	height: 722px;
+	margin-bottom: -25px;
+}
 .registration-article-block {
 	position: relative;
 }
 .registration-sign-up {
+	position: absolute;
+	z-index: 1;
+	top: 30px;
+	left: 36.85%;
+	background: white;
+	border-radius: 4px;
+}
+.registration-sign-in {
 	position: absolute;
 	z-index: 1;
 	top: 163px;

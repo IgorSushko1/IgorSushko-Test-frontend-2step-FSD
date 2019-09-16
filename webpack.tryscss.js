@@ -5,7 +5,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin'); // устанавли�
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // добавил плагин, использую с sass
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-
+const PATH = {
+	src: path.join(__dirname, './src'),
+	dist: path.join(__dirname, './dist'),
+	assets: 'assets/'
+}
 
 
 module.exports = {
@@ -18,10 +22,19 @@ module.exports = {
 	module: {
 		rules: [{
 				test: /\.pug$/,
-				use: [{
+				use: [
+				// 	{
+					// 'html-loader',
+				// 	options: {
+				// 		attrs: ['img:src', 'link:href']
+				// 	}
+				// }, 
+				{
 					loader: "pug-loader",
 					options: {
-						pretty: true
+						pretty: true,
+						"exports": false
+						// attrs: ['img:src', 'link:href']
 					}
 				}]
 			},
@@ -42,14 +55,14 @@ module.exports = {
 					MiniCssExtractPlugin.loader,
 					'css-loader',
 					// {
-          //   loader: 'postcss-loader',
-          //   options: {
-          //     sourceMap: true,
-          //     config: {
-          //       path: 'postcss.config.js'
-          //     }
-          //   }
-          // },
+					//   loader: 'postcss-loader',
+					//   options: {
+					//     sourceMap: true,
+					//     config: {
+					//       path: 'postcss.config.js'
+					//     }
+					//   }
+					// },
 					'sass-loader'
 				]
 			},
@@ -61,14 +74,56 @@ module.exports = {
 					name: '[name].[ext]'
 				}
 			},
+			// {
+			// 	test: /\.(png|jpg|gif|svg)$/i,
+			// 	exclude: /node_modules/,
+      //   use: [
+      //     {
+						
+      //       loader: 'url-loader',
+      //       options: {
+			// 				// limit: 8192,
+			// 				name: "[hash].[ext]",
+			// 				publicPath: "/"
+      //       },
+      //     },
+      //   ],
+      // },
+		// 	{
+		// 		test: /\.(jpe?g|png|gif|svg|ico)$/i,
+		// 		use: [{
+		// 				loader: 'file-loader',
+		// 				options: {
+		// 						name: '[name].[ext]',
+		// 						outputPath: 'images/',
+		// 						publicPath: 'images/'
+		// 				}
+		// 		}]
+		// },
+			// {
+			// 	test: /\.(png|jpe?g|gif|svg)$/i,
+			// 	loader: 'file-loader',
+			// 	options: {
+			// 		name: 'dirname/[contenthash].[ext]',
+			// 	},
+			// },
+			// {
+			// 	test: /\.(png|svg|jpg|gif)$/,
+			// 	use: [
+			// 		{loader : 'file-loader',
+			// 		options: {
+			// 			name: '[path][name].[ext]',
+			// 		}}
+			// 	]
+			// },
 			{
 				test: /\.(svg|png|jpg|gif)$/,
 				use: [{
 					loader: "file-loader",
 					options: {
 					name: "[name].[ext]",
-					outputPath: "imgs",
-					// publicPath: "imgs"
+					outputPath: "imgs/",
+					publicPath: "imgs/"
 					}
 				}]
 			},
@@ -142,15 +197,15 @@ module.exports = {
 			// chunkFilename: '[id].css'
 			// template: './src/style.scss'
 		}),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
+		new webpack.ProvidePlugin({
+			$: 'jquery',
+			jQuery: 'jquery',
 			'window.jQuery': 'jquery',
 			// foo: './src/UI-kit/library/blocks/01-elements/checkbox/just-a-function.js'
-    }),
-		// ,
-		// new CopyWebpackPlugin({
-		// 	from: `${PATHS.src}/fonts`, to: `${PATHS.assets}fonts`
-		// })
+		}),
+		new CopyWebpackPlugin([
+			{
+			from: "./src/UI-kit/pic/", to: "./imgs"
+		}])
 	]
 };
