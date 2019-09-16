@@ -1,4 +1,4 @@
-$( function() {
+$(document).ready(function() {
 	$( "#datepicker" ).datepicker({
 		multipleDates: true,
     onSelect: function (fd, dates, inst) {
@@ -46,7 +46,7 @@ $( function() {
 	$('.ui-icon').addClass('.ui-icon-arrow-1-e').removeClass('ui-icon-circle-triangle-w');
 } );
 
-$( function() {
+$(document).ready( function() {
 	$( "#datepicker-single" ).datepicker({
 		multipleDates: true,
     onSelect: function (fd, dates, inst) {
