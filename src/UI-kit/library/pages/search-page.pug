@@ -1,5 +1,8 @@
 extends base-page.pug
-
+block meta-keywords
+	meta(name="keywords" content="search room")
+block meta-description
+	meta(name="description" content="Выбор номера в отеле, любой")
 block main
 	include ../blocks/01-elements/checkbox/checkbox-radio.pug
 	include ../blocks/01-elements/checkbox/checkbox-toggle.pug
