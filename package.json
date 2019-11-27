@@ -5,8 +5,8 @@
   "description": "Журнал действий:\r 19 08 13 \r \tЗапустил гит и создал package.json командой npm init \r \t\tЗапустил npm install",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js",
-    "scss": "webpack --config webpack.tryscss.js",
+    "prod": "webpack --config webpack.prod.js",
+    "dev": "webpack --config webpack.dev.js",
     "scss:dev": "webpack-dev-server",
     "start:dev": "webpack-dev-server"
   },

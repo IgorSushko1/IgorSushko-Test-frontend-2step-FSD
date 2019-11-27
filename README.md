@@ -3,6 +3,12 @@
 
 В папке "page images" лежат .png с макетами страниц для удобства проверки PerfectPixel
 
+Установка `npm install`.
+
+Запуск версии для разработки `npm run dev` с watch опцией.
+
+Запуск версии для клиента `npm run prod`.
+
 GitHub Pages :
 
 https://igorsushko1.github.io/IgorSushko-Test-frontend-2step-FSD/dist/room.html
