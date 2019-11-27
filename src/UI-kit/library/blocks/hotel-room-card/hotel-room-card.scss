@@ -6,6 +6,7 @@
 	border-radius: 4px;
 	position: relative;
 }
+
 .hotel-room-card img {
  border-top-left-radius: 4px;
  border-top-right-radius: 4px;
@@ -13,6 +14,7 @@
  width: 270px;
  height: 152px;
 }
+
 .hotel-room-text{
 	display: flex;
 	justify-content: space-between;
@@ -37,6 +39,7 @@
 	border-top: 1px solid $dark-shade-025;
 	position: relative;
 }
+
 .hotel-room-raiting-review{
 display: grid;
 grid-template-columns: 27px auto;
@@ -47,6 +50,7 @@ position: absolute;
 right: 11px;
 top: 13px;
 }
+
 .hotel-room-raiting-review h3 {
 	font-size: 14px;
 	font-family: "Montserrat-Bold", Arial, sans-serif;
@@ -61,6 +65,7 @@ top: 13px;
 	right: 16px;
 	cursor: pointer;
 }
+
 .hotel-room-circle div{
 	width: 5px;
 	height: 5px;
@@ -68,14 +73,12 @@ top: 13px;
 	border-radius: 50%;
 	z-index: 1;
 	margin-left: 4px;
-
 }
+
 .hotel-room-text-first-field {
 height: 16px;
 }
-// .hotel-room-circle div:first-child {
-// 	// background-color: white;
-// }
+
 .hotel-room-text_symbol {
 	font-size: 14px;
 	margin-left: 12px;
@@ -84,6 +87,7 @@ height: 16px;
 	top: 2px;
 	left: 0px;
 }
+
 .hotel-room-text_number {
 	margin-left: 3px;
 	/* line-height: 22px; */
@@ -95,12 +99,14 @@ height: 16px;
 	letter-spacing: 0.03em;
 	font-family: "Quicksand-Bold", Arial, sans-serif;
 }
+
 .hotel-room-text-lux {
 	color: $purple;
 	position: absolute;
 	top: 3px;
 	left: 72px;
 }
+
 .hotel-room-text_price {
 	top: -14px;
 	color: $dark-shade-050;
@@ -109,6 +115,7 @@ height: 16px;
 	// letter-spacing: 0.0em;
 	font-family: "Montserrat-SemiBold", Arial, sans-serif;
 }
+
 .hotel-room-text_per-day {
 	color: $dark-shade-050;
 	position: absolute;

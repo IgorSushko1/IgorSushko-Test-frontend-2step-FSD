@@ -7,10 +7,7 @@ $("#example_id").ionRangeSlider({
 	step: 250,
 	postfix: "₽"
 });
-// $(".irs-min").css({"color":"white",
-// "background":" white"});
-// $(".irs-max").css({"color":"white",
-// "background":" white"});
+
 $(".irs-min").remove();
 $(".irs-max").remove();
 $(".irs-single").css({
@@ -20,7 +17,9 @@ $(".irs-single").css({
 	"justify-content": "flex-end",
 	"font-weight": "600",
 });
+
 var amountOfMoney;
+
 $(".irs-single").on( function() {
 amountOfMoney = $(".irs-single").text()
 });

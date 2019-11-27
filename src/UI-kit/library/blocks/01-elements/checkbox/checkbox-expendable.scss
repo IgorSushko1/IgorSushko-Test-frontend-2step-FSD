@@ -4,38 +4,31 @@
 }
 
 .dropbtn {
-  background-color: white;
-  color: $dark-shade-075;
+	background-color: white;
+	color: $dark-shade-075;
 	cursor: pointer;
 	width: 266px;
 	height: 44px;
 	position: relative;
 	outline: none;
-	// border: 1px solid $dark-shade-075;
-	// border-radius: 6px 6px 0 0;
 	border: none;
 	padding: 0;
 }
 
-// .dropbtn:hover, .dropbtn:focus {
-//   // background-color: #2980B9;
-// }
-
 .dropdown {
-  position: relative;
-  display: inline-block;
+	position: relative;
+	display: inline-block;
 }
+
 #btn-icons {
 	position: absolute;
 	top: 12px;
 	right: 10px;
 	color: $dark-shade-100;
-	// justify-content: center;
 }
 
 .dropdown-content {
-  display: none;
-
+	display: none;
 }
 
 .show {
@@ -48,20 +41,17 @@
 	overflow: auto;
 	z-index: 1;
 	background: white;
-	// border-top: none;
-	// border-left: 1px solid $dark-shade-075;
-	// border-right: 1px solid $dark-shade-075;
-	// border-bottom: 1px solid $dark-shade-075;
-	// border-radius: 0 0 6px 6px;
 }
+
 .show label {
 	width: fit-content;
 }
+
 .checkbox-expendable-list-h3 {
 	text-align: left;
-	/* padding-left: 10px; */
 	letter-spacing: 0.0em;
 }
+
 .checkbox-expendable-margin {
 	margin-left: 15px;
 }

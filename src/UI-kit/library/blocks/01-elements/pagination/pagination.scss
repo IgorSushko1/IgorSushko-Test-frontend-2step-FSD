@@ -8,18 +8,16 @@
 	font-size: 12px;
 }
 
-#pagination-first-number {
+.pagination-first-number {
 	background: linear-gradient(180deg, rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
 	border-radius: 50%;
 	color: white;
-	// font-weight: bold;
 }
 
-#span-forward-icon {
+.span-forward-icon {
 	background: linear-gradient(180deg, #6FCF97, #66D2EA);
 	border-radius: 50%;
 	color: white;
-	// font-weight: bold;
 }
 
 .pagination-grid-item {

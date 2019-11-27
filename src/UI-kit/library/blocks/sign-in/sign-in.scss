@@ -3,9 +3,7 @@
 	height: 358px;
 	display: flex;
 	flex-direction: column;
-	// align-items: center;
 	justify-content: flex-start;
-	// background: #FFFFFF; - из-за этой настройки не видно бордеров кнопок сделанных псевдоэлементами
 	border: 1px solid rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -13,10 +11,12 @@
 	padding-left: 30px;
 	padding-right: 30px;
 }
+
 .sing-in-card-1 {
 	margin-top: 14px;
 	margin-left: -3px;
 }
+
 .sing-in-card-2 {
 	margin-top: 8px;
 	margin-left: -3px;
@@ -37,10 +37,12 @@
 	margin-left: -1px;
 	font-size: 24px;
 }
+
 .sing-in-card-button {
 	margin-top: 28px;
 	margin-left: -1px;
 }
+
 .sing-in-card-sing-up {
 	display: flex;
 	justify-content: space-between;
@@ -48,14 +50,13 @@
 	margin-top: 30px;
 	margin-left: -1px;
 }
+
 .sing-in-card-sing-up p{
 	font-size: 14px;
 	margin: 0;
 	letter-spacing: -0.0096rem;
 }
+
 .sing-in-card-sing-up .button-pill-empty {
 	height: 40px;
 }
-// .sing-in-card-sing-up.button-pill-empty::before {
-// 	height: 44px;
-// }

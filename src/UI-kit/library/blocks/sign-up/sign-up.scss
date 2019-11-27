@@ -4,7 +4,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	// background: #FFFFFF; - из-за этой настройки не видно бордеров кнопок сделанных псевдоэлементами
 	border: 1px solid rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -28,9 +27,11 @@
 	border-radius: 4px;
 	padding-left: 15px;
 }
+
 .sing-up-card-radio {
 	display: flex;
 }
+
 .sign-up-numbers-card-birthday {
 	height: 44px;
 	width: 320px;
@@ -41,10 +42,12 @@
 .sing-up-card-toggle {
 	margin-top: 10px;
 }
+
 .sing-up-card-button {
 	margin-top: 7px;
 	margin-left: -1px;
 }
+
 .sing-up-card-sing-in {
 	display: flex;
 	justify-content: space-between;
@@ -53,44 +56,55 @@
 	margin-left: -1px;
 	letter-spacing: -0.01rem;
 }
+
 .sing-up-card-sing-in p{
 	font-size: 14px;
 	margin: 0;
 }
+
 .sing-up-card-1 {
 	margin-top: 24px;
 	margin-left: -3px;
 }
+
 .sing-up-card-2 {
 	margin-top: 8px;
 	margin-left: -3px;
 }
+
 .sing-up-card-3 {
 	margin-top: 8px;
 	margin-left: -21px;
 }
+
 .sing-up-card-4 {
 	margin-top: 26px;
 }
+
 .sing-up-card-4 h3 {
 	margin-left: -1px;
 }
+
 .sing-up-card-4 input {
 	margin-top: 5px;
 }
+
 .sing-up-card-4 .sign-up-numbers-card-birthday {
 	height: 40px;
 	width: 303px;
 	margin-left: -1px;
 	padding-left: 15px;
 }
+
 .sing-up-card-5 {
 	margin-top: 20px;
 }
+
 .sing-up-card-5 h3{
 	margin-left: -1px;
     letter-spacing: 0.007em;
 }
+
 .sing-up-card-5 div{
 	MARGIN-TOP: 5px;
 	margin-left: -2px;

@@ -3,8 +3,6 @@
 	height: 374px;
 	display: flex;
 	flex-direction: column;
-	// align-items: center;
-	// justify-content: flex-start;
 	background: #FFFFFF;
 	border: 1px solid rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
@@ -13,21 +11,15 @@
 	padding-left: 30px;
 }
 
-.pick-up-numbers-card-arrival {
-	// margin-top: 20px;
-}
+// .pick-up-numbers-card-arrival {
+// 	// margin-top: 20px;
+// }
 .pick-up-numbers-card-arrival h3, .pick-up-numbers-card-quests h3{
 	margin-top: 21px;
 	margin-bottom: 6px;
 	font-family: "Montserrat-Bold", Arial, sans-serif;
 	margin-left: -1px;
 }
-// .pick-up-numbers-card-arrival-wid {
-// 	height: 39px;
-// 	width: 316px;
-// 	border-radius: 4px;
-// 	border: 1px solid rgba(0, 0, 0, 0.2);
-// }
 
 .pick-up-numbers-card-button {
 	margin-top: 30px;
@@ -35,18 +27,20 @@
 }
 
 .pick-up-numbers-card-title {
-	// margin-left: 30px;
 	margin-top: 39px;
 }
+
 .pick-up-numbers-card-title h2 {
 	line-height: 30px;
 	width: 266px;
 	font-family: "OpenSans-Bold", Arial, sans-serif;
 }
+
 .pick-up-dropdown {
 	width: 320px;
 	height: 44px;
 }
+
 .pick-up-numbers-card-input {
 	display: flex;
 	margin: 0;

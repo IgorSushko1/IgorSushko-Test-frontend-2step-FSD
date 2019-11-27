@@ -17,7 +17,7 @@ html
 		div
 			include /UI-kit/library/blocks/01-elements/fonts-list/fonts.pug
 		include UI-kit/library/blocks/01-elements/colors-example/colors-example.pug
-				//- +colors-example('Dark Shade 100%', '.dark-shade-100')
+
 		+article('Dark Shade 100%', "#1F2041")(class="rectangle dark-shade-100")
 		+article('Dark Shade 75%', "#1F2041")(class="rectangle dark-shade-075")
 		+article('Dark Shade 50%', "#1F2041")(class="rectangle dark-shade-050")
@@ -29,8 +29,7 @@ html
 		include UI-kit/library/blocks/01-elements/text-field/text-field.pug
 		+form-email("email", "Your email adress", "field name")(class="text-field-email")
 		+form-date("date", "", "masked text field")(class="text-field-date")
-		//- include UI-kit/library/blocks/01-elements/text-field/form-simple-mixin.pug
-		//- +form-name("email","Email", "email", "sing-up-card-form")
+
 		div
 			include /UI-kit/library/blocks/01-elements/dropdown/dropdown-subparagraph.pug
 			+dropdown-examples
@@ -38,7 +37,6 @@ html
 			+dropdown-room-comfort
 		div
 			include /UI-kit/library/blocks/01-elements/checkbox/checkbox-toggle.pug
-			//- +toggle-checkbox("работает?")
 		div
 			include /UI-kit/library/blocks/01-elements/checkbox/checkbox-buttons.pug
 			+checkbox-button_simple("Можно курить", "")
@@ -101,7 +99,6 @@ html
 			include /UI-kit/library/blocks/footer/footer-mobile.pug
 		div
 			include /UI-kit/library/blocks/pick-up-numbers/pick-up-numbers-card.pug
-			//- +pick-up-numbers
 		div
 			include /UI-kit/library/blocks/sign-up/sign-up.pug
 			+sign-up

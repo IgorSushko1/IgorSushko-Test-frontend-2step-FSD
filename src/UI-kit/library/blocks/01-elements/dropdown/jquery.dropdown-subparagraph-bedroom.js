@@ -7,7 +7,7 @@
 		selectionText: 'item',
 		textPlural: 'items',
 		uniteValue: false,
-		whichUnite: [0,0],
+		whichUnite: [0, 0],
 		// uniteTitle: [['nothing', 'still nothing', 'and again nothing']],
 		openingText: "Welocme!",
 		controls: {
@@ -35,74 +35,68 @@
 			let textForTotal = settings.openingText;
 
 			function getElementsName() {
-				
+
 
 				const block = $this.find('.iqdropdown-menu-option');
-				// block.css("border", "1px solid red");
-				// console.log(block);
+
 				const childBlock = block.find("span.counter");
-				// childBlock.css("border", "1px solid green");
 
 				const blockChild = block.find("p.iqdropdown-item");
-				// blockChild.css("border", "1px solid yellow");
+
 				const blockArray = blockChild.data();
 
-				// значения их text() выводится одной строкой(все значения сливаются), разделяю строку и помещаю её в массив
 				let countArray = [];
 				countArray.push(childBlock.text().split(""));
 
-				// Берет значение указанное в файле настроек, получает длину
 				let lengthOfDropdown = settings.textArrayForPlural.length;
 
-				// массив для создания значений объектов; а нужен ли он? Да, нужен! используется для получения длины списка!!!
 				let answerForTitle = [];
 
-				// здесь сравнение с длиной в настройках и получение длины со страницы, но зачем?) хз, уже написал....
 				for (let x = 0; x < lengthOfDropdown; x++) {
 
-					// в этом прекрасном цикле необходимо узнать число в поле
-					let value = countArray; // value равно массиву чисел счетчика,[0 , 0, 0]
+					let value = countArray;
 					let getNamesArray = settings.textArrayForPlural[x];
 					for (let y = 0; y < settings.numericLimitArrayForPlural.length; y++) {
 
-						//  берет число из ячейки и сравнивает его с числом в настройках
 						if (value[0][x] > settings.numericLimitArrayForPlural[y]) {
 							answerForTitle[x] = getNamesArray[y];
 						}
 					}
 				}
 
-				// в этой переменной складываются значения из тех ячеек, которые должны выводится одним полем
 				let uniteValues;
 
-				// проверяется условие, если true - значит поля надо объединять и выполняется этот код
 				if (settings.uniteValue) {
 
-					//  количество гостей, или количество любых других объединяемых предметов
 					uniteValues = Number(countArray[0][settings.whichUnite[0]]) + Number(countArray[0][settings.whichUnite[1]]);
 
-					// numericLimitArrayForPlural - в этом массиве хранятся числа, после которых в рксском языке
-					//  меняется падеж и окончание существительного во множественном числе
 					for (let x = 0; x < settings.numericLimitArrayForPlural.length; x++) {
-						if (uniteValues > settings.numericLimitArrayForPlural[x] && childBlock.text() !="000") {
+						if (uniteValues > settings.numericLimitArrayForPlural[x] && childBlock.text() != "000") {
 							textForTotal = "";
 							textForTotal = uniteValues + " " + settings.UniteTitle[0][x];
 						};
 					};
 					for (let i = 0; i < answerForTitle.length; i++) {
-						if ((i <settings.whichUnite[0] && countArray[0][i] != 0) || (i >settings.whichUnite[1] && countArray[0][i] != 0)) {
+						if ((i < settings.whichUnite[0] && countArray[0][i] != 0) || (i > settings.whichUnite[1] && countArray[0][i] != 0)) {
 							let coma;
-							if (uniteValues > 0) {coma = ", "} else {coma = ""; textForTotal=""};
+							if (uniteValues > 0) {
+								coma = ", "
+							} else {
+								coma = "";
+								textForTotal = ""
+							};
 							textForTotal = textForTotal + coma + countArray[0][i] + " " + answerForTitle[i];
 						}
 					}
 
-				} else {	
-					if (childBlock.text() != "000") {textForTotal = '';}
+				} else {
+					if (childBlock.text() != "000") {
+						textForTotal = '';
+					}
 					for (let i = 0; i < answerForTitle.length; i++) {
-						
+
 						if (countArray[0][i] > 0) {
-							
+
 							if (i == answerForTitle.length - 1) {
 								textForTotal += countArray[0][i] + " " + answerForTitle[i];
 							} else {

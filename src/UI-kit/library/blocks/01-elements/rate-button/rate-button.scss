@@ -1,22 +1,20 @@
 .rating {
-	// position: absolute;
-	// top: 50%;
-	// transform: translate(-50%, -50%);
 	transform: rotateY(180deg);
 	display: flex;
 	position: relative;
-	// left: -50%;
 }
+
 .rating input {
 	display: none;
 }
+
 .rating label {
 	display: block;
 	cursor: pointer;
 	width: 24px;
 	position: relative;
-	// background: #ccc;
 }
+
 .rating label:before {
 	font-family: "Material Icons";
 	content: "star_border";
@@ -38,10 +36,9 @@
 	opacity: 0;
 
 }
+
 .rating label:hover:after,
-.rating label:hover ~ label:after,
-.rating input:checked ~ label:after {
+.rating label:hover~label:after,
+.rating input:checked~label:after {
 	opacity: 1;
 }
-
-

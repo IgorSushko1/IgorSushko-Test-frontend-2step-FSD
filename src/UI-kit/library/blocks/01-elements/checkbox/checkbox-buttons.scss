@@ -13,6 +13,7 @@
 	user-select: none;
 	font-family: "Montserrat", Arial, sans-serif;
 }
+
 // прячу дефолтный чекбокс
 .checkbox-buttons_container input {
   position: absolute;
@@ -23,7 +24,6 @@
 }
 
 // создаю свой чекбокс
-
 .checkbox-buttons_checkmark {
   position: absolute;
   top: -2px;
@@ -33,6 +33,7 @@
 	background: $dark-shade-025;
 	border-radius: 4.5px;
 }
+
 .checkbox-buttons_checkmark-white {
   position: absolute;
   top: -1px;
@@ -46,12 +47,14 @@
 .checkbox-buttons_container input:checked ~ .checkbox-buttons_checkmark {
   background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
 }
+
 // создается индикатор выбора, здесь он неактивен, выключен и невидим
 .checkbox-buttons_checkmark:before, .checkbox-buttons_checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
+
 //  показывает индикатор если чекбокс выбран
 .checkbox-buttons_container input:checked ~ .checkbox-buttons_checkmark:after {
   display: block;
@@ -66,22 +69,19 @@
 	top: 6px;
 	width: 2px;
 	height: 7px;
-	// border: solid ;
 	background-image: linear-gradient(180deg, #BC9CFF, #8BA4F9);
-  // border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 .checkbox-buttons_container .checkbox-buttons_checkmark:before {
 	z-index: 110;
 	left: 7px;
 	top: 8px;
 	width: 2px;
 	height: 5px;
-	// border: solid ;
 	background-image: linear-gradient(180deg, #BC9CFF, #8BA4F9);
-  // border-width: 0 3px 3px 0;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
