@@ -12,12 +12,12 @@ module.exports = {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, './dist')
 	},
-	watch: true,
-	watchOptions: {
-		aggregateTimeout: 300,
-    poll: 1000,
-		// ignored: [node_modules, dist],
-	},
+	// watch: true,
+	// watchOptions: {
+	// 	aggregateTimeout: 300,
+	//   poll: 1000,
+	// 	// ignored: [node_modules, dist],
+	// },
 	module: {
 		rules: [{
 				test: /\.pug$/,
@@ -30,15 +30,17 @@ module.exports = {
 				}]
 			},
 			{
-				test: /\.scss$/,
+				test: /(\.css|\.scss)$/,
 				use: [
-					MiniCssExtractPlugin.loader,
+					'style-loader',
+					// MiniCssExtractPlugin.loader,
 					'css-loader',
 					'sass-loader'
 				]
 			},
 			{
-				test: /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/,
+				test: /\.(woff(2)?|ttf|eot|otf|svg)(\?v=\d+\.\d+\.\d+)?$/,
+				// loader: 'url'
 				loader: 'file-loader',
 				options: {
 					name: '[name].[ext]'
@@ -102,6 +104,9 @@ module.exports = {
 		}),
 		new MiniCssExtractPlugin({
 			filename: '[name].css',
+			options: {
+				hmr: process.env.NODE_ENV === 'development'
+			}
 		}),
 		new webpack.ProvidePlugin({
 			$: 'jquery',

@@ -7,8 +7,7 @@
   "scripts": {
     "prod": "webpack --config webpack.prod.js",
     "dev": "webpack --config webpack.dev.js",
-    "scss:dev": "webpack-dev-server",
-    "start:dev": "webpack-dev-server"
+    "dev:dev": "webpack-dev-server --watch --config webpack.dev.js  --mode development --hot --colors --progress"
   },
   "author": "Igor Sushko\\igor_sushko@yahoo.com",
   "license": "ISC",
@@ -38,7 +37,7 @@
     "url-loader": "^2.1.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0"
+    "webpack-dev-server": "^3.9.0"
   },
   "browserslist": [
     "defaults",
