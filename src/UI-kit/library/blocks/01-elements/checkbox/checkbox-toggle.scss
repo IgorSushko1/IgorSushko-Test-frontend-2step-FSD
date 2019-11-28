@@ -6,7 +6,7 @@
 	visibility: hidden;
 }
 
-#checkbox-background-gradient-pets, #checkbox-background-gradient-smoke, #checkbox-background-gradient-guests {
+.checkbox-background-gradient-pets, .checkbox-background-gradient-smoke, .checkbox-background-gradient-guests {
 	background: linear-gradient(180deg, $dark-shade-025, $dark-shade-025);
 	width: 40px;
 	height: 20px;

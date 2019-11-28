@@ -3,9 +3,9 @@ $(document).ready(function() {
 		multipleDates: true,
     onSelect: function (fd, dates, inst) {
 			var reg = /([0-9\.]+)\s([0-9\.]+)/g;
-        var $frst = $('#result-datepicker-first-date'),
+        var $frst = $('.result-datepicker-first-date'),
 						// string = 'Выбранные даты: ';
-						$secnd = $('#result-datepicker-second-date'),
+						$secnd = $('.result-datepicker-second-date'),
 						string = '';
 
         dates.forEach(function (date) {
