@@ -893,55 +893,55 @@ Build date: 2018-12-11 23:23:51
 
 @font-face {
   font-family: 'Quicksand';
-  src: url(Roboto-Regular.ttf) format("opentype");
+  src: url(Roboto-Regular.woff) format("woff"), url(Roboto-Regular.ttf) format("ttf"), url(Roboto-Regular.svg) format("svg");
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: 'Quicksand-Medium';
-  src: url(Quicksand-Medium.ttf) format("opentype");
+  src: url(Quicksand-Medium.woff) format("woff"), url(Quicksand-Medium.ttf) format("ttf"), url(Quicksand-Medium.svg) format("svg");
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: 'Quicksand-Regular';
-  src: url(Quicksand-Regular.ttf) format("opentype");
+  src: url(Quicksand-Regular.woff) format("woff"), url(Quicksand-Regular.ttf) format("ttf"), url(Quicksand-Regular.svg) format("svg");
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: 'Quicksand-Bold';
-  src: url(Quicksand-Bold.ttf) format("opentype");
+  src: url(Quicksand-Bold.woff) format("woff"), url(Quicksand-Bold.ttf) format("ttf"), url(Quicksand-Bold.svg) format("svg");
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: 'Quicksand-Medium';
-  src: url(Roboto-Medium.ttf) format("opentype");
+  src: url(Roboto-Medium.woff) format("woff"), url(Roboto-Medium.ttf) format("ttf"), url(Roboto-Medium.svg) format("svg");
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: 'OpenSans-Regular';
-  src: url(OpenSans-Regular.ttf) format("opentype");
+  src: url(open-sans-v17-cyrillic_latin-regular.woff) format("woff"), url(open-sans-v17-cyrillic_latin-regular.ttf) format("ttf"), url(open-sans-v17-cyrillic_latin-regular.svg) format("svg");
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: 'OpenSans-SemiBold';
-  src: url(OpenSans-SemiBold.ttf) format("opentype");
+  src: url(open-sans-v17-cyrillic_latin-600.woff) format("woff"), url(open-sans-v17-cyrillic_latin-600.ttf) format("ttf"), url(open-sans-v17-cyrillic_latin-600.svg) format("svg");
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: 'OpenSans-Bold';
-  src: url(OpenSans-Bold.ttf) format("opentype");
+  src: url(open-sans-v17-cyrillic_latin-700.woff) format("woff"), url(open-sans-v17-cyrillic_latin-700.ttf) format("ttf"), url(open-sans-v17-cyrillic_latin-700.svg) format("svg");
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: 'OpenSans-ExtraBold';
-  src: url(OpenSans-ExtraBold.ttf) format("opentype");
+  src: url(open-sans-v17-cyrillic_latin-800.woff) format("woff"), url(open-sans-v17-cyrillic_latin-800.ttf) format("ttf"), url(open-sans-v17-cyrillic_latin-800.svg) format("svg");
   font-style: normal;
   font-stretch: normal; }
 
@@ -1953,7 +1953,7 @@ input[type="date"]::-webkit-inner-spin-button {
   position: absolute;
   visibility: hidden; }
 
-#checkbox-background-gradient-pets, #checkbox-background-gradient-smoke, #checkbox-background-gradient-guests {
+.checkbox-background-gradient-pets, .checkbox-background-gradient-smoke, .checkbox-background-gradient-guests {
   background: linear-gradient(180deg, rgba(31, 32, 65, 0.25), rgba(31, 32, 65, 0.25));
   width: 40px;
   height: 20px;
@@ -2982,7 +2982,7 @@ input[type="date"]::-webkit-inner-spin-button {
   left: -6px;
   top: 35px; }
 
-#result-datepicker-first-date {
+.result-datepicker-first-date {
   width: 148px;
   height: 42px;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -2991,7 +2991,7 @@ input[type="date"]::-webkit-inner-spin-button {
   top: -17px;
   left: -8px; }
 
-#result-datepicker-second-date {
+.result-datepicker-second-date {
   width: 148px;
   height: 42px;
   border: 1px solid rgba(31, 32, 65, 0.25);
