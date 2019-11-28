@@ -869,25 +869,25 @@ Build date: 2018-12-11 23:23:51
 @charset "UTF-8";
 @font-face {
   font-family: 'Montserrat';
-  src: url(Montserrat-Regular.ttf) format("opentype");
+  src: url(Montserrat-Regular.woff) format("woff"), url(Montserrat-Regular.ttf) format("ttf"), url(Montserrat-Regular.svg) format("svg");
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: 'Montserrat-Bold';
-  src: url(Montserrat-Bold.otf) format("opentype");
+  src: url(Montserrat-Bold.woff) format("woff"), url(Montserrat-Bold.ttf) format("ttf"), url(Montserrat-Bold.svg) format("svg");
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: 'Montserrat-Medium';
-  src: url(Montserrat-Medium.woff2) format("woff2");
+  src: url(Montserrat-Medium.woff) format("woff"), url(Montserrat-Medium.ttf) format("ttf"), url(Montserrat-Medium.svg) format("svg");
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: 'Montserrat-SemiBold';
-  src: url(Montserrat-SemiBold.otf) format("opentype");
+  src: url(Montserrat-SemiBold.woff) format("woff"), url(Montserrat-SemiBold.ttf) format("ttf"), url(Montserrat-SemiBold.svg) format("svg");
   font-style: normal;
   font-stretch: normal; }
 
@@ -1049,7 +1049,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);
   opacity: 1;
   display: block;
-  background: url(imgs/baseline-keyboard_arrow_down-24px.svg) no-repeat;
+  background: url(baseline-keyboard_arrow_down-24px.svg) no-repeat;
   border-width: thin;
   font-size: 24px; }
 
