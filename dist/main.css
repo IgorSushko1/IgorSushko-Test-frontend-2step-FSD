@@ -2623,7 +2623,7 @@ input[type="date"]::-webkit-inner-spin-button {
   position: relative;
   max-width: 266px; }
 
-.dropbtn {
+.dropdown-dropbtn {
   background-color: white;
   color: rgba(31, 32, 65, 0.75);
   cursor: pointer;
@@ -2638,7 +2638,7 @@ input[type="date"]::-webkit-inner-spin-button {
   position: relative;
   display: inline-block; }
 
-#btn-icons {
+.dropdown-btn-icons {
   position: absolute;
   top: 12px;
   right: 10px;
@@ -2647,7 +2647,7 @@ input[type="date"]::-webkit-inner-spin-button {
 .dropdown-content {
   display: none; }
 
-.show {
+.dropdown-show {
   padding-top: 15px;
   display: block;
   top: 44px;
@@ -2658,7 +2658,7 @@ input[type="date"]::-webkit-inner-spin-button {
   z-index: 1;
   background: white; }
 
-.show label {
+.dropdown-show label {
   width: fit-content; }
 
 .checkbox-expendable-list-h3 {

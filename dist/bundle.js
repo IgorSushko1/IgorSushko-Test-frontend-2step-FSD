@@ -138,7 +138,7 @@ eval("/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("function foo(){\r\n\tvar elem = document.getElementById(\"dropdownCheckboxes\");\r\n\telem.classList.toggle(\"show\");\r\n\tif (document.getElementById(\"btn-icons\")) {\r\n\t\tvar icon = document.getElementById(\"btn-icons\");\r\n\t\tif (icon.innerHTML == \"keyboard_arrow_up\") {icon.innerHTML = \"keyboard_arrow_down\";}\r\n\t\telse {icon.innerHTML = \"keyboard_arrow_up\";}\r\n\t}\r\n\r\n}\r\nif (document.getElementById(\"myDropdown007\")){\r\n\tdocument.getElementById(\"myDropdown007\").addEventListener(\"click\", foo);\r\n}\r\n\n\n//# sourceURL=webpack:///./src/UI-kit/library/blocks/01-elements/checkbox/checkbox-expendable.js?");
+eval("function foo(){\r\n\tvar elem = document.querySelectorAll(\".dropdownCheckboxes\")[0];\r\n\telem.classList.toggle(\"dropdown-show\");\r\n\tif (document.querySelectorAll(\".dropdown-btn-icons\")[0]) {\r\n\t\tvar icon = document.querySelectorAll(\".dropdown-btn-icons\")[0];\r\n\t\tif (icon.innerHTML == \"keyboard_arrow_up\") {icon.innerHTML = \"keyboard_arrow_down\";}\r\n\t\telse {icon.innerHTML = \"keyboard_arrow_up\";}\r\n\t}\r\n\r\n}\r\nif (document.querySelectorAll(\".myDropdown007\")[0]){\r\n\tdocument.querySelectorAll(\".myDropdown007\")[0].addEventListener(\"click\", foo);\r\n}\r\n\n\n//# sourceURL=webpack:///./src/UI-kit/library/blocks/01-elements/checkbox/checkbox-expendable.js?");
 
 /***/ }),
 

@@ -3,7 +3,7 @@
 	max-width: 266px;
 }
 
-.dropbtn {
+.dropdown-dropbtn {
 	background-color: white;
 	color: $dark-shade-075;
 	cursor: pointer;
@@ -20,7 +20,7 @@
 	display: inline-block;
 }
 
-#btn-icons {
+.dropdown-btn-icons {
 	position: absolute;
 	top: 12px;
 	right: 10px;
@@ -31,7 +31,7 @@
 	display: none;
 }
 
-.show {
+.dropdown-show {
 	padding-top: 15px;
 	display: block;
 	top: 44px;
@@ -43,7 +43,7 @@
 	background: white;
 }
 
-.show label {
+.dropdown-show label {
 	width: fit-content;
 }
 
