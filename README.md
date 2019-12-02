@@ -3,6 +3,8 @@
 
 В папке "page images" лежат .png с макетами страниц для удобства проверки PerfectPixel
 
+Клонирование проекта `git clone https://github.com/IgorSushko1/IgorSushko-Test-frontend-2step-FSD`
+
 Установка `npm install`.
 
 Запуск версии для разработки с webpack dev server `npm run dev:dev`.
