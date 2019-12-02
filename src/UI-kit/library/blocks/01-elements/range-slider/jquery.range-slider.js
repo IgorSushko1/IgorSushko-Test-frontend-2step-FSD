@@ -1,4 +1,4 @@
-$("#example_id").ionRangeSlider({
+$(".slider_range-slider").ionRangeSlider({
 	type: "double",
 	min: 0,
   max: 15000,
@@ -23,5 +23,3 @@ var amountOfMoney;
 $(".irs-single").on( function() {
 amountOfMoney = $(".irs-single").text()
 });
-
-console.log(amountOfMoney);

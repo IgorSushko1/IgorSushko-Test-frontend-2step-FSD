@@ -23,7 +23,7 @@ $(document).ready(() => {
 	$('.second-iqdropdown').iqDropdown({
 		maxItems: 9,
 		minItems: 1,
-			selectionText: 'item',
+		selectionText: 'item',
 		textPlural: 'Гости',
 		textArrayForPlural: [
 			['Взрослый', 'Взрослых', 'Взрослых'],
