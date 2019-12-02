@@ -66,7 +66,6 @@ Build date: 2018-12-11 23:23:51
 .irs-from,
 .irs-to,
 .irs-single {
-	/* position: ; */
 	display: block;
 	top: 0;
 	left: 0;
@@ -106,8 +105,6 @@ Build date: 2018-12-11 23:23:51
 	left: 0;
 	white-space: nowrap;
 	text-align: center;
-	/* font-size: 9px; */
-	/* line-height: 9px; */
 	padding: 0 3px;
 	color: #000;
 }
@@ -164,7 +161,6 @@ Build date: 2018-12-11 23:23:51
 .irs--flat .irs-line {
 	top: 68px;
 	height: 4px;
-	/* background-color: #e1e4e9; */
 	border-radius: 6px;
 	border: 1px solid rgba(31, 32, 65, 0.25);
 	transform-box: view-box;
@@ -173,8 +169,6 @@ Build date: 2018-12-11 23:23:51
 .irs--flat .irs-bar {
 	top: 69px;
 	height: 6px;
-	/* left: 5px;
-	right: 10px; */
 	background: linear-gradient(180deg, #6FCF97, #66D2EA);
 }
 
@@ -217,39 +211,12 @@ Build date: 2018-12-11 23:23:51
 	top: 0;
 	padding: 1px 3px;
 	color: #999;
-	/* font-size: 10px; */
 	line-height: 1.333;
 	text-shadow: none;
 	background-color: #e1e4e9;
 	border-radius: 4px;
 }
 
-/* .irs--flat .irs-from,
-.irs--flat .irs-to,
-.irs--flat .irs-single {
-  color: rgba(31, 32, 65, 0.5);
-  font-size: 12px;
-  line-height: 1.333;
-  text-shadow: none;
-  padding: 1px 5px;
-  background-color: #ed5565;
-  border-radius: 4px;
-} */
-/* .irs--flat .irs-from:before,
-.irs--flat .irs-to:before,
-.irs--flat .irs-single:before {
-  position: absolute;
-  display: block;
-  content: "";
-  bottom: -6px;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -3px;
-  overflow: hidden; */
-/* border: 3px solid transparent; */
-/* border-top-color: #ed5565; */
-/* } */
 .irs--flat .irs-grid-pol {
 	background-color: #e1e4e9;
 }
@@ -443,7 +410,6 @@ Build date: 2018-12-11 23:23:51
 .irs--modern .irs-min,
 .irs--modern .irs-max {
 	top: 0;
-	/* font-size: 10px; */
 	line-height: 1.333;
 	text-shadow: none;
 	padding: 1px 5px;
@@ -455,7 +421,6 @@ Build date: 2018-12-11 23:23:51
 .irs--modern .irs-from,
 .irs--modern .irs-to,
 .irs--modern .irs-single {
-	/* font-size: 10px; */
 	line-height: 1.333;
 	text-shadow: none;
 	padding: 1px 5px;
@@ -490,12 +455,10 @@ Build date: 2018-12-11 23:23:51
 
 .irs--modern .irs-grid-text {
 	color: silver;
-	/* font-size: 13px; */
 }
 
 .irs--sharp {
 	height: 50px;
-	/* font-size: 12px; */
 	line-height: 1;
 }
 
@@ -557,7 +520,6 @@ Build date: 2018-12-11 23:23:51
 .irs--sharp .irs-min,
 .irs--sharp .irs-max {
 	color: white;
-	/* font-size: 14px; */
 	line-height: 1;
 	top: 0;
 	padding: 3px 4px;
@@ -569,7 +531,6 @@ Build date: 2018-12-11 23:23:51
 .irs--sharp .irs-from,
 .irs--sharp .irs-to,
 .irs--sharp .irs-single {
-	/* font-size: 14px; */
 	line-height: 1;
 	text-shadow: none;
 	padding: 3px 4px;
@@ -604,7 +565,6 @@ Build date: 2018-12-11 23:23:51
 
 .irs--sharp .irs-grid-text {
 	color: silver;
-	/* font-size: 13px; */
 }
 
 .irs--round {
@@ -656,7 +616,6 @@ Build date: 2018-12-11 23:23:51
 .irs--round .irs-min,
 .irs--round .irs-max {
 	color: #333;
-	/* font-size: 14px; */
 	line-height: 1;
 	top: 0;
 	padding: 3px 5px;
@@ -667,7 +626,6 @@ Build date: 2018-12-11 23:23:51
 .irs--round .irs-from,
 .irs--round .irs-to,
 .irs--round .irs-single {
-	/* font-size: 14px; */
 	line-height: 1;
 	text-shadow: none;
 	padding: 3px 5px;
@@ -702,7 +660,6 @@ Build date: 2018-12-11 23:23:51
 
 .irs--round .irs-grid-text {
 	color: silver;
-	/* font-size: 13px; */
 }
 
 .irs--square {
@@ -750,7 +707,6 @@ Build date: 2018-12-11 23:23:51
 .irs--square .irs-min,
 .irs--square .irs-max {
 	color: #333;
-	/* font-size: 14px; */
 	line-height: 1;
 	top: 0;
 	padding: 3px 5px;
@@ -760,7 +716,6 @@ Build date: 2018-12-11 23:23:51
 .irs--square .irs-from,
 .irs--square .irs-to,
 .irs--square .irs-single {
-	/* font-size: 14px; */
 	line-height: 1;
 	text-shadow: none;
 	padding: 3px 5px;
@@ -778,7 +733,6 @@ Build date: 2018-12-11 23:23:51
 
 .irs--square .irs-grid-text {
 	color: silver;
-	/* font-size: 11px; */
 }
 
 .irs-handle.from::before {
