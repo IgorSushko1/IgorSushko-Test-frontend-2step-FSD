@@ -6,7 +6,7 @@
 		textPlural: 'items',
 		uniteValue: false,
 		whichUnite: [0, 0],
-		openingText: 'Welocme!',
+		openingText: "Welocme!",
 		controls: {
 			position: 'right',
 			displayCls: 'iqdropdown-content',
@@ -36,14 +36,14 @@
 
 				const block = $this.find('.iqdropdown-menu-option');
 
-				const childBlock = block.find('span.counter');
+				const childBlock = block.find("span.counter");
 
-				const blockChild = block.find('p.iqdropdown-item');
+				const blockChild = block.find("p.iqdropdown-item");
 
 				const blockArray = blockChild.data();
 
 				let countArray = [];
-				countArray.push(childBlock.text().split(''));
+				countArray.push(childBlock.text().split(""));
 
 				let lengthOfDropdown = settings.textArrayForPlural.length;
 
@@ -68,26 +68,26 @@
 					uniteValues = Number(countArray[0][settings.whichUnite[0]]) + Number(countArray[0][settings.whichUnite[1]]);
 
 					for (let x = 0; x < settings.numericLimitArrayForPlural.length; x++) {
-						if (uniteValues > settings.numericLimitArrayForPlural[x] && childBlock.text() != '000') {
-							textForTotal = '';
-							textForTotal = uniteValues + ' ' + settings.UniteTitle[0][x];
+						if (uniteValues > settings.numericLimitArrayForPlural[x] && childBlock.text() != "000") {
+							textForTotal = "";
+							textForTotal = uniteValues + " " + settings.UniteTitle[0][x];
 						};
 					};
 					for (let i = 0; i < answerForTitle.length; i++) {
 						if ((i < settings.whichUnite[0] && countArray[0][i] != 0) || (i > settings.whichUnite[1] && countArray[0][i] != 0)) {
 							let coma;
 							if (uniteValues > 0) {
-								coma = ', '
+								coma = ", "
 							} else {
-								coma = '';
-								textForTotal = ''
+								coma = "";
+								textForTotal = ""
 							};
-							textForTotal = textForTotal + coma + countArray[0][i] + ' ' + answerForTitle[i];
+							textForTotal = textForTotal + coma + countArray[0][i] + " " + answerForTitle[i];
 						}
 					}
 
 				} else {
-					if (childBlock.text() != '000') {
+					if (childBlock.text() != "000") {
 						textForTotal = '';
 					}
 					for (let i = 0; i < answerForTitle.length; i++) {
@@ -95,9 +95,9 @@
 						if (countArray[0][i] > 0) {
 
 							if (i == answerForTitle.length - 1) {
-								textForTotal += countArray[0][i] + ' ' + answerForTitle[i];
+								textForTotal += countArray[0][i] + " " + answerForTitle[i];
 							} else {
-								textForTotal += countArray[0][i] + ' ' + answerForTitle[i] + ', ';
+								textForTotal += countArray[0][i] + " " + answerForTitle[i] + ", ";
 							}
 						}
 					}
@@ -124,13 +124,13 @@
 			function addControls(id, $item) {
 				const $controls = $('<div />').addClass(settings.controls.controlsCls);
 				const $decrementButton = $(`
-          <button class='button-decrement'>
-            <i class='icon-decrement'>-</i>
+          <button class="button-decrement">
+            <i class="icon-decrement">-</i>
           </button>
         `);
 				const $incrementButton = $(`
-          <button class='button-increment'>
-            <i class='icon-decrement icon-increment'>+</i>
+          <button class="button-increment">
+            <i class="icon-decrement icon-increment">+</i>
           </button>
         `);
 				const $counter = $(`<span>${itemCount[id]}</span>`).addClass(settings.controls.counterCls);
