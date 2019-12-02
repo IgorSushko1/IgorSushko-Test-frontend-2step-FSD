@@ -699,7 +699,7 @@
 .datepicker--time-current-minutes {
 	line-height: 1;
 	font-size: 19px;
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	position: relative;
 	z-index: 1;
 }
@@ -965,7 +965,7 @@
 
 
 .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::before {
-	content: "";
+	content: '';
 	position: absolute;
 	left: 50%;
 	border: none;
@@ -977,7 +977,7 @@
 }
 
 .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after {
-	content: "";
+	content: '';
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
@@ -987,7 +987,7 @@
 }
 
 .datepicker--cell.datepicker--cell-day.-range-from-.-focus-::before {
-	content: "";
+	content: '';
 	position: absolute;
 	left: 50%;
 	border: none;
@@ -1001,7 +1001,7 @@
 }
 
 .datepicker--cell.datepicker--cell-day.-range-from-.-focus-::after {
-	content: "";
+	content: '';
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(180deg, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
@@ -1011,7 +1011,7 @@
 }
 
 .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before {
-	content: "";
+	content: '';
 	position: absolute;
 	left: 0;
 	border: none;
@@ -1023,7 +1023,7 @@
 }
 
 .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::after {
-	content: "";
+	content: '';
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
@@ -1033,7 +1033,7 @@
 }
 
 .datepicker--cell.datepicker--cell-day.-range-to-.-focus-::before {
-	content: "";
+	content: '';
 	position: absolute;
 	left: 0;
 	border: none;
@@ -1047,7 +1047,7 @@
 }
 
 .datepicker--cell.datepicker--cell-day.-range-to-.-focus-::after {
-	content: "";
+	content: '';
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(180deg, #BC9CFF, #8BA4F9);

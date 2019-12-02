@@ -15,7 +15,7 @@ $(document).ready(() => {
 		UniteTitle: [
 			['Гость', 'Гостя', 'Гостей']
 		],
-		openingText: "2 спальни, 2 кровати"
+		openingText: '2 спальни, 2 кровати'
 	});
 });
 
@@ -36,7 +36,7 @@ $(document).ready(() => {
 		UniteTitle: [
 			['Гость', 'Гостя', 'Гостей']
 		],
-		openingText: "Сколько гостей"
+		openingText: 'Сколько гостей'
 	});
 });
 
@@ -57,6 +57,6 @@ $(document).ready(() => {
 		UniteTitle: [
 			['Ребенок или младенец', 'Детя', 'Детей']
 		],
-		openingText: "Сколько гостей"
+		openingText: 'Сколько гостей'
 	});
 });
