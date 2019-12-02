@@ -1,11 +1,8 @@
 $(document).ready(() => {
 	$('.first-iqdropdown').iqDropdown({
 		maxItems: 10,
-		// min total items
 		minItems: 1,
-		// text to show on the dropdown
 		selectionText: 'item',
-		// text to show for multiple items
 		textPlural: 'items',
 		textArrayForPlural: [
 			['Спальня', 'Спальни', 'Спален'],
@@ -25,11 +22,8 @@ $(document).ready(() => {
 $(document).ready(() => {
 	$('.second-iqdropdown').iqDropdown({
 		maxItems: 9,
-		// min total items
 		minItems: 1,
-		// text to show on the dropdown
-		selectionText: 'item',
-		// text to show for multiple items
+			selectionText: 'item',
 		textPlural: 'Гости',
 		textArrayForPlural: [
 			['Взрослый', 'Взрослых', 'Взрослых'],
@@ -49,11 +43,8 @@ $(document).ready(() => {
 $(document).ready(() => {
 	$('.third-iqdropdown').iqDropdown({
 		maxItems: 9,
-		// min total items
 		minItems: 1,
-		// text to show on the dropdown
 		selectionText: 'item',
-		// text to show for multiple items
 		textPlural: 'Дети и младенцы',
 		textArrayForPlural: [
 			['Взрослый', 'Взрослых', 'Взрослых'],

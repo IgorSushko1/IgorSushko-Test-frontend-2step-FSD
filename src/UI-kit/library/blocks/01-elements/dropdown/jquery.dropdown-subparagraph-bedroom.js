@@ -1,5 +1,3 @@
-//# sourceMappingURL=item-quantity-dropdown.min.js.map
-
 (function ($) {
 	const defaults = {
 		maxItems: Infinity,
@@ -8,7 +6,6 @@
 		textPlural: 'items',
 		uniteValue: false,
 		whichUnite: [0, 0],
-		// uniteTitle: [['nothing', 'still nothing', 'and again nothing']],
 		openingText: "Welocme!",
 		controls: {
 			position: 'right',
@@ -110,9 +107,7 @@
 			function updateDisplay() {
 				const usePlural = totalItems !== 1 && settings.textPlural.length > 0;
 				const text = usePlural ? settings.textPlural : settings.selectionText;
-				// $selection.html(`${totalItems} ${text}`);
 				getElementsName();
-				// console.log($selectsItem);
 				$selection.html(`${textForTotal}`);
 			}
 

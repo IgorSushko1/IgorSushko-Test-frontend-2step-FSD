@@ -71,14 +71,14 @@
 	font-size: 13px;
 }
 
-.booking-calendar-arrival h3{
+.booking-calendar-arrival h3 {
 	margin-top: 23px;
 	margin-bottom: 5px;
 	font-family: "Montserrat-Bold", Arial, sans-serif;
 	margin-left: -1px;
 }
 
-.booking-guests h3{
+.booking-guests h3 {
 	font-family: "Montserrat-Bold", Arial, sans-serif;
 	margin-left: -1px;
 	margin-top: 23px;
@@ -102,22 +102,22 @@
 	top: 35px;
 }
 
-.booking-title > div{
+.booking-title>div {
 	display: flex;
 	align-items: flex-end;
 }
 
-.booking-title > div h3{
+.booking-title>div h3 {
 	color: $purple;
 }
 
-.booking-title > div p{
+.booking-title>div p {
 	margin: 0;
 	padding: 0;
 	color: $dark-shade-075;
 }
 
-.booking-title > div span{
+.booking-title>div span {
 	margin: 0;
 	padding: 0;
 	color: $dark-shade-025;
@@ -137,23 +137,22 @@
 	margin-top: 20px;
 }
 
-.booking-text div span{
+.booking-text div span {
 	max-width: 215px;
 	display: inline-flex;
 	color: $dark-shade-050;
 }
 
 .booking-icon {
-color: $dark-shade-025;
-transform: rotate(180deg);
-position: absolute;
-top: -4px;
-right: 78px;
+	color: $dark-shade-025;
+	transform: rotate(180deg);
+	position: absolute;
+	top: -4px;
+	right: 78px;
 }
 
 .booking-text-grid-end-position {
 	justify-self: end;
-	// align-self: center;
 }
 
 .booking-grid-item {
@@ -190,13 +189,15 @@ right: 78px;
 	margin-right: -1px;
 }
 
-.booking-text-total-border{
+.booking-text-total-border {
 	border-bottom: 1px dotted $dark-shade-050;
 	position: relative;
 	top: -4px;
 }
 
- .booking-text-total_price {justify-self: end;
-    font-family: "Montserrat-Bold", Arial, sans-serif;
-    font-size: 18px;
-    transform: SCALEX(0.9);}
+.booking-text-total_price {
+	justify-self: end;
+	font-family: "Montserrat-Bold", Arial, sans-serif;
+	font-size: 18px;
+	transform: SCALEX(0.9);
+}
