@@ -3,7 +3,7 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-
+const globImporter = require('node-sass-glob-importer');
 
 module.exports = {
 	mode: 'development',
@@ -12,12 +12,6 @@ module.exports = {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, './dist')
 	},
-	// watch: true,
-	// watchOptions: {
-	// 	aggregateTimeout: 300,
-	//   poll: 1000,
-	// 	// ignored: [node_modules, dist],
-	// },
 	module: {
 		rules: [{
 				test: /\.pug$/,
@@ -32,10 +26,21 @@ module.exports = {
 			{
 				test: /(\.css|\.scss)$/,
 				use: [
-					'style-loader',
-					MiniCssExtractPlugin.loader,
-					'css-loader',
-					'sass-loader'
+					{
+						loader: 'style-loader'
+					},
+					{
+						loader: MiniCssExtractPlugin.loader
+					},
+					{
+						loader: 'css-loader'
+					},
+					{
+						loader: 'sass-loader',
+						options: {
+							importer: globImporter()
+						}
+					}
 				]
 			},
 			{
@@ -68,9 +73,6 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			// title: "Ui-kit",
-			// hash: true,
-			// alwaysWriteToDisk: true,
 			filename: "index.html",
 			template: './src/index.pug'
 		}),

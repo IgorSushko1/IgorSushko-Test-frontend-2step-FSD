@@ -1,4 +1,4 @@
-$(".slider_range-slider").ionRangeSlider({
+$(".slider-range-slider").ionRangeSlider({
 	type: "double",
 	min: 0,
   max: 15000,
