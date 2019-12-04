@@ -1,0 +1,6 @@
+mixin bullet-list(title, colors ,...text)
+	h3= title
+	ul.bullet-list
+		each item in text
+			li.bullet-list_disc
+			li(style=`color: ${colors}`)= item

@@ -1,13 +1,13 @@
 import './style.scss';
 
-require ("./UI-kit/library/blocks/01-elements/checkbox/jquery.checkbox-toggle");
-require ("./UI-kit/library/blocks/01-elements/text-field/text-field_calendar");
-require ("./UI-kit/library/blocks/01-elements/text-field/datepicker");
+require("./components/elements/checkbox-toggle/jquery.checkbox-toggle");
+require("./components/elements/text-field/text-field_calendar");
+require("./components/elements/text-field/datepicker");
 
-require ("./UI-kit/library/blocks/01-elements/range-slider/ion.rangeSlider");
-require ("./UI-kit/library/blocks/01-elements/range-slider/jquery.range-slider");
+require("./vendor/range-slider/ion.rangeSlider");
+require("./vendor/range-slider/jquery.range-slider");
 
-require("./UI-kit/library/blocks/01-elements/checkbox/checkbox-expendable");
+require("./components/elements/checkbox-expendable/checkbox-expendable");
 
-require ("./UI-kit/library/blocks/01-elements/dropdown/dropdown-start-script");
-require ("./UI-kit/library/blocks/01-elements/dropdown/jquery.dropdown-subparagraph-bedroom");
+require("./components/elements/dropdown/dropdown-start-script");
+require("./components/elements/dropdown/jquery.dropdown-subparagraph-bedroom");

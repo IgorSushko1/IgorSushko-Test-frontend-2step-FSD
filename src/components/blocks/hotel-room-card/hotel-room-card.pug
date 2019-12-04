@@ -1,0 +1,36 @@
+include ../components/elements/rate-button/rate-button.pug
+
+mixin room-card(imgName, numberOfStars, roomNumber, price, lux, review)
+	.hotel-room-card
+		img(src=imgName, alt="" )
+		.hotel-room-circle
+			div
+			div
+			div
+			div
+		.hotel-room-text
+			div.hotel-room-text-first-field
+				if (lux == "lux")
+					h3.hotel-room-text_symbol №
+					h2.hotel-room-text_number= roomNumber
+					h3.hotel-room-text-lux люкс
+				else
+					h3.hotel-room-text_symbol №
+					h2.hotel-room-text_number= roomNumber
+			div
+				p.hotel-room-text_price= price
+				span.hotel-room-text_per-day в сутки
+		.hotel-room-raiting
+			if (numberOfStars == 1)
+				+star-rating-first-checked("1star1", "1star2", "1star3", "1star4", "1star5")
+			if (numberOfStars == 2)
+				+star-rating-second-checked("2star1", "2star2", "2star3", "2star4", "2star5")
+			if (numberOfStars == 3)
+				+star-rating-third-checked("3star1", "3star2", "3star3", "3star4", "3star5")
+			if (numberOfStars == 4)
+				+star-rating-fourth-checked("4star1", "4star2", "4star3", "4star4", "4star5")
+			if (numberOfStars == 5)
+				+star-rating-fifth-checked("5star1", "5star2", "5star3", "5star4", "5star5")
+			.hotel-room-raiting-review
+				h3= review
+				span Отзывов

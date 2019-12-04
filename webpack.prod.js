@@ -103,7 +103,7 @@ module.exports = {
 			'window.jQuery': 'jquery',
 		}),
 		new CopyWebpackPlugin([{
-			from: "./src/UI-kit/pic/",
+			from: "./src/assets/images/",
 			to: "./imgs"
 		}])
 	]

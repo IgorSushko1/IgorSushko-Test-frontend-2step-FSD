@@ -1,0 +1,16 @@
+include ../../elements/text-field/text-field.pug
+include ../../elements/button-pill_empty/button-pill_empty.pug
+include ../../elements/button-pill_full_arrow/button-pill_full-with-arrow.pug
+
+mixin sign-in
+	.sing-in-card
+		h2.sing-in-card-title Войти
+		div.sing-in-card-1
+			+form-name("email","Email", "email-sign-in", "sing-in-card-form")
+		div.sing-in-card-2
+			+form-name("text","Пароль", "password-sign-in", "sing-in-card-form")
+		.sing-in-card-button
+				+button-fill-arrow("Войти")
+		.sing-in-card-sing-up
+			p Нет аккаунта на Toxin?
+			+button-pill_empty-44("Создать")

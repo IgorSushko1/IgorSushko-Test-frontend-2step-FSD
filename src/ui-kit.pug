@@ -1,0 +1,114 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		title My app
+
+	body
+		main
+			button#load1 нажми здесь!
+			div#load2 просто текст
+			a(href="#") ссылка на что-то очень  важное
+			h1.test-webpack-loader Pug rules
+			div.elf Здесь должны быть поля
+			h2 Hello!
+		div
+			include ./components/elements/fonts-list/fonts.pug
+		include ./components/elements/colors-example/colors-example.pug
+
+		+article('Dark Shade 100%', "#1F2041")(class="rectangle dark-shade-100")
+		+article('Dark Shade 75%', "#1F2041")(class="rectangle dark-shade-075")
+		+article('Dark Shade 50%', "#1F2041")(class="rectangle dark-shade-050")
+		+article('Dark Shade 25%', "#1F2041")(class="rectangle dark-shade-025")
+		+article('Dark Shade 5%', "#1F2041")(class="rectangle dark-shade-005")
+		+article('Purple', "#BC9CFF")(class="rectangle purple")
+		+article('Green', "#6FCF97")(class="rectangle green")
+
+		include ./components/elements/text-field/text-field.pug
+		+form-email("email", "Your email adress", "field name")(class="text-field-email")
+		+form-date("date", "", "masked text field")(class="text-field-date")
+
+		div
+			include ./components/elements/dropdown/dropdown-subparagraph.pug
+			+dropdown-examples
+			+dropdown-people
+			+dropdown-room-comfort
+		div
+			include ./components/elements/checkbox-toggle/checkbox-toggle.pug
+		div
+			include ./components/elements/checkbox-button/checkbox-buttons.pug
+			+checkbox-button_simple("Можно курить", "")
+			+checkbox-button_simple("Можно с питомцами", checked)
+			+checkbox-button_simple("Можно пригласить гостей (до 10 человек)", checked)
+		div
+			include ./components/elements/checkbox-radio/checkbox-radio.pug
+			+radio-buttons
+		div
+			include ./components/elements/rate-button/rate-button.pug
+			+star-rating-fourth-checked("class1", "class2", "class3", "class4", "class5")
+		div
+			include ./components/elements/button-pill_full/button-pill_full.pug
+			+button-pill_full("REGISTER")
+		div
+			include ./components/elements/button-pill_empty/button-pill_empty.pug
+			+button-pill_empty("REGISTER")
+		div
+			include ./components/elements/button-text/button-text.pug
+		div
+			include ./components/elements/button-pill_full_arrow/button-pill_full-with-arrow.pug
+		+button-fill-arrow("CLICK ME")
+		div
+			include ./components/elements/like-buttons/like-buttons.pug
+		div
+			include ./components/elements/text-field/text-field_calendar copy.pug
+		div
+			include ./vendor/range-slider/range-slider.pug
+			+range-slider
+		div
+			include ./components/elements/dropdown/dropdown-subparagraph.pug
+		div
+			include ./components/elements/checkbox-expendable/checkbox-expendable.pug
+			+checkbox-expendable
+		div
+			include ./components/elements/pagination/pagination.pug
+			+pagination
+		div
+			include ./components/elements/checkbox-rich-buttons/rich-checkbox-button.pug
+			+checkbox-rich
+		div
+			include ./components/elements/bullet-list/bullet-list.pug
+			+bullet-list("bullet list", "grey" ,"Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, выезд до 12:00")
+		div
+			include ./components/elements/icon-advantages/icon-advantages.pug
+			+icon-advantages
+		div
+			include ./components/elements/comments/comments.pug
+			+comments("./assets/images/murad-true.png", "Мурад Сарафанов", "5 дней назад", "12", "checked", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+			+comments("./assets/images/girl image.png", "Патрисия Стёклышкова", "Неделю назад", "2", "", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
+		div
+			include ./components/blocks/header/header.pug
+			+header
+		div
+			include ./components/blocks/header/header-login.pug
+		div
+			include ./components/blocks/footer/footer.pug
+			+footer
+		div
+			include ./components/blocks/footer/footer-mobile.pug
+		div
+			include ./components/blocks/pick-up-numbers/pick-up-numbers-card.pug
+		div
+			include ./components/blocks/sign-up/sign-up.pug
+			+sign-up
+		div
+			include ./components/blocks/sign-in/sign-in.pug
+			+sign-in
+		div
+			include ./components/blocks/booking/booking.pug
+			+booking-room
+		div
+			include ./components/blocks/hotel-room-card/hotel-room-card.pug
+			+room-card("./assets/images/room2.png", "4", "888", "9900₽", "not lux")
+			+room-card("./assets/images/room1.png", "5", "840", "9990₽", "lux")

@@ -1,0 +1,24 @@
+include ../components/blocks/header/header.pug
+include ../components/blocks/footer/footer.pug
+
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		block meta-keywords
+		block meta-description
+		block page-name
+	body.registration-page
+		header.registration-header
+			+header("ВОЙТИ", "ЗАРЕГИСТРИРОВАТЬСЯ")
+		main.registration-main
+			article.registration-article-block
+				block registration-image
+				.registration-sign-up
+					block sing-up
+				.registration-sign-in
+					block sing-in
+		footer.registration-footer
+			+footer
