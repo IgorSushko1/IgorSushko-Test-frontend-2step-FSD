@@ -1,50 +1,46 @@
+extends ../basis/basis.pug
 
-include ../components/vendor/range-slider/range-slider.pug
+include ../../vendor/range-slider/range-slider.pug
 
-include ../components/blocks/hotel-room-card/hotel-room-card.pug
+include ../../components/blocks/hotel-room-card/hotel-room-card.pug
 
-include ../components/elements/text-field/text-field_calendar copy.pug
-include ../components/elements/dropdown/dropdown-subparagraph.pug
-include ../components/elements/checkbox-rich-buttons/rich-checkbox-button.pug
-include ../components/elements/checkbox-expendable/checkbox-expendable.pug
-include ../components/elements/checkbox-button/checkbox-buttons.pug
-include ../components/elements/pagination/pagination.pug
+include ../../components/elements/text-field/text-field_calendar copy.pug
+include ../../components/elements/dropdown/dropdown-subparagraph.pug
+include ../../components/elements/checkbox-rich-buttons/rich-checkbox-button.pug
+include ../../components/elements/checkbox-expendable/checkbox-expendable.pug
+include ../../components/elements/checkbox-button/checkbox-buttons.pug
+include ../../components/elements/pagination/pagination.pug
 
-extends base-page.pug
 block meta-keywords
 	meta(name="keywords" content="TOXIN, hotels, search room")
 block meta-description
 	meta(name="description" content="Выбор номера в отеле, любой")
 block title
 	title Search page
+
 block main
-	.search-page__main
-		article.search-page__main_card
-			.search-page__main_card_title-datepicker
-				h3 Даты пребывания в отеле
-			+calendar-hidden("search-page__main_card_calendar")
-			.search-page__main_card_block
-				.search-page__main_card_title-datepicker
-					h3 Гости
+	.search-page
+		article.search-page__card
+			h3.search-page__card_title-datepicker Даты пребывания в отеле
+			+calendar-hidden("search-page__card_calendar")
+			.search-page__card_block
+				h3.search-page__card_title-datepicker Гости
 				+dropdown-people
 			+range-slider
-			.search-page__main_card_title_check-box
-				h3 checkbox buttons
+			h3.search-page__card_check-box_title checkbox buttons
 			+checkbox-button_simple("Можно курить", "")
 			+checkbox-button_simple("Можно с питомцами", "checked")
 			+checkbox-button_simple("Можно пригласить гостей (до 10 человек)", "checked")
-			.search-page__main_card_title_check-box-rich
-				h3 доступность
+			h3.search-page__card_check-box-rich_title доступность
 			+checkbox-rich
-			.search-page__main_card_block
-				.search-page__main_card_title_comfortable
-					h3 Удобства номера
+			.search-page__card_dropdown
+				h3.search-page__card_dropdown_title Удобства номера
 				+dropdown-room-comfort
-			.search-page__main_card_expendable-checkbox-list
+			.search-page__card_expendable-checkbox-list
 				+checkbox-expendable("дополнительные удобства")
-		article.search-page__main_rooms-choose
+		article.search-page__rooms
 			h2 Номера, которые мы для вас подобрали
-			.search-page__main_room-pick-up
+			.search-page__rooms_numbers
 				+room-card("imgs/room1.png", "5", "888", "9 990₽", "lux", "145")
 				+room-card("imgs/room2.png", "4", "840", "9 900₽", "", "65")
 				+room-card("imgs/room-3.png", "3", "980", "8 500₽", "lux", "35")
@@ -57,5 +53,5 @@ block main
 				+room-card("imgs/room-10.png", "5", "666", "5 000₽", "", "25")
 				+room-card("imgs/room-11.png", "3", "444", "5 000₽", "", "15")
 				+room-card("imgs/room-12.png", "3", "352", "5 000₽", "", "55")
-			.search-page__main_pagination
+			.search-page__rooms_pagination
 				+pagination

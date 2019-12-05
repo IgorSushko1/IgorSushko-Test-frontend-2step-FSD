@@ -24,7 +24,7 @@ module.exports = {
 				}]
 			},
 			{
-				test: /(\.css|\.scss)$/,
+				test: /(\.scss)$/,
 				use: [
 					{
 						loader: 'style-loader'
@@ -40,6 +40,20 @@ module.exports = {
 						options: {
 							importer: globImporter()
 						}
+					}
+				]
+			},
+			{
+				test: /(\.css)$/,
+				use: [
+					{
+						loader: 'style-loader'
+					},
+					{
+						loader: MiniCssExtractPlugin.loader
+					},
+					{
+						loader: 'css-loader'
 					}
 				]
 			},
@@ -78,33 +92,33 @@ module.exports = {
 			template: './src/ui-kit.pug'
 		}),
 		new HtmlWebpackPlugin({
-			filename: "landing-one.html",
-			template: './src/pages/landing-page.pug'
+			filename: "landing.html",
+			template: './src/pages/landing/landing.pug'
 		}),
-		// new HtmlWebpackPlugin({
-		// 	filename: "registration.html",
-		// 	template: './src/pages/registration.pug'
-		// }),
-		// new HtmlWebpackPlugin({
-		// 	filename: "registration-sign-up.html",
-		// 	template: './src/pages/registration-sign-up.pug'
-		// }),
-		// new HtmlWebpackPlugin({
-		// 	filename: "registration-sign-in.html",
-		// 	template: './src/pages/registration-sign-in.pug'
-		// }),
-		// new HtmlWebpackPlugin({
-		// 	filename: "base-page.html",
-		// 	template: './src/pages/base-page.pug'
-		// }),
-		// new HtmlWebpackPlugin({
-		// 	filename: "search-page.html",
-		// 	template: './src/pages/search-page.pug'
-		// }),
-		// new HtmlWebpackPlugin({
-		// 	filename: "room.html",
-		// 	template: './src/pages/room-detail-page.pug'
-		// }),
+		new HtmlWebpackPlugin({
+			filename: "registration.html",
+			template: './src/pages/registration__basis/registration__basis.pug'
+		}),
+		new HtmlWebpackPlugin({
+			filename: "registration-sign-up.html",
+			template: './src/pages/registration__sign-up/registration__sign-up.pug'
+		}),
+		new HtmlWebpackPlugin({
+			filename: "registration-sign-in.html",
+			template: './src/pages/registration__sign-in/registration__sign-in.pug'
+		}),
+		new HtmlWebpackPlugin({
+			filename: "base-page.html",
+			template: './src/pages/basis/basis.pug'
+		}),
+		new HtmlWebpackPlugin({
+			filename: "search.html",
+			template: './src/pages/search/search.pug'
+		}),
+		new HtmlWebpackPlugin({
+			filename: "room-detail.html",
+			template: './src/pages/room-detail/room-detail.pug'
+		}),
 		new MiniCssExtractPlugin({
 			filename: '[name].css',
 			options: {

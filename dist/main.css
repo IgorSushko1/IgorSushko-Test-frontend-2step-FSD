@@ -2977,59 +2977,49 @@ input[type="date"]::-webkit-inner-spin-button {
   padding-top: 0.28rem;
   color: rgba(31, 32, 65, 0.75); }
 
-.search-page__main {
+.search-page {
   display: flex;
   width: 1440px;
   justify-content: space-between;
   padding-bottom: 77px;
-  border-bottom: 1px solid rgba(31, 32, 65, 0.25); }
-
-.search-page__main_card {
-  width: 266px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 140px;
-  margin-top: 30px; }
-
-.search-page__main_rooms-choose {
-  width: 834px;
-  position: relative;
-  left: 60px;
-  margin-top: 34px;
-  left: -140px; }
-
-.search-page__main_room-pick-up {
-  margin-top: 25px;
-  display: grid;
-  grid-template-columns: 270px 270px 270px;
-  grid-column-gap: 12px;
-  grid-row-gap: 19px; }
-
-.search-page__main_pagination {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 45px;
-  position: relative; }
-
-.search-page__main_card_title-datepicker {
-  margin-top: 0px; }
-
-.search-page__main_card_block {
-  margin-top: 22px; }
-
-.search-page__main_card_title_check-box {
-  margin-top: 29px;
-  margin-bottom: 17px; }
-
-.search-page__main_card_title_check-box-rich {
-  margin-top: 18px;
-  margin-bottom: 17px; }
-
-.search-page__main_card_title_comfortable {
-  margin-top: 1px;
-  margin-bottom: 4px; }
-
-.search-page__main_card_expendable-checkbox-list {
-  margin-top: 15px; }
+  border-bottom: 1px solid .search-page dark-shade-025; }
+  .search-page__card {
+    width: 266px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 140px;
+    margin-top: 30px; }
+  .search-page__card_title-datepicker {
+    margin-top: 0px; }
+  .search-page__card_dropdown {
+    margin-top: 22px; }
+    .search-page__card_dropdown_title {
+      margin-top: 1px;
+      margin-bottom: 4px; }
+  .search-page__card_check-box_title {
+    margin-top: 29px;
+    margin-bottom: 17px; }
+  .search-page__card_check-box-rich_title {
+    margin-top: 18px;
+    margin-bottom: 17px; }
+  .search-page__card_expendable-checkbox-list {
+    margin-top: 15px; }
+  .search-page__rooms {
+    width: 834px;
+    position: relative;
+    left: 60px;
+    margin-top: 34px;
+    left: -140px; }
+  .search-page__rooms_numbers {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    grid-column-gap: 12px;
+    grid-row-gap: 19px; }
+  .search-page__rooms_pagination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    position: relative; }
 

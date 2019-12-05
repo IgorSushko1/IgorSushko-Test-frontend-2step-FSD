@@ -1,0 +1,68 @@
+.search-page {
+	display: flex;
+	width: 1440px;
+	justify-content: space-between;
+	padding-bottom: 77px;
+	border-bottom: 1px solid &dark-shade-025;
+
+	&__card {
+		width: 266px;
+		display: flex;
+		flex-direction: column;
+		margin-left: 140px;
+		margin-top: 30px;
+	}
+
+	&__card_title-datepicker {
+		margin-top: 0px;
+	}
+
+	&__card_dropdown {
+		margin-top: 22px;
+
+		&_title {
+			margin-top: 1px;
+			margin-bottom: 4px;
+		}
+
+	}
+
+
+	&__card_check-box_title {
+		margin-top: 29px;
+		margin-bottom: 17px;
+	}
+
+	&__card_check-box-rich_title {
+		margin-top: 18px;
+		margin-bottom: 17px;
+	}
+
+	&__card_expendable-checkbox-list {
+		margin-top: 15px;
+	}
+
+	&__rooms {
+		width: 834px;
+		position: relative;
+		left: 60px;
+		margin-top: 34px;
+		left: -140px;
+	}
+
+	&__rooms_numbers {
+		margin-top: 25px;
+		display: grid;
+		grid-template-columns: 270px 270px 270px;
+		grid-column-gap: 12px;
+		grid-row-gap: 19px;
+	}
+
+	&__rooms_pagination {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 45px;
+		position: relative;
+	}
+}
