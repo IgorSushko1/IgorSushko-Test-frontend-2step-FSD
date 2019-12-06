@@ -1,68 +1,71 @@
 .search-page {
 	display: flex;
-	width: 1440px;
+	width: 90rem;
 	justify-content: space-between;
-	padding-bottom: 77px;
+	padding-bottom: 4.8rem;
 	border-bottom: 1px solid &dark-shade-025;
 
 	&__card {
-		width: 266px;
+		width: 16.625rem;
 		display: flex;
 		flex-direction: column;
-		margin-left: 140px;
-		margin-top: 30px;
+		margin-left: 8.75rem;
+		margin-top: 1.87rem;
 	}
 
-	&__card_title-datepicker {
-		margin-top: 0px;
+	&__card_datepicker-title {
+		margin-top: 0rem;
 	}
 
 	&__card_dropdown {
-		margin-top: 22px;
+		margin-top: 1.375rem;
 
 		&_title {
-			margin-top: 1px;
+			margin-top: 1.4rem;
 			margin-bottom: 4px;
 		}
-
 	}
 
-
 	&__card_check-box_title {
-		margin-top: 29px;
-		margin-bottom: 17px;
+		margin-top: 1.8rem;
+		margin-bottom: 1.06rem;
 	}
 
 	&__card_check-box-rich_title {
-		margin-top: 18px;
-		margin-bottom: 17px;
+		margin-top: 1.09rem;
+		margin-bottom: 1.07rem;
 	}
 
-	&__card_expendable-checkbox-list {
-		margin-top: 15px;
+	&__card_expendable-checkbox {
+		margin-top: 0.93rem;
 	}
 
 	&__rooms {
-		width: 834px;
+		width: 52.12rem;
 		position: relative;
-		left: 60px;
-		margin-top: 34px;
-		left: -140px;
+		left: -8.7rem;
+		margin-top: 2.12rem;
+		// left: -8.61rem;
+	}
+
+	&_rooms_title {
+		letter-spacing: 0.037rem;
+		font-size: 1.44rem;
 	}
 
 	&__rooms_numbers {
-		margin-top: 25px;
+		margin-top: 1.56rem;
 		display: grid;
-		grid-template-columns: 270px 270px 270px;
-		grid-column-gap: 12px;
-		grid-row-gap: 19px;
+		grid-template-columns: 16.87rem 16.87rem 16.87rem;
+		grid-column-gap: 0.75rem;
+		grid-row-gap: 1.26rem;
 	}
 
 	&__rooms_pagination {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-top: 45px;
+		margin-top: 2.6rem;
 		position: relative;
 	}
 }

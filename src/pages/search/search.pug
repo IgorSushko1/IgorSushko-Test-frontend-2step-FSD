@@ -21,10 +21,10 @@ block title
 block main
 	.search-page
 		article.search-page__card
-			h3.search-page__card_title-datepicker Даты пребывания в отеле
+			h3.search-page__card_datepicker-title Даты пребывания в отеле
 			+calendar-hidden("search-page__card_calendar")
 			.search-page__card_block
-				h3.search-page__card_title-datepicker Гости
+				h3.search-page__card_dropdown_title Гости
 				+dropdown-people
 			+range-slider
 			h3.search-page__card_check-box_title checkbox buttons
@@ -34,12 +34,12 @@ block main
 			h3.search-page__card_check-box-rich_title доступность
 			+checkbox-rich
 			.search-page__card_dropdown
-				h3.search-page__card_dropdown_title Удобства номера
+				h3 Удобства номера
 				+dropdown-room-comfort
-			.search-page__card_expendable-checkbox-list
+			.search-page__card_expendable-checkbox
 				+checkbox-expendable("дополнительные удобства")
 		article.search-page__rooms
-			h2 Номера, которые мы для вас подобрали
+			h2.search-page_rooms_title Номера, которые мы для вас подобрали
 			.search-page__rooms_numbers
 				+room-card("imgs/room1.png", "5", "888", "9 990₽", "lux", "145")
 				+room-card("imgs/room2.png", "4", "840", "9 900₽", "", "65")
