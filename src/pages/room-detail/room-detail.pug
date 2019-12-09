@@ -13,49 +13,49 @@ block meta-description
 block title
 	title Room detail
 block main
-	.room-detail__main
-		article.room-detail__main-picture
-			.room-detail__main-picture_first
+	.room-detail
+		article.room-detail__picture
+			.room-detail__picture_left
 				img(src=("imgs/room-details-1.png") alt="" width="981" height="485")
-			.room-detail__main-picture_second
+			.room-detail__picture_right
 				img(src="imgs/room-details-2-1.png" alt="" width="459" height="243" style="display: block")
 				img(src="imgs/room-details-2-2.png" alt="" width="459" height="242")
-		article.room-detail__main_flex
-			section.room-detail__main_information
 
-				.room-detail__main_information_about-room
-					h2.room-detail__main_information_about-room_title Сведения о номере
+		article.room-detail__info
+			section.room-detail__info_section.room-detail__info_grid
+				.room-detail__about-room
+					h2.room-detail__about-room_title Сведения о номере
 					+icon-advantages
 
-				.room-detail__main_information_impressions
-					h2.room-detail__main_information_impressions_title Впечатления от номера
-					.room-detail__main_information_impressions_display
-						.room-detail__main_information_text-in-circle
-							.text-in-circle-number 260
-							.text-in-circle-text голосов
-						.room-detail__main_information_impressions_circle
-							.left-part-top
-							.left-part-bottom
-							.right-top-part
-							.right-bottom-part
-					.room-detail__main_information_impressions_bullet-list
+				.room-detail__impressions
+					h2.room-detail__impressions_title Впечатления от номера
+					.room-detail__impressions_circle
+						.room-detail__impressions_circle_info
+							.room-detail__impressions_circle_info_number 260
+							.room-detail__impressions_circle_info_text голосов
+						.room-detail__impressions_circle_part
+							.room-detail__impressions_circle_part_left-top
+							.room-detail__impressions_circle_part_left-bottom
+							.room-detail__impressions_circle_part_right-top
+							.room-detail__impressions_circle_part_right-bottom
+					.room-detail__impressions_bullet-list
 						+bullet-list("", "rgba(31, 32, 65, 0.75)" ,"Великолепно", "Хорошо", "Удовлетворительно", "Разочарован")
 
-				.room-detail__main_information_comments
-					.room-detail__main_information_comments-title
-						h2.room-detail__main_information_comments-title_h2 Отзывы посетителей номера
-						span.room-detail__main_information_comments-title_span 2 отзыва
+				.room-detail__comments
+					.room-detail__comments_title
+						h2.room-detail__comments_title_h2 Отзывы посетителей номера
+						span.room-detail__comments_title_span 2 отзыва
 					+comments("imgs/Murad-true.png", "Мурад Сарафанов", "5 дней назад", "12", "checked", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
 					+comments("imgs/girl image.png", "Патрисия Стёклышкова", "Неделю назад", "2", "", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
 
-				.room-detail__main_information_rules
+				.room-detail__rules
 					h2 Правила
-					.room-detail__main-information_rules_bullet
+					.room-detail__rules_bullet
 						+bullet-list("", "rgba(31, 32, 65, 0.75)" ,"Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00")
 
-				.room-detail__main_information_cancel
+				.room-detail__info_cancel
 					h2 Отмена
 					p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 
-			section.room-detail__main_room-card
+			section.room-detail__info_section
 				+booking-room

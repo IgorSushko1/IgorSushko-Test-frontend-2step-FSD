@@ -1,41 +1,45 @@
-.landing-page {
+.landing {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	width: auto;
 	height: auto;
 	background-color: white;
-}
 
-.landing-background {
-	width: 90rem;
-	height: 51.87rem;
-	overflow: hidden;
-	position: relative;
-}
-.landing-background img {
-	position: relative;
-	top: -2.18rem;
-	left: 0.06rem;
-	transform: scaleY(1.085);
-}
-.landing-article-block {
-	position: relative;
-}
-.landing-card-pick-numbers {
-	position: absolute;
-	z-index: 1;
-	top: 4.37rem;
-	left: 8.755rem;
-}
-.landing-image-description {
-	position: absolute;
-	z-index: 1;
-	bottom: 1.31rem;
-	right: 8.25rem;
-	width: 18.37rem;
-	letter-spacing: 0.04em;
-	text-align: end;
-	font-size: 0.81rem;
-	line-height: 1.5rem;
+	&__content {
+		position: relative;
+	}
+
+	&__content_background {
+		width: 90rem;
+		height: 51.87rem;
+		overflow: hidden;
+		position: relative;
+	}
+
+	&__content_pick-numbers {
+		position: absolute;
+		z-index: 1;
+		top: 4.37rem;
+		left: 8.755rem;
+	}
+
+	&__content_image {
+		position: relative;
+		top: -2.18rem;
+		left: 0.06rem;
+		transform: scaleY(1.085);
+	}
+
+	&__content_background_description {
+		position: absolute;
+		z-index: 1;
+		bottom: 1.31rem;
+		right: 8.25rem;
+		width: 18.37rem;
+		letter-spacing: 0.04em;
+		text-align: end;
+		font-size: 0.81rem;
+		line-height: 1.5rem;
+	}
 }

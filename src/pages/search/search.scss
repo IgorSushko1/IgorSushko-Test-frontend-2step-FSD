@@ -5,7 +5,7 @@
 	padding-bottom: 4.8rem;
 	border-bottom: 1px solid &dark-shade-025;
 
-	&__card {
+	&__select-options {
 		width: 16.625rem;
 		display: flex;
 		flex-direction: column;
@@ -13,30 +13,30 @@
 		margin-top: 1.87rem;
 	}
 
-	&__card_datepicker-title {
+	&__select-options_datepicker_title {
 		margin-top: 0rem;
 	}
 
-	&__card_dropdown {
+	&__select-options_dropdown {
 		margin-top: 1.375rem;
 
 		&_title {
-			margin-top: 1.4rem;
-			margin-bottom: 4px;
+			margin-top: 1.3rem;
+			margin-bottom: 0.1rem;
 		}
 	}
 
-	&__card_check-box_title {
+	&__select-options_checkbox_title {
 		margin-top: 1.8rem;
 		margin-bottom: 1.06rem;
 	}
 
-	&__card_check-box-rich_title {
+	&__select-options_checkbox-rich_title {
 		margin-top: 1.09rem;
 		margin-bottom: 1.07rem;
 	}
 
-	&__card_expendable-checkbox {
+	&__select-options_expendable-checkbox {
 		margin-top: 0.93rem;
 	}
 
@@ -45,7 +45,6 @@
 		position: relative;
 		left: -8.7rem;
 		margin-top: 2.12rem;
-		// left: -8.61rem;
 	}
 
 	&_rooms_title {

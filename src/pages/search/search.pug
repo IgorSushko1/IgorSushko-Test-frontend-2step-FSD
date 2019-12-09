@@ -20,23 +20,22 @@ block title
 
 block main
 	.search-page
-		article.search-page__card
-			h3.search-page__card_datepicker-title Даты пребывания в отеле
-			+calendar-hidden("search-page__card_calendar")
-			.search-page__card_block
-				h3.search-page__card_dropdown_title Гости
-				+dropdown-people
+		article.search-page__select-options
+			h3.search-page__select-options_datepicker_title Даты пребывания в отеле
+			+calendar-hidden("search-page__select-options_calendar")
+			h3.search-page__select-options_dropdown_title Гости
+			+dropdown-people
 			+range-slider
-			h3.search-page__card_check-box_title checkbox buttons
+			h3.search-page__select-options_checkbox_title checkbox buttons
 			+checkbox-button_simple("Можно курить", "")
 			+checkbox-button_simple("Можно с питомцами", "checked")
 			+checkbox-button_simple("Можно пригласить гостей (до 10 человек)", "checked")
-			h3.search-page__card_check-box-rich_title доступность
+			h3.search-page__select-options_checkbox-rich_title доступность
 			+checkbox-rich
-			.search-page__card_dropdown
+			.search-page__select-options_dropdown
 				h3 Удобства номера
 				+dropdown-room-comfort
-			.search-page__card_expendable-checkbox
+			.search-page__select-options_expendable-checkbox
 				+checkbox-expendable("дополнительные удобства")
 		article.search-page__rooms
 			h2.search-page_rooms_title Номера, которые мы для вас подобрали

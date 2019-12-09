@@ -1,4 +1,4 @@
-.room-detail__main {
+.room-detail {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -6,258 +6,261 @@
 	background-color: white;
 	margin: auto;
 	border-bottom: 1px solid rgba(31, 32, 65, 0.10);
-}
 
-.room-detail__main-picture {
-	display: grid;
-	grid-template-columns: 61.31rem 28.68rem;
-	grid-template-rows: 15.18rem 15.12rem;
-}
 
-.room-detail__main-picture_first {
-	grid-row: 1/3;
-}
+	&__picture {
+		display: grid;
+		grid-template-columns: 61.31rem 28.68rem;
+		grid-template-rows: 15.18rem 15.12rem;
+	}
 
-.room-detail__main-picture_second {
-	grid-row: 1/3;
-	grid-column: 2/3;
-}
+	&__picture_left {
+		grid-row: 1/3;
+	}
 
-.room-detail__main_flex {
-	display: flex;
-}
+	&__picture_right {
+		grid-row: 1/3;
+		grid-column: 2/3;
+	}
 
-.room-detail__main_flex section {
-	margin: 4.37rem 2.18rem;
-}
+	&__info {
+		display: flex;
+	}
 
-.room-detail__main_information {
-	display: grid;
-	grid-template-columns: 22.25rem 22.25rem;
-}
+	&__info_section {
+		margin: 4.37rem 2.18rem;
+	}
 
-.room-detail__main_information_about-room_title {
-	font-size: 1.18rem;
-	margin-left: 0.08rem;
-	margin-top: 0.06rem;
-	letter-spacing: 0.01rem;
-}
+	&__info_grid {
+		display: grid;
+		grid-template-columns: 22.25rem 22.25rem;
+	}
 
-.room-detail__main_information_impressions_title {
-	font-size: 1.18rem;
-	margin-left: 0.4rem;
-	margin-top: 0.06rem;
-	letter-spacing: 0.006rem;
-}
+	&__about-room_title {
+		font-size: 1.18rem;
+		margin-left: 0.08rem;
+		margin-top: 0.06rem;
+		letter-spacing: 0.01rem;
+	}
 
-.room-detail__main_information_impressions {
-	position: relative;
-}
+	&__impressions_title {
+		font-size: 1.18rem;
+		margin-left: 0.4rem;
+		margin-top: 0.06rem;
+		letter-spacing: 0.006rem;
+	}
 
-.room-detail__main_information_impressions_display {
-	position: absolute;
-	top: 2.81rem;
-	left: 0.31rem;
-}
+	&__impressions {
+		position: relative;
+	}
 
-.room-detail__main_information_text-in-circle {
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 7.56rem;
-	height: 7.5rem;
-	z-index: 1;
-	color: $purple;
-}
+	&__impressions_circle {
+		position: relative;
+		top: 1.4rem;
+		left: 0.4rem;
+	}
 
-.text-in-circle-number {
-	font-weight: 500;
-	font-size: 1.5rem;
-	font-family: "Quicksand-Medium", Arial, sans-serif;
-	line-height: 1.56rem;
-	padding-left: 0.12rem;
-}
+	&__impressions_circle_info {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 7.56rem;
+		height: 7.5rem;
+		z-index: 1;
+		color: $purple;
+	}
 
-.text-in-circle-text {
-	padding-left: 0.12rem;
-}
+	&__impressions_circle_info_number {
+		font-weight: 500;
+		font-size: 1.5rem;
+		font-family: "Quicksand-Medium", Arial, sans-serif;
+		line-height: 1.56rem;
+		padding-left: 0.12rem;
+	}
 
-.room-detail__main_information_impressions_circle {
-	width: 7.56rem;
-	height: 7.5rem;
-	position: relative;
+	&__impressions_circle_info_text {
+		padding-left: 0.12rem;
+	}
 
-}
+	&__impressions_circle_part {
+		width: 7.56rem;
+		height: 7.5rem;
+		position: relative;
 
-.left-part-top {
-	background: linear-gradient(0deg, #FFCD9C, #FFE39C);
-	border-top-left-radius: 100%;
-	position: absolute;
-	top: 0px;
-	width: 3.75rem;
-	height: 3.75rem;
-}
+	}
 
-.left-part-top::after {
-	content: "";
-	position: absolute;
-	width: 3.5rem;
-	height: 3.5rem;
-	background: white;
-	top: 0.25rem;
-	left: 0.25rem;
-	border-top-left-radius: 100%;
-}
+	&__impressions_circle_part_left-top {
+		background: linear-gradient(0deg, #FFCD9C, #FFE39C);
+		border-top-left-radius: 100%;
+		position: absolute;
+		top: 0px;
+		width: 3.75rem;
+		height: 3.75rem;
+	}
 
-.left-part-bottom {
-	background: linear-gradient(0deg, #FFBA9C, #FFCD9C);
-	border-bottom-left-radius: 100%;
-	position: absolute;
-	bottom: 0px;
-	width: 3.75rem;
-	height: 3.75rem;
-}
+	&__impressions_circle_part_left-top::after {
+		content: "";
+		position: absolute;
+		width: 3.5rem;
+		height: 3.5rem;
+		background: white;
+		top: 0.25rem;
+		left: 0.25rem;
+		border-top-left-radius: 100%;
+	}
 
-.left-part-bottom::after {
-	content: "";
-	position: absolute;
-	width: 3.5rem;
-	height: 3.5rem;
-	background: white;
-	left: 0.25rem;
-	border-bottom-left-radius: 100%;
-}
+	&__impressions_circle_part_left-bottom {
+		background: linear-gradient(0deg, #FFBA9C, #FFCD9C);
+		border-bottom-left-radius: 100%;
+		position: absolute;
+		bottom: 0px;
+		width: 3.75rem;
+		height: 3.75rem;
+	}
 
-.right-top-part {
-	background: linear-gradient(0deg, #8BA4F9, #BC9CFF);
-	border-top-right-radius: 100%;
-	width: 3.68rem;
-	height: 3.68rem;
-	position: absolute;
-	top: 0rem;
-	right: 0rem;
-}
+	&__impressions_circle_part_left-bottom::after {
+		content: "";
+		position: absolute;
+		width: 3.5rem;
+		height: 3.5rem;
+		background: white;
+		left: 0.25rem;
+		border-bottom-left-radius: 100%;
+	}
 
-.right-top-part::after {
-	content: "";
-	position: absolute;
-	width: 3.06rem;
-	height: 3.06rem;
-	background: white;
-	top: 0.62rem;
-	border-top-right-radius: 100%;
-}
+	&__impressions_circle_part_right-top {
+		background: linear-gradient(0deg, #8BA4F9, #BC9CFF);
+		border-top-right-radius: 100%;
+		width: 3.68rem;
+		height: 3.68rem;
+		position: absolute;
+		top: 0rem;
+		right: 0.1rem;
+	}
 
-.right-bottom-part {
-	background: linear-gradient(0deg, #66D2EA, #6FCF97);
-	border-bottom-right-radius: 100%;
-	width: 3.68rem;
-	height: 3.68rem;
-	position: absolute;
-	bottom: 0rem;
-	right: 0rem;
-}
+	&__impressions_circle_part_right-top::after {
+		content: "";
+		position: absolute;
+		width: 3.06rem;
+		height: 3.06rem;
+		background: white;
+		top: 0.62rem;
+		border-top-right-radius: 100%;
+	}
 
-.right-bottom-part::after {
-	content: "";
-	position: absolute;
-	width: 3.43rem;
-	height: 3.43rem;
-	background: white;
-	border-bottom-right-radius: 100%;
-}
+	&__impressions_circle_part_right-bottom {
+		background: linear-gradient(0deg, #66D2EA, #6FCF97);
+		border-bottom-right-radius: 100%;
+		width: 3.68rem;
+		height: 3.68rem;
+		position: absolute;
+		bottom: 0rem;
+		right: 0.1rem;
+	}
 
-.room-detail__main_information_impressions_bullet-list .list-disc {
-	left: 1.62rem;
-}
+	&__impressions_circle_part_right-bottom::after {
+		content: "";
+		position: absolute;
+		width: 3.43rem;
+		height: 3.43rem;
+		background: white;
+		border-bottom-right-radius: 100%;
+	}
 
-.room-detail__main_information_impressions_bullet-list .list-disc:nth-of-type(1) {
-	background: linear-gradient(0deg, #FFBA9C, #FFE39C);
-}
+	&__impressions_bullet-list {
+		position: absolute;
+		top: 3.56rem;
+		left: 8.17rem;
+	}
 
-.room-detail__main_information_impressions_bullet-list .list-disc:nth-of-type(3) {
-	background: linear-gradient(0deg, #66D2EA, #6FCF97);
-}
+	// &__impressions_bullet-list .list-disc {
+	// 	left: 1.62rem;
+	// }
 
-.room-detail__main_information_impressions_bullet-list .list-disc:nth-of-type(5) {
-	background: linear-gradient(0deg, #8BA4F9, #BC9CFF);
-}
+	// &__impressions_bullet-list .list-disc:nth-of-type(1) {
+	// 	background: linear-gradient(0deg, #FFBA9C, #FFE39C);
+	// }
 
-.room-detail__main_information_impressions_bullet-list .list-disc:nth-of-type(7) {
-	background: linear-gradient(0deg, rgba(61, 73, 117, 1), rgba(144, 144, 144, 1));
-}
+	// &__impressions_bullet-list .list-disc:nth-of-type(3) {
+	// 	background: linear-gradient(0deg, #66D2EA, #6FCF97);
+	// }
 
-.room-detail__main_information_impressions_bullet-list {
-	position: absolute;
-	top: 3.56rem;
-	left: 8.17rem;
-}
+	// &__impressions_bullet-list .list-disc:nth-of-type(5) {
+	// 	background: linear-gradient(0deg, #8BA4F9, #BC9CFF);
+	// }
 
-.room-detail__main_information_impressions_bullet-list .bullet-list {
-	line-height: 1.5rem;
-}
+	// &__impressions_bullet-list .list-disc:nth-of-type(7) {
+	// 	background: linear-gradient(0deg, rgba(61, 73, 117, 1), rgba(144, 144, 144, 1));
+	// }
 
-.room-detail__main-information_rules_bullet .list-disc {
-	left: 0rem;
-	margin-top: 1rem;
-}
+	&__impressions_bullet-list .bullet-list {
+		line-height: 1.5rem;
+	}
 
-.room-detail__main-information_rules_bullet .bullet-list {
-	margin: 0rem;
-	padding-left: 1.37rem;
-	padding-top: 0.56rem;
-	width: 15rem;
-	letter-spacing: -0.005rem;
-}
 
-.room-detail__main-information_rules_bullet li {
-	margin-top: .57rem;
-	letter-spacing: -0.01rem;
-}
+	&__rules_bullet .list-disc {
+		left: 0rem;
+		margin-top: 1rem;
+	}
 
-.room-detail__main_information_rules h2 {
-	padding-left: 1.35rem;
-	padding-top: 17px;
-	font-size: 19px;
-}
+	&__rules_bullet .bullet-list {
+		margin: 0rem;
+		padding-left: 1.37rem;
+		padding-top: 0.56rem;
+		width: 15rem;
+		letter-spacing: -0.005rem;
+	}
 
-.room-detail__main_information_cancel h2 {
-	padding-left: 0.4rem;
-	padding-top: 1.06rem;
-	font-size: 1.18rem;
-}
+	&__rules_bullet li {
+		margin-top: .57rem;
+		letter-spacing: -0.01rem;
+	}
 
-.room-detail__main_information_cancel p {
-	padding-left: 0.4rem;
-	padding-top: 0.27rem;
-	letter-spacing: -0.007rem;
-	width: 21.25rem;
-	line-height: 1.5rem;
-}
+	&__rules h2 {
+		padding-left: 1.35rem;
+		padding-top: 17px;
+		font-size: 19px;
+	}
 
-.room-detail__main_information_comments {
-	grid-column: 1/3;
-}
+	&__info_cancel h2 {
+		padding-left: 0.4rem;
+		padding-top: 1.06rem;
+		font-size: 1.18rem;
+	}
 
-.room-detail__main_information_comments .comments {
-	padding: 0.62rem 0 1.12rem 0;
-}
+	&__info_cancel p {
+		padding-left: 0.4rem;
+		padding-top: 0.27rem;
+		letter-spacing: -0.007rem;
+		width: 21.25rem;
+		line-height: 1.5rem;
+	}
 
-.room-detail__main_information_comments-title {
-	display: flex;
-	justify-content: space-between;
-	margin: 0.93rem 0;
-}
+	&__comments {
+		grid-column: 1/3;
+	}
 
-.room-detail__main_information_comments-title_h2 {
-	font-size: 1.18rem;
-	padding-left: 0.03rem;
-	letter-spacing: 0.007rem;
-}
+	&__comments .comments {
+		padding: 0.5rem 0 1.3rem 0;
+	}
 
-.room-detail__main_information_comments-title_span {
-	padding-top: 0.28rem;
-	color: $dark-shade-075;
+	&__comments_title {
+		display: flex;
+		justify-content: space-between;
+		margin: 0.93rem 0;
+	}
+
+	&__comments_title_h2 {
+		font-size: 1.18rem;
+		padding-left: 0.03rem;
+		letter-spacing: 0.007rem;
+	}
+
+	&__comments_title_span {
+		padding-top: 0.28rem;
+		color: $dark-shade-075;
+		letter-spacing: -0.06rem;
+	}
 }

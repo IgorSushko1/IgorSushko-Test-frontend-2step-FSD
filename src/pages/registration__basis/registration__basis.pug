@@ -10,15 +10,15 @@ html
 		block meta-keywords
 		block meta-description
 		block page-name
-	body.registration-page
-		header.registration-header
+	body.registration
+		header.registration__header
 			+header("ВОЙТИ", "ЗАРЕГИСТРИРОВАТЬСЯ")
-		main.registration-main
-			article.registration-article-block
+		main.registration__main
+			article.registration__filling
 				block registration-image
-				.registration-sign-up
+				.registration__filling_sign-up
 					block sing-up
-				.registration-sign-in
+				.registration__filling_sign-in
 					block sing-in
-		footer.registration-footer
+		footer.registration__footer
 			+footer
