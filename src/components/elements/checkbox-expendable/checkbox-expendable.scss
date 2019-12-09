@@ -1,14 +1,14 @@
 .checkbox-container-list {
 	position: relative;
-	max-width: 266px;
+	max-width: 16.625rem;
 }
 
 .dropdown-dropbtn {
 	background-color: white;
 	color: $dark-shade-075;
 	cursor: pointer;
-	width: 266px;
-	height: 44px;
+	width: 16.625rem;
+	height: 2.75rem;
 	position: relative;
 	outline: none;
 	border: none;
@@ -22,8 +22,8 @@
 
 .dropdown-btn-icons {
 	position: absolute;
-	top: 12px;
-	right: 10px;
+	top: 0.75rem;
+	right: 0.625rem;
 	color: $dark-shade-100;
 }
 
@@ -32,12 +32,12 @@
 }
 
 .dropdown-show {
-	padding-top: 15px;
+	padding-top: 0.93rem;
 	display: block;
-	top: 44px;
-	width: 264px;
+	top: 2.75rem;
+	width: 16.5rem;
 	position: absolute;
-	min-width: 160px;
+	min-width: 10rem;
 	overflow: auto;
 	z-index: 1;
 	background: white;
@@ -49,9 +49,9 @@
 
 .checkbox-expendable-list-h3 {
 	text-align: left;
-	letter-spacing: 0.0em;
+	letter-spacing: 0rem;
 }
 
 .checkbox-expendable-margin {
-	margin-left: 15px;
+	margin-left: 0.93rem;
 }

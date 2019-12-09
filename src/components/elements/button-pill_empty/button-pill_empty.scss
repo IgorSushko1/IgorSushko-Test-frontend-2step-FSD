@@ -1,57 +1,57 @@
-.button-pill_empty {
+.button-pill__empty {
 	color: #BC9CFF;
 	background: white;
 	border: none;
-	height: 30px;
+	height: 1.185rem;
 	text-align: center;
 	cursor: pointer;
-	border-radius: 22px;
+	border-radius: 1.375rem;
 	position: relative;
-	font-size: 11px;
-	letter-spacing: 0.8px;
+	font-size: 0.685rem;
+	letter-spacing: 0.05rem;
 	font-family: "Montserrat-SemiBold", Arial, sans-serif;
-	padding: 0 19px;
+	padding: 0 1.187rem;
 	text-transform: uppercase;
 }
 
-.button-pill_empty:before {
+.button-pill__empty:before {
 	content: "";
 	position: absolute;
 	width: 104%;
-	height: 34px;
+	height: 2.125rem;
 	background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
-	border-radius: 22px;
-	left: -2px;
-	top: -2px;
+	border-radius: 1.375rem;
+	left: -0.125rem;
+	top: -0.125rem;
 	z-index: -1;
 }
 
-.button-pill_empty-44 {
-	margin-top: 2px;
+.button-pill__empty-44 {
+	margin-top: 0.125rem;
 	color: #BC9CFF;
 	background: white;
 	border: none;
-	height: 40px;
+	height: 2.5rem;
 	text-align: center;
 	cursor: pointer;
-	border-radius: 22px;
+	border-radius: 1.375rem;
 	position: relative;
-	font-size: 11px;
-	letter-spacing: 0.8px;
+	font-size: 0.687rem;
+	letter-spacing: 0.05rem;
 	font-family: "Montserrat-SemiBold", Arial, sans-serif;
-	padding: 0 19px;
+	padding: 0 1.187rem;
 	text-transform: uppercase;
-	padding-left: 16px;
+	padding-left: 1rem;
 }
 
-.button-pill_empty-44:before {
+.button-pill__empty-44:before {
 	content: "";
 	position: absolute;
 	width: 104%;
-	height: 44px;
+	height: 2.75rem;
 	background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
-	border-radius: 22px;
-	left: -2px;
-	top: -2px;
+	border-radius: 1.375rem;
+	left: -0.125rem;
+	top: -0.125rem;
 	z-index: -1;
 }
