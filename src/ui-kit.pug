@@ -16,15 +16,15 @@ html
 			h2 Hello!
 		div
 			include ./components/elements/fonts-list/fonts.pug
-		include ./components/elements/colors-example/colors-example.pug
+		include ./components/elements/color-example/color-example.pug
 
-		+article('Dark Shade 100%', "#1F2041")(class="rectangle dark-shade-100")
-		+article('Dark Shade 75%', "#1F2041")(class="rectangle dark-shade-075")
-		+article('Dark Shade 50%', "#1F2041")(class="rectangle dark-shade-050")
-		+article('Dark Shade 25%', "#1F2041")(class="rectangle dark-shade-025")
-		+article('Dark Shade 5%', "#1F2041")(class="rectangle dark-shade-005")
-		+article('Purple', "#BC9CFF")(class="rectangle purple")
-		+article('Green', "#6FCF97")(class="rectangle green")
+		+color-example('Dark Shade 100%', "#1F2041")(class="rectangle dark-shade-100")
+		+color-example('Dark Shade 75%', "#1F2041")(class="rectangle dark-shade-075")
+		+color-example('Dark Shade 50%', "#1F2041")(class="rectangle dark-shade-050")
+		+color-example('Dark Shade 25%', "#1F2041")(class="rectangle dark-shade-025")
+		+color-example('Dark Shade 5%', "#1F2041")(class="rectangle dark-shade-005")
+		+color-example('Purple', "#BC9CFF")(class="rectangle purple")
+		+color-example('Green', "#6FCF97")(class="rectangle green")
 
 		include ./components/elements/text-field/text-field.pug
 		+form-email("email", "Your email adress", "field name")(class="text-field-email")
@@ -38,10 +38,10 @@ html
 		div
 			include ./components/elements/checkbox-toggle/checkbox-toggle.pug
 		div
-			include ./components/elements/checkbox-button/checkbox-buttons.pug
-			+checkbox-button_simple("Можно курить", "")
-			+checkbox-button_simple("Можно с питомцами", checked)
-			+checkbox-button_simple("Можно пригласить гостей (до 10 человек)", checked)
+			include ./components/elements/checkbox-button/checkbox-button.pug
+			+checkbox-button("Можно курить", "")
+			+checkbox-button("Можно с питомцами", checked)
+			+checkbox-button("Можно пригласить гостей (до 10 человек)", checked)
 		div
 			include ./components/elements/checkbox-radio/checkbox-radio.pug
 			+radio-buttons
@@ -49,16 +49,16 @@ html
 			include ./components/elements/rate-button/rate-button.pug
 			+star-rating-fourth-checked("class1", "class2", "class3", "class4", "class5")
 		div
-			include ./components/elements/button-pill_full/button-pill_full.pug
-			+button-pill_full("REGISTER")
+			include ./components/elements/button-pill__full/button-pill__full.pug
+			+button-pill__full("REGISTER")
 		div
-			include ./components/elements/button-pill_empty/button-pill_empty.pug
-			+button-pill_empty("REGISTER")
+			include ./components/elements/button-pill__empty/button-pill__empty.pug
+			+button-pill__empty("REGISTER")
 		div
 			include ./components/elements/button-text/button-text.pug
 		div
-			include ./components/elements/button-pill_full_arrow/button-pill_full-with-arrow.pug
-		+button-fill-arrow("CLICK ME")
+			include ./components/elements/button-pill__full_arrow/button-pill__full_arrow.pug
+		+button-pill__full_arrow("CLICK ME")
 		div
 			include ./components/elements/like-buttons/like-buttons.pug
 		div
