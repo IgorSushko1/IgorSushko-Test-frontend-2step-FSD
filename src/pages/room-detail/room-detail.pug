@@ -39,8 +39,10 @@ block main
 							.room-detail__impressions_circle_part_right-top
 							.room-detail__impressions_circle_part_right-bottom
 					.room-detail__impressions_bullet-list
-						+bullet-list("", "rgba(31, 32, 65, 0.75)" ,"Великолепно", "Хорошо", "Удовлетворительно", "Разочарован")
-
+						+bullet-list("background: linear-gradient(0deg, #FFBA9C, #FFE39C)" ,"Великолепно")
+						+bullet-list("background: linear-gradient(0deg, #66D2EA, #6FCF97)", "Хорошо")
+						+bullet-list("background: linear-gradient(0deg, #8BA4F9, #BC9CFF)", "Удовлетворительно")
+						+bullet-list("background: linear-gradient(0deg, rgba(61, 73, 117, 1), rgba(144, 144, 144, 1))", "Разочарован")
 				.room-detail__comments
 					.room-detail__comments_title
 						h2.room-detail__comments_title_h2 Отзывы посетителей номера
@@ -49,13 +51,14 @@ block main
 					+comments("imgs/girl image.png", "Патрисия Стёклышкова", "Неделю назад", "2", "", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
 
 				.room-detail__rules
-					h2 Правила
+					h2.room-detail__rules_title Правила
 					.room-detail__rules_bullet
-						+bullet-list("", "rgba(31, 32, 65, 0.75)" ,"Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00")
-
-				.room-detail__info_cancel
-					h2 Отмена
-					p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+						+bullet-list("background: rgba(31, 32, 65, 0.75)","Нельзя с питомцами")
+						+bullet-list("background: rgba(31, 32, 65, 0.75)", "Без вечеринок и мероприятий")
+						+bullet-list("background: rgba(31, 32, 65, 0.75)","Время прибытия — после 13:00, а выезд до 12:00")
+				.room-detail__cancel
+					h2.room-detail__cancel_title Отмена
+					p.room-detail__cancel_text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 
 			section.room-detail__info_section
 				+booking-room

@@ -1,0 +1,8 @@
+mixin checkbox-button(text, doesItChecked)
+	label.checkbox-button__container= text
+		if (doesItChecked == "checked")
+			input(type="checkbox" checked)
+		else
+			input(type="checkbox")
+		span.checkbox-button__checkmark
+		span.checkbox-button__checkmark_white

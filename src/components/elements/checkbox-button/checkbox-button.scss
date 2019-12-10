@@ -1,4 +1,6 @@
-.checkbox-buttons_container {
+.checkbox-button {
+
+&__container {
 	width: 13.125rem;
 	display: block;
 	position: relative;
@@ -13,7 +15,7 @@
 	font-family: "Montserrat", Arial, sans-serif;
 }
 
-.checkbox-buttons_container input {
+&__container input {
 	position: absolute;
 	opacity: 0;
 	cursor: pointer;
@@ -21,7 +23,7 @@
 	width: 0;
 }
 
-.checkbox-buttons_checkmark {
+&__checkmark {
 	position: absolute;
 	top: -0.125rem;
 	left: 0;
@@ -31,7 +33,7 @@
 	border-radius: 4.5px;
 }
 
-.checkbox-buttons_checkmark-white {
+&__checkmark_white {
 	position: absolute;
 	top: -0.06rem;
 	left: 0.06rem;
@@ -41,26 +43,26 @@
 	border-radius: 0.25rem;
 }
 
-.checkbox-buttons_container input:checked~.checkbox-buttons_checkmark {
+&__container input:checked~&__checkmark {
 	background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
 }
 
-.checkbox-buttons_checkmark:before,
-.checkbox-buttons_checkmark:after {
+&__checkmark:before,
+&__checkmark:after {
 	content: "";
 	position: absolute;
 	display: none;
 }
 
-.checkbox-buttons_container input:checked~.checkbox-buttons_checkmark:after {
+&__container input:checked~&__checkmark:after {
 	display: block;
 }
 
-.checkbox-buttons_container input:checked~.checkbox-buttons_checkmark:before {
+&__container input:checked~&__checkmark:before {
 	display: block;
 }
 
-.checkbox-buttons_container .checkbox-buttons_checkmark:after {
+&__container &__checkmark:after {
 	z-index: 100;
 	left: 10px;
 	top: 6px;
@@ -72,7 +74,7 @@
 	transform: rotate(45deg);
 }
 
-.checkbox-buttons_container .checkbox-buttons_checkmark:before {
+&__container &__checkmark:before {
 	z-index: 110;
 	left: 7px;
 	top: 8px;
@@ -82,4 +84,5 @@
 	-webkit-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
+}
 }

@@ -1,5 +1,5 @@
-include ../../elements/button-pill_empty/button-pill_empty.pug
-include ../../elements/button-pill_full_arrow/button-pill_full-with-arrow.pug
+include ../../elements/button-pill__empty/button-pill__empty_short.pug
+include ../../elements/button-pill__full_arrow/button-pill__full_arrow.pug
 include ../../elements/checkbox-radio/checkbox-radio.pug
 include ../../elements/checkbox-toggle/checkbox-toggle.pug
 
@@ -12,7 +12,7 @@ mixin sign-up
 		div.sing-up-card-2
 			+form-name("text","Фамилия", "surname", "sing-up-card-form")
 		div.sing-up-card-3
-			+radio-buttons("sing-up-card-radio")
+			+radio-buttons
 		div.sing-up-card-4
 			h3 Дата рождения
 			input(type="text"  data-range="true" data-multiple-dates-separator=" - " class="datepicker-here sign-up-numbers-card-birthday" data-position="right top" value="ДД.ММ.ГГГГ")
@@ -25,7 +25,7 @@ mixin sign-up
 		.sing-up-card-toggle
 				+toggle-checkbox("Получать спецпредложения")
 		.sing-up-card-button
-				+button-fill-arrow("Перейти к оплате")
+				+button-pill__full_arrow("Перейти к оплате")
 		.sing-up-card-sing-in
 			p Уже есть аккаунт на Toxin
-			+button-pill_empty-44("Войти")
+			+button-pill__empty_short("Войти")

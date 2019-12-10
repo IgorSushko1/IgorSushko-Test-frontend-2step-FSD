@@ -1,4 +1,4 @@
-.button-pill_full-with-arrow {
+.button-pill__full_arrow {
   background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
   border: none;
   color: white;
@@ -14,7 +14,7 @@
 	position: relative;
 }
 
-.button-pill_full-with-arrow_arrow-for-button {
+.button-pill__full_arrow_icon {
 	position: absolute;
 	top: 0.625rem;
 	right: 0.562rem;
@@ -22,7 +22,7 @@
 	color: white;
 }
 
-.button-pill_full-with-arrow h3 {
+.button-pill__full_arrow_text {
 	font-family: "Montserrat-Bold", Arial, sans-serif;
 	margin-left: -0.187rem;
 }

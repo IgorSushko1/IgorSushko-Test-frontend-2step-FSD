@@ -1,22 +1,28 @@
-.checkbox-buttons_container .bold {
-	font-size: 0.87rem;
-	margin: 0;
-	text-transform: none;
-}
-.rich-checkbox-description-first {
-	margin-top: 0.31rem;
-	font-size: 0.75rem;
-	line-height: 0.87rem;
-	color: $dark-shade-050;
-	width: 12.5rem;
-}
-.checkbox-rich-height {
-	margin-bottom: 0.62rem;
-}
-.rich-checkbox-description-second {
-	margin-top: 0.18rem;
-	font-size: 0.75rem;
-	line-height: 0.87rem;
-	color: $dark-shade-050;
-	width: 14.38rem;
+.checkbox-rich {
+
+	&__title {
+		font-size: 0.87rem;
+		margin: 0;
+		text-transform: none;
+	}
+
+	&__description-first {
+		margin-top: 0.31rem;
+		font-size: 0.75rem;
+		line-height: 0.87rem;
+		color: $dark-shade-050;
+		width: 12.5rem;
+	}
+
+	&__margin {
+		margin-bottom: 0.62rem;
+	}
+
+	&__description-second {
+		margin-top: 0.18rem;
+		font-size: 0.75rem;
+		line-height: 0.87rem;
+		color: $dark-shade-050;
+		width: 14.38rem;
+	}
 }

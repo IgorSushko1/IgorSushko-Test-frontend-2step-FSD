@@ -1,4 +1,4 @@
-.button-text {
+.button__text {
 	background-color: none;
   border: none;
   color: $dark-shade-050;
@@ -10,7 +10,7 @@
   transition: 0.3s;
 }
 
-.button-text:hover {
+.button__text:hover {
 opacity: 1;
 color: #BC9CFF;
 }

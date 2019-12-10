@@ -1,64 +1,68 @@
-.checkbox-radio_container {
-  display: block;
-  position: relative;
-	padding-left: 1.81rem;
-	margin-left: 1.25rem;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+.checkbox-radio {
+	display: flex;
 
-.checkbox-radio_container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-	width: 0;
-	margin-right: 0.62rem;
-}
+	&__container {
+		display: block;
+		position: relative;
+		padding-left: 1.81rem;
+		margin-left: 1.25rem;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
 
-.checkbox-radio_checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 1.25rem;
-  width: 1.25rem;
-  background: $dark-shade-025;
-  border-radius: 50%;
-}
+	&__container input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+		margin-right: 0.62rem;
+	}
 
-.checkbox-radio_checkmark-white {
-  position: absolute;
-  top: 0.06rem;
-  left: 0.06rem;
-  height: 1.12rem;
-  width: 1.12rem;
-	background: white;
-	border-radius: 50%;
-}
+	&__checkmark {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 1.25rem;
+		width: 1.25rem;
+		background: $dark-shade-025;
+		border-radius: 50%;
+	}
 
-.checkbox-radio_container input:checked ~ .checkbox-radio_checkmark {
-  background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
-}
+	&__checkmark_white {
+		position: absolute;
+		top: 0.06rem;
+		left: 0.06rem;
+		height: 1.12rem;
+		width: 1.12rem;
+		background: white;
+		border-radius: 50%;
+	}
 
-.checkbox-radio_checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
+	&__container input:checked~&__checkmark {
+		background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+	}
 
-.checkbox-radio_container input:checked ~ .checkbox-radio_checkmark:after {
-  display: block;
-}
+	&__checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
 
-.checkbox-radio_container .checkbox-radio_checkmark:after {
-	z-index: 100;
-	top: 0.25rem;
-  left: 0.25rem;
-  width: 0.75rem;
-  height: 0.75rem;
-  border-radius: 50%;
-  background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+	&__container input:checked~&__checkmark:after {
+		display: block;
+	}
+
+	&__container &__checkmark:after {
+		z-index: 100;
+		top: 0.25rem;
+		left: 0.25rem;
+		width: 0.75rem;
+		height: 0.75rem;
+		border-radius: 50%;
+		background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+	}
 }

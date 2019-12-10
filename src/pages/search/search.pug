@@ -8,7 +8,7 @@ include ../../components/elements/text-field/text-field_calendar copy.pug
 include ../../components/elements/dropdown/dropdown-subparagraph.pug
 include ../../components/elements/checkbox-rich-buttons/rich-checkbox-button.pug
 include ../../components/elements/checkbox-expendable/checkbox-expendable.pug
-include ../../components/elements/checkbox-button/checkbox-buttons.pug
+include ../../components/elements/checkbox-button/checkbox-button.pug
 include ../../components/elements/pagination/pagination.pug
 
 block meta-keywords
@@ -27,9 +27,9 @@ block main
 			+dropdown-people
 			+range-slider
 			h3.search-page__select-options_checkbox_title checkbox buttons
-			+checkbox-button_simple("Можно курить", "")
-			+checkbox-button_simple("Можно с питомцами", "checked")
-			+checkbox-button_simple("Можно пригласить гостей (до 10 человек)", "checked")
+			+checkbox-button("Можно курить", "")
+			+checkbox-button("Можно с питомцами", "checked")
+			+checkbox-button("Можно пригласить гостей (до 10 человек)", "checked")
 			h3.search-page__select-options_checkbox-rich_title доступность
 			+checkbox-rich
 			.search-page__select-options_dropdown
