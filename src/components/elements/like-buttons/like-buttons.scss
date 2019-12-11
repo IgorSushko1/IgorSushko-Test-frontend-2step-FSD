@@ -1,4 +1,4 @@
-.like-button_label {
+.like-button {
 	position: relative;
 	margin: 0;
 	padding: 0;
@@ -6,7 +6,11 @@
 	left: 0;
 }
 
-.like-buttons {
+.like-button__profile-image {
+	margin-top: -0.25rem;
+}
+
+.like-button__background {
 	z-index: 1;
 	background: linear-gradient(180deg, $dark-shade-025, $dark-shade-025);
 	border: none;
@@ -23,11 +27,11 @@
 	position: relative;
 }
 
-.like-button_label input:checked~.like-buttons {
+.like-button input:checked~.like-button__background {
 	background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
 }
 
-.like-button_input {
+.like-button__input {
 	position: absolute;
 	opacity: 0;
 	cursor: pointer;
@@ -35,7 +39,7 @@
 	width: 0;
 }
 
-.like-buttons_empty-white {
+.like-button__empty-white {
 	z-index: 2;
 	position: absolute;
 	background: white;
@@ -46,7 +50,7 @@
 	border-radius: 0.62rem;
 }
 
-.like-buttons_favorite_border {
+.like-button__favorite_border {
 	z-index: 5;
 	font-size: 0.62rem;
 	position: absolute;
@@ -55,7 +59,7 @@
 	color: $dark-shade-025;
 }
 
-.like-buttons_favorite {
+.like-buttons__favorite {
 	z-index: 6;
 	font-size: 0.62rem;
 	position: absolute;
@@ -65,15 +69,15 @@
 	color: #BC9CFF;
 }
 
-.like-button_label input:checked~.like-buttons_favorite {
+.like-button__label input:checked~.like-button__favorite {
 	display: inline-block;
 }
 
-.like-button_label input:checked~.like-buttons {
+.like-button__label input:checked~.like-button__background {
 	color: #BC9CFF;
 }
 
-.like-buttons_div {
+.like-button__num {
 	z-index: 3;
 	position: absolute;
 	top: 0.25rem;

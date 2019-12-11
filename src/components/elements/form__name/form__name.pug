@@ -1,0 +1,8 @@
+mixin form__name(typeOne, description, name, typeOfSign)
+	form
+		legend
+			.form__name
+				if typeOfSign == "sign-up"
+					input(type=typeOne, value=description, name=name).form__name_border.form__name_sign-up
+				else if typeOfSign == "sign-in"
+					input(type=typeOne, value=description, name=name).form__name_border.form__name_sign-in

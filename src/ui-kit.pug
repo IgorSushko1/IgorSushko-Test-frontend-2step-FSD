@@ -26,12 +26,15 @@ html
 		+color-example('Purple', "#BC9CFF")(class="rectangle purple")
 		+color-example('Green', "#6FCF97")(class="rectangle green")
 
-		include ./components/elements/text-field/text-field.pug
-		+form-email("email", "Your email adress", "field name")(class="text-field-email")
-		+form-date("date", "", "masked text field")(class="text-field-date")
-
+		include ./components/elements/form__email/form__email.pug
+		+form__email("email", "Your email adress", "field name")(class="text-field-email")
+		include ./components/elements/form__date/form__date.pug
+		+form__date("date", "masked text field")(class="text-field-date")
+		include ./components/elements/form__name/form__name.pug
+		+form__name("email","Email", "email-sign-in", "sign-in")
+		+form__name("email","Email", "email-sign-up", "sign-up")
 		div
-			include ./components/elements/dropdown/dropdown-subparagraph.pug
+			include ./vendor/dropdown/dropdown-subparagraph.pug
 			+dropdown-examples
 			+dropdown-people
 			+dropdown-room-comfort
@@ -67,7 +70,7 @@ html
 			include ./vendor/range-slider/range-slider.pug
 			+range-slider
 		div
-			include ./components/elements/dropdown/dropdown-subparagraph.pug
+			include ./vendor/dropdown/dropdown-subparagraph.pug
 		div
 			include ./components/elements/checkbox-expendable/checkbox-expendable.pug
 			+checkbox-expendable

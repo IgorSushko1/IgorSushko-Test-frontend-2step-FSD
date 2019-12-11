@@ -1,0 +1,8 @@
+mixin calendar-hidden(className)
+	label.datepicker_one-field
+		input(type="checkbox" id="datepicker-single" data-multiple-dates-separator=" - " data-range="true" class=`datepicker-here` data-position="bottom left")
+		div.datepicker__one-field_input#datepicker__one-field_input 
+			span 19 авг - 23 авг
+		span.material-icons.datepicker__one-field_arrow keyboard_arrow_down
+mixin calendar-open
+	div(type="text"  data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" data-position="right top")

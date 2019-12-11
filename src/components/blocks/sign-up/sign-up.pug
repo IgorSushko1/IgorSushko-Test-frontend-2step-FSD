@@ -2,15 +2,15 @@ include ../../elements/button-pill__empty/button-pill__empty_short.pug
 include ../../elements/button-pill__full_arrow/button-pill__full_arrow.pug
 include ../../elements/checkbox-radio/checkbox-radio.pug
 include ../../elements/checkbox-toggle/checkbox-toggle.pug
-
+include ../../elements/form__name/form__name.pug
 mixin sign-up
 	.sing-up-card
 		.sing-up-card-title
 			h2 Регистрация аккаунта
 		div.sing-up-card-1
-			+form-name("text","Имя", "name", "sing-up-card-form")
+			+form__name("text","Имя", "name", "sign-up")
 		div.sing-up-card-2
-			+form-name("text","Фамилия", "surname", "sing-up-card-form")
+			+form__name("text","Фамилия", "surname", "sign-up")
 		div.sing-up-card-3
 			+radio-buttons
 		div.sing-up-card-4
@@ -19,9 +19,9 @@ mixin sign-up
 		div.sing-up-card-5
 			h3 данные для входа в сервис
 			div
-				+form-name("email","Email", "email", "sing-up-card-form")
+				+form__name("email","Email", "email", "sign-up")
 			div
-				+form-name("text", "Пароль", "password", "sing-up-card-form")
+				+form__name("text", "Пароль", "password", "sign-up")
 		.sing-up-card-toggle
 				+toggle-checkbox("Получать спецпредложения")
 		.sing-up-card-button

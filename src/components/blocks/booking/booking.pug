@@ -1,45 +1,45 @@
-include ../../elements/dropdown/dropdown-subparagraph.pug
+include ../../../vendor/dropdown/dropdown-subparagraph.pug
 include ../../elements/button-pill__full_arrow/button-pill__full_arrow.pug
 
 mixin booking-room
 	.booking
-		.booking-text
-			div.booking-text-first-field
-				h3.booking-text_symbol №
-				h2.booking-text_number 888
-				h3.booking-text-lux люкс
+		.booking__text
+			div.booking__text_first-field
+				h3.booking__text_symbol №
+				h2.booking__text_number 888
+				h3.booking__text_lux люкс
 			div
-				p.booking-text_price 9 990₽
-				span.booking-text_per-day в сутки
-		.booking-calendar-arrival
-			h3 Прибытие - выезд
-			label.booking-calendar-input
-				input(type="checkbox" id="datepicker"  data-range="true" data-multiple-dates-separator=" - " clearButton="true" class="datepicker-here pick-up-numbers-card-arrival-wid" data-position="bottom left")
+				p.booking__text_price 9 990₽
+				span.booking__text_per-day в сутки
+		.booking__calendar_arrival
+			h3.booking__calendar_arrival_title Прибытие - выезд
+			label.booking__calendar_input
+				input(type="checkbox" id="datepicker" data-range="true" data-multiple-dates-separator=" - " clearButton="true" class="datepicker-here pick-up-numbers-card-arrival-wid" data-position="bottom left").booking__calendar_input_datepicker
 				p(class="result-datepicker-first-date")
 					span.pick-up-numbers-card-date-for-two-inputs ДД.ММ.ГГГГ
 					span.material-icons.pick-up-numbers-card-icon-for-date expand_more
 				p(class="result-datepicker-second-date")
 					span.pick-up-numbers-card-date-for-two-inputs ДД.ММ.ГГГГ
 					span.material-icons.pick-up-numbers-card-icon-for-date expand_more
-					div.pick-up-numbers-card-quests.booking-card-quests
-		.booking-guests
-			h3 Гости
+					div.pick-up-numbers-card-quests.booking__card-quests
+		.booking__guests
+			h3.booking__guests_title Гости
 			.pick-up-dropdown
 				+dropdown-people
-		div.booking-text.booking-text-1
+		.booking-text.booking-text-1
 			span.booking-grid-item 9 990₽ х 4 суток
 			span.booking-text-grid-end-position 39 960₽
-		div.booking-text.booking-text-2
+		.booking-text.booking-text-2
 			span.booking-text-2_text Сбор за услуги: скидка 2 179₽
 			span.material-icons.booking-icon error_outline
 			span.booking-text-grid-end-position 0₽
-		div.booking-text.booking-text-2
+		.booking-text.booking-text-2
 			span.booking-text-2_text-wide Сбор за дополнительные услуги
 			span.material-icons.booking-icon error_outline
 			span.booking-text-grid-end-position 300₽
-		div.booking-text-total
+		.booking-text-total
 			h2 Итого
 			div.booking-text-total-border
 			h2.booking-text-total_price 38 081₽
-		div.booking-text-1
+		.booking-text-1
 			+button-pill__full_arrow("Забронировать")

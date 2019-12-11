@@ -6,27 +6,27 @@
 	padding-bottom: 1.31rem;
 	margin-top: 0.93rem;
 	padding-left: 0.31rem;
-}
 
-.icon-advantages img {
-	margin-top: 0.62rem
-}
+	&__image {
+		margin-top: 0.62rem
+	}
 
-.icon-advantages>div {
-	padding-left: 0.43rem;
-	padding-top: 0.56rem;
-	font-size: 0.87rem;
-	line-height: 1.37rem;
-	letter-spacing: -0.01rem;
-}
+	&__text {
+		padding-left: 0.43rem;
+		padding-top: 0.56rem;
+		font-size: 0.87rem;
+		line-height: 1.37rem;
+		letter-spacing: -0.01rem;
+	}
 
-.icon-advantages h3 {
-	margin-top: -0.06rem;
-	padding-top: -0.12rem;
-	letter-spacing: 0.01rem;
-	font-family: "Montserrat-SemiBold", Arial, sans-serif;
-	text-transform: none;
-	font-size: 0.88rem;
+	&__text_h3 {
+		margin-top: -0.06rem;
+		padding-top: -0.12rem;
+		letter-spacing: 0.01rem;
+		font-family: "Montserrat-SemiBold", Arial, sans-serif;
+		text-transform: none;
+		font-size: 0.88rem;
+	}
 }
 
 .border-none {

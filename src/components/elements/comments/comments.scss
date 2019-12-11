@@ -3,26 +3,111 @@
 	grid-template-columns: 3.12rem 40.62rem;
 	grid-column-gap: 0.5rem;
 	grid-row-gap: 0.5rem;
+
+
+	&__profile-image {
+		margin-top: -0.25rem;
+	}
+
+	&__name {
+		font-size: 0.87rem;
+		margin-bottom: 0.37rem;
+		text-transform: none;
+		letter-spacing: 0.01rem;
+	}
+
+	&__like-button {
+		padding-left: 0.25rem;
+	}
+
+	&__description {
+		margin-top: -0.2rem;
+		letter-spacing: -0.007rem;
+		line-height: 1.5rem;
+		width: 40.81rem;
+	}
 }
 
-.comments  img {
-	margin-top: -0.25rem;
+.like-button {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
 }
 
-.comments h3 {
-	font-size: 0.87rem;
-	margin-bottom: 0.37rem;
-	text-transform: none;
-	letter-spacing: 0.01rem;
+.like-button__background {
+	z-index: 1;
+	background: linear-gradient(180deg, $dark-shade-025, $dark-shade-025);
+	border: none;
+	color: $dark-shade-025;
+	padding: auto;
+	width: 2.5rem;
+	height: 1.25rem;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 1.37rem;
+	position: relative;
 }
 
-.comments_like-button {
-	padding-left: 0.25rem;
+.like-button input:checked~.like-button__background {
+	background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
 }
 
-.comments_description {
-	margin-top: -0.2rem;
-	letter-spacing: -0.007rem;
-	line-height: 1.5rem;
-	width: 40.81rem;
+.like-button__input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.like-button__empty-white {
+	z-index: 2;
+	position: absolute;
+	background: white;
+	width: 2.37rem;
+	height: 1.12rem;
+	left: 0.06rem;
+	top: 0.06rem;
+	border-radius: 0.62rem;
+}
+
+.like-button__favorite_border {
+	z-index: 5;
+	font-size: 0.62rem;
+	position: absolute;
+	top: 0.06rem;
+	left: 0.31rem;
+	color: $dark-shade-025;
+}
+
+.like-buttons__favorite {
+	z-index: 6;
+	font-size: 0.62rem;
+	position: absolute;
+	top: 0.06rem;
+	left: 0.31rem;
+	display: none;
+	color: #BC9CFF;
+}
+
+.like-button__label input:checked~.like-button__favorite {
+	display: inline-block;
+}
+
+.like-button__label input:checked~.like-button__background {
+	color: #BC9CFF;
+}
+
+.like-button__num {
+	z-index: 3;
+	position: absolute;
+	top: 0.25rem;
+	right: 0.68rem;
+	font-weight: 500;
+	font-size: 0.62rem;
 }

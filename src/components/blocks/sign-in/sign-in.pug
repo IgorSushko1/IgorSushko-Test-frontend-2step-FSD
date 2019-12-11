@@ -1,4 +1,4 @@
-include ../../elements/text-field/text-field.pug
+include ../../elements/form__name/form__name.pug
 include ../../elements/button-pill__empty/button-pill__empty_short.pug
 include ../../elements/button-pill__full_arrow/button-pill__full_arrow.pug
 
@@ -6,9 +6,9 @@ mixin sign-in
 	.sing-in-card
 		h2.sing-in-card-title Войти
 		div.sing-in-card-1
-			+form-name("email","Email", "email-sign-in", "sing-in-card-form")
+			+form__name("email", "Email", "email-sign-in", "sign-in")
 		div.sing-in-card-2
-			+form-name("text","Пароль", "password-sign-in", "sing-in-card-form")
+			+form__name("text", "Пароль", "password-sign-in", "sign-in")
 		.sing-in-card-button
 				+button-pill__full_arrow("Войти")
 		.sing-in-card-sing-up

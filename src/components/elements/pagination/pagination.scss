@@ -6,32 +6,35 @@
 	position: relative;
 	left: -0.43rem;
 	font-size: 0.75rem;
-}
 
-.pagination-first-number {
-	background: linear-gradient(180deg, rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
-	border-radius: 50%;
-	color: white;
-}
+	&__grid-item {
+		text-align: center;
+		justify-content: center;
+		height: 2.5rem;
+		line-height: 2.5rem;
+		color: $dark-shade-050;
+	}
 
-.span-forward-icon {
-	background: linear-gradient(180deg, #6FCF97, #66D2EA);
-	border-radius: 50%;
-	color: white;
-}
+	&__first-number {
+		background: linear-gradient(180deg, rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
+		border-radius: 50%;
+		color: white;
+	}
 
-.pagination-grid-item {
- text-align: center;
- justify-content: center;
- height: 2.5rem;
- line-height: 2.5rem;
- color: $dark-shade-050;
-}
-.pagination-description{
-	margin-top: 0.62rem;
-	font-size: 0.93rem;
-	font-family: "Montserrat-Regular", Arial, sans-serif;
-	letter-spacing: 0.03em;
-	position: relative;
-	left: -0.56rem;
+	&__arrow {
+		background: linear-gradient(180deg, #6FCF97, #66D2EA);
+		border-radius: 50%;
+		color: white;
+	}
+
+
+	&__description {
+		margin-top: 0.62rem;
+		font-size: 0.93rem;
+		font-family: "Montserrat-Regular", Arial, sans-serif;
+		letter-spacing: 0.03em;
+		position: relative;
+		left: -0.56rem;
+	}
+
 }
