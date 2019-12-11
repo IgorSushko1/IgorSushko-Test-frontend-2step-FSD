@@ -8,8 +8,8 @@
     <meta name="description" content="Выбор номера в отеле, любой">
     <title>Search page</title>
   <link href="main.css" rel="stylesheet"></head>
-  <body class="base-page">
-    <header class="base-header">
+  <body class="base">
+    <header class="base__header">
       <div class="header"><img src="imgs/Logo.png" alt="">
         <div>
           <ul class="nav">
@@ -24,23 +24,22 @@
             </li>
           </ul>
           <div class="header-button">
-            <button class="button-pill_empty">ВОЙТИ</button>
-            <button class="button-pill_full">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            <button class="button-pill__empty">ВОЙТИ</button>
+            <button class="button-pill__full">ЗАРЕГИСТРИРОВАТЬСЯ</button>
           </div>
         </div>
       </div>
     </header>
     <div class="search-page">
-      <article class="search-page__card">
-        <h3 class="search-page__card_title-datepicker">Даты пребывания в отеле</h3>
+      <article class="search-page__select-options">
+        <h3 class="search-page__select-options_datepicker_title">Даты пребывания в отеле</h3>
         <label class="datepicker_one-field">
           <input class="datepicker-here" type="checkbox" id="datepicker-single" data-multiple-dates-separator=" - " data-range="true" data-position="bottom left">
           <div class="datepicker__one-field_input" id="datepicker__one-field_input"> <span>19 авг - 23 авг</span></div><span class="material-icons datepicker__one-field_arrow">keyboard_arrow_down</span>
         </label>
-        <div class="search-page__card_block">
-          <h3 class="search-page__card_title-datepicker">Гости</h3><div class="iqdropdown second-iqdropdown">
+        <h3 class="search-page__select-options_dropdown_title">Гости</h3><div class="iqdropdown second-iqdropdown">
 <p class="iqdropdown-selection"></p>
-          <p class="material-icons iqdropdown_icon">expand_more</p><div class="iqdropdown-menu">
+        <p class="material-icons iqdropdown_icon">expand_more</p><div class="iqdropdown-menu">
 <div class="iqdropdown-menu-option" data-id="item1">
 <div>
 <p class="iqdropdown-item bold">Взрослые</p>
@@ -65,7 +64,6 @@
 </div>
 </div>
 </div>
-        </div>
         <form class="form-for-ramge-slider">
           <div class="amount-of-money">
             <h3 class="bold">Диапазон цены</h3>
@@ -73,31 +71,31 @@
           <input class="slider-range-slider" type="text" name="example_name" value="">
         </form>
         <div class="range-slider_description">Стоимость за сутки пребывания в номере</div>
-        <h3 class="search-page__card_check-box_title">checkbox buttons</h3>
-        <label class="checkbox-buttons_container">Можно курить
-          <input type="checkbox"><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
+        <h3 class="search-page__select-options_checkbox_title">checkbox buttons</h3>
+        <label class="checkbox-button__container">Можно курить
+          <input type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
         </label>
-        <label class="checkbox-buttons_container">Можно с питомцами
-          <input type="checkbox" checked><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
+        <label class="checkbox-button__container">Можно с питомцами
+          <input type="checkbox" checked><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
         </label>
-        <label class="checkbox-buttons_container">Можно пригласить гостей (до 10 человек)
-          <input type="checkbox" checked><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
+        <label class="checkbox-button__container">Можно пригласить гостей (до 10 человек)
+          <input type="checkbox" checked><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
         </label>
-        <h3 class="search-page__card_check-box-rich_title">доступность</h3>
+        <h3 class="search-page__select-options_checkbox-rich_title">доступность</h3>
         <div>
-          <label class="checkbox-buttons_container checkbox-rich-height">
-            <div class="bold">Широкий коридор</div>
-            <input type="checkbox"><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
-            <div class="rich-checkbox-description-first">Ширина коридоров в номере не менее 91см</div>
+          <label class="checkbox-rich__container checkbox-rich__margin">
+            <div class="checkbox-rich__title">Широкий коридор</div>
+            <input type="checkbox"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark-white"></span>
+            <div class="checkbox-rich__description-first">Ширина коридоров в номере не менее 91см</div>
           </label>
-          <label class="checkbox-buttons_container checkbox-rich-height">
-            <div class="bold">Помощник для инвалидов</div>
-            <input type="checkbox"><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
-            <div class="rich-checkbox-description-second">На 1 этаже вас встретит специалист и проводит до номера</div>
+          <label class="checkbox-rich__container checkbox-rich__margin">
+            <div class="checkbox-rich__title">Помощник для инвалидов</div>
+            <input type="checkbox"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark-white"></span>
+            <div class="checkbox-rich__description-second">На 1 этаже вас встретит специалист и проводит до номера</div>
           </label>
         </div>
-        <div class="search-page__card_dropdown">
-          <h3 class="search-page__card_dropdown_title">Удобства номера</h3><div class="iqdropdown first-iqdropdown">
+        <div class="search-page__select-options_dropdown">
+          <h3>Удобства номера</h3><div class="iqdropdown first-iqdropdown">
 <p class="iqdropdown-selection"></p>
           <p class="material-icons iqdropdown_icon">expand_more</p><div class="iqdropdown-menu">
 <div class="iqdropdown-menu-option" data-id="item1">
@@ -121,22 +119,22 @@
 </div>
 </div>
         </div>
-        <div class="search-page__card_expendable-checkbox-list">
-          <div class="checkbox-container-list">
-            <button class="dropdown-dropbtn myDropdown007"> 
-              <h3 class="bold checkbox-expendable-list-h3">дополнительные удобства</h3><span class="material-icons dropdown-btn-icons">keyboard_arrow_down</span>
+        <div class="search-page__select-options_expendable-checkbox">
+          <div class="checkbox-expendable">
+            <button class="checkbox-expendable__drop_btn checkbox-expendable__start"> 
+              <h3 class="h3_bold checkbox-expendable__title">дополнительные удобства</h3><span class="material-icons checkbox-expendable__icons">keyboard_arrow_down</span>
             </button>
-            <div class="dropdown-content dropdownCheckboxes">
-              <label class="checkbox-buttons_container checkbox-expendable-margin">Завтрак
+            <div class="checkbox-expendable__dropdown checkbox-expendable__dropdown_hide">
+              <label class="checkbox-expendable__label checkbox-expendable__margin">Завтрак
+                <input type="checkbox" checked><span class="checkbox-buttons__checkmark"></span><span class="checkbox-buttons__checkmark_white"></span>
+              </label>
+              <label class="checkbox-expendable__label checkbox-expendable__margin">Письменный стол
                 <input type="checkbox" checked><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
               </label>
-              <label class="checkbox-buttons_container checkbox-expendable-margin">Письменный стол
-                <input type="checkbox" checked><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
-              </label>
-              <label class="checkbox-buttons_container checkbox-expendable-margin">Стул для кормления
+              <label class="checkbox-expendable__label checkbox-expendable__margin">Стул для кормления
                 <input type="checkbox"><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
               </label>
-              <label class="checkbox-buttons_container checkbox-expendable-margin">Кроватка
+              <label class="checkbox-expendable__label checkbox-expendable__margin">Кроватка
                 <input type="checkbox"><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
               </label>
             </div>
@@ -144,7 +142,7 @@
         </div>
       </article>
       <article class="search-page__rooms">
-        <h2>Номера, которые мы для вас подобрали</h2>
+        <h2 class="search-page_rooms_title">Номера, которые мы для вас подобрали</h2>
         <div class="search-page__rooms_numbers">
           <div class="hotel-room-card"><img src="imgs/room1.png" alt="">
             <div class="hotel-room-circle">
@@ -559,12 +557,12 @@
           </div>
         </div>
         <div class="search-page__rooms_pagination">
-          <div class="pagination"><span class="pagination-grid-item pagination-first-number">1</span><span class="pagination-grid-item">2</span><span class="pagination-grid-item">3</span><span class="pagination-grid-item">..</span><span class="pagination-grid-item">15</span><span class="pagination-grid-item material-icons span-forward-icon">arrow_forward</span></div>
-          <div class="pagination-description">1 - 12 из 100+ вариантов аренды</div>
+          <div class="pagination"><span class="pagination__grid-item pagination__first-number">1</span><span class="pagination__grid-item">2</span><span class="pagination__grid-item">3</span><span class="pagination__grid-item">..</span><span class="pagination__grid-item">15</span><span class="pagination__grid-item pagination__arrow material-icons">arrow_forward</span></div>
+          <div class="pagination__description">1 - 12 из 100+ вариантов аренды</div>
         </div>
       </article>
     </div>
-    <footer class="base-footer">
+    <footer class="base__footer">
       <div class="footer">
         <div class="footer-block"><img src="imgs/Logo.png" alt="">
           <div>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
@@ -584,9 +582,9 @@
           <form>
             <legend>
               <h3></h3>
-              <div class="container-text-field">
-                <input class="text-field-border" type="email" value="Your email adress">
-                <input class="material-icons arrow-forward" type="submit" value="arrow_forward">
+              <div class="form__email">
+                <input class="form__email_border" type="email" value="Your email adress">
+                <input class="material-icons form__email_arrow-forward" type="submit" value="arrow_forward">
               </div>
             </legend>
           </form>

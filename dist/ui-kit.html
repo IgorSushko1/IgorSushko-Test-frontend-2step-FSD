@@ -15,13 +15,13 @@
       <h2>Hello!</h2>
     </main>
     <div>
-<h1 class="grey">H1</h1>
+<h1 class="description__grey">H1</h1>
 <h1>This one is the sub-section or widget title</h1>
-<h2 class="grey">H2</h2>
+<h2 class="description__grey">H2</h2>
 <h2>Next one is the item title inside widgets</h2>
-<h3 class="grey">H3</h3>
+<h3 class="description__grey">H3</h3>
 <h3>This is a label or CTA text</h3>
-<div class="grey">body</div>
+<div class="description__grey">body</div>
 <div>This is the body text which is used for most of the design, like paragraphs, lists, etc.</div>
     </div>
         <div>
@@ -62,17 +62,31 @@
         <form>
           <legend>
             <h3>field name</h3>
-            <div class="container-text-field">
-              <input class="text-field-border text-field-email" type="email" value="Your email adress">
-              <input class="material-icons arrow-forward" type="submit" value="arrow_forward">
+            <div class="form__email">
+              <input class="form__email_border text-field-email" type="email" value="Your email adress">
+              <input class="material-icons form__email_arrow-forward" type="submit" value="arrow_forward">
             </div>
           </legend>
         </form>
         <form>
           <legend>
             <h3>masked text field</h3>
-            <div class="container-text-field">
-              <input class="text-field-border text-field-date" type="date" value="16-11-2019">
+            <div class="form__date">
+              <input class="form__date_border text-field-date" type="date" value="16-11-2019">
+            </div>
+          </legend>
+        </form>
+        <form>
+          <legend>
+            <div class="form__name">
+              <input class="form__name_border form__name_sign-in" type="email" value="Email" name="email-sign-in">
+            </div>
+          </legend>
+        </form>
+        <form>
+          <legend>
+            <div class="form__name">
+              <input class="form__name_border form__name_sign-up" type="email" value="Email" name="email-sign-up">
             </div>
           </legend>
         </form>
@@ -151,23 +165,23 @@
     <div>
     </div>
     <div>
-            <label class="checkbox-buttons_container">Можно курить
-              <input type="checkbox"><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
+            <label class="checkbox-button__container">Можно курить
+              <input type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
             </label>
-            <label class="checkbox-buttons_container">Можно с питомцами
-              <input type="checkbox"><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
+            <label class="checkbox-button__container">Можно с питомцами
+              <input type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
             </label>
-            <label class="checkbox-buttons_container">Можно пригласить гостей (до 10 человек)
-              <input type="checkbox"><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
+            <label class="checkbox-button__container">Можно пригласить гостей (до 10 человек)
+              <input type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
             </label>
     </div>
     <div>
-            <form action="">
-              <label class="checkbox-radio_container">Мужчина
-                <input type="radio" name="sex" value="this is a men's world" checked><span class="checkbox-radio_checkmark"></span><span class="checkbox-radio_checkmark-white"></span>
+            <form class="checkbox-radio" action="">
+              <label class="checkbox-radio__container">Мужчина
+                <input type="radio" name="sex" value="this is a men's world" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
               </label>
-              <label class="checkbox-radio_container">Женщина
-                <input type="radio" name="sex" value="but it would be nothing? without woman or a girl"><span class="checkbox-radio_checkmark"></span><span class="checkbox-radio_checkmark-white"></span>
+              <label class="checkbox-radio__container">Женщина
+                <input type="radio" name="sex" value="but it would be nothing? without woman or a girl"><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
               </label>
             </form>
     </div>
@@ -186,33 +200,33 @@
             </div>
     </div>
     <div>
-            <button class="button-pill_full">REGISTER</button>
+            <button class="button-pill__full">REGISTER</button>
     </div>
     <div>
-            <button class="button-pill_empty">REGISTER</button>
+            <button class="button-pill__empty">REGISTER</button>
     </div>
     <div>
-<button class="button-text">
+<button class="button__text">
   <h3>CLICK ME</h3>
 </button>
     </div>
     <div>
     </div>
-          <button class="button-pill_full-with-arrow">
-            <h3>CLICK ME</h3>
-            <div class="material-icons button-pill_full-with-arrow_arrow-for-button">arrow_forward</div>
+          <button class="button-pill__full_arrow">
+            <h3 class="button-pill__full_arrow_text">CLICK ME</h3>
+            <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
           </button>
     <div>
-<div><img src="imgs/insert_emoticon.svg" alt="Cinque Terre" width="48" height="48"></div>
+<div><img class="like-button__profile-image" src="imgs/insert_emoticon.svg" alt="Cinque Terre" width="48" height="48"></div>
 <div>
-  <label class="like-button_label">
-    <input class="like-button_input" type="checkbox">
-    <div class="like-buttons">
-      <div class="like-buttons_empty-white"></div>
-      <div class="like-buttons_div">12</div>
+  <label class="like-button">
+    <input class="like-button__input" type="checkbox">
+    <div class="like-button__background">
+      <div class="like-button__empty-white"></div>
+      <div class="like-button__num">12</div>
     </div>
-    <div class="material-icons like-buttons_favorite_border">favorite_border</div>
-    <div class="material-icons like-buttons_favorite">favorite</div>
+    <div class="material-icons like-button__favorite_border">favorite_border</div>
+    <div class="material-icons like-button__favorite">favorite</div>
   </label>
 </div>
     </div>
@@ -230,113 +244,108 @@
     <div>
     </div>
     <div>
-            <div class="checkbox-container-list">
-              <button class="dropdown-dropbtn myDropdown007"> 
-                <h3 class="bold checkbox-expendable-list-h3"></h3><span class="material-icons dropdown-btn-icons">keyboard_arrow_down</span>
+            <div class="checkbox-expendable">
+              <button class="checkbox-expendable__drop_btn checkbox-expendable__start"> 
+                <h3 class="h3_bold checkbox-expendable__title"></h3><span class="material-icons checkbox-expendable__icons">keyboard_arrow_down</span>
               </button>
-              <div class="dropdown-content dropdownCheckboxes">
-                <label class="checkbox-buttons_container checkbox-expendable-margin">Завтрак
+              <div class="checkbox-expendable__dropdown checkbox-expendable__dropdown_hide">
+                <label class="checkbox-expendable__label checkbox-expendable__margin">Завтрак
+                  <input type="checkbox" checked><span class="checkbox-buttons__checkmark"></span><span class="checkbox-buttons__checkmark_white"></span>
+                </label>
+                <label class="checkbox-expendable__label checkbox-expendable__margin">Письменный стол
                   <input type="checkbox" checked><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
                 </label>
-                <label class="checkbox-buttons_container checkbox-expendable-margin">Письменный стол
-                  <input type="checkbox" checked><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
-                </label>
-                <label class="checkbox-buttons_container checkbox-expendable-margin">Стул для кормления
+                <label class="checkbox-expendable__label checkbox-expendable__margin">Стул для кормления
                   <input type="checkbox"><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
                 </label>
-                <label class="checkbox-buttons_container checkbox-expendable-margin">Кроватка
+                <label class="checkbox-expendable__label checkbox-expendable__margin">Кроватка
                   <input type="checkbox"><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
                 </label>
               </div>
             </div>
     </div>
     <div>
-            <div class="pagination"><span class="pagination-grid-item pagination-first-number">1</span><span class="pagination-grid-item">2</span><span class="pagination-grid-item">3</span><span class="pagination-grid-item">..</span><span class="pagination-grid-item">15</span><span class="pagination-grid-item material-icons span-forward-icon">arrow_forward</span></div>
-            <div class="pagination-description">1 - 12 из 100+ вариантов аренды</div>
+            <div class="pagination"><span class="pagination__grid-item pagination__first-number">1</span><span class="pagination__grid-item">2</span><span class="pagination__grid-item">3</span><span class="pagination__grid-item">..</span><span class="pagination__grid-item">15</span><span class="pagination__grid-item pagination__arrow material-icons">arrow_forward</span></div>
+            <div class="pagination__description">1 - 12 из 100+ вариантов аренды</div>
     </div>
     <div>
             <div>
-              <label class="checkbox-buttons_container checkbox-rich-height">
-                <div class="bold">Широкий коридор</div>
-                <input type="checkbox"><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
-                <div class="rich-checkbox-description-first">Ширина коридоров в номере не менее 91см</div>
+              <label class="checkbox-rich__container checkbox-rich__margin">
+                <div class="checkbox-rich__title">Широкий коридор</div>
+                <input type="checkbox"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark-white"></span>
+                <div class="checkbox-rich__description-first">Ширина коридоров в номере не менее 91см</div>
               </label>
-              <label class="checkbox-buttons_container checkbox-rich-height">
-                <div class="bold">Помощник для инвалидов</div>
-                <input type="checkbox"><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
-                <div class="rich-checkbox-description-second">На 1 этаже вас встретит специалист и проводит до номера</div>
+              <label class="checkbox-rich__container checkbox-rich__margin">
+                <div class="checkbox-rich__title">Помощник для инвалидов</div>
+                <input type="checkbox"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark-white"></span>
+                <div class="checkbox-rich__description-second">На 1 этаже вас встретит специалист и проводит до номера</div>
               </label>
             </div>
     </div>
     <div>
-            <h3>bullet list</h3>
             <ul class="bullet-list">
-              <li class="bullet-list_disc"></li>
-              <li style="color: grey">Нельзя с питомцами</li>
-              <li class="bullet-list_disc"></li>
-              <li style="color: grey">Без вечеринок и мероприятий</li>
-              <li class="bullet-list_disc"></li>
-              <li style="color: grey">Время прибытия — после 13:00, выезд до 12:00</li>
+              <div class="bullet-list__disc" style="bullet list"></div>
+              <div class="bullet-list__text">grey</div>
             </ul>
     </div>
     <div>
-            <div class="icon-advantages"><img src="imgs/insert_emoticon.svg" alt="Cinque Terre" width="40" height="40">
-              <div>
-                <h3>Комфорт</h3>
+            <div class="icon-advantages"><img class="icon-advantages__image" src="imgs/insert_emoticon.svg" alt="Cinque Terre" width="40" height="40">
+              <div class="icon-advantages__text">
+                <h3 class="icon-advantages__text_h3">Комфорт</h3>
                 <div>Шумопоглащающие стены</div>
               </div>
             </div>
-            <div class="icon-advantages"><img src="imgs/location_city.svg" alt="Cinque Terre" width="40" height="40">
-              <div>
-                <h3>Удобство</h3>
+            <div class="icon-advantages"><img class="icon-advantages__image" src="imgs/location_city.svg" alt="Cinque Terre" width="40" height="40">
+              <div class="icon-advantages__text">
+                <h3 class="icon-advantages__text_h3">Удобство</h3>
                 <div>Окно в каждой из спален</div>
               </div>
             </div>
-            <div class="icon-advantages border-none"><img src="imgs/whatshot.svg" alt="Cinque Terre" width="40" height="40">
-              <div>
-                <h3>Уют</h3>
+            <div class="icon-advantages border-none"><img class="icon-advantages__image" src="imgs/whatshot.svg" alt="Cinque Terre" width="40" height="40">
+              <div class="icon-advantages__text">
+                <h3 class="icon-advantages__text_h3">Уют</h3>
                 <div>Номер оснащен камином</div>
               </div>
             </div>
     </div>
     <div>
             <div class="comments">
-              <div><img src="./assets/images/murad-true.png" alt="Cinque Terre" width="48" height="48"></div>
+              <div><img class="comments__profile-image" src="./assets/images/murad-true.png" alt="Cinque Terre" width="48" height="48"></div>
               <div>
-                <h3>Мурад Сарафанов</h3>
-                <div class="comments-date">5 дней назад</div>
+                <h3 class="comments__name">Мурад Сарафанов</h3>
+                <div class="comments__date">5 дней назад</div>
               </div>
-              <div class="comments_like-button">
-                <label class="like-button_label">
-                  <input class="like-button_input" type="checkbox" checked>
-                  <div class="like-buttons">
-                    <div class="like-buttons_empty-white"></div>
-                    <div class="like-buttons_div">12</div>
+              <div class="comments__like-button">
+                <label class="like-button">
+                  <input class="like-button__input" type="checkbox" checked>
+                  <div class="like-button__background">
+                    <div class="like-button__empty-white"></div>
+                    <div class="like-button__num">12</div>
                   </div>
-                  <div class="material-icons like-buttons_favorite_border">favorite_border</div>
-                  <div class="material-icons like-buttons_favorite">favorite</div>
+                  <div class="material-icons like-button__favorite_border">favorite_border</div>
+                  <div class="material-icons like-button__favorite">favorite</div>
                 </label>
               </div>
-              <div class="comments_description">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</div>
+              <div class="comments__description">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</div>
             </div>
             <div class="comments">
-              <div><img src="./assets/images/girl image.png" alt="Cinque Terre" width="48" height="48"></div>
+              <div><img class="comments__profile-image" src="./assets/images/girl image.png" alt="Cinque Terre" width="48" height="48"></div>
               <div>
-                <h3>Патрисия Стёклышкова</h3>
-                <div class="comments-date">Неделю назад</div>
+                <h3 class="comments__name">Патрисия Стёклышкова</h3>
+                <div class="comments__date">Неделю назад</div>
               </div>
-              <div class="comments_like-button">
-                <label class="like-button_label">
-                  <input class="like-button_input" type="checkbox">
-                  <div class="like-buttons">
-                    <div class="like-buttons_empty-white"></div>
-                    <div class="like-buttons_div">2</div>
+              <div class="comments__like-button">
+                <label class="like-button">
+                  <input class="like-button__input" type="checkbox">
+                  <div class="like-button__background">
+                    <div class="like-button__empty-white"></div>
+                    <div class="like-button__num">2</div>
                   </div>
-                  <div class="material-icons like-buttons_favorite_border">favorite_border</div>
-                  <div class="material-icons like-buttons_favorite">favorite</div>
+                  <div class="material-icons like-button__favorite_border">favorite_border</div>
+                  <div class="material-icons like-button__favorite">favorite</div>
                 </label>
               </div>
-              <div class="comments_description">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</div>
+              <div class="comments__description">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</div>
             </div>
     </div>
     <div>
@@ -354,8 +363,8 @@
                   </li>
                 </ul>
                 <div class="header-button">
-                        <button class="button-pill_empty"></button>
-                        <button class="button-pill_full"></button>
+                        <button class="button-pill__empty"></button>
+                        <button class="button-pill__full"></button>
                 </div>
               </div>
             </div>
@@ -397,9 +406,9 @@
                       <form>
                         <legend>
                           <h3></h3>
-                          <div class="container-text-field">
-                            <input class="text-field-border" type="email" value="Your email adress">
-                            <input class="material-icons arrow-forward" type="submit" value="arrow_forward">
+                          <div class="form__email">
+                            <input class="form__email_border" type="email" value="Your email adress">
+                            <input class="material-icons form__email_arrow-forward" type="submit" value="arrow_forward">
                           </div>
                         </legend>
                       </form>
@@ -429,8 +438,8 @@
               <div class="sing-up-card-1">
                       <form>
                         <legend>
-                          <div class="container-text-field">
-                            <input class="sing-up-card-form text-field-border" type="text" value="Имя" name="name">
+                          <div class="form__name">
+                            <input class="form__name_border form__name_sign-up" type="text" value="Имя" name="name">
                           </div>
                         </legend>
                       </form>
@@ -438,19 +447,19 @@
               <div class="sing-up-card-2">
                       <form>
                         <legend>
-                          <div class="container-text-field">
-                            <input class="sing-up-card-form text-field-border" type="text" value="Фамилия" name="surname">
+                          <div class="form__name">
+                            <input class="form__name_border form__name_sign-up" type="text" value="Фамилия" name="surname">
                           </div>
                         </legend>
                       </form>
               </div>
               <div class="sing-up-card-3">
-                      <form class="sing-up-card-radio" action="">
-                        <label class="checkbox-radio_container">Мужчина
-                          <input type="radio" name="sex" value="this is a men's world" checked><span class="checkbox-radio_checkmark"></span><span class="checkbox-radio_checkmark-white"></span>
+                      <form class="checkbox-radio" action="">
+                        <label class="checkbox-radio__container">Мужчина
+                          <input type="radio" name="sex" value="this is a men's world" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
                         </label>
-                        <label class="checkbox-radio_container">Женщина
-                          <input type="radio" name="sex" value="but it would be nothing? without woman or a girl"><span class="checkbox-radio_checkmark"></span><span class="checkbox-radio_checkmark-white"></span>
+                        <label class="checkbox-radio__container">Женщина
+                          <input type="radio" name="sex" value="but it would be nothing? without woman or a girl"><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
                         </label>
                       </form>
               </div>
@@ -463,8 +472,8 @@
                 <div>
                         <form>
                           <legend>
-                            <div class="container-text-field">
-                              <input class="sing-up-card-form text-field-border" type="email" value="Email" name="email">
+                            <div class="form__name">
+                              <input class="form__name_border form__name_sign-up" type="email" value="Email" name="email">
                             </div>
                           </legend>
                         </form>
@@ -472,33 +481,33 @@
                 <div>
                         <form>
                           <legend>
-                            <div class="container-text-field">
-                              <input class="sing-up-card-form text-field-border" type="text" value="Пароль" name="password">
+                            <div class="form__name">
+                              <input class="form__name_border form__name_sign-up" type="text" value="Пароль" name="password">
                             </div>
                           </legend>
                         </form>
                 </div>
               </div>
               <div class="sing-up-card-toggle">
-                      <label class="checkbox">
-                        <div class="checkbox-background-gradient-pets">
-                          <div class="checkbox-background-white">
-                            <input class="toggle-pets" type="checkbox" name="name" value="pets-allowed">
-                            <div class="checkbox-toggle-pets"></div>
-                            <div class="checkbox-text">Получать спецпредложения</div>
+                      <label class="checkbox-toggle">
+                        <div class="checkbox-toggle__background_gradient">
+                          <div class="checkbox-toggle__background_white">
+                            <input class="checkbox-toggle__input" type="checkbox" name="name" value="pets-allowed">
+                            <div class="checkbox-toggle__circle"></div>
+                            <div class="checkbox-toggle__text">Получать спецпредложения</div>
                           </div>
                         </div>
                       </label>
               </div>
               <div class="sing-up-card-button">
-                      <button class="button-pill_full-with-arrow">
-                        <h3>Перейти к оплате</h3>
-                        <div class="material-icons button-pill_full-with-arrow_arrow-for-button">arrow_forward</div>
+                      <button class="button-pill__full_arrow">
+                        <h3 class="button-pill__full_arrow_text">Перейти к оплате</h3>
+                        <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
                       </button>
               </div>
               <div class="sing-up-card-sing-in">
                 <p>Уже есть аккаунт на Toxin</p>
-                      <button class="button-pill_empty-44">Войти</button>
+                      <button class="button-pill__empty_short">Войти</button>
               </div>
             </div>
     </div>
@@ -508,8 +517,8 @@
               <div class="sing-in-card-1">
                       <form>
                         <legend>
-                          <div class="container-text-field">
-                            <input class="sing-in-card-form text-field-border" type="email" value="Email" name="email-sign-in">
+                          <div class="form__name">
+                            <input class="form__name_border form__name_sign-in" type="email" value="Email" name="email-sign-in">
                           </div>
                         </legend>
                       </form>
@@ -517,48 +526,48 @@
               <div class="sing-in-card-2">
                       <form>
                         <legend>
-                          <div class="container-text-field">
-                            <input class="sing-in-card-form text-field-border" type="text" value="Пароль" name="password-sign-in">
+                          <div class="form__name">
+                            <input class="form__name_border form__name_sign-in" type="text" value="Пароль" name="password-sign-in">
                           </div>
                         </legend>
                       </form>
               </div>
               <div class="sing-in-card-button">
-                      <button class="button-pill_full-with-arrow">
-                        <h3>Войти</h3>
-                        <div class="material-icons button-pill_full-with-arrow_arrow-for-button">arrow_forward</div>
+                      <button class="button-pill__full_arrow">
+                        <h3 class="button-pill__full_arrow_text">Войти</h3>
+                        <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
                       </button>
               </div>
               <div class="sing-in-card-sing-up">
                 <p>Нет аккаунта на Toxin?</p>
-                      <button class="button-pill_empty-44">Создать</button>
+                      <button class="button-pill__empty_short">Создать</button>
               </div>
             </div>
     </div>
     <div>
             <div class="booking">
-              <div class="booking-text">
-                <div class="booking-text-first-field">
-                  <h3 class="booking-text_symbol">№</h3>
-                  <h2 class="booking-text_number">888</h2>
-                  <h3 class="booking-text-lux">люкс</h3>
+              <div class="booking__text">
+                <div class="booking__text_first-field">
+                  <h3 class="booking__text_symbol">№</h3>
+                  <h2 class="booking__text_number">888</h2>
+                  <h3 class="booking__text_lux">люкс</h3>
                 </div>
                 <div>
-                  <p class="booking-text_price">9 990₽</p><span class="booking-text_per-day">в сутки</span>
+                  <p class="booking__text_price">9 990₽</p><span class="booking__text_per-day">в сутки</span>
                 </div>
               </div>
-              <div class="booking-calendar-arrival">
-                <h3>Прибытие - выезд</h3>
-                <label class="booking-calendar-input">
-                  <input class="datepicker-here pick-up-numbers-card-arrival-wid" type="checkbox" id="datepicker" data-range="true" data-multiple-dates-separator=" - " clearButton="true" data-position="bottom left">
+              <div class="booking__calendar_arrival">
+                <h3 class="booking__calendar_arrival_title">Прибытие - выезд</h3>
+                <label class="booking__calendar_input">
+                  <input class="datepicker-here pick-up-numbers-card-arrival-wid booking__calendar_input_datepicker" type="checkbox" id="datepicker" data-range="true" data-multiple-dates-separator=" - " clearButton="true" data-position="bottom left">
                   <p class="result-datepicker-first-date"><span class="pick-up-numbers-card-date-for-two-inputs">ДД.ММ.ГГГГ</span><span class="material-icons pick-up-numbers-card-icon-for-date">expand_more</span></p>
                   <p class="result-datepicker-second-date"><span class="pick-up-numbers-card-date-for-two-inputs">ДД.ММ.ГГГГ</span><span class="material-icons pick-up-numbers-card-icon-for-date">expand_more</span>
-                    <div class="pick-up-numbers-card-quests booking-card-quests"></div>
+                    <div class="pick-up-numbers-card-quests booking__card-quests"></div>
                   </p>
                 </label>
               </div>
-              <div class="booking-guests">
-                <h3>Гости</h3>
+              <div class="booking__guests">
+                <h3 class="booking__guests_title">Гости</h3>
                 <div class="pick-up-dropdown"><div class="iqdropdown second-iqdropdown">
 <p class="iqdropdown-selection"></p>
                         <p class="material-icons iqdropdown_icon">expand_more</p><div class="iqdropdown-menu">
@@ -597,9 +606,9 @@
                 <h2 class="booking-text-total_price">38 081₽</h2>
               </div>
               <div class="booking-text-1">
-                      <button class="button-pill_full-with-arrow">
-                        <h3>Забронировать</h3>
-                        <div class="material-icons button-pill_full-with-arrow_arrow-for-button">arrow_forward</div>
+                      <button class="button-pill__full_arrow">
+                        <h3 class="button-pill__full_arrow_text">Забронировать</h3>
+                        <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
                       </button>
               </div>
             </div>

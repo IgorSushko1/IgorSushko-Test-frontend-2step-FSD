@@ -8,8 +8,8 @@
     <meta name="description" content="Авторизуйтесьб исследовать варианты.">
     <title>Sign in</title>
   <link href="main.css" rel="stylesheet"></head>
-  <body class="registration-page">
-    <header class="registration-header">
+  <body class="registration">
+    <header class="registration__header">
       <div class="header"><img src="imgs/Logo.png" alt="">
         <div>
           <ul class="nav">
@@ -24,25 +24,25 @@
             </li>
           </ul>
           <div class="header-button">
-            <button class="button-pill_empty">ВОЙТИ</button>
-            <button class="button-pill_full">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            <button class="button-pill__empty">ВОЙТИ</button>
+            <button class="button-pill__full">ЗАРЕГИСТРИРОВАТЬСЯ</button>
           </div>
         </div>
       </div>
     </header>
-    <main class="registration-main">
-      <article class="registration-article-block">
-        <div class="registration-background-in"><img src="imgs/registration-background-image-interior.png" alt=""></div>
-        <div class="registration-sign-up">
+    <main class="registration__main">
+      <article class="registration__filling">
+        <div class="registration__background-in"><img class="registration__background-in_image" src="imgs/registration-background-image-interior.png" alt=""></div>
+        <div class="registration__filling_sign-up">
         </div>
-        <div class="registration-sign-in">
+        <div class="registration__filling_sign-in">
           <div class="sing-in-card">
             <h2 class="sing-in-card-title">Войти</h2>
             <div class="sing-in-card-1">
               <form>
                 <legend>
-                  <div class="container-text-field">
-                    <input class="sing-in-card-form text-field-border" type="email" value="Email" name="email-sign-in">
+                  <div class="form__name">
+                    <input class="form__name_border form__name_sign-in" type="email" value="Email" name="email-sign-in">
                   </div>
                 </legend>
               </form>
@@ -50,27 +50,27 @@
             <div class="sing-in-card-2">
               <form>
                 <legend>
-                  <div class="container-text-field">
-                    <input class="sing-in-card-form text-field-border" type="text" value="Пароль" name="password-sign-in">
+                  <div class="form__name">
+                    <input class="form__name_border form__name_sign-in" type="text" value="Пароль" name="password-sign-in">
                   </div>
                 </legend>
               </form>
             </div>
             <div class="sing-in-card-button">
-              <button class="button-pill_full-with-arrow">
-                <h3>Войти</h3>
-                <div class="material-icons button-pill_full-with-arrow_arrow-for-button">arrow_forward</div>
+              <button class="button-pill__full_arrow">
+                <h3 class="button-pill__full_arrow_text">Войти</h3>
+                <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
               </button>
             </div>
             <div class="sing-in-card-sing-up">
               <p>Нет аккаунта на Toxin?</p>
-              <button class="button-pill_empty-44">Создать</button>
+              <button class="button-pill__empty_short">Создать</button>
             </div>
           </div>
         </div>
       </article>
     </main>
-    <footer class="registration-footer">
+    <footer class="registration__footer">
       <div class="footer">
         <div class="footer-block"><img src="imgs/Logo.png" alt="">
           <div>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
@@ -90,9 +90,9 @@
           <form>
             <legend>
               <h3></h3>
-              <div class="container-text-field">
-                <input class="text-field-border" type="email" value="Your email adress">
-                <input class="material-icons arrow-forward" type="submit" value="arrow_forward">
+              <div class="form__email">
+                <input class="form__email_border" type="email" value="Your email adress">
+                <input class="material-icons form__email_arrow-forward" type="submit" value="arrow_forward">
               </div>
             </legend>
           </form>

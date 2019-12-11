@@ -8,8 +8,8 @@
     <meta name="description" content="Toxin, номер отеля, оценить, выбрать, регистрация">
     <title>Landing page</title>
   <link href="main.css" rel="stylesheet"></head>
-  <body class="landing-page">
-    <header class="landing-header">
+  <body class="landing">
+    <header>
       <div class="header"><img src="imgs/Logo.png" alt="">
         <div>
           <ul class="nav">
@@ -24,16 +24,16 @@
             </li>
           </ul>
           <div class="header-button">
-            <button class="button-pill_empty">ВОЙТИ</button>
-            <button class="button-pill_full">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            <button class="button-pill__empty">ВОЙТИ</button>
+            <button class="button-pill__full">ЗАРЕГИСТРИРОВАТЬСЯ</button>
           </div>
         </div>
       </div>
     </header>
-    <main class="landing-main">
-      <article class="landing-article-block">
-        <div class="landing-background"><img src="imgs/landing-background-image-interior.png" alt="" width="1440" height="830"></div>
-        <div class="landing-card-pick-numbers">
+    <main>
+      <article class="landing__content">
+        <div class="landing__content_background"><img class="landing__content_image" src="imgs/landing-background-image-interior.png" alt="" width="1440" height="830"></div>
+        <div class="landing__content_pick-numbers">
           <div class="pick-up-numbers-card">
             <div class="pick-up-numbers-card-title">
               <h2>Найдём номера под ваши пожелания</h2>
@@ -78,17 +78,17 @@
               </div>
             </div>
             <div class="pick-up-numbers-card-button">
-              <button class="button-pill_full-with-arrow">
-                <h3>подобрать номер</h3>
-                <div class="material-icons button-pill_full-with-arrow_arrow-for-button">arrow_forward</div>
+              <button class="button-pill__full_arrow">
+                <h3 class="button-pill__full_arrow_text">подобрать номер</h3>
+                <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
               </button>
             </div>
           </div>
         </div>
-        <div class="landing-image-description">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>
+        <div class="landing__content_background_description">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>
       </article>
     </main>
-    <footer class="landing-footer">
+    <footer>
       <div class="footer">
         <div class="footer-block"><img src="imgs/Logo.png" alt="">
           <div>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
@@ -108,9 +108,9 @@
           <form>
             <legend>
               <h3></h3>
-              <div class="container-text-field">
-                <input class="text-field-border" type="email" value="Your email adress">
-                <input class="material-icons arrow-forward" type="submit" value="arrow_forward">
+              <div class="form__email">
+                <input class="form__email_border" type="email" value="Your email adress">
+                <input class="material-icons form__email_arrow-forward" type="submit" value="arrow_forward">
               </div>
             </legend>
           </form>
