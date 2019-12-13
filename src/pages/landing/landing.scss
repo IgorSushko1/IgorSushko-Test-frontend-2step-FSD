@@ -10,28 +10,30 @@
 		position: relative;
 	}
 
-	&__content_background {
+	&__background {
 		width: 90rem;
 		height: 51.87rem;
 		overflow: hidden;
 		position: relative;
 	}
 
-	&__content_pick-numbers {
-		position: absolute;
-		z-index: 1;
-		top: 4.37rem;
-		left: 8.755rem;
-	}
-
-	&__content_image {
+	&__background_image {
 		position: relative;
 		top: -2.18rem;
 		left: 0.06rem;
 		transform: scaleY(1.085);
 	}
 
-	&__content_background_description {
+	&__pick-numbers {
+		position: absolute;
+		z-index: 1;
+		top: 4.37rem;
+		left: 8.755rem;
+	}
+
+
+
+	&__description {
 		position: absolute;
 		z-index: 1;
 		bottom: 1.31rem;
