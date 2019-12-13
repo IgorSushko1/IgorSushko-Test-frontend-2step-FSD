@@ -1,90 +1,90 @@
 .sing-up {
-	width: 380px;
-	height: 646px;
+	width: 23.75rem;
+	height: 40.37rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	border: 1px solid rgba(0, 0, 0, 0.12);
+	border: 0.06rem solid rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
-	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-	border-radius: 4px;
-	padding-left: 30px;
-	padding-right: 30px;
+	box-shadow: 0rem 0rem 1.56rem rgba(0, 0, 0, 0.2);
+	border-radius: 0.25rem;
+	padding-left: 1.87rem;
+	padding-right: 1.87rem;
 
 	&__title {
-		margin-left: -2px;
-		margin-top: 43px;
-		font-size: 17px;
+		margin-left: -0.12rem;
+		margin-top: 2.68rem;
+		font-size: 1.06rem;
 		letter-spacing: -0.05rem;
 	}
 
 	&__name {
-		margin-top: 24px;
-		margin-left: -3px;
+		margin-top: 1.5rem;
+		margin-left: -0.18rem;
 	}
 
 	&__surname {
-		margin-top: 8px;
-		margin-left: -3px;
+		margin-top: 0.5rem;
+		margin-left: -0.18rem;
 	}
 
 	&__gender {
-		margin-top: 8px;
-		margin-left: -21px;
+		margin-top: 0.5rem;
+		margin-left: -1.31rem;
 	}
 
 	&__birthday {
-		margin-top: 26px;
+		margin-top: 1.62rem;
 	}
 
 	&__birthday_title {
-		margin-left: -1px;
+		margin-left: -0.06rem;
 	}
 
 	&__pick-date {
-		margin-top: 5px;
-		height: 44px;
-		width: 320px;
-		margin-left: -1px;
-		padding-left: 15px;
-		border-radius: 4px;
-		border: 1px solid rgba(0, 0, 0, 0.2);
+		margin-top: 0.31rem;
+		height: 2.75rem;
+		width: 20rem;
+		margin-left: -0.06rem;
+		padding-left: 0.93rem;
+		border-radius: 0.25rem;
+		border: 0.06rem solid rgba(0, 0, 0, 0.2);
 	}
 
 	&__enter {
-		margin-top: 20px;
+		margin-top: 1.25rem;
 	}
 
 	&__enter_title {
-		margin-left: -1px;
+		margin-left: -0.06rem;
 		letter-spacing: 0.007em;
 	}
 
 	&__registration {
-		margin-top: 5px;
-		margin-left: -2px;
+		margin-top: 0.31rem;
+		margin-left: -0.12rem;
 	}
 
 	&__toggle-checkbox {
-		margin-top: 10px;
+		margin-top: 0.62rem;
 	}
 
 	&__button {
-		margin-top: 7px;
-		margin-left: -1px;
+		margin-top: 0.43rem;
+		margin-left: -0.06rem;
 	}
 
 	&__authorization {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-top: 30px;
-		margin-left: -1px;
+		margin-top: 1.87rem;
+		margin-left: -0.06rem;
 		letter-spacing: -0.01rem;
 	}
 
 	&__authorization_text {
-		font-size: 14px;
+		font-size: 0.87rem;
 		margin: 0;
 	}
 }

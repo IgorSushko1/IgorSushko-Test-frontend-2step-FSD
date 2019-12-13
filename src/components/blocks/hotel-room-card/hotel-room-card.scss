@@ -1,43 +1,43 @@
 .hotel-room {
-	width: 270px;
-	height: 257.5px;
+	width: 16.87rem;
+	height: 16.06rem;
 	background: #FFFFFF;
-	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-	border-radius: 4px;
+	box-shadow: 0rem 0.62rem 1.25rem rgba(31, 32, 65, 0.05);
+	border-radius: 0.25rem;
 	position: relative;
 
 	&__img {
-		border-top-left-radius: 4px;
-		border-top-right-radius: 4px;
+		border-top-left-radius: 0.25rem;
+		border-top-right-radius: 0.25rem;
 		cursor: pointer;
-		width: 270px;
-		height: 152px;
+		width: 16.87rem;
+		height: 9.5rem;
 	}
 
 	&__circles_block {
 		display: flex;
 		position: absolute;
-		top: 129px;
-		right: 16px;
+		top: 8.06rem;
+		right: 1rem;
 		cursor: pointer;
 	}
 
 	&__circle_point {
-		width: 5px;
-		height: 5px;
-		border: 1px solid white;
+		width: 0.31rem;
+		height: 0.31rem;
+		border:  0.06rem solid white;
 		border-radius: 50%;
 		z-index: 1;
-		margin-left: 4px;
+		margin-left: 0.25rem;
 	}
 
 	&__text {
 		display: flex;
 		justify-content: space-between;
-		margin-top: 20px;
+		margin-top: 1.25rem;
 		margin-left: 3%;
 		margin-right: 3%;
-		font-size: 14px;
+		font-size: 0.875rem;
 		position: relative;
 	}
 
@@ -45,25 +45,25 @@
 	&__cost {
 		display: flex;
 		align-items: flex-end;
-		height: 16px;
+		height: 1rem;
 	}
 
 	&__number_symbol {
-		font-size: 14px;
-		margin-left: 12px;
+		font-size: 0.875rem;
+		margin-left: 0.75rem;
 		font-family: "Quicksand-Medium", Arial, sans-serif;
 		position: absolute;
-		top: 2px;
-		left: 0px;
+		top: 0.125rem;
+		left: 0rem;
 	}
 
 	&__number_number {
-		margin-left: 3px;
-		font-size: 18px;
+		margin-left: 0.18rem;
+		font-size: 1.12rem;
 		line-height: 0;
 		position: absolute;
-		top: 9px;
-		left: 31px;
+		top: 0.56rem;
+		left: 1.93rem;
 		letter-spacing: 0.03em;
 		font-family: "Quicksand-Bold", Arial, sans-serif;
 	}
@@ -71,51 +71,51 @@
 	&__number_lux {
 		color: $purple;
 		position: absolute;
-		top: 3px;
-		left: 72px;
+		top: 0.18rem;
+		left: 4.5rem;
 	}
 
 	&__cost_price {
-		top: -14px;
+		top: -0.87rem;
 		color: $dark-shade-050;
 		position: absolute;
-		right: 57px;
+		right: 3.56rem;
 		font-family: "Montserrat-SemiBold", Arial, sans-serif;
 	}
 
 	&__cost_per-day {
 		color: $dark-shade-050;
 		position: absolute;
-		right: 11px;
-		top: 1px;
+		right: 0.68rem;
+		top: 0.06rem;
 		letter-spacing: -0.09em;
-		font-size: 13px;
+		font-size: 0.81rem;
 	}
 
 	&__raiting {
 		display: flex;
 		justify-content: space-between;
-		margin: 12px 3% 0 8%;
-		padding-top: 10px;
-		border-top: 1px solid $dark-shade-025;
+		margin: 0.75rem 3% 0 8%;
+		padding-top: 0.625rem;
+		border-top: 0.06rem solid $dark-shade-025;
 		position: relative;
 	}
 
 	&__review {
 		display: grid;
-		grid-template-columns: 27px auto;
-		font-size: 14px;
+		grid-template-columns: 1.68rem auto;
+		font-size: 0.875rem;
 		align-items: baseline;
 		color: $dark-shade-050;
 		position: absolute;
-		right: 11px;
-		top: 13px;
+		right: 0.68rem;
+		top: 0.81rem;
 	}
 
 	&__review_number {
-		font-size: 14px;
+		font-size: 0.875rem;
 		font-family: "Montserrat-Bold", Arial, sans-serif;
-		margin-right: 3px;
+		margin-right: 0.19rem;
 		text-align: end;
 	}
 }

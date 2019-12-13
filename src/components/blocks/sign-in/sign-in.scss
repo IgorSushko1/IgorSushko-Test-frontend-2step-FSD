@@ -1,52 +1,52 @@
 .sing-in {
-	width: 380px;
-	height: 358px;
+	width: 23.75rem;
+	height: 22.37rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	border: 1px solid rgba(0, 0, 0, 0.12);
+	border: 0.06rem solid rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
-	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-	border-radius: 4px;
-	padding-left: 30px;
-	padding-right: 30px;
+	box-shadow: 0rem 0rem 1.56rem rgba(0, 0, 0, 0.2);
+	border-radius: 0.25rem;
+	padding-left: 1.87rem;
+	padding-right: 1.87rem;
 
 	&__title {
-		margin-top: 43px;
-		margin-left: -1px;
-		font-size: 24px;
+		margin-top: 2.68rem;
+		margin-left: -0.06rem;
+		font-size: 1.5rem;
 	}
 
 	&__email {
-		margin-top: 14px;
-		margin-left: -3px;
+		margin-top: 0.87rem;
+		margin-left: -0.18rem;
 	}
 
 	&__password {
-		margin-top: 8px;
-		margin-left: -3px;
+		margin-top: 0.5rem;
+		margin-left: -0.18rem;
 	}
 
 	&__button-full {
-		margin-top: 28px;
-		margin-left: -1px;
+		margin-top: 1.75rem;
+		margin-left: -0.06rem;
 	}
 
 	&__create {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-top: 30px;
-		margin-left: -1px;
+		margin-top: 1.87rem;
+		margin-left: -0.06rem;
 	}
 
 	&__question {
-		font-size: 14px;
+		font-size: 0.87rem;
 		margin: 0;
 		letter-spacing: -0.0096rem;
 	}
 
 	&__create .button-pill__empty {
-		height: 40px;
+		height: 2.5rem;
 	}
 }

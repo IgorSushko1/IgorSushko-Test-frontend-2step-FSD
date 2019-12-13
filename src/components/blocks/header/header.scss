@@ -1,27 +1,27 @@
 .header {
 	display: flex;
-	width: 1440px;
-	height: 70px;
+	width: 90rem;
+	height: 4.375rem;
 	justify-content: space-between;
 
 	&__image {
-		width: 106px;
-		height: 40px;
-		margin: auto 0 auto 140px;
+		width: 6.62rem;
+		height: 2.5rem;
+		margin: auto 0 auto 8.75rem;
 	}
 
 	&__menu {
-		margin: auto 140px auto 0;
+		margin: auto 8.75rem auto 0;
 		display: flex;
 	}
 
 	&__list {
 		display: flex;
-		font-size: 14px;
+		font-size: 0.875rem;
 	}
 
 	&__point {
-		padding-left: 19px;
+		padding-left: 1.18rem;
 		list-style-type: none;
 	}
 
@@ -30,7 +30,7 @@
 		color: $dark-shade-075;
 		margin: 0;
 		padding: 0;
-		margin-right: 1px;
+		margin-right: 0.06rem;
 	}
 
 	&__dropdown {
@@ -38,10 +38,10 @@
 	}
 
 	&__point .material-icons {
-		font-size: 24px;
+		font-size: 1.5rem;
 		position: relative;
-		top: -1px;
-		height: 0px;
+		top: -0.06rem;
+		height: 0rem;
 	}
 
 	&__button {
@@ -50,18 +50,18 @@
 	}
 
 	&__button .button-pill__full {
-		margin-left: 22px;
+		margin-left: 1.375rem;
 	}
 
 	&__button .button-pill__empty {
-		margin-left: 20px;
+		margin-left: 1.25rem;
 	}
 
 	&__login_in {
 		margin: auto;
-		border-left: 1px solid $dark-shade-010;
-		padding-left: 30px;
-		margin-left: 30px;
+		border-left: 0.06rem solid $dark-shade-010;
+		padding-left: 1.875rem;
+		margin-left: 1.875rem;
 		color: $dark-shade-075;
 	}
 
