@@ -2,22 +2,23 @@ include ../../elements/button-pill__full_arrow/button-pill__full_arrow.pug
 include ../../../vendor/dropdown/dropdown-subparagraph.pug
 
 mixin pick-up-numbers
-	.pick-up-numbers-card
-		.pick-up-numbers-card-title
-			h2 Найдём номера под ваши пожелания
-		.pick-up-numbers-card-arrival
-			h3 Прибытие - выезд
-			label.pick-up-numbers-card-input
-				input(type="checkbox" id="datepicker"  data-range="true" data-multiple-dates-separator=" - " clearButton="true" class="datepicker-here pick-up-numbers-card-arrival-wid" data-position="bottom left")
+	.pick-up-numbers
+		h2.pick-up-numbers__title Найдём номера под ваши пожелания
+		div
+			h3.pick-up-numbers__arrival Прибытие
+			h3.pick-up-numbers__departure Выезд
+
+			label.pick-up-numbers__calendar
+				input(type="checkbox" id="datepicker"  data-range="true" data-multiple-dates-separator=" - " clearButton="true" class="datepicker-here" data-position="bottom left")
 				p(class="result-datepicker-first-date")
 					span.pick-up-numbers-card-date-for-two-inputs ДД.ММ.ГГГГ
 					span.material-icons.pick-up-numbers-card-icon-for-date expand_more
 				p(class="result-datepicker-second-date")
 					span.pick-up-numbers-card-date-for-two-inputs ДД.ММ.ГГГГ
 					span.material-icons.pick-up-numbers-card-icon-for-date expand_more
-		div.pick-up-numbers-card-quests
-			h3 Гости
-			.pick-up-dropdown
+		div
+			h3.pick-up-numbers__quest Гости
+			.pick-up-numbers__dropdown
 				+dropdown-people
-		.pick-up-numbers-card-button
+		.pick-up-numbers__button
 			+button-pill__full_arrow("подобрать номер")

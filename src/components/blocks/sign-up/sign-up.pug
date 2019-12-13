@@ -4,28 +4,28 @@ include ../../elements/checkbox-radio/checkbox-radio.pug
 include ../../elements/checkbox-toggle/checkbox-toggle.pug
 include ../../elements/form__name/form__name.pug
 mixin sign-up
-	.sing-up-card
-		.sing-up-card-title
+	.sing-up
+		.sing-up__title
 			h2 Регистрация аккаунта
-		div.sing-up-card-1
+		.sing-up__name
 			+form__name("text","Имя", "name", "sign-up")
-		div.sing-up-card-2
+		.sing-up__surname
 			+form__name("text","Фамилия", "surname", "sign-up")
-		div.sing-up-card-3
+		.sing-up__gender
 			+radio-buttons
-		div.sing-up-card-4
-			h3 Дата рождения
-			input(type="text"  data-range="true" data-multiple-dates-separator=" - " class="datepicker-here sign-up-numbers-card-birthday" data-position="right top" value="ДД.ММ.ГГГГ")
-		div.sing-up-card-5
-			h3 данные для входа в сервис
-			div
+		.sing-up__birthday
+			h3.sing-up__birthday_title Дата рождения
+			input(type="text"  data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" data-position="right top" value="ДД.ММ.ГГГГ").sing-up__pick-date
+		.sing-up__enter
+			h3.sing-up__enter_title данные для входа в сервис
+			div.sing-up__registration
 				+form__name("email","Email", "email", "sign-up")
-			div
+			div.sing-up__registration
 				+form__name("text", "Пароль", "password", "sign-up")
-		.sing-up-card-toggle
+		.sing-up__toggle-checkbox
 				+toggle-checkbox("Получать спецпредложения")
-		.sing-up-card-button
+		.sing-up__button
 				+button-pill__full_arrow("Перейти к оплате")
-		.sing-up-card-sing-in
-			p Уже есть аккаунт на Toxin
+		.sing-up__authorization
+			p.sing-up__authorization_text Уже есть аккаунт на Toxin
 			+button-pill__empty_short("Войти")

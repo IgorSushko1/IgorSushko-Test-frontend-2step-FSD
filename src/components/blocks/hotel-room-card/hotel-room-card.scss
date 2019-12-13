@@ -1,124 +1,121 @@
-.hotel-room-card {
+.hotel-room {
 	width: 270px;
 	height: 257.5px;
 	background: #FFFFFF;
 	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 	border-radius: 4px;
 	position: relative;
-}
 
-.hotel-room-card img {
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-	cursor: pointer;
-	width: 270px;
-	height: 152px;
-}
+	&__img {
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		cursor: pointer;
+		width: 270px;
+		height: 152px;
+	}
 
-.hotel-room-text {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 20px;
-	margin-left: 3%;
-	margin-right: 3%;
-	font-size: 14px;
-	position: relative;
-}
+	&__circles_block {
+		display: flex;
+		position: absolute;
+		top: 129px;
+		right: 16px;
+		cursor: pointer;
+	}
 
-.hotel-room-text>div {
-	display: flex;
-	align-items: flex-end;
-}
+	&__circle_point {
+		width: 5px;
+		height: 5px;
+		border: 1px solid white;
+		border-radius: 50%;
+		z-index: 1;
+		margin-left: 4px;
+	}
 
+	&__text {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+		margin-left: 3%;
+		margin-right: 3%;
+		font-size: 14px;
+		position: relative;
+	}
 
-.hotel-room-raiting {
-	display: flex;
-	justify-content: space-between;
-	margin: 12px 3% 0 8%;
-	padding-top: 10px;
-	border-top: 1px solid $dark-shade-025;
-	position: relative;
-}
+	&__number,
+	&__cost {
+		display: flex;
+		align-items: flex-end;
+		height: 16px;
+	}
 
-.hotel-room-raiting-review {
-	display: grid;
-	grid-template-columns: 27px auto;
-	font-size: 14px;
-	align-items: baseline;
-	color: $dark-shade-050;
-	position: absolute;
-	right: 11px;
-	top: 13px;
-}
+	&__number_symbol {
+		font-size: 14px;
+		margin-left: 12px;
+		font-family: "Quicksand-Medium", Arial, sans-serif;
+		position: absolute;
+		top: 2px;
+		left: 0px;
+	}
 
-.hotel-room-raiting-review h3 {
-	font-size: 14px;
-	font-family: "Montserrat-Bold", Arial, sans-serif;
-	margin-right: 3px;
-	text-align: end;
-}
-
-.hotel-room-circle {
-	display: flex;
-	position: absolute;
-	top: 129px;
-	right: 16px;
-	cursor: pointer;
-}
-
-.hotel-room-circle div {
-	width: 5px;
-	height: 5px;
-	border: 1px solid white;
-	border-radius: 50%;
-	z-index: 1;
-	margin-left: 4px;
-}
-
-.hotel-room-text-first-field {
-	height: 16px;
-}
-
-.hotel-room-text_symbol {
-	font-size: 14px;
-	margin-left: 12px;
-	font-family: "Quicksand-Medium", Arial, sans-serif;
-	position: absolute;
-	top: 2px;
-	left: 0px;
-}
-
-.hotel-room-text_number {
-	margin-left: 3px;
+	&__number_number {
+		margin-left: 3px;
 		font-size: 18px;
-	line-height: 0;
-	position: absolute;
-	top: 9px;
-	left: 31px;
-	letter-spacing: 0.03em;
-	font-family: "Quicksand-Bold", Arial, sans-serif;
-}
+		line-height: 0;
+		position: absolute;
+		top: 9px;
+		left: 31px;
+		letter-spacing: 0.03em;
+		font-family: "Quicksand-Bold", Arial, sans-serif;
+	}
 
-.hotel-room-text-lux {
-	color: $purple;
-	position: absolute;
-	top: 3px;
-	left: 72px;
-}
+	&__number_lux {
+		color: $purple;
+		position: absolute;
+		top: 3px;
+		left: 72px;
+	}
 
-.hotel-room-text_price {
-	top: -14px;
-	color: $dark-shade-050;
-	position: absolute;
-	right: 57px;
-	font-family: "Montserrat-SemiBold", Arial, sans-serif;
-}
+	&__cost_price {
+		top: -14px;
+		color: $dark-shade-050;
+		position: absolute;
+		right: 57px;
+		font-family: "Montserrat-SemiBold", Arial, sans-serif;
+	}
 
-.hotel-room-text_per-day {
-	color: $dark-shade-050;
-	position: absolute;
-	right: 11px;
-	top: 1px;
-	letter-spacing: -0.09em;
-	font-size: 13px;
+	&__cost_per-day {
+		color: $dark-shade-050;
+		position: absolute;
+		right: 11px;
+		top: 1px;
+		letter-spacing: -0.09em;
+		font-size: 13px;
+	}
+
+	&__raiting {
+		display: flex;
+		justify-content: space-between;
+		margin: 12px 3% 0 8%;
+		padding-top: 10px;
+		border-top: 1px solid $dark-shade-025;
+		position: relative;
+	}
+
+	&__review {
+		display: grid;
+		grid-template-columns: 27px auto;
+		font-size: 14px;
+		align-items: baseline;
+		color: $dark-shade-050;
+		position: absolute;
+		right: 11px;
+		top: 13px;
+	}
+
+	&__review_number {
+		font-size: 14px;
+		font-family: "Montserrat-Bold", Arial, sans-serif;
+		margin-right: 3px;
+		text-align: end;
+	}
 }

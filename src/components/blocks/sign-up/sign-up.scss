@@ -1,4 +1,4 @@
-.sing-up-card {
+.sing-up {
 	width: 380px;
 	height: 646px;
 	display: flex;
@@ -10,95 +10,81 @@
 	border-radius: 4px;
 	padding-left: 30px;
 	padding-right: 30px;
-}
 
-.sing-up-card-title {
-	margin-left: -2px;
-	margin-top: 43px;
-	font-size: 17px;
-	letter-spacing: -0.05rem;
-}
+	&__title {
+		margin-left: -2px;
+		margin-top: 43px;
+		font-size: 17px;
+		letter-spacing: -0.05rem;
+	}
 
+	&__name {
+		margin-top: 24px;
+		margin-left: -3px;
+	}
 
+	&__surname {
+		margin-top: 8px;
+		margin-left: -3px;
+	}
 
-// .sing-up-card-radio {
-// 	display: flex;
-// }
+	&__gender {
+		margin-top: 8px;
+		margin-left: -21px;
+	}
 
-.sign-up-numbers-card-birthday {
-	height: 44px;
-	width: 320px;
-	border-radius: 4px;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-}
+	&__birthday {
+		margin-top: 26px;
+	}
 
-.sing-up-card-toggle {
-	margin-top: 10px;
-}
+	&__birthday_title {
+		margin-left: -1px;
+	}
 
-.sing-up-card-button {
-	margin-top: 7px;
-	margin-left: -1px;
-}
+	&__pick-date {
+		margin-top: 5px;
+		height: 44px;
+		width: 320px;
+		margin-left: -1px;
+		padding-left: 15px;
+		border-radius: 4px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+	}
 
-.sing-up-card-sing-in {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 30px;
-	margin-left: -1px;
-	letter-spacing: -0.01rem;
-}
+	&__enter {
+		margin-top: 20px;
+	}
 
-.sing-up-card-sing-in p{
-	font-size: 14px;
-	margin: 0;
-}
+	&__enter_title {
+		margin-left: -1px;
+		letter-spacing: 0.007em;
+	}
 
-.sing-up-card-1 {
-	margin-top: 24px;
-	margin-left: -3px;
-}
+	&__registration {
+		margin-top: 5px;
+		margin-left: -2px;
+	}
 
-.sing-up-card-2 {
-	margin-top: 8px;
-	margin-left: -3px;
-}
+	&__toggle-checkbox {
+		margin-top: 10px;
+	}
 
-.sing-up-card-3 {
-	margin-top: 8px;
-	margin-left: -21px;
-}
+	&__button {
+		margin-top: 7px;
+		margin-left: -1px;
+	}
 
-.sing-up-card-4 {
-	margin-top: 26px;
-}
+	&__authorization {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 30px;
+		margin-left: -1px;
+		letter-spacing: -0.01rem;
+	}
 
-.sing-up-card-4 h3 {
-	margin-left: -1px;
-}
-
-.sing-up-card-4 input {
-	margin-top: 5px;
-}
-
-.sing-up-card-4 .sign-up-numbers-card-birthday {
-	height: 40px;
-	width: 303px;
-	margin-left: -1px;
-	padding-left: 15px;
-}
-
-.sing-up-card-5 {
-	margin-top: 20px;
-}
-
-.sing-up-card-5 h3{
-	margin-left: -1px;
-    letter-spacing: 0.007em;
-}
-
-.sing-up-card-5 div{
-	MARGIN-TOP: 5px;
-	margin-left: -2px;
+	&__authorization_text {
+		font-size: 14px;
+		margin: 0;
+	}
 }

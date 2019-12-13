@@ -1,98 +1,94 @@
 .footer {
-	display: flex;
-	width: 1440px;
-	height: 272px;
-	padding-top: 100px;
-	font-size: 14px;
-}
 
-.footer-block {
-	display: grid;
-	max-width: 260px;
-	grid-template-rows: 58px auto auto;
-	max-height: 215px;
-	color: rgba(31, 32, 65, 0.75);
-	margin-left: 140px;
-	line-height: 24px;
-}
+	&__menu {
+		display: flex;
+		width: 1440px;
+		height: 272px;
+		padding-top: 100px;
+		font-size: 14px;
+	}
 
-.footer-block h3 {
-	margin: 0;
-	font-family: "Montserrat-SemiBold", Arial, sans-serif;
-}
+	&__h3 {
+		margin: 0;
+		font-family: "Montserrat-SemiBold", Arial, sans-serif;
+	}
 
-.footer-block-nav {
-	display: grid;
-	grid-template-rows: 36px 38px 38px 38px
-}
+	&__a {
+		text-decoration: none;
+		color: $dark-shade-075;
+	}
 
-.footer-block-nav h3 {
-	margin: 0;
-	font-family: "Montserrat-SemiBold", Arial, sans-serif;
-}
+	&__logo {
+		display: grid;
+		max-width: 260px;
+		grid-template-rows: 58px auto auto;
+		max-height: 215px;
+		color: rgba(31, 32, 65, 0.75);
+		margin-left: 140px;
+		line-height: 24px;
+	}
 
-.footer-block-nav a {
-	text-decoration: none;
-	color: $dark-shade-075;
-}
+	&__navigation {
+		display: grid;
+		grid-template-rows: 36px 38px 38px 38px;
+		margin-left: 41px;
+		padding-top: 4px;
+	}
 
-.footer-block-nav-first {
-	margin-left: 41px;
-	padding-top: 4px;
-}
+	&__about {
+		display: grid;
+		grid-template-rows: 36px 38px 38px 38px;
+		margin-left: 55px;
+		grid-template-columns: 150px;
+		padding-top: 4px;
+	}
 
-.footer-block-nav-other {
-	margin-left: 55px;
-	grid-template-columns: 150px;
-	padding-top: 4px;
-}
+	&__support {
+		display: grid;
+		grid-template-rows: 36px 38px 38px 38px;
+		margin-left: 50px;
+		grid-template-columns: 150px;
+		padding-top: 4px;
+	}
 
-.footer-block a {
-	display: block;
-}
+	&__subscription {
+		display: grid;
+		margin-left: 50px;
+		grid-template-rows: 38px 71px 38px 38px;
+		line-height: 23px;
+	}
 
-.footer-block-last {
-	margin-left: 50px;
-	grid-template-rows: 38px 71px 38px 38px;
-	line-height: 23px;
-}
+	&__subscription .text-field-border {
+		width: 245px;
+		margin-left: -2px;
+		margin-top: -2px;
+		height: 40px;
+		padding-left: 13px;
+	}
 
-.footer-block-last .text-field-border {
-	width: 245px;
-	margin-left: -2px;
-	margin-top: -2px;
-	height: 40px;
-	padding-left: 13px;
-}
+	&__subscription .arrow-forward {
+		left: 224px;
+		top: -34.5px;
+	}
 
-.footer-block-last .arrow-forward {
-	left: 224px;
-	top: -34.5px;
-}
+	&__social {
+		display: flex;
+		justify-content: space-between;
+		width: 1440px;
+		height: 70px;
+		align-items: center;
+		font-size: 14px;
+		border-top: 1px solid $dark-shade-020;
+	}
 
-.footer-social {
-	display: flex;
-	justify-content: space-between;
-	width: 1440px;
-	height: 70px;
-	align-items: center;
-	font-size: 14px;
-	border-top: 1px solid $dark-shade-020;
-}
+	&__copyright {
+		margin-left: 9.7%
+	}
 
-.footer-copyright {
-	margin-left: 9.7%
-}
-
-.footer-icons {
-	margin-right: 9.7%;
-	display: grid;
-	grid-template-columns: 24px 24px 24px;
-	grid-column-gap: 20px;
-}
-
-.footer-block-nav-other-second {
-	margin-left: 50px;
-	grid-template-columns: 150px;
-	padding-top: 4px;
+	&__icons {
+		margin-right: 9.7%;
+		display: grid;
+		grid-template-columns: 24px 24px 24px;
+		grid-column-gap: 20px;
+	}
 }

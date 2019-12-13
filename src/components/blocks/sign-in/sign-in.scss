@@ -1,4 +1,4 @@
-.sing-in-card {
+.sing-in {
 	width: 380px;
 	height: 358px;
 	display: flex;
@@ -10,43 +10,43 @@
 	border-radius: 4px;
 	padding-left: 30px;
 	padding-right: 30px;
-}
 
-.sing-in-card-1 {
-	margin-top: 14px;
-	margin-left: -3px;
-}
+	&__title {
+		margin-top: 43px;
+		margin-left: -1px;
+		font-size: 24px;
+	}
 
-.sing-in-card-2 {
-	margin-top: 8px;
-	margin-left: -3px;
-}
+	&__email {
+		margin-top: 14px;
+		margin-left: -3px;
+	}
 
-.sing-in-card-title {
-	margin-top: 43px;
-	margin-left: -1px;
-	font-size: 24px;
-}
+	&__password {
+		margin-top: 8px;
+		margin-left: -3px;
+	}
 
-.sing-in-card-button {
-	margin-top: 28px;
-	margin-left: -1px;
-}
+	&__button-full {
+		margin-top: 28px;
+		margin-left: -1px;
+	}
 
-.sing-in-card-sing-up {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 30px;
-	margin-left: -1px;
-}
+	&__create {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 30px;
+		margin-left: -1px;
+	}
 
-.sing-in-card-sing-up p{
-	font-size: 14px;
-	margin: 0;
-	letter-spacing: -0.0096rem;
-}
+	&__question {
+		font-size: 14px;
+		margin: 0;
+		letter-spacing: -0.0096rem;
+	}
 
-.sing-in-card-sing-up .button-pill__empty {
-	height: 40px;
+	&__create .button-pill__empty {
+		height: 40px;
+	}
 }

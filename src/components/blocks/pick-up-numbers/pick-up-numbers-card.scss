@@ -1,4 +1,4 @@
-.pick-up-numbers-card {
+.pick-up-numbers {
 	width: 380px;
 	height: 374px;
 	display: flex;
@@ -9,83 +9,73 @@
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	padding-left: 30px;
-}
 
-.pick-up-numbers-card-arrival h3,
-.pick-up-numbers-card-quests h3 {
-	margin-top: 21px;
-	margin-bottom: 6px;
-	font-family: "Montserrat-Bold", Arial, sans-serif;
-	margin-left: -1px;
-}
+	&__title {
+		margin-top: 39px;
+		line-height: 30px;
+		width: 266px;
+		font-family: "OpenSans-Bold", Arial, sans-serif;
 
-.pick-up-numbers-card-button {
-	margin-top: 30px;
-	margin-left: -1px;
-}
+	}
 
-.pick-up-numbers-card-title {
-	margin-top: 39px;
-}
+	&__arrival,
+	&____departure,
+	&__quest {
+		margin-top: 21px;
+		margin-bottom: 6px;
+		font-family: "Montserrat-Bold", Arial, sans-serif;
+		margin-left: -1px;
+	}
 
-.pick-up-numbers-card-title h2 {
-	line-height: 30px;
-	width: 266px;
-	font-family: "OpenSans-Bold", Arial, sans-serif;
-}
+	&__calendar {
+		display: flex;
+		margin: 0;
+		justify-content: left;
+		height: 42px;
+		padding: 0px;
+	}
 
-.pick-up-dropdown {
-	width: 320px;
-	height: 44px;
-}
+	.result-datepicker-first-date {
+		width: 148px;
+		height: 42px;
+		border: 1px solid rgba(31, 32, 65, 0.25);
+		border-radius: 4px;
+		position: relative;
+		top: -17px;
+		left: -8px;
+	}
 
-.pick-up-numbers-card-input {
-	display: flex;
-	margin: 0;
-	justify-content: left;
-	height: 42px;
-	padding: 0px;
-}
+	.result-datepicker-second-date {
+		width: 148px;
+		height: 42px;
+		border: 1px solid rgba(31, 32, 65, 0.25);
+		border-radius: 4px;
+		position: relative;
+		top: -17px;
+		right: -12px;
+	}
 
-.pick-up-numbers-card-input input {
-	opacity: 0;
-	width: 0;
-	height: 0;
-	position: relative;
-	left: -6px;
-	top: 35px;
-}
+	.pick-up-numbers-card-icon-for-date {
+		position: absolute;
+		top: 9px;
+		right: 9px;
+	}
 
-.result-datepicker-first-date {
-	width: 148px;
-	height: 42px;
-	border: 1px solid rgba(31, 32, 65, 0.25);
-	border-radius: 4px;
-	position: relative;
-	top: -17px;
-	left: -8px;
-}
+	.pick-up-numbers-card-date-for-two-inputs {
+		position: absolute;
+		top: 10px;
+		left: 14px;
+		color: rgba(31, 32, 65, 0.25);
+		font-size: 14px;
+	}
 
-.result-datepicker-second-date {
-	width: 148px;
-	height: 42px;
-	border: 1px solid rgba(31, 32, 65, 0.25);
-	border-radius: 4px;
-	position: relative;
-	top: -17px;
-	right: -12px;
-}
+	&__dropdown {
+		width: 320px;
+		height: 44px;
+	}
 
-.pick-up-numbers-card-icon-for-date {
-	position: absolute;
-	top: 9px;
-	right: 9px;
-}
-
-.pick-up-numbers-card-date-for-two-inputs {
-	position: absolute;
-	top: 10px;
-	left: 14px;
-	color: rgba(31, 32, 65, 0.25);
-	font-size: 14px;
+	&__button {
+		margin-top: 30px;
+		margin-left: -1px;
+	}
 }

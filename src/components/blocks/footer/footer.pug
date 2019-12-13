@@ -1,34 +1,34 @@
 include ../../elements/form__email/form__email.pug
 
 mixin footer
-	.footer
-		.footer-block
+	.footer__menu
+		.footer__logo
 			img(src="imgs/Logo.png", alt="" )
 			div Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-		.footer-block-nav.footer-block-nav-first
-			h3 Навигация
-			a(href="#") О нас
-			a(href="#") Новости
-			a(href="#") Служба поддержки
-			a(href="#") Услуги
-		.footer-block-nav.footer-block-nav-other
-			h3 О нас
-			a(href="#") О сервисе
-			a(href="#") Наша команда
-			a(href="#") Вакансии
-			a(href="#") Инвесторы
-		.footer-block-nav.footer-block-nav-other-second
-			h3 Служба поддержки
-			a(href="#") Соглашения
-			a(href="#") Сообщества
-			a(href="#") Связь с нами
-		.footer-block.footer-block-last
-			h3 Подписка
+		.footer__navigation
+			h3.footer__h3 Навигация
+			a(href="#").footer__a О нас
+			a(href="#").footer__a Новости
+			a(href="#").footer__a Служба поддержки
+			a(href="#").footer__a Услуги
+		.footer__about
+			h3.footer__h3 О нас
+			a(href="#").footer__a О сервисе
+			a(href="#").footer__a Наша команда
+			a(href="#").footer__a Вакансии
+			a(href="#").footer__a Инвесторы
+		.footer__support
+			h3.footer__h3 Служба поддержки
+			a(href="#").footer__a Соглашения
+			a(href="#").footer__a Сообщества
+			a(href="#").footer__a Связь с нами
+		.footer__subscription
+			h3.footer__h3 Подписка
 			div Получайте специальные предложения и новости сервиса
 			+form__email("email", "Your email adress")
-	.footer-social
-		.footer-copyright Copyright © 2019 Toxin отель. Все права зачищены.
-		.footer-icons
+	.footer__social
+		.footer__copyright Copyright © 2019 Toxin отель. Все права зачищены.
+		.footer__icons
 			img(src="imgs/icon-twitter.png", alt="")
 			img(src="imgs/icon-facebook.png", alt="")
 			img(src="imgs/icon-instagram.png", alt="")

@@ -1,26 +1,23 @@
 include ../../elements/rate-button/rate-button.pug
 
 mixin room-card(imgName, numberOfStars, roomNumber, price, lux, review)
-	.hotel-room-card
-		img(src=imgName, alt="" )
-		.hotel-room-circle
-			div
-			div
-			div
-			div
-		.hotel-room-text
-			div.hotel-room-text-first-field
+	.hotel-room
+		img(src=imgName, alt="" ).hotel-room__img
+		.hotel-room__circles-block
+			div.hotel-room__circle_point
+			div.hotel-room__circle_point
+			div.hotel-room__circle_point
+			div.hotel-room__circle_point
+		.hotel-room__text
+			.hotel-room__number
+				h3.hotel-room__number_symbol №
+				h2.hotel-room__number_number= roomNumber
 				if (lux == "lux")
-					h3.hotel-room-text_symbol №
-					h2.hotel-room-text_number= roomNumber
-					h3.hotel-room-text-lux люкс
-				else
-					h3.hotel-room-text_symbol №
-					h2.hotel-room-text_number= roomNumber
-			div
-				p.hotel-room-text_price= price
-				span.hotel-room-text_per-day в сутки
-		.hotel-room-raiting
+					h3.hotel-room__number_lux люкс
+			.hotel-room__cost
+				p.hotel-room__cost_price= price
+				span.hotel-room__cost_per-day в сутки
+		.hotel-room__raiting
 			if (numberOfStars == 1)
 				+star-rating-first-checked("1star1", "1star2", "1star3", "1star4", "1star5")
 			if (numberOfStars == 2)
@@ -31,6 +28,6 @@ mixin room-card(imgName, numberOfStars, roomNumber, price, lux, review)
 				+star-rating-fourth-checked("4star1", "4star2", "4star3", "4star4", "4star5")
 			if (numberOfStars == 5)
 				+star-rating-fifth-checked("5star1", "5star2", "5star3", "5star4", "5star5")
-			.hotel-room-raiting-review
-				h3= review
+			.hotel-room__review
+				h3.hotel-room__review_number= review
 				span Отзывов
