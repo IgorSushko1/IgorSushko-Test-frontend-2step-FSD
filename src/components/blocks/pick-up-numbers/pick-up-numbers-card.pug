@@ -4,12 +4,12 @@ include ../../../vendor/dropdown/dropdown-subparagraph.pug
 mixin pick-up-numbers
 	.pick-up-numbers
 		h2.pick-up-numbers__title Найдём номера под ваши пожелания
-		div
+		div.pick-up-numbers__container
 			h3.pick-up-numbers__arrival Прибытие
 			h3.pick-up-numbers__departure Выезд
 
 			label.pick-up-numbers__calendar
-				input(type="checkbox" id="datepicker"  data-range="true" data-multiple-dates-separator=" - " clearButton="true" class="datepicker-here" data-position="bottom left")
+				input(type="checkbox" id="datepicker"  data-range="true" data-multiple-dates-separator=" - " clearButton="true" class="datepicker-here" data-position="bottom left").pick-up-numbers__calendar_input
 				p(class="result-datepicker-first-date")
 					span.pick-up-numbers-card-date-for-two-inputs ДД.ММ.ГГГГ
 					span.material-icons.pick-up-numbers-card-icon-for-date expand_more

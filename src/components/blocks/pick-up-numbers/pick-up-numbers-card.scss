@@ -8,31 +8,49 @@
 	box-sizing: border-box;
 	box-shadow: 0.06rem 0.06rem 1.56rem rgba(0, 0, 0, 0.2);
 	border-radius: 0.25rem;
-	padding-left: 1.87rem;
+	padding-left: 1.83rem;
 
 	&__title {
-		margin-top: 2.43rem;
-		line-height: 1.87rem;
-		width: 16.62rem;
-		font-family: "OpenSans-Bold", Arial, sans-serif;
-
+    margin-top: 2.43rem;
+    line-height: 1.9rem;
+    width: 16.62rem;
+    font-family: "OpenSans-Bold", Arial, sans-serif;
+    letter-spacing: .006rem;
+	}
+	&__container {
+		position: relative;
 	}
 
-	&__arrival,
-	&__departure,
+	&__arrival {
+		margin-top: 1.25rem;
+    margin-bottom: 0.4rem;
+    font-family: "Montserrat-Bold", Arial, sans-serif;
+    letter-spacing: 0rem;
+	}
+
+	&__departure  {
+    font-family: "Montserrat-Bold", Arial, sans-serif;
+    position: absolute;
+    right: 8.2rem;
+    top: 1.25rem;
+	}
+
 	&__quest {
-		margin-top: 1.3rem;
-		margin-bottom: 0.37rem;
-		font-family: "Montserrat-Bold", Arial, sans-serif;
-		margin-left: -0.06rem;
+		margin-top: 1.35rem;
+    margin-bottom: 0.4rem;
+    font-family: "Montserrat-Bold", Arial, sans-serif;
+    letter-spacing: 0rem;
 	}
 
 	&__calendar {
-		display: flex;
-		margin: 0;
-		justify-content: left;
-		height: 2.62rem;
-		padding: 0rem;
+    display: flex;
+    justify-content: left;
+    height: 2.62rem;
+    margin-left: -0.75rem;
+	}
+
+	&__calendar_input {
+		opacity: 0;
 	}
 
 	.result-datepicker-first-date {
@@ -76,6 +94,5 @@
 
 	&__button {
 		margin-top: 1.87rem;
-		margin-left: -0.06rem;
 	}
 }

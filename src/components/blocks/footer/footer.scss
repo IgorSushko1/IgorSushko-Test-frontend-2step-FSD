@@ -1,11 +1,10 @@
 .footer {
 
 	&__menu {
-		display: flex;
-		width: 90rem;
-		height: 17rem;
-		padding-top: 6.25rem;
-		font-size: 0.875rem;
+    display: flex;
+    width: auto;
+    height: 17rem;
+    padding-top: 6.25rem;
 	}
 
 	&__h3 {
@@ -20,45 +19,63 @@
 
 	&__logo {
 		display: grid;
-		max-width: 16.25rem;
-		grid-template-rows: 3.6rem auto auto;
-		max-height: 13.43rem;
-		color: rgba(31, 32, 65, 0.75);
-		margin-left: 8.75rem;
-		line-height: 1.5rem;
+    width: 19rem;
+    grid-template-rows: 3.6rem auto auto;
+    max-height: 13.43rem;
+    color: rgba(31, 32, 65, 0.75);
+    line-height: 1.5rem;
+    position: relative;
+    left: 8.75rem;
+	}
+
+	&__logo_text {
+		letter-spacing: -.005rem;
+		font-size: 0.875rem;
+		width: 16rem;
 	}
 
 	&__navigation {
-		display: grid;
-		grid-template-rows: 2.25rem 2.37rem 2.37rem 2.37rem;
-		margin-left: 2.56rem;
-		padding-top: 0.25rem;
+    display: grid;
+    grid-template-rows: 2.25rem 2.37rem 2.37rem 2.37rem;
+    width: 11rem;
+    position: relative;
+    left: 8.5rem;
+    top: 0.25rem;
+    font-size: 0.875rem;
 	}
 
 	&__about {
 		display: grid;
-		grid-template-rows: 2.25rem 2.37rem 2.37rem 2.37rem;
-		margin-left: 3.43rem;
-		grid-template-columns: 9.37rem;
-		padding-top: 0.25rem;
+    grid-template-rows: 2.25rem 2.37rem 2.37rem 2.37rem;
+    grid-template-columns: 9.37rem;
+    padding-top: 0.25rem;
+    position: relative;
+    left: 10rem;
+    font-size: 0.875rem;
 	}
 
 	&__support {
-		display: grid;
-		grid-template-rows: 2.25rem 2.37rem 2.37rem 2.37rem;
-		margin-left: 3.12rem;
-		grid-template-columns: 9.37rem;
-		padding-top: 0.25rem;
+    display: grid;
+    grid-template-rows: 2.25rem 2.37rem 2.37rem 2.37rem;
+    grid-template-columns: 9.37rem;
+    padding-top: 0.25rem;
+    position: relative;
+    left: 13.2rem;
+    font-size: 0.875rem;
 	}
 
 	&__subscription {
-		display: grid;
-		margin-left: 3.12rem;
-		grid-template-rows: 2.37rem 4.43rem 2.37rem 2.37rem;
-		line-height: 1.43rem;
+    display: grid;
+    grid-template-rows: 2.25rem 4.45rem 2.5rem;
+    line-height: 1.43rem;
+    position: relative;
+    top: 0.05rem;
+    left: 16.3rem;
+    width: 16rem;
+    font-size: 0.875rem;
 	}
 
-	&__subscription .text-field-border {
+	&__subscription .form__email_border {
 		width: 15.31rem;
 		margin-left: -0.125rem;
 		margin-top: -0.125rem‬;
@@ -66,7 +83,12 @@
 		padding-left: 0.81rem;
 	}
 
-	&__subscription .arrow-forward {
+	&__subscription_text {
+    letter-spacing: -0.01rem;
+    line-height: 1.5rem;
+	}
+
+	&__subscription .form__email_arrow-forward {
 		left: 14rem;
 		top: -2.15rem;
 	}
