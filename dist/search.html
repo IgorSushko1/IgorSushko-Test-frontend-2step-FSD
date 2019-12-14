@@ -10,20 +10,20 @@
   <link href="main.css" rel="stylesheet"></head>
   <body class="base">
     <header class="base__header">
-      <div class="header"><img src="imgs/Logo.png" alt="">
-        <div>
-          <ul class="nav">
-            <li><a class="nav-link" href="">О нас</a></li>
-            <li>
-              <div class="header-dropdown-list"><span class="nav-link">Услуги</span><span class="material-icons">keyboard_arrow_down</span></div>
+      <div class="header"><img class="header__image" src="imgs/Logo.png" alt="">
+        <div class="header__menu">
+          <ul class="header__list">
+            <li class="header__point"><a class="header__link" href="">О нас</a></li>
+            <li class="header__point">
+              <div class="header__dropdown"><span class="header__link">Услуги</span><span class="material-icons">keyboard_arrow_down</span></div>
             </li>
-            <li><a class="nav-link" href="">Вакансии</a></li>
-            <li><a class="nav-link" href="">Новости</a></li>
-            <li>
-              <div class="header-dropdown-list"><span class="nav-link">Соглашения</span><span class="material-icons">keyboard_arrow_down</span></div>
+            <li class="header__point"><a class="header__link" href="">Вакансии</a></li>
+            <li class="header__point"><a class="header__link" href="">Новости</a></li>
+            <li class="header__point">
+              <div class="header__dropdown"><span class="header__link">Соглашения</span><span class="material-icons">keyboard_arrow_down</span></div>
             </li>
           </ul>
-          <div class="header-button">
+          <div class="header__button">
             <button class="button-pill__empty">ВОЙТИ</button>
             <button class="button-pill__full">ЗАРЕГИСТРИРОВАТЬСЯ</button>
           </div>
@@ -144,24 +144,24 @@
       <article class="search-page__rooms">
         <h2 class="search-page_rooms_title">Номера, которые мы для вас подобрали</h2>
         <div class="search-page__rooms_numbers">
-          <div class="hotel-room-card"><img src="imgs/room1.png" alt="">
-            <div class="hotel-room-circle">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room1.png" alt="">
+            <div class="hotel-room__circles-block">
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
             </div>
-            <div class="hotel-room-text">
-              <div class="hotel-room-text-first-field">
-                <h3 class="hotel-room-text_symbol">№</h3>
-                <h2 class="hotel-room-text_number">888</h2>
-                <h3 class="hotel-room-text-lux">люкс</h3>
+            <div class="hotel-room__text">
+              <div class="hotel-room__number">
+                <h3 class="hotel-room__number_symbol">№</h3>
+                <h2 class="hotel-room__number_number">888</h2>
+                <h3 class="hotel-room__number_lux">люкс</h3>
               </div>
-              <div>
-                <p class="hotel-room-text_price">9 990₽</p><span class="hotel-room-text_per-day">в сутки</span>
+              <div class="hotel-room__cost">
+                <p class="hotel-room__cost_price">9 990₽</p><span class="hotel-room__cost_per-day">в сутки</span>
               </div>
             </div>
-            <div class="hotel-room-raiting">
+            <div class="hotel-room__raiting">
               <div class="rating">
                 <input class="5star1" type="checkbox" name="star" checked>
                 <label for="5star1"></label>
@@ -174,28 +174,28 @@
                 <input class="5star5" type="checkbox" name="star" checked>
                 <label for="5star5"></label>
               </div>
-              <div class="hotel-room-raiting-review">
-                <h3>145</h3><span>Отзывов</span>
+              <div class="hotel-room__review">
+                <h3 class="hotel-room__review_number">145</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room-card"><img src="imgs/room2.png" alt="">
-            <div class="hotel-room-circle">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room2.png" alt="">
+            <div class="hotel-room__circles-block">
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
             </div>
-            <div class="hotel-room-text">
-              <div class="hotel-room-text-first-field">
-                <h3 class="hotel-room-text_symbol">№</h3>
-                <h2 class="hotel-room-text_number">840</h2>
+            <div class="hotel-room__text">
+              <div class="hotel-room__number">
+                <h3 class="hotel-room__number_symbol">№</h3>
+                <h2 class="hotel-room__number_number">840</h2>
               </div>
-              <div>
-                <p class="hotel-room-text_price">9 900₽</p><span class="hotel-room-text_per-day">в сутки</span>
+              <div class="hotel-room__cost">
+                <p class="hotel-room__cost_price">9 900₽</p><span class="hotel-room__cost_per-day">в сутки</span>
               </div>
             </div>
-            <div class="hotel-room-raiting">
+            <div class="hotel-room__raiting">
               <div class="rating">
                 <input class="4star1" type="checkbox" name="star">
                 <label for="4star1"></label>
@@ -208,29 +208,29 @@
                 <input class="4star5" type="checkbox" name="star" checked>
                 <label for="4star5"></label>
               </div>
-              <div class="hotel-room-raiting-review">
-                <h3>65</h3><span>Отзывов</span>
+              <div class="hotel-room__review">
+                <h3 class="hotel-room__review_number">65</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room-card"><img src="imgs/room-3.png" alt="">
-            <div class="hotel-room-circle">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-3.png" alt="">
+            <div class="hotel-room__circles-block">
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
             </div>
-            <div class="hotel-room-text">
-              <div class="hotel-room-text-first-field">
-                <h3 class="hotel-room-text_symbol">№</h3>
-                <h2 class="hotel-room-text_number">980</h2>
-                <h3 class="hotel-room-text-lux">люкс</h3>
+            <div class="hotel-room__text">
+              <div class="hotel-room__number">
+                <h3 class="hotel-room__number_symbol">№</h3>
+                <h2 class="hotel-room__number_number">980</h2>
+                <h3 class="hotel-room__number_lux">люкс</h3>
               </div>
-              <div>
-                <p class="hotel-room-text_price">8 500₽</p><span class="hotel-room-text_per-day">в сутки</span>
+              <div class="hotel-room__cost">
+                <p class="hotel-room__cost_price">8 500₽</p><span class="hotel-room__cost_per-day">в сутки</span>
               </div>
             </div>
-            <div class="hotel-room-raiting">
+            <div class="hotel-room__raiting">
               <div class="rating">
                 <input class="3star1" type="checkbox" name="star">
                 <label for="3star1"></label>
@@ -243,29 +243,29 @@
                 <input class="3star5" type="checkbox" name="star" checked>
                 <label for="3star5"></label>
               </div>
-              <div class="hotel-room-raiting-review">
-                <h3>35</h3><span>Отзывов</span>
+              <div class="hotel-room__review">
+                <h3 class="hotel-room__review_number">35</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room-card"><img src="imgs/room-4.png" alt="">
-            <div class="hotel-room-circle">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-4.png" alt="">
+            <div class="hotel-room__circles-block">
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
             </div>
-            <div class="hotel-room-text">
-              <div class="hotel-room-text-first-field">
-                <h3 class="hotel-room-text_symbol">№</h3>
-                <h2 class="hotel-room-text_number">856</h2>
-                <h3 class="hotel-room-text-lux">люкс</h3>
+            <div class="hotel-room__text">
+              <div class="hotel-room__number">
+                <h3 class="hotel-room__number_symbol">№</h3>
+                <h2 class="hotel-room__number_number">856</h2>
+                <h3 class="hotel-room__number_lux">люкс</h3>
               </div>
-              <div>
-                <p class="hotel-room-text_price">7 300₽</p><span class="hotel-room-text_per-day">в сутки</span>
+              <div class="hotel-room__cost">
+                <p class="hotel-room__cost_price">7 300₽</p><span class="hotel-room__cost_per-day">в сутки</span>
               </div>
             </div>
-            <div class="hotel-room-raiting">
+            <div class="hotel-room__raiting">
               <div class="rating">
                 <input class="5star1" type="checkbox" name="star" checked>
                 <label for="5star1"></label>
@@ -278,28 +278,28 @@
                 <input class="5star5" type="checkbox" name="star" checked>
                 <label for="5star5"></label>
               </div>
-              <div class="hotel-room-raiting-review">
-                <h3>19</h3><span>Отзывов</span>
+              <div class="hotel-room__review">
+                <h3 class="hotel-room__review_number">19</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room-card"><img src="imgs/room-5.png" alt="">
-            <div class="hotel-room-circle">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-5.png" alt="">
+            <div class="hotel-room__circles-block">
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
             </div>
-            <div class="hotel-room-text">
-              <div class="hotel-room-text-first-field">
-                <h3 class="hotel-room-text_symbol">№</h3>
-                <h2 class="hotel-room-text_number">740</h2>
+            <div class="hotel-room__text">
+              <div class="hotel-room__number">
+                <h3 class="hotel-room__number_symbol">№</h3>
+                <h2 class="hotel-room__number_number">740</h2>
               </div>
-              <div>
-                <p class="hotel-room-text_price">6 000₽</p><span class="hotel-room-text_per-day">в сутки</span>
+              <div class="hotel-room__cost">
+                <p class="hotel-room__cost_price">6 000₽</p><span class="hotel-room__cost_per-day">в сутки</span>
               </div>
             </div>
-            <div class="hotel-room-raiting">
+            <div class="hotel-room__raiting">
               <div class="rating">
                 <input class="4star1" type="checkbox" name="star">
                 <label for="4star1"></label>
@@ -312,28 +312,28 @@
                 <input class="4star5" type="checkbox" name="star" checked>
                 <label for="4star5"></label>
               </div>
-              <div class="hotel-room-raiting-review">
-                <h3>44</h3><span>Отзывов</span>
+              <div class="hotel-room__review">
+                <h3 class="hotel-room__review_number">44</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room-card"><img src="imgs/room-6.png" alt="">
-            <div class="hotel-room-circle">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-6.png" alt="">
+            <div class="hotel-room__circles-block">
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
             </div>
-            <div class="hotel-room-text">
-              <div class="hotel-room-text-first-field">
-                <h3 class="hotel-room-text_symbol">№</h3>
-                <h2 class="hotel-room-text_number">982</h2>
+            <div class="hotel-room__text">
+              <div class="hotel-room__number">
+                <h3 class="hotel-room__number_symbol">№</h3>
+                <h2 class="hotel-room__number_number">982</h2>
               </div>
-              <div>
-                <p class="hotel-room-text_price">5 800₽</p><span class="hotel-room-text_per-day">в сутки</span>
+              <div class="hotel-room__cost">
+                <p class="hotel-room__cost_price">5 800₽</p><span class="hotel-room__cost_per-day">в сутки</span>
               </div>
             </div>
-            <div class="hotel-room-raiting">
+            <div class="hotel-room__raiting">
               <div class="rating">
                 <input class="3star1" type="checkbox" name="star">
                 <label for="3star1"></label>
@@ -346,28 +346,28 @@
                 <input class="3star5" type="checkbox" name="star" checked>
                 <label for="3star5"></label>
               </div>
-              <div class="hotel-room-raiting-review">
-                <h3>56</h3><span>Отзывов</span>
+              <div class="hotel-room__review">
+                <h3 class="hotel-room__review_number">56</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room-card"><img src="imgs/room-7.png" alt="">
-            <div class="hotel-room-circle">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-7.png" alt="">
+            <div class="hotel-room__circles-block">
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
             </div>
-            <div class="hotel-room-text">
-              <div class="hotel-room-text-first-field">
-                <h3 class="hotel-room-text_symbol">№</h3>
-                <h2 class="hotel-room-text_number">678</h2>
+            <div class="hotel-room__text">
+              <div class="hotel-room__number">
+                <h3 class="hotel-room__number_symbol">№</h3>
+                <h2 class="hotel-room__number_number">678</h2>
               </div>
-              <div>
-                <p class="hotel-room-text_price">5 500₽</p><span class="hotel-room-text_per-day">в сутки</span>
+              <div class="hotel-room__cost">
+                <p class="hotel-room__cost_price">5 500₽</p><span class="hotel-room__cost_per-day">в сутки</span>
               </div>
             </div>
-            <div class="hotel-room-raiting">
+            <div class="hotel-room__raiting">
               <div class="rating">
                 <input class="5star1" type="checkbox" name="star" checked>
                 <label for="5star1"></label>
@@ -380,28 +380,28 @@
                 <input class="5star5" type="checkbox" name="star" checked>
                 <label for="5star5"></label>
               </div>
-              <div class="hotel-room-raiting-review">
-                <h3>45</h3><span>Отзывов</span>
+              <div class="hotel-room__review">
+                <h3 class="hotel-room__review_number">45</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room-card"><img src="imgs/room-8.png" alt="">
-            <div class="hotel-room-circle">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-8.png" alt="">
+            <div class="hotel-room__circles-block">
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
             </div>
-            <div class="hotel-room-text">
-              <div class="hotel-room-text-first-field">
-                <h3 class="hotel-room-text_symbol">№</h3>
-                <h2 class="hotel-room-text_number">450</h2>
+            <div class="hotel-room__text">
+              <div class="hotel-room__number">
+                <h3 class="hotel-room__number_symbol">№</h3>
+                <h2 class="hotel-room__number_number">450</h2>
               </div>
-              <div>
-                <p class="hotel-room-text_price">5 300₽</p><span class="hotel-room-text_per-day">в сутки</span>
+              <div class="hotel-room__cost">
+                <p class="hotel-room__cost_price">5 300₽</p><span class="hotel-room__cost_per-day">в сутки</span>
               </div>
             </div>
-            <div class="hotel-room-raiting">
+            <div class="hotel-room__raiting">
               <div class="rating">
                 <input class="4star1" type="checkbox" name="star">
                 <label for="4star1"></label>
@@ -414,28 +414,28 @@
                 <input class="4star5" type="checkbox" name="star" checked>
                 <label for="4star5"></label>
               </div>
-              <div class="hotel-room-raiting-review">
-                <h3>39</h3><span>Отзывов</span>
+              <div class="hotel-room__review">
+                <h3 class="hotel-room__review_number">39</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room-card"><img src="imgs/room-9.png" alt="">
-            <div class="hotel-room-circle">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-9.png" alt="">
+            <div class="hotel-room__circles-block">
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
             </div>
-            <div class="hotel-room-text">
-              <div class="hotel-room-text-first-field">
-                <h3 class="hotel-room-text_symbol">№</h3>
-                <h2 class="hotel-room-text_number">350</h2>
+            <div class="hotel-room__text">
+              <div class="hotel-room__number">
+                <h3 class="hotel-room__number_symbol">№</h3>
+                <h2 class="hotel-room__number_number">350</h2>
               </div>
-              <div>
-                <p class="hotel-room-text_price">5 000₽</p><span class="hotel-room-text_per-day">в сутки</span>
+              <div class="hotel-room__cost">
+                <p class="hotel-room__cost_price">5 000₽</p><span class="hotel-room__cost_per-day">в сутки</span>
               </div>
             </div>
-            <div class="hotel-room-raiting">
+            <div class="hotel-room__raiting">
               <div class="rating">
                 <input class="3star1" type="checkbox" name="star">
                 <label for="3star1"></label>
@@ -448,28 +448,28 @@
                 <input class="3star5" type="checkbox" name="star" checked>
                 <label for="3star5"></label>
               </div>
-              <div class="hotel-room-raiting-review">
-                <h3>77</h3><span>Отзывов</span>
+              <div class="hotel-room__review">
+                <h3 class="hotel-room__review_number">77</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room-card"><img src="imgs/room-10.png" alt="">
-            <div class="hotel-room-circle">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-10.png" alt="">
+            <div class="hotel-room__circles-block">
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
             </div>
-            <div class="hotel-room-text">
-              <div class="hotel-room-text-first-field">
-                <h3 class="hotel-room-text_symbol">№</h3>
-                <h2 class="hotel-room-text_number">666</h2>
+            <div class="hotel-room__text">
+              <div class="hotel-room__number">
+                <h3 class="hotel-room__number_symbol">№</h3>
+                <h2 class="hotel-room__number_number">666</h2>
               </div>
-              <div>
-                <p class="hotel-room-text_price">5 000₽</p><span class="hotel-room-text_per-day">в сутки</span>
+              <div class="hotel-room__cost">
+                <p class="hotel-room__cost_price">5 000₽</p><span class="hotel-room__cost_per-day">в сутки</span>
               </div>
             </div>
-            <div class="hotel-room-raiting">
+            <div class="hotel-room__raiting">
               <div class="rating">
                 <input class="5star1" type="checkbox" name="star" checked>
                 <label for="5star1"></label>
@@ -482,28 +482,28 @@
                 <input class="5star5" type="checkbox" name="star" checked>
                 <label for="5star5"></label>
               </div>
-              <div class="hotel-room-raiting-review">
-                <h3>25</h3><span>Отзывов</span>
+              <div class="hotel-room__review">
+                <h3 class="hotel-room__review_number">25</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room-card"><img src="imgs/room-11.png" alt="">
-            <div class="hotel-room-circle">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-11.png" alt="">
+            <div class="hotel-room__circles-block">
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
             </div>
-            <div class="hotel-room-text">
-              <div class="hotel-room-text-first-field">
-                <h3 class="hotel-room-text_symbol">№</h3>
-                <h2 class="hotel-room-text_number">444</h2>
+            <div class="hotel-room__text">
+              <div class="hotel-room__number">
+                <h3 class="hotel-room__number_symbol">№</h3>
+                <h2 class="hotel-room__number_number">444</h2>
               </div>
-              <div>
-                <p class="hotel-room-text_price">5 000₽</p><span class="hotel-room-text_per-day">в сутки</span>
+              <div class="hotel-room__cost">
+                <p class="hotel-room__cost_price">5 000₽</p><span class="hotel-room__cost_per-day">в сутки</span>
               </div>
             </div>
-            <div class="hotel-room-raiting">
+            <div class="hotel-room__raiting">
               <div class="rating">
                 <input class="3star1" type="checkbox" name="star">
                 <label for="3star1"></label>
@@ -516,28 +516,28 @@
                 <input class="3star5" type="checkbox" name="star" checked>
                 <label for="3star5"></label>
               </div>
-              <div class="hotel-room-raiting-review">
-                <h3>15</h3><span>Отзывов</span>
+              <div class="hotel-room__review">
+                <h3 class="hotel-room__review_number">15</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room-card"><img src="imgs/room-12.png" alt="">
-            <div class="hotel-room-circle">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-12.png" alt="">
+            <div class="hotel-room__circles-block">
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
+              <div class="hotel-room__circle_point"></div>
             </div>
-            <div class="hotel-room-text">
-              <div class="hotel-room-text-first-field">
-                <h3 class="hotel-room-text_symbol">№</h3>
-                <h2 class="hotel-room-text_number">352</h2>
+            <div class="hotel-room__text">
+              <div class="hotel-room__number">
+                <h3 class="hotel-room__number_symbol">№</h3>
+                <h2 class="hotel-room__number_number">352</h2>
               </div>
-              <div>
-                <p class="hotel-room-text_price">5 000₽</p><span class="hotel-room-text_per-day">в сутки</span>
+              <div class="hotel-room__cost">
+                <p class="hotel-room__cost_price">5 000₽</p><span class="hotel-room__cost_per-day">в сутки</span>
               </div>
             </div>
-            <div class="hotel-room-raiting">
+            <div class="hotel-room__raiting">
               <div class="rating">
                 <input class="3star1" type="checkbox" name="star">
                 <label for="3star1"></label>
@@ -550,8 +550,8 @@
                 <input class="3star5" type="checkbox" name="star" checked>
                 <label for="3star5"></label>
               </div>
-              <div class="hotel-room-raiting-review">
-                <h3>55</h3><span>Отзывов</span>
+              <div class="hotel-room__review">
+                <h3 class="hotel-room__review_number">55</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
@@ -563,22 +563,22 @@
       </article>
     </div>
     <footer class="base__footer">
-      <div class="footer">
-        <div class="footer-block"><img src="imgs/Logo.png" alt="">
-          <div>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
+      <div class="footer__menu">
+        <div class="footer__logo"><img src="imgs/Logo.png" alt="">
+          <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
-        <div class="footer-block-nav footer-block-nav-first">
-          <h3>Навигация</h3><a href="#">О нас</a><a href="#">Новости</a><a href="#">Служба поддержки</a><a href="#">Услуги</a>
+        <div class="footer__navigation">
+          <h3 class="footer__h3">Навигация</h3><a class="footer__a" href="#">О нас</a><a class="footer__a" href="#">Новости</a><a class="footer__a" href="#">Служба поддержки</a><a class="footer__a" href="#">Услуги</a>
         </div>
-        <div class="footer-block-nav footer-block-nav-other">
-          <h3>О нас</h3><a href="#">О сервисе</a><a href="#">Наша команда</a><a href="#">Вакансии</a><a href="#">Инвесторы</a>
+        <div class="footer__about">
+          <h3 class="footer__h3">О нас</h3><a class="footer__a" href="#">О сервисе</a><a class="footer__a" href="#">Наша команда</a><a class="footer__a" href="#">Вакансии</a><a class="footer__a" href="#">Инвесторы</a>
         </div>
-        <div class="footer-block-nav footer-block-nav-other-second">
-          <h3>Служба поддержки</h3><a href="#">Соглашения</a><a href="#">Сообщества</a><a href="#">Связь с нами</a>
+        <div class="footer__support">
+          <h3 class="footer__h3">Служба поддержки</h3><a class="footer__a" href="#">Соглашения</a><a class="footer__a" href="#">Сообщества</a><a class="footer__a" href="#">Связь с нами</a>
         </div>
-        <div class="footer-block footer-block-last">
-          <h3>Подписка</h3>
-          <div>Получайте специальные предложения и новости сервиса</div>
+        <div class="footer__subscription">
+          <h3 class="footer__h3">Подписка</h3>
+          <div class="footer__subscription_text">Получайте специальные предложения и новости сервиса</div>
           <form>
             <legend>
               <h3></h3>
@@ -590,9 +590,9 @@
           </form>
         </div>
       </div>
-      <div class="footer-social">
-        <div class="footer-copyright">Copyright © 2019 Toxin отель. Все права зачищены.</div>
-        <div class="footer-icons"><img src="imgs/icon-twitter.png" alt=""><img src="imgs/icon-facebook.png" alt=""><img src="imgs/icon-instagram.png" alt=""></div>
+      <div class="footer__social">
+        <div class="footer__copyright">Copyright © 2019 Toxin отель. Все права зачищены.</div>
+        <div class="footer__icons"><img src="imgs/icon-twitter.png" alt=""><img src="imgs/icon-facebook.png" alt=""><img src="imgs/icon-instagram.png" alt=""></div>
       </div>
     </footer>
   <script type="text/javascript" src="bundle.js"></script></body>

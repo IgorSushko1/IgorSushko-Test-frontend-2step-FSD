@@ -10,20 +10,20 @@
   <link href="main.css" rel="stylesheet"></head>
   <body class="base">
     <header class="base__header">
-      <div class="header"><img src="imgs/Logo.png" alt="">
-        <div>
-          <ul class="nav">
-            <li><a class="nav-link" href="">О нас</a></li>
-            <li>
-              <div class="header-dropdown-list"><span class="nav-link">Услуги</span><span class="material-icons">keyboard_arrow_down</span></div>
+      <div class="header"><img class="header__image" src="imgs/Logo.png" alt="">
+        <div class="header__menu">
+          <ul class="header__list">
+            <li class="header__point"><a class="header__link" href="">О нас</a></li>
+            <li class="header__point">
+              <div class="header__dropdown"><span class="header__link">Услуги</span><span class="material-icons">keyboard_arrow_down</span></div>
             </li>
-            <li><a class="nav-link" href="">Вакансии</a></li>
-            <li><a class="nav-link" href="">Новости</a></li>
-            <li>
-              <div class="header-dropdown-list"><span class="nav-link">Соглашения</span><span class="material-icons">keyboard_arrow_down</span></div>
+            <li class="header__point"><a class="header__link" href="">Вакансии</a></li>
+            <li class="header__point"><a class="header__link" href="">Новости</a></li>
+            <li class="header__point">
+              <div class="header__dropdown"><span class="header__link">Соглашения</span><span class="material-icons">keyboard_arrow_down</span></div>
             </li>
           </ul>
-          <div class="header-button">
+          <div class="header__button">
             <button class="button-pill__empty">ВОЙТИ</button>
             <button class="button-pill__full">ЗАРЕГИСТРИРОВАТЬСЯ</button>
           </div>
@@ -158,29 +158,27 @@
         </section>
         <section class="room-detail__info_section">
           <div class="booking">
-            <div class="booking__text">
-              <div class="booking__text_first-field">
-                <h3 class="booking__text_symbol">№</h3>
-                <h2 class="booking__text_number">888</h2>
-                <h3 class="booking__text_lux">люкс</h3>
+            <div class="booking__head">
+              <div class="booking__tytle">
+                <h3 class="booking__symbol">№</h3>
+                <h2 class="booking__number">888</h2>
+                <h3 class="booking__lux">люкс</h3>
               </div>
               <div>
-                <p class="booking__text_price">9 990₽</p><span class="booking__text_per-day">в сутки</span>
+                <p class="booking__price">9 990₽</p><span class="booking__per-day">в сутки</span>
               </div>
             </div>
-            <div class="booking__calendar_arrival">
-              <h3 class="booking__calendar_arrival_title">Прибытие - выезд</h3>
-              <label class="booking__calendar_input">
-                <input class="datepicker-here pick-up-numbers-card-arrival-wid booking__calendar_input_datepicker" type="checkbox" id="datepicker" data-range="true" data-multiple-dates-separator=" - " clearButton="true" data-position="bottom left">
+            <div class="booking__arrival">
+              <h3 class="booking__arrival_title">Прибытие - выезд</h3>
+              <label class="booking__calendar">
+                <input class="datepicker-here booking__datepicker" type="checkbox" id="datepicker" data-range="true" data-multiple-dates-separator=" - " clearButton="true" data-position="bottom left">
                 <p class="result-datepicker-first-date"><span class="pick-up-numbers-card-date-for-two-inputs">ДД.ММ.ГГГГ</span><span class="material-icons pick-up-numbers-card-icon-for-date">expand_more</span></p>
-                <p class="result-datepicker-second-date"><span class="pick-up-numbers-card-date-for-two-inputs">ДД.ММ.ГГГГ</span><span class="material-icons pick-up-numbers-card-icon-for-date">expand_more</span>
-                  <div class="pick-up-numbers-card-quests booking__card-quests"></div>
-                </p>
+                <p class="result-datepicker-second-date"><span class="pick-up-numbers-card-date-for-two-inputs">ДД.ММ.ГГГГ</span><span class="material-icons pick-up-numbers-card-icon-for-date">expand_more</span></p>
               </label>
             </div>
             <div class="booking__guests">
               <h3 class="booking__guests_title">Гости</h3>
-              <div class="pick-up-dropdown"><div class="iqdropdown second-iqdropdown">
+              <div class="booking__dropdown"><div class="iqdropdown second-iqdropdown">
 <p class="iqdropdown-selection"></p>
                 <p class="material-icons iqdropdown_icon">expand_more</p><div class="iqdropdown-menu">
 <div class="iqdropdown-menu-option" data-id="item1">
@@ -209,15 +207,15 @@
 </div>
               </div>
             </div>
-            <div class="booking-text booking-text-1"><span class="booking-grid-item">9 990₽ х 4 суток</span><span class="booking-text-grid-end-position">39 960₽</span></div>
-            <div class="booking-text booking-text-2"><span class="booking-text-2_text">Сбор за услуги: скидка 2 179₽</span><span class="material-icons booking-icon">error_outline</span><span class="booking-text-grid-end-position">0₽</span></div>
-            <div class="booking-text booking-text-2"><span class="booking-text-2_text-wide">Сбор за дополнительные услуги</span><span class="material-icons booking-icon">error_outline</span><span class="booking-text-grid-end-position">300₽</span></div>
-            <div class="booking-text-total">
+            <div class="booking__text_days"><span class="booking__align_left">9 990₽ х 4 суток</span><span class="booking__align_right">39 960₽</span></div>
+            <div class="booking__text_fee"><span class="booking__align_left">Сбор за услуги: скидка 2 179₽</span><span class="material-icons booking__align_center">error_outline</span><span class="booking__align_right">0₽</span></div>
+            <div class="booking__text_fee"><span class="booking__align_left">Сбор за дополнительные услуги</span><span class="material-icons booking__align_center">error_outline</span><span class="booking__align_right">300₽</span></div>
+            <div class="booking___total">
               <h2>Итого</h2>
-              <div class="booking-text-total-border"></div>
-              <h2 class="booking-text-total_price">38 081₽</h2>
+              <div class="booking__total_border"></div>
+              <h2 class="booking__total_price">38 081₽</h2>
             </div>
-            <div class="booking-text-1">
+            <div class="booking__button">
               <button class="button-pill__full_arrow">
                 <h3 class="button-pill__full_arrow_text">Забронировать</h3>
                 <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
@@ -228,22 +226,22 @@
       </article>
     </div>
     <footer class="base__footer">
-      <div class="footer">
-        <div class="footer-block"><img src="imgs/Logo.png" alt="">
-          <div>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
+      <div class="footer__menu">
+        <div class="footer__logo"><img src="imgs/Logo.png" alt="">
+          <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
-        <div class="footer-block-nav footer-block-nav-first">
-          <h3>Навигация</h3><a href="#">О нас</a><a href="#">Новости</a><a href="#">Служба поддержки</a><a href="#">Услуги</a>
+        <div class="footer__navigation">
+          <h3 class="footer__h3">Навигация</h3><a class="footer__a" href="#">О нас</a><a class="footer__a" href="#">Новости</a><a class="footer__a" href="#">Служба поддержки</a><a class="footer__a" href="#">Услуги</a>
         </div>
-        <div class="footer-block-nav footer-block-nav-other">
-          <h3>О нас</h3><a href="#">О сервисе</a><a href="#">Наша команда</a><a href="#">Вакансии</a><a href="#">Инвесторы</a>
+        <div class="footer__about">
+          <h3 class="footer__h3">О нас</h3><a class="footer__a" href="#">О сервисе</a><a class="footer__a" href="#">Наша команда</a><a class="footer__a" href="#">Вакансии</a><a class="footer__a" href="#">Инвесторы</a>
         </div>
-        <div class="footer-block-nav footer-block-nav-other-second">
-          <h3>Служба поддержки</h3><a href="#">Соглашения</a><a href="#">Сообщества</a><a href="#">Связь с нами</a>
+        <div class="footer__support">
+          <h3 class="footer__h3">Служба поддержки</h3><a class="footer__a" href="#">Соглашения</a><a class="footer__a" href="#">Сообщества</a><a class="footer__a" href="#">Связь с нами</a>
         </div>
-        <div class="footer-block footer-block-last">
-          <h3>Подписка</h3>
-          <div>Получайте специальные предложения и новости сервиса</div>
+        <div class="footer__subscription">
+          <h3 class="footer__h3">Подписка</h3>
+          <div class="footer__subscription_text">Получайте специальные предложения и новости сервиса</div>
           <form>
             <legend>
               <h3></h3>
@@ -255,9 +253,9 @@
           </form>
         </div>
       </div>
-      <div class="footer-social">
-        <div class="footer-copyright">Copyright © 2019 Toxin отель. Все права зачищены.</div>
-        <div class="footer-icons"><img src="imgs/icon-twitter.png" alt=""><img src="imgs/icon-facebook.png" alt=""><img src="imgs/icon-instagram.png" alt=""></div>
+      <div class="footer__social">
+        <div class="footer__copyright">Copyright © 2019 Toxin отель. Все права зачищены.</div>
+        <div class="footer__icons"><img src="imgs/icon-twitter.png" alt=""><img src="imgs/icon-facebook.png" alt=""><img src="imgs/icon-instagram.png" alt=""></div>
       </div>
     </footer>
   <script type="text/javascript" src="bundle.js"></script></body>
