@@ -3,22 +3,22 @@ include ../../components/blocks/footer/footer.pug
 
 doctype html
 html
-	head
-		meta(charset="UTF-8")
-		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		meta(http-equiv="X-UA-Compatible" content="ie=edge")
-		block meta-keywords
-		block meta-description
-		block page-name
-	body.registration
-		header.registration__header
-			+header("ВОЙТИ", "ЗАРЕГИСТРИРОВАТЬСЯ")
-		main.registration__main
-			article.registration__filling
-				block registration-image
-				.registration__filling_sign-up
-					block sing-up
-				.registration__filling_sign-in
-					block sing-in
-		footer.registration__footer
-			+footer
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    block meta-keywords
+    block meta-description
+    block page-name
+  body.registration
+    header.registration__header
+      +header("ВОЙТИ", "ЗАРЕГИСТРИРОВАТЬСЯ")
+    main.registration__main
+      article.registration__filling
+        block registration-image
+        .registration__filling_sign-up
+          block sing-up
+        .registration__filling_sign-in
+          block sing-in
+    footer.registration__footer
+      +footer

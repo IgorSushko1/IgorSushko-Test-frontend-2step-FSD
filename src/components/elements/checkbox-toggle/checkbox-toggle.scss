@@ -1,55 +1,55 @@
 .checkbox-toggle {
-	width: 25rem;
+  width: 25rem;
 
-	// & input {
-	// 	position: absolute;
-	// 	visibility: hidden;
-	// }
+  // & input {
+  // 	position: absolute;
+  // 	visibility: hidden;
+  // }
 
-	&__background_gradient {
-		background: linear-gradient(180deg, $dark-shade-025, $dark-shade-025);
-		width: 2.5rem;
-		height: 1.25rem;
-		border-radius: 1.25rem;
-		margin: 0;
-		padding: 0;
-	}
+  &__background_gradient {
+    background: linear-gradient(180deg, $dark-shade-025, $dark-shade-025);
+    width: 2.5rem;
+    height: 1.25rem;
+    border-radius: 1.25rem;
+    margin: 0;
+    padding: 0;
+  }
 
-	&__background_white {
-		background: #fff;
-		height: 1.12rem;
-		width: 2.37rem;
-		position: relative;
-		top: 0.06rem;
-		left: 0.06rem;
-		border-radius: 0.62rem;
-	}
+  &__background_white {
+    background: #fff;
+    height: 1.12rem;
+    width: 2.37rem;
+    position: relative;
+    top: 0.06rem;
+    left: 0.06rem;
+    border-radius: 0.62rem;
+  }
 
-	&__input {
-		visibility: hidden;
-		position: absolute;
-	}
+  &__input {
+    visibility: hidden;
+    position: absolute;
+  }
 
-	&__circle {
-		cursor: pointer;
-		line-height: 1.25rem;
-		content: '';
-		position: absolute;
-		top: 0.18rem;
-		left: 0.12rem;
-		width: 0.75rem;
-		height: 0.75rem;
-		border-radius: 0.37rem;
-		background: $dark-shade-025;
-		transition: .5s;
-	}
+  &__circle {
+    cursor: pointer;
+    line-height: 1.25rem;
+    content: '';
+    position: absolute;
+    top: 0.18rem;
+    left: 0.12rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 0.37rem;
+    background: $dark-shade-025;
+    transition: .5s;
+  }
 
-	&__text {
-		position: relative;
-		left: 3rem;
-		width: 18.75rem;
-		letter-spacing: -0.008rem;
-		font-size: 0.875rem;
-	}
+  &__text {
+    position: relative;
+    left: 3rem;
+    width: 18.75rem;
+    letter-spacing: -0.008rem;
+    font-size: 0.875rem;
+  }
 
 }

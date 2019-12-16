@@ -1,44 +1,44 @@
 .rating {
-	transform: rotateY(180deg);
-	display: flex;
-	position: relative;
+  transform: rotateY(180deg);
+  display: flex;
+  position: relative;
 }
 
 .rating input {
-	display: none;
+  display: none;
 }
 
 .rating label {
-	display: block;
-	cursor: pointer;
-	width: 1.5rem;
-	position: relative;
+  display: block;
+  cursor: pointer;
+  width: 1.5rem;
+  position: relative;
 }
 
 .rating label:before {
-	font-family: "Material Icons";
-	content: "star_border";
-	position: relative;
-	display: block;
-	font-size: 1.5rem;
-	color: #A0A0FB;
+  font-family: "Material Icons";
+  content: "star_border";
+  position: relative;
+  display: block;
+  font-size: 1.5rem;
+  color: #A0A0FB;
 }
 
 .rating label:after {
-	font-family: "Material Icons";
-	content: "star";
-	position: absolute;
-	display: block;
-	font-size: 1.5rem;
-	color: #A0A0FB;
-	top: 0;
-	z-index: 100;
-	opacity: 0;
+  font-family: "Material Icons";
+  content: "star";
+  position: absolute;
+  display: block;
+  font-size: 1.5rem;
+  color: #A0A0FB;
+  top: 0;
+  z-index: 100;
+  opacity: 0;
 
 }
 
-.rating label:hover:after,
-.rating label:hover~label:after,
+// .rating label:hover:after,
+// .rating label:hover~label:after,
 .rating input:checked~label:after {
-	opacity: 1;
+  opacity: 1;
 }

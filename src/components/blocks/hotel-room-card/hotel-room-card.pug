@@ -1,33 +1,33 @@
 include ../../elements/rate-button/rate-button.pug
 
 mixin room-card(imgName, numberOfStars, roomNumber, price, lux, review)
-	.hotel-room
-		img(src=imgName, alt="" ).hotel-room__img
-		.hotel-room__circles-block
-			div.hotel-room__circle_point
-			div.hotel-room__circle_point
-			div.hotel-room__circle_point
-			div.hotel-room__circle_point
-		.hotel-room__text
-			.hotel-room__number
-				h3.hotel-room__number_symbol №
-				h2.hotel-room__number_number= roomNumber
-				if (lux == "lux")
-					h3.hotel-room__number_lux люкс
-			.hotel-room__cost
-				p.hotel-room__cost_price= price
-				span.hotel-room__cost_per-day в сутки
-		.hotel-room__raiting
-			if (numberOfStars == 1)
-				+star-rating-first-checked("1star1", "1star2", "1star3", "1star4", "1star5")
-			if (numberOfStars == 2)
-				+star-rating-second-checked("2star1", "2star2", "2star3", "2star4", "2star5")
-			if (numberOfStars == 3)
-				+star-rating-third-checked("3star1", "3star2", "3star3", "3star4", "3star5")
-			if (numberOfStars == 4)
-				+star-rating-fourth-checked("4star1", "4star2", "4star3", "4star4", "4star5")
-			if (numberOfStars == 5)
-				+star-rating-fifth-checked("5star1", "5star2", "5star3", "5star4", "5star5")
-			.hotel-room__review
-				h3.hotel-room__review_number= review
-				span Отзывов
+  .hotel-room
+    img(src=imgName, alt="" ).hotel-room__img
+    .hotel-room__circles-block
+      div.hotel-room__circle_point
+      div.hotel-room__circle_point
+      div.hotel-room__circle_point
+      div.hotel-room__circle_point
+    .hotel-room__text
+      .hotel-room__number
+        h3.hotel-room__number_symbol №
+        h2.hotel-room__number_number= roomNumber
+        if (lux == "lux")
+          h3.hotel-room__number_lux люкс
+      .hotel-room__cost
+        p.hotel-room__cost_price= price
+        span.hotel-room__cost_per-day в сутки
+    .hotel-room__raiting
+      if (numberOfStars == 1)
+        +star-rating-first-checked("1star1", "1star2", "1star3", "1star4", "1star5")
+      if (numberOfStars == 2)
+        +star-rating-second-checked("2star1", "2star2", "2star3", "2star4", "2star5")
+      if (numberOfStars == 3)
+        +star-rating-third-checked("3star1", "3star2", "3star3", "3star4", "3star5")
+      if (numberOfStars == 4)
+        +star-rating-fourth-checked("4star1", "4star2", "4star3", "4star4", "4star5")
+      if (numberOfStars == 5)
+        +star-rating-fifth-checked("5star1", "5star2", "5star3", "5star4", "5star5")
+      .hotel-room__review
+        h3.hotel-room__review_number= review
+        span Отзывов

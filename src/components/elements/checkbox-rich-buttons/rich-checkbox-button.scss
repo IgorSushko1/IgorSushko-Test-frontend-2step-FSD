@@ -1,28 +1,28 @@
 .checkbox-rich {
 
-	&__title {
-		font-size: 0.87rem;
-		margin: 0;
-		text-transform: none;
-	}
+  &__title {
+    font-size: 0.87rem;
+    margin: 0;
+    text-transform: none;
+  }
 
-	&__description-first {
-		margin-top: 0.31rem;
-		font-size: 0.75rem;
-		line-height: 0.87rem;
-		color: $dark-shade-050;
-		width: 12.5rem;
-	}
+  &__description-first {
+    margin-top: 0.31rem;
+    font-size: 0.75rem;
+    line-height: 0.87rem;
+    color: $dark-shade-050;
+    width: 12.5rem;
+  }
 
-	&__margin {
-		margin-bottom: 0.62rem;
-	}
+  &__margin {
+    margin-bottom: 0.62rem;
+  }
 
-	&__description-second {
-		margin-top: 0.18rem;
-		font-size: 0.75rem;
-		line-height: 0.87rem;
-		color: $dark-shade-050;
-		width: 14.38rem;
-	}
+  &__description-second {
+    margin-top: 0.18rem;
+    font-size: 0.75rem;
+    line-height: 0.87rem;
+    color: $dark-shade-050;
+    width: 14.38rem;
+  }
 }

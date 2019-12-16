@@ -7,58 +7,58 @@ include ../../components/elements/bullet-list/bullet-list.pug
 include ../../components/blocks/booking/booking.pug
 
 block meta-keywords
-	meta(name="keywords" content="TOXIN, hotels, room detail, choose")
+  meta(name="keywords" content="TOXIN, hotels, room detail, choose")
 block meta-description
-	meta(name="description" content="Номер отеля, оценить, выбрать, отзывы, преимущества")
+  meta(name="description" content="Номер отеля, оценить, выбрать, отзывы, преимущества")
 block title
-	title Room detail
+  title Room detail
 block main
-	.room-detail
-		article.room-detail__picture
-			.room-detail__picture_left
-				img(src=("imgs/room-details-1.png") alt="" width="981" height="485")
-			.room-detail__picture_right
-				img(src="imgs/room-details-2-1.png" alt="" width="459" height="243" style="display: block")
-				img(src="imgs/room-details-2-2.png" alt="" width="459" height="242")
+  .room-detail
+    article.room-detail__picture
+      .room-detail__picture_left
+        img(src=("imgs/room-details-1.png") alt="" width="981" height="485")
+      .room-detail__picture_right
+        img(src="imgs/room-details-2-1.png" alt="" width="459" height="243" style="display: block")
+        img(src="imgs/room-details-2-2.png" alt="" width="459" height="242")
 
-		article.room-detail__info
-			section.room-detail__info_section.room-detail__info_grid
-				.room-detail__about-room
-					h2.room-detail__about-room_title Сведения о номере
-					+icon-advantages
+    article.room-detail__info
+      section.room-detail__info_section.room-detail__info_grid
+        .room-detail__about-room
+          h2.room-detail__about-room_title Сведения о номере
+          +icon-advantages
 
-				.room-detail__impressions
-					h2.room-detail__impressions_title Впечатления от номера
-					.room-detail__impressions_circle
-						.room-detail__impressions_circle_info
-							.room-detail__impressions_circle_info_number 260
-							.room-detail__impressions_circle_info_text голосов
-						.room-detail__impressions_circle_part
-							.room-detail__impressions_circle_part_left-top
-							.room-detail__impressions_circle_part_left-bottom
-							.room-detail__impressions_circle_part_right-top
-							.room-detail__impressions_circle_part_right-bottom
-					.room-detail__impressions_bullet-list
-						+bullet-list("background: linear-gradient(0deg, #FFBA9C, #FFE39C)" ,"Великолепно")
-						+bullet-list("background: linear-gradient(0deg, #66D2EA, #6FCF97)", "Хорошо")
-						+bullet-list("background: linear-gradient(0deg, #8BA4F9, #BC9CFF)", "Удовлетворительно")
-						+bullet-list("background: linear-gradient(0deg, rgba(61, 73, 117, 1), rgba(144, 144, 144, 1))", "Разочарован")
-				.room-detail__comments
-					.room-detail__comments_title
-						h2.room-detail__comments_title_h2 Отзывы посетителей номера
-						span.room-detail__comments_title_span 2 отзыва
-					+comments("imgs/Murad-true.png", "Мурад Сарафанов", "5 дней назад", "12", "checked", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
-					+comments("imgs/girl image.png", "Патрисия Стёклышкова", "Неделю назад", "2", "", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
+        .room-detail__impressions
+          h2.room-detail__impressions_title Впечатления от номера
+          .room-detail__impressions_circle
+            .room-detail__impressions_circle_info
+              .room-detail__impressions_circle_info_number 260
+              .room-detail__impressions_circle_info_text голосов
+            .room-detail__impressions_circle_part
+              .room-detail__impressions_circle_part_left-top
+              .room-detail__impressions_circle_part_left-bottom
+              .room-detail__impressions_circle_part_right-top
+              .room-detail__impressions_circle_part_right-bottom
+          .room-detail__impressions_bullet-list
+            +bullet-list("background: linear-gradient(0deg, #FFBA9C, #FFE39C)" ,"Великолепно")
+            +bullet-list("background: linear-gradient(0deg, #66D2EA, #6FCF97)", "Хорошо")
+            +bullet-list("background: linear-gradient(0deg, #8BA4F9, #BC9CFF)", "Удовлетворительно")
+            +bullet-list("background: linear-gradient(0deg, rgba(61, 73, 117, 1), rgba(144, 144, 144, 1))", "Разочарован")
+        .room-detail__comments
+          .room-detail__comments_title
+            h2.room-detail__comments_title_h2 Отзывы посетителей номера
+            span.room-detail__comments_title_span 2 отзыва
+          +comments("imgs/Murad-true.png", "Мурад Сарафанов", "5 дней назад", "12", "checked", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+          +comments("imgs/girl image.png", "Патрисия Стёклышкова", "Неделю назад", "2", "", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
 
-				.room-detail__rules
-					h2.room-detail__rules_title Правила
-					.room-detail__rules_bullet
-						+bullet-list("background: rgba(31, 32, 65, 0.75)","Нельзя с питомцами")
-						+bullet-list("background: rgba(31, 32, 65, 0.75)", "Без вечеринок и мероприятий")
-						+bullet-list("background: rgba(31, 32, 65, 0.75)","Время прибытия — после 13:00, а выезд до 12:00")
-				.room-detail__cancel
-					h2.room-detail__cancel_title Отмена
-					p.room-detail__cancel_text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+        .room-detail__rules
+          h2.room-detail__rules_title Правила
+          .room-detail__rules_bullet
+            +bullet-list("background: rgba(31, 32, 65, 0.75)","Нельзя с питомцами")
+            +bullet-list("background: rgba(31, 32, 65, 0.75)", "Без вечеринок и мероприятий")
+            +bullet-list("background: rgba(31, 32, 65, 0.75)","Время прибытия — после 13:00, а выезд до 12:00")
+        .room-detail__cancel
+          h2.room-detail__cancel_title Отмена
+          p.room-detail__cancel_text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 
-			section.room-detail__info_section
-				+booking-room
+      section.room-detail__info_section
+        +booking-room

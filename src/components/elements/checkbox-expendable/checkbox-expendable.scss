@@ -1,53 +1,53 @@
 .checkbox-expendable {
-	position: relative;
-	max-width: 16.625rem;
+  position: relative;
+  max-width: 16.625rem;
 
-	&__title {
-		text-align: left;
-		letter-spacing: 0rem;
-	}
+  &__title {
+    text-align: left;
+    letter-spacing: 0rem;
+  }
 
-	&__drop_btn {
-		background-color: white;
-		color: $dark-shade-075;
-		cursor: pointer;
-		width: 16.625rem;
-		height: 2.75rem;
-		position: relative;
-		outline: none;
-		border: none;
-		padding: 0;
-	}
+  &__drop_btn {
+    background-color: white;
+    color: $dark-shade-075;
+    cursor: pointer;
+    width: 16.625rem;
+    height: 2.75rem;
+    position: relative;
+    outline: none;
+    border: none;
+    padding: 0;
+  }
 
-	&__icons {
-		position: absolute;
-		top: 0.75rem;
-		right: 0.625rem;
-		color: $dark-shade-100;
-	}
+  &__icons {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.625rem;
+    color: $dark-shade-100;
+  }
 
-	&__dropdown_hide {
-		display: none;
-	}
+  &__dropdown_hide {
+    display: none;
+  }
 
-	&__dropdown_show {
-		padding-top: 0.93rem;
-		display: block;
-		top: 2.75rem;
-		width: 16.5rem;
-		position: absolute;
-		min-width: 10rem;
-		overflow: auto;
-		z-index: 1;
-		background: white;
-	}
+  &__dropdown_show {
+    padding-top: 0.93rem;
+    display: block;
+    top: 2.75rem;
+    width: 16.5rem;
+    position: absolute;
+    min-width: 10rem;
+    overflow: auto;
+    z-index: 1;
+    background: white;
+  }
 
-	&__dropdown_show label {
-		width: fit-content;
-	}
+  &__dropdown_show label {
+    width: fit-content;
+  }
 
-	&__margin {
-		margin-left: 0.93rem;
-	}
+  &__margin {
+    margin-left: 0.93rem;
+  }
 
 }

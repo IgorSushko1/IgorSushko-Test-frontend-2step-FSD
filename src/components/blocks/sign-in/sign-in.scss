@@ -1,52 +1,52 @@
 .sing-in {
-	width: 23.75rem;
-	height: 22.37rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	border: 0.06rem solid rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	box-shadow: 0rem 0rem 1.56rem rgba(0, 0, 0, 0.2);
-	border-radius: 0.25rem;
-	padding-left: 1.87rem;
-	padding-right: 1.87rem;
+  width: 23.75rem;
+  height: 22.37rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 0.06rem solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0rem 0rem 1.56rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  padding-left: 1.87rem;
+  padding-right: 1.87rem;
 
-	&__title {
-		margin-top: 2.68rem;
-		margin-left: -0.06rem;
-		font-size: 1.5rem;
-	}
+  &__title {
+    margin-top: 2.68rem;
+    margin-left: -0.06rem;
+    font-size: 1.5rem;
+  }
 
-	&__email {
-		margin-top: 0.87rem;
-		margin-left: -0.18rem;
-	}
+  &__email {
+    margin-top: 0.87rem;
+    margin-left: -0.18rem;
+  }
 
-	&__password {
-		margin-top: 0.5rem;
-		margin-left: -0.18rem;
-	}
+  &__password {
+    margin-top: 0.5rem;
+    margin-left: -0.18rem;
+  }
 
-	&__button-full {
-		margin-top: 1.75rem;
-		margin-left: -0.06rem;
-	}
+  &__button-full {
+    margin-top: 1.75rem;
+    margin-left: -0.06rem;
+  }
 
-	&__create {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-top: 1.87rem;
-		margin-left: -0.06rem;
-	}
+  &__create {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.87rem;
+    margin-left: -0.06rem;
+  }
 
-	&__question {
-		font-size: 0.87rem;
-		margin: 0;
-		letter-spacing: -0.0096rem;
-	}
+  &__question {
+    font-size: 0.87rem;
+    margin: 0;
+    letter-spacing: -0.0096rem;
+  }
 
-	&__create .button-pill__empty {
-		height: 2.5rem;
-	}
+  &__create .button-pill__empty {
+    height: 2.5rem;
+  }
 }

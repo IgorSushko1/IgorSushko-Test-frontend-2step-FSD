@@ -4,28 +4,28 @@ include ../../elements/checkbox-radio/checkbox-radio.pug
 include ../../elements/checkbox-toggle/checkbox-toggle.pug
 include ../../elements/form__name/form__name.pug
 mixin sign-up
-	.sing-up
-		.sing-up__title
-			h2 Регистрация аккаунта
-		.sing-up__name
-			+form__name("text","Имя", "name", "sign-up")
-		.sing-up__surname
-			+form__name("text","Фамилия", "surname", "sign-up")
-		.sing-up__gender
-			+radio-buttons
-		.sing-up__birthday
-			h3.sing-up__birthday_title Дата рождения
-			input(type="text"  data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" data-position="right top" value="ДД.ММ.ГГГГ").sing-up__pick-date
-		.sing-up__enter
-			h3.sing-up__enter_title данные для входа в сервис
-			div.sing-up__registration
-				+form__name("email","Email", "email", "sign-up")
-			div.sing-up__registration
-				+form__name("text", "Пароль", "password", "sign-up")
-		.sing-up__toggle-checkbox
-				+toggle-checkbox("Получать спецпредложения")
-		.sing-up__button
-				+button-pill__full_arrow("Перейти к оплате")
-		.sing-up__authorization
-			p.sing-up__authorization_text Уже есть аккаунт на Toxin
-			+button-pill__empty_short("Войти")
+  .sing-up
+    .sing-up__title
+      h2 Регистрация аккаунта
+    .sing-up__name
+      +form__name("text","Имя", "name", "sign-up")
+    .sing-up__surname
+      +form__name("text","Фамилия", "surname", "sign-up")
+    .sing-up__gender
+      +radio-buttons
+    .sing-up__birthday
+      h3.sing-up__birthday_title Дата рождения
+      input(type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" data-position="right top" value="ДД.ММ.ГГГГ").sing-up__pick-date
+    .sing-up__enter
+      h3.sing-up__enter_title данные для входа в сервис
+      div.sing-up__registration
+        +form__name("email","Email", "email", "sign-up")
+      div.sing-up__registration
+        +form__name("text", "Пароль", "password", "sign-up")
+    .sing-up__toggle-checkbox
+      +toggle-checkbox("Получать спецпредложения")
+    .sing-up__button
+      +button-pill__full_arrow("Перейти к оплате")
+    .sing-up__authorization
+      p.sing-up__authorization_text Уже есть аккаунт на Toxin
+      +button-pill__empty_short("Войти")

@@ -1,47 +1,47 @@
 .landing {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	width: auto;
-	height: auto;
-	background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  background-color: white;
 
-	&__content {
-		position: relative;
-	}
+  &__content {
+    position: relative;
+  }
 
-	&__background {
-		width: 90rem;
-		height: 51.87rem;
-		overflow: hidden;
-		position: relative;
-	}
+  &__background {
+    width: 90rem;
+    height: 51.87rem;
+    overflow: hidden;
+    position: relative;
+  }
 
-	&__background_image {
-		position: relative;
-		top: -2.18rem;
-		left: 0.06rem;
-		transform: scaleY(1.085);
-	}
+  &__background_image {
+    position: relative;
+    top: -2.18rem;
+    left: 0.06rem;
+    transform: scaleY(1.085);
+  }
 
-	&__pick-numbers {
-		position: absolute;
-		z-index: 1;
-		top: 4.37rem;
-		left: 8.755rem;
-	}
+  &__pick-numbers {
+    position: absolute;
+    z-index: 1;
+    top: 4.37rem;
+    left: 8.755rem;
+  }
 
 
 
-	&__description {
-		position: absolute;
-		z-index: 1;
-		bottom: 1.31rem;
-		right: 8.25rem;
-		width: 18.37rem;
-		letter-spacing: 0.04em;
-		text-align: end;
-		font-size: 0.81rem;
-		line-height: 1.5rem;
-	}
+  &__description {
+    position: absolute;
+    z-index: 1;
+    bottom: 1.31rem;
+    right: 8.25rem;
+    width: 18.37rem;
+    letter-spacing: 0.04em;
+    text-align: end;
+    font-size: 0.81rem;
+    line-height: 1.5rem;
+  }
 }

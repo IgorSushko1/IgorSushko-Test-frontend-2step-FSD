@@ -2,49 +2,49 @@ include ../../../vendor/dropdown/dropdown-subparagraph.pug
 include ../../elements/button-pill__full_arrow/button-pill__full_arrow.pug
 
 mixin booking-room
-	.booking
-		.booking__head
-			div.booking__tytle
-				h3.booking__symbol №
-				h2.booking__number 888
-				h3.booking__lux люкс
-			div
-				p.booking__price 9 990₽
-				span.booking__per-day в сутки
+  .booking
+    .booking__head
+      div.booking__tytle
+        h3.booking__symbol №
+        h2.booking__number 888
+        h3.booking__lux люкс
+      div
+        p.booking__price 9 990₽
+        span.booking__per-day в сутки
 
-		.booking__arrival
-			h3.booking__arrival_title Прибытие - выезд
-			label.booking__calendar
-				input(type="checkbox" id="datepicker" data-range="true" data-multiple-dates-separator=" - " clearButton="true" class="datepicker-here" data-position="bottom left").booking__datepicker
-				p(class="result-datepicker-first-date")
-					span.pick-up-numbers-card-date-for-two-inputs ДД.ММ.ГГГГ
-					span.material-icons.pick-up-numbers-card-icon-for-date expand_more
-				p(class="result-datepicker-second-date")
-					span.pick-up-numbers-card-date-for-two-inputs ДД.ММ.ГГГГ
-					span.material-icons.pick-up-numbers-card-icon-for-date expand_more
+    .booking__arrival
+      h3.booking__arrival_title Прибытие - выезд
+      label.booking__calendar
+        input(type="checkbox" id="datepicker" data-range="true" data-multiple-dates-separator=" - " clearButton="true" class="datepicker-here" data-position="bottom left").booking__datepicker
+        p(class="result-datepicker-first-date")
+          span.pick-up-numbers-card-date-for-two-inputs ДД.ММ.ГГГГ
+          span.material-icons.pick-up-numbers-card-icon-for-date expand_more
+        p(class="result-datepicker-second-date")
+          span.pick-up-numbers-card-date-for-two-inputs ДД.ММ.ГГГГ
+          span.material-icons.pick-up-numbers-card-icon-for-date expand_more
 
-		.booking__guests
-			h3.booking__guests_title Гости
-			.booking__dropdown
-				+dropdown-people
+    .booking__guests
+      h3.booking__guests_title Гости
+      .booking__dropdown
+        +dropdown-people
 
-		.booking__text_days
-			span.booking__align_left 9 990₽ х 4 суток
-			span.booking__align_right 39 960₽
+    .booking__text_days
+      span.booking__align_left 9 990₽ х 4 суток
+      span.booking__align_right 39 960₽
 
-		.booking__text_fee
-			span.booking__align_left Сбор за услуги: скидка 2 179₽
-			span.material-icons.booking__align_center error_outline
-			span.booking__align_right 0₽
+    .booking__text_fee
+      span.booking__align_left Сбор за услуги: скидка 2 179₽
+      span.material-icons.booking__align_center error_outline
+      span.booking__align_right 0₽
 
-		.booking__text_fee
-			span.booking__align_left Сбор за дополнительные услуги
-			span.material-icons.booking__align_center error_outline
-			span.booking__align_right 300₽
+    .booking__text_fee
+      span.booking__align_left Сбор за дополнительные услуги
+      span.material-icons.booking__align_center error_outline
+      span.booking__align_right 300₽
 
-		.booking___total
-			h2 Итого
-			div.booking__total_border
-			h2.booking__total_price 38 081₽
-		.booking__button
-			+button-pill__full_arrow("Забронировать")
+    .booking___total
+      h2 Итого
+      div.booking__total_border
+      h2.booking__total_price 38 081₽
+    .booking__button
+      +button-pill__full_arrow("Забронировать")

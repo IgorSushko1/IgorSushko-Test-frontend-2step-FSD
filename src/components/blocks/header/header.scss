@@ -1,68 +1,68 @@
 .header {
-	display: flex;
-	width: 90rem;
-	height: 4.375rem;
-	justify-content: space-between;
+  display: flex;
+  width: 90rem;
+  height: 4.375rem;
+  justify-content: space-between;
 
-	&__image {
-		width: 6.62rem;
-		height: 2.5rem;
-		margin: auto 0 auto 8.8rem;
-	}
+  &__image {
+    width: 6.62rem;
+    height: 2.5rem;
+    margin: auto 0 auto 8.8rem;
+  }
 
-	&__menu {
-		margin: auto 8.75rem auto 0;
-		display: flex;
-	}
+  &__menu {
+    margin: auto 8.75rem auto 0;
+    display: flex;
+  }
 
-	&__list {
-		display: flex;
-		font-size: 0.875rem;
-	}
+  &__list {
+    display: flex;
+    font-size: 0.875rem;
+  }
 
-	&__point {
-		padding-left: 1.2rem;
-		list-style-type: none;
-	}
+  &__point {
+    padding-left: 1.2rem;
+    list-style-type: none;
+  }
 
-	&__link {
-		text-decoration: none;
-		color: $dark-shade-075;
-		margin: 0;
-		padding: 0;
-		margin-right: 0.06rem;
-	}
+  &__link {
+    text-decoration: none;
+    color: $dark-shade-075;
+    margin: 0;
+    padding: 0;
+    margin-right: 0.06rem;
+  }
 
-	&__dropdown {
-		display: inline-flex;
-	}
+  &__dropdown {
+    display: inline-flex;
+  }
 
-	&__point .material-icons {
-		font-size: 1.5rem;
-		position: relative;
-		top: -0.06rem;
-		height: 0rem;
-	}
+  &__point .material-icons {
+    font-size: 1.5rem;
+    position: relative;
+    top: -0.06rem;
+    height: 0rem;
+  }
 
-	&__button {
-		display: flex;
-		align-items: center;
-	}
+  &__button {
+    display: flex;
+    align-items: center;
+  }
 
-	&__button .button-pill__full {
-		margin-left: 1.375rem;
-	}
+  &__button .button-pill__full {
+    margin-left: 1.375rem;
+  }
 
-	&__button .button-pill__empty {
-		margin-left: 1.25rem;
-	}
+  &__button .button-pill__empty {
+    margin-left: 1.25rem;
+  }
 
-	&__login_in {
-		margin: auto;
-		border-left: 0.06rem solid $dark-shade-010;
-		padding-left: 1.875rem;
-		margin-left: 1.875rem;
-		color: $dark-shade-075;
-	}
+  &__login_in {
+    margin: auto;
+    border-left: 0.06rem solid $dark-shade-010;
+    padding-left: 1.875rem;
+    margin-left: 1.875rem;
+    color: $dark-shade-075;
+  }
 
 }

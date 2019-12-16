@@ -1,87 +1,87 @@
 .like-button {
-	position: relative;
-	margin: 0;
-	padding: 0;
-	top: 0;
-	left: 0;
-}
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
 
-.like-button__profile-image {
-	margin-top: -0.25rem;
-}
+  &__profile-image {
+    margin-top: -0.25rem;
+  }
 
-.like-button__background {
-	z-index: 1;
-	background: linear-gradient(180deg, $dark-shade-025, $dark-shade-025);
-	border: none;
-	color: $dark-shade-025;
-	padding: auto;
-	width: 2.5rem;
-	height: 1.25rem;
-	font-weight: 700;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	cursor: pointer;
-	border-radius: 1.37rem;
-	position: relative;
-}
+  &__background {
+    z-index: 1;
+    background: linear-gradient(180deg, $dark-shade-025, $dark-shade-025);
+    border: none;
+    color: $dark-shade-025;
+    padding: auto;
+    width: 2.5rem;
+    height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 1.37rem;
+    position: relative;
+  }
 
-.like-button input:checked~.like-button__background {
-	background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
-}
+  & input:checked~&__background {
+    background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+  }
 
-.like-button__input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
-	height: 0;
-	width: 0;
-}
+  &__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
 
-.like-button__empty-white {
-	z-index: 2;
-	position: absolute;
-	background: white;
-	width: 2.37rem;
-	height: 1.12rem;
-	left: 0.06rem;
-	top: 0.06rem;
-	border-radius: 0.62rem;
-}
+  &__empty-white {
+    z-index: 2;
+    position: absolute;
+    background: white;
+    width: 2.37rem;
+    height: 1.12rem;
+    left: 0.06rem;
+    top: 0.06rem;
+    border-radius: 0.62rem;
+  }
 
-.like-button__favorite_border {
-	z-index: 5;
-	font-size: 0.62rem;
-	position: absolute;
-	top: 0.06rem;
-	left: 0.31rem;
-	color: $dark-shade-025;
-}
+  &__favorite_border {
+    z-index: 5;
+    font-size: 0.62rem;
+    position: absolute;
+    top: 0.06rem;
+    left: 0.31rem;
+    color: $dark-shade-025;
+  }
 
-.like-buttons__favorite {
-	z-index: 6;
-	font-size: 0.62rem;
-	position: absolute;
-	top: 0.06rem;
-	left: 0.31rem;
-	display: none;
-	color: #BC9CFF;
-}
+  &__favorite {
+    z-index: 6;
+    font-size: 0.62rem;
+    position: absolute;
+    top: 0.06rem;
+    left: 0.31rem;
+    display: none;
+    color: #BC9CFF;
+  }
 
-.like-button__label input:checked~.like-button__favorite {
-	display: inline-block;
-}
+  &__label input:checked~&__favorite {
+    display: inline-block;
+  }
 
-.like-button__label input:checked~.like-button__background {
-	color: #BC9CFF;
-}
+  &__label input:checked~&__background {
+    color: #BC9CFF;
+  }
 
-.like-button__num {
-	z-index: 3;
-	position: absolute;
-	top: 0.25rem;
-	right: 0.68rem;
-	font-weight: 500;
-	font-size: 0.62rem;
+  &__num {
+    z-index: 3;
+    position: absolute;
+    top: 0.25rem;
+    right: 0.68rem;
+    font-weight: 500;
+    font-size: 0.62rem;
+  }
 }

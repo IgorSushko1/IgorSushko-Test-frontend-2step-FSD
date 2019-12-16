@@ -1,30 +1,30 @@
 .registration {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	width: auto;
-	height: auto;
-	background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  background-color: white;
 
-	&__filling {
-		position: relative;
-	}
+  &__filling {
+    position: relative;
+  }
 
-	&__filling_sign-up {
-		position: absolute;
-		z-index: 1;
-		top: 1.87rem;
-		left: 36.85%;
-		background: white;
-		border-radius: 0.25rem;
-	}
+  &__filling_sign-up {
+    position: absolute;
+    z-index: 1;
+    top: 1.87rem;
+    left: 36.85%;
+    background: white;
+    border-radius: 0.25rem;
+  }
 
-	&__filling_sign-in {
-		position: absolute;
-		z-index: 1;
-		top: 10.18rem;
-		left: 36.85%;
-		background: white;
-		border-radius: 0.25rem;
-	}
+  &__filling_sign-in {
+    position: absolute;
+    z-index: 1;
+    top: 10.18rem;
+    left: 36.85%;
+    background: white;
+    border-radius: 0.25rem;
+  }
 }

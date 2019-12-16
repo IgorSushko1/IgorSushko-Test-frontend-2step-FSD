@@ -2,27 +2,27 @@
   background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
   border: none;
   color: white;
-	padding: auto;
-	width: 20rem;
-	height: 2.75rem;
-	font-weight: 700;
+  padding: auto;
+  width: 20rem;
+  height: 2.75rem;
+  font-weight: 700;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-	border-radius: 1.375rem;
-	position: relative;
-}
+  border-radius: 1.375rem;
+  position: relative;
 
-.button-pill__full_arrow_icon {
-	position: absolute;
-	top: 0.625rem;
-	right: 0.6rem;
-	font-size: 1.5rem;
-	color: white;
-}
+  &_icon {
+    position: absolute;
+    top: 0.625rem;
+    right: 0.6rem;
+    font-size: 1.5rem;
+    color: white;
+  }
 
-.button-pill__full_arrow_text {
-	font-family: "Montserrat-Bold", Arial, sans-serif;
-	margin-left: -0.187rem;
+  &_text {
+    font-family: "Montserrat-Bold", Arial, sans-serif;
+    margin-left: -0.187rem;
+  }
 }

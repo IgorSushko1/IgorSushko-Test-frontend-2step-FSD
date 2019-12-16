@@ -27,9 +27,9 @@ html
 		+color-example('Green', "#6FCF97")(class="rectangle green")
 
 		include ./components/elements/form__email/form__email.pug
-		+form__email("email", "Your email adress", "field name")(class="text-field-email")
+		+form__email("email", "Your email adress", "field name")
 		include ./components/elements/form__date/form__date.pug
-		+form__date("date", "masked text field")(class="text-field-date")
+		+form__date("date", "masked text field")
 		include ./components/elements/form__name/form__name.pug
 		+form__name("email","Email", "email-sign-in", "sign-in")
 		+form__name("email","Email", "email-sign-up", "sign-up")
@@ -65,7 +65,7 @@ html
 		div
 			include ./components/elements/like-buttons/like-buttons.pug
 		div
-			include ./components/elements/text-field/text-field_calendar copy.pug
+			include ./vendor/calendar/calendar.pug
 		div
 			include ./vendor/range-slider/range-slider.pug
 			+range-slider

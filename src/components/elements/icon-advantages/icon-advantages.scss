@@ -1,34 +1,34 @@
 .icon-advantages {
-	display: grid;
-	grid-template-columns: 3rem 15.62rem;
-	border-bottom: 1px solid $dark-shade-025;
-	max-width: 18.75‬;
-	padding-bottom: 1.31rem;
-	margin-top: 0.93rem;
-	padding-left: 0.31rem;
+  display: grid;
+  grid-template-columns: 3rem 15.62rem;
+  border-bottom: 1px solid $dark-shade-025;
+  max-width: 18.75‬;
+  padding-bottom: 1.31rem;
+  margin-top: 0.93rem;
+  padding-left: 0.31rem;
 
-	&__image {
-		margin-top: 0.62rem
-	}
+  &__image {
+    margin-top: 0.62rem
+  }
 
-	&__text {
-		padding-left: 0.43rem;
-		padding-top: 0.56rem;
-		font-size: 0.87rem;
-		line-height: 1.37rem;
-		letter-spacing: -0.01rem;
-	}
+  &__text {
+    padding-left: 0.43rem;
+    padding-top: 0.56rem;
+    font-size: 0.87rem;
+    line-height: 1.37rem;
+    letter-spacing: -0.01rem;
+  }
 
-	&__text_h3 {
-		margin-top: -0.06rem;
-		padding-top: -0.12rem;
-		letter-spacing: 0.01rem;
-		font-family: "Montserrat-SemiBold", Arial, sans-serif;
-		text-transform: none;
-		font-size: 0.88rem;
-	}
+  &__text_h3 {
+    margin-top: -0.06rem;
+    padding-top: -0.12rem;
+    letter-spacing: 0.01rem;
+    font-family: "Montserrat-SemiBold", Arial, sans-serif;
+    text-transform: none;
+    font-size: 0.88rem;
+  }
 }
 
 .border-none {
-	border: none;
+  border: none;
 }

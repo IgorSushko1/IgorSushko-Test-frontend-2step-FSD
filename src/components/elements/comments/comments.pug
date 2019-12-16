@@ -1,19 +1,19 @@
 mixin comments(img, name, date, likes, check, text)
-	div.comments
-		div
-			img(src=img alt="Cinque Terre" width="48" height="48").comments__profile-image
-		div
-			h3.comments__name= name
-			div.comments__date= date
-		div.comments__like-button
-			label.like-button
-				if (check == "checked")
-					input(type="checkbox" checked).like-button__input
-				if (check != "checked")
-					input(type="checkbox").like-button__input
-				.like-button__background
-					.like-button__empty-white
-					.like-button__num= likes
-				.material-icons.like-button__favorite_border favorite_border
-				.material-icons.like-button__favorite favorite
-		div.comments__description= text
+  div.comments
+    div
+      img(src=img alt="Cinque Terre" width="48" height="48").comments__profile-image
+    div
+      h3.comments__name= name
+      div.comments__date= date
+    div.comments__like-button
+      label.like-button
+        if (check == "checked")
+          input(type="checkbox" checked).like-button__input
+        if (check != "checked")
+          input(type="checkbox").like-button__input
+        .like-button__background
+          .like-button__empty-white
+          .like-button__num= likes
+        .material-icons.like-button__favorite_border favorite_border
+        .material-icons.like-button__favorite favorite
+    div.comments__description= text
