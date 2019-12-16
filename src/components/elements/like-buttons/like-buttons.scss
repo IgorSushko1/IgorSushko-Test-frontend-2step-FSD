@@ -26,8 +26,8 @@
     position: relative;
   }
 
-  & input:checked~&__background {
-    background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+  & input:checked ~ &__background {
+    background: linear-gradient(180deg, #bc9cff, #8ba4f9);
   }
 
   &__input {
@@ -44,7 +44,7 @@
     background: white;
     width: 2.37rem;
     height: 1.12rem;
-    left: 0.06rem;
+    left: 0.07rem;
     top: 0.06rem;
     border-radius: 0.62rem;
   }
@@ -65,15 +65,14 @@
     top: 0.06rem;
     left: 0.31rem;
     display: none;
-    color: #BC9CFF;
+    color: #bc9cff;
   }
 
-  &__label input:checked~&__favorite {
-    display: inline-block;
+  & input:checked ~ .like-button__favorite {
+    display: block;
   }
-
-  &__label input:checked~&__background {
-    color: #BC9CFF;
+  & input:checked ~ .like-button__favorite_border {
+    display: none;
   }
 
   &__num {

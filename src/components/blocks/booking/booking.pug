@@ -12,15 +12,16 @@ mixin booking-room
         p.booking__price 9 990₽
         span.booking__per-day в сутки
 
-    .booking__arrival
-      h3.booking__arrival_title Прибытие - выезд
+    .booking__pick-date
+      h3.booking__arrival Прибытие
+      h3.booking__departure Выезд
       label.booking__calendar
         input(type="checkbox" id="datepicker" data-range="true" data-multiple-dates-separator=" - " clearButton="true" class="datepicker-here" data-position="bottom left").booking__datepicker
         p(class="result-datepicker-first-date")
-          span.pick-up-numbers-card-date-for-two-inputs ДД.ММ.ГГГГ
+          span.pick-up-numbers-card-date-for-two-inputs 19.08.2019
           span.material-icons.pick-up-numbers-card-icon-for-date expand_more
         p(class="result-datepicker-second-date")
-          span.pick-up-numbers-card-date-for-two-inputs ДД.ММ.ГГГГ
+          span.pick-up-numbers-card-date-for-two-inputs 23.08.2019
           span.material-icons.pick-up-numbers-card-icon-for-date expand_more
 
     .booking__guests
@@ -28,21 +29,21 @@ mixin booking-room
       .booking__dropdown
         +dropdown-people
 
-    .booking__text_days
+    .booking__text
       span.booking__align_left 9 990₽ х 4 суток
       span.booking__align_right 39 960₽
 
-    .booking__text_fee
+    .booking__text.booking__text_fee
       span.booking__align_left Сбор за услуги: скидка 2 179₽
       span.material-icons.booking__align_center error_outline
       span.booking__align_right 0₽
 
-    .booking__text_fee
+    .booking__text.booking__text_fee
       span.booking__align_left Сбор за дополнительные услуги
       span.material-icons.booking__align_center error_outline
       span.booking__align_right 300₽
 
-    .booking___total
+    .booking__total
       h2 Итого
       div.booking__total_border
       h2.booking__total_price 38 081₽
