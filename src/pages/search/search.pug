@@ -12,45 +12,45 @@ include ../../components/elements/checkbox-button/checkbox-button.pug
 include ../../components/elements/pagination/pagination.pug
 
 block meta-keywords
-	meta(name="keywords" content="TOXIN, hotels, search room")
+  meta(name="keywords" content="TOXIN, hotels, search room")
 block meta-description
-	meta(name="description" content="Выбор номера в отеле, любой")
+  meta(name="description" content="Выбор номера в отеле, любой")
 block title
-	title Search page
+  title Search page
 
 block main
-	.search-page
-		article.search-page__select-options
-			h3.search-page__select-options_datepicker_title Даты пребывания в отеле
-			+calendar-hidden("search-page__select-options_calendar")
-			h3.search-page__select-options_dropdown_title Гости
-			+dropdown-people
-			+range-slider
-			h3.search-page__select-options_checkbox_title checkbox buttons
-			+checkbox-button("Можно курить", "")
-			+checkbox-button("Можно с питомцами", "checked")
-			+checkbox-button("Можно пригласить гостей (до 10 человек)", "checked")
-			h3.search-page__select-options_checkbox-rich_title доступность
-			+checkbox-rich
-			.search-page__select-options_dropdown
-				h3 Удобства номера
-				+dropdown-room-comfort
-			.search-page__select-options_expendable-checkbox
-				+checkbox-expendable("дополнительные удобства")
-		article.search-page__rooms
-			h2.search-page_rooms_title Номера, которые мы для вас подобрали
-			.search-page__rooms_numbers
-				+room-card("imgs/room1.png", "5", "888", "9 990₽", "lux", "145")
-				+room-card("imgs/room2.png", "4", "840", "9 900₽", "", "65")
-				+room-card("imgs/room-3.png", "3", "980", "8 500₽", "lux", "35")
-				+room-card("imgs/room-4.png", "5", "856", "7 300₽", "lux", "19")
-				+room-card("imgs/room-5.png", "4", "740", "6 000₽", "", "44")
-				+room-card("imgs/room-6.png", "3", "982", "5 800₽", "", "56")
-				+room-card("imgs/room-7.png", "5", "678", "5 500₽", "", "45")
-				+room-card("imgs/room-8.png", "4", "450", "5 300₽", "", "39")
-				+room-card("imgs/room-9.png", "3", "350", "5 000₽", "", "77")
-				+room-card("imgs/room-10.png", "5", "666", "5 000₽", "", "25")
-				+room-card("imgs/room-11.png", "3", "444", "5 000₽", "", "15")
-				+room-card("imgs/room-12.png", "3", "352", "5 000₽", "", "55")
-			.search-page__rooms_pagination
-				+pagination
+  .search-page
+    article.search-page__select-options
+      h3.search-page__datepicker_title Даты пребывания в отеле
+      +calendar-hidden("search-page__select-options_calendar")
+      h3.search-page__dropdown_title Гости
+      +dropdown-people
+      +range-slider
+      h3.search-page__checkbox_title checkbox buttons
+      +checkbox-button("Можно курить", "")
+      +checkbox-button("Можно с питомцами", "checked")
+      +checkbox-button("Можно пригласить гостей (до 10 человек)", "checked")
+      h3.search-page__checkbox-rich_title доступность
+      +checkbox-rich
+      .search-page__dropdown
+        h3.search-page__dropdown_title Удобства номера
+        +dropdown-room-comfort
+      .search-page__expendable-checkbox
+        +checkbox-expendable("дополнительные удобства")
+    article.search-page__rooms
+      h2.search-page_rooms_title Номера, которые мы для вас подобрали
+      .search-page__rooms_numbers
+        +hotel-room-card("imgs/room1.png", "5", "888", "9 990₽", "lux", "145")
+        +hotel-room-card("imgs/room2.png", "4", "840", "9 900₽", "", "65")
+        +hotel-room-card("imgs/room-3.png", "3", "980", "8 500₽", "lux", "35")
+        +hotel-room-card("imgs/room-4.png", "5", "856", "7 300₽", "lux", "19")
+        +hotel-room-card("imgs/room-5.png", "4", "740", "6 000₽", "", "44")
+        +hotel-room-card("imgs/room-6.png", "3", "982", "5 800₽", "", "56")
+        +hotel-room-card("imgs/room-7.png", "5", "678", "5 500₽", "", "45")
+        +hotel-room-card("imgs/room-8.png", "4", "450", "5 300₽", "", "39")
+        +hotel-room-card("imgs/room-9.png", "3", "350", "5 000₽", "", "77")
+        +hotel-room-card("imgs/room-10.png", "5", "666", "5 000₽", "", "25")
+        +hotel-room-card("imgs/room-11.png", "3", "444", "5 000₽", "", "15")
+        +hotel-room-card("imgs/room-12.png", "3", "352", "5 000₽", "", "55")
+      .search-page__rooms_pagination
+        +pagination

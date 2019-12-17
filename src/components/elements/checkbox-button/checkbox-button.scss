@@ -1,5 +1,4 @@
 .checkbox-button {
-
   &__container {
     width: 13.125rem;
     display: block;
@@ -12,7 +11,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
   }
 
   &__container input {
@@ -36,29 +35,29 @@
   &__checkmark_white {
     position: absolute;
     top: -0.06rem;
-    left: 0.06rem;
+    left: 0.08rem;
     height: 1.12rem;
     width: 1.12rem;
     background: white;
-    border-radius: 0.25rem;
+    border-radius: 0.2rem;
   }
 
-  &__container input:checked~&__checkmark {
-    background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+  &__container input:checked ~ &__checkmark {
+    background: linear-gradient(180deg, #bc9cff, #8ba4f9);
   }
 
   &__checkmark:before,
   &__checkmark:after {
-    content: "";
+    content: '';
     position: absolute;
     display: none;
   }
 
-  &__container input:checked~&__checkmark:after {
+  &__container input:checked ~ &__checkmark:after {
     display: block;
   }
 
-  &__container input:checked~&__checkmark:before {
+  &__container input:checked ~ &__checkmark:before {
     display: block;
   }
 
@@ -68,7 +67,7 @@
     top: 6px;
     width: 2px;
     height: 7px;
-    background-image: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+    background-image: linear-gradient(180deg, #bc9cff, #8ba4f9);
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -80,7 +79,7 @@
     top: 8px;
     width: 2px;
     height: 5px;
-    background-image: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+    background-image: linear-gradient(180deg, #bc9cff, #8ba4f9);
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);

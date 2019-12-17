@@ -5,7 +5,7 @@ $('.slider-range-slider').ionRangeSlider({
   from: 5000,
   to: 10000,
   step: 250,
-  postfix: 'â‚½',
+  postfix: '₽',
 });
 
 $('.irs-min').remove();
@@ -16,6 +16,9 @@ $('.irs-single').css({
   display: 'flex',
   'justify-content': 'flex-end',
   'font-weight': '600',
+  'margin-top': ' 1.4rem',
+  'font-size': '0.75rem',
+  'letter-spacing': '-0.02rem',
 });
 
 let amountOfMoney;

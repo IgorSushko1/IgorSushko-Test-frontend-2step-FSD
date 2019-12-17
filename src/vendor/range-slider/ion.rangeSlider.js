@@ -1,3 +1,5 @@
+/* eslint-disable func-names */
+/* eslint-disable no-undef */
 // Ion.RangeSlider
 // version 2.3.0 Build: 381
 // © Denis Ineshin, 2018
