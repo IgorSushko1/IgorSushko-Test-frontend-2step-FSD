@@ -1,2 +1,3 @@
-mixin button-pill__empty(text)
-  button.button-pill__empty= text
+mixin button-pill__empty(text, ref)
+  a(href=ref)
+    button.button-pill__empty= text

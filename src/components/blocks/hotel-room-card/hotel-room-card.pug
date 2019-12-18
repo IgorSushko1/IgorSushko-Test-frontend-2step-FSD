@@ -1,8 +1,9 @@
 include ../../elements/rate-button/rate-button.pug
 
-mixin hotel-room-card(imgName, numberOfStars, roomNumber, price, lux, review)
+mixin hotel-room-card(imgName, numberOfStars, roomNumber, price, lux, review, ref)
   .hotel-room
-    img(src=imgName, alt="" ).hotel-room__img
+    a(href=ref)
+      img(src=imgName, alt="" ).hotel-room__img
     .hotel-room__circles_block
       div.hotel-room__circle_point
       div.hotel-room__circle_point

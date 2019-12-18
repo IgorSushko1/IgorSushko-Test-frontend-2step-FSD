@@ -5,7 +5,8 @@ mixin header(buttonTextOne, buttonTextTwo)
   - var links = [{types:"simple", link:"", text:"О нас"},{types:"arrow", link:"", text:"Услуги"},{types:"simple", link:"", text:"Вакансии"},{types:"simple", link:"", text:"Новости"},{types:"arrow", link:"", text:"Соглашения"}]
 
   .header
-    img(src="imgs/Logo.png" alt="").header__image
+    a(href="./landing.html").header__image
+      img(src="imgs/Logo.png" alt="" )
     nav.header__menu
       ul.header__list
         each i in links
@@ -21,5 +22,5 @@ mixin header(buttonTextOne, buttonTextTwo)
                 span.header__link= i.text
                 span.material-icons keyboard_arrow_down
       div.header__button
-        +button-pill__empty(buttonTextOne)
-        +button-pill__full(buttonTextTwo)
+        +button-pill__empty(buttonTextOne, "./registration-sign-in.html")
+        +button-pill__full(buttonTextTwo, "./registration-sign-up.html")

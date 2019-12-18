@@ -11,7 +11,7 @@ mixin sign-in
     .sing-in__password
       +form__name("text", "Пароль", "password-sign-in", "sign-in")
     .sing-in__button-full
-      +button-pill__full_arrow("Войти")
+      +button-pill__full_arrow("Войти", "./search.html")
     .sing-in__create
       p.sing-in__question Нет аккаунта на Toxin?
-      +button-pill__empty_short("Создать")
+      +button-pill__empty_short("Создать", "./registration-sign-up.html")
