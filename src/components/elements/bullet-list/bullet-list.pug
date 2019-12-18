@@ -1,7 +1,7 @@
 mixin bullet-list(colors, text, margins)
   ul(style={ "margin-bottom": margins}).bullet-list
-    if (amrgin)
+    if (margins)
       div(style={background:  colors}).bullet-list__disc
     else
       div(style={background:  colors}).bullet-list__disc
-    div.bullet-list__text= text
+    .bullet-list__text= text

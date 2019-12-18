@@ -4,7 +4,7 @@ include ../../elements/button-pill__full_arrow/button-pill__full_arrow.pug
 mixin booking-room
   .booking
     header.booking__head
-      div.booking__tytle
+      .booking__tytle
         h3.booking__symbol №
         h2.booking__number 888
         h3.booking__lux люкс
@@ -45,7 +45,7 @@ mixin booking-room
 
     .booking__total
       h2 Итого
-      div.booking__total_border
+      .booking__total_border
       h2.booking__total_price 38 081₽
     .booking__button
       +button-pill__full_arrow("Забронировать", "#")

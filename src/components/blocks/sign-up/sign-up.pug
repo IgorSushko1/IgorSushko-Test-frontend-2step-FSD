@@ -18,9 +18,9 @@ mixin sign-up
       input(type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" data-position="right top" value="ДД.ММ.ГГГГ").sing-up__pick-date
     .sing-up__enter
       h3.sing-up__enter_title данные для входа в сервис
-      div.sing-up__registration
+      .sing-up__registration
         +form__name("email","Email", "email", "sign-up")
-      div.sing-up__registration
+      .sing-up__registration
         +form__name("text", "Пароль", "password", "sign-up")
     .sing-up__toggle-checkbox
       +toggle-checkbox("Получать спецпредложения")
