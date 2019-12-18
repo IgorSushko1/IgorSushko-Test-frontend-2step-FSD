@@ -10,8 +10,8 @@
   <link href="main.css" rel="stylesheet"></head>
   <body class="registration">
     <header class="registration__header">
-      <div class="header"><img class="header__image" src="imgs/Logo.png" alt="">
-        <div class="header__menu">
+      <div class="header"><a class="header__image" href="./landing.html"><img src="imgs/Logo.png" alt=""></a>
+        <nav class="header__menu">
           <ul class="header__list">
             <li class="header__point"><a class="header__link" href="">О нас</a></li>
             <li class="header__point">
@@ -23,116 +23,116 @@
               <div class="header__dropdown"><span class="header__link">Соглашения</span><span class="material-icons">keyboard_arrow_down</span></div>
             </li>
           </ul>
-          <div class="header__button">
-            <button class="button-pill__empty">ВОЙТИ</button>
-            <button class="button-pill__full">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+          <div class="header__button"><a href="./registration-sign-in.html">
+              <button class="button-pill__empty">ВОЙТИ</button></a><a href="./registration-sign-up.html">
+              <button class="button-pill__full">ЗАРЕГИСТРИРОВАТЬСЯ</button></a>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
-    <main class="registration__main">
-      <article class="registration__filling">
+    <main class="registration__basis">
+      <article class="registration___basis_image">
         <div class="registration__background-up"><img class="registration__background-up_image" src="imgs/registration-background-image-interior.png" alt=""></div>
-        <div class="registration__filling_sign-up">
-          <div class="sing-up">
-            <div class="sing-up__title">
-              <h2>Регистрация аккаунта</h2>
-            </div>
-            <div class="sing-up__name">
-              <form>
-                <legend>
-                  <div class="form__name">
-                    <input class="form__name_border form__name_sign-up" type="text" value="Имя" name="name">
-                  </div>
-                </legend>
-              </form>
-            </div>
-            <div class="sing-up__surname">
-              <form>
-                <legend>
-                  <div class="form__name">
-                    <input class="form__name_border form__name_sign-up" type="text" value="Фамилия" name="surname">
-                  </div>
-                </legend>
-              </form>
-            </div>
-            <div class="sing-up__gender">
-              <form class="checkbox-radio" action="">
-                <label class="checkbox-radio__container">Мужчина
-                  <input type="radio" name="sex" value="this is a men's world" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
-                </label>
-                <label class="checkbox-radio__container">Женщина
-                  <input type="radio" name="sex" value="but it would be nothing? without woman or a girl"><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
-                </label>
-              </form>
-            </div>
-            <div class="sing-up__birthday">
-              <h3 class="sing-up__birthday_title">Дата рождения</h3>
-              <input class="datepicker-here sing-up__pick-date" type="text" data-range="true" data-multiple-dates-separator=" - " data-position="right top" value="ДД.ММ.ГГГГ">
-            </div>
-            <div class="sing-up__enter">
-              <h3 class="sing-up__enter_title">данные для входа в сервис</h3>
-              <div class="sing-up__registration">
-                <form>
-                  <legend>
-                    <div class="form__name">
-                      <input class="form__name_border form__name_sign-up" type="email" value="Email" name="email">
-                    </div>
-                  </legend>
-                </form>
-              </div>
-              <div class="sing-up__registration">
-                <form>
-                  <legend>
-                    <div class="form__name">
-                      <input class="form__name_border form__name_sign-up" type="text" value="Пароль" name="password">
-                    </div>
-                  </legend>
-                </form>
-              </div>
-            </div>
-            <div class="sing-up__toggle-checkbox">
-              <label class="checkbox-toggle">
-                <div class="checkbox-toggle__background_gradient">
-                  <div class="checkbox-toggle__background_white">
-                    <input class="checkbox-toggle__input" type="checkbox" name="name" value="pets-allowed">
-                    <div class="checkbox-toggle__circle"></div>
-                    <div class="checkbox-toggle__text">Получать спецпредложения</div>
-                  </div>
+      </article>
+      <article class="registration__basis_sign-up">
+        <article class="sing-up">
+          <header class="sing-up__title">
+            <h2>Регистрация аккаунта</h2>
+          </header>
+          <div class="sing-up__name">
+            <form>
+              <legend>
+                <div class="form__name">
+                  <input class="form__name_border form__name_sign-up" type="text" value="Имя" name="name">
                 </div>
+              </legend>
+            </form>
+          </div>
+          <div class="sing-up__surname">
+            <form>
+              <legend>
+                <div class="form__name">
+                  <input class="form__name_border form__name_sign-up" type="text" value="Фамилия" name="surname">
+                </div>
+              </legend>
+            </form>
+          </div>
+          <div class="sing-up__gender">
+            <form class="checkbox-radio" action="">
+              <label class="checkbox-radio__container">Мужчина
+                <input type="radio" name="sex" value="this is a men's world" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
               </label>
+              <label class="checkbox-radio__container">Женщина
+                <input type="radio" name="sex" value="but it would be nothing? without woman or a girl"><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
+              </label>
+            </form>
+          </div>
+          <div class="sing-up__birthday">
+            <h3 class="sing-up__birthday_title">Дата рождения</h3>
+            <input class="datepicker-here sing-up__pick-date" type="text" data-range="true" data-multiple-dates-separator=" - " data-position="right top" value="ДД.ММ.ГГГГ">
+          </div>
+          <div class="sing-up__enter">
+            <h3 class="sing-up__enter_title">данные для входа в сервис</h3>
+            <div class="sing-up__registration">
+              <form>
+                <legend>
+                  <div class="form__name">
+                    <input class="form__name_border form__name_sign-up" type="email" value="Email" name="email">
+                  </div>
+                </legend>
+              </form>
             </div>
-            <div class="sing-up__button">
+            <div class="sing-up__registration">
+              <form>
+                <legend>
+                  <div class="form__name">
+                    <input class="form__name_border form__name_sign-up" type="text" value="Пароль" name="password">
+                  </div>
+                </legend>
+              </form>
+            </div>
+          </div>
+          <div class="sing-up__toggle-checkbox">
+            <label class="checkbox-toggle">
+              <div class="checkbox-toggle__background_gradient">
+                <div class="checkbox-toggle__background_white">
+                  <input class="checkbox-toggle__input" type="checkbox" name="name" value="pets-allowed">
+                  <div class="checkbox-toggle__circle"></div>
+                  <div class="checkbox-toggle__text">Получать спецпредложения</div>
+                </div>
+              </div>
+            </label>
+          </div>
+          <div class="sing-up__button"><a href="./search.html">
               <button class="button-pill__full_arrow">
                 <h3 class="button-pill__full_arrow_text">Перейти к оплате</h3>
                 <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
-              </button>
-            </div>
-            <div class="sing-up__authorization">
-              <p class="sing-up__authorization_text">Уже есть аккаунт на Toxin</p>
-              <button class="button-pill__empty_short">Войти</button>
-            </div>
+              </button></a>
           </div>
-        </div>
-        <div class="registration__filling_sign-in">
-        </div>
+          <div class="sing-up__authorization">
+            <p class="sing-up__authorization_text">Уже есть аккаунт на Toxin</p><a href="./search.html">
+              <button class="button-pill__empty_short">Войти</button></a>
+          </div>
+        </article>
+      </article>
+      <article class="registration__basis_sign-in">
       </article>
     </main>
     <footer class="registration__footer">
       <div class="footer__menu">
-        <div class="footer__logo"><img src="imgs/Logo.png" alt="">
+        <div class="footer__logo"><a href="./landing.html"><img src="imgs/Logo.png" alt=""></a>
           <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
-        <div class="footer__navigation">
-          <h3 class="footer__h3">Навигация</h3><a class="footer__a" href="#">О нас</a><a class="footer__a" href="#">Новости</a><a class="footer__a" href="#">Служба поддержки</a><a class="footer__a" href="#">Услуги</a>
-        </div>
-        <div class="footer__about">
-          <h3 class="footer__h3">О нас</h3><a class="footer__a" href="#">О сервисе</a><a class="footer__a" href="#">Наша команда</a><a class="footer__a" href="#">Вакансии</a><a class="footer__a" href="#">Инвесторы</a>
-        </div>
-        <div class="footer__support">
-          <h3 class="footer__h3">Служба поддержки</h3><a class="footer__a" href="#">Соглашения</a><a class="footer__a" href="#">Сообщества</a><a class="footer__a" href="#">Связь с нами</a>
-        </div>
-        <div class="footer__subscription">
+        <nav class="footer__navigation">
+          <h3 class="footer__links_title">Навигация</h3><a class="footer__links_point" href="./aaa.html">О нас</a><a class="footer__links_point" href="./aaa.html">Новости</a><a class="footer__links_point" href="./aaa.html">Служба поддержки</a><a class="footer__links_point" href="./aaa.html">Услуги</a>
+        </nav>
+        <nav class="footer__about">
+          <h3 class="footer__links_title">О нас</h3><a class="footer__links_point" href="./aaa.html">О сервисе</a><a class="footer__links_point" href="./aaa.html">Наша команда</a><a class="footer__links_point" href="./aaa.html">Вакансии</a><a class="footer__links_point" href="./aaa.html">Инвесторы</a>
+        </nav>
+        <nav class="footer__support">
+          <h3 class="footer__links_title">Служба поддержки</h3><a class="footer__links_point" href="./aaa.html">Соглашения</a><a class="footer__links_point" href="./aaa.html">Сообщества</a><a class="footer__links_point" href="./aaa.html">Связь с нами</a>
+        </nav>
+        <nav class="footer__subscription">
           <h3 class="footer__h3">Подписка</h3>
           <div class="footer__subscription_text">Получайте специальные предложения и новости сервиса</div>
           <form>
@@ -144,12 +144,12 @@
               </div>
             </legend>
           </form>
-        </div>
+        </nav>
       </div>
-      <div class="footer__social">
+      <aside class="footer__social">
         <div class="footer__copyright">Copyright © 2019 Toxin отель. Все права зачищены.</div>
         <div class="footer__icons"><img src="imgs/icon-twitter.png" alt=""><img src="imgs/icon-facebook.png" alt=""><img src="imgs/icon-instagram.png" alt=""></div>
-      </div>
+      </aside>
     </footer>
   <script type="text/javascript" src="bundle.js"></script></body>
 </html>

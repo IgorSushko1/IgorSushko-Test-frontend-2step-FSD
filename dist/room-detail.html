@@ -10,8 +10,8 @@
   <link href="main.css" rel="stylesheet"></head>
   <body class="base">
     <header class="base__header">
-      <div class="header"><img class="header__image" src="imgs/Logo.png" alt="">
-        <div class="header__menu">
+      <div class="header"><a class="header__image" href="./landing.html"><img src="imgs/Logo.png" alt=""></a>
+        <nav class="header__menu">
           <ul class="header__list">
             <li class="header__point"><a class="header__link" href="">О нас</a></li>
             <li class="header__point">
@@ -23,11 +23,11 @@
               <div class="header__dropdown"><span class="header__link">Соглашения</span><span class="material-icons">keyboard_arrow_down</span></div>
             </li>
           </ul>
-          <div class="header__button">
-            <button class="button-pill__empty">ВОЙТИ</button>
-            <button class="button-pill__full">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+          <div class="header__button"><a href="./registration-sign-in.html">
+              <button class="button-pill__empty">ВОЙТИ</button></a><a href="./registration-sign-up.html">
+              <button class="button-pill__full">ЗАРЕГИСТРИРОВАТЬСЯ</button></a>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
     <div class="room-detail">
@@ -36,8 +36,8 @@
         <div class="room-detail__picture_right"><img src="imgs/room-details-2-1.png" alt="" width="459" height="243" style="display: block"><img src="imgs/room-details-2-2.png" alt="" width="459" height="242"></div>
       </article>
       <article class="room-detail__info">
-        <section class="room-detail__info_section room-detail__info_grid">
-          <div class="room-detail__about-room">
+        <div class="room-detail__info_section room-detail__info_grid">
+          <section class="room-detail__about-room">
             <h2 class="room-detail__about-room_title">Сведения о номере</h2>
             <div class="icon-advantages"><img class="icon-advantages__image" src="imgs/insert_emoticon.svg" alt="Cinque Terre" width="40" height="40">
               <div class="icon-advantages__text">
@@ -57,8 +57,8 @@
                 <div>Номер оснащен камином</div>
               </div>
             </div>
-          </div>
-          <div class="room-detail__impressions">
+          </section>
+          <section class="room-detail__impressions">
             <h2 class="room-detail__impressions_title">Впечатления от номера</h2>
             <div class="room-detail__impressions_circle">
               <div class="room-detail__impressions_circle_info">
@@ -73,25 +73,25 @@
               </div>
             </div>
             <div class="room-detail__impressions_bullet-list">
-              <ul class="bullet-list">
-                <div class="bullet-list__disc" style="background: linear-gradient(0deg, #FFBA9C, #FFE39C)"></div>
+              <ul class="bullet-list" style="margin-bottom:-0.85rem;">
+                <div class="bullet-list__disc" style="background:linear-gradient(0deg, #FFBA9C, #FFE39C);"></div>
                 <div class="bullet-list__text">Великолепно</div>
               </ul>
-              <ul class="bullet-list">
-                <div class="bullet-list__disc" style="background: linear-gradient(0deg, #66D2EA, #6FCF97)"></div>
+              <ul class="bullet-list" style="margin-bottom:-0.85rem;">
+                <div class="bullet-list__disc" style="background:linear-gradient(0deg, #66D2EA, #6FCF97);"></div>
                 <div class="bullet-list__text">Хорошо</div>
               </ul>
-              <ul class="bullet-list">
-                <div class="bullet-list__disc" style="background: linear-gradient(0deg, #8BA4F9, #BC9CFF)"></div>
+              <ul class="bullet-list" style="margin-bottom:-0.9rem;">
+                <div class="bullet-list__disc" style="background:linear-gradient(0deg, #8BA4F9, #BC9CFF);"></div>
                 <div class="bullet-list__text">Удовлетворительно</div>
               </ul>
-              <ul class="bullet-list">
-                <div class="bullet-list__disc" style="background: linear-gradient(0deg, rgba(61, 73, 117, 1), rgba(144, 144, 144, 1))"></div>
+              <ul class="bullet-list" style="margin-bottom:undefined;">
+                <div class="bullet-list__disc" style="background:linear-gradient(0deg, rgba(61, 73, 117, 1), rgba(144, 144, 144, 1));"></div>
                 <div class="bullet-list__text">Разочарован</div>
               </ul>
             </div>
-          </div>
-          <div class="room-detail__comments">
+          </section>
+          <section class="room-detail__comments">
             <div class="room-detail__comments_title">
               <h2 class="room-detail__comments_title_h2">Отзывы посетителей номера</h2><span class="room-detail__comments_title_span">2 отзыва</span>
             </div>
@@ -133,32 +133,32 @@
               </div>
               <div class="comments__description">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</div>
             </div>
-          </div>
-          <div class="room-detail__rules">
+          </section>
+          <section class="room-detail__rules">
             <h2 class="room-detail__rules_title">Правила</h2>
             <div class="room-detail__rules_bullet">
-              <ul class="bullet-list">
-                <div class="bullet-list__disc" style="background: rgba(31, 32, 65, 0.75)"></div>
+              <ul class="bullet-list" style="margin-bottom:undefined;">
+                <div class="bullet-list__disc" style="background:background: rgba(31, 32, 65, 0.75);"></div>
                 <div class="bullet-list__text">Нельзя с питомцами</div>
               </ul>
-              <ul class="bullet-list">
-                <div class="bullet-list__disc" style="background: rgba(31, 32, 65, 0.75)"></div>
+              <ul class="bullet-list" style="margin-bottom:-0.1rem;">
+                <div class="bullet-list__disc" style="background:background: rgba(31, 32, 65, 0.75);"></div>
                 <div class="bullet-list__text">Без вечеринок и мероприятий</div>
               </ul>
-              <ul class="bullet-list">
-                <div class="bullet-list__disc" style="background: rgba(31, 32, 65, 0.75)"></div>
+              <ul class="bullet-list" style="margin-bottom:undefined;">
+                <div class="bullet-list__disc" style="background:background: rgba(31, 32, 65, 0.75);"></div>
                 <div class="bullet-list__text">Время прибытия — после 13:00, а выезд до 12:00</div>
               </ul>
             </div>
-          </div>
-          <div class="room-detail__cancel">
+          </section>
+          <section class="room-detail__cancel">
             <h2 class="room-detail__cancel_title">Отмена</h2>
             <p class="room-detail__cancel_text">Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.</p>
-          </div>
-        </section>
-        <section class="room-detail__info_section">
+          </section>
+        </div>
+        <section class="room-detail__booking-room">
           <div class="booking">
-            <div class="booking__head">
+            <header class="booking__head">
               <div class="booking__tytle">
                 <h3 class="booking__symbol">№</h3>
                 <h2 class="booking__number">888</h2>
@@ -167,13 +167,14 @@
               <div>
                 <p class="booking__price">9 990₽</p><span class="booking__per-day">в сутки</span>
               </div>
-            </div>
-            <div class="booking__arrival">
-              <h3 class="booking__arrival_title">Прибытие - выезд</h3>
+            </header>
+            <div class="booking__pick-date">
+              <h3 class="booking__arrival">Прибытие</h3>
+              <h3 class="booking__departure">Выезд</h3>
               <label class="booking__calendar">
                 <input class="datepicker-here booking__datepicker" type="checkbox" id="datepicker" data-range="true" data-multiple-dates-separator=" - " clearButton="true" data-position="bottom left">
-                <p class="result-datepicker-first-date"><span class="pick-up-numbers-card-date-for-two-inputs">ДД.ММ.ГГГГ</span><span class="material-icons pick-up-numbers-card-icon-for-date">expand_more</span></p>
-                <p class="result-datepicker-second-date"><span class="pick-up-numbers-card-date-for-two-inputs">ДД.ММ.ГГГГ</span><span class="material-icons pick-up-numbers-card-icon-for-date">expand_more</span></p>
+                <p class="result-datepicker-first-date"><span class="pick-up-numbers-card-date-for-two-inputs">19.08.2019</span><span class="material-icons pick-up-numbers-card-icon-for-date">expand_more</span></p>
+                <p class="result-datepicker-second-date"><span class="pick-up-numbers-card-date-for-two-inputs">23.08.2019</span><span class="material-icons pick-up-numbers-card-icon-for-date">expand_more</span></p>
               </label>
             </div>
             <div class="booking__guests">
@@ -207,19 +208,19 @@
 </div>
               </div>
             </div>
-            <div class="booking__text_days"><span class="booking__align_left">9 990₽ х 4 суток</span><span class="booking__align_right">39 960₽</span></div>
-            <div class="booking__text_fee"><span class="booking__align_left">Сбор за услуги: скидка 2 179₽</span><span class="material-icons booking__align_center">error_outline</span><span class="booking__align_right">0₽</span></div>
-            <div class="booking__text_fee"><span class="booking__align_left">Сбор за дополнительные услуги</span><span class="material-icons booking__align_center">error_outline</span><span class="booking__align_right">300₽</span></div>
-            <div class="booking___total">
+            <div class="booking__text"><span class="booking__align_left">9 990₽ х 4 суток</span><span class="booking__align_right">39 960₽</span></div>
+            <div class="booking__text booking__text_fee"><span class="booking__align_left">Сбор за услуги: скидка 2 179₽</span><span class="material-icons booking__align_center">error_outline</span><span class="booking__align_right">0₽</span></div>
+            <div class="booking__text booking__text_fee"><span class="booking__align_left">Сбор за дополнительные услуги</span><span class="material-icons booking__align_center">error_outline</span><span class="booking__align_right">300₽</span></div>
+            <div class="booking__total">
               <h2>Итого</h2>
               <div class="booking__total_border"></div>
               <h2 class="booking__total_price">38 081₽</h2>
             </div>
-            <div class="booking__button">
-              <button class="button-pill__full_arrow">
-                <h3 class="button-pill__full_arrow_text">Забронировать</h3>
-                <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
-              </button>
+            <div class="booking__button"><a href="./aaa.html">
+                <button class="button-pill__full_arrow">
+                  <h3 class="button-pill__full_arrow_text">Забронировать</h3>
+                  <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
+                </button></a>
             </div>
           </div>
         </section>
@@ -227,19 +228,19 @@
     </div>
     <footer class="base__footer">
       <div class="footer__menu">
-        <div class="footer__logo"><img src="imgs/Logo.png" alt="">
+        <div class="footer__logo"><a href="./landing.html"><img src="imgs/Logo.png" alt=""></a>
           <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
-        <div class="footer__navigation">
-          <h3 class="footer__h3">Навигация</h3><a class="footer__a" href="#">О нас</a><a class="footer__a" href="#">Новости</a><a class="footer__a" href="#">Служба поддержки</a><a class="footer__a" href="#">Услуги</a>
-        </div>
-        <div class="footer__about">
-          <h3 class="footer__h3">О нас</h3><a class="footer__a" href="#">О сервисе</a><a class="footer__a" href="#">Наша команда</a><a class="footer__a" href="#">Вакансии</a><a class="footer__a" href="#">Инвесторы</a>
-        </div>
-        <div class="footer__support">
-          <h3 class="footer__h3">Служба поддержки</h3><a class="footer__a" href="#">Соглашения</a><a class="footer__a" href="#">Сообщества</a><a class="footer__a" href="#">Связь с нами</a>
-        </div>
-        <div class="footer__subscription">
+        <nav class="footer__navigation">
+          <h3 class="footer__links_title">Навигация</h3><a class="footer__links_point" href="./aaa.html">О нас</a><a class="footer__links_point" href="./aaa.html">Новости</a><a class="footer__links_point" href="./aaa.html">Служба поддержки</a><a class="footer__links_point" href="./aaa.html">Услуги</a>
+        </nav>
+        <nav class="footer__about">
+          <h3 class="footer__links_title">О нас</h3><a class="footer__links_point" href="./aaa.html">О сервисе</a><a class="footer__links_point" href="./aaa.html">Наша команда</a><a class="footer__links_point" href="./aaa.html">Вакансии</a><a class="footer__links_point" href="./aaa.html">Инвесторы</a>
+        </nav>
+        <nav class="footer__support">
+          <h3 class="footer__links_title">Служба поддержки</h3><a class="footer__links_point" href="./aaa.html">Соглашения</a><a class="footer__links_point" href="./aaa.html">Сообщества</a><a class="footer__links_point" href="./aaa.html">Связь с нами</a>
+        </nav>
+        <nav class="footer__subscription">
           <h3 class="footer__h3">Подписка</h3>
           <div class="footer__subscription_text">Получайте специальные предложения и новости сервиса</div>
           <form>
@@ -251,12 +252,12 @@
               </div>
             </legend>
           </form>
-        </div>
+        </nav>
       </div>
-      <div class="footer__social">
+      <aside class="footer__social">
         <div class="footer__copyright">Copyright © 2019 Toxin отель. Все права зачищены.</div>
         <div class="footer__icons"><img src="imgs/icon-twitter.png" alt=""><img src="imgs/icon-facebook.png" alt=""><img src="imgs/icon-instagram.png" alt=""></div>
-      </div>
+      </aside>
     </footer>
   <script type="text/javascript" src="bundle.js"></script></body>
 </html>

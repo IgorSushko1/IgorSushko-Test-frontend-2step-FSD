@@ -10,8 +10,8 @@
   <link href="main.css" rel="stylesheet"></head>
   <body class="base">
     <header class="base__header">
-      <div class="header"><img class="header__image" src="imgs/Logo.png" alt="">
-        <div class="header__menu">
+      <div class="header"><a class="header__image" href="./landing.html"><img src="imgs/Logo.png" alt=""></a>
+        <nav class="header__menu">
           <ul class="header__list">
             <li class="header__point"><a class="header__link" href="">О нас</a></li>
             <li class="header__point">
@@ -23,21 +23,21 @@
               <div class="header__dropdown"><span class="header__link">Соглашения</span><span class="material-icons">keyboard_arrow_down</span></div>
             </li>
           </ul>
-          <div class="header__button">
-            <button class="button-pill__empty">ВОЙТИ</button>
-            <button class="button-pill__full">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+          <div class="header__button"><a href="./registration-sign-in.html">
+              <button class="button-pill__empty">ВОЙТИ</button></a><a href="./registration-sign-up.html">
+              <button class="button-pill__full">ЗАРЕГИСТРИРОВАТЬСЯ</button></a>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
     <div class="search-page">
       <article class="search-page__select-options">
-        <h3 class="search-page__select-options_datepicker_title">Даты пребывания в отеле</h3>
+        <h3 class="search-page__datepicker_title">Даты пребывания в отеле</h3>
         <label class="datepicker_one-field">
           <input class="datepicker-here" type="checkbox" id="datepicker-single" data-multiple-dates-separator=" - " data-range="true" data-position="bottom left">
-          <div class="datepicker__one-field_input" id="datepicker__one-field_input"> <span>19 авг - 23 авг</span></div><span class="material-icons datepicker__one-field_arrow">keyboard_arrow_down</span>
+          <div class="datepicker__one-field_input" id="datepicker__one-field_input"><span>19 авг - 23 авг</span></div><span class="material-icons datepicker__one-field_arrow">keyboard_arrow_down</span>
         </label>
-        <h3 class="search-page__select-options_dropdown_title">Гости</h3><div class="iqdropdown second-iqdropdown">
+        <h3 class="search-page__dropdown_title">Гости</h3><div class="iqdropdown second-iqdropdown">
 <p class="iqdropdown-selection"></p>
         <p class="material-icons iqdropdown_icon">expand_more</p><div class="iqdropdown-menu">
 <div class="iqdropdown-menu-option" data-id="item1">
@@ -64,14 +64,14 @@
 </div>
 </div>
 </div>
-        <form class="form-for-ramge-slider">
+        <form class="form-for-range-slider">
           <div class="amount-of-money">
             <h3 class="bold">Диапазон цены</h3>
           </div>
           <input class="slider-range-slider" type="text" name="example_name" value="">
         </form>
         <div class="range-slider_description">Стоимость за сутки пребывания в номере</div>
-        <h3 class="search-page__select-options_checkbox_title">checkbox buttons</h3>
+        <h3 class="search-page__checkbox_title">checkbox buttons</h3>
         <label class="checkbox-button__container">Можно курить
           <input type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
         </label>
@@ -81,21 +81,21 @@
         <label class="checkbox-button__container">Можно пригласить гостей (до 10 человек)
           <input type="checkbox" checked><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
         </label>
-        <h3 class="search-page__select-options_checkbox-rich_title">доступность</h3>
+        <h3 class="search-page__checkbox-rich_title">доступность</h3>
         <div>
-          <label class="checkbox-rich__container checkbox-rich__margin">
+          <label class="checkbox-rich__container">
             <div class="checkbox-rich__title">Широкий коридор</div>
-            <input type="checkbox"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark-white"></span>
-            <div class="checkbox-rich__description-first">Ширина коридоров в номере не менее 91см</div>
+            <input type="checkbox"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark_white"></span>
+            <div class="checkbox-rich__korridor-width">Ширина коридоров в номере не менее 91см</div>
           </label>
-          <label class="checkbox-rich__container checkbox-rich__margin">
+          <label class="checkbox-rich__container">
             <div class="checkbox-rich__title">Помощник для инвалидов</div>
-            <input type="checkbox"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark-white"></span>
-            <div class="checkbox-rich__description-second">На 1 этаже вас встретит специалист и проводит до номера</div>
+            <input type="checkbox"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark_white"></span>
+            <div class="checkbox-rich__accessibility">На 1 этаже вас встретит специалист и проводит до номера</div>
           </label>
         </div>
-        <div class="search-page__select-options_dropdown">
-          <h3>Удобства номера</h3><div class="iqdropdown first-iqdropdown">
+        <div class="search-page__dropdown">
+          <h3 class="search-page__dropdown_title">Удобства номера</h3><div class="iqdropdown first-iqdropdown">
 <p class="iqdropdown-selection"></p>
           <p class="material-icons iqdropdown_icon">expand_more</p><div class="iqdropdown-menu">
 <div class="iqdropdown-menu-option" data-id="item1">
@@ -119,7 +119,7 @@
 </div>
 </div>
         </div>
-        <div class="search-page__select-options_expendable-checkbox">
+        <div class="search-page__expendable-checkbox">
           <div class="checkbox-expendable">
             <button class="checkbox-expendable__drop_btn checkbox-expendable__start"> 
               <h3 class="h3_bold checkbox-expendable__title">дополнительные удобства</h3><span class="material-icons checkbox-expendable__icons">keyboard_arrow_down</span>
@@ -143,9 +143,9 @@
       </article>
       <article class="search-page__rooms">
         <h2 class="search-page_rooms_title">Номера, которые мы для вас подобрали</h2>
-        <div class="search-page__rooms_numbers">
-          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room1.png" alt="">
-            <div class="hotel-room__circles-block">
+        <section class="search-page__rooms_numbers">
+          <div class="hotel-room"><a href="./room-detail.html"><img class="hotel-room__img" src="imgs/room1.png" alt=""></a>
+            <div class="hotel-room__circles_block">
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
@@ -163,24 +163,24 @@
             </div>
             <div class="hotel-room__raiting">
               <div class="rating">
-                <input class="5star1" type="checkbox" name="star" checked>
-                <label for="5star1"></label>
-                <input class="5star2" type="checkbox" name="star" checked>
-                <label for="5star2"></label>
-                <input class="5star3" type="checkbox" name="star" checked>
-                <label for="5star3"></label>
-                <input class="5star4" type="checkbox" name="star" checked>
-                <label for="5star4"></label>
-                <input class="5star5" type="checkbox" name="star" checked>
-                <label for="5star5"></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
               </div>
               <div class="hotel-room__review">
                 <h3 class="hotel-room__review_number">145</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room2.png" alt="">
-            <div class="hotel-room__circles-block">
+          <div class="hotel-room"><a><img class="hotel-room__img" src="imgs/room2.png" alt=""></a>
+            <div class="hotel-room__circles_block">
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
@@ -197,24 +197,24 @@
             </div>
             <div class="hotel-room__raiting">
               <div class="rating">
-                <input class="4star1" type="checkbox" name="star">
-                <label for="4star1"></label>
-                <input class="4star2" type="checkbox" name="star" checked>
-                <label for="4star2"></label>
-                <input class="4star3" type="checkbox" name="star" checked>
-                <label for="4star3"></label>
-                <input class="4star4" type="checkbox" name="star" checked>
-                <label for="4star4"></label>
-                <input class="4star5" type="checkbox" name="star" checked>
-                <label for="4star5"></label>
+                <input type="checkbox" name="star">
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
               </div>
               <div class="hotel-room__review">
                 <h3 class="hotel-room__review_number">65</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-3.png" alt="">
-            <div class="hotel-room__circles-block">
+          <div class="hotel-room"><a><img class="hotel-room__img" src="imgs/room-3.png" alt=""></a>
+            <div class="hotel-room__circles_block">
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
@@ -232,24 +232,24 @@
             </div>
             <div class="hotel-room__raiting">
               <div class="rating">
-                <input class="3star1" type="checkbox" name="star">
-                <label for="3star1"></label>
-                <input class="3star2" type="checkbox" name="star">
-                <label for="3star2"></label>
-                <input class="3star3" type="checkbox" name="star" checked>
-                <label for="3star3"></label>
-                <input class="3star4" type="checkbox" name="star" checked>
-                <label for="3star4"></label>
-                <input class="3star5" type="checkbox" name="star" checked>
-                <label for="3star5"></label>
+                <input type="checkbox" name="star">
+                <label></label>
+                <input type="checkbox" name="star">
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
               </div>
               <div class="hotel-room__review">
                 <h3 class="hotel-room__review_number">35</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-4.png" alt="">
-            <div class="hotel-room__circles-block">
+          <div class="hotel-room"><a><img class="hotel-room__img" src="imgs/room-4.png" alt=""></a>
+            <div class="hotel-room__circles_block">
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
@@ -267,24 +267,24 @@
             </div>
             <div class="hotel-room__raiting">
               <div class="rating">
-                <input class="5star1" type="checkbox" name="star" checked>
-                <label for="5star1"></label>
-                <input class="5star2" type="checkbox" name="star" checked>
-                <label for="5star2"></label>
-                <input class="5star3" type="checkbox" name="star" checked>
-                <label for="5star3"></label>
-                <input class="5star4" type="checkbox" name="star" checked>
-                <label for="5star4"></label>
-                <input class="5star5" type="checkbox" name="star" checked>
-                <label for="5star5"></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
               </div>
               <div class="hotel-room__review">
                 <h3 class="hotel-room__review_number">19</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-5.png" alt="">
-            <div class="hotel-room__circles-block">
+          <div class="hotel-room"><a><img class="hotel-room__img" src="imgs/room-5.png" alt=""></a>
+            <div class="hotel-room__circles_block">
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
@@ -301,24 +301,24 @@
             </div>
             <div class="hotel-room__raiting">
               <div class="rating">
-                <input class="4star1" type="checkbox" name="star">
-                <label for="4star1"></label>
-                <input class="4star2" type="checkbox" name="star" checked>
-                <label for="4star2"></label>
-                <input class="4star3" type="checkbox" name="star" checked>
-                <label for="4star3"></label>
-                <input class="4star4" type="checkbox" name="star" checked>
-                <label for="4star4"></label>
-                <input class="4star5" type="checkbox" name="star" checked>
-                <label for="4star5"></label>
+                <input type="checkbox" name="star">
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
               </div>
               <div class="hotel-room__review">
                 <h3 class="hotel-room__review_number">44</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-6.png" alt="">
-            <div class="hotel-room__circles-block">
+          <div class="hotel-room"><a><img class="hotel-room__img" src="imgs/room-6.png" alt=""></a>
+            <div class="hotel-room__circles_block">
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
@@ -335,24 +335,24 @@
             </div>
             <div class="hotel-room__raiting">
               <div class="rating">
-                <input class="3star1" type="checkbox" name="star">
-                <label for="3star1"></label>
-                <input class="3star2" type="checkbox" name="star">
-                <label for="3star2"></label>
-                <input class="3star3" type="checkbox" name="star" checked>
-                <label for="3star3"></label>
-                <input class="3star4" type="checkbox" name="star" checked>
-                <label for="3star4"></label>
-                <input class="3star5" type="checkbox" name="star" checked>
-                <label for="3star5"></label>
+                <input type="checkbox" name="star">
+                <label></label>
+                <input type="checkbox" name="star">
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
               </div>
               <div class="hotel-room__review">
                 <h3 class="hotel-room__review_number">56</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-7.png" alt="">
-            <div class="hotel-room__circles-block">
+          <div class="hotel-room"><a><img class="hotel-room__img" src="imgs/room-7.png" alt=""></a>
+            <div class="hotel-room__circles_block">
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
@@ -369,24 +369,24 @@
             </div>
             <div class="hotel-room__raiting">
               <div class="rating">
-                <input class="5star1" type="checkbox" name="star" checked>
-                <label for="5star1"></label>
-                <input class="5star2" type="checkbox" name="star" checked>
-                <label for="5star2"></label>
-                <input class="5star3" type="checkbox" name="star" checked>
-                <label for="5star3"></label>
-                <input class="5star4" type="checkbox" name="star" checked>
-                <label for="5star4"></label>
-                <input class="5star5" type="checkbox" name="star" checked>
-                <label for="5star5"></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
               </div>
               <div class="hotel-room__review">
                 <h3 class="hotel-room__review_number">45</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-8.png" alt="">
-            <div class="hotel-room__circles-block">
+          <div class="hotel-room"><a><img class="hotel-room__img" src="imgs/room-8.png" alt=""></a>
+            <div class="hotel-room__circles_block">
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
@@ -403,24 +403,24 @@
             </div>
             <div class="hotel-room__raiting">
               <div class="rating">
-                <input class="4star1" type="checkbox" name="star">
-                <label for="4star1"></label>
-                <input class="4star2" type="checkbox" name="star" checked>
-                <label for="4star2"></label>
-                <input class="4star3" type="checkbox" name="star" checked>
-                <label for="4star3"></label>
-                <input class="4star4" type="checkbox" name="star" checked>
-                <label for="4star4"></label>
-                <input class="4star5" type="checkbox" name="star" checked>
-                <label for="4star5"></label>
+                <input type="checkbox" name="star">
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
               </div>
               <div class="hotel-room__review">
                 <h3 class="hotel-room__review_number">39</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-9.png" alt="">
-            <div class="hotel-room__circles-block">
+          <div class="hotel-room"><a><img class="hotel-room__img" src="imgs/room-9.png" alt=""></a>
+            <div class="hotel-room__circles_block">
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
@@ -437,24 +437,24 @@
             </div>
             <div class="hotel-room__raiting">
               <div class="rating">
-                <input class="3star1" type="checkbox" name="star">
-                <label for="3star1"></label>
-                <input class="3star2" type="checkbox" name="star">
-                <label for="3star2"></label>
-                <input class="3star3" type="checkbox" name="star" checked>
-                <label for="3star3"></label>
-                <input class="3star4" type="checkbox" name="star" checked>
-                <label for="3star4"></label>
-                <input class="3star5" type="checkbox" name="star" checked>
-                <label for="3star5"></label>
+                <input type="checkbox" name="star">
+                <label></label>
+                <input type="checkbox" name="star">
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
               </div>
               <div class="hotel-room__review">
                 <h3 class="hotel-room__review_number">77</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-10.png" alt="">
-            <div class="hotel-room__circles-block">
+          <div class="hotel-room"><a><img class="hotel-room__img" src="imgs/room-10.png" alt=""></a>
+            <div class="hotel-room__circles_block">
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
@@ -471,24 +471,24 @@
             </div>
             <div class="hotel-room__raiting">
               <div class="rating">
-                <input class="5star1" type="checkbox" name="star" checked>
-                <label for="5star1"></label>
-                <input class="5star2" type="checkbox" name="star" checked>
-                <label for="5star2"></label>
-                <input class="5star3" type="checkbox" name="star" checked>
-                <label for="5star3"></label>
-                <input class="5star4" type="checkbox" name="star" checked>
-                <label for="5star4"></label>
-                <input class="5star5" type="checkbox" name="star" checked>
-                <label for="5star5"></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
               </div>
               <div class="hotel-room__review">
                 <h3 class="hotel-room__review_number">25</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-11.png" alt="">
-            <div class="hotel-room__circles-block">
+          <div class="hotel-room"><a><img class="hotel-room__img" src="imgs/room-11.png" alt=""></a>
+            <div class="hotel-room__circles_block">
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
@@ -505,24 +505,24 @@
             </div>
             <div class="hotel-room__raiting">
               <div class="rating">
-                <input class="3star1" type="checkbox" name="star">
-                <label for="3star1"></label>
-                <input class="3star2" type="checkbox" name="star">
-                <label for="3star2"></label>
-                <input class="3star3" type="checkbox" name="star" checked>
-                <label for="3star3"></label>
-                <input class="3star4" type="checkbox" name="star" checked>
-                <label for="3star4"></label>
-                <input class="3star5" type="checkbox" name="star" checked>
-                <label for="3star5"></label>
+                <input type="checkbox" name="star">
+                <label></label>
+                <input type="checkbox" name="star">
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
               </div>
               <div class="hotel-room__review">
                 <h3 class="hotel-room__review_number">15</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-          <div class="hotel-room"><img class="hotel-room__img" src="imgs/room-12.png" alt="">
-            <div class="hotel-room__circles-block">
+          <div class="hotel-room"><a><img class="hotel-room__img" src="imgs/room-12.png" alt=""></a>
+            <div class="hotel-room__circles_block">
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
               <div class="hotel-room__circle_point"></div>
@@ -539,44 +539,44 @@
             </div>
             <div class="hotel-room__raiting">
               <div class="rating">
-                <input class="3star1" type="checkbox" name="star">
-                <label for="3star1"></label>
-                <input class="3star2" type="checkbox" name="star">
-                <label for="3star2"></label>
-                <input class="3star3" type="checkbox" name="star" checked>
-                <label for="3star3"></label>
-                <input class="3star4" type="checkbox" name="star" checked>
-                <label for="3star4"></label>
-                <input class="3star5" type="checkbox" name="star" checked>
-                <label for="3star5"></label>
+                <input type="checkbox" name="star">
+                <label></label>
+                <input type="checkbox" name="star">
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
+                <input type="checkbox" name="star" checked>
+                <label></label>
               </div>
               <div class="hotel-room__review">
                 <h3 class="hotel-room__review_number">55</h3><span>Отзывов</span>
               </div>
             </div>
           </div>
-        </div>
-        <div class="search-page__rooms_pagination">
+        </section>
+        <section class="search-page__rooms_pagination">
           <div class="pagination"><span class="pagination__grid-item pagination__first-number">1</span><span class="pagination__grid-item">2</span><span class="pagination__grid-item">3</span><span class="pagination__grid-item">..</span><span class="pagination__grid-item">15</span><span class="pagination__grid-item pagination__arrow material-icons">arrow_forward</span></div>
           <div class="pagination__description">1 - 12 из 100+ вариантов аренды</div>
-        </div>
+        </section>
       </article>
     </div>
     <footer class="base__footer">
       <div class="footer__menu">
-        <div class="footer__logo"><img src="imgs/Logo.png" alt="">
+        <div class="footer__logo"><a href="./landing.html"><img src="imgs/Logo.png" alt=""></a>
           <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
-        <div class="footer__navigation">
-          <h3 class="footer__h3">Навигация</h3><a class="footer__a" href="#">О нас</a><a class="footer__a" href="#">Новости</a><a class="footer__a" href="#">Служба поддержки</a><a class="footer__a" href="#">Услуги</a>
-        </div>
-        <div class="footer__about">
-          <h3 class="footer__h3">О нас</h3><a class="footer__a" href="#">О сервисе</a><a class="footer__a" href="#">Наша команда</a><a class="footer__a" href="#">Вакансии</a><a class="footer__a" href="#">Инвесторы</a>
-        </div>
-        <div class="footer__support">
-          <h3 class="footer__h3">Служба поддержки</h3><a class="footer__a" href="#">Соглашения</a><a class="footer__a" href="#">Сообщества</a><a class="footer__a" href="#">Связь с нами</a>
-        </div>
-        <div class="footer__subscription">
+        <nav class="footer__navigation">
+          <h3 class="footer__links_title">Навигация</h3><a class="footer__links_point" href="./aaa.html">О нас</a><a class="footer__links_point" href="./aaa.html">Новости</a><a class="footer__links_point" href="./aaa.html">Служба поддержки</a><a class="footer__links_point" href="./aaa.html">Услуги</a>
+        </nav>
+        <nav class="footer__about">
+          <h3 class="footer__links_title">О нас</h3><a class="footer__links_point" href="./aaa.html">О сервисе</a><a class="footer__links_point" href="./aaa.html">Наша команда</a><a class="footer__links_point" href="./aaa.html">Вакансии</a><a class="footer__links_point" href="./aaa.html">Инвесторы</a>
+        </nav>
+        <nav class="footer__support">
+          <h3 class="footer__links_title">Служба поддержки</h3><a class="footer__links_point" href="./aaa.html">Соглашения</a><a class="footer__links_point" href="./aaa.html">Сообщества</a><a class="footer__links_point" href="./aaa.html">Связь с нами</a>
+        </nav>
+        <nav class="footer__subscription">
           <h3 class="footer__h3">Подписка</h3>
           <div class="footer__subscription_text">Получайте специальные предложения и новости сервиса</div>
           <form>
@@ -588,12 +588,12 @@
               </div>
             </legend>
           </form>
-        </div>
+        </nav>
       </div>
-      <div class="footer__social">
+      <aside class="footer__social">
         <div class="footer__copyright">Copyright © 2019 Toxin отель. Все права зачищены.</div>
         <div class="footer__icons"><img src="imgs/icon-twitter.png" alt=""><img src="imgs/icon-facebook.png" alt=""><img src="imgs/icon-instagram.png" alt=""></div>
-      </div>
+      </aside>
     </footer>
   <script type="text/javascript" src="bundle.js"></script></body>
 </html>
