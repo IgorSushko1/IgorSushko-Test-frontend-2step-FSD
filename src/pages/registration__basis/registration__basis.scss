@@ -6,11 +6,15 @@
   height: auto;
   background-color: white;
 
-  &__filling {
+  &__basis {
     position: relative;
   }
 
-  &__filling_sign-up {
+  &__basis_image {
+    position: relative;
+  }
+
+  &__basis_sign-up {
     position: absolute;
     z-index: 1;
     top: 1.87rem;
@@ -19,7 +23,7 @@
     border-radius: 0.25rem;
   }
 
-  &__filling_sign-in {
+  &__basis_sign-in {
     position: absolute;
     z-index: 1;
     top: 10.18rem;

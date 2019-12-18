@@ -27,7 +27,8 @@
     margin-bottom: 0.15rem;
   }
 
-  &__info_section {
+  &__info_section,
+  &__booking-room {
     margin: 4.37rem 2.18rem;
   }
 
@@ -44,15 +45,15 @@
     letter-spacing: -0.003rem;
   }
 
+  &__impressions {
+    position: relative;
+  }
+
   &__impressions_title {
     font-size: 1.18rem;
     margin-left: 0.4rem;
     margin-top: 0.06rem;
     letter-spacing: 0.006rem;
-  }
-
-  &__impressions {
-    position: relative;
   }
 
   &__impressions_circle {

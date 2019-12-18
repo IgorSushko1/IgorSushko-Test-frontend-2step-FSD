@@ -13,12 +13,12 @@ html
   body.registration
     header.registration__header
       +header("ВОЙТИ", "ЗАРЕГИСТРИРОВАТЬСЯ")
-    main.registration__main
-      article.registration__filling
+    main.registration__basis
+      article.registration___basis_image
         block registration-image
-        .registration__filling_sign-up
-          block sing-up
-        .registration__filling_sign-in
-          block sing-in
+      article.registration__basis_sign-up
+        block sing-up
+      article.registration__basis_sign-in
+        block sing-in
     footer.registration__footer
       +footer
