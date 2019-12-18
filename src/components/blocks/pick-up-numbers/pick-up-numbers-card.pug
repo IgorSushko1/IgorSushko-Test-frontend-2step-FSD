@@ -2,9 +2,10 @@ include ../../elements/button-pill__full_arrow/button-pill__full_arrow.pug
 include ../../../vendor/dropdown/dropdown-subparagraph.pug
 
 mixin pick-up-numbers
-  .pick-up-numbers
-    h2.pick-up-numbers__title Найдём номера под ваши пожелания
-    div.pick-up-numbers__container
+  article.pick-up-numbers
+    header
+      h2.pick-up-numbers__title Найдём номера под ваши пожелания
+    section.pick-up-numbers__container
       h3.pick-up-numbers__arrival Прибытие
       h3.pick-up-numbers__departure Выезд
 
@@ -16,7 +17,7 @@ mixin pick-up-numbers
         p(class="result-datepicker-second-date")
           span.pick-up-numbers-card-date-for-two-inputs ДД.ММ.ГГГГ
           span.material-icons.pick-up-numbers-card-icon-for-date expand_more
-    div
+    section
       h3.pick-up-numbers__quest Гости
       .pick-up-numbers__dropdown
         +dropdown-people

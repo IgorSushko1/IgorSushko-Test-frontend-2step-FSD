@@ -4,8 +4,8 @@ include ../../elements/checkbox-radio/checkbox-radio.pug
 include ../../elements/checkbox-toggle/checkbox-toggle.pug
 include ../../elements/form__name/form__name.pug
 mixin sign-up
-  .sing-up
-    .sing-up__title
+  article.sing-up
+    header.sing-up__title
       h2 Регистрация аккаунта
     .sing-up__name
       +form__name("text","Имя", "name", "sign-up")

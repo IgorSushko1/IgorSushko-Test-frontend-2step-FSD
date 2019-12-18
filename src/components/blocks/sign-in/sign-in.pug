@@ -3,11 +3,12 @@ include ../../elements/button-pill__empty/button-pill__empty_short.pug
 include ../../elements/button-pill__full_arrow/button-pill__full_arrow.pug
 
 mixin sign-in
-  .sing-in
-    h2.sing-in__title Войти
-    div.sing-in__email
+  article.sing-in
+    header
+      h2.sing-in__title Войти
+    .sing-in__email
       +form__name("email", "Email", "email-sign-in", "sign-in")
-    div.sing-in__password
+    .sing-in__password
       +form__name("text", "Пароль", "password-sign-in", "sign-in")
     .sing-in__button-full
       +button-pill__full_arrow("Войти")
