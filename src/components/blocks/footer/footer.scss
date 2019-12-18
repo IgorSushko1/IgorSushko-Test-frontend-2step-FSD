@@ -1,15 +1,14 @@
 .footer {
-
   &__menu {
     display: flex;
     width: auto;
     height: 17rem;
-    padding-top: 6.25rem;
+    padding-top: 6.4rem;
   }
 
   &__h3 {
     margin: 0;
-    font-family: "Montserrat-SemiBold", Arial, sans-serif;
+    font-family: 'Montserrat-SemiBold', Arial, sans-serif;
   }
 
   &__a {
@@ -29,7 +28,7 @@
   }
 
   &__logo_text {
-    letter-spacing: -.005rem;
+    letter-spacing: -0.005rem;
     font-size: 0.875rem;
     width: 16rem;
   }
@@ -104,7 +103,7 @@
   }
 
   &__copyright {
-    margin-left: 9.7%
+    margin-left: 9.7%;
   }
 
   &__icons {
