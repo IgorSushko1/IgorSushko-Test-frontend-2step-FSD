@@ -1,25 +1,22 @@
-include ../../components/blocks/header/header.pug
-include ../../components/blocks/footer/footer.pug
+extends ../basis/basis.pug
+
 include ../../components/blocks/pick-up-numbers/pick-up-numbers-card.pug
 
-doctype html
-html
-  head
-    meta(charset="utf-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible" content="ie=edge")
-    meta(name="keywords" content="TOXIN, hotels, main page")
-    meta(name="description" content="Toxin, номер отеля, оценить, выбрать, регистрация")
-    title Landing page
-  body.landing
-    header
-      +header("ВОЙТИ", "ЗАРЕГИСТРИРОВАТЬСЯ")
-    main
-      article.landing__content
-        .landing__background
-          img(src="imgs/landing-background-image-interior.png" alt="" width="1440" height="830").landing__background_image
-        section.landing__pick-numbers
-          +pick-up-numbers
-        .landing__description Лучшие номера для вашей работы, отдыха и просто вдохновения
-    footer
-      +footer
+block meta-keywords
+  meta(name="keywords" content="TOXIN, hotels, main page")
+
+block meta-description
+  meta(name="description" content="Toxin, номер отеля, оценить, выбрать, регистрация")
+
+block title
+  title Landing page
+
+block main
+  //- body.landing
+  main
+    article.landing__content
+      .landing__background
+        img(src="imgs/landing-background-image-interior.png" alt="" width="1440" height="830").landing__background_image
+      section.landing__pick-numbers
+        +pick-up-numbers
+      .landing__description Лучшие номера для вашей работы, отдыха и просто вдохновения
