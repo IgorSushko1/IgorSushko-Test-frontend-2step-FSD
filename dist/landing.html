@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="apple-touch-icon" sizes="114x114" href="./favicons/apple-touch-icon.png?v=47BkdQ2rQ8">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png?v=47BkdQ2rQ8">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png?v=47BkdQ2rQ8">
+<link rel="manifest" href="./favicons/site.webmanifest?v=47BkdQ2rQ8">
+<link rel="mask-icon" href="./favicons/safari-pinned-tab.svg?v=47BkdQ2rQ8" color="#5bbad5">
+<link rel="shortcut icon" href="./favicons/favicon.ico?v=47BkdQ2rQ8">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="theme-color" content="#74f82b">
     <meta name="keywords" content="TOXIN, hotels, main page">
     <meta name="description" content="Toxin, номер отеля, оценить, выбрать, регистрация">
     <title>Landing page</title>
   <link href="main.css" rel="stylesheet"></head>
-  <body class="landing">
-    <header>
+  <body class="base">
+    <header class="base__header">
       <div class="header"><a class="header__image" href="./landing.html"><img src="imgs/Logo.png" alt=""></a>
         <nav class="header__menu">
           <ul class="header__list">
@@ -23,9 +30,13 @@
               <div class="header__dropdown"><span class="header__link">Соглашения</span><span class="material-icons">keyboard_arrow_down</span></div>
             </li>
           </ul>
-          <div class="header__button"><a href="./registration-sign-in.html">
-              <button class="button-pill__empty">ВОЙТИ</button></a><a href="./registration-sign-up.html">
-              <button class="button-pill__full">ЗАРЕГИСТРИРОВАТЬСЯ</button></a>
+          <div class="header__button">
+            <form action="./registration-sign-in.html">
+              <button class="button-pill__empty">ВОЙТИ</button>
+            </form>
+            <form action="./registration-sign-up.html">
+              <button class="button-pill__full">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            </form>
           </div>
         </nav>
       </div>
@@ -78,18 +89,20 @@
 </div>
               </div>
             </section>
-            <div class="pick-up-numbers__button"><a href="./search.html">
+            <div class="pick-up-numbers__button">
+              <form action="./search.html">
                 <button class="button-pill__full_arrow">
                   <h3 class="button-pill__full_arrow_text">подобрать номер</h3>
                   <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
-                </button></a>
+                </button>
+              </form>
             </div>
           </article>
         </section>
         <div class="landing__description">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>
       </article>
     </main>
-    <footer>
+    <footer class="base__footer">
       <div class="footer__menu">
         <div class="footer__logo"><a href="./landing.html"><img src="imgs/Logo.png" alt=""></a>
           <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
@@ -119,7 +132,7 @@
       </div>
       <aside class="footer__social">
         <div class="footer__copyright">Copyright © 2019 Toxin отель. Все права зачищены.</div>
-        <div class="footer__icons"><img src="imgs/icon-twitter.png" alt=""><img src="imgs/icon-facebook.png" alt=""><img src="imgs/icon-instagram.png" alt=""></div>
+        <div class="footer__icons"><a href="https://twitter.com/"><img src="imgs/icon-twitter.png" alt=""></a><a href="https://www.facebook.com/"><img src="imgs/icon-facebook.png" alt=""></a><a href="https://www.instagram.com/?hl=ru"><img src="imgs/icon-instagram.png" alt=""></a></div>
       </aside>
     </footer>
   <script type="text/javascript" src="bundle.js"></script></body>
