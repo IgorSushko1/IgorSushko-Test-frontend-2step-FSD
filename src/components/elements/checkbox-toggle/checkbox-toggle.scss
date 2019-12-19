@@ -1,11 +1,6 @@
 .checkbox-toggle {
   width: 25rem;
 
-  // & input {
-  // 	position: absolute;
-  // 	visibility: hidden;
-  // }
-
   &__background_gradient {
     background: linear-gradient(180deg, $dark-shade-025, $dark-shade-025);
     width: 2.5rem;
