@@ -42,12 +42,84 @@
     background: white;
   }
 
-  &__dropdown_show label {
-    width: fit-content;
+  &__label {
+    width: 13.125rem;
+    display: block;
+    position: relative;
+    padding-left: 1.937rem;
+    margin-bottom: 0.812rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Montserrat', Arial, sans-serif;
   }
 
-  &__margin {
-    margin-left: 0.93rem;
+  &__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
   }
 
+  &__checkmark {
+    position: absolute;
+    top: -0.125rem;
+    left: 0;
+    height: 1.25rem;
+    width: 1.25rem;
+    background: $dark-shade-025;
+    border-radius: 4.5px;
+  }
+
+  &__checkmark_white {
+    position: absolute;
+    top: -0.06rem;
+    left: 0.08rem;
+    height: 1.12rem;
+    width: 1.12rem;
+    background: white;
+    border-radius: 0.2rem;
+  }
+
+  &__checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+    z-index: 100;
+    left: 10px;
+    top: 6px;
+    width: 2px;
+    height: 7px;
+    background-image: linear-gradient(180deg, #bc9cff, #8ba4f9);
+    transform: rotate(45deg);
+  }
+
+  &__checkmark:before {
+    content: '';
+    position: absolute;
+    display: none;
+    z-index: 110;
+    left: 7px;
+    top: 8px;
+    width: 2px;
+    height: 5px;
+    background-image: linear-gradient(180deg, #bc9cff, #8ba4f9);
+    transform: rotate(-45deg);
+  }
+
+  &__input:checked ~ &__checkmark {
+    background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+  }
+
+  &__input:checked ~ &__checkmark:after {
+    display: block;
+  }
+
+  &__input:checked ~ &__checkmark:before {
+    display: block;
+  }
 }

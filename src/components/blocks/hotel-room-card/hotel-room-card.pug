@@ -1,14 +1,12 @@
 include ../../elements/rate-button/rate-button.pug
+include ../../elements/pagination-circle/pagination-circle.pug
 
-mixin hotel-room-card(imgName, numberOfStars, roomNumber, price, lux, review, ref)
+mixin hotel-room-card(imgName, numberOfStars, roomNumber, price, lux, review, ref, numOfPugination)
   .hotel-room
     a(href=ref)
       img(src=imgName, alt="" ).hotel-room__img
     .hotel-room__circles_block
-      .hotel-room__circle_point
-      .hotel-room__circle_point
-      .hotel-room__circle_point
-      .hotel-room__circle_point
+      +pagination-circle(numOfPugination)
     .hotel-room__text
       .hotel-room__number
         h3.hotel-room__number_symbol №

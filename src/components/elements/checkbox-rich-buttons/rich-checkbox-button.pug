@@ -1,15 +1,15 @@
 mixin checkbox-rich
-  div
+  form(action="")
     label.checkbox-rich__container
       .checkbox-rich__title Широкий коридор
-      input(type="checkbox")
+      input(type="checkbox").checkbox-rich__input
       span.checkbox-rich__checkmark
       span.checkbox-rich__checkmark_white
       .checkbox-rich__korridor-width Ширина коридоров в номере не менее 91см
-
+  form(action="")
     label.checkbox-rich__container
       .checkbox-rich__title Помощник для инвалидов
-      input(type="checkbox")
+      input(type="checkbox").checkbox-rich__input
       span.checkbox-rich__checkmark
       span.checkbox-rich__checkmark_white
       .checkbox-rich__accessibility На 1 этаже вас встретит специалист и проводит до номера

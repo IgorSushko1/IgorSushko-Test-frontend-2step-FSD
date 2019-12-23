@@ -14,7 +14,7 @@
     font-family: 'Montserrat', Arial, sans-serif;
   }
 
-  &__container input {
+  &__input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -32,36 +32,10 @@
     border-radius: 4.5px;
   }
 
-  &__checkmark_white {
-    position: absolute;
-    top: -0.06rem;
-    left: 0.08rem;
-    height: 1.12rem;
-    width: 1.12rem;
-    background: white;
-    border-radius: 0.2rem;
-  }
-
-  &__container input:checked ~ &__checkmark {
-    background: linear-gradient(180deg, #bc9cff, #8ba4f9);
-  }
-
-  &__checkmark:before,
   &__checkmark:after {
     content: '';
     position: absolute;
     display: none;
-  }
-
-  &__container input:checked ~ &__checkmark:after {
-    display: block;
-  }
-
-  &__container input:checked ~ &__checkmark:before {
-    display: block;
-  }
-
-  &__container &__checkmark:after {
     z-index: 100;
     left: 10px;
     top: 6px;
@@ -73,7 +47,10 @@
     transform: rotate(45deg);
   }
 
-  &__container &__checkmark:before {
+  &__checkmark:before {
+    content: '';
+    position: absolute;
+    display: none;
     z-index: 110;
     left: 7px;
     top: 8px;
@@ -83,5 +60,27 @@
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
+  }
+
+  &__checkmark_white {
+    position: absolute;
+    top: -0.06rem;
+    left: 0.08rem;
+    height: 1.12rem;
+    width: 1.12rem;
+    background: white;
+    border-radius: 0.2rem;
+  }
+
+  &__input:checked ~ &__checkmark {
+    background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+  }
+
+  &__input:checked ~ &__checkmark:after {
+    display: block;
+  }
+
+  &__input:checked ~ &__checkmark:before {
+    display: block;
   }
 }

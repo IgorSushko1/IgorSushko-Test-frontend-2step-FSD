@@ -2,40 +2,40 @@
   transform: rotateY(180deg);
   display: flex;
   position: relative;
-}
 
-.rating input {
-  display: none;
-}
+  &__input {
+    display: none;
+  }
 
-.rating label {
-  display: block;
-  cursor: pointer;
-  width: 1.5rem;
-  position: relative;
-}
+  &__label {
+    display: block;
+    cursor: pointer;
+    width: 1.5rem;
+    position: relative;
+  }
 
-.rating label:before {
-  font-family: 'Material Icons';
-  content: 'star_border';
-  position: relative;
-  display: block;
-  font-size: 1.5rem;
-  color: #a0a0fb;
-}
+  &__label:before {
+    font-family: 'Material Icons';
+    content: 'star_border';
+    position: relative;
+    display: block;
+    font-size: 1.5rem;
+    color: #a0a0fb;
+  }
 
-.rating label:after {
-  font-family: 'Material Icons';
-  content: 'star';
-  position: absolute;
-  display: block;
-  font-size: 1.5rem;
-  color: #a0a0fb;
-  top: 0;
-  z-index: 100;
-  opacity: 0;
-}
+  &__label:after {
+    font-family: 'Material Icons';
+    content: 'star';
+    position: absolute;
+    display: block;
+    font-size: 1.5rem;
+    color: #a0a0fb;
+    top: 0;
+    z-index: 100;
+    opacity: 0;
+  }
 
-.rating input:checked ~ label:after {
-  opacity: 1;
+  &__input:checked ~ label:after {
+    opacity: 1;
+  }
 }

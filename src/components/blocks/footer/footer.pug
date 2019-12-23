@@ -1,5 +1,6 @@
 include ../../elements/form__email/form__email.pug
 include ../../elements/footer__links/footer__links.pug
+include ../../elements/social-network/social-network.pug
 
 mixin footer
   .footer__menu
@@ -20,9 +21,6 @@ mixin footer
   aside.footer__social
     .footer__copyright Copyright © 2019 Toxin отель. Все права зачищены.
     .footer__icons
-      a(href="https://twitter.com/")
-        img(src="imgs/icon-twitter.png" alt="")
-      a(href="https://www.facebook.com/")
-        img(src="imgs/icon-facebook.png" alt="")
-      a(href="https://www.instagram.com/?hl=ru")
-        img(src="imgs/icon-instagram.png" alt="")
+      +social-network("https://twitter.com/", "imgs/icon-twitter.png")
+      +social-network("https://www.facebook.com/", "imgs/icon-facebook.png")
+      +social-network("https://www.instagram.com/?hl=ru", "imgs/icon-instagram.png")

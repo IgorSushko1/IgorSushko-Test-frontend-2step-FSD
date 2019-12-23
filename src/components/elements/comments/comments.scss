@@ -56,7 +56,7 @@
     position: relative;
   }
 
-  & input:checked ~ &__background {
+  &__input:checked ~ &__background {
     background: linear-gradient(180deg, #bc9cff, #8ba4f9);
   }
 
@@ -98,10 +98,10 @@
     color: #bc9cff;
   }
 
-  & input:checked ~ .like-button__favorite {
+  &__input:checked ~ .like-button__favorite {
     display: block;
   }
-  & input:checked ~ .like-button__favorite_border {
+  &__input:checked ~ .like-button__favorite_border {
     display: none;
   }
 

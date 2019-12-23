@@ -18,13 +18,13 @@ html
       include ./components/elements/fonts-list/fonts.pug
     include ./components/elements/color-example/color-example.pug
 
-    +color-example('Dark Shade 100%', "#1F2041")(class="rectangle dark-shade-100")
-    +color-example('Dark Shade 75%', "#1F2041")(class="rectangle dark-shade-075")
-    +color-example('Dark Shade 50%', "#1F2041")(class="rectangle dark-shade-050")
-    +color-example('Dark Shade 25%', "#1F2041")(class="rectangle dark-shade-025")
-    +color-example('Dark Shade 5%', "#1F2041")(class="rectangle dark-shade-005")
-    +color-example('Purple', "#BC9CFF")(class="rectangle purple")
-    +color-example('Green', "#6FCF97")(class="rectangle green")
+    +color-example("Dark Shade 100%", "#1F2041")(class="rectangle dark-shade-100")
+    +color-example("Dark Shade 75%", "#1F2041")(class="rectangle dark-shade-075")
+    +color-example("Dark Shade 50%", "#1F2041")(class="rectangle dark-shade-050")
+    +color-example("Dark Shade 25%", "#1F2041")(class="rectangle dark-shade-025")
+    +color-example("Dark Shade 5%", "#1F2041")(class="rectangle dark-shade-005")
+    +color-example("Purple", "#BC9CFF")(class="rectangle purple")
+    +color-example("Green", "#6FCF97")(class="rectangle green")
 
     include ./components/elements/form__email/form__email.pug
     +form__email("email", "Your email adress", "field name")
@@ -94,7 +94,7 @@ html
       include ./components/blocks/header/header.pug
       +header
     div
-      include ./components/blocks/header/header-login.pug
+      include ./components/blocks/header/header__login.pug
     div
       include ./components/blocks/footer/footer.pug
       +footer

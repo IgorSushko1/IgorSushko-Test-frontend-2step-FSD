@@ -4,19 +4,23 @@ mixin checkbox-expendable(title)
       h3.h3_bold.checkbox-expendable__title= title
       span.material-icons.checkbox-expendable__icons keyboard_arrow_down
     .checkbox-expendable__dropdown.checkbox-expendable__dropdown_hide
-      label.checkbox-expendable__label.checkbox-expendable__margin Завтрак
-        input(type="checkbox" checked)
-        span.checkbox-buttons__checkmark
-        span.checkbox-buttons__checkmark_white
-      label.checkbox-expendable__label.checkbox-expendable__margin Письменный стол
-        input(type="checkbox" checked)
-        span.checkbox-buttons_checkmark
-        span.checkbox-buttons_checkmark-white
-      label.checkbox-expendable__label.checkbox-expendable__margin Стул для кормления
-        input(type="checkbox")
-        span.checkbox-buttons_checkmark
-        span.checkbox-buttons_checkmark-white
-      label.checkbox-expendable__label.checkbox-expendable__margin Кроватка
-        input(type="checkbox")
-        span.checkbox-buttons_checkmark
-        span.checkbox-buttons_checkmark-white
+      form(action="")
+        label.checkbox-expendable__label Завтрак
+          input(type="checkbox" checked).checkbox-expendable__input
+          span.checkbox-expendable__checkmark
+          span.checkbox-expendable__checkmark_white
+      form(action="")
+        label.checkbox-expendable__label Письменный стол
+          input(type="checkbox" checked).checkbox-expendable__input
+          span.checkbox-expendable__checkmark
+          span.checkbox-expendable__checkmark_white
+      form(action="")
+        label.checkbox-expendable__label Стул для кормления
+          input(type="checkbox").checkbox-expendable__input
+          span.checkbox-expendable__checkmark
+          span.checkbox-expendable__checkmark_white
+      form(action="")
+        label.checkbox-expendable__label Кроватка
+          input(type="checkbox").checkbox-expendable__input
+          span.checkbox-expendable__checkmark
+          span.checkbox-expendable__checkmark_white

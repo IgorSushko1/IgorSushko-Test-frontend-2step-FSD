@@ -1,0 +1,7 @@
+mixin pagination-circle(num)
+  - var n = 0;
+  while n++ < num
+    if n == 1
+      .pagination-circle__solid
+    else
+      .pagination-circle__empty

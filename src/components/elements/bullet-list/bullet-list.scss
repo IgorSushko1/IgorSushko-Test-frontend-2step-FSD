@@ -4,18 +4,18 @@
   width: 16.625rem;
   font-size: 0.875rem;
   line-height: 1.56rem;
-}
 
-.bullet-list__disc {
-  position: absolute;
-  width: 0.625rem;
-  height: 0.625rem;
-  background: $dark-shade-025;
-  left: 1.625rem;
-  margin-top: 0.437rem;
-  border-radius: 50%;
-}
+  &__disc {
+    position: absolute;
+    width: 0.625rem;
+    height: 0.625rem;
+    background: $dark-shade-025;
+    left: 1.625rem;
+    margin-top: 0.437rem;
+    border-radius: 50%;
+  }
 
-.bullet-list__text {
-  display: block;
+  &__text {
+    display: block;
+  }
 }

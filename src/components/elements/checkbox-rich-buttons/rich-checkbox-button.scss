@@ -20,7 +20,7 @@
     font-family: 'Montserrat', Arial, sans-serif;
   }
 
-  &__container input {
+  &__input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -48,7 +48,7 @@
     border-radius: 0.2rem;
   }
 
-  &__container input:checked ~ &__checkmark {
+  &__input:checked ~ &__checkmark {
     background: linear-gradient(180deg, #bc9cff, #8ba4f9);
   }
 
@@ -59,11 +59,11 @@
     display: none;
   }
 
-  &__container input:checked ~ &__checkmark:after {
+  &__input:checked ~ &__checkmark:after {
     display: block;
   }
 
-  &__container input:checked ~ &__checkmark:before {
+  &__input:checked ~ &__checkmark:before {
     display: block;
   }
 

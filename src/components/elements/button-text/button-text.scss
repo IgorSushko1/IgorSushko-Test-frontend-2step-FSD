@@ -8,9 +8,9 @@
   margin: 0.25rem 0.125rem;
   opacity: 0.6;
   transition: 0.3s;
-}
 
-.button__text:hover {
-  opacity: 1;
-  color: #BC9CFF;
+  &:hover {
+    opacity: 1;
+    color: #bc9cff;
+  }
 }

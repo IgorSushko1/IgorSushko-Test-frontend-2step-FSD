@@ -33,6 +33,15 @@
     margin-right: 0.06rem;
   }
 
+  &__link_bold {
+    text-decoration: none;
+    color: $dark-shade-075;
+    margin: 0;
+    padding: 0;
+    margin-right: 0.06rem;
+    font-weight: bold;
+  }
+
   &__dropdown {
     display: inline-flex;
   }
@@ -64,5 +73,4 @@
     margin-left: 1.875rem;
     color: $dark-shade-075;
   }
-
 }
