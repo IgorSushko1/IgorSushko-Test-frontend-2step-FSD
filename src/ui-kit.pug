@@ -15,7 +15,7 @@ html
       div.elf Здесь должны быть поля
       h2 Hello!
     div
-      include ./components/elements/fonts-list/fonts.pug
+      include ./components/elements/fonts-list/fonts-list.pug
     include ./components/elements/color-example/color-example.pug
 
     +color-example("Dark Shade 100%", "#1F2041")(class="rectangle dark-shade-100")
@@ -47,10 +47,13 @@ html
       +checkbox-button("Можно пригласить гостей (до 10 человек)", checked)
     div
       include ./components/elements/checkbox-radio/checkbox-radio.pug
-      +radio-buttons
+      +checkbox-radio(["Мужчина","Женщина"])
     div
-      include ./components/elements/rate-button/rate-button.pug
-      +star-rating-fourth-checked("class1", "class2", "class3", "class4", "class5")
+      include ./components/elements/star-rating/star-rating.pug
+      +star-rating(3)
+      +star-rating(1)
+      +star-rating(2)
+      +star-rating(5)
     div
       include ./components/elements/button-pill__full/button-pill__full.pug
       +button-pill__full("REGISTER")
@@ -63,7 +66,8 @@ html
       include ./components/elements/button-pill__full_arrow/button-pill__full_arrow.pug
     +button-pill__full_arrow("CLICK ME")
     div
-      include ./components/elements/like-buttons/like-buttons.pug
+      include ./components/elements/like-button/like-button.pug
+      +like-button({value: 11})
     div
       include ./vendor/calendar/calendar.pug
     div
@@ -73,19 +77,51 @@ html
       include ./vendor/dropdown/dropdown-subparagraph.pug
     div
       include ./components/elements/checkbox-expendable/checkbox-expendable.pug
-      +checkbox-expendable
+      +checkbox-expendable({title: "Дополнительные удобства", textsAndChecked: {
+        "Завтрак": "checked",
+        "Письменный стол": "checked",
+        "Стул для кормления": "unchecked",
+        "Кроватка": "unchecked"
+      }})
     div
       include ./components/elements/pagination/pagination.pug
       +pagination
     div
-      include ./components/elements/checkbox-rich-buttons/rich-checkbox-button.pug
-      +checkbox-rich
+      include ./components/elements/checkbox-rich/checkbox-rich.pug
+      +checkbox-rich({titlesAndChecked: {
+        "Широкий коридор": unchecked,
+        "Помощник для инвалидов": unchecked
+      }, texts: ["Ширина коридоров в номере не менее 91см",
+      "На 1 этаже вас встретит специалист и проводит до номера"
+      ]})
     div
       include ./components/elements/bullet-list/bullet-list.pug
       +bullet-list("bullet list", "grey" ,"Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, выезд до 12:00")
     div
       include ./components/elements/icon-advantages/icon-advantages.pug
-      +icon-advantages
+      +icon-advantages([
+        {
+          img: "imgs/insert_emoticon.svg",
+          alt: "icon smile",
+          size: 40,
+          title: "Комфорт",
+          text: "Шумопоглащающие стены"
+        },
+        {
+          img: "imgs/location_city.svg",
+          alt: "icon building",
+          size: 40,
+          title: "Удобство",
+          text: "Окно в каждой из спален"
+        },
+        {
+          img: "imgs/whatshot.svg",
+          alt: "icon flame",
+          size: 40,
+          title: "Уют",
+          text: "Номер оснащен камином",
+          borderStyle: "__without-border"
+        }])
     div
       include ./components/elements/comments/comments.pug
       +comments("./assets/images/murad-true.png", "Мурад Сарафанов", "5 дней назад", "12", "checked", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")

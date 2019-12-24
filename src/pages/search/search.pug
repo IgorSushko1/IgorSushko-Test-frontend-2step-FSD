@@ -6,7 +6,7 @@ include ../../components/blocks/hotel-room-card/hotel-room-card.pug
 
 include ../.././vendor/calendar/calendar.pug
 include ../../vendor/dropdown/dropdown-subparagraph.pug
-include ../../components/elements/checkbox-rich-buttons/rich-checkbox-button.pug
+include ../../components/elements/checkbox-rich/checkbox-rich.pug
 include ../../components/elements/checkbox-expendable/checkbox-expendable.pug
 include ../../components/elements/checkbox-button/checkbox-button.pug
 include ../../components/elements/pagination/pagination.pug
@@ -31,26 +31,37 @@ block main
       +checkbox-button("Можно с питомцами", "checked")
       +checkbox-button("Можно пригласить гостей (до 10 человек)", "checked")
       h3.search-page__checkbox-rich_title доступность
-      +checkbox-rich
+      +checkbox-rich({titlesAndChecked: {
+        "Широкий коридор": "checked",
+        "Помощник для инвалидов": false
+      },
+      texts: ["Ширина коридоров в номере не менее 91см",
+      "На 1 этаже вас встретит специалист и проводит до номера"
+      ]})
       .search-page__dropdown
         h3.search-page__dropdown_title Удобства номера
         +dropdown-room-comfort
       .search-page__expendable-checkbox
-        +checkbox-expendable("дополнительные удобства")
+        +checkbox-expendable({title: "Дополнительные удобства", textsAndChecked: {
+          "Завтрак": "checked",
+          "Письменный стол": "checked",
+          "Стул для кормления": "unchecked",
+          "Кроватка": "unchecked"
+        }})
     article.search-page__rooms
       h2.search-page_rooms_title Номера, которые мы для вас подобрали
       section.search-page__rooms_numbers
-        +hotel-room-card("imgs/room-1.png", "5", "888", "9 990₽", "lux", "145", "./room-detail.html", 4)
-        +hotel-room-card("imgs/room-2.png", "4", "840", "9 900₽", "", "65", "", 4)
-        +hotel-room-card("imgs/room-3.png", "3", "980", "8 500₽", "lux", "35", "", 4)
-        +hotel-room-card("imgs/room-4.png", "5", "856", "7 300₽", "lux", "19", "", 4)
-        +hotel-room-card("imgs/room-5.png", "4", "740", "6 000₽", "", "44", "", 4)
-        +hotel-room-card("imgs/room-6.png", "3", "982", "5 800₽", "", "56", "", 4)
-        +hotel-room-card("imgs/room-7.png", "5", "678", "5 500₽", "", "45", "", 4)
-        +hotel-room-card("imgs/room-8.png", "4", "450", "5 300₽", "", "39", "", 4)
-        +hotel-room-card("imgs/room-9.png", "3", "350", "5 000₽", "", "77", "", 4)
-        +hotel-room-card("imgs/room-10.png", "5", "666", "5 000₽", "", "25", "", 4)
-        +hotel-room-card("imgs/room-11.png", "3", "444", "5 000₽", "", "15", "", 4)
-        +hotel-room-card("imgs/room-12.png", "3", "352", "5 000₽", "", "55", "", 4)
+        +hotel-room-card("imgs/room-1.png", 5, "888", "9 990₽", "lux", "145", "./room-detail.html", 4)
+        +hotel-room-card("imgs/room-2.png", 4, "840", "9 900₽", "", "65", "", 4)
+        +hotel-room-card("imgs/room-3.png", 3, "980", "8 500₽", "lux", "35", "", 4)
+        +hotel-room-card("imgs/room-4.png", 5, "856", "7 300₽", "lux", "19", "", 4)
+        +hotel-room-card("imgs/room-5.png", 4, "740", "6 000₽", "", "44", "", 4)
+        +hotel-room-card("imgs/room-6.png", 3, "982", "5 800₽", "", "56", "", 4)
+        +hotel-room-card("imgs/room-7.png", 5, "678", "5 500₽", "", "45", "", 4)
+        +hotel-room-card("imgs/room-8.png", 4, "450", "5 300₽", "", "39", "", 4)
+        +hotel-room-card("imgs/room-9.png", 3, "350", "5 000₽", "", "77", "", 4)
+        +hotel-room-card("imgs/room-10.png", 5, "666", "5 000₽", "", "25", "", 4)
+        +hotel-room-card("imgs/room-11.png", 3, "444", "5 000₽", "", "15", "", 4)
+        +hotel-room-card("imgs/room-12.png", 3, "352", "5 000₽", "", "55", "", 4)
       section.search-page__rooms_pagination
         +pagination

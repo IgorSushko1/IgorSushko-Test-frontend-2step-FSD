@@ -1,26 +1,10 @@
-mixin checkbox-expendable(title)
+include ../checkbox-button/checkbox-button.pug
+
+mixin checkbox-expendable({title, textsAndChecked}={})
   .checkbox-expendable
     button(class="checkbox-expendable__drop_btn" class="checkbox-expendable__start") 
       h3.h3_bold.checkbox-expendable__title= title
       span.material-icons.checkbox-expendable__icons keyboard_arrow_down
     .checkbox-expendable__dropdown.checkbox-expendable__dropdown_hide
-      form(action="")
-        label.checkbox-expendable__label Завтрак
-          input(type="checkbox" checked).checkbox-expendable__input
-          span.checkbox-expendable__checkmark
-          span.checkbox-expendable__checkmark_white
-      form(action="")
-        label.checkbox-expendable__label Письменный стол
-          input(type="checkbox" checked).checkbox-expendable__input
-          span.checkbox-expendable__checkmark
-          span.checkbox-expendable__checkmark_white
-      form(action="")
-        label.checkbox-expendable__label Стул для кормления
-          input(type="checkbox").checkbox-expendable__input
-          span.checkbox-expendable__checkmark
-          span.checkbox-expendable__checkmark_white
-      form(action="")
-        label.checkbox-expendable__label Кроватка
-          input(type="checkbox").checkbox-expendable__input
-          span.checkbox-expendable__checkmark
-          span.checkbox-expendable__checkmark_white
+      each val, index in textsAndChecked
+        +checkbox-button(index, val)

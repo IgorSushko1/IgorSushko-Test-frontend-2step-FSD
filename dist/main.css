@@ -221,47 +221,6 @@ body {
     position: absolute;
     right: 6.5rem;
     top: 0rem; }
-  .booking__calendar {
-    display: flex;
-    justify-content: left;
-    height: 2.625rem;
-    padding: 0rem;
-    margin-top: 0.45rem;
-    margin-left: 0.1rem; }
-  .booking__datepicker {
-    opacity: 0;
-    width: 0;
-    height: 0;
-    position: relative;
-    left: -0.375rem;
-    top: 2.187rem; }
-  .booking .result-datepicker-first-date {
-    width: 9.25rem;
-    height: 2.62rem;
-    border: 0.06rem solid rgba(31, 32, 65, 0.25);
-    border-radius: 0.25rem;
-    position: relative;
-    top: -1.06rem;
-    left: -0.5rem; }
-  .booking .result-datepicker-second-date {
-    width: 9.25rem;
-    height: 2.62rem;
-    border: 0.06rem solid rgba(31, 32, 65, 0.25);
-    border-radius: 0.25rem;
-    position: relative;
-    top: -1.06rem;
-    right: -0.75rem; }
-  .booking .pick-up-numbers-card-icon-for-date {
-    position: absolute;
-    top: 0.56rem;
-    right: 0.56rem; }
-  .booking .pick-up-numbers-card-date-for-two-inputs {
-    position: absolute;
-    top: 0.7rem;
-    left: 0.87rem;
-    color: rgba(31, 32, 65, 0.75);
-    font-size: 0.87rem;
-    font-family: 'Montserrat-Medium', Arial, sans-serif; }
   .booking__guests_title {
     font-family: 'Montserrat-Bold', Arial, sans-serif;
     margin-left: -0.06rem;
@@ -278,9 +237,15 @@ body {
     font-family: 'Montserrat-Medium', Arial, sans-serif;
     letter-spacing: -0.005rem; }
   .booking__text_fee {
+    display: flex;
+    justify-content: space-between;
     margin-top: 1.11rem;
+    margin-left: 0.06rem;
     margin-right: -0.06rem;
-    position: relative; }
+    position: relative;
+    font-size: 0.87rem;
+    font-family: 'Montserrat-Medium', Arial, sans-serif;
+    letter-spacing: -0.005rem; }
   .booking__align_left {
     max-width: 70%; }
   .booking__align_center {
@@ -321,18 +286,16 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column; }
-
-.footer-mobile div {
-  margin-top: 20px;
-  max-width: 560px;
-  text-align: center;
-  font-size: 14px; }
-
-.footer-icons-mobile {
-  margin-top: 25px;
-  display: grid;
-  grid-template-columns: 24px 24px 24px;
-  grid-column-gap: 20px; }
+  .footer-mobile__text {
+    margin-top: 20px;
+    max-width: 560px;
+    text-align: center;
+    font-size: 14px; }
+  .footer-mobile__icons {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 24px 24px 24px;
+    grid-column-gap: 20px; }
 
 .footer__menu {
   display: flex;
@@ -457,6 +420,13 @@ body {
     margin: 0;
     padding: 0;
     margin-right: 0.06rem; }
+  .header__link_bold {
+    text-decoration: none;
+    color: rgba(31, 32, 65, 0.75);
+    margin: 0;
+    padding: 0;
+    margin-right: 0.06rem;
+    font-weight: bold; }
   .header__dropdown {
     display: inline-flex; }
   .header__point .material-icons {
@@ -680,8 +650,6 @@ body {
     font-size: 0.87rem;
     margin: 0;
     letter-spacing: -0.0096rem; }
-  .sing-in__create .button-pill__empty {
-    height: 2.5rem; }
 
 .sing-up {
   width: 23.75rem;
@@ -753,18 +721,16 @@ body {
   width: 16.625rem;
   font-size: 0.875rem;
   line-height: 1.56rem; }
-
-.bullet-list__disc {
-  position: absolute;
-  width: 0.625rem;
-  height: 0.625rem;
-  background: rgba(31, 32, 65, 0.25);
-  left: 1.625rem;
-  margin-top: 0.437rem;
-  border-radius: 50%; }
-
-.bullet-list__text {
-  display: block; }
+  .bullet-list__disc {
+    position: absolute;
+    width: 0.625rem;
+    height: 0.625rem;
+    background: rgba(31, 32, 65, 0.25);
+    left: 1.625rem;
+    margin-top: 0.437rem;
+    border-radius: 50%; }
+  .bullet-list__text {
+    display: block; }
 
 .button-pill__empty_short {
   margin-top: 0.125rem;
@@ -782,20 +748,19 @@ body {
   font-family: 'Montserrat-SemiBold', Arial, sans-serif;
   padding: 0 1.5rem;
   text-transform: uppercase; }
-
-.button-pill__empty_short:before {
-  content: '';
-  position: absolute;
-  width: 104%;
-  height: 2.75rem;
-  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
-  border-radius: 1.375rem;
-  left: -0.125rem;
-  top: -0.125rem;
-  z-index: -1; }
+  .button-pill__empty_short:before {
+    content: '';
+    position: absolute;
+    width: 104%;
+    height: 2.75rem;
+    background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+    border-radius: 1.375rem;
+    left: -0.125rem;
+    top: -0.125rem;
+    z-index: -1; }
 
 .button-pill__empty {
-  color: #BC9CFF;
+  color: #bc9cff;
   background: white;
   border: none;
   height: 1.85rem;
@@ -805,20 +770,19 @@ body {
   position: relative;
   font-size: 0.685rem;
   letter-spacing: 0.05rem;
-  font-family: "Montserrat-SemiBold", Arial, sans-serif;
+  font-family: 'Montserrat-SemiBold', Arial, sans-serif;
   padding: 0 1.187rem;
   text-transform: uppercase; }
-
-.button-pill__empty:before {
-  content: "";
-  position: absolute;
-  width: 104%;
-  height: 2.125rem;
-  background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
-  border-radius: 1.375rem;
-  left: -0.125rem;
-  top: -0.125rem;
-  z-index: -1; }
+  .button-pill__empty:before {
+    content: '';
+    position: absolute;
+    width: 104%;
+    height: 2.125rem;
+    background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+    border-radius: 1.375rem;
+    left: -0.125rem;
+    top: -0.125rem;
+    z-index: -1; }
 
 .button-pill__full_arrow {
   background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
@@ -869,10 +833,55 @@ body {
   margin: 0.25rem 0.125rem;
   opacity: 0.6;
   transition: 0.3s; }
+  .button__text:hover {
+    opacity: 1;
+    color: #bc9cff; }
 
-.button__text:hover {
-  opacity: 1;
-  color: #BC9CFF; }
+.calendar {
+  display: flex;
+  justify-content: left;
+  height: 2.625rem;
+  padding: 0rem;
+  margin-top: 0.45rem;
+  margin-left: 0.1rem; }
+  .calendar__datepicker {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: relative;
+    left: -0.375rem;
+    top: 2.187rem; }
+
+.result-datepicker-first-date {
+  width: 9.25rem;
+  height: 2.62rem;
+  border: 0.06rem solid rgba(31, 32, 65, 0.25);
+  border-radius: 0.25rem;
+  position: relative;
+  top: -1.06rem;
+  left: -0.5rem; }
+
+.result-datepicker-second-date {
+  width: 9.25rem;
+  height: 2.62rem;
+  border: 0.06rem solid rgba(31, 32, 65, 0.25);
+  border-radius: 0.25rem;
+  position: relative;
+  top: -1.06rem;
+  right: -0.75rem; }
+
+.pick-up-numbers-card-icon-for-date {
+  position: absolute;
+  top: 0.56rem;
+  right: 0.56rem; }
+
+.pick-up-numbers-card-date-for-two-inputs {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.87rem;
+  color: rgba(31, 32, 65, 0.75);
+  font-size: 0.87rem;
+  font-family: 'Montserrat-Medium', Arial, sans-serif; }
 
 .checkbox-button__container {
   width: 13.125rem;
@@ -888,7 +897,7 @@ body {
   user-select: none;
   font-family: 'Montserrat', Arial, sans-serif; }
 
-.checkbox-button__container input {
+.checkbox-button__input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -904,30 +913,10 @@ body {
   background: rgba(31, 32, 65, 0.25);
   border-radius: 4.5px; }
 
-.checkbox-button__checkmark_white {
-  position: absolute;
-  top: -0.06rem;
-  left: 0.08rem;
-  height: 1.12rem;
-  width: 1.12rem;
-  background: white;
-  border-radius: 0.2rem; }
-
-.checkbox-button__container input:checked ~ .checkbox-button__checkmark {
-  background: linear-gradient(180deg, #bc9cff, #8ba4f9); }
-
-.checkbox-button__checkmark:before, .checkbox-button__checkmark:after {
+.checkbox-button__checkmark:after {
   content: '';
   position: absolute;
-  display: none; }
-
-.checkbox-button__container input:checked ~ .checkbox-button__checkmark:after {
-  display: block; }
-
-.checkbox-button__container input:checked ~ .checkbox-button__checkmark:before {
-  display: block; }
-
-.checkbox-button__container .checkbox-button__checkmark:after {
+  display: none;
   z-index: 100;
   left: 10px;
   top: 6px;
@@ -938,7 +927,10 @@ body {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-.checkbox-button__container .checkbox-button__checkmark:before {
+.checkbox-button__checkmark:before {
+  content: '';
+  position: absolute;
+  display: none;
   z-index: 110;
   left: 7px;
   top: 8px;
@@ -948,6 +940,24 @@ body {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg); }
+
+.checkbox-button__checkmark_white {
+  position: absolute;
+  top: -0.06rem;
+  left: 0.08rem;
+  height: 1.12rem;
+  width: 1.12rem;
+  background: white;
+  border-radius: 0.2rem; }
+
+.checkbox-button__input:checked ~ .checkbox-button__checkmark {
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9); }
+
+.checkbox-button__input:checked ~ .checkbox-button__checkmark:after {
+  display: block; }
+
+.checkbox-button__input:checked ~ .checkbox-button__checkmark:before {
+  display: block; }
 
 .checkbox-expendable {
   position: relative;
@@ -982,10 +992,25 @@ body {
     overflow: auto;
     z-index: 1;
     background: white; }
-  .checkbox-expendable__dropdown_show label {
-    width: fit-content; }
-  .checkbox-expendable__margin {
-    margin-left: 0.93rem; }
+  .checkbox-expendable__label {
+    width: 13.125rem;
+    display: block;
+    position: relative;
+    padding-left: 1.937rem;
+    margin-bottom: 0.812rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Montserrat', Arial, sans-serif; }
+  .checkbox-expendable__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
 
 .checkbox-radio {
   display: flex; }
@@ -1000,7 +1025,7 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; }
-  .checkbox-radio__container input {
+  .checkbox-radio__input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -1023,22 +1048,22 @@ body {
     width: 1.12rem;
     background: white;
     border-radius: 50%; }
-  .checkbox-radio__container input:checked ~ .checkbox-radio__checkmark {
-    background: linear-gradient(180deg, #BC9CFF, #8BA4F9); }
+  .checkbox-radio__input:checked ~ .checkbox-radio__checkmark {
+    background: linear-gradient(180deg, #bc9cff, #8ba4f9); }
   .checkbox-radio__checkmark:after {
-    content: "";
+    content: '';
     position: absolute;
     display: none; }
-  .checkbox-radio__container input:checked ~ .checkbox-radio__checkmark:after {
+  .checkbox-radio__input:checked ~ .checkbox-radio__checkmark:after {
     display: block; }
-  .checkbox-radio__container .checkbox-radio__checkmark:after {
+  .checkbox-radio__checkmark:after {
     z-index: 100;
     top: 0.25rem;
     left: 0.25rem;
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 50%;
-    background: linear-gradient(180deg, #BC9CFF, #8BA4F9); }
+    background: linear-gradient(180deg, #bc9cff, #8ba4f9); }
 
 .checkbox-rich__title {
   font-size: 0.87rem;
@@ -1059,7 +1084,7 @@ body {
   user-select: none;
   font-family: 'Montserrat', Arial, sans-serif; }
 
-.checkbox-rich__container input {
+.checkbox-rich__input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -1084,7 +1109,7 @@ body {
   background: white;
   border-radius: 0.2rem; }
 
-.checkbox-rich__container input:checked ~ .checkbox-rich__checkmark {
+.checkbox-rich__input:checked ~ .checkbox-rich__checkmark {
   background: linear-gradient(180deg, #bc9cff, #8ba4f9); }
 
 .checkbox-rich__checkmark:before, .checkbox-rich__checkmark:after {
@@ -1092,13 +1117,13 @@ body {
   position: absolute;
   display: none; }
 
-.checkbox-rich__container input:checked ~ .checkbox-rich__checkmark:after {
+.checkbox-rich__input:checked ~ .checkbox-rich__checkmark:after {
   display: block; }
 
-.checkbox-rich__container input:checked ~ .checkbox-rich__checkmark:before {
+.checkbox-rich__input:checked ~ .checkbox-rich__checkmark:before {
   display: block; }
 
-.checkbox-rich__container .checkbox-rich__checkmark:after {
+.checkbox-rich__checkmark:after {
   z-index: 100;
   left: 10px;
   top: 6px;
@@ -1109,7 +1134,7 @@ body {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-.checkbox-rich__container .checkbox-rich__checkmark:before {
+.checkbox-rich__checkmark:before {
   z-index: 110;
   left: 7px;
   top: 8px;
@@ -1244,7 +1269,7 @@ body {
     cursor: pointer;
     border-radius: 1.37rem;
     position: relative; }
-  .like-button input:checked ~ .like-button__background {
+  .like-button__input:checked ~ .like-button__background {
     background: linear-gradient(180deg, #bc9cff, #8ba4f9); }
   .like-button__input {
     position: absolute;
@@ -1276,9 +1301,9 @@ body {
     left: 0.31rem;
     display: none;
     color: #bc9cff; }
-  .like-button input:checked ~ .like-button__favorite {
+  .like-button__input:checked ~ .like-button__favorite {
     display: block; }
-  .like-button input:checked ~ .like-button__favorite_border {
+  .like-button__input:checked ~ .like-button__favorite_border {
     display: none; }
   .like-button__num {
     z-index: 3;
@@ -1294,10 +1319,9 @@ body {
 .footer__links__title {
   margin: 0;
   font-family: 'Montserrat-SemiBold', Arial, sans-serif; }
-
-.footer__links_point {
-  text-decoration: none;
-  color: rgba(31, 32, 65, 0.75); }
+  .footer__links__title__links_point {
+    text-decoration: none;
+    color: rgba(31, 32, 65, 0.75); }
 
 .form__date {
   height: 46px; }
@@ -1350,6 +1374,13 @@ body {
   margin-top: 0.93rem;
   padding-bottom: 1.25rem;
   padding-left: 0.31rem; }
+  .icon-advantages__without-border {
+    display: grid;
+    grid-template-columns: 3rem 15.62rem;
+    max-width: 18.75rem;
+    margin-top: 0.93rem;
+    padding-bottom: 1.25rem;
+    padding-left: 0.31rem; }
   .icon-advantages__image {
     margin-top: 0.65rem; }
   .icon-advantages__text {
@@ -1366,17 +1397,12 @@ body {
     font-size: 0.88rem;
     margin-bottom: 0.2rem; }
 
-.border-none {
-  border: none; }
-
 .like-button {
   position: relative;
   margin: 0;
   padding: 0;
   top: 0;
   left: 0; }
-  .like-button__profile-image {
-    margin-top: -0.25rem; }
   .like-button__background {
     z-index: 1;
     background: linear-gradient(180deg, rgba(31, 32, 65, 0.25), rgba(31, 32, 65, 0.25));
@@ -1392,14 +1418,14 @@ body {
     cursor: pointer;
     border-radius: 1.37rem;
     position: relative; }
-  .like-button input:checked ~ .like-button__background {
-    background: linear-gradient(180deg, #bc9cff, #8ba4f9); }
   .like-button__input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0; }
+  .like-button__input:checked ~ .like-button__background {
+    background: linear-gradient(180deg, #bc9cff, #8ba4f9); }
   .like-button__empty-white {
     z-index: 2;
     position: absolute;
@@ -1424,9 +1450,9 @@ body {
     left: 0.31rem;
     display: none;
     color: #bc9cff; }
-  .like-button input:checked ~ .like-button__favorite {
+  .like-button__input:checked ~ .like-button__favorite {
     display: block; }
-  .like-button input:checked ~ .like-button__favorite_border {
+  .like-button__input:checked ~ .like-button__favorite_border {
     display: none; }
   .like-button__num {
     z-index: 3;
@@ -1435,6 +1461,23 @@ body {
     right: 0.68rem;
     font-weight: 500;
     font-size: 0.62rem; }
+
+.pagination-circle__solid {
+  width: 0.31rem;
+  height: 0.31rem;
+  border: 0.06rem solid white;
+  border-radius: 50%;
+  z-index: 1;
+  margin-left: 0.25rem;
+  background: white; }
+
+.pagination-circle__empty {
+  width: 0.31rem;
+  height: 0.31rem;
+  border: 0.06rem solid white;
+  border-radius: 50%;
+  z-index: 1;
+  margin-left: 0.25rem; }
 
 .pagination {
   width: 241px;
@@ -1470,37 +1513,26 @@ body {
   transform: rotateY(180deg);
   display: flex;
   position: relative; }
-
-.rating input {
-  display: none; }
-
-.rating label {
-  display: block;
-  cursor: pointer;
-  width: 1.5rem;
-  position: relative; }
-
-.rating label:before {
-  font-family: "Material Icons";
-  content: "star_border";
-  position: relative;
-  display: block;
-  font-size: 1.5rem;
-  color: #A0A0FB; }
-
-.rating label:after {
-  font-family: "Material Icons";
-  content: "star";
-  position: absolute;
-  display: block;
-  font-size: 1.5rem;
-  color: #A0A0FB;
-  top: 0;
-  z-index: 100;
-  opacity: 0; }
-
-.rating input:checked ~ label:after {
-  opacity: 1; }
+  .rating__star_filled:before {
+    display: block;
+    cursor: pointer;
+    width: 1.5rem;
+    position: relative;
+    font-family: 'Material Icons';
+    content: 'star';
+    font-size: 1.5rem;
+    color: #a0a0fb;
+    top: 0;
+    z-index: 1; }
+  .rating__star_empty:before {
+    display: block;
+    cursor: pointer;
+    width: 1.5rem;
+    position: relative;
+    font-family: 'Material Icons';
+    content: 'star_border';
+    font-size: 1.5rem;
+    color: #a0a0fb; }
 
 .base {
   display: flex;
@@ -1899,7 +1931,7 @@ body {
   background: #f0f0f0; }
 
 .datepicker--cell.-current- {
-  background: linear-gradient(180deg, #6FCF97, #66D2EA);
+  background: linear-gradient(180deg, #6fcf97, #66d2ea);
   color: white;
   font-weight: bolder; }
 
@@ -1910,7 +1942,7 @@ body {
 .datepicker--cell.-current-.-in-range- {
   color: white;
   font-weight: bolder;
-  background: linear-gradient(180deg, #6FCF97, #66D2EA); }
+  background: linear-gradient(180deg, #6fcf97, #66d2ea); }
 
 .datepicker--cell.-in-range- {
   background: linear-gradient(180deg, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
@@ -1955,7 +1987,7 @@ body {
 .datepicker--cell.-selected- {
   color: #fff;
   border: none;
-  background: linear-gradient(180deg, #BC9CFF, #8BA4F9); }
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9); }
 
 .datepicker--cell.-selected-.-current- {
   color: #fff;
@@ -1978,7 +2010,7 @@ body {
   padding: 10px 0; }
 
 .datepicker--day-name {
-  color: #BC9CFF;
+  color: #bc9cff;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -2084,7 +2116,7 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
-  transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
   z-index: 100; }
 
 .datepicker.-from-top- {
@@ -2109,7 +2141,7 @@ body {
   transform: translate(0);
   transition: opacity 0.3s ease, left 0s 0s, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s;
-  transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s, -webkit-transform 0.3s ease; }
+  transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s, -webkit-transform 0.3s ease; }
 
 .datepicker-inline .datepicker {
   border-color: #d7d7d7;
@@ -2312,7 +2344,7 @@ body {
   border-top: 1px solid #efefef; }
 
 .datepicker--button {
-  color: #4EB5E6;
+  color: #4eb5e6;
   cursor: pointer;
   border-radius: 4px;
   -webkit-flex: 1;
@@ -2424,7 +2456,7 @@ body {
 .datepicker--time-current-minutes {
   line-height: 1;
   font-size: 19px;
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   position: relative;
   z-index: 1; }
 
@@ -2518,7 +2550,7 @@ body {
   border: 1px solid #dedede;
   background: #fff;
   cursor: pointer;
-  transition: background .2s; }
+  transition: background 0.2s; }
 
 .datepicker--time-row input[type='range']::-moz-range-thumb {
   box-sizing: border-box;
@@ -2528,7 +2560,7 @@ body {
   border: 1px solid #dedede;
   background: #fff;
   cursor: pointer;
-  transition: background .2s; }
+  transition: background 0.2s; }
 
 .datepicker--time-row input[type='range']::-ms-thumb {
   box-sizing: border-box;
@@ -2538,7 +2570,7 @@ body {
   border: 1px solid #dedede;
   background: #fff;
   cursor: pointer;
-  transition: background .2s; }
+  transition: background 0.2s; }
 
 .datepicker--time-row input[type='range']::-webkit-slider-thumb {
   margin-top: -6px; }
@@ -2590,7 +2622,7 @@ body {
   position: absolute; }
 
 .datepicker--time-icon:after {
-  height: .4em;
+  height: 0.4em;
   width: 1px;
   left: calc(50% - 1px);
   top: calc(50% + 1px);
@@ -2598,7 +2630,7 @@ body {
   transform: translateY(-100%); }
 
 .datepicker--time-icon:before {
-  width: .4em;
+  width: 0.4em;
   height: 1px;
   top: calc(50% + 1px);
   left: calc(50% - 1px); }
@@ -2645,7 +2677,7 @@ body {
   margin: 5px 15px 0 0; }
 
 .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   border: none;
@@ -2656,16 +2688,16 @@ body {
   z-index: -4; }
 
 .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
   position: absolute;
   border-radius: 50%;
   z-index: -3; }
 
 .datepicker--cell.datepicker--cell-day.-range-from-.-focus-::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   border: none;
@@ -2678,7 +2710,7 @@ body {
   padding: 0; }
 
 .datepicker--cell.datepicker--cell-day.-range-from-.-focus-::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
@@ -2687,7 +2719,7 @@ body {
   z-index: -3; }
 
 .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   border: none;
@@ -2698,16 +2730,16 @@ body {
   z-index: -4; }
 
 .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
   position: absolute;
   border-radius: 50%;
   z-index: -3; }
 
 .datepicker--cell.datepicker--cell-day.-range-to-.-focus-::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   border: none;
@@ -2720,10 +2752,10 @@ body {
   padding: 0; }
 
 .datepicker--cell.datepicker--cell-day.-range-to-.-focus-::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
   position: absolute;
   border-radius: 50%;
   z-index: -3; }

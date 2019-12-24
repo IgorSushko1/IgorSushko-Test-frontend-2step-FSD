@@ -59,7 +59,7 @@
           <div>Green</div>
           <div>#6FCF97</div>
         </div>
-        <form>
+        <form action="">
           <legend>
             <h3>field name</h3>
             <div class="form__email">
@@ -68,7 +68,7 @@
             </div>
           </legend>
         </form>
-        <form>
+        <form action="">
           <legend>
             <h3>masked text field</h3>
             <div class="form__date">
@@ -76,14 +76,14 @@
             </div>
           </legend>
         </form>
-        <form>
+        <form action="">
           <legend>
             <div class="form__name">
               <input class="form__name_border form__name_sign-in" type="email" value="Email" name="email-sign-in">
             </div>
           </legend>
         </form>
-        <form>
+        <form action="">
           <legend>
             <div class="form__name">
               <input class="form__name_border form__name_sign-up" type="email" value="Email" name="email-sign-up">
@@ -165,38 +165,60 @@
     <div>
     </div>
     <div>
-            <label class="checkbox-button__container">Можно курить
-              <input type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-            </label>
-            <label class="checkbox-button__container">Можно с питомцами
-              <input type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-            </label>
-            <label class="checkbox-button__container">Можно пригласить гостей (до 10 человек)
-              <input type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-            </label>
+            <form action="">
+              <label class="checkbox-button__container">Можно курить
+                <input class="checkbox-button__input" type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
+              </label>
+            </form>
+            <form action="">
+              <label class="checkbox-button__container">Можно с питомцами
+                <input class="checkbox-button__input" type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
+              </label>
+            </form>
+            <form action="">
+              <label class="checkbox-button__container">Можно пригласить гостей (до 10 человек)
+                <input class="checkbox-button__input" type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
+              </label>
+            </form>
     </div>
     <div>
             <form class="checkbox-radio" action="">
               <label class="checkbox-radio__container">Мужчина
-                <input type="radio" name="sex" value="this is a men's world" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
+                <input class="checkbox-radio__input" type="radio" name="gender" value="Мужчина" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
               </label>
               <label class="checkbox-radio__container">Женщина
-                <input type="radio" name="sex" value="but it would be nothing? without woman or a girl"><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
+                <input class="checkbox-radio__input" type="radio" name="gender" value="Женщина" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
               </label>
             </form>
     </div>
     <div>
             <div class="rating">
-              <input type="checkbox" name="star">
-              <label></label>
-              <input type="checkbox" name="star" checked>
-              <label></label>
-              <input type="checkbox" name="star" checked>
-              <label></label>
-              <input type="checkbox" name="star" checked>
-              <label></label>
-              <input type="checkbox" name="star" checked>
-              <label></label>
+              <div class="rating__star_empty"></div>
+              <div class="rating__star_empty"></div>
+              <div class="rating__star_filled"></div>
+              <div class="rating__star_filled"></div>
+              <div class="rating__star_filled"></div>
+            </div>
+            <div class="rating">
+              <div class="rating__star_empty"></div>
+              <div class="rating__star_empty"></div>
+              <div class="rating__star_empty"></div>
+              <div class="rating__star_empty"></div>
+              <div class="rating__star_filled"></div>
+            </div>
+            <div class="rating">
+              <div class="rating__star_empty"></div>
+              <div class="rating__star_empty"></div>
+              <div class="rating__star_empty"></div>
+              <div class="rating__star_filled"></div>
+              <div class="rating__star_filled"></div>
+            </div>
+            <div class="rating">
+              <div class="rating__star_filled"></div>
+              <div class="rating__star_filled"></div>
+              <div class="rating__star_filled"></div>
+              <div class="rating__star_filled"></div>
+              <div class="rating__star_filled"></div>
             </div>
     </div>
     <div>
@@ -210,9 +232,9 @@
             </form>
     </div>
     <div>
-<button class="button__text">
+<button-text class="button__text">
   <h3>CLICK ME</h3>
-</button>
+</button-text>
     </div>
     <div>
     </div>
@@ -223,25 +245,22 @@
             </button>
           </form>
     <div>
-<div><img class="like-button__profile-image" src="imgs/insert_emoticon.svg" alt="Cinque Terre" width="48" height="48"></div>
-<div>
-  <label class="like-button">
-    <input class="like-button__input" type="checkbox">
-    <div class="like-button__background">
-      <div class="like-button__empty-white"></div>
-      <div class="like-button__num">12</div>
-    </div>
-    <div class="material-icons like-button__favorite_border">favorite_border</div>
-    <div class="material-icons like-button__favorite">favorite</div>
-  </label>
-</div>
+            <label class="like-button">
+              <input class="like-button__input" type="checkbox">
+              <div class="like-button__background">
+                <div class="like-button__empty-white"></div>
+                <div class="like-button__num">11</div>
+              </div>
+              <div class="material-icons like-button__favorite_border">favorite_border</div>
+              <div class="material-icons like-button__favorite">favorite</div>
+            </label>
     </div>
     <div>
     </div>
     <div>
-            <form class="form-for-range-slider">
+            <form class="form-for-range-slider" action="">
               <div class="amount-of-money">
-                <h3 class="bold">Диапазон цены</h3>
+                <h3>Диапазон цены</h3>
               </div>
               <input class="slider-range-slider" type="text" name="example_name" value="">
             </form>
@@ -252,21 +271,29 @@
     <div>
             <div class="checkbox-expendable">
               <button class="checkbox-expendable__drop_btn checkbox-expendable__start"> 
-                <h3 class="h3_bold checkbox-expendable__title"></h3><span class="material-icons checkbox-expendable__icons">keyboard_arrow_down</span>
+                <h3 class="h3_bold checkbox-expendable__title">Дополнительные удобства</h3><span class="material-icons checkbox-expendable__icons">keyboard_arrow_down</span>
               </button>
               <div class="checkbox-expendable__dropdown checkbox-expendable__dropdown_hide">
-                <label class="checkbox-expendable__label checkbox-expendable__margin">Завтрак
-                  <input type="checkbox" checked><span class="checkbox-buttons__checkmark"></span><span class="checkbox-buttons__checkmark_white"></span>
-                </label>
-                <label class="checkbox-expendable__label checkbox-expendable__margin">Письменный стол
-                  <input type="checkbox" checked><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
-                </label>
-                <label class="checkbox-expendable__label checkbox-expendable__margin">Стул для кормления
-                  <input type="checkbox"><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
-                </label>
-                <label class="checkbox-expendable__label checkbox-expendable__margin">Кроватка
-                  <input type="checkbox"><span class="checkbox-buttons_checkmark"></span><span class="checkbox-buttons_checkmark-white"></span>
-                </label>
+                      <form action="">
+                        <label class="checkbox-button__container">Завтрак
+                          <input class="checkbox-button__input" type="checkbox" checked><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
+                        </label>
+                      </form>
+                      <form action="">
+                        <label class="checkbox-button__container">Письменный стол
+                          <input class="checkbox-button__input" type="checkbox" checked><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
+                        </label>
+                      </form>
+                      <form action="">
+                        <label class="checkbox-button__container">Стул для кормления
+                          <input class="checkbox-button__input" type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
+                        </label>
+                      </form>
+                      <form action="">
+                        <label class="checkbox-button__container">Кроватка
+                          <input class="checkbox-button__input" type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
+                        </label>
+                      </form>
               </div>
             </div>
     </div>
@@ -275,18 +302,18 @@
             <div class="pagination__description">1 - 12 из 100+ вариантов аренды</div>
     </div>
     <div>
-            <div>
+            <form action="">
               <label class="checkbox-rich__container">
                 <div class="checkbox-rich__title">Широкий коридор</div>
-                <input type="checkbox"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark_white"></span>
+                <input class="checkbox-rich__input" type="checkbox"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark_white"></span>
                 <div class="checkbox-rich__korridor-width">Ширина коридоров в номере не менее 91см</div>
               </label>
               <label class="checkbox-rich__container">
                 <div class="checkbox-rich__title">Помощник для инвалидов</div>
-                <input type="checkbox"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark_white"></span>
-                <div class="checkbox-rich__accessibility">На 1 этаже вас встретит специалист и проводит до номера</div>
+                <input class="checkbox-rich__input" type="checkbox"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark_white"></span>
+                <div class="checkbox-rich__korridor-width">На 1 этаже вас встретит специалист и проводит до номера</div>
               </label>
-            </div>
+            </form>
     </div>
     <div>
             <ul class="bullet-list" style="margin-bottom:Нельзя с питомцами;">
@@ -295,19 +322,19 @@
             </ul>
     </div>
     <div>
-            <div class="icon-advantages"><img class="icon-advantages__image" src="imgs/insert_emoticon.svg" alt="Cinque Terre" width="40" height="40">
+            <div class="icon-advantages"><img class="icon-advantages__image" src="imgs/insert_emoticon.svg" alt="icon smile" width="40" height="40">
               <div class="icon-advantages__text">
                 <h3 class="icon-advantages__text_h3">Комфорт</h3>
                 <div>Шумопоглащающие стены</div>
               </div>
             </div>
-            <div class="icon-advantages"><img class="icon-advantages__image" src="imgs/location_city.svg" alt="Cinque Terre" width="40" height="40">
+            <div class="icon-advantages"><img class="icon-advantages__image" src="imgs/location_city.svg" alt="icon building" width="40" height="40">
               <div class="icon-advantages__text">
                 <h3 class="icon-advantages__text_h3">Удобство</h3>
                 <div>Окно в каждой из спален</div>
               </div>
             </div>
-            <div class="icon-advantages border-none"><img class="icon-advantages__image" src="imgs/whatshot.svg" alt="Cinque Terre" width="40" height="40">
+            <div class="icon-advantages__without-border"><img class="icon-advantages__image" src="imgs/whatshot.svg" alt="icon flame" width="40" height="40">
               <div class="icon-advantages__text">
                 <h3 class="icon-advantages__text_h3">Уют</h3>
                 <div>Номер оснащен камином</div>
@@ -383,7 +410,7 @@
 <div class="header"><img class="header__image" src="imgs/Logo.png" alt="">
   <div class="header__menu">
     <ul class="header__list">
-      <li class="header__point"><a class="header__link bold" href="">Home</a></li>
+      <li class="header__point"><a class="header__link_bold" href="">Home</a></li>
       <li class="header__point"><a class="header__link" href="">About Us</a></li>
       <li class="header__point">
         <div class="header__dropdown"><span class="header__link">Services</span><span class="material-icons">keyboard_arrow_down</span></div>
@@ -413,7 +440,7 @@
               <nav class="footer__subscription">
                 <h3 class="footer__h3">Подписка</h3>
                 <div class="footer__subscription_text">Получайте специальные предложения и новости сервиса</div>
-                      <form>
+                      <form action="">
                         <legend>
                           <h3></h3>
                           <div class="form__email">
@@ -426,17 +453,19 @@
             </div>
             <aside class="footer__social">
               <div class="footer__copyright">Copyright © 2019 Toxin отель. Все права зачищены.</div>
-              <div class="footer__icons"><a href="https://twitter.com/"><img src="imgs/icon-twitter.png" alt=""></a><a href="https://www.facebook.com/"><img src="imgs/icon-facebook.png" alt=""></a><a href="https://www.instagram.com/?hl=ru"><img src="imgs/icon-instagram.png" alt=""></a></div>
+              <div class="footer__icons"><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-twitter.png" alt=""></a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-facebook.png" alt=""></a><a href="https://www.instagram.com/?hl=ru" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-instagram.png" alt=""></a>
+              </div>
             </aside>
     </div>
     <div>
-<div class="footer-mobile"><img src="imgs/Logo.png" alt="" width="105" height="40">
-  <div>
-    Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
-    
-  </div>
-  <div class="footer-icons-mobile"><img src="imgs/icon-twitter.png" alt=""><img src="imgs/icon-facebook.png" alt=""><img src="imgs/icon-instagram.png" alt=""></div>
-</div>
+      <div class="footer-mobile"><img src="imgs/Logo.png" alt="" width="105" height="40">
+        <div class="footer-mobile__text">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+          
+        </div>
+        <div class="footer-mobile__icons"><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-twitter.png" alt=""></a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-facebook.png" alt=""></a><a href="https://www.instagram.com/?hl=ru" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-instagram.png" alt=""></a>
+        </div>
+      </div>
     </div>
     <div>
     </div>
@@ -446,7 +475,7 @@
                 <h2>Регистрация аккаунта</h2>
               </header>
               <div class="sing-up__name">
-                      <form>
+                      <form action="">
                         <legend>
                           <div class="form__name">
                             <input class="form__name_border form__name_sign-up" type="text" value="Имя" name="name">
@@ -455,7 +484,7 @@
                       </form>
               </div>
               <div class="sing-up__surname">
-                      <form>
+                      <form action="">
                         <legend>
                           <div class="form__name">
                             <input class="form__name_border form__name_sign-up" type="text" value="Фамилия" name="surname">
@@ -466,10 +495,10 @@
               <div class="sing-up__gender">
                       <form class="checkbox-radio" action="">
                         <label class="checkbox-radio__container">Мужчина
-                          <input type="radio" name="sex" value="this is a men's world" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
+                          <input class="checkbox-radio__input" type="radio" name="gender" value="Мужчина" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
                         </label>
                         <label class="checkbox-radio__container">Женщина
-                          <input type="radio" name="sex" value="but it would be nothing? without woman or a girl"><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
+                          <input class="checkbox-radio__input" type="radio" name="gender" value="Женщина" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
                         </label>
                       </form>
               </div>
@@ -480,7 +509,7 @@
               <div class="sing-up__enter">
                 <h3 class="sing-up__enter_title">данные для входа в сервис</h3>
                 <div class="sing-up__registration">
-                        <form>
+                        <form action="">
                           <legend>
                             <div class="form__name">
                               <input class="form__name_border form__name_sign-up" type="email" value="Email" name="email">
@@ -489,7 +518,7 @@
                         </form>
                 </div>
                 <div class="sing-up__registration">
-                        <form>
+                        <form action="">
                           <legend>
                             <div class="form__name">
                               <input class="form__name_border form__name_sign-up" type="text" value="Пароль" name="password">
@@ -499,15 +528,17 @@
                 </div>
               </div>
               <div class="sing-up__toggle-checkbox">
-                      <label class="checkbox-toggle">
-                        <div class="checkbox-toggle__background_gradient">
-                          <div class="checkbox-toggle__background_white">
-                            <input class="checkbox-toggle__input" type="checkbox" name="name" value="pets-allowed">
-                            <div class="checkbox-toggle__circle"></div>
-                            <div class="checkbox-toggle__text">Получать спецпредложения</div>
+                      <form action="">
+                        <label class="checkbox-toggle">
+                          <div class="checkbox-toggle__background_gradient">
+                            <div class="checkbox-toggle__background_white">
+                              <input class="checkbox-toggle__input" type="checkbox">
+                              <div class="checkbox-toggle__circle"></div>
+                              <div class="checkbox-toggle__text">Получать спецпредложения</div>
+                            </div>
                           </div>
-                        </div>
-                      </label>
+                        </label>
+                      </form>
               </div>
               <div class="sing-up__button">
                       <form action="./search.html">
@@ -531,7 +562,7 @@
                 <h2 class="sing-in__title">Войти</h2>
               </header>
               <div class="sing-in__email">
-                      <form>
+                      <form action="">
                         <legend>
                           <div class="form__name">
                             <input class="form__name_border form__name_sign-in" type="email" value="Email" name="email-sign-in">
@@ -540,7 +571,7 @@
                       </form>
               </div>
               <div class="sing-in__password">
-                      <form>
+                      <form action="">
                         <legend>
                           <div class="form__name">
                             <input class="form__name_border form__name_sign-in" type="text" value="Пароль" name="password-sign-in">
@@ -579,11 +610,11 @@
               <div class="booking__pick-date">
                 <h3 class="booking__arrival">Прибытие</h3>
                 <h3 class="booking__departure">Выезд</h3>
-                <label class="booking__calendar">
-                  <input class="datepicker-here booking__datepicker" type="checkbox" id="datepicker" data-range="true" data-multiple-dates-separator=" - " clearButton="true" data-position="bottom left">
-                  <p class="result-datepicker-first-date"><span class="pick-up-numbers-card-date-for-two-inputs">19.08.2019</span><span class="material-icons pick-up-numbers-card-icon-for-date">expand_more</span></p>
-                  <p class="result-datepicker-second-date"><span class="pick-up-numbers-card-date-for-two-inputs">23.08.2019</span><span class="material-icons pick-up-numbers-card-icon-for-date">expand_more</span></p>
-                </label>
+                      <label class="calendar">
+                        <input class="datepicker-here calendar__datepicker" type="checkbox" id="datepicker" data-range="true" data-multiple-dates-separator=" - " clearButton="true" data-position="bottom left">
+                        <p class="result-datepicker-first-date"><span class="pick-up-numbers-card-date-for-two-inputs">19.08.2019</span><span class="material-icons pick-up-numbers-card-icon-for-date">expand_more</span></p>
+                        <p class="result-datepicker-second-date"><span class="pick-up-numbers-card-date-for-two-inputs">23.08.2019</span><span class="material-icons pick-up-numbers-card-icon-for-date">expand_more</span></p>
+                      </label>
               </div>
               <div class="booking__guests">
                 <h3 class="booking__guests_title">Гости</h3>
@@ -617,8 +648,8 @@
                 </div>
               </div>
               <div class="booking__text"><span class="booking__align_left">9 990₽ х 4 суток</span><span class="booking__align_right">39 960₽</span></div>
-              <div class="booking__text booking__text_fee"><span class="booking__align_left">Сбор за услуги: скидка 2 179₽</span><span class="material-icons booking__align_center">error_outline</span><span class="booking__align_right">0₽</span></div>
-              <div class="booking__text booking__text_fee"><span class="booking__align_left">Сбор за дополнительные услуги</span><span class="material-icons booking__align_center">error_outline</span><span class="booking__align_right">300₽</span></div>
+              <div class="booking__text_fee"><span class="booking__align_left">Сбор за услуги: скидка 2 179₽</span><span class="material-icons booking__align_center">error_outline</span><span class="booking__align_right">0₽</span></div>
+              <div class="booking__text_fee"><span class="booking__align_left">Сбор за дополнительные услуги</span><span class="material-icons booking__align_center">error_outline</span><span class="booking__align_right">300₽</span></div>
               <div class="booking__total">
                 <h2>Итого</h2>
                 <div class="booking__total_border"></div>
@@ -637,10 +668,6 @@
     <div>
             <div class="hotel-room"><a><img class="hotel-room__img" src="./assets/images/room-2.png" alt=""></a>
               <div class="hotel-room__circles_block">
-                <div class="hotel-room__circle_point"></div>
-                <div class="hotel-room__circle_point"></div>
-                <div class="hotel-room__circle_point"></div>
-                <div class="hotel-room__circle_point"></div>
               </div>
               <div class="hotel-room__text">
                 <div class="hotel-room__number">
@@ -653,16 +680,11 @@
               </div>
               <div class="hotel-room__raiting">
                       <div class="rating">
-                        <input type="checkbox" name="star">
-                        <label></label>
-                        <input type="checkbox" name="star" checked>
-                        <label></label>
-                        <input type="checkbox" name="star" checked>
-                        <label></label>
-                        <input type="checkbox" name="star" checked>
-                        <label></label>
-                        <input type="checkbox" name="star" checked>
-                        <label></label>
+                        <div class="rating__star_filled"></div>
+                        <div class="rating__star_filled"></div>
+                        <div class="rating__star_filled"></div>
+                        <div class="rating__star_filled"></div>
+                        <div class="rating__star_filled"></div>
                       </div>
                 <div class="hotel-room__review">
                   <h3 class="hotel-room__review_number"></h3><span>Отзывов</span>
@@ -671,10 +693,6 @@
             </div>
             <div class="hotel-room"><a><img class="hotel-room__img" src="./assets/images/room-1.png" alt=""></a>
               <div class="hotel-room__circles_block">
-                <div class="hotel-room__circle_point"></div>
-                <div class="hotel-room__circle_point"></div>
-                <div class="hotel-room__circle_point"></div>
-                <div class="hotel-room__circle_point"></div>
               </div>
               <div class="hotel-room__text">
                 <div class="hotel-room__number">
@@ -688,16 +706,11 @@
               </div>
               <div class="hotel-room__raiting">
                       <div class="rating">
-                        <input type="checkbox" name="star" checked>
-                        <label></label>
-                        <input type="checkbox" name="star" checked>
-                        <label></label>
-                        <input type="checkbox" name="star" checked>
-                        <label></label>
-                        <input type="checkbox" name="star" checked>
-                        <label></label>
-                        <input type="checkbox" name="star" checked>
-                        <label></label>
+                        <div class="rating__star_filled"></div>
+                        <div class="rating__star_filled"></div>
+                        <div class="rating__star_filled"></div>
+                        <div class="rating__star_filled"></div>
+                        <div class="rating__star_filled"></div>
                       </div>
                 <div class="hotel-room__review">
                   <h3 class="hotel-room__review_number"></h3><span>Отзывов</span>

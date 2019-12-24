@@ -1,4 +1,4 @@
-include ../../elements/rate-button/rate-button.pug
+include ../../elements/star-rating/star-rating.pug
 include ../../elements/pagination-circle/pagination-circle.pug
 
 mixin hotel-room-card(imgName, numberOfStars, roomNumber, price, lux, review, ref, numOfPugination)
@@ -17,16 +17,7 @@ mixin hotel-room-card(imgName, numberOfStars, roomNumber, price, lux, review, re
         p.hotel-room__cost_price= price
         span.hotel-room__cost_per-day в сутки
     .hotel-room__raiting
-      if (numberOfStars == 1)
-        +star-rating-first-checked()
-      if (numberOfStars == 2)
-        +star-rating-second-checked()
-      if (numberOfStars == 3)
-        +star-rating-third-checked()
-      if (numberOfStars == 4)
-        +star-rating-fourth-checked()
-      if (numberOfStars == 5)
-        +star-rating-fifth-checked()
+      +star-rating(numberOfStars)
       .hotel-room__review
         h3.hotel-room__review_number= review
         span Отзывов

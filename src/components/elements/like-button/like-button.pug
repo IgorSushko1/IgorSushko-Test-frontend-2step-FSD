@@ -1,10 +1,9 @@
-div
-  img(src="imgs/insert_emoticon.svg" alt="Cinque Terre" width="48" height="48").like-button__profile-image
-div
+mixin like-button(data)
+  - data = data ? data : { value: 12 }
   label.like-button
     input(type="checkbox").like-button__input
     .like-button__background
       .like-button__empty-white
-      .like-button__num 12
+      .like-button__num= data.value
     .material-icons.like-button__favorite_border favorite_border
     .material-icons.like-button__favorite favorite

@@ -25,7 +25,29 @@ block main
       .room-detail__info_section.room-detail__info_grid
         section.room-detail__about-room
           h2.room-detail__about-room_title Сведения о номере
-          +icon-advantages
+          +icon-advantages([
+            {
+              img: "imgs/insert_emoticon.svg",
+              alt: "icon smile",
+              size: 40,
+              title: "Комфорт",
+              text: "Шумопоглащающие стены"
+            },
+            {
+              img: "imgs/location_city.svg",
+              alt: "icon building",
+              size: 40,
+              title: "Удобство",
+              text: "Окно в каждой из спален"
+            },
+            {
+              img: "imgs/whatshot.svg",
+              alt: "icon flame",
+              size: 40,
+              title: "Уют",
+              text: "Номер оснащен камином",
+              borderStyle: "__without-border"
+            }])
 
         section.room-detail__impressions
           h2.room-detail__impressions_title Впечатления от номера

@@ -1,10 +1,7 @@
-mixin radio-buttons(radioButtonClass)
+mixin checkbox-radio(array)
   form(action="").checkbox-radio
-    label.checkbox-radio__container Мужчина
-      input(type="radio" name="gender" value="this is a men's world" checked).checkbox-radio__input
-      span.checkbox-radio__checkmark
-      span.checkbox-radio__checkmark_white
-    label.checkbox-radio__container Женщина
-      input(type="radio" name="gender" value="but it would be nothing? without woman or a girl").checkbox-radio__input
-      span.checkbox-radio__checkmark
-      span.checkbox-radio__checkmark_white
+    each name in array
+      label.checkbox-radio__container= name
+        input(type="radio" name="gender" value=name checked).checkbox-radio__input
+        span.checkbox-radio__checkmark
+        span.checkbox-radio__checkmark_white

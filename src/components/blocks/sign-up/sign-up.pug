@@ -12,7 +12,7 @@ mixin sign-up
     .sing-up__surname
       +form__name("text","Фамилия", "surname", "sign-up")
     .sing-up__gender
-      +radio-buttons
+      +checkbox-radio(["Мужчина","Женщина"])
     .sing-up__birthday
       h3.sing-up__birthday_title Дата рождения
       input(type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" data-position="right top" value="ДД.ММ.ГГГГ").sing-up__pick-date
@@ -23,7 +23,7 @@ mixin sign-up
       .sing-up__registration
         +form__name("text", "Пароль", "password", "sign-up")
     .sing-up__toggle-checkbox
-      +toggle-checkbox("Получать спецпредложения")
+      +checkbox-toggle("Получать спецпредложения")
     .sing-up__button
       +button-pill__full_arrow("Перейти к оплате", "./search.html")
     .sing-up__authorization

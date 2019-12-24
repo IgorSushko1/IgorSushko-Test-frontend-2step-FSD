@@ -51,7 +51,7 @@
             <h2>Регистрация аккаунта</h2>
           </header>
           <div class="sing-up__name">
-            <form>
+            <form action="">
               <legend>
                 <div class="form__name">
                   <input class="form__name_border form__name_sign-up" type="text" value="Имя" name="name">
@@ -60,7 +60,7 @@
             </form>
           </div>
           <div class="sing-up__surname">
-            <form>
+            <form action="">
               <legend>
                 <div class="form__name">
                   <input class="form__name_border form__name_sign-up" type="text" value="Фамилия" name="surname">
@@ -71,10 +71,10 @@
           <div class="sing-up__gender">
             <form class="checkbox-radio" action="">
               <label class="checkbox-radio__container">Мужчина
-                <input type="radio" name="sex" value="this is a men's world" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
+                <input class="checkbox-radio__input" type="radio" name="gender" value="Мужчина" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
               </label>
               <label class="checkbox-radio__container">Женщина
-                <input type="radio" name="sex" value="but it would be nothing? without woman or a girl"><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
+                <input class="checkbox-radio__input" type="radio" name="gender" value="Женщина" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
               </label>
             </form>
           </div>
@@ -85,7 +85,7 @@
           <div class="sing-up__enter">
             <h3 class="sing-up__enter_title">данные для входа в сервис</h3>
             <div class="sing-up__registration">
-              <form>
+              <form action="">
                 <legend>
                   <div class="form__name">
                     <input class="form__name_border form__name_sign-up" type="email" value="Email" name="email">
@@ -94,7 +94,7 @@
               </form>
             </div>
             <div class="sing-up__registration">
-              <form>
+              <form action="">
                 <legend>
                   <div class="form__name">
                     <input class="form__name_border form__name_sign-up" type="text" value="Пароль" name="password">
@@ -104,15 +104,17 @@
             </div>
           </div>
           <div class="sing-up__toggle-checkbox">
-            <label class="checkbox-toggle">
-              <div class="checkbox-toggle__background_gradient">
-                <div class="checkbox-toggle__background_white">
-                  <input class="checkbox-toggle__input" type="checkbox" name="name" value="pets-allowed">
-                  <div class="checkbox-toggle__circle"></div>
-                  <div class="checkbox-toggle__text">Получать спецпредложения</div>
+            <form action="">
+              <label class="checkbox-toggle">
+                <div class="checkbox-toggle__background_gradient">
+                  <div class="checkbox-toggle__background_white">
+                    <input class="checkbox-toggle__input" type="checkbox">
+                    <div class="checkbox-toggle__circle"></div>
+                    <div class="checkbox-toggle__text">Получать спецпредложения</div>
+                  </div>
                 </div>
-              </div>
-            </label>
+              </label>
+            </form>
           </div>
           <div class="sing-up__button">
             <form action="./search.html">
@@ -150,7 +152,7 @@
         <nav class="footer__subscription">
           <h3 class="footer__h3">Подписка</h3>
           <div class="footer__subscription_text">Получайте специальные предложения и новости сервиса</div>
-          <form>
+          <form action="">
             <legend>
               <h3></h3>
               <div class="form__email">
@@ -163,7 +165,8 @@
       </div>
       <aside class="footer__social">
         <div class="footer__copyright">Copyright © 2019 Toxin отель. Все права зачищены.</div>
-        <div class="footer__icons"><a href="https://twitter.com/"><img src="imgs/icon-twitter.png" alt=""></a><a href="https://www.facebook.com/"><img src="imgs/icon-facebook.png" alt=""></a><a href="https://www.instagram.com/?hl=ru"><img src="imgs/icon-instagram.png" alt=""></a></div>
+        <div class="footer__icons"><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-twitter.png" alt=""></a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-facebook.png" alt=""></a><a href="https://www.instagram.com/?hl=ru" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-instagram.png" alt=""></a>
+        </div>
       </aside>
     </footer>
   <script type="text/javascript" src="bundle.js"></script></body>

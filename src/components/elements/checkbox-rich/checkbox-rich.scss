@@ -67,7 +67,7 @@
     display: block;
   }
 
-  &__container &__checkmark:after {
+  &__checkmark:after {
     z-index: 100;
     left: 10px;
     top: 6px;
@@ -79,7 +79,7 @@
     transform: rotate(45deg);
   }
 
-  &__container &__checkmark:before {
+  &__checkmark:before {
     z-index: 110;
     left: 7px;
     top: 8px;

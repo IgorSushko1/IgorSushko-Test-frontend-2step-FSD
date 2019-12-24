@@ -1,16 +1,19 @@
-mixin icon-advantages
-  .icon-advantages
-    img(src="imgs/insert_emoticon.svg" alt="Cinque Terre" width="40" height="40").icon-advantages__image
-    .icon-advantages__text
-      h3.icon-advantages__text_h3 Комфорт
-      div Шумопоглащающие стены
-  .icon-advantages
-    img(src="imgs/location_city.svg" alt="Cinque Terre" width="40" height="40").icon-advantages__image
-    .icon-advantages__text
-      h3.icon-advantages__text_h3 Удобство
-      div Окно в каждой из спален
-  .icon-advantages.border-none
-    img(src="imgs/whatshot.svg" alt="Cinque Terre" width="40" height="40").icon-advantages__image
-    .icon-advantages__text
-      h3.icon-advantages__text_h3 Уют
-      div Номер оснащен камином
+mixin icon-advantages(data)
+  -
+    data = data || [{
+      img: "imgs/insert_emoticon.svg",
+      alt: "icon smile",
+      size: 40,
+      title: "Комфорт",
+      text: "Шумопоглащающие стены",
+      borderStyle: "__without-border"
+        }
+      ]
+
+  each obj in data
+    - newClass = obj.borderStyle ? `icon-advantages${obj.borderStyle}` : "icon-advantages"
+    div(class=newClass)
+      img(src=obj.img alt=obj.alt width=obj.size height=obj.size ).icon-advantages__image
+      .icon-advantages__text
+        h3.icon-advantages__text_h3= obj.title
+        div= obj.text
