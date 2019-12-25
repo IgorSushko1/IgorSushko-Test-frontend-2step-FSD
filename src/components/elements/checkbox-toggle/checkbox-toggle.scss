@@ -15,7 +15,7 @@
     height: 1.12rem;
     width: 2.37rem;
     position: relative;
-    top: 0.06rem;
+    top: 0.07rem;
     left: 0.06rem;
     border-radius: 0.62rem;
   }
@@ -36,7 +36,7 @@
     height: 0.75rem;
     border-radius: 0.37rem;
     background: $dark-shade-025;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   &__text {
@@ -46,5 +46,4 @@
     letter-spacing: -0.008rem;
     font-size: 0.875rem;
   }
-
 }

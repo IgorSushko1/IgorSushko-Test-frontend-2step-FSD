@@ -1,7 +1,7 @@
 .hotel-room {
   width: 16.87rem;
   height: 16.06rem;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0rem 0.62rem 1.25rem rgba(31, 32, 65, 0.05);
   border-radius: 0.25rem;
   position: relative;
@@ -14,21 +14,12 @@
     height: 9.5rem;
   }
 
-  &__circles_block {
+  &__circles {
     display: flex;
     position: absolute;
     top: 8.06rem;
     right: 1rem;
     cursor: pointer;
-  }
-
-  &__circle_point {
-    width: 0.31rem;
-    height: 0.31rem;
-    border: 0.06rem solid white;
-    border-radius: 50%;
-    z-index: 1;
-    margin-left: 0.25rem;
   }
 
   &__text {
@@ -48,16 +39,16 @@
     height: 1rem;
   }
 
-  &__number_symbol {
+  &__symbol {
     font-size: 0.875rem;
     margin-left: 0.75rem;
-    font-family: "Quicksand-Medium", Arial, sans-serif;
+    font-family: 'Quicksand-Medium', Arial, sans-serif;
     position: absolute;
     top: 0.125rem;
     left: 0rem;
   }
 
-  &__number_number {
+  &__room-number {
     margin-left: 0.18rem;
     font-size: 1.12rem;
     line-height: 0;
@@ -65,25 +56,25 @@
     top: 0.56rem;
     left: 1.93rem;
     letter-spacing: 0.03em;
-    font-family: "Quicksand-Bold", Arial, sans-serif;
+    font-family: 'Quicksand-Bold', Arial, sans-serif;
   }
 
-  &__number_lux {
+  &__lux {
     color: $purple;
     position: absolute;
     top: 0.18rem;
     left: 4.5rem;
   }
 
-  &__cost_price {
+  &__price {
     top: -0.87rem;
     color: $dark-shade-050;
     position: absolute;
     right: 3.56rem;
-    font-family: "Montserrat-SemiBold", Arial, sans-serif;
+    font-family: 'Montserrat-SemiBold', Arial, sans-serif;
   }
 
-  &__cost_per-day {
+  &__per-day {
     color: $dark-shade-050;
     position: absolute;
     right: 0.68rem;
@@ -110,12 +101,12 @@
     position: absolute;
     right: 0.68rem;
     top: 0.81rem;
-  }
 
-  &__review_number {
-    font-size: 0.875rem;
-    font-family: "Montserrat-Bold", Arial, sans-serif;
-    margin-right: 0.19rem;
-    text-align: end;
+    &_numeric {
+      font-size: 0.875rem;
+      font-family: 'Montserrat-Bold', Arial, sans-serif;
+      margin-right: 0.19rem;
+      text-align: end;
+    }
   }
 }

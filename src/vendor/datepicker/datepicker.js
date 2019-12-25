@@ -589,11 +589,11 @@
         },
 
         clear: function () {
-					var $frst = $('.result-datepicker-first-date'),
+					var $frst = $('.calendar__arrival-date'),
 						// string = 'Выбранные даты: ';
-						$secnd = $('.result-datepicker-second-date');
-						$frst.html("<span class='pick-up-numbers-card-date-for-two-inputs''>ДД.ММ.ГГГГ</span>" + " " + "<span class='material-icons pick-up-numbers-card-icon-for-date'>expand_more</span>");
-						$secnd.html("<span class='pick-up-numbers-card-date-for-two-inputs'>ДД.ММ.ГГГГ</span>" + " " + "<span class='material-icons pick-up-numbers-card-icon-for-date'>expand_more</span>");
+						$secnd = $('.calendar__departure-date');
+						$frst.html("<span class='calendar__date'>ДД.ММ.ГГГГ</span>" + " " + "<span class='material-icons calendar__icon'>expand_more</span>");
+						$secnd.html("<span class='calendar__date'>ДД.ММ.ГГГГ</span>" + " " + "<span class='material-icons calendar__icon'>expand_more</span>");
             this.selectedDates = [];
             this.minRange = '';
             this.maxRange = '';

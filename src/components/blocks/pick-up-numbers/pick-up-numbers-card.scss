@@ -3,7 +3,7 @@
   height: 23.37rem;
   display: flex;
   flex-direction: column;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 0.06rem solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   box-shadow: 0.06rem 0.06rem 1.56rem rgba(0, 0, 0, 0.2);
@@ -14,8 +14,8 @@
     margin-top: 2.43rem;
     line-height: 1.9rem;
     width: 16.62rem;
-    font-family: "OpenSans-Bold", Arial, sans-serif;
-    letter-spacing: .006rem;
+    font-family: 'OpenSans-Bold', Arial, sans-serif;
+    letter-spacing: 0.006rem;
   }
 
   &__container {
@@ -25,12 +25,12 @@
   &__arrival {
     margin-top: 1.25rem;
     margin-bottom: 0.4rem;
-    font-family: "Montserrat-Bold", Arial, sans-serif;
+    font-family: 'Montserrat-Bold', Arial, sans-serif;
     letter-spacing: 0rem;
   }
 
   &__departure {
-    font-family: "Montserrat-Bold", Arial, sans-serif;
+    font-family: 'Montserrat-Bold', Arial, sans-serif;
     position: absolute;
     right: 8.2rem;
     top: 1.25rem;
@@ -39,53 +39,8 @@
   &__quest {
     margin-top: 1.35rem;
     margin-bottom: 0.4rem;
-    font-family: "Montserrat-Bold", Arial, sans-serif;
+    font-family: 'Montserrat-Bold', Arial, sans-serif;
     letter-spacing: 0rem;
-  }
-
-  &__calendar {
-    display: flex;
-    justify-content: left;
-    height: 2.62rem;
-    margin-left: -0.75rem;
-  }
-
-  &__calendar_input {
-    opacity: 0;
-  }
-
-  .result-datepicker-first-date {
-    width: 9.25rem;
-    height: 2.62rem;
-    border: 0.06rem solid rgba(31, 32, 65, 0.25);
-    border-radius: 0.25rem;
-    position: relative;
-    top: -1.06rem;
-    left: -0.5rem;
-  }
-
-  .result-datepicker-second-date {
-    width: 9.25rem;
-    height: 2.62rem;
-    border: 0.06rem solid rgba(31, 32, 65, 0.25);
-    border-radius: 0.25rem;
-    position: relative;
-    top: -1.06rem;
-    right: -0.75rem;
-  }
-
-  .pick-up-numbers-card-icon-for-date {
-    position: absolute;
-    top: 0.56rem;
-    right: 0.56rem;
-  }
-
-  .pick-up-numbers-card-date-for-two-inputs {
-    position: absolute;
-    top: 0.62rem;
-    left: 0.87rem;
-    color: rgba(31, 32, 65, 0.25);
-    font-size: 0.87rem;
   }
 
   &__dropdown {

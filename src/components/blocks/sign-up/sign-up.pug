@@ -3,6 +3,7 @@ include ../../elements/button-pill__full_arrow/button-pill__full_arrow.pug
 include ../../elements/checkbox-radio/checkbox-radio.pug
 include ../../elements/checkbox-toggle/checkbox-toggle.pug
 include ../../elements/form__name/form__name.pug
+include ../../elements/calendar/calendar.pug
 mixin sign-up
   article.sing-up
     header.sing-up__title
@@ -15,7 +16,7 @@ mixin sign-up
       +checkbox-radio(["Мужчина","Женщина"])
     .sing-up__birthday
       h3.sing-up__birthday_title Дата рождения
-      input(type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" data-position="right top" value="ДД.ММ.ГГГГ").sing-up__pick-date
+      +calendar("ДД.ММ.ГГГГ", "", "datepicker-single", "birthday")
     .sing-up__enter
       h3.sing-up__enter_title данные для входа в сервис
       .sing-up__registration

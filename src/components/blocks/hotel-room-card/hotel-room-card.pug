@@ -5,19 +5,19 @@ mixin hotel-room-card(imgName, numberOfStars, roomNumber, price, lux, review, re
   .hotel-room
     a(href=ref)
       img(src=imgName, alt="" ).hotel-room__img
-    .hotel-room__circles_block
+    .hotel-room__circles
       +pagination-circle(numOfPugination)
     .hotel-room__text
       .hotel-room__number
-        h3.hotel-room__number_symbol №
-        h2.hotel-room__number_number= roomNumber
+        h3.hotel-room__symbol №
+        h2.hotel-room__room-number= roomNumber
         if (lux == "lux")
-          h3.hotel-room__number_lux люкс
+          h3.hotel-room__lux люкс
       .hotel-room__cost
-        p.hotel-room__cost_price= price
-        span.hotel-room__cost_per-day в сутки
+        p.hotel-room__price= price
+        span.hotel-room__per-day в сутки
     .hotel-room__raiting
       +star-rating(numberOfStars)
       .hotel-room__review
-        h3.hotel-room__review_number= review
+        h3.hotel-room__review_numeric= review
         span Отзывов

@@ -1,5 +1,6 @@
 include ../../elements/button-pill__full_arrow/button-pill__full_arrow.pug
 include ../../../vendor/dropdown/dropdown-subparagraph.pug
+include ../../elements/calendar/calendar.pug
 
 mixin pick-up-numbers
   article.pick-up-numbers
@@ -10,13 +11,8 @@ mixin pick-up-numbers
       h3.pick-up-numbers__departure Выезд
 
       label.pick-up-numbers__calendar
-        input(type="checkbox" id="datepicker" data-range="true" data-multiple-dates-separator=" - " clearButton="true" class="datepicker-here" data-position="bottom left").pick-up-numbers__calendar_input
-        p(class="result-datepicker-first-date")
-          span.pick-up-numbers-card-date-for-two-inputs ДД.ММ.ГГГГ
-          span.material-icons.pick-up-numbers-card-icon-for-date expand_more
-        p(class="result-datepicker-second-date")
-          span.pick-up-numbers-card-date-for-two-inputs ДД.ММ.ГГГГ
-          span.material-icons.pick-up-numbers-card-icon-for-date expand_more
+        +calendar("ДД.ММ.ГГГГ", "ДД.ММ.ГГГГ", "#datepicker", "duble")
+
     section
       h3.pick-up-numbers__quest Гости
       .pick-up-numbers__dropdown

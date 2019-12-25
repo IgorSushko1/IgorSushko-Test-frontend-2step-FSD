@@ -34,6 +34,7 @@
   }
 
   &__birthday {
+    position: relative;
     margin-top: 1.65rem;
   }
 
@@ -68,7 +69,7 @@
   }
 
   &__toggle-checkbox {
-    margin-top: 0.0rem;
+    margin-top: 0rem;
   }
 
   &__button {
