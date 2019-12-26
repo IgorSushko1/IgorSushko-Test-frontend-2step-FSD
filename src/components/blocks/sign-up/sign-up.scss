@@ -36,11 +36,11 @@
   &__birthday {
     position: relative;
     margin-top: 1.65rem;
-  }
 
-  &__birthday_title {
-    margin-left: -0.06rem;
-    letter-spacing: 0.01rem;
+    &_title {
+      margin-left: -0.06rem;
+      letter-spacing: 0.01rem;
+    }
   }
 
   &__pick-date {
@@ -55,11 +55,11 @@
 
   &__enter {
     margin-top: 1.25rem;
-  }
 
-  &__enter_title {
-    margin-left: -0.06rem;
-    letter-spacing: 0.007em;
+    &_title {
+      margin-left: -0.06rem;
+      letter-spacing: 0.007em;
+    }
   }
 
   &__registration {
@@ -84,10 +84,10 @@
     margin-top: 1.87rem;
     margin-left: -0.06rem;
     letter-spacing: -0.01rem;
-  }
 
-  &__authorization_text {
-    font-size: 0.87rem;
-    margin: 0;
+    &_text {
+      font-size: 0.87rem;
+      margin: 0;
+    }
   }
 }

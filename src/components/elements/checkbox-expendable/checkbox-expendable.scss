@@ -7,7 +7,7 @@
     letter-spacing: 0rem;
   }
 
-  &__drop_btn {
+  &__btn {
     background-color: white;
     color: $dark-shade-075;
     cursor: pointer;
@@ -26,11 +26,11 @@
     color: $dark-shade-100;
   }
 
-  &__dropdown_hide {
+  &__hiden {
     display: none;
   }
 
-  &__dropdown_show {
+  &__visible {
     padding-top: 0.93rem;
     display: block;
     top: 2.75rem;

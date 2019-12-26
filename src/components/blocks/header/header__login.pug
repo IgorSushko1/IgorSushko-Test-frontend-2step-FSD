@@ -1,18 +1,19 @@
 - var links = [{types:"bold", link:"", text:"Home"},{types:"simple", link:"", text:"About Us"},{types:"arrow", link:"", text:"Services"},{types:"simple", link:"", text:"Careers"},{types:"simple", link:"", text:"News"},{types:"simple", link:"", text:"Documentation"}]
-.header
-  img(src="imgs/Logo.png" alt="" ).header__image
-  .header__menu
-    ul.header__list
-      each i in links
-        if i.types == "simple"
-          li.header__point
-            a(href=i.link).header__link= i.text
-        else if i.types == "bold"
-          li.header__point
-            a(href=i.link).header__link_bold= i.text
-        else if i.types=="arrow"
-          li.header__point
-            .header__dropdown
-              span.header__link= i.text
-              span.material-icons keyboard_arrow_down
-    .header__login_in Cosmin Negoita
+mixin header__login
+  .header
+    img(src="imgs/Logo.png" alt="" ).header__image
+    .header__menu
+      ul.header__list
+        each i in links
+          if i.types == "simple"
+            li.header__point
+              a(href=i.link).header__link= i.text
+          else if i.types == "bold"
+            li.header__point
+              a(href=i.link).header__link_bold= i.text
+          else if i.types=="arrow"
+            li.header__point
+              .header__dropdown
+                span.header__link= i.text
+                span.material-icons keyboard_arrow_down
+      .header__login_in Cosmin Negoita

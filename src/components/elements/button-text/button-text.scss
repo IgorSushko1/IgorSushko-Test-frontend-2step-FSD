@@ -1,13 +1,14 @@
-.button__text {
+.button-text {
   background-color: none;
   border: none;
-  color: $dark-shade-050;
+  color: $dark-shade-075;
   padding: 1rem 2rem;
   text-align: center;
   font-size: 1rem;
   margin: 0.25rem 0.125rem;
   opacity: 0.6;
   transition: 0.3s;
+  text-transform: uppercase;
 
   &:hover {
     opacity: 1;

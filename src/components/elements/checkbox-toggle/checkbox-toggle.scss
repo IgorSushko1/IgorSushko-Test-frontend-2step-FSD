@@ -1,7 +1,7 @@
 .checkbox-toggle {
   width: 25rem;
 
-  &__background_gradient {
+  &__gradient {
     background: linear-gradient(180deg, $dark-shade-025, $dark-shade-025);
     width: 2.5rem;
     height: 1.25rem;
@@ -10,7 +10,7 @@
     padding: 0;
   }
 
-  &__background_white {
+  &__white {
     background: #fff;
     height: 1.12rem;
     width: 2.37rem;

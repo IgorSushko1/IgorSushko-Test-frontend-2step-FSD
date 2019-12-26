@@ -16,15 +16,16 @@ html
       h2 Hello!
     div
       include ./components/elements/fonts-list/fonts-list.pug
+      +fonts-list
     include ./components/elements/color-example/color-example.pug
 
-    +color-example("Dark Shade 100%", "#1F2041")(class="rectangle dark-shade-100")
-    +color-example("Dark Shade 75%", "#1F2041")(class="rectangle dark-shade-075")
-    +color-example("Dark Shade 50%", "#1F2041")(class="rectangle dark-shade-050")
-    +color-example("Dark Shade 25%", "#1F2041")(class="rectangle dark-shade-025")
-    +color-example("Dark Shade 5%", "#1F2041")(class="rectangle dark-shade-005")
-    +color-example("Purple", "#BC9CFF")(class="rectangle purple")
-    +color-example("Green", "#6FCF97")(class="rectangle green")
+    +color-example("Dark Shade 100%", "#1F2041", "__dark-shade-100")
+    +color-example("Dark Shade 75%", "#1F2041", "__dark-shade-075")
+    +color-example("Dark Shade 50%", "#1F2041", "__dark-shade-050")
+    +color-example("Dark Shade 25%", "#1F2041", "__dark-shade-025")
+    +color-example("Dark Shade 5%", "#1F2041", "__dark-shade-005")
+    +color-example("Purple", "#BC9CFF", "__purple")
+    +color-example("Green", "#6FCF97", "__green")
 
     include ./components/elements/form__email/form__email.pug
     +form__email("email", "Your email adress", "field name")
@@ -40,6 +41,7 @@ html
       +dropdown-room-comfort
     div
       include ./components/elements/checkbox-toggle/checkbox-toggle.pug
+      +checkbox-toggle("Получать спецпредложения")
     div
       include ./components/elements/checkbox-button/checkbox-button.pug
       +checkbox-button("Можно курить", "")
@@ -62,6 +64,7 @@ html
       +button-pill__empty("REGISTER")
     div
       include ./components/elements/button-text/button-text.pug
+      +button-text("text")
     div
       include ./components/elements/button-pill__full_arrow/button-pill__full_arrow.pug
     +button-pill__full_arrow("CLICK ME")
@@ -70,11 +73,15 @@ html
       +like-button({value: 11})
     div
       include ./components/elements/calendar/calendar.pug
+      +calendar("19.08.2019", "23.08.2019", "#datepicker", "duble")
     div
       include ./vendor/range-slider/range-slider.pug
       +range-slider
     div
       include ./vendor/dropdown/dropdown-subparagraph.pug
+      +dropdown-examples
+      +dropdown-people
+      +dropdown-room-comfort
     div
       include ./components/elements/checkbox-expendable/checkbox-expendable.pug
       +checkbox-expendable({title: "Дополнительные удобства", textsAndChecked: {
@@ -131,13 +138,16 @@ html
       +header
     div
       include ./components/blocks/header/header__login.pug
+      +header__login
     div
       include ./components/blocks/footer/footer.pug
       +footer
     div
       include ./components/blocks/footer/footer-mobile.pug
+      +footer-mobile
     div
-      include ./components/blocks/pick-up-numbers/pick-up-numbers-card.pug
+      include ./components/blocks/pick-up-numbers/pick-up-numbers.pug
+      +pick-up-numbers
     div
       include ./components/blocks/sign-up/sign-up.pug
       +sign-up

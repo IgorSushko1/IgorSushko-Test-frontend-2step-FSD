@@ -10,11 +10,11 @@ $(document).ready(() => {
       dates.forEach((date) => {
         string += `${date.getDate().toString().padStart(2, '0')}.${(date.getMonth() + 1).toString().padStart(2, '0')}.${date.getFullYear()} `;
       });
-      const firstDate = string.split(reg);
+      const arrayDate = string.split(reg);
 
 
-      $frst.html(`<div class="calendar__date" style="color:rgba(31, 32, 65, 0.75)">${firstDate[1]}</div>` + ' ' + '<span class="material-icons calendar__icon">expand_more</span>');
-      $secnd.html(`<div class="calendar__date" style="color:rgba(31, 32, 65, 0.75)">${firstDate[2]}</div>` + ' ' + '<span class="material-icons calendar__icon">expand_more</span>');
+      $frst.html(`<div class="calendar__date" style="color:rgba(31, 32, 65, 0.75)">${arrayDate[1]}</div>` + ' ' + '<span class="material-icons calendar__icon">expand_more</span>');
+      $secnd.html(`<div class="calendar__date" style="color:rgba(31, 32, 65, 0.75)">${arrayDate[2]}</div>` + ' ' + '<span class="material-icons calendar__icon">expand_more</span>');
     },
     showButtonPanel: true,
     dateFormat: 'yy.mm.dd',
@@ -49,10 +49,10 @@ $(document).ready(() => {
         const mon = ['янв', 'фев', 'мар', 'апр', 'май', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'];
         string += `${date.getDate().toString().padStart(2, '0')} ${mon[date.getMonth()]}`;
       });
-      const firstDate = string.split(reg);
+      const arrayDate = string.split(reg);
 
 
-      $frst.html(`<div class="calendar__date" style="color:rgba(31, 32, 65, 0.75)">${firstDate[1]} - ${firstDate[3]}</div>`);
+      $frst.html(`<div class="calendar__date" style="color:rgba(31, 32, 65, 0.75)">${arrayDate[1]} - ${arrayDate[3]}</div>`);
     },
 
     showButtonPanel: true,

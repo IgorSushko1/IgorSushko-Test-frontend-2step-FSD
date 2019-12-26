@@ -1,7 +1,7 @@
 mixin star-rating(num)
-  .rating
+  .star-rating
     - for (let i=0; i<5; i++)
       if (num+i > 4)
-        .rating__star_filled
+        .star-rating__filled
       else
-        .rating__star_empty
+        .star-rating__empty

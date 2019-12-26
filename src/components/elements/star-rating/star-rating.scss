@@ -1,9 +1,9 @@
-.rating {
+.star-rating {
   transform: rotateY(180deg);
   display: flex;
   position: relative;
 
-  &__star_filled:before {
+  &__filled:before {
     display: block;
     cursor: pointer;
     width: 1.5rem;
@@ -16,7 +16,7 @@
     z-index: 1;
   }
 
-  &__star_empty:before {
+  &__empty:before {
     display: block;
     cursor: pointer;
     width: 1.5rem;

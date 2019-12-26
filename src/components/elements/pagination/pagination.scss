@@ -7,7 +7,9 @@
   left: -0.43rem;
   font-size: 0.75rem;
 
-  &__grid-item {
+  &__start,
+  &__grid-item,
+  &__arrow {
     text-align: center;
     justify-content: center;
     height: 2.5rem;
@@ -15,26 +17,28 @@
     color: $dark-shade-050;
   }
 
-  &__first-number {
-    background: linear-gradient(180deg, rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
+  &__start {
+    background: linear-gradient(
+      180deg,
+      rgba(188, 156, 255, 1),
+      rgba(139, 164, 249, 1)
+    );
     border-radius: 50%;
     color: white;
   }
 
   &__arrow {
-    background: linear-gradient(180deg, #6FCF97, #66D2EA);
+    background: linear-gradient(180deg, #6fcf97, #66d2ea);
     border-radius: 50%;
     color: white;
   }
 
-
   &__description {
     margin-top: 0.62rem;
     font-size: 0.93rem;
-    font-family: "Montserrat-Regular", Arial, sans-serif;
+    font-family: 'Montserrat-Regular', Arial, sans-serif;
     letter-spacing: 0.03em;
     position: relative;
     left: -0.56rem;
   }
-
 }

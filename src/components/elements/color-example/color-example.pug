@@ -1,5 +1,6 @@
-mixin color-example(title, color)
+mixin color-example(title, color, colorClass)
+  - colorClass = colorClass ? `color-example${colorClass}`: ""
   div
-    div&attributes(attributes)
+    .color-example(class=colorClass)
     div= title
     div= color

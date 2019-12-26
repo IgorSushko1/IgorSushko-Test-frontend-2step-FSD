@@ -17,7 +17,9 @@
 
   &__list {
     display: flex;
+    margin-top: 20px;
     font-size: 0.875rem;
+    letter-spacing: -0.005rem;
   }
 
   &__point {
@@ -25,7 +27,8 @@
     list-style-type: none;
   }
 
-  &__link {
+  &__link,
+  &__link_bold {
     text-decoration: none;
     color: $dark-shade-075;
     margin: 0;
@@ -34,36 +37,23 @@
   }
 
   &__link_bold {
-    text-decoration: none;
-    color: $dark-shade-075;
-    margin: 0;
-    padding: 0;
-    margin-right: 0.06rem;
     font-weight: bold;
+  }
+
+  &__icon {
+    font-size: 1.5rem;
+    position: relative;
+    top: -0.06rem;
   }
 
   &__dropdown {
     display: inline-flex;
   }
 
-  &__point .material-icons {
-    font-size: 1.5rem;
-    position: relative;
-    top: -0.06rem;
-    height: 0rem;
-  }
-
   &__button {
     display: flex;
     align-items: center;
-  }
-
-  &__button .button-pill__full {
-    margin-left: 1.375rem;
-  }
-
-  &__button .button-pill__empty {
-    margin-left: 1.25rem;
+    margin-left: 1.4rem;
   }
 
   &__login_in {

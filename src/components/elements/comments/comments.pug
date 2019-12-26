@@ -1,3 +1,5 @@
+include ../like-button/like-button.pug
+
 mixin comments(img, name, date, likes, check, text)
   .comments
     div
@@ -6,14 +8,5 @@ mixin comments(img, name, date, likes, check, text)
       h3.comments__name= name
       .comments__date= date
     .comments__like-button
-      label.like-button
-        if (check == "checked")
-          input(type="checkbox" checked).like-button__input
-        if (check != "checked")
-          input(type="checkbox").like-button__input
-        .like-button__background
-          .like-button__empty-white
-          .like-button__num= likes
-        .material-icons.like-button__favorite_border favorite_border
-        .material-icons.like-button__favorite favorite
+      +like-button({value: likes})
     .comments__description= text

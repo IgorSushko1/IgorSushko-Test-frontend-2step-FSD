@@ -22,18 +22,20 @@
           <ul class="header__list">
             <li class="header__point"><a class="header__link" href="">О нас</a></li>
             <li class="header__point">
-              <div class="header__dropdown"><span class="header__link">Услуги</span><span class="material-icons">keyboard_arrow_down</span></div>
+              <div class="header__dropdown"><a class="header__link">Услуги</a><span class="material-icons header__icon">keyboard_arrow_down</span></div>
             </li>
             <li class="header__point"><a class="header__link" href="">Вакансии</a></li>
             <li class="header__point"><a class="header__link" href="">Новости</a></li>
             <li class="header__point">
-              <div class="header__dropdown"><span class="header__link">Соглашения</span><span class="material-icons">keyboard_arrow_down</span></div>
+              <div class="header__dropdown"><a class="header__link">Соглашения</a><span class="material-icons header__icon">keyboard_arrow_down</span></div>
             </li>
           </ul>
           <div class="header__button">
             <form action="./registration-sign-in.html">
               <button class="button-pill__empty">ВОЙТИ</button>
             </form>
+          </div>
+          <div class="header__button">
             <form action="./registration-sign-up.html">
               <button class="button-pill__full">ЗАРЕГИСТРИРОВАТЬСЯ</button>
             </form>
@@ -52,19 +54,19 @@
             <h2 class="room-detail__about-room_title">Сведения о номере</h2>
             <div class="icon-advantages"><img class="icon-advantages__image" src="imgs/insert_emoticon.svg" alt="icon smile" width="40" height="40">
               <div class="icon-advantages__text">
-                <h3 class="icon-advantages__text_h3">Комфорт</h3>
+                <h3 class="icon-advantages__title">Комфорт</h3>
                 <div>Шумопоглащающие стены</div>
               </div>
             </div>
             <div class="icon-advantages"><img class="icon-advantages__image" src="imgs/location_city.svg" alt="icon building" width="40" height="40">
               <div class="icon-advantages__text">
-                <h3 class="icon-advantages__text_h3">Удобство</h3>
+                <h3 class="icon-advantages__title">Удобство</h3>
                 <div>Окно в каждой из спален</div>
               </div>
             </div>
             <div class="icon-advantages__without-border"><img class="icon-advantages__image" src="imgs/whatshot.svg" alt="icon flame" width="40" height="40">
               <div class="icon-advantages__text">
-                <h3 class="icon-advantages__text_h3">Уют</h3>
+                <h3 class="icon-advantages__title">Уют</h3>
                 <div>Номер оснащен камином</div>
               </div>
             </div>
@@ -114,7 +116,7 @@
               </div>
               <div class="comments__like-button">
                 <label class="like-button">
-                  <input class="like-button__input" type="checkbox" checked>
+                  <input class="like-button__input" type="checkbox">
                   <div class="like-button__background">
                     <div class="like-button__empty-white"></div>
                     <div class="like-button__num">12</div>
@@ -182,11 +184,17 @@
             <div class="booking__pick-date">
               <h3 class="booking__arrival">Прибытие</h3>
               <h3 class="booking__departure">Выезд</h3>
-              <label class="calendar">
-                <input class="datepicker-here calendar__datepicker" type="checkbox" id="datepicker" data-range="true" data-multiple-dates-separator=" - " clearButton="true" data-position="bottom left">
-                <p class="result-datepicker-first-date"><span class="pick-up-numbers-card-date-for-two-inputs">19.08.2019</span><span class="material-icons pick-up-numbers-card-icon-for-date">expand_more</span></p>
-                <p class="result-datepicker-second-date"><span class="pick-up-numbers-card-date-for-two-inputs">23.08.2019</span><span class="material-icons pick-up-numbers-card-icon-for-date">expand_more</span></p>
-              </label>
+              <form action="">
+                <label class="calendar">
+                  <input class="datepicker-here calendar__datepicker" type="checkbox" id="datepicker__duble" data-range="true" data-multiple-dates-separator=" - " clearButton="true" data-position="bottom left">
+                  <div class="calendar__arrival-date">
+                    <div class="calendar__date">19.08.2019</div><span class="material-icons calendar__icon">expand_more</span>
+                  </div>
+                  <div class="calendar__departure-date">
+                    <div class="calendar__date">23.08.2019</div><span class="material-icons calendar__icon">expand_more</span>
+                  </div>
+                </label>
+              </form>
             </div>
             <div class="booking__guests">
               <h3 class="booking__guests_title">Гости</h3>
@@ -245,13 +253,13 @@
           <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
         <nav class="footer__navigation">
-          <h3 class="footer__links_title">Навигация</h3><a class="footer__links_point" href="./aaa.html">О нас</a><a class="footer__links_point" href="./aaa.html">Новости</a><a class="footer__links_point" href="./aaa.html">Служба поддержки</a><a class="footer__links_point" href="./aaa.html">Услуги</a>
+          <h3 class="footer-links_title">Навигация</h3><a class="footer-links_point" href="./aaa.html">О нас</a><a class="footer-links_point" href="./aaa.html">Новости</a><a class="footer-links_point" href="./aaa.html">Служба поддержки</a><a class="footer-links_point" href="./aaa.html">Услуги</a>
         </nav>
         <nav class="footer__about">
-          <h3 class="footer__links_title">О нас</h3><a class="footer__links_point" href="./aaa.html">О сервисе</a><a class="footer__links_point" href="./aaa.html">Наша команда</a><a class="footer__links_point" href="./aaa.html">Вакансии</a><a class="footer__links_point" href="./aaa.html">Инвесторы</a>
+          <h3 class="footer-links_title">О нас</h3><a class="footer-links_point" href="./aaa.html">О сервисе</a><a class="footer-links_point" href="./aaa.html">Наша команда</a><a class="footer-links_point" href="./aaa.html">Вакансии</a><a class="footer-links_point" href="./aaa.html">Инвесторы</a>
         </nav>
         <nav class="footer__support">
-          <h3 class="footer__links_title">Служба поддержки</h3><a class="footer__links_point" href="./aaa.html">Соглашения</a><a class="footer__links_point" href="./aaa.html">Сообщества</a><a class="footer__links_point" href="./aaa.html">Связь с нами</a>
+          <h3 class="footer-links_title">Служба поддержки</h3><a class="footer-links_point" href="./aaa.html">Соглашения</a><a class="footer-links_point" href="./aaa.html">Сообщества</a><a class="footer-links_point" href="./aaa.html">Связь с нами</a>
         </nav>
         <nav class="footer__subscription">
           <h3 class="footer__h3">Подписка</h3>

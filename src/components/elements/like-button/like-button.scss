@@ -45,6 +45,15 @@
     border-radius: 0.62rem;
   }
 
+  &__num {
+    z-index: 3;
+    position: absolute;
+    top: 0.25rem;
+    right: 0.68rem;
+    font-weight: 500;
+    font-size: 0.62rem;
+  }
+
   &__favorite_border {
     z-index: 5;
     font-size: 0.62rem;
@@ -69,14 +78,5 @@
   }
   &__input:checked ~ &__favorite_border {
     display: none;
-  }
-
-  &__num {
-    z-index: 3;
-    position: absolute;
-    top: 0.25rem;
-    right: 0.68rem;
-    font-weight: 500;
-    font-size: 0.62rem;
   }
 }

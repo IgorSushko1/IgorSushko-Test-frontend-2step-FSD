@@ -1,26 +1,22 @@
 .form__name {
   height: 46px;
 
-  &_border {
+  &_sign-up,
+  &_sign-in {
+    box-sizing: border-box;
     border: 1px solid $dark-shade-025;
-    border-radius: 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    height: 44px;
   }
 
   &_sign-up {
     width: 320px;
-    height: 44px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 4px;
     padding-left: 15px;
   }
 
   &_sign-in {
     width: 318px;
-    height: 44px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 4px;
     margin: 10px 0 0 0;
     padding-left: 16px;
   }

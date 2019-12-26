@@ -1,15 +1,15 @@
-function foo() {
-  const elem = document.querySelectorAll('.checkbox-expendable__dropdown')[0];
-  elem.classList.toggle('checkbox-expendable__dropdown_show');
+function checkboxExpendable() {
+  const elem = document.querySelectorAll('.js__checkbox-expendable_hiden')[0];
+  elem.classList.toggle('checkbox-expendable__visible');
   if (document.querySelectorAll('.checkbox-expendable__icons')[0]) {
     const icon = document.querySelectorAll('.checkbox-expendable__icons')[0];
-    if (icon.innerHTML == 'keyboard_arrow_up') {
+    if (icon.innerHTML === 'keyboard_arrow_up') {
       icon.innerHTML = 'keyboard_arrow_down';
     } else {
       icon.innerHTML = 'keyboard_arrow_up';
     }
   }
 }
-if (document.querySelectorAll('.checkbox-expendable__start')[0]) {
-  document.querySelectorAll('.checkbox-expendable__start')[0].addEventListener('click', foo);
+if (document.querySelectorAll('.js__checkbox-expendable')[0]) {
+  document.querySelectorAll('.js__checkbox-expendable')[0].addEventListener('click', checkboxExpendable);
 }

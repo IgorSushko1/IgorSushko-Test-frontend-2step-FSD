@@ -1,7 +1,7 @@
 include ../../elements/button-pill__empty/button-pill__empty.pug
 include ../../elements/button-pill__full/button-pill__full.pug
 
-mixin header(buttonTextOne, buttonTextTwo)
+mixin header(buttonTextOne, buttonTextTwo, login)
   - var links = [{types:"simple", link:"", text:"О нас"},{types:"arrow", link:"", text:"Услуги"},{types:"simple", link:"", text:"Вакансии"},{types:"simple", link:"", text:"Новости"},{types:"arrow", link:"", text:"Соглашения"}]
 
   .header
@@ -19,8 +19,12 @@ mixin header(buttonTextOne, buttonTextTwo)
           else if i.types=="arrow"
             li.header__point
               .header__dropdown
-                span.header__link= i.text
-                span.material-icons keyboard_arrow_down
-      .header__button
-        +button-pill__empty(buttonTextOne, "./registration-sign-in.html")
-        +button-pill__full(buttonTextTwo, "./registration-sign-up.html")
+                a.header__link= i.text
+                span.material-icons.header__icon keyboard_arrow_down
+      if (login)
+        .header__login_in Cosmin Negoita
+      else
+        .header__button
+          +button-pill__empty(buttonTextOne, "./registration-sign-in.html")
+        .header__button
+          +button-pill__full(buttonTextTwo, "./registration-sign-up.html")

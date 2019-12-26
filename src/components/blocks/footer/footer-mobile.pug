@@ -1,11 +1,12 @@
 include ../../elements/social-network/social-network.pug
 
-.footer-mobile
-  img(src="imgs/Logo.png" alt="" width="105" height="40")
-  div.footer-mobile__text.
-    Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+mixin footer-mobile
+  .footer-mobile
+    img(src="imgs/Logo.png" alt="" width="105" height="40")
+    div.footer-mobile__text.
+      Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
 
-  .footer-mobile__icons
-    +social-network("https://twitter.com/", "imgs/icon-twitter.png")
-    +social-network("https://www.facebook.com/", "imgs/icon-facebook.png")
-    +social-network("https://www.instagram.com/?hl=ru", "imgs/icon-instagram.png")
+    .footer-mobile__icons
+      +social-network("https://twitter.com/", "imgs/icon-twitter.png")
+      +social-network("https://www.facebook.com/", "imgs/icon-facebook.png")
+      +social-network("https://www.instagram.com/?hl=ru", "imgs/icon-instagram.png")

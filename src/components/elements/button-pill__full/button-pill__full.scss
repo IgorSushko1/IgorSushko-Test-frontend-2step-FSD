@@ -1,15 +1,15 @@
 .button-pill__full {
-  background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+  display: inline-block;
+  cursor: pointer;
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
   border: none;
   color: white;
   height: 2.125rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
+  padding: 0 1.187rem;
   border-radius: 1.375rem;
   font-size: 0.687rem;
   letter-spacing: 0.05rem;
-  font-family: "Montserrat-SemiBold", Arial, sans-serif;
-  padding: 0 1.187rem;
+  font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
 }
