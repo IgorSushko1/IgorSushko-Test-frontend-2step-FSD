@@ -1,22 +1,22 @@
 .footer-mobile {
-  width: 1440px;
-  height: 367px;
+  width: 90rem;
+  height: 22.9rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
   &__text {
-    margin-top: 20px;
-    max-width: 560px;
+    margin-top: 1.25rem;
+    max-width: 35rem;
     text-align: center;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   &__icons {
-    margin-top: 25px;
+    margin-top: 0.875rem‬;
     display: grid;
-    grid-template-columns: 24px 24px 24px;
-    grid-column-gap: 20px;
+    grid-template-columns: 1.5rem 1.5rem 1.5rem;
+    grid-column-gap: 1.25rem;
   }
 }
