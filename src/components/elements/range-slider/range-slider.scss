@@ -1,0 +1,21 @@
+.range-slider {
+  &__form {
+    position: relative;
+    height: 88px;
+  }
+  &__amount-of-money {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1;
+    top: 1.93rem;
+    letter-spacing: 0.006rem;
+    margin-left: 0.01rem;
+  }
+
+  &__description {
+    font-size: 12px;
+    color: rgba(31, 32, 65, 0.25);
+    letter-spacing: -0.01em;
+  }
+}
