@@ -24,7 +24,7 @@
 
 [Поиск номеров](http://localhost:9000/search.html)
 
-(Детальная карточка первого номера со страницы поиска номеров)[http://localhost:9000/room-detail.html]
+[Детальная карточка первого номера со страницы поиска номеров](http://localhost:9000/room-detail.html)
 
 GitHub Pages :
 
