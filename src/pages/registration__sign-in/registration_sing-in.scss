@@ -1,13 +1,15 @@
-.registration___sign-in {
-  overflow: hidden;
-  position: relative;
-}
+.registration {
+  &___sign-in {
+    overflow: hidden;
+    position: relative;
 
-.registration__sign-in_image {
-  position: relative;
-  top: -1.43rem;
-  left: 0rem;
-  transform: scaleY(1.138);
-  width: 90rem;
-  height: 42.37rem;
+    &_image {
+      position: relative;
+      top: -1.43rem;
+      left: 0rem;
+      transform: scaleY(1.138);
+      width: 90rem;
+      height: 42.37rem;
+    }
+  }
 }

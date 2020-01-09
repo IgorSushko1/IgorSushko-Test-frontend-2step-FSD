@@ -27,7 +27,6 @@
     margin-bottom: 0.15rem;
   }
 
-  &__info_section,
   &__booking-room {
     margin: 4.37rem 2.18rem;
   }
@@ -36,6 +35,7 @@
     display: grid;
     grid-template-columns: 22.25rem 22.25rem;
     grid-template-rows: 17.6rem 22rem auto;
+    margin: 4.37rem 2.18rem;
   }
 
   &__about-room_title {

@@ -3,7 +3,7 @@ include ../checkbox-button/checkbox-button.pug
 mixin checkbox-expendable({title, textsAndChecked}={})
   .checkbox-expendable
     button(class="checkbox-expendable__btn js__checkbox-expendable") 
-      h3.h3_bold.checkbox-expendable__title= title
+      h3.checkbox-expendable__title= title
       span.material-icons.checkbox-expendable__icons keyboard_arrow_down
     .js__checkbox-expendable_hiden.checkbox-expendable__hiden
       each val, index in textsAndChecked

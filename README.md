@@ -9,11 +9,11 @@
 
 Запуск версии для разработки с webpack dev server `npm run dev:dev`.
 Адреса для отслеживания изменений, при использовании webpack dev server:
-`http://localhost:9000/landing-one.html`
+`http://localhost:9000/landing.html`
 `http://localhost:9000/registration-sign-up.html`
 `http://localhost:9000/registration-sign-in.html`
-`http://localhost:9000/search-page.html`
-`http://localhost:9000/room.html`
+`http://localhost:9000/search.html`
+`http://localhost:9000/room-detail.html`
 
 Запуск версии для разработки `npm run dev`.
 
