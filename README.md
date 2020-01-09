@@ -22,7 +22,7 @@
 
 GitHub Pages :
 
-https://igorsushko1.github.io/IgorSushko-Test-frontend-2step-FSD/dist/room-вуефшд.html
+https://igorsushko1.github.io/IgorSushko-Test-frontend-2step-FSD/dist/room-detail.html
 
 https://igorsushko1.github.io/IgorSushko-Test-frontend-2step-FSD/dist/landing.html
 
