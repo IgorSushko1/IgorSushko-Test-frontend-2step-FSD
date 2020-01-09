@@ -35,10 +35,9 @@ html
     +form__name("email","Email", "email-sign-in", "sign-in")
     +form__name("email","Email", "email-sign-up", "sign-up")
     div
-      include ./vendor/dropdown/dropdown-subparagraph.pug
-      +dropdown-examples
-      +dropdown-people
-      +dropdown-room-comfort
+      include ./components/elements/iqdropdown/iqdropdown.pug
+      +iqdropdown({arr:["Взрослые", "Дети", "Младенцы"], classForJs:"js__iqdropdown_people"})
+      +iqdropdown({arr:["Спальни", "Кровати", "Ванные комнаты"], classForJs:"js__iqdropdown_options"})
     div
       include ./components/elements/checkbox-toggle/checkbox-toggle.pug
       +checkbox-toggle("Получать спецпредложения")
@@ -77,11 +76,6 @@ html
     div
       include ./components/elements/range-slider/range-slider.pug
       +range-slider
-    div
-      include ./vendor/dropdown/dropdown-subparagraph.pug
-      +dropdown-examples
-      +dropdown-people
-      +dropdown-room-comfort
     div
       include ./components/elements/checkbox-expendable/checkbox-expendable.pug
       +checkbox-expendable({title: "Дополнительные удобства", textsAndChecked: {

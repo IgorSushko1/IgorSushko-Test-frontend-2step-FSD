@@ -1,5 +1,5 @@
 include ../../elements/button-pill__full_arrow/button-pill__full_arrow.pug
-include ../../../vendor/dropdown/dropdown-subparagraph.pug
+include ../../elements/iqdropdown/iqdropdown.pug
 include ../../elements/calendar/calendar.pug
 
 mixin pick-up-numbers
@@ -16,6 +16,6 @@ mixin pick-up-numbers
     section
       h3.pick-up-numbers__quest Гости
       .pick-up-numbers__dropdown
-        +dropdown-people
+        +iqdropdown({arr:["Взрослые", "Дети", "Младенцы"], classForJs:"js__iqdropdown_people"})
     .pick-up-numbers__button
       +button-pill__full_arrow("подобрать номер", "./search.html")

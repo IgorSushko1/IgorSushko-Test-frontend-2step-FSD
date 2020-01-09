@@ -1,7 +1,7 @@
 extends ../basis/basis.pug
 
 
-include ../../vendor/dropdown/dropdown-subparagraph.pug
+include ../../components/elements/iqdropdown/iqdropdown.pug
 
 include ../../components/blocks/hotel-room-card/hotel-room-card.pug
 
@@ -25,7 +25,7 @@ block main
       h3.search-page__datepicker_title Даты пребывания в отеле
       +calendar("19 авг - 23 авг", "", "#datepicker-single", "single")
       h3.search-page__dropdown_title Гости
-      +dropdown-people
+      +iqdropdown({arr:["Взрослые", "Дети", "Младенцы"], classForJs:"js__iqdropdown_people"})
       +range-slider
       h3.search-page__checkbox_title checkbox buttons
       +checkbox-button("Можно курить", "")
@@ -41,7 +41,7 @@ block main
       ]})
       .search-page__dropdown
         h3.search-page__dropdown_title Удобства номера
-        +dropdown-room-comfort
+        +iqdropdown({arr:["Спальни", "Кровати", "Ванные комнаты"], classForJs:"js__iqdropdown_options"})
       .search-page__expendable-checkbox
         +checkbox-expendable({title: "Дополнительные удобства", textsAndChecked: {
           "Завтрак": "checked",

@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 $(document).ready(() => {
-  $('.first-iqdropdown').iqDropdown({
+  $('.js__iqdropdown_options').iqDropdown({
     maxItems: 10,
     minItems: 1,
     selectionText: 'item',
@@ -20,7 +20,7 @@ $(document).ready(() => {
   });
 });
 $(document).ready(() => {
-  $('.second-iqdropdown').iqDropdown({
+  $('.js__iqdropdown_people').iqDropdown({
     maxItems: 9,
     minItems: 1,
     selectionText: 'item',

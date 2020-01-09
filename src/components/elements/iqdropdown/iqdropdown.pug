@@ -1,0 +1,17 @@
+mixin iqdropdown({arr, classForJs})
+  .iqdropdown(class=classForJs)
+    p.iqdropdown-selection
+    p.material-icons.iqdropdown_icon expand_more
+
+    div.iqdropdown-menu
+      - var num = 1
+      each element in arr
+        div(data-id=`item+${num}`).iqdropdown-menu-option
+          div
+            p.iqdropdown-item= element
+            p.iqdropdown-description
+        - num += 1
+
+      .iqdropdown-clear-or-apply
+        h3.iqdropdown-clear Очистить
+        h3.iqdropdown-apply Применить
