@@ -1,0 +1,15 @@
+mixin impressions({title, voiceNumber, bulletListBuild})
+  .impressions
+    h2.impressions_title= title
+    .impressions__circle
+      .impressions__circle_info
+        .impressions__circle_info_number= voiceNumber
+        .impressions__circle_info_text голосов
+      .impressions__circle_part
+        .impressions__circle_part_left-top
+        .impressions__circle_part_left-bottom
+        .impressions__circle_part_right-top
+        .impressions__circle_part_right-bottom
+    .impressions__bullet-list
+      each obj in bulletListBuild 
+        +bullet-list(obj.color , obj.impression, obj.margin)

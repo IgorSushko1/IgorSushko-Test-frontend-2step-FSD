@@ -1,0 +1,134 @@
+.impressions {
+  position: relative;
+
+  &__title {
+    font-size: 1.18rem;
+    margin-left: 0.4rem;
+    margin-top: 0.06rem;
+    letter-spacing: 0.006rem;
+  }
+
+  &__circle {
+    position: relative;
+    top: 1.4rem;
+    left: 0.4rem;
+  }
+
+  &__circle_info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 7.56rem;
+    height: 7.5rem;
+    z-index: 1;
+    color: $purple;
+  }
+
+  &__circle_info_number {
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: 'Quicksand-Medium', Arial, sans-serif;
+    line-height: 1.56rem;
+    padding-left: 0.12rem;
+  }
+
+  &__circle_info_text {
+    padding-left: 0.12rem;
+  }
+
+  &__circle_part {
+    width: 7.56rem;
+    height: 7.5rem;
+    position: relative;
+  }
+
+  &__circle_part_left-top {
+    background: linear-gradient(0deg, #ffcd9c, #ffe39c);
+    border-top-left-radius: 100%;
+    position: absolute;
+    top: 0rem;
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
+  &__circle_part_left-top::after {
+    content: '';
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: white;
+    top: 0.25rem;
+    left: 0.25rem;
+    border-top-left-radius: 100%;
+  }
+
+  &__circle_part_left-bottom {
+    background: linear-gradient(0deg, #ffba9c, #ffcd9c);
+    border-bottom-left-radius: 100%;
+    position: absolute;
+    bottom: 0rem;
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
+  &__circle_part_left-bottom::after {
+    content: '';
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: white;
+    left: 0.25rem;
+    border-bottom-left-radius: 100%;
+  }
+
+  &__circle_part_right-top {
+    background: linear-gradient(0deg, #8ba4f9, #bc9cff);
+    border-top-right-radius: 100%;
+    width: 3.68rem;
+    height: 3.68rem;
+    position: absolute;
+    top: 0rem;
+    right: 0.1rem;
+  }
+
+  &__circle_part_right-top::after {
+    content: '';
+    position: absolute;
+    width: 3.06rem;
+    height: 3.06rem;
+    background: white;
+    top: 0.62rem;
+    border-top-right-radius: 100%;
+  }
+
+  &__circle_part_right-bottom {
+    background: linear-gradient(0deg, #66d2ea, #6fcf97);
+    border-bottom-right-radius: 100%;
+    width: 3.68rem;
+    height: 3.68rem;
+    position: absolute;
+    bottom: 0rem;
+    right: 0.1rem;
+  }
+
+  &__circle_part_right-bottom::after {
+    content: '';
+    position: absolute;
+    width: 3.43rem;
+    height: 3.43rem;
+    background: white;
+    border-bottom-right-radius: 100%;
+  }
+
+  &__bullet-list {
+    position: absolute;
+    top: 3.56rem;
+    left: 8.17rem;
+  }
+
+  &__bullet-list .bullet-list {
+    line-height: 1.5rem;
+  }
+}
