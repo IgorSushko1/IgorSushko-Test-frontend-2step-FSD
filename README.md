@@ -16,13 +16,13 @@
 
 Ссылки для отслеживания изменений, при использовании webpack dev server через http://localhost:9000/ :
 
-(Лэндинг)[http://localhost:9000/landing.html]
+[Лэндинг](http://localhost:9000/landing.html)
 
-(Регистрация)[http://localhost:9000/registration-sign-up.html]
+[Регистрация](http://localhost:9000/registration-sign-up.html)
 
-(Авторизация)[http://localhost:9000/registration-sign-in.html]
+[Авторизация](http://localhost:9000/registration-sign-in.html)
 
-(Поиск номеров)[http://localhost:9000/search.html]
+[Поиск номеров](http://localhost:9000/search.html)
 
 (Детальная карточка первого номера со страницы поиска номеров)[http://localhost:9000/room-detail.html]
 
