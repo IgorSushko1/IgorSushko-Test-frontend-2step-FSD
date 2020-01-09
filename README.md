@@ -1,4 +1,5 @@
 # IgorSushko-Test-frontend-2step-FSD
+
 Этот задание выполнено как тестовое для компании https://www.fullstack-development.com/
 
 В папке "page images" лежат .png с макетами страниц для удобства проверки PerfectPixel
@@ -21,15 +22,15 @@
 
 GitHub Pages :
 
-https://igorsushko1.github.io/IgorSushko-Test-frontend-2step-FSD/dist/room.html
+https://igorsushko1.github.io/IgorSushko-Test-frontend-2step-FSD/dist/room-вуефшд.html
 
-https://igorsushko1.github.io/IgorSushko-Test-frontend-2step-FSD/dist/landing-one.html
+https://igorsushko1.github.io/IgorSushko-Test-frontend-2step-FSD/dist/landing.html
 
 https://igorsushko1.github.io/IgorSushko-Test-frontend-2step-FSD/dist/registration-sign-up.html
 
 https://igorsushko1.github.io/IgorSushko-Test-frontend-2step-FSD/dist/registration-sign-in.html
 
-https://igorsushko1.github.io/IgorSushko-Test-frontend-2step-FSD/dist/search-page.html
+https://igorsushko1.github.io/IgorSushko-Test-frontend-2step-FSD/dist/search.html
 
 При его выполнении я научился:
 
