@@ -15,8 +15,8 @@
     <meta name="description" content="Выбор номера в отеле, любой">
     <title>Search page</title>
   <link href="main.css" rel="stylesheet"></head>
-  <body class="base">
-    <header class="base__header">
+  <body class="basis">
+    <header class="basis__header">
       <div class="header"><a class="header__image" href="./landing.html"><img src="imgs/Logo.png" alt=""></a>
         <nav class="header__menu">
           <ul class="header__list">
@@ -54,40 +54,42 @@
             </div><span class="material-icons calendar__icon">expand_more</span>
           </label>
         </form>
-        <h3 class="search-page__dropdown_title">Гости</h3><div class="iqdropdown second-iqdropdown">
-<p class="iqdropdown-selection"></p>
-        <p class="material-icons iqdropdown_icon">expand_more</p><div class="iqdropdown-menu">
-<div class="iqdropdown-menu-option" data-id="item1">
-<div>
-<p class="iqdropdown-item bold">Взрослые</p>
-<p class="iqdropdown-description"></p>
-</div>
-</div>
-<div class="iqdropdown-menu-option" data-id="item2">
-<div>
-<p class="iqdropdown-item bold">Дети</p>
-<p class="iqdropdown-description"></p>
-</div>
-</div>
-<div class="iqdropdown-menu-option" data-id="item3">
-<div>
-<p class="iqdropdown-item bold">Младенцы</p>
-<p class="iqdropdown-description"></p>
-</div>
-</div>
-<div class="iqdropdown-clear-or-apply">
-<h3 class="iqdropdown-clear">Очистить</h3>
-<h3 class="iqdropdown-apply">Применить</h3>
-</div>
-</div>
-</div>
-        <form class="form-for-range-slider" action="">
-          <div class="amount-of-money">
+        <h3 class="search-page__dropdown_title">Гости</h3>
+        <div class="iqdropdown js__iqdropdown_people">
+          <p class="iqdropdown-selection"></p>
+          <p class="material-icons iqdropdown_icon">expand_more</p>
+          <div class="iqdropdown-menu">
+            <div class="iqdropdown-menu-option" data-id="item+1">
+              <div>
+                <p class="iqdropdown-item">Взрослые</p>
+                <p class="iqdropdown-description"></p>
+              </div>
+            </div>
+            <div class="iqdropdown-menu-option" data-id="item+2">
+              <div>
+                <p class="iqdropdown-item">Дети</p>
+                <p class="iqdropdown-description"></p>
+              </div>
+            </div>
+            <div class="iqdropdown-menu-option" data-id="item+3">
+              <div>
+                <p class="iqdropdown-item">Младенцы</p>
+                <p class="iqdropdown-description"></p>
+              </div>
+            </div>
+            <div class="iqdropdown-clear-or-apply">
+              <h3 class="iqdropdown-clear">Очистить</h3>
+              <h3 class="iqdropdown-apply">Применить</h3>
+            </div>
+          </div>
+        </div>
+        <form class="range-slider__form" action="">
+          <div class="range-slider__amount-of-money">
             <h3>Диапазон цены</h3>
           </div>
-          <input class="slider-range-slider" type="text" name="example_name" value="">
+          <input class="range-slider__input" type="text" name="example_name" value="">
         </form>
-        <div class="range-slider_description">Стоимость за сутки пребывания в номере</div>
+        <div class="range-slider__description">Стоимость за сутки пребывания в номере</div>
         <h3 class="search-page__checkbox_title">checkbox buttons</h3>
         <form action="">
           <label class="checkbox-button__container">Можно курить
@@ -118,34 +120,40 @@
           </label>
         </form>
         <div class="search-page__dropdown">
-          <h3 class="search-page__dropdown_title">Удобства номера</h3><div class="iqdropdown first-iqdropdown">
-<p class="iqdropdown-selection"></p>
-          <p class="material-icons iqdropdown_icon">expand_more</p><div class="iqdropdown-menu">
-<div class="iqdropdown-menu-option" data-id="item1">
-<div>
-<p class="iqdropdown-item bold">Спальни</p>
-<p class="iqdropdown-description"></p>
-</div>
-</div>
-<div class="iqdropdown-menu-option" data-id="item2">
-<div>
-<p class="iqdropdown-item bold">Кровати</p>
-<p class="iqdropdown-description"></p>
-</div>
-</div>
-<div class="iqdropdown-menu-option" data-id="item3">
-<div>
-<p class="iqdropdown-item bold">Ванные комнаты</p>
-<p class="iqdropdown-description"></p>
-</div>
-</div>
-</div>
-</div>
+          <h3 class="search-page__dropdown_title">Удобства номера</h3>
+          <div class="iqdropdown js__iqdropdown_options">
+            <p class="iqdropdown-selection"></p>
+            <p class="material-icons iqdropdown_icon">expand_more</p>
+            <div class="iqdropdown-menu">
+              <div class="iqdropdown-menu-option" data-id="item+1">
+                <div>
+                  <p class="iqdropdown-item">Спальни</p>
+                  <p class="iqdropdown-description"></p>
+                </div>
+              </div>
+              <div class="iqdropdown-menu-option" data-id="item+2">
+                <div>
+                  <p class="iqdropdown-item">Кровати</p>
+                  <p class="iqdropdown-description"></p>
+                </div>
+              </div>
+              <div class="iqdropdown-menu-option" data-id="item+3">
+                <div>
+                  <p class="iqdropdown-item">Ванные комнаты</p>
+                  <p class="iqdropdown-description"></p>
+                </div>
+              </div>
+              <div class="iqdropdown-clear-or-apply">
+                <h3 class="iqdropdown-clear">Очистить</h3>
+                <h3 class="iqdropdown-apply">Применить</h3>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="search-page__expendable-checkbox">
           <div class="checkbox-expendable">
             <button class="checkbox-expendable__btn js__checkbox-expendable"> 
-              <h3 class="h3_bold checkbox-expendable__title">Дополнительные удобства</h3><span class="material-icons checkbox-expendable__icons">keyboard_arrow_down</span>
+              <h3 class="checkbox-expendable__title">Дополнительные удобства</h3><span class="material-icons checkbox-expendable__icons">keyboard_arrow_down</span>
             </button>
             <div class="js__checkbox-expendable_hiden checkbox-expendable__hiden">
               <form action="">
@@ -533,7 +541,7 @@
         </section>
       </article>
     </div>
-    <footer class="base__footer">
+    <footer class="basis__footer">
       <div class="footer__menu">
         <div class="footer__logo"><a href="./landing.html"><img src="imgs/Logo.png" alt=""></a>
           <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>

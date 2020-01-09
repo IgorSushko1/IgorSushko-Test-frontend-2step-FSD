@@ -15,8 +15,8 @@
     <meta name="description" content="Номер отеля, оценить, выбрать, отзывы, преимущества">
     <title>Room detail</title>
   <link href="main.css" rel="stylesheet"></head>
-  <body class="base">
-    <header class="base__header">
+  <body class="basis">
+    <header class="basis__header">
       <div class="header"><a class="header__image" href="./landing.html"><img src="imgs/Logo.png" alt=""></a>
         <nav class="header__menu">
           <ul class="header__list">
@@ -49,7 +49,7 @@
         <div class="room-detail__picture_right"><img src="imgs/room-details-2-1.png" alt="" width="459" height="243" style="display: block"><img src="imgs/room-details-2-2.png" alt="" width="459" height="242"></div>
       </article>
       <article class="room-detail__info">
-        <div class="room-detail__info_section room-detail__info_grid">
+        <div class="room-detail__info_grid">
           <section class="room-detail__about-room">
             <h2 class="room-detail__about-room_title">Сведения о номере</h2>
             <div class="icon-advantages"><img class="icon-advantages__image" src="imgs/insert_emoticon.svg" alt="icon smile" width="40" height="40">
@@ -72,36 +72,38 @@
             </div>
           </section>
           <section class="room-detail__impressions">
-            <h2 class="room-detail__impressions_title">Впечатления от номера</h2>
-            <div class="room-detail__impressions_circle">
-              <div class="room-detail__impressions_circle_info">
-                <div class="room-detail__impressions_circle_info_number">260</div>
-                <div class="room-detail__impressions_circle_info_text">голосов</div>
+            <div class="impressions">
+              <h2 class="impressions_title">Впечатления от номера</h2>
+              <div class="impressions__circle">
+                <div class="impressions__circle_info">
+                  <div class="impressions__circle_info_number">300</div>
+                  <div class="impressions__circle_info_text">голосов</div>
+                </div>
+                <div class="impressions__circle_part">
+                  <div class="impressions__circle_part_left-top"></div>
+                  <div class="impressions__circle_part_left-bottom"></div>
+                  <div class="impressions__circle_part_right-top"></div>
+                  <div class="impressions__circle_part_right-bottom"></div>
+                </div>
               </div>
-              <div class="room-detail__impressions_circle_part">
-                <div class="room-detail__impressions_circle_part_left-top"></div>
-                <div class="room-detail__impressions_circle_part_left-bottom"></div>
-                <div class="room-detail__impressions_circle_part_right-top"></div>
-                <div class="room-detail__impressions_circle_part_right-bottom"></div>
+              <div class="impressions__bullet-list">
+                <ul class="bullet-list" style="margin-bottom:-0.85rem;">
+                  <div class="bullet-list__disc" style="background:linear-gradient(0deg, #FFBA9C, #FFE39C);"></div>
+                  <div class="bullet-list__text">Великолепно</div>
+                </ul>
+                <ul class="bullet-list" style="margin-bottom:-0.85rem;">
+                  <div class="bullet-list__disc" style="background:linear-gradient(0deg, #66D2EA, #6FCF97);"></div>
+                  <div class="bullet-list__text">Хорошо</div>
+                </ul>
+                <ul class="bullet-list" style="margin-bottom:-0.9rem;">
+                  <div class="bullet-list__disc" style="background:linear-gradient(0deg, #8BA4F9, #BC9CFF);"></div>
+                  <div class="bullet-list__text">Удовлетворительно</div>
+                </ul>
+                <ul class="bullet-list" style="margin-bottom:undefined;">
+                  <div class="bullet-list__disc" style="background:linear-gradient(0deg, rgba(61, 73, 117, 1), rgba(144, 144, 144, 1));"></div>
+                  <div class="bullet-list__text">Разочарован</div>
+                </ul>
               </div>
-            </div>
-            <div class="room-detail__impressions_bullet-list">
-              <ul class="bullet-list" style="margin-bottom:-0.85rem;">
-                <div class="bullet-list__disc" style="background:linear-gradient(0deg, #FFBA9C, #FFE39C);"></div>
-                <div class="bullet-list__text">Великолепно</div>
-              </ul>
-              <ul class="bullet-list" style="margin-bottom:-0.85rem;">
-                <div class="bullet-list__disc" style="background:linear-gradient(0deg, #66D2EA, #6FCF97);"></div>
-                <div class="bullet-list__text">Хорошо</div>
-              </ul>
-              <ul class="bullet-list" style="margin-bottom:-0.9rem;">
-                <div class="bullet-list__disc" style="background:linear-gradient(0deg, #8BA4F9, #BC9CFF);"></div>
-                <div class="bullet-list__text">Удовлетворительно</div>
-              </ul>
-              <ul class="bullet-list" style="margin-bottom:undefined;">
-                <div class="bullet-list__disc" style="background:linear-gradient(0deg, rgba(61, 73, 117, 1), rgba(144, 144, 144, 1));"></div>
-                <div class="bullet-list__text">Разочарован</div>
-              </ul>
             </div>
           </section>
           <section class="room-detail__comments">
@@ -198,33 +200,35 @@
             </div>
             <div class="booking__guests">
               <h3 class="booking__guests_title">Гости</h3>
-              <div class="booking__dropdown"><div class="iqdropdown second-iqdropdown">
-<p class="iqdropdown-selection"></p>
-                <p class="material-icons iqdropdown_icon">expand_more</p><div class="iqdropdown-menu">
-<div class="iqdropdown-menu-option" data-id="item1">
-<div>
-<p class="iqdropdown-item bold">Взрослые</p>
-<p class="iqdropdown-description"></p>
-</div>
-</div>
-<div class="iqdropdown-menu-option" data-id="item2">
-<div>
-<p class="iqdropdown-item bold">Дети</p>
-<p class="iqdropdown-description"></p>
-</div>
-</div>
-<div class="iqdropdown-menu-option" data-id="item3">
-<div>
-<p class="iqdropdown-item bold">Младенцы</p>
-<p class="iqdropdown-description"></p>
-</div>
-</div>
-<div class="iqdropdown-clear-or-apply">
-<h3 class="iqdropdown-clear">Очистить</h3>
-<h3 class="iqdropdown-apply">Применить</h3>
-</div>
-</div>
-</div>
+              <div class="booking__dropdown">
+                <div class="iqdropdown js__iqdropdown_people">
+                  <p class="iqdropdown-selection"></p>
+                  <p class="material-icons iqdropdown_icon">expand_more</p>
+                  <div class="iqdropdown-menu">
+                    <div class="iqdropdown-menu-option" data-id="item+1">
+                      <div>
+                        <p class="iqdropdown-item">Взрослые</p>
+                        <p class="iqdropdown-description"></p>
+                      </div>
+                    </div>
+                    <div class="iqdropdown-menu-option" data-id="item+2">
+                      <div>
+                        <p class="iqdropdown-item">Дети</p>
+                        <p class="iqdropdown-description"></p>
+                      </div>
+                    </div>
+                    <div class="iqdropdown-menu-option" data-id="item+3">
+                      <div>
+                        <p class="iqdropdown-item">Младенцы</p>
+                        <p class="iqdropdown-description"></p>
+                      </div>
+                    </div>
+                    <div class="iqdropdown-clear-or-apply">
+                      <h3 class="iqdropdown-clear">Очистить</h3>
+                      <h3 class="iqdropdown-apply">Применить</h3>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="booking__text"><span class="booking__align_left">9 990₽ х 4 суток</span><span class="booking__align_right">39 960₽</span></div>
@@ -247,7 +251,7 @@
         </section>
       </article>
     </div>
-    <footer class="base__footer">
+    <footer class="basis__footer">
       <div class="footer__menu">
         <div class="footer__logo"><a href="./landing.html"><img src="imgs/Logo.png" alt=""></a>
           <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
