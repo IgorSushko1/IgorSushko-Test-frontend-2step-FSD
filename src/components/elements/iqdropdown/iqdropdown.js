@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 $(document).ready(() => {
-  $('.js__iqdropdown_options').iqDropdown({
+  $('.js-iqdropdown_options').iqDropdown({
     maxItems: 10,
     minItems: 1,
     selectionText: 'item',
@@ -20,7 +20,7 @@ $(document).ready(() => {
   });
 });
 $(document).ready(() => {
-  $('.js__iqdropdown_people').iqDropdown({
+  $('.js-iqdropdown_people').iqDropdown({
     maxItems: 9,
     minItems: 1,
     selectionText: 'item',
@@ -41,7 +41,7 @@ $(document).ready(() => {
 });
 
 $(document).ready(() => {
-  $('.third-iqdropdown').iqDropdown({
+  $('.js-iqdropdown_people_apart').iqDropdown({
     maxItems: 9,
     minItems: 1,
     selectionText: 'item',

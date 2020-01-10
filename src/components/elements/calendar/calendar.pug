@@ -7,7 +7,7 @@ mixin calendar(arrivalDate, departureDate, id, type )
   if (type == "duble")
     form(action="")
       label.calendar
-        input(type="checkbox" id="datepicker__duble" data-range="true" data-multiple-dates-separator=" - " clearButton="true" class="datepicker-here" data-position="bottom left").calendar__datepicker
+        input(type="checkbox" id="js-datepicker__duble" data-range="true" data-multiple-dates-separator=" - " clearButton="true" class="datepicker-here" data-position="bottom left").calendar__datepicker
         .calendar__arrival-date
           div.calendar__date= arrivalDate
           span.material-icons.calendar__icon expand_more
@@ -18,7 +18,7 @@ mixin calendar(arrivalDate, departureDate, id, type )
   if (type == "single")
     form(action="")
       label.calendar__single
-        input(type="checkbox" id="datepicker__single" data-multiple-dates-separator=" - " data-range="true" class=`datepicker-here` data-position="bottom left").calendar__single-field
+        input(type="checkbox" id="js-datepicker__single" data-multiple-dates-separator=" - " data-range="true" class=`datepicker-here` data-position="bottom left").calendar__single-field
         .calendar__range
           div.calendar__date= arrivalDate
         span.material-icons.calendar__icon expand_more
@@ -26,4 +26,4 @@ mixin calendar(arrivalDate, departureDate, id, type )
   if (type == "birthday")
     form(action="")
       label.calendar__single
-        input(type="text" id="datepicker__birthday" value= arrivalDate).calendar__birthday
+        input(type="text" id="js-datepicker__birthday" value= arrivalDate).calendar__birthday

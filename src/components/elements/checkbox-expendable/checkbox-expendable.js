@@ -1,5 +1,5 @@
 function checkboxExpendable() {
-  const elem = document.querySelectorAll('.js__checkbox-expendable_hiden')[0];
+  const elem = document.querySelectorAll('.js-checkbox-expendable_hiden')[0];
   elem.classList.toggle('checkbox-expendable__visible');
   if (document.querySelectorAll('.checkbox-expendable__icons')[0]) {
     const icon = document.querySelectorAll('.checkbox-expendable__icons')[0];
@@ -10,6 +10,6 @@ function checkboxExpendable() {
     }
   }
 }
-if (document.querySelectorAll('.js__checkbox-expendable')[0]) {
-  document.querySelectorAll('.js__checkbox-expendable')[0].addEventListener('click', checkboxExpendable);
+if (document.querySelectorAll('.js-checkbox-expendable')[0]) {
+  document.querySelectorAll('.js-checkbox-expendable')[0].addEventListener('click', checkboxExpendable);
 }

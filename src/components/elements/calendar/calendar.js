@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  $('#datepicker__duble').datepicker({
+  $('#js-datepicker__duble').datepicker({
     multipleDates: true,
     onSelect(fd, dates, inst) {
       const reg = /([0-9\.]+)\s([0-9\.]+)/g;
@@ -38,7 +38,7 @@ $(document).ready(() => {
 });
 
 $(document).ready(() => {
-  $('#datepicker__single').datepicker({
+  $('#js-datepicker__single').datepicker({
     multipleDates: false,
     onSelect(fd, dates, inst) {
       const reg = /([0-9]+\s[а-яё]+)/g;
@@ -79,7 +79,7 @@ $(document).ready(() => {
 });
 
 $(document).ready(() => {
-  $('#datepicker__birthday').datepicker({
+  $('#js-datepicker__birthday').datepicker({
     multipleDates: false,
     showButtonPanel: true,
     dateFormat: 'dd.mm.yyyy',

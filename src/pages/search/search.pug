@@ -25,7 +25,7 @@ block main
       h3.search-page__datepicker_title Даты пребывания в отеле
       +calendar("19 авг - 23 авг", "", "#datepicker-single", "single")
       h3.search-page__dropdown_title Гости
-      +iqdropdown({arr:["Взрослые", "Дети", "Младенцы"], classForJs:"js__iqdropdown_people"})
+      +iqdropdown({arr:["Взрослые", "Дети", "Младенцы"], classForJs:"js-iqdropdown_people"})
       +range-slider
       h3.search-page__checkbox_title checkbox buttons
       +checkbox-button("Можно курить", "")
@@ -41,7 +41,7 @@ block main
       ]})
       .search-page__dropdown
         h3.search-page__dropdown_title Удобства номера
-        +iqdropdown({arr:["Спальни", "Кровати", "Ванные комнаты"], classForJs:"js__iqdropdown_options"})
+        +iqdropdown({arr:["Спальни", "Кровати", "Ванные комнаты"], classForJs:"js-iqdropdown_options"})
       .search-page__expendable-checkbox
         +checkbox-expendable({title: "Дополнительные удобства", textsAndChecked: {
           "Завтрак": "checked",

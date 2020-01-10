@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 $(document).ready(() => {
-  $('.range-slider__input').ionRangeSlider({
+  $('.js-range-slider__input').ionRangeSlider({
     type: 'double',
     min: 0,
     max: 15000,

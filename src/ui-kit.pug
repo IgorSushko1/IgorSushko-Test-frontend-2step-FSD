@@ -29,8 +29,8 @@ html
     +form__name("email","Email", "email-sign-up", "sign-up")
     div
       include ./components/elements/iqdropdown/iqdropdown.pug
-      +iqdropdown({arr:["Взрослые", "Дети", "Младенцы"], classForJs:"js__iqdropdown_people"})
-      +iqdropdown({arr:["Спальни", "Кровати", "Ванные комнаты"], classForJs:"js__iqdropdown_options"})
+      +iqdropdown({arr:["Взрослые", "Дети", "Младенцы"], classForJs:"js-iqdropdown_people"})
+      +iqdropdown({arr:["Спальни", "Кровати", "Ванные комнаты"], classForJs:"js-iqdropdown_options"})
     div
       include ./components/elements/checkbox-toggle/checkbox-toggle.pug
       +checkbox-toggle("Получать спецпредложения")
