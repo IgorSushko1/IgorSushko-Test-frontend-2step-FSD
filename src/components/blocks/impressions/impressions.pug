@@ -1,4 +1,4 @@
-mixin impressions({title, voiceNumber, bulletListBuild})
+mixin impressions({title, voiceNumber, bulletListBuild, bulletList, classList})
   .impressions
     h2.impressions_title= title
     .impressions__circle
@@ -12,4 +12,4 @@ mixin impressions({title, voiceNumber, bulletListBuild})
         .impressions__circle_part_right-bottom
     .impressions__bullet-list
       each obj in bulletListBuild 
-        +bullet-list(obj.color , obj.impression, obj.margin)
+        +bullet-list(obj.color , obj.impression, obj.margin, obj.classlist)

@@ -19,3 +19,26 @@
     display: block;
   }
 }
+
+.bullet-list-for-room-detail {
+  position: relative;
+  list-style-type: none;
+  font-size: 0.875rem;
+  line-height: 1.56rem;
+  margin: 0rem;
+  padding-left: 1.3rem;
+  padding-top: 0.63rem;
+  width: 15rem;
+  letter-spacing: -0.005rem;
+
+  &__disc {
+    position: absolute;
+    background: $dark-shade-025;
+    margin-top: 0.437rem;
+    border-radius: 50%;
+    left: 0rem;
+    margin-top: 0.4rem;
+    width: 0.65rem;
+    height: 0.65rem;
+  }
+}

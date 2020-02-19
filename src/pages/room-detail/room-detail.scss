@@ -45,26 +45,6 @@
     letter-spacing: -0.003rem;
   }
 
-  &__rules_bullet .bullet-list__disc {
-    left: 0rem;
-    margin-top: 1rem;
-  }
-
-  &__rules_bullet .bullet-list {
-    margin: 0rem;
-    padding-left: 1.3rem;
-    padding-top: 0.63rem;
-    width: 15rem;
-    letter-spacing: -0.005rem;
-  }
-
-  &__rules_bullet .bullet-list .bullet-list__disc {
-    left: 0rem;
-    margin-top: 0.4rem;
-    width: 0.65rem;
-    height: 0.65rem;
-  }
-
   &__rules_title {
     padding-left: 1.33rem;
     padding-top: 0.5rem;
@@ -91,7 +71,7 @@
     grid-column: 1/3;
   }
 
-  &__comments .comments {
+  &__comments_margin {
     margin-top: 1.5rem;
     margin-bottom: 1.6rem;
   }

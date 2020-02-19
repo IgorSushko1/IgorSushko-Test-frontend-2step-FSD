@@ -1,4 +1,4 @@
-mixin bullet-list(colors, text, margins)
-  ul(style={ "margin-bottom": margins}).bullet-list
-    div(style={background:  colors}).bullet-list__disc
+mixin bullet-list(colors, text, margins, classList)
+  ul(style={ "margin-bottom": margins} class= classList)
+    div(style={background:  colors} class=`${classList}__disc`)
     .bullet-list__text= text
