@@ -19,7 +19,7 @@ module.exports = {
           loader: 'pug-loader',
           options: {
             pretty: true,
-            'exports': false,
+            exports: false,
           },
         }],
       },

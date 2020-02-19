@@ -1,10 +1,10 @@
 include ../../elements/star-rating/star-rating.pug
 include ../../elements/pagination-circle/pagination-circle.pug
 
-mixin hotel-room-card(imgName, numberOfStars, roomNumber, price, lux, review, ref, numOfPugination)
+mixin hotel-room-card(imgName, numberOfStars, roomNumber, price, lux, review, ref, numOfPugination, alt)
   .hotel-room
     a(href=ref)
-      img(src=imgName, alt="" ).hotel-room__img
+      img(src=imgName, alt=alt ).hotel-room__img
     .hotel-room__circles
       +pagination-circle(numOfPugination)
     .hotel-room__text
