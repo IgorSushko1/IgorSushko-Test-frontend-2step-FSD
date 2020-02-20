@@ -8,9 +8,27 @@ html
 
   body
     div
-      include ./components/elements/fonts-list/fonts-list.pug
+      include ./components/blocks/fonts-list/fonts-list.pug
       +fonts-list
-    include ./components/elements/color-example/color-example.pug
+
+    //- include ./components/blocks/button/button.pug
+    //- +button({
+    //-   action: "",
+    //-   text: "Универсальная кнопка",
+    //-   element: "arrow_enable",
+    //-   size: "short",
+    //-   color: "white"
+    //- })
+
+    //-   +button({
+    //-   action: "",
+    //-   text: "Универсальная кнопка длинная",
+    //-   element: "arrow_disable",
+    //-   size: "normal",
+    //-   color: "purple"
+    //- })
+
+    include ./components/blocks/color-example/color-example.pug
 
     +color-example("Dark Shade 100%", "#1F2041", "__dark-shade-100")
     +color-example("Dark Shade 75%", "#1F2041", "__dark-shade-075")
@@ -20,57 +38,57 @@ html
     +color-example("Purple", "#BC9CFF", "__purple")
     +color-example("Green", "#6FCF97", "__green")
 
-    include ./components/elements/form__email/form__email.pug
+    include ./components/blocks/form__email/form__email.pug
     +form__email("email", "Your email adress", "field name")
-    include ./components/elements/form__date/form__date.pug
+    include ./components/blocks/form__date/form__date.pug
     +form__date("date", "masked text field")
-    include ./components/elements/form__name/form__name.pug
+    include ./components/blocks/form__name/form__name.pug
     +form__name("email","Email", "email-sign-in", "sign-in")
     +form__name("email","Email", "email-sign-up", "sign-up")
     div
-      include ./components/elements/iqdropdown/iqdropdown.pug
+      include ./components/blocks/iqdropdown/iqdropdown.pug
       +iqdropdown({arr:["Взрослые", "Дети", "Младенцы"], classForJs:"js-iqdropdown_people"})
       +iqdropdown({arr:["Спальни", "Кровати", "Ванные комнаты"], classForJs:"js-iqdropdown_options"})
     div
-      include ./components/elements/checkbox-toggle/checkbox-toggle.pug
+      include ./components/blocks/checkbox-toggle/checkbox-toggle.pug
       +checkbox-toggle("Получать спецпредложения")
     div
-      include ./components/elements/checkbox-button/checkbox-button.pug
+      include ./components/blocks/checkbox-button/checkbox-button.pug
       +checkbox-button("Можно курить", "")
       +checkbox-button("Можно с питомцами", checked)
       +checkbox-button("Можно пригласить гостей (до 10 человек)", checked)
     div
-      include ./components/elements/checkbox-radio/checkbox-radio.pug
+      include ./components/blocks/checkbox-radio/checkbox-radio.pug
       +checkbox-radio(["Мужчина","Женщина"])
     div
-      include ./components/elements/star-rating/star-rating.pug
+      include ./components/blocks/star-rating/star-rating.pug
       +star-rating(3)
       +star-rating(1)
       +star-rating(2)
       +star-rating(5)
     div
-      include ./components/elements/button-pill__full/button-pill__full.pug
+      include ./components/blocks/button-pill__full/button-pill__full.pug
       +button-pill__full("REGISTER")
     div
-      include ./components/elements/button-pill__empty/button-pill__empty.pug
+      include ./components/blocks/button-pill__empty/button-pill__empty.pug
       +button-pill__empty("REGISTER")
     div
-      include ./components/elements/button-text/button-text.pug
+      include ./components/blocks/button-text/button-text.pug
       +button-text("text")
     div
-      include ./components/elements/button-pill__full_arrow/button-pill__full_arrow.pug
+      include ./components/blocks/button-pill__full_arrow/button-pill__full_arrow.pug
     +button-pill__full_arrow("CLICK ME")
     div
-      include ./components/elements/like-button/like-button.pug
+      include ./components/blocks/like-button/like-button.pug
       +like-button({value: 11})
     div
-      include ./components/elements/calendar/calendar.pug
+      include ./components/blocks/calendar/calendar.pug
       +calendar("19.08.2019", "23.08.2019", "#datepicker", "duble")
     div
-      include ./components/elements/range-slider/range-slider.pug
+      include ./components/blocks/range-slider/range-slider.pug
       +range-slider
     div
-      include ./components/elements/checkbox-expendable/checkbox-expendable.pug
+      include ./components/blocks/checkbox-expendable/checkbox-expendable.pug
       +checkbox-expendable({title: "Дополнительные удобства", textsAndChecked: {
         "Завтрак": "checked",
         "Письменный стол": "checked",
@@ -78,10 +96,10 @@ html
         "Кроватка": "unchecked"
       }})
     div
-      include ./components/elements/pagination/pagination.pug
+      include ./components/blocks/pagination/pagination.pug
       +pagination
     div
-      include ./components/elements/checkbox-rich/checkbox-rich.pug
+      include ./components/blocks/checkbox-rich/checkbox-rich.pug
       +checkbox-rich({titlesAndChecked: {
         "Широкий коридор": unchecked,
         "Помощник для инвалидов": unchecked
@@ -89,10 +107,10 @@ html
       "На 1 этаже вас встретит специалист и проводит до номера"
       ]})
     div
-      include ./components/elements/bullet-list/bullet-list.pug
+      include ./components/blocks/bullet-list/bullet-list.pug
       +bullet-list("bullet list", "grey" ,"Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, выезд до 12:00")
     div
-      include ./components/elements/icon-advantages/icon-advantages.pug
+      include ./components/blocks/icon-advantages/icon-advantages.pug
       +icon-advantages([
         {
           img: "imgs/insert_emoticon.svg",
@@ -117,39 +135,39 @@ html
           borderStyle: "__without-border"
         }])
     div
-      include ./components/elements/comments/comments.pug
+      include ./components/blocks/comments/comments.pug
       +comments("./assets/images/murad-true.png", "Мурад Сарафанов", "5 дней назад", "12", "checked", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
       +comments("./assets/images/girl image.png", "Патрисия Стёклышкова", "Неделю назад", "2", "", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
     div
-      include ./components/blocks/header/header.pug
+      include ./components/complexBlocks/header/header.pug
       +header
     div
-      include ./components/blocks/header/header__login.pug
+      include ./components/complexBlocks/header/header__login.pug
       +header__login
     div
-      include ./components/blocks/footer/footer.pug
+      include ./components/complexBlocks/footer/footer.pug
       +footer
     div
-      include ./components/blocks/footer/footer-mobile.pug
+      include ./components/complexBlocks/footer/footer-mobile.pug
       +footer-mobile
     div
-      include ./components/blocks/pick-up-numbers/pick-up-numbers.pug
+      include ./components/complexBlocks/pick-up-numbers/pick-up-numbers.pug
       +pick-up-numbers
     div
-      include ./components/blocks/sign-up/sign-up.pug
+      include ./components/complexBlocks/sign-up/sign-up.pug
       +sign-up
     div
-      include ./components/blocks/sign-in/sign-in.pug
+      include ./components/complexBlocks/sign-in/sign-in.pug
       +sign-in
     div
-      include ./components/blocks/booking/booking.pug
+      include ./components/complexBlocks/booking/booking.pug
       +booking-room
     div
-      include ./components/blocks/hotel-room-card/hotel-room-card.pug
+      include ./components/complexBlocks/hotel-room-card/hotel-room-card.pug
       +hotel-room-card("./assets/images/room-2.png", "4", "888", "9900₽", "not lux")
       +hotel-room-card("./assets/images/room-1.png", "5", "840", "9990₽", "lux")
     div
-      include ./components/blocks/impressions/impressions.pug
+      include ./components/complexBlocks/impressions/impressions.pug
       +impressions({title: "Впечатления от номера", voiceNumber: 300, bulletListBuild:[
         {color:"linear-gradient(0deg, #FFBA9C, #FFE39C)", impression: "Великолепно", margin: "-0.85rem"},
         {color:"linear-gradient(0deg, #66D2EA, #6FCF97)", impression: "Хорошо", margin: "-0.85rem"},
