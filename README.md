@@ -4,9 +4,11 @@
 
 В папке "page images" лежат .png с макетами страниц для удобства проверки PerfectPixel
 
+## Установка
+
 Клонирование проекта `git clone https://github.com/IgorSushko1/IgorSushko-Test-frontend-2step-FSD`
 
-Установка `npm install`.
+`npm install`
 
 Запуск версии для разработки с webpack dev server `npm run dev:dev`.
 
@@ -26,7 +28,7 @@
 
 [Детальная карточка первого номера со страницы поиска номеров](http://localhost:9000/room-detail.html)
 
-GitHub Pages :
+## GitHub Pages :
 
 https://igorsushko1.github.io/IgorSushko-Test-frontend-2step-FSD/dist/landing.html
 
@@ -37,3 +39,10 @@ https://igorsushko1.github.io/IgorSushko-Test-frontend-2step-FSD/dist/registrati
 https://igorsushko1.github.io/IgorSushko-Test-frontend-2step-FSD/dist/search.html
 
 https://igorsushko1.github.io/IgorSushko-Test-frontend-2step-FSD/dist/room-detail.html
+
+## Используемые библиотеки и плагины:
+
+- [jquery](https://jquery.com/)
+- [air-datepicker](http://t1m0n.name/air-datepicker/docs/index-ru.html)
+- [ion-rangeslider](http://ionden.com/a/plugins/ion.rangeSlider/start.html)
+- [material-design-icons](https://www.npmjs.com/package/material-design-icons)
