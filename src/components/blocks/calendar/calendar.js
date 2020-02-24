@@ -13,8 +13,8 @@ $(document).ready(() => {
       const arrayDate = string.split(reg);
 
 
-      $frst.html(`<div class="calendar__date" style="color:rgba(31, 32, 65, 0.75)">${arrayDate[1]}</div>` + ' ' + '<span class="material-icons calendar__icon">expand_more</span>');
-      $secnd.html(`<div class="calendar__date" style="color:rgba(31, 32, 65, 0.75)">${arrayDate[2]}</div>` + ' ' + '<span class="material-icons calendar__icon">expand_more</span>');
+      $frst.html(`<div class="calendar__date" style="color:rgba(31, 32, 65, 0.75)">${arrayDate[1]}</div>` + ' ' + '<span class="material-icons calendar__icon_double">expand_less</span>');
+      $secnd.html(`<div class="calendar__date" style="color:rgba(31, 32, 65, 0.75)">${arrayDate[2]}</div>` + ' ' + '<span class="material-icons calendar__icon_double">expand_less</span>');
     },
     showButtonPanel: true,
     dateFormat: 'yy.mm.dd',

@@ -1,5 +1,7 @@
+@import '../../../01_colors_&_fonts/color.scss';
+
 .button-pill__full_arrow {
-  background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+  background: linear-gradient(180deg, $purple, #8ba4f9);
   border: none;
   color: white;
   padding: auto;
@@ -22,7 +24,7 @@
   }
 
   &_text {
-    font-family: "Montserrat-Bold", Arial, sans-serif;
+    font-family: 'Montserrat-Bold', Arial, sans-serif;
     margin-left: -0.187rem;
   }
 }

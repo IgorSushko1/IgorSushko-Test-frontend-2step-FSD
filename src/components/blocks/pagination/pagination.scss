@@ -1,3 +1,5 @@
+@import '../../../01_colors_&_fonts/color.scss';
+
 .pagination {
   width: 15.06rem;
   display: inline-grid;
@@ -18,17 +20,13 @@
   }
 
   &__start {
-    background: linear-gradient(
-      180deg,
-      rgba(188, 156, 255, 1),
-      rgba(139, 164, 249, 1)
-    );
+    background: linear-gradient(180deg, $purple, rgba(139, 164, 249, 1));
     border-radius: 50%;
     color: white;
   }
 
   &__arrow {
-    background: linear-gradient(180deg, #6fcf97, #66d2ea);
+    background: linear-gradient(180deg, $green, #66d2ea);
     border-radius: 50%;
     color: white;
   }

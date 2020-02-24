@@ -1,3 +1,5 @@
+@import '../../../01_colors_&_fonts/color.scss';
+
 .calendar {
   display: flex;
   justify-content: left;
@@ -16,7 +18,7 @@
   &__arrival-date {
     width: 9.25rem;
     height: 2.62rem;
-    border: 0.06rem solid rgba(31, 32, 65, 0.25);
+    border: 0.06rem solid $dark-shade-025;
     border-radius: 0.25rem;
     position: relative;
     margin: 0;
@@ -25,7 +27,7 @@
   &__departure-date {
     width: 9.25rem;
     height: 2.62rem;
-    border: 0.06rem solid rgba(31, 32, 65, 0.25);
+    border: 0.06rem solid $dark-shade-025;
     border-radius: 0.25rem;
     position: relative;
     margin: 0 0 0 1.2rem;
@@ -34,7 +36,12 @@
   &__icon {
     position: absolute;
     top: 0.56rem;
-    right: 0.56rem;
+    left: 14.56rem;
+    &_double {
+      top: 0.56rem;
+      right: 0.56rem;
+      position: absolute;
+    }
     &_for-birthday {
       position: absolute;
     }
@@ -44,7 +51,7 @@
     position: relative;
     margin-top: 0.8rem;
     margin-left: 0.9rem;
-    color: rgba(31, 32, 65, 0.75);
+    color: $dark-shade-075;
     font-size: 0.87rem;
     font-family: 'Montserrat-Medium', Arial, sans-serif;
   }
@@ -74,7 +81,7 @@
     height: 2.5rem;
     margin-top: 0.3rem;
     border-radius: 0.25rem;
-    border: 0.06rem solid rgba(31, 32, 65, 0.25);
+    border: 0.06rem solid $dark-shade-025;
     padding-left: 1rem;
     letter-spacing: 0.05rem;
     color: rgba(31, 32, 65, 0.75);

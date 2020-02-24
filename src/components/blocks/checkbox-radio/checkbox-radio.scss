@@ -1,3 +1,5 @@
+@import '../../../01_colors_&_fonts/color.scss';
+
 .checkbox-radio {
   display: flex;
 
@@ -44,7 +46,7 @@
   }
 
   &__input:checked ~ &__checkmark {
-    background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+    background: linear-gradient(180deg, $purple, #8ba4f9);
   }
 
   &__checkmark:after {
@@ -64,6 +66,6 @@
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 50%;
-    background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+    background: linear-gradient(180deg, $purple, #8ba4f9);
   }
 }

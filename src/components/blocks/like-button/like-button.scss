@@ -1,3 +1,5 @@
+@import '../../../01_colors_&_fonts/color.scss';
+
 .like-button {
   position: relative;
   margin: 0;
@@ -31,7 +33,7 @@
   }
 
   &__input:checked ~ &__background {
-    background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+    background: linear-gradient(180deg, $purple, #8ba4f9);
   }
 
   &__empty-white {
@@ -70,7 +72,7 @@
     top: 0.06rem;
     left: 0.31rem;
     display: none;
-    color: #bc9cff;
+    color: $purple;
   }
 
   &__input:checked ~ &__favorite {

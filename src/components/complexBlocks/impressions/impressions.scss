@@ -1,3 +1,5 @@
+@import '../../../01_colors_&_fonts/color.scss';
+
 .impressions {
   position: relative;
 
@@ -84,7 +86,7 @@
   }
 
   &__circle_part_right-top {
-    background: linear-gradient(0deg, #8ba4f9, #bc9cff);
+    background: linear-gradient(0deg, #8ba4f9, $purple);
     border-top-right-radius: 100%;
     width: 3.68rem;
     height: 3.68rem;
@@ -104,7 +106,7 @@
   }
 
   &__circle_part_right-bottom {
-    background: linear-gradient(0deg, #66d2ea, #6fcf97);
+    background: linear-gradient(0deg, #66d2ea, $green);
     border-bottom-right-radius: 100%;
     width: 3.68rem;
     height: 3.68rem;

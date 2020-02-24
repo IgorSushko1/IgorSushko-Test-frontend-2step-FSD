@@ -1,9 +1,9 @@
+/* eslint-disable indent */
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const globImporter = require('node-sass-glob-importer');
 
 module.exports = {
   mode: 'development',
@@ -36,9 +36,6 @@ module.exports = {
           },
           {
             loader: 'sass-loader',
-            options: {
-              importer: globImporter(),
-            },
           },
         ],
       },
@@ -57,7 +54,6 @@ module.exports = {
       },
       {
         test: /\.(woff(2)?|ttf|eot|otf|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        // loader: 'url'
         loader: 'file-loader',
         options: {
           name: '[name].[ext]',
@@ -107,7 +103,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
       options: {
-        hmr: process.env.NODE_ENV === 'development',
+        // hmr: process.env.NODE_ENV === 'development',
       },
     }),
     new webpack.ProvidePlugin({

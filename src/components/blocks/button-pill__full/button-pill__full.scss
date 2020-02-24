@@ -1,7 +1,9 @@
+@import '../../../01_colors_&_fonts/color.scss';
+
 .button-pill__full {
   display: inline-block;
   cursor: pointer;
-  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+  background: linear-gradient(180deg, $purple, #8ba4f9);
   border: none;
   color: white;
   height: 2.125rem;

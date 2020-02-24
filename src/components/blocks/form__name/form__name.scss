@@ -1,12 +1,14 @@
+@import '../../../01_colors_&_fonts/color.scss';
+
 .form__name {
-  height: 2.875‬rem;
+  height: 2.875rem;
 
   &_sign-up,
   &_sign-in {
     box-sizing: border-box;
     border: 0.06rem solid $dark-shade-025;
     border-radius: 0.25rem;
-    border: 0.06rem solid rgba(31, 32, 65, 0.25);
+    border: 0.06rem solid $dark-shade-025;
     height: 2.75rem;
   }
 

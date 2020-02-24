@@ -1,9 +1,11 @@
+@import '../../../01_colors_&_fonts/color.scss';
+
 .form__email {
-  height: 2.875‬rem;
+  height: 2.875rem;
 
   &_border {
     border: 0.06rem solid $dark-shade-025;
-    border-radius: 0.375‬rem;
+    border-radius: 0.375rem;
     width: 15.31rem;
     margin-left: -0.125rem;
     margin-top: -0.125rem;

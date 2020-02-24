@@ -1,8 +1,10 @@
+@import '../../../01_colors_&_fonts/color.scss';
+
 .hotel-room {
   width: 16.87rem;
   height: 16.06rem;
   background: #ffffff;
-  box-shadow: 0rem 0.62rem 1.25rem rgba(31, 32, 65, 0.05);
+  box-shadow: 0rem 0.62rem 1.25rem $dark-shade-005;
   border-radius: 0.25rem;
   position: relative;
 

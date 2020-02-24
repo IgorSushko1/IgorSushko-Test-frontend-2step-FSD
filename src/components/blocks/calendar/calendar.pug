@@ -10,10 +10,10 @@ mixin calendar(arrivalDate, departureDate, id, type )
         input(type="checkbox" id="js-datepicker__duble" data-range="true" data-multiple-dates-separator=" - " clearButton="true" class="datepicker-here" data-position="bottom left").calendar__datepicker
         .calendar__arrival-date
           div.calendar__date= arrivalDate
-          span.material-icons.calendar__icon expand_more
+          span.material-icons.calendar__icon_double expand_more
         .calendar__departure-date
           div.calendar__date= departureDate
-          span.material-icons.calendar__icon expand_more
+          span.material-icons.calendar__icon_double expand_more
 
   if (type == "single")
     form(action="")

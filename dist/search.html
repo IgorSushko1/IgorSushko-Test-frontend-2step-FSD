@@ -17,7 +17,7 @@
   <link href="main.css" rel="stylesheet"></head>
   <body class="basis">
     <header class="basis__header">
-      <div class="header"><a class="header__image" href="./landing.html"><img src="imgs/Logo.png" alt=""></a>
+      <div class="header"><a class="header__image" href="./landing.html"><img src="imgs/Logo.png" alt="Toxin label"></a>
         <nav class="header__menu">
           <ul class="header__list">
             <li class="header__point"><a class="header__link" href="">О нас</a></li>
@@ -48,14 +48,14 @@
         <h3 class="search-page__datepicker_title">Даты пребывания в отеле</h3>
         <form action="">
           <label class="calendar__single">
-            <input class="datepicker-here calendar__single-field" type="checkbox" id="datepicker__single" data-multiple-dates-separator=" - " data-range="true" data-position="bottom left">
+            <input class="datepicker-here calendar__single-field" type="checkbox" id="js-datepicker__single" data-multiple-dates-separator=" - " data-range="true" data-position="bottom left">
             <div class="calendar__range">
               <div class="calendar__date">19 авг - 23 авг</div>
             </div><span class="material-icons calendar__icon">expand_more</span>
           </label>
         </form>
         <h3 class="search-page__dropdown_title">Гости</h3>
-        <div class="iqdropdown js__iqdropdown_people">
+        <div class="iqdropdown js-iqdropdown_people">
           <p class="iqdropdown-selection"></p>
           <p class="material-icons iqdropdown_icon">expand_more</p>
           <div class="iqdropdown-menu">
@@ -87,7 +87,7 @@
           <div class="range-slider__amount-of-money">
             <h3>Диапазон цены</h3>
           </div>
-          <input class="range-slider__input" type="text" name="example_name" value="">
+          <input class="js-range-slider__input" type="text" name="example_name" value="">
         </form>
         <div class="range-slider__description">Стоимость за сутки пребывания в номере</div>
         <h3 class="search-page__checkbox_title">checkbox buttons</h3>
@@ -121,7 +121,7 @@
         </form>
         <div class="search-page__dropdown">
           <h3 class="search-page__dropdown_title">Удобства номера</h3>
-          <div class="iqdropdown js__iqdropdown_options">
+          <div class="iqdropdown js-iqdropdown_options">
             <p class="iqdropdown-selection"></p>
             <p class="material-icons iqdropdown_icon">expand_more</p>
             <div class="iqdropdown-menu">
@@ -152,10 +152,10 @@
         </div>
         <div class="search-page__expendable-checkbox">
           <div class="checkbox-expendable">
-            <button class="checkbox-expendable__btn js__checkbox-expendable"> 
+            <button class="checkbox-expendable__btn js-checkbox-expendable"> 
               <h3 class="checkbox-expendable__title">Дополнительные удобства</h3><span class="material-icons checkbox-expendable__icons">keyboard_arrow_down</span>
             </button>
-            <div class="js__checkbox-expendable_hiden checkbox-expendable__hiden">
+            <div class="js-checkbox-expendable_hiden checkbox-expendable__hiden">
               <form action="">
                 <label class="checkbox-button__container">Завтрак
                   <input class="checkbox-button__input" type="checkbox" checked><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
@@ -183,7 +183,7 @@
       <article class="search-page__rooms">
         <h2 class="search-page_rooms_title">Номера, которые мы для вас подобрали</h2>
         <section class="search-page__rooms_numbers">
-          <div class="hotel-room"><a href="./room-detail.html"><img class="hotel-room__img" src="imgs/room-1.png" alt=""></a>
+          <div class="hotel-room"><a href="./room-detail.html"><img class="hotel-room__img" src="imgs/room-1.png" alt="eclectica, double bed"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -213,7 +213,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-2.png" alt=""></a>
+          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-2.png" alt="eclectica, 4 simle beds"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -242,7 +242,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-3.png" alt=""></a>
+          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-3.png" alt="double bed"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -272,7 +272,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-4.png" alt=""></a>
+          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-4.png" alt="double bed"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -302,7 +302,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-5.png" alt=""></a>
+          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-5.png" alt="double bed"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -331,7 +331,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-6.png" alt=""></a>
+          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-6.png" alt="double bed, big square"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -360,7 +360,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-7.png" alt=""></a>
+          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-7.png" alt="double bed, big square"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -389,7 +389,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-8.png" alt=""></a>
+          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-8.png" alt="double bed"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -418,7 +418,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-9.png" alt=""></a>
+          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-9.png" alt="double bed"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -447,7 +447,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-10.png" alt=""></a>
+          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-10.png" alt="two simple beds"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -476,7 +476,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-11.png" alt=""></a>
+          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-11.png" alt="two simple double beds"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -505,7 +505,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-12.png" alt=""></a>
+          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-12.png" alt="double bed"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -543,7 +543,7 @@
     </div>
     <footer class="basis__footer">
       <div class="footer__menu">
-        <div class="footer__logo"><a href="./landing.html"><img src="imgs/Logo.png" alt=""></a>
+        <div class="footer__logo"><a href="./landing.html"><img src="imgs/Logo.png" alt="Toxin label"></a>
           <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
         <nav class="footer__navigation">
@@ -571,7 +571,7 @@
       </div>
       <aside class="footer__social">
         <div class="footer__copyright">Copyright © 2019 Toxin отель. Все права зачищены.</div>
-        <div class="footer__icons"><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-twitter.png" alt=""></a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-facebook.png" alt=""></a><a href="https://www.instagram.com/?hl=ru" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-instagram.png" alt=""></a>
+        <div class="footer__icons"><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-twitter.png" alt="twitter icon"></a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-facebook.png" alt="facebook icon"></a><a href="https://www.instagram.com/?hl=ru" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-instagram.png" alt="instagram icon"></a>
         </div>
       </aside>
     </footer>
