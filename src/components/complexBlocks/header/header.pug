@@ -1,5 +1,4 @@
-include ../../blocks/button-pill__empty/button-pill__empty.pug
-include ../../blocks/button-pill__full/button-pill__full.pug
+include ../../blocks/button/button.pug
 
 mixin header(buttonTextOne, buttonTextTwo, login)
   - var links = [{types:"simple", link:"", text:"О нас"},{types:"arrow", link:"", text:"Услуги"},{types:"simple", link:"", text:"Вакансии"},{types:"simple", link:"", text:"Новости"},{types:"arrow", link:"", text:"Соглашения"}]
@@ -24,7 +23,15 @@ mixin header(buttonTextOne, buttonTextTwo, login)
       if (login)
         .header__login_in Cosmin Negoita
       else
-        .header__button
-          +button-pill__empty(buttonTextOne, "./registration-sign-in.html")
-        .header__button
-          +button-pill__full(buttonTextTwo, "./registration-sign-up.html")
+        form(action="./registration-sign-in.html").header__login
+          +button({
+            text: buttonTextOne,
+            color: "white",
+            arrow: "disable"
+            })
+        form(action="./registration-sign-up.html").header__register
+          +button({
+            text: buttonTextTwo,
+            color: "purple",
+            arrow: "disable"
+            })

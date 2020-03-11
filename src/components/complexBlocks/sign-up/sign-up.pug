@@ -1,9 +1,9 @@
-include ../../blocks/button-pill__empty_short/button-pill__empty_short.pug
-include ../../blocks/button-pill__full_arrow/button-pill__full_arrow.pug
+include ../../blocks/button/button.pug
 include ../../blocks/checkbox-radio/checkbox-radio.pug
 include ../../blocks/checkbox-toggle/checkbox-toggle.pug
 include ../../blocks/form__name/form__name.pug
 include ../../blocks/calendar/calendar.pug
+
 mixin sign-up
   article.sing-up
     header.sing-up__title
@@ -26,7 +26,17 @@ mixin sign-up
     .sing-up__toggle-checkbox
       +checkbox-toggle("Получать спецпредложения")
     .sing-up__button
-      +button-pill__full_arrow("Перейти к оплате", "./search.html")
+      form(action="./search.html").sing-up__button-purple
+        +button({
+          text: "Перейти к оплате",
+          arrow: "enable",
+          color: "purple"
+        })
     .sing-up__authorization
       p.sing-up__authorization_text Уже есть аккаунт на Toxin
-      +button-pill__empty_short({text: "Войти", ref:"./registration-sign-in.html"})
+      form(action="./registration-sign-in.html").sing-up__button-white
+        +button({
+          text: "Войти",
+          arrow: "disable",
+          color: "white"
+        })

@@ -1,5 +1,5 @@
 include ../../blocks/iqdropdown/iqdropdown.pug
-include ../../blocks/button-pill__full_arrow/button-pill__full_arrow.pug
+include ../../blocks/button/button.pug
 include ../../blocks/calendar/calendar.pug
 
 mixin booking-room
@@ -41,5 +41,9 @@ mixin booking-room
       h2 Итого
       .booking__total_border
       h2.booking__total_price 38 081₽
-    .booking__button
-      +button-pill__full_arrow("Забронировать", "./aaa.html")
+    form(action="./landing.html").booking__button
+      +button({
+        text: "Забронировать",
+        color: "purple",
+        arrow: "enable"
+      })

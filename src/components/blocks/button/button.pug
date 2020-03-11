@@ -1,0 +1,22 @@
+mixin button({text, arrow, color})
+
+  - var arrowStyle
+  - var arrowModificator = ["enable", "disable"]
+
+  each baseArrow in arrowModificator
+    if baseArrow == arrow
+      - arrowStyle = `material-icons button__arrow_${arrow}`;
+
+  - var colorStyle
+  - var textStyle
+  - var colorModificator = ["white", "purple"]
+
+  each baseColor in colorModificator
+    if baseColor == color
+      - colorStyle = `button_color_${baseColor}`;
+    if baseColor != color
+      - textStyle = `button__text_${baseColor}`;
+
+  button(class=`${colorStyle}`).button
+    p(class=textStyle)= text
+    p(class=`${arrowStyle}`) arrow_forward

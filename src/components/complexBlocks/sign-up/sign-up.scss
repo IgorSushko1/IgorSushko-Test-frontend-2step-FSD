@@ -77,6 +77,11 @@
     margin-left: -0.06rem;
   }
 
+  &__button-purple {
+    width: 20rem;
+    height: 2.75rem;
+  }
+
   &__authorization {
     display: flex;
     justify-content: space-between;
@@ -89,5 +94,10 @@
       font-size: 0.87rem;
       margin: 0;
     }
+  }
+
+  &__button-white {
+    width: 6.18rem;
+    height: 2.75rem;
   }
 }

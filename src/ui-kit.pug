@@ -11,23 +11,6 @@ html
       include ./components/blocks/fonts-list/fonts-list.pug
       +fonts-list
 
-    //- include ./components/blocks/button/button.pug
-    //- +button({
-    //-   action: "",
-    //-   text: "Универсальная кнопка",
-    //-   element: "arrow_enable",
-    //-   size: "short",
-    //-   color: "white"
-    //- })
-
-    //-   +button({
-    //-   action: "",
-    //-   text: "Универсальная кнопка длинная",
-    //-   element: "arrow_disable",
-    //-   size: "normal",
-    //-   color: "purple"
-    //- })
-
     include ./components/blocks/color-example/color-example.pug
 
     +color-example("Dark Shade 100%", "#1F2041", "__dark-shade-100")
@@ -67,17 +50,33 @@ html
       +star-rating(2)
       +star-rating(5)
     div
-      include ./components/blocks/button-pill__full/button-pill__full.pug
-      +button-pill__full("REGISTER")
-    div
-      include ./components/blocks/button-pill__empty/button-pill__empty.pug
-      +button-pill__empty("REGISTER")
-    div
-      include ./components/blocks/button-text/button-text.pug
-      +button-text("text")
-    div
-      include ./components/blocks/button-pill__full_arrow/button-pill__full_arrow.pug
-    +button-pill__full_arrow("CLICK ME", "./aaa.html")
+    include ./components/blocks/button/button.pug
+      form(action="landing.html")
+        +button({
+          text: "Универсальная кнопка длинная",
+          arrow: "enable",
+          color: "purple"
+        })
+      +button({
+        text: "Универсальная кнопка длинная",
+        arrow: "disable",
+        color: "white"
+      })
+      +button({
+        text: "REGISTER",
+        arrow: "disable",
+        color: "purple"
+      })
+      +button({
+        text: "text",
+        arrow: "disable",
+        color: "white"
+      })
+      +button({
+        text: "CLICK ME",
+        arrow: "enable",
+        color: "purple"
+      })
     div
       include ./components/blocks/like-button/like-button.pug
       +like-button({value: 11})

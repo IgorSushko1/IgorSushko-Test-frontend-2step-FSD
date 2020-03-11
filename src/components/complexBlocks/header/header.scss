@@ -52,10 +52,22 @@
     display: inline-flex;
   }
 
-  &__button {
+  &__login {
+    width: 5.43rem;
+    height: 2.125rem;
     display: flex;
     align-items: center;
-    margin-left: 1.4rem;
+    margin-left: 1.3rem;
+    margin-top: 0.75rem;
+  }
+
+  &__register {
+    width: 12.25rem;
+    height: 2.125rem;
+    display: flex;
+    align-items: center;
+    margin-left: 1.2rem;
+    margin-top: 0.75rem;
   }
 
   &__login_in {

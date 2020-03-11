@@ -1,4 +1,4 @@
-include ../../blocks/button-pill__full_arrow/button-pill__full_arrow.pug
+include ../../blocks/button/button.pug
 include ../../blocks/iqdropdown/iqdropdown.pug
 include ../../blocks/calendar/calendar.pug
 
@@ -18,4 +18,8 @@ mixin pick-up-numbers
       .pick-up-numbers__dropdown
         +iqdropdown({arr:["Взрослые", "Дети", "Младенцы"], classForJs:"js-iqdropdown_people"})
     .pick-up-numbers__button
-      +button-pill__full_arrow("подобрать номер", "./search.html")
+      +button({
+        text: "Подобрать номер",
+        arrow: "enable",
+        color: "purple"
+      })
