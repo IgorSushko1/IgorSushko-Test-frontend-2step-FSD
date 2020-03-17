@@ -1,0 +1,20 @@
+@mixin header_h1($size) {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  font-size: $size;
+}
+
+@mixin header_h2($size) {
+  font-family: 'OpenSans-Bold', Arial, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  font-size: $size;
+}
+
+@mixin header_h3($size) {
+  font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: $size;
+  margin: 0;
+}

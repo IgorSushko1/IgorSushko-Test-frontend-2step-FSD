@@ -1,3 +1,9 @@
-mixin social-network(link, image, alt)
-  a(href=link target="_blank" rel="noopener noreferrer")
-    img(src=image alt=alt)
+mixin social-network(socialNetwork)
+  - var twitter = {link:"https://twitter.com/", image:"imgs/icon-twitter.png", alt:"twitter icon"}
+  - var facebook = {link:"https://www.facebook.com/", image:"imgs/icon-facebook.png", alt:"facebook icon"}
+  - var instagram = {link:"https://www.instagram.com/?hl=ru", image:"imgs/icon-instagram.png", alt:"instagram icon"}
+
+  - socialNetwork = (socialNetwork =="twitter") ? twitter : (socialNetwork =="facebook") ? facebook : (socialNetwork =="instagram") ? instagram : false
+
+  a(href=socialNetwork.link target="_blank" rel="noopener noreferrer")
+    img(src=socialNetwork.image alt=socialNetwork.alt)

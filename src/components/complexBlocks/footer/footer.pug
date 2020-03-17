@@ -6,7 +6,7 @@ mixin footer
   .footer__menu
     .footer__logo
       a(href="./landing.html")
-        img(src="imgs/Logo.png" alt="Toxin label" )
+        img(src="imgs/logo.png" alt="Toxin label" )
       .footer__logo_text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
     nav.footer__navigation
       +footer-links("Навигация", "О нас", "Новости", "Служба поддержки", "Услуги")
@@ -21,6 +21,6 @@ mixin footer
   aside.footer__social
     .footer__copyright Copyright © 2019 Toxin отель. Все права зачищены.
     .footer__icons
-      +social-network("https://twitter.com/", "imgs/icon-twitter.png", "twitter icon")
-      +social-network("https://www.facebook.com/", "imgs/icon-facebook.png", "facebook icon")
-      +social-network("https://www.instagram.com/?hl=ru", "imgs/icon-instagram.png", "instagram icon")
+      +social-network("twitter")
+      +social-network("facebook")
+      +social-network("instagram")

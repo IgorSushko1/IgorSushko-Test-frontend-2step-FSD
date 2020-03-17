@@ -1,5 +1,18 @@
-@import '../../../01_colors_&_fonts/color.scss';
+@import '../../../styles/color.scss';
+@import '../../../styles/headers.scss';
 
 .fonts-list {
   color: $dark-shade-025;
+
+  &__header_h1 {
+    @include header_h1('1.5rem');
+  }
+
+  &__header_h2 {
+    @include header_h2('1.375rem');
+  }
+
+  &__header_h3 {
+    @include header_h3('0.75rem');
+  }
 }
