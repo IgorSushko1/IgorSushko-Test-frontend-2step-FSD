@@ -97,171 +97,6 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/color.scss":
-/*!*****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/color.scss ***!
-  \*****************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/color.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-body.scss":
-/*!*********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-body.scss ***!
-  \*********************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/font-body.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-h1.scss":
-/*!*******************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-h1.scss ***!
-  \*******************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/font-h1.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-h2.scss":
-/*!*******************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-h2.scss ***!
-  \*******************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/font-h2.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-h3.scss":
-/*!*******************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-h3.scss ***!
-  \*******************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/font-h3.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-montserrat.scss":
-/*!***************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-montserrat.scss ***!
-  \***************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/font-montserrat.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-quicksand.scss":
-/*!**************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-quicksand.scss ***!
-  \**************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/font-quicksand.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/html.scss":
-/*!****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/html.scss ***!
-  \****************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/html.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/material-icons.scss":
-/*!**************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/material-icons.scss ***!
-  \**************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/material-icons.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button.scss":
-/*!*******************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button.scss ***!
-  \*******************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/button/button.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button__arrow/button__arrow.scss":
-/*!****************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button__arrow/button__arrow.scss ***!
-  \****************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/button/button__arrow/button__arrow.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button_color/button_color_purple.scss":
-/*!*********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button_color/button_color_purple.scss ***!
-  \*********************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/button/button_color/button_color_purple.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button_color/button_color_white.scss":
-/*!********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button_color/button_color_white.scss ***!
-  \********************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/button/button_color/button_color_white.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button_size/button_size_normal.scss":
-/*!*******************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button_size/button_size_normal.scss ***!
-  \*******************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/button/button_size/button_size_normal.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button_size/button_size_short.scss":
-/*!******************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button_size/button_size_short.scss ***!
-  \******************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/button/button_size/button_size_short.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
 /***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/bullet-list/bullet-list.scss":
 /*!***********************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/bullet-list/bullet-list.scss ***!
@@ -273,50 +108,6 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button-pill__empty/button-pill__empty.scss":
-/*!*************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button-pill__empty/button-pill__empty.scss ***!
-  \*************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/blocks/button-pill__empty/button-pill__empty.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button-pill__empty_short/button-pill__empty_short.scss":
-/*!*************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button-pill__empty_short/button-pill__empty_short.scss ***!
-  \*************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/blocks/button-pill__empty_short/button-pill__empty_short.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button-pill__full/button-pill__full.scss":
-/*!***********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button-pill__full/button-pill__full.scss ***!
-  \***********************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/blocks/button-pill__full/button-pill__full.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button-pill__full_arrow/button-pill__full_arrow.scss":
-/*!***********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button-pill__full_arrow/button-pill__full_arrow.scss ***!
-  \***********************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/blocks/button-pill__full_arrow/button-pill__full_arrow.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
 /***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button-text/button-text.scss":
 /*!***********************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button-text/button-text.scss ***!
@@ -325,6 +116,17 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/blocks/button-text/button-text.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button/button.scss":
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button/button.scss ***!
+  \*************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/blocks/button/button.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -724,14 +526,80 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss":
-/*!***********************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss ***!
-  \***********************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/color.scss":
+/*!******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/color.scss ***!
+  \******************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/style.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/styles/color.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/font-montserrat.scss":
+/*!****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/font-montserrat.scss ***!
+  \****************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/styles/font-montserrat.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/font-opensans.scss":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/font-opensans.scss ***!
+  \**************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/styles/font-opensans.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/font-quicksand.scss":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/font-quicksand.scss ***!
+  \***************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/styles/font-quicksand.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/headers.scss":
+/*!********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/headers.scss ***!
+  \********************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/styles/headers.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/html.scss":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/html.scss ***!
+  \*****************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/styles/html.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/material-icons.scss":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/material-icons.scss ***!
+  \***************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/styles/material-icons.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -787,172 +655,7 @@ eval("/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./01_colors_&_fonts/color.scss\": \"./src/01_colors_&_fonts/color.scss\",\n\t\"./01_colors_&_fonts/font-body.scss\": \"./src/01_colors_&_fonts/font-body.scss\",\n\t\"./01_colors_&_fonts/font-h1.scss\": \"./src/01_colors_&_fonts/font-h1.scss\",\n\t\"./01_colors_&_fonts/font-h2.scss\": \"./src/01_colors_&_fonts/font-h2.scss\",\n\t\"./01_colors_&_fonts/font-h3.scss\": \"./src/01_colors_&_fonts/font-h3.scss\",\n\t\"./01_colors_&_fonts/font-montserrat.scss\": \"./src/01_colors_&_fonts/font-montserrat.scss\",\n\t\"./01_colors_&_fonts/font-quicksand.scss\": \"./src/01_colors_&_fonts/font-quicksand.scss\",\n\t\"./01_colors_&_fonts/html.scss\": \"./src/01_colors_&_fonts/html.scss\",\n\t\"./01_colors_&_fonts/material-icons.scss\": \"./src/01_colors_&_fonts/material-icons.scss\",\n\t\"./button/button.scss\": \"./src/button/button.scss\",\n\t\"./button/button__arrow/button__arrow.scss\": \"./src/button/button__arrow/button__arrow.scss\",\n\t\"./button/button_color/button_color_purple.scss\": \"./src/button/button_color/button_color_purple.scss\",\n\t\"./button/button_color/button_color_white.scss\": \"./src/button/button_color/button_color_white.scss\",\n\t\"./button/button_size/button_size_normal.scss\": \"./src/button/button_size/button_size_normal.scss\",\n\t\"./button/button_size/button_size_short.scss\": \"./src/button/button_size/button_size_short.scss\",\n\t\"./components/blocks/bullet-list/bullet-list.scss\": \"./src/components/blocks/bullet-list/bullet-list.scss\",\n\t\"./components/blocks/button-pill__empty/button-pill__empty.scss\": \"./src/components/blocks/button-pill__empty/button-pill__empty.scss\",\n\t\"./components/blocks/button-pill__empty_short/button-pill__empty_short.scss\": \"./src/components/blocks/button-pill__empty_short/button-pill__empty_short.scss\",\n\t\"./components/blocks/button-pill__full/button-pill__full.scss\": \"./src/components/blocks/button-pill__full/button-pill__full.scss\",\n\t\"./components/blocks/button-pill__full_arrow/button-pill__full_arrow.scss\": \"./src/components/blocks/button-pill__full_arrow/button-pill__full_arrow.scss\",\n\t\"./components/blocks/button-text/button-text.scss\": \"./src/components/blocks/button-text/button-text.scss\",\n\t\"./components/blocks/calendar/calendar.js\": \"./src/components/blocks/calendar/calendar.js\",\n\t\"./components/blocks/calendar/calendar.scss\": \"./src/components/blocks/calendar/calendar.scss\",\n\t\"./components/blocks/checkbox-button/checkbox-button.scss\": \"./src/components/blocks/checkbox-button/checkbox-button.scss\",\n\t\"./components/blocks/checkbox-expendable/checkbox-expendable.js\": \"./src/components/blocks/checkbox-expendable/checkbox-expendable.js\",\n\t\"./components/blocks/checkbox-expendable/checkbox-expendable.scss\": \"./src/components/blocks/checkbox-expendable/checkbox-expendable.scss\",\n\t\"./components/blocks/checkbox-radio/checkbox-radio.scss\": \"./src/components/blocks/checkbox-radio/checkbox-radio.scss\",\n\t\"./components/blocks/checkbox-rich/checkbox-rich.scss\": \"./src/components/blocks/checkbox-rich/checkbox-rich.scss\",\n\t\"./components/blocks/checkbox-toggle/checkbox-toggle.scss\": \"./src/components/blocks/checkbox-toggle/checkbox-toggle.scss\",\n\t\"./components/blocks/checkbox-toggle/jquery.checkbox-toggle.js\": \"./src/components/blocks/checkbox-toggle/jquery.checkbox-toggle.js\",\n\t\"./components/blocks/color-example/color-example.scss\": \"./src/components/blocks/color-example/color-example.scss\",\n\t\"./components/blocks/comments/comments.scss\": \"./src/components/blocks/comments/comments.scss\",\n\t\"./components/blocks/fonts-list/fonts-list.scss\": \"./src/components/blocks/fonts-list/fonts-list.scss\",\n\t\"./components/blocks/footer-links/footer-links.scss\": \"./src/components/blocks/footer-links/footer-links.scss\",\n\t\"./components/blocks/form__date/form__date.scss\": \"./src/components/blocks/form__date/form__date.scss\",\n\t\"./components/blocks/form__email/form__email.scss\": \"./src/components/blocks/form__email/form__email.scss\",\n\t\"./components/blocks/form__name/form__name.scss\": \"./src/components/blocks/form__name/form__name.scss\",\n\t\"./components/blocks/icon-advantages/icon-advantages.scss\": \"./src/components/blocks/icon-advantages/icon-advantages.scss\",\n\t\"./components/blocks/iqdropdown/iqdropdown.js\": \"./src/components/blocks/iqdropdown/iqdropdown.js\",\n\t\"./components/blocks/iqdropdown/iqdropdown.scss\": \"./src/components/blocks/iqdropdown/iqdropdown.scss\",\n\t\"./components/blocks/iqdropdown/jquery.iqdropdown.js\": \"./src/components/blocks/iqdropdown/jquery.iqdropdown.js\",\n\t\"./components/blocks/like-button/like-button.scss\": \"./src/components/blocks/like-button/like-button.scss\",\n\t\"./components/blocks/pagination-circle/pagination-circle.scss\": \"./src/components/blocks/pagination-circle/pagination-circle.scss\",\n\t\"./components/blocks/pagination/pagination.scss\": \"./src/components/blocks/pagination/pagination.scss\",\n\t\"./components/blocks/range-slider/jquery.range-slider.js\": \"./src/components/blocks/range-slider/jquery.range-slider.js\",\n\t\"./components/blocks/range-slider/range-slider.scss\": \"./src/components/blocks/range-slider/range-slider.scss\",\n\t\"./components/blocks/star-rating/star-rating.scss\": \"./src/components/blocks/star-rating/star-rating.scss\",\n\t\"./components/complexBlocks/booking/booking.scss\": \"./src/components/complexBlocks/booking/booking.scss\",\n\t\"./components/complexBlocks/footer-mobile/footer-mobile.scss\": \"./src/components/complexBlocks/footer-mobile/footer-mobile.scss\",\n\t\"./components/complexBlocks/footer/footer.scss\": \"./src/components/complexBlocks/footer/footer.scss\",\n\t\"./components/complexBlocks/header/header.scss\": \"./src/components/complexBlocks/header/header.scss\",\n\t\"./components/complexBlocks/hotel-room-card/hotel-room-card.scss\": \"./src/components/complexBlocks/hotel-room-card/hotel-room-card.scss\",\n\t\"./components/complexBlocks/impressions/impressions.scss\": \"./src/components/complexBlocks/impressions/impressions.scss\",\n\t\"./components/complexBlocks/pick-up-numbers/pick-up-numbers.scss\": \"./src/components/complexBlocks/pick-up-numbers/pick-up-numbers.scss\",\n\t\"./components/complexBlocks/sign-in/sign-in.scss\": \"./src/components/complexBlocks/sign-in/sign-in.scss\",\n\t\"./components/complexBlocks/sign-up/sign-up.scss\": \"./src/components/complexBlocks/sign-up/sign-up.scss\",\n\t\"./index.js\": \"./src/index.js\",\n\t\"./pages/basis/basis.scss\": \"./src/pages/basis/basis.scss\",\n\t\"./pages/landing/landing.scss\": \"./src/pages/landing/landing.scss\",\n\t\"./pages/registration__basis/registration__basis.scss\": \"./src/pages/registration__basis/registration__basis.scss\",\n\t\"./pages/registration__sign-in/registration_sing-in.scss\": \"./src/pages/registration__sign-in/registration_sing-in.scss\",\n\t\"./pages/registration__sign-up/registration_sing-up.scss\": \"./src/pages/registration__sign-up/registration_sing-up.scss\",\n\t\"./pages/room-detail/room-detail.scss\": \"./src/pages/room-detail/room-detail.scss\",\n\t\"./pages/search/search.scss\": \"./src/pages/search/search.scss\",\n\t\"./style.scss\": \"./src/style.scss\",\n\t\"./vendor/datepicker/datepicker.js\": \"./src/vendor/datepicker/datepicker.js\",\n\t\"./vendor/datepicker/datepicker.scss\": \"./src/vendor/datepicker/datepicker.scss\",\n\t\"./vendor/range-slider/ion.rangeSlider.js\": \"./src/vendor/range-slider/ion.rangeSlider.js\",\n\t\"./vendor/range-slider/ion.rangeSlider.scss\": \"./src/vendor/range-slider/ion.rangeSlider.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.js|scss|css$\";\n\n//# sourceURL=webpack:///./src_sync_\\.js%7Cscss%7Ccss$?");
-
-/***/ }),
-
-/***/ "./src/01_colors_&_fonts/color.scss":
-/*!******************************************!*\
-  !*** ./src/01_colors_&_fonts/color.scss ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./color.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/color.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/color.scss?");
-
-/***/ }),
-
-/***/ "./src/01_colors_&_fonts/font-body.scss":
-/*!**********************************************!*\
-  !*** ./src/01_colors_&_fonts/font-body.scss ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./font-body.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-body.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/font-body.scss?");
-
-/***/ }),
-
-/***/ "./src/01_colors_&_fonts/font-h1.scss":
-/*!********************************************!*\
-  !*** ./src/01_colors_&_fonts/font-h1.scss ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./font-h1.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-h1.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/font-h1.scss?");
-
-/***/ }),
-
-/***/ "./src/01_colors_&_fonts/font-h2.scss":
-/*!********************************************!*\
-  !*** ./src/01_colors_&_fonts/font-h2.scss ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./font-h2.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-h2.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/font-h2.scss?");
-
-/***/ }),
-
-/***/ "./src/01_colors_&_fonts/font-h3.scss":
-/*!********************************************!*\
-  !*** ./src/01_colors_&_fonts/font-h3.scss ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./font-h3.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-h3.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/font-h3.scss?");
-
-/***/ }),
-
-/***/ "./src/01_colors_&_fonts/font-montserrat.scss":
-/*!****************************************************!*\
-  !*** ./src/01_colors_&_fonts/font-montserrat.scss ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./font-montserrat.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-montserrat.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/font-montserrat.scss?");
-
-/***/ }),
-
-/***/ "./src/01_colors_&_fonts/font-quicksand.scss":
-/*!***************************************************!*\
-  !*** ./src/01_colors_&_fonts/font-quicksand.scss ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./font-quicksand.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/font-quicksand.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/font-quicksand.scss?");
-
-/***/ }),
-
-/***/ "./src/01_colors_&_fonts/html.scss":
-/*!*****************************************!*\
-  !*** ./src/01_colors_&_fonts/html.scss ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./html.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/html.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/html.scss?");
-
-/***/ }),
-
-/***/ "./src/01_colors_&_fonts/material-icons.scss":
-/*!***************************************************!*\
-  !*** ./src/01_colors_&_fonts/material-icons.scss ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./material-icons.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/01_colors_&_fonts/material-icons.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/01_colors_&_fonts/material-icons.scss?");
-
-/***/ }),
-
-/***/ "./src/button/button.scss":
-/*!********************************!*\
-  !*** ./src/button/button.scss ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./button.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/button/button.scss?");
-
-/***/ }),
-
-/***/ "./src/button/button__arrow/button__arrow.scss":
-/*!*****************************************************!*\
-  !*** ./src/button/button__arrow/button__arrow.scss ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./button__arrow.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button__arrow/button__arrow.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/button/button__arrow/button__arrow.scss?");
-
-/***/ }),
-
-/***/ "./src/button/button_color/button_color_purple.scss":
-/*!**********************************************************!*\
-  !*** ./src/button/button_color/button_color_purple.scss ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./button_color_purple.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button_color/button_color_purple.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/button/button_color/button_color_purple.scss?");
-
-/***/ }),
-
-/***/ "./src/button/button_color/button_color_white.scss":
-/*!*********************************************************!*\
-  !*** ./src/button/button_color/button_color_white.scss ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./button_color_white.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button_color/button_color_white.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/button/button_color/button_color_white.scss?");
-
-/***/ }),
-
-/***/ "./src/button/button_size/button_size_normal.scss":
-/*!********************************************************!*\
-  !*** ./src/button/button_size/button_size_normal.scss ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./button_size_normal.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button_size/button_size_normal.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/button/button_size/button_size_normal.scss?");
-
-/***/ }),
-
-/***/ "./src/button/button_size/button_size_short.scss":
-/*!*******************************************************!*\
-  !*** ./src/button/button_size/button_size_short.scss ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./button_size_short.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/button/button_size/button_size_short.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/button/button_size/button_size_short.scss?");
+eval("var map = {\n\t\"./components/blocks/bullet-list/bullet-list.scss\": \"./src/components/blocks/bullet-list/bullet-list.scss\",\n\t\"./components/blocks/button-text/button-text.scss\": \"./src/components/blocks/button-text/button-text.scss\",\n\t\"./components/blocks/button/button.scss\": \"./src/components/blocks/button/button.scss\",\n\t\"./components/blocks/calendar/calendar.js\": \"./src/components/blocks/calendar/calendar.js\",\n\t\"./components/blocks/calendar/calendar.scss\": \"./src/components/blocks/calendar/calendar.scss\",\n\t\"./components/blocks/checkbox-button/checkbox-button.scss\": \"./src/components/blocks/checkbox-button/checkbox-button.scss\",\n\t\"./components/blocks/checkbox-expendable/checkbox-expendable.js\": \"./src/components/blocks/checkbox-expendable/checkbox-expendable.js\",\n\t\"./components/blocks/checkbox-expendable/checkbox-expendable.scss\": \"./src/components/blocks/checkbox-expendable/checkbox-expendable.scss\",\n\t\"./components/blocks/checkbox-radio/checkbox-radio.scss\": \"./src/components/blocks/checkbox-radio/checkbox-radio.scss\",\n\t\"./components/blocks/checkbox-rich/checkbox-rich.scss\": \"./src/components/blocks/checkbox-rich/checkbox-rich.scss\",\n\t\"./components/blocks/checkbox-toggle/checkbox-toggle.scss\": \"./src/components/blocks/checkbox-toggle/checkbox-toggle.scss\",\n\t\"./components/blocks/checkbox-toggle/jquery.checkbox-toggle.js\": \"./src/components/blocks/checkbox-toggle/jquery.checkbox-toggle.js\",\n\t\"./components/blocks/color-example/color-example.scss\": \"./src/components/blocks/color-example/color-example.scss\",\n\t\"./components/blocks/comments/comments.scss\": \"./src/components/blocks/comments/comments.scss\",\n\t\"./components/blocks/fonts-list/fonts-list.scss\": \"./src/components/blocks/fonts-list/fonts-list.scss\",\n\t\"./components/blocks/footer-links/footer-links.scss\": \"./src/components/blocks/footer-links/footer-links.scss\",\n\t\"./components/blocks/form__date/form__date.scss\": \"./src/components/blocks/form__date/form__date.scss\",\n\t\"./components/blocks/form__email/form__email.scss\": \"./src/components/blocks/form__email/form__email.scss\",\n\t\"./components/blocks/form__name/form__name.scss\": \"./src/components/blocks/form__name/form__name.scss\",\n\t\"./components/blocks/icon-advantages/icon-advantages.scss\": \"./src/components/blocks/icon-advantages/icon-advantages.scss\",\n\t\"./components/blocks/iqdropdown/iqdropdown.js\": \"./src/components/blocks/iqdropdown/iqdropdown.js\",\n\t\"./components/blocks/iqdropdown/iqdropdown.scss\": \"./src/components/blocks/iqdropdown/iqdropdown.scss\",\n\t\"./components/blocks/iqdropdown/jquery.iqdropdown.js\": \"./src/components/blocks/iqdropdown/jquery.iqdropdown.js\",\n\t\"./components/blocks/like-button/like-button.scss\": \"./src/components/blocks/like-button/like-button.scss\",\n\t\"./components/blocks/pagination-circle/pagination-circle.scss\": \"./src/components/blocks/pagination-circle/pagination-circle.scss\",\n\t\"./components/blocks/pagination/pagination.scss\": \"./src/components/blocks/pagination/pagination.scss\",\n\t\"./components/blocks/range-slider/jquery.range-slider.js\": \"./src/components/blocks/range-slider/jquery.range-slider.js\",\n\t\"./components/blocks/range-slider/range-slider.scss\": \"./src/components/blocks/range-slider/range-slider.scss\",\n\t\"./components/blocks/star-rating/star-rating.scss\": \"./src/components/blocks/star-rating/star-rating.scss\",\n\t\"./components/complexBlocks/booking/booking.scss\": \"./src/components/complexBlocks/booking/booking.scss\",\n\t\"./components/complexBlocks/footer-mobile/footer-mobile.scss\": \"./src/components/complexBlocks/footer-mobile/footer-mobile.scss\",\n\t\"./components/complexBlocks/footer/footer.scss\": \"./src/components/complexBlocks/footer/footer.scss\",\n\t\"./components/complexBlocks/header/header.scss\": \"./src/components/complexBlocks/header/header.scss\",\n\t\"./components/complexBlocks/hotel-room-card/hotel-room-card.scss\": \"./src/components/complexBlocks/hotel-room-card/hotel-room-card.scss\",\n\t\"./components/complexBlocks/impressions/impressions.scss\": \"./src/components/complexBlocks/impressions/impressions.scss\",\n\t\"./components/complexBlocks/pick-up-numbers/pick-up-numbers.scss\": \"./src/components/complexBlocks/pick-up-numbers/pick-up-numbers.scss\",\n\t\"./components/complexBlocks/sign-in/sign-in.scss\": \"./src/components/complexBlocks/sign-in/sign-in.scss\",\n\t\"./components/complexBlocks/sign-up/sign-up.scss\": \"./src/components/complexBlocks/sign-up/sign-up.scss\",\n\t\"./index.js\": \"./src/index.js\",\n\t\"./pages/basis/basis.scss\": \"./src/pages/basis/basis.scss\",\n\t\"./pages/landing/landing.scss\": \"./src/pages/landing/landing.scss\",\n\t\"./pages/registration__basis/registration__basis.scss\": \"./src/pages/registration__basis/registration__basis.scss\",\n\t\"./pages/registration__sign-in/registration_sing-in.scss\": \"./src/pages/registration__sign-in/registration_sing-in.scss\",\n\t\"./pages/registration__sign-up/registration_sing-up.scss\": \"./src/pages/registration__sign-up/registration_sing-up.scss\",\n\t\"./pages/room-detail/room-detail.scss\": \"./src/pages/room-detail/room-detail.scss\",\n\t\"./pages/search/search.scss\": \"./src/pages/search/search.scss\",\n\t\"./styles/color.scss\": \"./src/styles/color.scss\",\n\t\"./styles/font-montserrat.scss\": \"./src/styles/font-montserrat.scss\",\n\t\"./styles/font-opensans.scss\": \"./src/styles/font-opensans.scss\",\n\t\"./styles/font-quicksand.scss\": \"./src/styles/font-quicksand.scss\",\n\t\"./styles/headers.scss\": \"./src/styles/headers.scss\",\n\t\"./styles/html.scss\": \"./src/styles/html.scss\",\n\t\"./styles/material-icons.scss\": \"./src/styles/material-icons.scss\",\n\t\"./vendor/datepicker/datepicker.js\": \"./src/vendor/datepicker/datepicker.js\",\n\t\"./vendor/datepicker/datepicker.scss\": \"./src/vendor/datepicker/datepicker.scss\",\n\t\"./vendor/range-slider/ion.rangeSlider.js\": \"./src/vendor/range-slider/ion.rangeSlider.js\",\n\t\"./vendor/range-slider/ion.rangeSlider.scss\": \"./src/vendor/range-slider/ion.rangeSlider.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.js|scss|css$\";\n\n//# sourceURL=webpack:///./src_sync_\\.js%7Cscss%7Ccss$?");
 
 /***/ }),
 
@@ -967,50 +670,6 @@ eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-e
 
 /***/ }),
 
-/***/ "./src/components/blocks/button-pill__empty/button-pill__empty.scss":
-/*!**************************************************************************!*\
-  !*** ./src/components/blocks/button-pill__empty/button-pill__empty.scss ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./button-pill__empty.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button-pill__empty/button-pill__empty.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/blocks/button-pill__empty/button-pill__empty.scss?");
-
-/***/ }),
-
-/***/ "./src/components/blocks/button-pill__empty_short/button-pill__empty_short.scss":
-/*!**************************************************************************************!*\
-  !*** ./src/components/blocks/button-pill__empty_short/button-pill__empty_short.scss ***!
-  \**************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./button-pill__empty_short.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button-pill__empty_short/button-pill__empty_short.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/blocks/button-pill__empty_short/button-pill__empty_short.scss?");
-
-/***/ }),
-
-/***/ "./src/components/blocks/button-pill__full/button-pill__full.scss":
-/*!************************************************************************!*\
-  !*** ./src/components/blocks/button-pill__full/button-pill__full.scss ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./button-pill__full.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button-pill__full/button-pill__full.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/blocks/button-pill__full/button-pill__full.scss?");
-
-/***/ }),
-
-/***/ "./src/components/blocks/button-pill__full_arrow/button-pill__full_arrow.scss":
-/*!************************************************************************************!*\
-  !*** ./src/components/blocks/button-pill__full_arrow/button-pill__full_arrow.scss ***!
-  \************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./button-pill__full_arrow.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button-pill__full_arrow/button-pill__full_arrow.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/blocks/button-pill__full_arrow/button-pill__full_arrow.scss?");
-
-/***/ }),
-
 /***/ "./src/components/blocks/button-text/button-text.scss":
 /*!************************************************************!*\
   !*** ./src/components/blocks/button-text/button-text.scss ***!
@@ -1019,6 +678,17 @@ eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-e
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./button-text.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button-text/button-text.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/blocks/button-text/button-text.scss?");
+
+/***/ }),
+
+/***/ "./src/components/blocks/button/button.scss":
+/*!**************************************************!*\
+  !*** ./src/components/blocks/button/button.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./button.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/blocks/button/button.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/blocks/button/button.scss?");
 
 /***/ }),
 
@@ -1414,7 +1084,7 @@ eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-e
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// import './style.scss';\r\n// @require('material-icons');\r\n\r\nfunction requireJS(r) {\r\n  return r.keys().map(r);\r\n}\r\n\r\nrequireJS(__webpack_require__(\"./src sync recursive \\\\.js|scss|css$\"));\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("function requireJS(r) {\r\n  return r.keys().map(r);\r\n}\r\n\r\nrequireJS(__webpack_require__(\"./src sync recursive \\\\.js|scss|css$\"));\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -1495,14 +1165,80 @@ eval("var content = __webpack_require__(/*! !../../../node_modules/mini-css-extr
 
 /***/ }),
 
-/***/ "./src/style.scss":
-/*!************************!*\
-  !*** ./src/style.scss ***!
-  \************************/
+/***/ "./src/styles/color.scss":
+/*!*******************************!*\
+  !*** ./src/styles/color.scss ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var content = __webpack_require__(/*! !../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./style.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/style.scss?");
+eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./color.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/color.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/styles/color.scss?");
+
+/***/ }),
+
+/***/ "./src/styles/font-montserrat.scss":
+/*!*****************************************!*\
+  !*** ./src/styles/font-montserrat.scss ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./font-montserrat.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/font-montserrat.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/styles/font-montserrat.scss?");
+
+/***/ }),
+
+/***/ "./src/styles/font-opensans.scss":
+/*!***************************************!*\
+  !*** ./src/styles/font-opensans.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./font-opensans.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/font-opensans.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/styles/font-opensans.scss?");
+
+/***/ }),
+
+/***/ "./src/styles/font-quicksand.scss":
+/*!****************************************!*\
+  !*** ./src/styles/font-quicksand.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./font-quicksand.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/font-quicksand.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/styles/font-quicksand.scss?");
+
+/***/ }),
+
+/***/ "./src/styles/headers.scss":
+/*!*********************************!*\
+  !*** ./src/styles/headers.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./headers.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/headers.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/styles/headers.scss?");
+
+/***/ }),
+
+/***/ "./src/styles/html.scss":
+/*!******************************!*\
+  !*** ./src/styles/html.scss ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./html.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/html.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/styles/html.scss?");
+
+/***/ }),
+
+/***/ "./src/styles/material-icons.scss":
+/*!****************************************!*\
+  !*** ./src/styles/material-icons.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./material-icons.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/material-icons.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/styles/material-icons.scss?");
 
 /***/ }),
 

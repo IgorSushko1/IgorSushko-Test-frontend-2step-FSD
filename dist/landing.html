@@ -17,7 +17,7 @@
   <link href="main.css" rel="stylesheet"></head>
   <body class="basis">
     <header class="basis__header">
-      <div class="header"><a class="header__image" href="./landing.html"><img src="imgs/Logo.png" alt="Toxin label"></a>
+      <div class="header"><a class="header__image" href="./landing.html"><img src="imgs/logo.png" alt="Toxin label"></a>
         <nav class="header__menu">
           <ul class="header__list">
             <li class="header__point"><a class="header__link" href="">О нас</a></li>
@@ -30,16 +30,18 @@
               <div class="header__dropdown"><a class="header__link">Соглашения</a><span class="material-icons header__icon">keyboard_arrow_down</span></div>
             </li>
           </ul>
-          <div class="header__button">
-            <form action="./registration-sign-in.html">
-              <button class="button-pill__empty">ВОЙТИ</button>
-            </form>
-          </div>
-          <div class="header__button">
-            <form action="./registration-sign-up.html">
-              <button class="button-pill__full">ЗАРЕГИСТРИРОВАТЬСЯ</button>
-            </form>
-          </div>
+          <form class="header__login" action="./registration-sign-in.html">
+            <button class="button_color_white button">
+              <p class="button__text_purple">ВОЙТИ</p>
+              <p class="material-icons button__arrow_disable">arrow_forward</p>
+            </button>
+          </form>
+          <form class="header__register" action="./registration-sign-up.html">
+            <button class="button_color_purple button">
+              <p class="button__text_white">ЗАРЕГИСТРИРОВАТЬСЯ</p>
+              <p class="material-icons button__arrow_disable">arrow_forward</p>
+            </button>
+          </form>
         </nav>
       </div>
     </header>
@@ -102,12 +104,10 @@
               </div>
             </section>
             <div class="pick-up-numbers__button">
-              <form action="./search.html">
-                <button class="button-pill__full_arrow">
-                  <h3 class="button-pill__full_arrow_text">text</h3>
-                  <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
-                </button>
-              </form>
+              <button class="button_color_purple button">
+                <p class="button__text_white">Подобрать номер</p>
+                <p class="material-icons button__arrow_enable">arrow_forward</p>
+              </button>
             </div>
           </article>
         </section>
@@ -116,17 +116,17 @@
     </main>
     <footer class="basis__footer">
       <div class="footer__menu">
-        <div class="footer__logo"><a href="./landing.html"><img src="imgs/Logo.png" alt="Toxin label"></a>
+        <div class="footer__logo"><a href="./landing.html"><img src="imgs/logo.png" alt="Toxin label"></a>
           <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
         <nav class="footer__navigation">
-          <h3 class="footer-links_title">Навигация</h3><a class="footer-links_point" href="./aaa.html">О нас</a><a class="footer-links_point" href="./aaa.html">Новости</a><a class="footer-links_point" href="./aaa.html">Служба поддержки</a><a class="footer-links_point" href="./aaa.html">Услуги</a>
+          <h3 class="footer-links__title">Навигация</h3><a class="footer-links_point" href="./aaa.html">О нас</a><a class="footer-links_point" href="./aaa.html">Новости</a><a class="footer-links_point" href="./aaa.html">Служба поддержки</a><a class="footer-links_point" href="./aaa.html">Услуги</a>
         </nav>
         <nav class="footer__about">
-          <h3 class="footer-links_title">О нас</h3><a class="footer-links_point" href="./aaa.html">О сервисе</a><a class="footer-links_point" href="./aaa.html">Наша команда</a><a class="footer-links_point" href="./aaa.html">Вакансии</a><a class="footer-links_point" href="./aaa.html">Инвесторы</a>
+          <h3 class="footer-links__title">О нас</h3><a class="footer-links_point" href="./aaa.html">О сервисе</a><a class="footer-links_point" href="./aaa.html">Наша команда</a><a class="footer-links_point" href="./aaa.html">Вакансии</a><a class="footer-links_point" href="./aaa.html">Инвесторы</a>
         </nav>
         <nav class="footer__support">
-          <h3 class="footer-links_title">Служба поддержки</h3><a class="footer-links_point" href="./aaa.html">Соглашения</a><a class="footer-links_point" href="./aaa.html">Сообщества</a><a class="footer-links_point" href="./aaa.html">Связь с нами</a>
+          <h3 class="footer-links__title">Служба поддержки</h3><a class="footer-links_point" href="./aaa.html">Соглашения</a><a class="footer-links_point" href="./aaa.html">Сообщества</a><a class="footer-links_point" href="./aaa.html">Связь с нами</a>
         </nav>
         <nav class="footer__subscription">
           <h3 class="footer__h3">Подписка</h3>

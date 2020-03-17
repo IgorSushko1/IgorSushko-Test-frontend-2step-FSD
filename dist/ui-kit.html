@@ -8,12 +8,12 @@
   <link href="main.css" rel="stylesheet"></head>
   <body>
     <div>
-            <h1 class="fonts-list">H1</h1>
-            <h1>This one is the sub-section or widget title</h1>
-            <h2 class="fonts-list">H2</h2>
-            <h2>Next one is the item title inside widgets</h2>
-            <h3 class="fonts-list">H3</h3>
-            <h3>This is a label or CTA text</h3>
+            <h1 class="fonts-list fonts-list__header_h1">H1</h1>
+            <h1 class="fonts-list__header_h1">This one is the sub-section or widget title</h1>
+            <h2 class="fonts-list fonts-list__header_h2">H2</h2>
+            <h2 class="fonts-list__header_h2"> Next one is the item title inside widgets</h2>
+            <h3 class="fonts-list fonts-list__header_h3">H3</h3>
+            <h3 class="fonts-list__header_h3">This is a label or CTA text</h3>
             <div class="fonts-list">body</div>
             <div>This is the body text which is used for most of the design, like paragraphs, lists, etc.</div>
     </div>
@@ -211,29 +211,7 @@
               <div class="star-rating__filled"></div>
             </div>
     </div>
-    <div>
-            <form>
-              <button class="button-pill__full">REGISTER</button>
-            </form>
-    </div>
-    <div>
-            <form>
-              <button class="button-pill__empty">REGISTER</button>
-            </form>
-    </div>
-    <div>
-            <form action="">
-              <button class="button-text" value="text">text</button>
-            </form>
-    </div>
-    <div>
-    </div>
-          <form action="./aaa.html">
-            <button class="button-pill__full_arrow">
-              <h3 class="button-pill__full_arrow_text">text</h3>
-              <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
-            </button>
-          </form>
+    <div></div>
     <div>
             <label class="like-button">
               <input class="like-button__input" type="checkbox">
@@ -241,8 +219,8 @@
                 <div class="like-button__empty-white"></div>
                 <div class="like-button__num">11</div>
               </div>
-              <div class="material-icons like-button__favorite_border">favorite_border</div>
-              <div class="material-icons like-button__favorite">favorite</div>
+              <div class="like-button__favorite_border material-icons">favorite_border</div>
+              <div class="like-button__favorite material-icons">favorite</div>
             </label>
     </div>
     <div>
@@ -260,9 +238,7 @@
     </div>
     <div>
             <form class="range-slider__form" action="">
-              <div class="range-slider__amount-of-money">
-                <h3>Диапазон цены</h3>
-              </div>
+              <h3 class="range-slider__amount-of-money">Диапазон цены</h3>
               <input class="js-range-slider__input" type="text" name="example_name" value="">
             </form>
             <div class="range-slider__description">Стоимость за сутки пребывания в номере</div>
@@ -297,7 +273,7 @@
             </div>
     </div>
     <div>
-            <div class="pagination"><span class="pagination__start">1</span><span class="pagination__grid-item">2</span><span class="pagination__grid-item">3</span><span class="pagination__grid-item">..</span><span class="pagination__grid-item">15</span><span class="material-icons pagination__arrow">arrow_forward</span></div>
+            <div class="pagination"><span class="pagination__start">1</span><span class="pagination__grid-item">2</span><span class="pagination__grid-item">3</span><span class="pagination__grid-item">..</span><span class="pagination__grid-item">15</span><span class="pagination__circle"><span class="material-icons pagination__arrow">arrow_forward</span></span></div>
             <div class="pagination__description">1 - 12 из 100+ вариантов аренды</div>
     </div>
     <div>
@@ -338,7 +314,7 @@
     </div>
     <div>
             <div class="comments">
-              <div><img class="comments__profile-image" src="./assets/images/murad-true.png" alt="Cinque Terre" width="48" height="48"></div>
+              <div><img class="comments__profile-image" src="imgs/murad-true.png" alt="Cinque Terre" width="48" height="48"></div>
               <div>
                 <h3 class="comments__name">Мурад Сарафанов</h3>
                 <div class="comments__date">5 дней назад</div>
@@ -350,14 +326,14 @@
                           <div class="like-button__empty-white"></div>
                           <div class="like-button__num">12</div>
                         </div>
-                        <div class="material-icons like-button__favorite_border">favorite_border</div>
-                        <div class="material-icons like-button__favorite">favorite</div>
+                        <div class="like-button__favorite_border material-icons">favorite_border</div>
+                        <div class="like-button__favorite material-icons">favorite</div>
                       </label>
               </div>
               <div class="comments__description">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</div>
             </div>
             <div class="comments">
-              <div><img class="comments__profile-image" src="./assets/images/girl image.png" alt="Cinque Terre" width="48" height="48"></div>
+              <div><img class="comments__profile-image" src="imgs/girl image.png" alt="Cinque Terre" width="48" height="48"></div>
               <div>
                 <h3 class="comments__name">Патрисия Стёклышкова</h3>
                 <div class="comments__date">Неделю назад</div>
@@ -369,15 +345,15 @@
                           <div class="like-button__empty-white"></div>
                           <div class="like-button__num">2</div>
                         </div>
-                        <div class="material-icons like-button__favorite_border">favorite_border</div>
-                        <div class="material-icons like-button__favorite">favorite</div>
+                        <div class="like-button__favorite_border material-icons">favorite_border</div>
+                        <div class="like-button__favorite material-icons">favorite</div>
                       </label>
               </div>
               <div class="comments__description">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</div>
             </div>
     </div>
     <div>
-            <div class="header"><a class="header__image" href="./landing.html"><img src="imgs/Logo.png" alt="Toxin label"></a>
+            <div class="header"><a class="header__image" href="./landing.html"><img src="imgs/logo.png" alt="Toxin label"></a>
               <nav class="header__menu">
                 <ul class="header__list">
                   <li class="header__point"><a class="header__link" href="">О нас</a></li>
@@ -390,21 +366,23 @@
                     <div class="header__dropdown"><a class="header__link">Соглашения</a><span class="material-icons header__icon">keyboard_arrow_down</span></div>
                   </li>
                 </ul>
-                <div class="header__button">
-                        <form action="./registration-sign-in.html">
-                          <button class="button-pill__empty"></button>
-                        </form>
-                </div>
-                <div class="header__button">
-                        <form action="./registration-sign-up.html">
-                          <button class="button-pill__full"></button>
-                        </form>
-                </div>
+                <form class="header__login" action="./registration-sign-in.html">
+                        <button class="button_color_white button">
+                          <p class="button__text_purple"></p>
+                          <p class="material-icons button__arrow_disable">arrow_forward</p>
+                        </button>
+                </form>
+                <form class="header__register" action="./registration-sign-up.html">
+                        <button class="button_color_purple button">
+                          <p class="button__text_white"></p>
+                          <p class="material-icons button__arrow_disable">arrow_forward</p>
+                        </button>
+                </form>
               </nav>
             </div>
     </div>
     <div>
-            <div class="header"><img class="header__image" src="imgs/Logo.png" alt="Toxin label">
+            <div class="header"><img class="header__image" src="imgs/logo.png" alt="Toxin label">
               <div class="header__menu">
                 <ul class="header__list">
                   <li class="header__point"><a class="header__link_bold" href="">Home</a></li>
@@ -422,17 +400,17 @@
     </div>
     <div>
             <div class="footer__menu">
-              <div class="footer__logo"><a href="./landing.html"><img src="imgs/Logo.png" alt="Toxin label"></a>
+              <div class="footer__logo"><a href="./landing.html"><img src="imgs/logo.png" alt="Toxin label"></a>
                 <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
               </div>
               <nav class="footer__navigation">
-                      <h3 class="footer-links_title">Навигация</h3><a class="footer-links_point" href="./aaa.html">О нас</a><a class="footer-links_point" href="./aaa.html">Новости</a><a class="footer-links_point" href="./aaa.html">Служба поддержки</a><a class="footer-links_point" href="./aaa.html">Услуги</a>
+                      <h3 class="footer-links__title">Навигация</h3><a class="footer-links_point" href="./aaa.html">О нас</a><a class="footer-links_point" href="./aaa.html">Новости</a><a class="footer-links_point" href="./aaa.html">Служба поддержки</a><a class="footer-links_point" href="./aaa.html">Услуги</a>
               </nav>
               <nav class="footer__about">
-                      <h3 class="footer-links_title">О нас</h3><a class="footer-links_point" href="./aaa.html">О сервисе</a><a class="footer-links_point" href="./aaa.html">Наша команда</a><a class="footer-links_point" href="./aaa.html">Вакансии</a><a class="footer-links_point" href="./aaa.html">Инвесторы</a>
+                      <h3 class="footer-links__title">О нас</h3><a class="footer-links_point" href="./aaa.html">О сервисе</a><a class="footer-links_point" href="./aaa.html">Наша команда</a><a class="footer-links_point" href="./aaa.html">Вакансии</a><a class="footer-links_point" href="./aaa.html">Инвесторы</a>
               </nav>
               <nav class="footer__support">
-                      <h3 class="footer-links_title">Служба поддержки</h3><a class="footer-links_point" href="./aaa.html">Соглашения</a><a class="footer-links_point" href="./aaa.html">Сообщества</a><a class="footer-links_point" href="./aaa.html">Связь с нами</a>
+                      <h3 class="footer-links__title">Служба поддержки</h3><a class="footer-links_point" href="./aaa.html">Соглашения</a><a class="footer-links_point" href="./aaa.html">Сообщества</a><a class="footer-links_point" href="./aaa.html">Связь с нами</a>
               </nav>
               <nav class="footer__subscription">
                 <h3 class="footer__h3">Подписка</h3>
@@ -455,7 +433,7 @@
             </aside>
     </div>
     <div>
-            <div class="footer-mobile"><img src="imgs/Logo.png" alt="Toxin label" width="105" height="40">
+            <div class="footer-mobile"><img src="imgs/logo.png" alt="Toxin label" width="105" height="40">
               <div class="footer-mobile__text">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
                 
@@ -520,20 +498,16 @@
                 </div>
               </section>
               <div class="pick-up-numbers__button">
-                      <form action="./search.html">
-                        <button class="button-pill__full_arrow">
-                          <h3 class="button-pill__full_arrow_text">text</h3>
-                          <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
-                        </button>
-                      </form>
+                      <button class="button_color_purple button">
+                        <p class="button__text_white">Подобрать номер</p>
+                        <p class="material-icons button__arrow_enable">arrow_forward</p>
+                      </button>
               </div>
             </article>
     </div>
     <div>
             <article class="sing-up">
-              <header class="sing-up__title">
-                <h2>Регистрация аккаунта</h2>
-              </header>
+              <h2 class="sing-up__title">Регистрация аккаунта</h2>
               <div class="sing-up__name">
                       <form action="">
                         <legend>
@@ -605,27 +579,30 @@
                       </form>
               </div>
               <div class="sing-up__button">
-                      <form action="./search.html">
-                        <button class="button-pill__full_arrow">
-                          <h3 class="button-pill__full_arrow_text">text</h3>
-                          <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
+                <form class="sing-up__button-purple" action="./search.html">
+                        <button class="button_color_purple button">
+                          <p class="button__text_white">Перейти к оплате</p>
+                          <p class="material-icons button__arrow_enable">arrow_forward</p>
                         </button>
-                      </form>
+                </form>
               </div>
               <div class="sing-up__authorization">
                 <p class="sing-up__authorization_text">Уже есть аккаунт на Toxin</p>
-                      <form action="./registration-sign-in.html">
-                        <button class="button-pill__empty_short">Войти</button>
-                      </form>
+                <form class="sing-up__button-white" action="./registration-sign-in.html">
+                        <button class="button_color_white button">
+                          <p class="button__text_purple">Войти</p>
+                          <p class="material-icons button__arrow_disable">arrow_forward</p>
+                        </button>
+                </form>
               </div>
             </article>
     </div>
     <div>
-            <article class="sing-in">
+            <article class="sign-in">
               <header>
-                <h2 class="sing-in__title">Войти</h2>
+                <h2 class="sign-in__title">Войти</h2>
               </header>
-              <div class="sing-in__email">
+              <div class="sign-in__email">
                       <form action="">
                         <legend>
                           <div class="form__name">
@@ -634,7 +611,7 @@
                         </legend>
                       </form>
               </div>
-              <div class="sing-in__password">
+              <div class="sign-in__password">
                       <form action="">
                         <legend>
                           <div class="form__name">
@@ -643,19 +620,22 @@
                         </legend>
                       </form>
               </div>
-              <div class="sing-in__button-full">
-                      <form action="./search.html">
-                        <button class="button-pill__full_arrow">
-                          <h3 class="button-pill__full_arrow_text">text</h3>
-                          <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
+              <div class="sign-in__button">
+                <form class="sign-in__button-purple" action="./search.html">
+                        <button class="button_color_purple button">
+                          <p class="button__text_white">Войти</p>
+                          <p class="material-icons button__arrow_enable">arrow_forward</p>
                         </button>
-                      </form>
+                </form>
               </div>
-              <div class="sing-in__create">
-                <p class="sing-in__question">Нет аккаунта на Toxin?</p>
-                      <form action="./registration-sign-up.html">
-                        <button class="button-pill__empty_short">Создать</button>
-                      </form>
+              <div class="sign-in__create">
+                <p class="sign-in__question">Нет аккаунта на Toxin?</p>
+                <form class="sign-in__button-white" action="./registration-sign-up.html">
+                        <button class="button_color_white button">
+                          <p class="button__text_purple">Создать</p>
+                          <p class="material-icons button__arrow_disable">arrow_forward</p>
+                        </button>
+                </form>
               </div>
             </article>
     </div>
@@ -727,14 +707,12 @@
                 <div class="booking__total_border"></div>
                 <h2 class="booking__total_price">38 081₽</h2>
               </div>
-              <div class="booking__button">
-                      <form action="./aaa.html">
-                        <button class="button-pill__full_arrow">
-                          <h3 class="button-pill__full_arrow_text">text</h3>
-                          <div class="material-icons button-pill__full_arrow_icon">arrow_forward</div>
-                        </button>
-                      </form>
-              </div>
+              <form class="booking__button" action="./landing.html">
+                      <button class="button_color_purple button">
+                        <p class="button__text_white">Забронировать</p>
+                        <p class="material-icons button__arrow_enable">arrow_forward</p>
+                      </button>
+              </form>
             </div>
     </div>
     <div>
@@ -743,8 +721,8 @@
               </div>
               <div class="hotel-room__text">
                 <div class="hotel-room__number">
-                  <h3 class="hotel-room__symbol">№</h3>
-                  <h2 class="hotel-room__room-number">888</h2>
+                  <h4 class="hotel-room__symbol">№</h4>
+                  <h4 class="hotel-room__room-number">888</h4>
                 </div>
                 <div class="hotel-room__cost">
                   <p class="hotel-room__price">9900₽</p><span class="hotel-room__per-day">в сутки</span>
@@ -759,7 +737,7 @@
                         <div class="star-rating__filled"></div>
                       </div>
                 <div class="hotel-room__review">
-                  <h3 class="hotel-room__review_numeric"></h3><span>Отзывов</span>
+                  <h4 class="hotel-room__review_numeric"></h4><span>Отзывов</span>
                 </div>
               </div>
             </div>
@@ -768,9 +746,9 @@
               </div>
               <div class="hotel-room__text">
                 <div class="hotel-room__number">
-                  <h3 class="hotel-room__symbol">№</h3>
-                  <h2 class="hotel-room__room-number">840</h2>
-                  <h3 class="hotel-room__lux">люкс</h3>
+                  <h4 class="hotel-room__symbol">№</h4>
+                  <h4 class="hotel-room__room-number">840</h4>
+                  <h4 class="hotel-room__lux">люкс</h4>
                 </div>
                 <div class="hotel-room__cost">
                   <p class="hotel-room__price">9990₽</p><span class="hotel-room__per-day">в сутки</span>
@@ -785,14 +763,14 @@
                         <div class="star-rating__filled"></div>
                       </div>
                 <div class="hotel-room__review">
-                  <h3 class="hotel-room__review_numeric"></h3><span>Отзывов</span>
+                  <h4 class="hotel-room__review_numeric"></h4><span>Отзывов</span>
                 </div>
               </div>
             </div>
     </div>
     <div>
             <div class="impressions">
-              <h2 class="impressions_title">Впечатления от номера</h2>
+              <h2 class="impressions__title">Впечатления от номера</h2>
               <div class="impressions__circle">
                 <div class="impressions__circle_info">
                   <div class="impressions__circle_info_number">300</div>
