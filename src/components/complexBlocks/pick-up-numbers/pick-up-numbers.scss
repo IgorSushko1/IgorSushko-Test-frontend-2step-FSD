@@ -1,3 +1,5 @@
+@import '../../../styles/headers';
+
 .pick-up-numbers {
   width: 23.75rem;
   height: 23.37rem;
@@ -11,36 +13,38 @@
   padding-left: 1.83rem;
 
   &__title {
+    @include header_h2(1.5rem, null);
     margin-top: 2.43rem;
     line-height: 1.9rem;
     width: 16.62rem;
-    font-family: 'OpenSans-Bold', Arial, sans-serif;
     letter-spacing: 0.006rem;
   }
 
   &__container {
     position: relative;
+    margin-top: 1.25rem;
   }
 
   &__arrival {
-    margin-top: 1.25rem;
+    @include header_h3(0.675rem, Montserrat-Bold);
+    margin-top: 0.1rem;
     margin-bottom: 0.4rem;
-    font-family: 'Montserrat-Bold', Arial, sans-serif;
-    letter-spacing: 0rem;
+    letter-spacing: 0.06rem;
   }
 
   &__departure {
-    font-family: 'Montserrat-Bold', Arial, sans-serif;
+    @include header_h3(0.675rem, Montserrat-Bold);
     position: absolute;
-    right: 8.2rem;
-    top: 1.25rem;
+    right: 8.15rem;
+    top: 0.1rem;
+    letter-spacing: 0.07rem;
   }
 
   &__quest {
-    margin-top: 1.35rem;
+    @include header_h3(0.675rem, Montserrat-Bold);
+    margin-top: 1.46rem;
     margin-bottom: 0.4rem;
-    font-family: 'Montserrat-Bold', Arial, sans-serif;
-    letter-spacing: 0rem;
+    letter-spacing: 0.06rem;
   }
 
   &__dropdown {
@@ -49,7 +53,7 @@
   }
 
   &__button {
-    margin-top: 1.75rem;
+    margin-top: 1.9rem;
     width: 20rem;
     height: 2.75rem;
   }

@@ -1,14 +1,17 @@
+@import '../../../styles/headers';
+
 .range-slider {
   &__form {
     position: relative;
     height: 88px;
   }
   &__amount-of-money {
+    @include header_h3(0.75rem, null);
     position: absolute;
     display: flex;
     justify-content: flex-start;
     z-index: 1;
-    top: 1.93rem;
+    top: 1.8rem;
     letter-spacing: 0.006rem;
     margin-left: 0.01rem;
   }

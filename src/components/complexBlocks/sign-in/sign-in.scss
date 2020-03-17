@@ -1,3 +1,5 @@
+@import '../../../styles/headers';
+
 .sign-in {
   width: 23.75rem;
   height: 22.37rem;
@@ -12,13 +14,14 @@
   padding-right: 1.87rem;
 
   &__title {
-    margin-top: 2.68rem;
+    @include header_h2(1.5rem, null);
+    margin-top: 2.3rem;
     margin-left: -0.06rem;
     font-size: 1.5rem;
   }
 
   &__email {
-    margin-top: 0.87rem;
+    margin-top: 0.6rem;
     margin-left: -0.18rem;
   }
 

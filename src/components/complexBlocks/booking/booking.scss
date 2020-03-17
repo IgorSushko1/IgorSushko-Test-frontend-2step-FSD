@@ -1,4 +1,5 @@
 @import '../../../styles/color.scss';
+@import '../../../styles/headers';
 
 .booking {
   width: 23.75rem;
@@ -29,26 +30,25 @@
   }
 
   &__symbol {
-    font-size: 0.875rem;
+    @include header_h3(0.875rem, Montserrat);
     margin-left: 0.7rem;
-    font-family: 'Montserrat', Arial, sans-serif;
     position: absolute;
     top: 0rem;
     left: -1.375rem;
   }
 
   &__number {
+    @include header_h2(1.437rem, Quicksand-Bold);
     margin-left: 0.187rem;
-    font-size: 1.437rem;
     line-height: 0;
     position: absolute;
     top: 0.31rem;
     left: 0.5rem;
     letter-spacing: 0.03em;
-    font-family: 'Quicksand-Bold', Arial, sans-serif;
   }
 
   &__lux {
+    @include header_h3(0.75rem, null);
     color: $purple;
     position: absolute;
     top: 0.06rem;
@@ -81,22 +81,26 @@
   }
 
   &__arrival {
-    font-family: 'Montserrat-Bold', Arial, sans-serif;
-    margin-left: 0.02rem;
+    @include header_h3(0.675rem, Montserrat-Bold);
+    margin-left: 0.04rem;
+    margin-top: 0.1rem;
+    letter-spacing: 0.06rem;
   }
 
   &__departure {
-    font-family: 'Montserrat-Bold', Arial, sans-serif;
+    @include header_h3(0.675rem, Montserrat-Bold);
     position: absolute;
-    right: 6.5rem;
-    top: 0rem;
+    right: 6.4rem;
+    letter-spacing: 0.07rem;
+    top: 0.1rem;
   }
 
   &__guests_title {
-    font-family: 'Montserrat-Bold', Arial, sans-serif;
+    @include header_h3(0.675rem, Montserrat-Bold);
     margin-left: -0.06rem;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     margin-bottom: 0.187rem;
+    letter-spacing: 0.06rem;
   }
 
   &__text {
@@ -143,14 +147,14 @@
     display: grid;
     grid-template-columns: 20% 53% 30%;
     font-size: 0.81rem;
-    margin-top: 2.15rem;
+    margin-top: 1.15rem;
     margin-right: -0.06rem;
   }
 
   &__total_border {
     border-bottom: 0.06rem dotted $dark-shade-050;
     position: relative;
-    top: -0.25rem;
+    top: -1.25rem;
   }
 
   &__total_price {
@@ -163,7 +167,7 @@
   }
 
   &__button {
-    margin-top: 1.28rem;
+    margin-top: 0.15rem;
     margin-left: 0rem;
     margin-right: -0.06rem;
     position: relative;

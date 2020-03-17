@@ -4,15 +4,35 @@
   font-size: $size;
 }
 
-@mixin header_h2($size) {
-  font-family: 'OpenSans-Bold', Arial, sans-serif;
+@mixin header_h2($size, $font) {
+  @if $font != null {
+    font-family: $font, Arial, sans-serif;
+  } @else {
+    font-family: 'OpenSans-Bold', Arial, sans-serif;
+  }
   font-weight: 700;
   margin: 0;
   font-size: $size;
 }
 
-@mixin header_h3($size) {
-  font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+@mixin header_h3($size, $font) {
+  @if $font != null {
+    font-family: $font, Arial, sans-serif;
+  } @else {
+    font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+  }
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: $size;
+  margin: 0;
+}
+
+@mixin header_h4($size, $font) {
+  @if $font != null {
+    font-family: $font, Arial, sans-serif;
+  } @else {
+    font-family: 'Quicksand-Medium', Arial, sans-serif;
+  }
   font-weight: 700;
   text-transform: uppercase;
   font-size: $size;

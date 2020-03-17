@@ -5,14 +5,14 @@
   color: $dark-shade-025;
 
   &__header_h1 {
-    @include header_h1('1.5rem');
+    @include header_h1(1.5rem);
   }
 
   &__header_h2 {
-    @include header_h2('1.375rem');
+    @include header_h2(1.375rem, null);
   }
 
   &__header_h3 {
-    @include header_h3('0.75rem');
+    @include header_h3(0.75rem, null);
   }
 }

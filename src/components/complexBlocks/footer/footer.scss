@@ -1,11 +1,12 @@
 @import '../../../styles/color.scss';
+@import '../../../styles/headers';
 
 .footer {
   &__menu {
     display: flex;
     width: auto;
     height: 17rem;
-    padding-top: 6.4rem;
+    padding-top: 6.25rem;
   }
   &__logo {
     display: grid;
@@ -71,8 +72,9 @@
   }
 
   &__h3 {
-    margin: 0;
-    font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+    @include header_h3(0.75rem, null);
+    // margin: 0;
+    // font-family: 'Montserrat-SemiBold', Arial, sans-serif;
   }
 
   &__social {

@@ -60,6 +60,14 @@ module.exports = {
           outputPath: 'fonts/',
         },
       },
+      {
+        test: /\.(png|jpe?g|gif)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'imgs',
+        },
+      }
     ],
   },
   devServer: {
@@ -111,10 +119,10 @@ module.exports = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
     }),
-    new CopyWebpackPlugin([{
-      from: './src/assets/images/',
-      to: './imgs',
-    }]),
+    // new CopyWebpackPlugin([{
+    //   from: './src/assets/images/',
+    //   to: './imgs',
+    // }]),
     new CopyWebpackPlugin([{
       from: './src/assets/favicons/',
       to: './favicons',

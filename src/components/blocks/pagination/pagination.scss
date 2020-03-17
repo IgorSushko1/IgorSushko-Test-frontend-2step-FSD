@@ -25,14 +25,22 @@
     color: white;
   }
 
-  &__arrow {
+  &__circle {
     background: linear-gradient(180deg, $green, #66d2ea);
     border-radius: 50%;
     color: white;
   }
 
+  &__arrow {
+    border-radius: 50%;
+    color: white;
+    position: relative;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+
   &__description {
-    margin-top: 0.62rem;
+    margin-top: 0.7rem;
     font-size: 0.93rem;
     font-family: 'Montserrat-Regular', Arial, sans-serif;
     letter-spacing: 0.03em;

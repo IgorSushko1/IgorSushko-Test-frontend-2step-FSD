@@ -1,4 +1,5 @@
 @import '../../styles/color.scss';
+@import '../../styles/headers';
 
 .search-page {
   display: flex;
@@ -16,17 +17,27 @@
   }
 
   &__datepicker_title {
+    @include header_h3(0.75rem, null);
     margin-top: 0rem;
     margin-left: 0.01rem;
     letter-spacing: 0.007rem;
+    margin-bottom: 0.3rem;
   }
 
   &__dropdown {
-    margin-top: 0.6rem;
+    margin-top: 1.15rem;
     margin-left: 0.01rem;
 
-    &_title {
+    &_guests {
+      @include header_h3(0.75rem, null);
       margin-top: 1.3rem;
+      margin-bottom: 0.1rem;
+      margin-left: 0.01rem;
+      letter-spacing: 0.01rem;
+    }
+
+    &_stuff {
+      @include header_h3(0.75rem, null);
       margin-bottom: 0.1rem;
       margin-left: 0.01rem;
       letter-spacing: 0.01rem;
@@ -34,11 +45,13 @@
   }
 
   &__checkbox_title {
-    margin-top: 1.8rem;
+    @include header_h3(0.75rem, null);
+    margin-top: 1.75rem;
     margin-bottom: 1.06rem;
   }
 
   &__checkbox-rich_title {
+    @include header_h3(0.75rem, null);
     margin-top: 1.09rem;
     margin-bottom: 1.07rem;
     letter-spacing: 0.01rem;
@@ -52,16 +65,17 @@
     width: 52.12rem;
     position: relative;
     left: -8.7rem;
-    margin-top: 2.12rem;
+    margin-top: 1.8rem;
   }
 
   &_rooms_title {
+    @include header_h2(1.5rem, null);
     letter-spacing: 0.037rem;
     font-size: 1.44rem;
   }
 
   &__rooms_numbers {
-    margin-top: 1.56rem;
+    margin-top: 1.2rem;
     display: grid;
     grid-template-columns: 16.87rem 16.87rem 16.87rem;
     grid-column-gap: 0.75rem;
@@ -72,7 +86,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2.6rem;
+    margin-top: 2.75rem;
     position: relative;
   }
 }

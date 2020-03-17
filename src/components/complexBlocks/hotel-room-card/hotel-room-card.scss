@@ -1,4 +1,5 @@
 @import '../../../styles/color.scss';
+@import '../../../styles/headers';
 
 .hotel-room {
   width: 16.87rem;
@@ -42,26 +43,25 @@
   }
 
   &__symbol {
-    font-size: 0.875rem;
+    @include header_h4(0.875rem, null);
     margin-left: 0.75rem;
-    font-family: 'Quicksand-Medium', Arial, sans-serif;
     position: absolute;
     top: 0.125rem;
     left: 0rem;
   }
 
   &__room-number {
+    @include header_h4(1.12rem, Quicksand-Bold);
     margin-left: 0.18rem;
-    font-size: 1.12rem;
     line-height: 0;
     position: absolute;
-    top: 0.56rem;
-    left: 1.93rem;
+    top: 0.5rem;
+    left: 1.9rem;
     letter-spacing: 0.03em;
-    font-family: 'Quicksand-Bold', Arial, sans-serif;
   }
 
   &__lux {
+    @include header_h4(0.875rem, Quicksand-Bold);
     color: $purple;
     position: absolute;
     top: 0.18rem;
@@ -105,8 +105,9 @@
     top: 0.81rem;
 
     &_numeric {
-      font-size: 0.875rem;
-      font-family: 'Montserrat-Bold', Arial, sans-serif;
+      @include header_h4(0.875rem, Montserrat-Bold);
+      // font-size: 0.875rem;
+      // font-family: 'Montserrat-Bold', Arial, sans-serif;
       margin-right: 0.19rem;
       text-align: end;
     }
