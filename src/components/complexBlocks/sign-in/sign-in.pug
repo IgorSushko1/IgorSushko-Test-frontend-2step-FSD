@@ -5,17 +5,18 @@ mixin sign-in
   article.sign-in
     header
       h2.sign-in__title Войти
-    .sign-in__email
-      +form__name("email", "Email", "email-sign-in", "sign-in")
-    .sign-in__password
-      +form__name("text", "Пароль", "password-sign-in", "sign-in")
-    .sign-in__button
-      form(action="./search.html").sign-in__button-purple
-        +button({
-          text: "Войти",
-          arrow: "enable",
-          color: "purple"
-        })
+    form(action="./search.html")
+      .sign-in__email
+        +form__name("email", "Email", "email-sign-in", "sign-in")
+      .sign-in__password
+        +form__name("text", "Пароль", "password-sign-in", "sign-in")
+      .sign-in__button
+        .sign-in__button-purple  
+          +button({
+            text: "Войти",
+            arrow: "enable",
+            color: "purple"
+          })
     .sign-in__create
       p.sign-in__question Нет аккаунта на Toxin?
       form(action="./registration-sign-up.html").sign-in__button-white

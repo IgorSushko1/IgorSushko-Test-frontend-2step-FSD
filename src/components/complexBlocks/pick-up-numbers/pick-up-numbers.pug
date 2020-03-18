@@ -6,20 +6,18 @@ mixin pick-up-numbers
   article.pick-up-numbers
     header
       h2.pick-up-numbers__title Найдём номера под ваши пожелания
-    section.pick-up-numbers__container
-      h3.pick-up-numbers__arrival Прибытие
-      h3.pick-up-numbers__departure Выезд
-
-      label.pick-up-numbers__calendar
-        +calendar("ДД.ММ.ГГГГ", "ДД.ММ.ГГГГ", "#datepicker", "duble")
-
-    section
-      h3.pick-up-numbers__quest Гости
-      .pick-up-numbers__dropdown
-        +iqdropdown({arr:["Взрослые", "Дети", "Младенцы"], classForJs:"js-iqdropdown_people"})
-    .pick-up-numbers__button
-      +button({
-        text: "Подобрать номер",
-        arrow: "enable",
-        color: "purple"
-      })
+    form(action="./search.html")
+      .pick-up-numbers__container
+        h3.pick-up-numbers__arrival Прибытие
+        h3.pick-up-numbers__departure Выезд
+        .pick-up-numbers__calendar
+          +calendar("ДД.ММ.ГГГГ", "ДД.ММ.ГГГГ", "#datepicker", "duble")
+        h3.pick-up-numbers__quest Гости
+        .pick-up-numbers__dropdown
+          +iqdropdown({arr:["Взрослые", "Дети", "Младенцы"], classForJs:"js-iqdropdown_people"})
+      .pick-up-numbers__button
+        +button({
+          text: "Подобрать номер",
+          arrow: "enable",
+          color: "purple"
+        })

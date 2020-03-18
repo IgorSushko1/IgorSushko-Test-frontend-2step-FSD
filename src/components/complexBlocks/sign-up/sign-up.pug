@@ -7,30 +7,30 @@ include ../../blocks/calendar/calendar.pug
 mixin sign-up
   article.sing-up
     h2.sing-up__title Регистрация аккаунта
-    .sing-up__name
-      +form__name("text","Имя", "name", "sign-up")
-    .sing-up__surname
-      +form__name("text","Фамилия", "surname", "sign-up")
-    .sing-up__gender
-      +checkbox-radio(["Мужчина","Женщина"])
-    .sing-up__birthday
-      h3.sing-up__birthday_title Дата рождения
-      +calendar("ДД.ММ.ГГГГ", "", "datepicker-single", "birthday")
-    .sing-up__enter
-      h3.sing-up__enter_title данные для входа в сервис
+    form(action="./search.html")
+      .sing-up__name
+        +form__name("text","Имя", "name", "sign-up")
+      .sing-up__surname
+        +form__name("text","Фамилия", "surname", "sign-up")
+      .sing-up__gender
+        +checkbox-radio(["Мужчина","Женщина"])
+      .sing-up__birthday
+        h3.sing-up__birthday_title Дата рождения
+        +calendar("ДД.ММ.ГГГГ", "", "datepicker-single", "birthday")
+      .sing-up__enter
+        h3.sing-up__enter_title данные для входа в сервис
       .sing-up__registration
         +form__name("email","Email", "email", "sign-up")
       .sing-up__registration
         +form__name("text", "Пароль", "password", "sign-up")
-    .sing-up__toggle-checkbox
-      +checkbox-toggle("Получать спецпредложения")
-    .sing-up__button
-      form(action="./search.html").sing-up__button-purple
+      .sing-up__toggle-checkbox
+        +checkbox-toggle("Получать спецпредложения")
+      .sing-up__button
         +button({
           text: "Перейти к оплате",
           arrow: "enable",
           color: "purple"
-        })
+          })
     .sing-up__authorization
       p.sing-up__authorization_text Уже есть аккаунт на Toxin
       form(action="./registration-sign-in.html").sing-up__button-white

@@ -1,9 +1,8 @@
 mixin checkbox-button(text, doesItChecked)
-  form(action="")
-    label.checkbox-button__container= text
-      if (doesItChecked == "checked")
-        input(type="checkbox" checked).checkbox-button__input
-      else
-        input(type="checkbox").checkbox-button__input
-      span.checkbox-button__checkmark
-      span.checkbox-button__checkmark_white
+  .checkbox-button__container= text
+    if (doesItChecked == "checked")
+      input(type="checkbox" checked).checkbox-button__input
+    else
+      input(type="checkbox").checkbox-button__input
+    span.checkbox-button__checkmark
+    span.checkbox-button__checkmark_white

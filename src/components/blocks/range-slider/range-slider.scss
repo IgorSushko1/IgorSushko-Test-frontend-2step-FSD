@@ -1,10 +1,9 @@
 @import '../../../styles/headers';
 
 .range-slider {
-  &__form {
-    position: relative;
-    height: 88px;
-  }
+  position: relative;
+  height: 88px;
+
   &__amount-of-money {
     @include header_h3(0.75rem, null);
     position: absolute;
