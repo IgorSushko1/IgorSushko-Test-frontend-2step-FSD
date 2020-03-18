@@ -1,0 +1,10 @@
+mixin form-for-text(typeOne, description, name, typeOfSign)
+  .form-for-text
+    if typeOfSign == "sign-up"
+      input(type=typeOne, value=description, name=name).form__sign-up
+    else if typeOfSign == "sign-in"
+      input(type=typeOne, value=description, name=name).form__sign-in
+    else if typeOfSign == "email"
+      .form__email
+        input(type=typeOne, value=description name=name).form__email_border
+        input(type="submit" class="material-icons form__email_arrow-forward" value="arrow_forward")

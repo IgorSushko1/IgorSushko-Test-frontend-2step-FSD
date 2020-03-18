@@ -1,9 +1,0 @@
-mixin form__name(typeOne, description, name, typeOfSign)
-  .form__name
-    if typeOfSign == "sign-up"
-      input(type=typeOne, value=description, name=name).form__sign-up
-    else if typeOfSign == "sign-in"
-      input(type=typeOne, value=description, name=name).form__sign-in
-    else if typeOfSign == "email"
-      input(type=typeOne, value=description name=name).form__email
-      input(type="submit" class="material-icons form__email_arrow-forward" value="arrow_forward")
