@@ -7,7 +7,7 @@ mixin iqdropdown({arr, classForJs})
       - var num = 1
       each element in arr
         div(data-id=`item+${num}`).iqdropdown-menu-option
-          div
+          div.iqdropdown-item-container
             p.iqdropdown-item= element
             p.iqdropdown-description
         - num += 1

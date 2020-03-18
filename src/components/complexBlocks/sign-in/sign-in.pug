@@ -1,15 +1,15 @@
-include ../../blocks/form__name/form__name.pug
+include ../../blocks/form-for-text/form-for-text.pug
 include ../../blocks/button/button.pug
 
 mixin sign-in
   article.sign-in
-    header
+    header.sign-in__header
       h2.sign-in__title Войти
-    form(action="./search.html")
+    form(action="./search.html").sign-in__form
       .sign-in__email
-        +form__name("email", "Email", "email-sign-in", "sign-in")
+        +form-for-text("email", "Email", "email-sign-in", "sign-in")
       .sign-in__password
-        +form__name("text", "Пароль", "password-sign-in", "sign-in")
+        +form-for-text("text", "Пароль", "password-sign-in", "sign-in")
       .sign-in__button
         .sign-in__button-purple  
           +button({

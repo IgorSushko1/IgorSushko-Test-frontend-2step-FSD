@@ -9,10 +9,10 @@ mixin booking-room
         h3.booking__symbol №
         h2.booking__number 888
         h3.booking__lux люкс
-      div
+      .booking__cost
         p.booking__price 9 990₽
         span.booking__per-day в сутки
-    form(action="./landing.html")
+    form(action="./landing.html").booking__form
       .booking__pick-date
         h3.booking__arrival Прибытие
         h3.booking__departure Выезд

@@ -4,8 +4,8 @@ mixin header(buttonTextOne, buttonTextTwo, login)
   - var links = [{types:"simple", link:"", text:"О нас"},{types:"arrow", link:"", text:"Услуги"},{types:"simple", link:"", text:"Вакансии"},{types:"simple", link:"", text:"Новости"},{types:"arrow", link:"", text:"Соглашения"}]
 
   .header
-    a(href="./landing.html").header__image
-      img(src="imgs/logo.png" alt="Toxin label" )
+    a(href="./landing.html").header__link-image
+      img(src="imgs/logo.png" alt="Toxin label" ).header__image
     nav.header__menu
       ul.header__list
         each i in links

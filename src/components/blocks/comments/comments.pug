@@ -2,9 +2,9 @@ include ../like-button/like-button.pug
 
 mixin comments(img, name, date, likes, check, text)
   .comments
-    div
+    .comments__profile-photo
       img(src=img alt="Cinque Terre" width="48" height="48").comments__profile-image
-    div
+    .comments__profile-name
       h3.comments__name= name
       .comments__date= date
     .comments__like-button

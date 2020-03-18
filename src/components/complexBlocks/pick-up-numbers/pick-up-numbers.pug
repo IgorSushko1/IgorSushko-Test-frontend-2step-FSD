@@ -4,9 +4,9 @@ include ../../blocks/calendar/calendar.pug
 
 mixin pick-up-numbers
   article.pick-up-numbers
-    header
+    header.pick-up-numbers__header
       h2.pick-up-numbers__title Найдём номера под ваши пожелания
-    form(action="./search.html")
+    form(action="./search.html").pick-up-numbers__form
       .pick-up-numbers__container
         h3.pick-up-numbers__arrival Прибытие
         h3.pick-up-numbers__departure Выезд

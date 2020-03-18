@@ -5,5 +5,5 @@ mixin social-network(socialNetwork)
 
   - socialNetwork = (socialNetwork =="twitter") ? twitter : (socialNetwork =="facebook") ? facebook : (socialNetwork =="instagram") ? instagram : false
 
-  a(href=socialNetwork.link target="_blank" rel="noopener noreferrer")
-    img(src=socialNetwork.image alt=socialNetwork.alt)
+  a(href=socialNetwork.link target="_blank" rel="noopener noreferrer").social-network__link
+    img(src=socialNetwork.image alt=socialNetwork.alt).social-network__image

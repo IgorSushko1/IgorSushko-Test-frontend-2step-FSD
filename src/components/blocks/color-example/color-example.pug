@@ -1,6 +1,6 @@
 mixin color-example(title, color, colorClass)
   - colorClass = colorClass ? `color-example${colorClass}`: ""
-  div
+  div.color
     .color-example(class=colorClass)
-    div= title
-    div= color
+    div.color__title= title
+    div.color__color= color
