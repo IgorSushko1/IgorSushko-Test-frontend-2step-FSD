@@ -24,72 +24,92 @@
   $.fn.iqDropdown = function (options) {
     this.each(function () {
       const $this = $(this);
-      const $selection = $this.find('p.iqdropdown-selection').last();
+      // const $selection = $this.find('p.iqdropdown-selection').last();
+      // const $selection = $this.find('.iqdropdown-selection').last();
+
       const $menu = $this.find('div.iqdropdown-menu');
       const $items = $menu.find('div.iqdropdown-menu-option');
       const settings = $.extend(true, {}, defaults, options);
-      const $selectsItem = $this.find('p.iqdropdown-item');
+      const $selection = $this.find('.iqdropdown-selection').last();
+      $selection.text(settings.openingText);
       const itemCount = {};
       let totalItems = 0;
-      let textForTotal = settings.openingText;
+      let answer = [];
 
       function getElementsName() {
+        answer = [];
         const block = $this.find('.iqdropdown-menu-option');
 
-        const childBlock = block.find('span.counter');
+        const counterOfStuffNumber = block.find('span.counter');
 
-        const blockChild = block.find('p.iqdropdown-item');
+        let amountOfStuff = [];
+        amountOfStuff.push(counterOfStuffNumber.text().split(''));
 
-        const blockArray = blockChild.data();
+        const lengthOfStuff = settings.textArrayForPlural.length;
 
-        const countArray = [];
-        countArray.push(childBlock.text().split(''));
+        let declensionForAnswer = [];
 
-        const lengthOfDropdown = settings.textArrayForPlural.length;
-
-        const answerForTitle = [];
-
-        for (let x = 0; x < lengthOfDropdown; x++) {
-          const value = countArray;
+        for (let x = 0; x < lengthOfStuff; x++) {
+          const value = amountOfStuff;
           const getNamesArray = settings.textArrayForPlural[x];
           for (let y = 0; y < settings.numericLimitArrayForPlural.length; y++) {
             if (value[0][x] > settings.numericLimitArrayForPlural[y]) {
-              answerForTitle[x] = getNamesArray[y];
+              declensionForAnswer[x] = getNamesArray[y];
             }
           }
         }
 
-        let uniteValues;
+        const coma = ', ';
 
-        if (settings.uniteValue) {
-          uniteValues = Number(countArray[0][settings.whichUnite[0]]) + Number(countArray[0][settings.whichUnite[1]]);
+        if (settings.uniteValue && (counterOfStuffNumber.text() != '000')) {
+          let unitedAnswer;
 
-          for (let x = 0; x < settings.numericLimitArrayForPlural.length; x++) {
-            if (uniteValues > settings.numericLimitArrayForPlural[x] && childBlock.text() != '000') {
-              textForTotal = '';
-              textForTotal = `${uniteValues} ${settings.UniteTitle[0][x]}`;
+          const firstTerm = Number(amountOfStuff[0][settings.whichUnite[0]]);
+          const secondTerm = Number(amountOfStuff[0][settings.whichUnite[1]]);
+
+          const uniteValues = firstTerm + secondTerm;
+
+          const numeralOfDeclension = settings.numericLimitArrayForPlural;
+          const lengthOfDeclensionArray = settings.numericLimitArrayForPlural.length;
+
+          for (let x = 0; x < lengthOfDeclensionArray; x++) {
+            if (uniteValues > numeralOfDeclension[x] && counterOfStuffNumber.text() != '000') {
+              unitedAnswer = `${uniteValues} ${settings.UniteTitle[0][x]}`;
             }
           }
-          for (let i = 0; i < answerForTitle.length; i++) {
-            let coma;
-            if ((i < settings.whichUnite[0] && countArray[0][i] != 0) || (i > settings.whichUnite[1] && countArray[0][i] != 0)) {
-              coma = ', ';
-            } else {
-              coma = '';
-              textForTotal = '';
+
+          for (let i = 0; i < declensionForAnswer.length; i++) {
+
+            const positionOfFirstUnitedStuff = settings.whichUnite[0];
+            const positionOfSecondUnitedStuff = settings.whichUnite[1];
+            const isItNotNullOfStuff = (amountOfStuff[0][i] != 0);
+
+
+            if ((i == positionOfFirstUnitedStuff) && isItNotNullOfStuff) {
+              answer.push(unitedAnswer);
+              i += 1;
             }
-            textForTotal = `${textForTotal + coma + countArray[0][i]} ${answerForTitle[i]}`;
+
+            if (i < positionOfFirstUnitedStuff && isItNotNullOfStuff) {
+              answer.push(`${amountOfStuff[0][i]} ${declensionForAnswer[i]}`);
+              answer.push(coma);
+            }
+            if (i > positionOfSecondUnitedStuff && isItNotNullOfStuff) {
+              if (unitedAnswer) {
+                answer.push(coma);
+              }
+              answer.push(`${amountOfStuff[0][i]} ${declensionForAnswer[i]}`);
+            }
+
           }
-        } else {
-          if (childBlock.text() != '000') {
-            textForTotal = '';
-          }
-          for (let i = 0; i < answerForTitle.length; i++) {
-            if (countArray[0][i] > 0) {
-              if (i == answerForTitle.length - 1) {
-                textForTotal += `${countArray[0][i]} ${answerForTitle[i]}`;
+
+        } else if (counterOfStuffNumber.text() != '000') {
+          for (let i = 0; i < declensionForAnswer.length; i++) {
+            if (amountOfStuff[0][i] > 0) {
+              if (i == (declensionForAnswer.length - 1)) {
+                answer.push(`${amountOfStuff[0][i]} ${declensionForAnswer[i]}`);
               } else {
-                textForTotal += `${countArray[0][i]} ${answerForTitle[i]}, `;
+                answer.push(`${amountOfStuff[0][i]} ${declensionForAnswer[i]}${coma}`);
               }
             }
           }
@@ -97,10 +117,15 @@
       }
 
       function updateDisplay() {
-        const usePlural = totalItems !== 1 && settings.textPlural.length > 0;
-        const text = usePlural ? settings.textPlural : settings.selectionText;
+        let mainAnswer = settings.openingText;
+
         getElementsName();
-        $selection.html(`${textForTotal}`);
+        if (answer.length != 0) {
+          mainAnswer = answer.join('');
+          $selection.text(`${mainAnswer}`);
+        } else {
+          // $('.iqdropdown-selection').textContent = mainAnswer;
+        }
       }
 
       function setItemSettings(id, $item) {
