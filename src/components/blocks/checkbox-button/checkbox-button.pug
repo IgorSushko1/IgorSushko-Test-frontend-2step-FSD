@@ -1,5 +1,5 @@
 mixin checkbox-button(text, doesItChecked)
-  .checkbox-button__container= text
+  label.checkbox-button__container= text
     if (doesItChecked == "checked")
       input(type="checkbox" checked).checkbox-button__input
     else

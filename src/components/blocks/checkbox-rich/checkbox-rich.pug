@@ -1,10 +1,11 @@
 mixin checkbox-rich({titlesAndChecked, texts})
   - var i= 0;
   each val, index in titlesAndChecked
-    .checkbox-rich__container
+    label.checkbox-rich__container
       .checkbox-rich__title= index
       input(type="checkbox" checked=val).checkbox-rich__input
-      span.checkbox-rich__checkmark
-      span.checkbox-rich__checkmark_white
+      .checkbox-rich__checkmark-container
+        span.checkbox-rich__checkmark
+        span.checkbox-rich__checkmark_white
       .checkbox-rich__korridor-width= texts[i]
       - i++;

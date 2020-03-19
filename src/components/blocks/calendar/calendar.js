@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  $('#js-datepicker__duble').datepicker({
+  $('#js-datepicker__double').datepicker({
     multipleDates: true,
     onSelect(fd, dates, inst) {
       const reg = /([0-9\.]+)\s([0-9\.]+)/g;

@@ -1,12 +1,14 @@
 @import '../../../styles/color.scss';
 
 .calendar {
-  display: flex;
-  justify-content: left;
-  height: 2.625rem;
-  padding: 0rem;
-  margin-top: 0.4rem;
-  margin-left: 0.1rem;
+  &__double {
+    display: flex;
+    justify-content: left;
+    height: 2.625rem;
+    padding: 0rem;
+    margin-top: 0.4rem;
+    margin-left: 0.1rem;
+  }
 
   &__datepicker {
     opacity: 0;

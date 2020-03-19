@@ -32,8 +32,8 @@
 
   &__checkmark {
     position: absolute;
-    top: -0.125rem;
-    left: 0;
+    top: -0.0625rem;
+    left: -0.0625rem;
     height: 1.25rem;
     width: 1.25rem;
     background: $dark-shade-025;
@@ -42,15 +42,21 @@
 
   &__checkmark_white {
     position: absolute;
-    top: -0.06rem;
-    left: 0.08rem;
-    height: 1.12rem;
-    width: 1.12rem;
+    height: 1.125rem;
+    width: 1.125rem;
     background: white;
     border-radius: 0.2rem;
   }
 
-  &__input:checked ~ &__checkmark {
+  &__checkmark-container {
+    position: absolute;
+    left: 0rem;
+    top: -0.0625rem;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  &__input:checked ~ &__checkmark-container &__checkmark {
     background: linear-gradient(180deg, $purple, #8ba4f9);
   }
 
@@ -84,11 +90,11 @@
     transform: rotate(-45deg);
   }
 
-  &__input:checked ~ &__checkmark:after {
+  &__input:checked ~ &__checkmark-container &__checkmark:after {
     display: block;
   }
 
-  &__input:checked ~ &__checkmark:before {
+  &__input:checked ~ &__checkmark-container &__checkmark:before {
     display: block;
   }
 
