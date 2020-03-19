@@ -17,7 +17,7 @@
   <link href="main.css" rel="stylesheet"></head>
   <body class="basis">
     <header class="basis__header">
-      <div class="header"><a class="header__image" href="./landing.html"><img src="imgs/logo.png" alt="Toxin label"></a>
+      <div class="header"><a class="header__link-image" href="./landing.html"><img class="header__image" src="imgs/logo.png" alt="Toxin label"></a>
         <nav class="header__menu">
           <ul class="header__list">
             <li class="header__point"><a class="header__link" href="">О нас</a></li>
@@ -50,16 +50,16 @@
         <div class="landing__background"><img class="landing__background_image" src="imgs/landing-background-image-interior.png" alt="pink and velvet interior" width="1440" height="830"></div>
         <section class="landing__pick-numbers">
           <article class="pick-up-numbers">
-            <header>
+            <header class="pick-up-numbers__header">
               <h2 class="pick-up-numbers__title">Найдём номера под ваши пожелания</h2>
             </header>
-            <section class="pick-up-numbers__container">
-              <h3 class="pick-up-numbers__arrival">Прибытие</h3>
-              <h3 class="pick-up-numbers__departure">Выезд</h3>
-              <label class="pick-up-numbers__calendar">
-                <form action="">
-                  <label class="calendar">
-                    <input class="datepicker-here calendar__datepicker" type="checkbox" id="js-datepicker__duble" data-range="true" data-multiple-dates-separator=" - " clearButton="true" data-position="bottom left">
+            <form class="pick-up-numbers__form" action="./search.html">
+              <div class="pick-up-numbers__container">
+                <h3 class="pick-up-numbers__arrival">Прибытие</h3>
+                <h3 class="pick-up-numbers__departure">Выезд</h3>
+                <div class="pick-up-numbers__calendar">
+                  <label class="calendar__double">
+                    <input class="datepicker-here calendar__datepicker" type="checkbox" id="js-datepicker__double" data-range="true" data-multiple-dates-separator=" - " clearButton="true" data-position="bottom left">
                     <div class="calendar__arrival-date">
                       <div class="calendar__date">ДД.ММ.ГГГГ</div><span class="material-icons calendar__icon_double">expand_more</span>
                     </div>
@@ -67,48 +67,46 @@
                       <div class="calendar__date">ДД.ММ.ГГГГ</div><span class="material-icons calendar__icon_double">expand_more</span>
                     </div>
                   </label>
-                </form>
-              </label>
-            </section>
-            <section>
-              <h3 class="pick-up-numbers__quest">Гости</h3>
-              <div class="pick-up-numbers__dropdown">
-                <div class="iqdropdown js-iqdropdown_people">
-                  <p class="iqdropdown-selection"></p>
-                  <p class="material-icons iqdropdown_icon">expand_more</p>
-                  <div class="iqdropdown-menu">
-                    <div class="iqdropdown-menu-option" data-id="item+1">
-                      <div>
-                        <p class="iqdropdown-item">Взрослые</p>
-                        <p class="iqdropdown-description"></p>
+                </div>
+                <h3 class="pick-up-numbers__quest">Гости</h3>
+                <div class="pick-up-numbers__dropdown">
+                  <div class="iqdropdown js-iqdropdown_people">
+                    <p class="iqdropdown-selection"></p>
+                    <p class="material-icons iqdropdown_icon">expand_more</p>
+                    <div class="iqdropdown-menu">
+                      <div class="iqdropdown-menu-option" data-id="item+1">
+                        <div class="iqdropdown-item-container">
+                          <p class="iqdropdown-item">Взрослые</p>
+                          <p class="iqdropdown-description"></p>
+                        </div>
                       </div>
-                    </div>
-                    <div class="iqdropdown-menu-option" data-id="item+2">
-                      <div>
-                        <p class="iqdropdown-item">Дети</p>
-                        <p class="iqdropdown-description"></p>
+                      <div class="iqdropdown-menu-option" data-id="item+2">
+                        <div class="iqdropdown-item-container">
+                          <p class="iqdropdown-item">Дети</p>
+                          <p class="iqdropdown-description"></p>
+                        </div>
                       </div>
-                    </div>
-                    <div class="iqdropdown-menu-option" data-id="item+3">
-                      <div>
-                        <p class="iqdropdown-item">Младенцы</p>
-                        <p class="iqdropdown-description"></p>
+                      <div class="iqdropdown-menu-option" data-id="item+3">
+                        <div class="iqdropdown-item-container">
+                          <p class="iqdropdown-item">Младенцы</p>
+                          <p class="iqdropdown-description"></p>
+                        </div>
                       </div>
-                    </div>
-                    <div class="iqdropdown-clear-or-apply">
-                      <h3 class="iqdropdown-clear">Очистить</h3>
-                      <h3 class="iqdropdown-apply">Применить</h3>
+                      <div class="iqdropdown-clear-or-apply">
+                        <h3 class="iqdropdown-clear">Очистить</h3>
+                        <h3 class="iqdropdown-apply">Применить</h3>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </section>
-            <div class="pick-up-numbers__button">
-              <button class="button_color_purple button">
-                <p class="button__text_white">Подобрать номер</p>
-                <p class="material-icons button__arrow_enable">arrow_forward</p>
-              </button>
-            </div>
+              <div class="pick-up-numbers__button">
+                <button class="button_color_purple button">
+                  <p class="button__text_white">Подобрать номер</p>
+                  <p class="material-icons button__arrow_enable">arrow_forward</p>
+                </button>
+              </div>
+            </form>
           </article>
         </section>
         <div class="landing__description">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>
@@ -116,7 +114,7 @@
     </main>
     <footer class="basis__footer">
       <div class="footer__menu">
-        <div class="footer__logo"><a href="./landing.html"><img src="imgs/logo.png" alt="Toxin label"></a>
+        <div class="footer__logo"><a class="footer__link" href="./landing.html"><img class="footer__image" src="imgs/logo.png" alt="Toxin label"></a>
           <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
         <nav class="footer__navigation">
@@ -131,20 +129,17 @@
         <nav class="footer__subscription">
           <h3 class="footer__h3">Подписка</h3>
           <div class="footer__subscription_text">Получайте специальные предложения и новости сервиса</div>
-          <form action="">
-            <legend>
-              <h3></h3>
-              <div class="form__email">
-                <input class="form__email_border" type="email" value="Your email adress">
-                <input class="material-icons form__email_arrow-forward" type="submit" value="arrow_forward">
-              </div>
-            </legend>
-          </form>
+          <div class="form-for-text">
+            <div class="form__email">
+              <input class="form__email_border" type="email" value="Your email adress" name="email-footer">
+              <input class="material-icons form__email_arrow-forward" type="submit" value="arrow_forward">
+            </div>
+          </div>
         </nav>
       </div>
       <aside class="footer__social">
         <div class="footer__copyright">Copyright © 2019 Toxin отель. Все права зачищены.</div>
-        <div class="footer__icons"><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-twitter.png" alt="twitter icon"></a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-facebook.png" alt="facebook icon"></a><a href="https://www.instagram.com/?hl=ru" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-instagram.png" alt="instagram icon"></a>
+        <div class="footer__icons"><a class="social-network__link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-twitter.png" alt="twitter icon"></a><a class="social-network__link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-facebook.png" alt="facebook icon"></a><a class="social-network__link" href="https://www.instagram.com/?hl=ru" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-instagram.png" alt="instagram icon"></a>
         </div>
       </aside>
     </footer>

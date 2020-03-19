@@ -97,75 +97,84 @@
     display: none; }
 
 @charset "UTF-8";
-.calendar {
+.calendar__double {
   display: flex;
   justify-content: left;
   height: 2.625rem;
   padding: 0rem;
   margin-top: 0.4rem;
   margin-left: 0.1rem; }
-  .calendar__datepicker {
-    opacity: 0;
-    position: absolute;
-    margin: 0;
-    margin-top: 2rem; }
-  .calendar__arrival-date {
-    width: 9.25rem;
-    height: 2.62rem;
-    border: 0.06rem solid rgba(31, 32, 65, 0.25);
-    border-radius: 0.25rem;
-    position: relative;
-    margin: 0; }
-  .calendar__departure-date {
-    width: 9.25rem;
-    height: 2.62rem;
-    border: 0.06rem solid rgba(31, 32, 65, 0.25);
-    border-radius: 0.25rem;
-    position: relative;
-    margin: 0 0 0 1.2rem; }
-  .calendar__icon {
-    position: absolute;
+
+.calendar__datepicker {
+  opacity: 0;
+  position: absolute;
+  margin: 0;
+  margin-top: 2rem; }
+
+.calendar__arrival-date {
+  width: 9.25rem;
+  height: 2.62rem;
+  border: 0.06rem solid rgba(31, 32, 65, 0.25);
+  border-radius: 0.25rem;
+  position: relative;
+  margin: 0; }
+
+.calendar__departure-date {
+  width: 9.25rem;
+  height: 2.62rem;
+  border: 0.06rem solid rgba(31, 32, 65, 0.25);
+  border-radius: 0.25rem;
+  position: relative;
+  margin: 0 0 0 1.2rem; }
+
+.calendar__icon {
+  position: absolute;
+  top: 0.56rem;
+  left: 14.56rem; }
+  .calendar__icon_double {
     top: 0.56rem;
-    left: 14.56rem; }
-    .calendar__icon_double {
-      top: 0.56rem;
-      right: 0.56rem;
-      position: absolute; }
-    .calendar__icon_for-birthday {
-      position: absolute; }
-  .calendar__date {
-    position: relative;
-    margin-top: 0.8rem;
-    margin-left: 0.9rem;
-    color: rgba(31, 32, 65, 0.75);
-    font-size: 0.87rem;
-    font-family: 'Montserrat-Medium', Arial, sans-serif; }
-  .calendar__single {
-    position: relative;
-    margin-top: 0.25rem; }
-  .calendar__single-field {
-    opacity: 0;
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 2rem;
-    left: -0.31rem; }
-  .calendar__range {
-    width: 16.5rem‼;
-    height: 2.625rem;
-    border-radius: 0.25rem;
-    border: 0.06rem solid rgba(31, 32, 65, 0.1); }
-  .calendar__birthday {
-    width: 18.75rem;
-    height: 2.5rem;
-    margin-top: 0.3rem;
-    border-radius: 0.25rem;
-    border: 0.06rem solid rgba(31, 32, 65, 0.25);
-    padding-left: 1rem;
-    letter-spacing: 0.05rem;
-    color: rgba(31, 32, 65, 0.75);
-    font-size: 0.87rem;
-    font-family: 'Montserrat-Medium', Arial, sans-serif; }
+    right: 0.56rem;
+    position: absolute; }
+  .calendar__icon_for-birthday {
+    position: absolute; }
+
+.calendar__date {
+  position: relative;
+  margin-top: 0.8rem;
+  margin-left: 0.9rem;
+  color: rgba(31, 32, 65, 0.75);
+  font-size: 0.87rem;
+  font-family: 'Montserrat-Medium', Arial, sans-serif; }
+
+.calendar__single {
+  position: relative;
+  margin-top: 0.25rem; }
+
+.calendar__single-field {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 2rem;
+  left: -0.31rem; }
+
+.calendar__range {
+  width: 16.5rem‼;
+  height: 2.625rem;
+  border-radius: 0.25rem;
+  border: 0.06rem solid rgba(31, 32, 65, 0.1); }
+
+.calendar__birthday {
+  width: 18.75rem;
+  height: 2.5rem;
+  margin-top: 0.3rem;
+  border-radius: 0.25rem;
+  border: 0.06rem solid rgba(31, 32, 65, 0.25);
+  padding-left: 1rem;
+  letter-spacing: 0.05rem;
+  color: rgba(31, 32, 65, 0.75);
+  font-size: 0.87rem;
+  font-family: 'Montserrat-Medium', Arial, sans-serif; }
 
 .checkbox-button__container {
   width: 13.125rem;
@@ -381,8 +390,8 @@
 
 .checkbox-rich__checkmark {
   position: absolute;
-  top: -0.125rem;
-  left: 0;
+  top: -0.0625rem;
+  left: -0.0625rem;
   height: 1.25rem;
   width: 1.25rem;
   background: rgba(31, 32, 65, 0.25);
@@ -390,14 +399,19 @@
 
 .checkbox-rich__checkmark_white {
   position: absolute;
-  top: -0.06rem;
-  left: 0.08rem;
-  height: 1.12rem;
-  width: 1.12rem;
+  height: 1.125rem;
+  width: 1.125rem;
   background: white;
   border-radius: 0.2rem; }
 
-.checkbox-rich__input:checked ~ .checkbox-rich__checkmark {
+.checkbox-rich__checkmark-container {
+  position: absolute;
+  left: 0rem;
+  top: -0.0625rem;
+  width: 1.25rem;
+  height: 1.25rem; }
+
+.checkbox-rich__input:checked ~ .checkbox-rich__checkmark-container .checkbox-rich__checkmark {
   background: linear-gradient(180deg, #BC9CFF, #8ba4f9); }
 
 .checkbox-rich__checkmark:before, .checkbox-rich__checkmark:after {
@@ -426,10 +440,10 @@
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
-.checkbox-rich__input:checked ~ .checkbox-rich__checkmark:after {
+.checkbox-rich__input:checked ~ .checkbox-rich__checkmark-container .checkbox-rich__checkmark:after {
   display: block; }
 
-.checkbox-rich__input:checked ~ .checkbox-rich__checkmark:before {
+.checkbox-rich__input:checked ~ .checkbox-rich__checkmark-container .checkbox-rich__checkmark:before {
   display: block; }
 
 .checkbox-rich__korridor-width {
@@ -554,48 +568,41 @@
   text-decoration: none;
   color: rgba(31, 32, 65, 0.75); }
 
-.form__date {
+.form {
   height: 2.875rem; }
-  .form__date_border {
-    border: 0.06rem solid rgba(31, 32, 65, 0.25);
-    border-radius: 0.375rem; }
-
-.form__email {
-  height: 2.875rem; }
-  .form__email_border {
-    border: 0.06rem solid rgba(31, 32, 65, 0.25);
-    border-radius: 0.375rem;
-    width: 15.31rem;
-    margin-left: -0.125rem;
-    margin-top: -0.125rem;
-    height: 2.5rem;
-    padding-left: 0.81rem; }
-  .form__email_arrow-forward {
-    color: #BC9CFF;
-    position: relative;
-    left: 14rem;
-    top: -2.15rem;
-    font-size: 1.5rem;
-    padding: 0;
-    margin: 0;
-    border: none;
-    background: none; }
-
-.form__name {
-  height: 2.875rem; }
-  .form__name_sign-up, .form__name_sign-in {
+  .form__sign-up, .form__sign-in {
     box-sizing: border-box;
     border: 0.06rem solid rgba(31, 32, 65, 0.25);
     border-radius: 0.25rem;
     border: 0.06rem solid rgba(31, 32, 65, 0.25);
     height: 2.75rem; }
-  .form__name_sign-up {
+  .form__sign-up {
     width: 20rem;
     padding-left: 0.94rem; }
-  .form__name_sign-in {
+  .form__sign-in {
     width: 19.875rem;
     margin: 0.625rem 0 0 0;
     padding-left: 1rem; }
+  .form__email {
+    height: 2.875rem; }
+    .form__email_border {
+      border: 0.06rem solid rgba(31, 32, 65, 0.25);
+      border-radius: 0.375rem;
+      width: 15.31rem;
+      margin-left: -0.125rem;
+      margin-top: -0.125rem;
+      height: 2.5rem;
+      padding-left: 0.81rem; }
+    .form__email_arrow-forward {
+      color: #BC9CFF;
+      position: relative;
+      left: 14rem;
+      top: -2.15rem;
+      font-size: 1.5rem;
+      padding: 0;
+      margin: 0;
+      border: none;
+      background: none; }
 
 .icon-advantages {
   display: grid;
@@ -994,28 +1001,26 @@
     position: relative;
     left: -0.56rem; }
 
-.range-slider__form {
+.range-slider {
   position: relative;
   height: 88px; }
-
-.range-slider__amount-of-money {
-  font-family: 'Montserrat-SemiBold', Arial, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  margin: 0;
-  position: absolute;
-  display: flex;
-  justify-content: flex-start;
-  z-index: 1;
-  top: 1.8rem;
-  letter-spacing: 0.006rem;
-  margin-left: 0.01rem; }
-
-.range-slider__description {
-  font-size: 12px;
-  color: rgba(31, 32, 65, 0.25);
-  letter-spacing: -0.01em; }
+  .range-slider__amount-of-money {
+    font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    margin: 0;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1;
+    top: 1.8rem;
+    letter-spacing: 0.006rem;
+    margin-left: 0.01rem; }
+  .range-slider__description {
+    font-size: 12px;
+    color: rgba(31, 32, 65, 0.25);
+    letter-spacing: -0.01em; }
 
 .star-rating {
   transform: rotateY(180deg);
@@ -1307,7 +1312,7 @@
   width: 90rem;
   height: 4.375rem;
   justify-content: space-between; }
-  .header__image {
+  .header__link-image {
     width: 6.62rem;
     height: 2.5rem;
     margin: auto 0 auto 8.8rem; }
@@ -1664,8 +1669,7 @@
     margin-top: 1.87rem;
     margin-left: -0.06rem; }
   .sign-in__form {
-    width: 20rem;
-    height: 2.75rem; }
+    width: 20rem; }
   .sign-in__question {
     font-size: 0.87rem;
     margin: 0;
@@ -1735,8 +1739,7 @@
     margin-top: 0rem; }
   .sing-up__button {
     margin-top: 1.5rem;
-    margin-left: -0.06rem; }
-  .sing-up__button-purple {
+    margin-left: -0.06rem;
     width: 20rem;
     height: 2.75rem; }
   .sing-up__authorization {

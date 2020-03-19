@@ -17,7 +17,7 @@
   <link href="main.css" rel="stylesheet"></head>
   <body class="basis">
     <header class="basis__header">
-      <div class="header"><a class="header__image" href="./landing.html"><img src="imgs/logo.png" alt="Toxin label"></a>
+      <div class="header"><a class="header__link-image" href="./landing.html"><img class="header__image" src="imgs/logo.png" alt="Toxin label"></a>
         <nav class="header__menu">
           <ul class="header__list">
             <li class="header__point"><a class="header__link" href="">О нас</a></li>
@@ -57,19 +57,19 @@
             <div class="icon-advantages"><img class="icon-advantages__image" src="imgs/insert_emoticon.svg" alt="icon smile" width="40" height="40">
               <div class="icon-advantages__text">
                 <h3 class="icon-advantages__title">Комфорт</h3>
-                <div>Шумопоглащающие стены</div>
+                <div class="icon-advantages__description">Шумопоглащающие стены</div>
               </div>
             </div>
             <div class="icon-advantages"><img class="icon-advantages__image" src="imgs/location_city.svg" alt="icon building" width="40" height="40">
               <div class="icon-advantages__text">
                 <h3 class="icon-advantages__title">Удобство</h3>
-                <div>Окно в каждой из спален</div>
+                <div class="icon-advantages__description">Окно в каждой из спален</div>
               </div>
             </div>
             <div class="icon-advantages__without-border"><img class="icon-advantages__image" src="imgs/whatshot.svg" alt="icon flame" width="40" height="40">
               <div class="icon-advantages__text">
                 <h3 class="icon-advantages__title">Уют</h3>
-                <div>Номер оснащен камином</div>
+                <div class="icon-advantages__description">Номер оснащен камином</div>
               </div>
             </div>
           </section>
@@ -114,13 +114,13 @@
             </div>
             <div class="room-detail__comments_margin">
               <div class="comments">
-                <div><img class="comments__profile-image" src="imgs/murad-true.png" alt="Cinque Terre" width="48" height="48"></div>
-                <div>
+                <div class="comments__profile-photo"><img class="comments__profile-image" src="imgs/murad-true.png" alt="Cinque Terre" width="48" height="48"></div>
+                <div class="comments__profile-name">
                   <h3 class="comments__name">Мурад Сарафанов</h3>
                   <div class="comments__date">5 дней назад</div>
                 </div>
                 <div class="comments__like-button">
-                  <label class="like-button">
+                  <div class="like-button">
                     <input class="like-button__input" type="checkbox">
                     <div class="like-button__background">
                       <div class="like-button__empty-white"></div>
@@ -128,20 +128,20 @@
                     </div>
                     <div class="like-button__favorite_border material-icons">favorite_border</div>
                     <div class="like-button__favorite material-icons">favorite</div>
-                  </label>
+                  </div>
                 </div>
                 <div class="comments__description">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</div>
               </div>
             </div>
             <div class="room-detail__comments_margin">
               <div class="comments">
-                <div><img class="comments__profile-image" src="imgs/girl image.png" alt="Cinque Terre" width="48" height="48"></div>
-                <div>
+                <div class="comments__profile-photo"><img class="comments__profile-image" src="imgs/girl image.png" alt="Cinque Terre" width="48" height="48"></div>
+                <div class="comments__profile-name">
                   <h3 class="comments__name">Патрисия Стёклышкова</h3>
                   <div class="comments__date">Неделю назад</div>
                 </div>
                 <div class="comments__like-button">
-                  <label class="like-button">
+                  <div class="like-button">
                     <input class="like-button__input" type="checkbox">
                     <div class="like-button__background">
                       <div class="like-button__empty-white"></div>
@@ -149,7 +149,7 @@
                     </div>
                     <div class="like-button__favorite_border material-icons">favorite_border</div>
                     <div class="like-button__favorite material-icons">favorite</div>
-                  </label>
+                  </div>
                 </div>
                 <div class="comments__description">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</div>
               </div>
@@ -185,16 +185,16 @@
                 <h2 class="booking__number">888</h2>
                 <h3 class="booking__lux">люкс</h3>
               </div>
-              <div>
+              <div class="booking__cost">
                 <p class="booking__price">9 990₽</p><span class="booking__per-day">в сутки</span>
               </div>
             </header>
-            <div class="booking__pick-date">
-              <h3 class="booking__arrival">Прибытие</h3>
-              <h3 class="booking__departure">Выезд</h3>
-              <form action="">
-                <label class="calendar">
-                  <input class="datepicker-here calendar__datepicker" type="checkbox" id="js-datepicker__duble" data-range="true" data-multiple-dates-separator=" - " clearButton="true" data-position="bottom left">
+            <form class="booking__form" action="./landing.html">
+              <div class="booking__pick-date">
+                <h3 class="booking__arrival">Прибытие</h3>
+                <h3 class="booking__departure">Выезд</h3>
+                <label class="calendar__double">
+                  <input class="datepicker-here calendar__datepicker" type="checkbox" id="js-datepicker__double" data-range="true" data-multiple-dates-separator=" - " clearButton="true" data-position="bottom left">
                   <div class="calendar__arrival-date">
                     <div class="calendar__date">19.08.2019</div><span class="material-icons calendar__icon_double">expand_more</span>
                   </div>
@@ -202,54 +202,54 @@
                     <div class="calendar__date">23.08.2019</div><span class="material-icons calendar__icon_double">expand_more</span>
                   </div>
                 </label>
-              </form>
-            </div>
-            <div class="booking__guests">
-              <h3 class="booking__guests_title">Гости</h3>
-              <div class="booking__dropdown">
-                <div class="iqdropdown js-iqdropdown_people">
-                  <p class="iqdropdown-selection"></p>
-                  <p class="material-icons iqdropdown_icon">expand_more</p>
-                  <div class="iqdropdown-menu">
-                    <div class="iqdropdown-menu-option" data-id="item+1">
-                      <div>
-                        <p class="iqdropdown-item">Взрослые</p>
-                        <p class="iqdropdown-description"></p>
+              </div>
+              <div class="booking__guests">
+                <h3 class="booking__guests_title">Гости</h3>
+                <div class="booking__dropdown">
+                  <div class="iqdropdown js-iqdropdown_people">
+                    <p class="iqdropdown-selection"></p>
+                    <p class="material-icons iqdropdown_icon">expand_more</p>
+                    <div class="iqdropdown-menu">
+                      <div class="iqdropdown-menu-option" data-id="item+1">
+                        <div class="iqdropdown-item-container">
+                          <p class="iqdropdown-item">Взрослые</p>
+                          <p class="iqdropdown-description"></p>
+                        </div>
                       </div>
-                    </div>
-                    <div class="iqdropdown-menu-option" data-id="item+2">
-                      <div>
-                        <p class="iqdropdown-item">Дети</p>
-                        <p class="iqdropdown-description"></p>
+                      <div class="iqdropdown-menu-option" data-id="item+2">
+                        <div class="iqdropdown-item-container">
+                          <p class="iqdropdown-item">Дети</p>
+                          <p class="iqdropdown-description"></p>
+                        </div>
                       </div>
-                    </div>
-                    <div class="iqdropdown-menu-option" data-id="item+3">
-                      <div>
-                        <p class="iqdropdown-item">Младенцы</p>
-                        <p class="iqdropdown-description"></p>
+                      <div class="iqdropdown-menu-option" data-id="item+3">
+                        <div class="iqdropdown-item-container">
+                          <p class="iqdropdown-item">Младенцы</p>
+                          <p class="iqdropdown-description"></p>
+                        </div>
                       </div>
-                    </div>
-                    <div class="iqdropdown-clear-or-apply">
-                      <h3 class="iqdropdown-clear">Очистить</h3>
-                      <h3 class="iqdropdown-apply">Применить</h3>
+                      <div class="iqdropdown-clear-or-apply">
+                        <h3 class="iqdropdown-clear">Очистить</h3>
+                        <h3 class="iqdropdown-apply">Применить</h3>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="booking__text"><span class="booking__align_left">9 990₽ х 4 суток</span><span class="booking__align_right">39 960₽</span></div>
-            <div class="booking__text_fee"><span class="booking__align_left">Сбор за услуги: скидка 2 179₽</span><span class="material-icons booking__align_center">error_outline</span><span class="booking__align_right">0₽</span></div>
-            <div class="booking__text_fee"><span class="booking__align_left">Сбор за дополнительные услуги</span><span class="material-icons booking__align_center">error_outline</span><span class="booking__align_right">300₽</span></div>
-            <div class="booking__total">
-              <h2>Итого</h2>
-              <div class="booking__total_border"></div>
-              <h2 class="booking__total_price">38 081₽</h2>
-            </div>
-            <form class="booking__button" action="./landing.html">
-              <button class="button_color_purple button">
-                <p class="button__text_white">Забронировать</p>
-                <p class="material-icons button__arrow_enable">arrow_forward</p>
-              </button>
+              <div class="booking__text"><span class="booking__align_left">9 990₽ х 4 суток</span><span class="booking__align_right">39 960₽</span></div>
+              <div class="booking__text_fee"><span class="booking__align_left">Сбор за услуги: скидка 2 179₽</span><span class="material-icons booking__align_center">error_outline</span><span class="booking__align_right">0₽</span></div>
+              <div class="booking__text_fee"><span class="booking__align_left">Сбор за дополнительные услуги</span><span class="material-icons booking__align_center">error_outline</span><span class="booking__align_right">300₽</span></div>
+              <div class="booking__total">
+                <h2>Итого</h2>
+                <div class="booking__total_border"></div>
+                <h2 class="booking__total_price">38 081₽</h2>
+              </div>
+              <div class="booking__button">
+                <button class="button_color_purple button">
+                  <p class="button__text_white">Забронировать</p>
+                  <p class="material-icons button__arrow_enable">arrow_forward</p>
+                </button>
+              </div>
             </form>
           </div>
         </section>
@@ -257,7 +257,7 @@
     </div>
     <footer class="basis__footer">
       <div class="footer__menu">
-        <div class="footer__logo"><a href="./landing.html"><img src="imgs/logo.png" alt="Toxin label"></a>
+        <div class="footer__logo"><a class="footer__link" href="./landing.html"><img class="footer__image" src="imgs/logo.png" alt="Toxin label"></a>
           <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
         <nav class="footer__navigation">
@@ -272,20 +272,17 @@
         <nav class="footer__subscription">
           <h3 class="footer__h3">Подписка</h3>
           <div class="footer__subscription_text">Получайте специальные предложения и новости сервиса</div>
-          <form action="">
-            <legend>
-              <h3></h3>
-              <div class="form__email">
-                <input class="form__email_border" type="email" value="Your email adress">
-                <input class="material-icons form__email_arrow-forward" type="submit" value="arrow_forward">
-              </div>
-            </legend>
-          </form>
+          <div class="form-for-text">
+            <div class="form__email">
+              <input class="form__email_border" type="email" value="Your email adress" name="email-footer">
+              <input class="material-icons form__email_arrow-forward" type="submit" value="arrow_forward">
+            </div>
+          </div>
         </nav>
       </div>
       <aside class="footer__social">
         <div class="footer__copyright">Copyright © 2019 Toxin отель. Все права зачищены.</div>
-        <div class="footer__icons"><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-twitter.png" alt="twitter icon"></a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-facebook.png" alt="facebook icon"></a><a href="https://www.instagram.com/?hl=ru" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-instagram.png" alt="instagram icon"></a>
+        <div class="footer__icons"><a class="social-network__link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-twitter.png" alt="twitter icon"></a><a class="social-network__link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-facebook.png" alt="facebook icon"></a><a class="social-network__link" href="https://www.instagram.com/?hl=ru" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-instagram.png" alt="instagram icon"></a>
         </div>
       </aside>
     </footer>

@@ -17,7 +17,7 @@
   <link href="main.css" rel="stylesheet"></head>
   <body class="basis">
     <header class="basis__header">
-      <div class="header"><a class="header__image" href="./landing.html"><img src="imgs/logo.png" alt="Toxin label"></a>
+      <div class="header"><a class="header__link-image" href="./landing.html"><img class="header__image" src="imgs/logo.png" alt="Toxin label"></a>
         <nav class="header__menu">
           <ul class="header__list">
             <li class="header__point"><a class="header__link" href="">О нас</a></li>
@@ -48,33 +48,31 @@
     <div class="search-page">
       <article class="search-page__select-options">
         <h3 class="search-page__datepicker_title">Даты пребывания в отеле</h3>
-        <form action="">
-          <label class="calendar__single">
-            <input class="datepicker-here calendar__single-field" type="checkbox" id="js-datepicker__single" data-multiple-dates-separator=" - " data-range="true" data-position="bottom left">
-            <div class="calendar__range">
-              <div class="calendar__date">19 авг - 23 авг</div>
-            </div><span class="material-icons calendar__icon">expand_more</span>
-          </label>
-        </form>
+        <label class="calendar__single">
+          <input class="datepicker-here calendar__single-field" type="checkbox" id="js-datepicker__single" data-multiple-dates-separator=" - " data-range="true" data-position="bottom left">
+          <div class="calendar__range">
+            <div class="calendar__date">19 авг - 23 авг</div>
+          </div><span class="material-icons calendar__icon">expand_more</span>
+        </label>
         <h3 class="search-page__dropdown_guests">Гости</h3>
         <div class="iqdropdown js-iqdropdown_people">
           <p class="iqdropdown-selection"></p>
           <p class="material-icons iqdropdown_icon">expand_more</p>
           <div class="iqdropdown-menu">
             <div class="iqdropdown-menu-option" data-id="item+1">
-              <div>
+              <div class="iqdropdown-item-container">
                 <p class="iqdropdown-item">Взрослые</p>
                 <p class="iqdropdown-description"></p>
               </div>
             </div>
             <div class="iqdropdown-menu-option" data-id="item+2">
-              <div>
+              <div class="iqdropdown-item-container">
                 <p class="iqdropdown-item">Дети</p>
                 <p class="iqdropdown-description"></p>
               </div>
             </div>
             <div class="iqdropdown-menu-option" data-id="item+3">
-              <div>
+              <div class="iqdropdown-item-container">
                 <p class="iqdropdown-item">Младенцы</p>
                 <p class="iqdropdown-description"></p>
               </div>
@@ -85,40 +83,34 @@
             </div>
           </div>
         </div>
-        <form class="range-slider__form" action="">
+        <div class="range-slider">
           <h3 class="range-slider__amount-of-money">Диапазон цены</h3>
           <input class="js-range-slider__input" type="text" name="example_name" value="">
-        </form>
+        </div>
         <div class="range-slider__description">Стоимость за сутки пребывания в номере</div>
         <h3 class="search-page__checkbox_title">checkbox buttons</h3>
-        <form action="">
-          <label class="checkbox-button__container">Можно курить
-            <input class="checkbox-button__input" type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-          </label>
-        </form>
-        <form action="">
-          <label class="checkbox-button__container">Можно с питомцами
-            <input class="checkbox-button__input" type="checkbox" checked><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-          </label>
-        </form>
-        <form action="">
-          <label class="checkbox-button__container">Можно пригласить гостей (до 10 человек)
-            <input class="checkbox-button__input" type="checkbox" checked><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-          </label>
-        </form>
+        <label class="checkbox-button__container">Можно курить
+          <input class="checkbox-button__input" type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
+        </label>
+        <label class="checkbox-button__container">Можно с питомцами
+          <input class="checkbox-button__input" type="checkbox" checked><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
+        </label>
+        <label class="checkbox-button__container">Можно пригласить гостей (до 10 человек)
+          <input class="checkbox-button__input" type="checkbox" checked><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
+        </label>
         <h3 class="search-page__checkbox-rich_title">доступность</h3>
-        <form action="">
-          <label class="checkbox-rich__container">
-            <div class="checkbox-rich__title">Широкий коридор</div>
-            <input class="checkbox-rich__input" type="checkbox" checked="checked"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark_white"></span>
-            <div class="checkbox-rich__korridor-width">Ширина коридоров в номере не менее 91см</div>
-          </label>
-          <label class="checkbox-rich__container">
-            <div class="checkbox-rich__title">Помощник для инвалидов</div>
-            <input class="checkbox-rich__input" type="checkbox"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark_white"></span>
-            <div class="checkbox-rich__korridor-width">На 1 этаже вас встретит специалист и проводит до номера</div>
-          </label>
-        </form>
+        <label class="checkbox-rich__container">
+          <div class="checkbox-rich__title">Широкий коридор</div>
+          <input class="checkbox-rich__input" type="checkbox" checked="checked">
+          <div class="checkbox-rich__checkmark-container"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark_white"></span></div>
+          <div class="checkbox-rich__korridor-width">Ширина коридоров в номере не менее 91см</div>
+        </label>
+        <label class="checkbox-rich__container">
+          <div class="checkbox-rich__title">Помощник для инвалидов</div>
+          <input class="checkbox-rich__input" type="checkbox">
+          <div class="checkbox-rich__checkmark-container"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark_white"></span></div>
+          <div class="checkbox-rich__korridor-width">На 1 этаже вас встретит специалист и проводит до номера</div>
+        </label>
         <div class="search-page__dropdown">
           <h3 class="search-page__dropdown_stuff">Удобства номера</h3>
           <div class="iqdropdown js-iqdropdown_options">
@@ -126,19 +118,19 @@
             <p class="material-icons iqdropdown_icon">expand_more</p>
             <div class="iqdropdown-menu">
               <div class="iqdropdown-menu-option" data-id="item+1">
-                <div>
+                <div class="iqdropdown-item-container">
                   <p class="iqdropdown-item">Спальни</p>
                   <p class="iqdropdown-description"></p>
                 </div>
               </div>
               <div class="iqdropdown-menu-option" data-id="item+2">
-                <div>
+                <div class="iqdropdown-item-container">
                   <p class="iqdropdown-item">Кровати</p>
                   <p class="iqdropdown-description"></p>
                 </div>
               </div>
               <div class="iqdropdown-menu-option" data-id="item+3">
-                <div>
+                <div class="iqdropdown-item-container">
                   <p class="iqdropdown-item">Ванные комнаты</p>
                   <p class="iqdropdown-description"></p>
                 </div>
@@ -156,26 +148,18 @@
               <h3 class="checkbox-expendable__title">Дополнительные удобства</h3><span class="material-icons checkbox-expendable__icons">keyboard_arrow_down</span>
             </button>
             <div class="js-checkbox-expendable_hiden checkbox-expendable__hiden">
-              <form action="">
-                <label class="checkbox-button__container">Завтрак
-                  <input class="checkbox-button__input" type="checkbox" checked><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-                </label>
-              </form>
-              <form action="">
-                <label class="checkbox-button__container">Письменный стол
-                  <input class="checkbox-button__input" type="checkbox" checked><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-                </label>
-              </form>
-              <form action="">
-                <label class="checkbox-button__container">Стул для кормления
-                  <input class="checkbox-button__input" type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-                </label>
-              </form>
-              <form action="">
-                <label class="checkbox-button__container">Кроватка
-                  <input class="checkbox-button__input" type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-                </label>
-              </form>
+              <label class="checkbox-button__container">Завтрак
+                <input class="checkbox-button__input" type="checkbox" checked><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
+              </label>
+              <label class="checkbox-button__container">Письменный стол
+                <input class="checkbox-button__input" type="checkbox" checked><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
+              </label>
+              <label class="checkbox-button__container">Стул для кормления
+                <input class="checkbox-button__input" type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
+              </label>
+              <label class="checkbox-button__container">Кроватка
+                <input class="checkbox-button__input" type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
+              </label>
             </div>
           </div>
         </div>
@@ -183,7 +167,7 @@
       <article class="search-page__rooms">
         <h2 class="search-page_rooms_title">Номера, которые мы для вас подобрали</h2>
         <section class="search-page__rooms_numbers">
-          <div class="hotel-room"><a href="./room-detail.html"><img class="hotel-room__img" src="imgs/room-1.png" alt="eclectica, double bed"></a>
+          <div class="hotel-room"><a class="hotel-room__link" href="./room-detail.html"><img class="hotel-room__img" src="imgs/room-1.png" alt="eclectica, double bed"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -213,7 +197,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-2.png" alt="eclectica, 4 simle beds"></a>
+          <div class="hotel-room"><a class="hotel-room__link" href=""><img class="hotel-room__img" src="imgs/room-2.png" alt="eclectica, 4 simle beds"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -242,7 +226,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-3.png" alt="double bed"></a>
+          <div class="hotel-room"><a class="hotel-room__link" href=""><img class="hotel-room__img" src="imgs/room-3.png" alt="double bed"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -272,7 +256,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-4.png" alt="double bed"></a>
+          <div class="hotel-room"><a class="hotel-room__link" href=""><img class="hotel-room__img" src="imgs/room-4.png" alt="double bed"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -302,7 +286,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-5.png" alt="double bed"></a>
+          <div class="hotel-room"><a class="hotel-room__link" href=""><img class="hotel-room__img" src="imgs/room-5.png" alt="double bed"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -331,7 +315,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-6.png" alt="double bed, big square"></a>
+          <div class="hotel-room"><a class="hotel-room__link" href=""><img class="hotel-room__img" src="imgs/room-6.png" alt="double bed, big square"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -360,7 +344,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-7.png" alt="double bed, big square"></a>
+          <div class="hotel-room"><a class="hotel-room__link" href=""><img class="hotel-room__img" src="imgs/room-7.png" alt="double bed, big square"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -389,7 +373,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-8.png" alt="double bed"></a>
+          <div class="hotel-room"><a class="hotel-room__link" href=""><img class="hotel-room__img" src="imgs/room-8.png" alt="double bed"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -418,7 +402,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-9.png" alt="double bed"></a>
+          <div class="hotel-room"><a class="hotel-room__link" href=""><img class="hotel-room__img" src="imgs/room-9.png" alt="double bed"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -447,7 +431,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-10.png" alt="two simple beds"></a>
+          <div class="hotel-room"><a class="hotel-room__link" href=""><img class="hotel-room__img" src="imgs/room-10.png" alt="two simple beds"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -476,7 +460,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-11.png" alt="two simple double beds"></a>
+          <div class="hotel-room"><a class="hotel-room__link" href=""><img class="hotel-room__img" src="imgs/room-11.png" alt="two simple double beds"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -505,7 +489,7 @@
               </div>
             </div>
           </div>
-          <div class="hotel-room"><a href=""><img class="hotel-room__img" src="imgs/room-12.png" alt="double bed"></a>
+          <div class="hotel-room"><a class="hotel-room__link" href=""><img class="hotel-room__img" src="imgs/room-12.png" alt="double bed"></a>
             <div class="hotel-room__circles">
               <div class="pagination-circle__solid"></div>
               <div class="pagination-circle__empty"></div>
@@ -543,7 +527,7 @@
     </div>
     <footer class="basis__footer">
       <div class="footer__menu">
-        <div class="footer__logo"><a href="./landing.html"><img src="imgs/logo.png" alt="Toxin label"></a>
+        <div class="footer__logo"><a class="footer__link" href="./landing.html"><img class="footer__image" src="imgs/logo.png" alt="Toxin label"></a>
           <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
         <nav class="footer__navigation">
@@ -558,20 +542,17 @@
         <nav class="footer__subscription">
           <h3 class="footer__h3">Подписка</h3>
           <div class="footer__subscription_text">Получайте специальные предложения и новости сервиса</div>
-          <form action="">
-            <legend>
-              <h3></h3>
-              <div class="form__email">
-                <input class="form__email_border" type="email" value="Your email adress">
-                <input class="material-icons form__email_arrow-forward" type="submit" value="arrow_forward">
-              </div>
-            </legend>
-          </form>
+          <div class="form-for-text">
+            <div class="form__email">
+              <input class="form__email_border" type="email" value="Your email adress" name="email-footer">
+              <input class="material-icons form__email_arrow-forward" type="submit" value="arrow_forward">
+            </div>
+          </div>
         </nav>
       </div>
       <aside class="footer__social">
         <div class="footer__copyright">Copyright © 2019 Toxin отель. Все права зачищены.</div>
-        <div class="footer__icons"><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-twitter.png" alt="twitter icon"></a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-facebook.png" alt="facebook icon"></a><a href="https://www.instagram.com/?hl=ru" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-instagram.png" alt="instagram icon"></a>
+        <div class="footer__icons"><a class="social-network__link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-twitter.png" alt="twitter icon"></a><a class="social-network__link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-facebook.png" alt="facebook icon"></a><a class="social-network__link" href="https://www.instagram.com/?hl=ru" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-instagram.png" alt="instagram icon"></a>
         </div>
       </aside>
     </footer>

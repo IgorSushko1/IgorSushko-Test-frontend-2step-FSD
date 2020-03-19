@@ -17,7 +17,7 @@
   <link href="main.css" rel="stylesheet"></head>
   <body class="registration">
     <header class="registration__header">
-      <div class="header"><a class="header__image" href="./landing.html"><img src="imgs/logo.png" alt="Toxin label"></a>
+      <div class="header"><a class="header__link-image" href="./landing.html"><img class="header__image" src="imgs/logo.png" alt="Toxin label"></a>
         <nav class="header__menu">
           <ul class="header__list">
             <li class="header__point"><a class="header__link" href="">О нас</a></li>
@@ -53,35 +53,29 @@
       </article>
       <article class="registration__basis_sign-in">
         <article class="sign-in">
-          <header>
+          <header class="sign-in__header">
             <h2 class="sign-in__title">Войти</h2>
           </header>
-          <div class="sign-in__email">
-            <form action="">
-              <legend>
-                <div class="form__name">
-                  <input class="form__name_sign-in" type="email" value="Email" name="email-sign-in">
-                </div>
-              </legend>
-            </form>
-          </div>
-          <div class="sign-in__password">
-            <form action="">
-              <legend>
-                <div class="form__name">
-                  <input class="form__name_sign-in" type="text" value="Пароль" name="password-sign-in">
-                </div>
-              </legend>
-            </form>
-          </div>
-          <div class="sign-in__button">
-            <form class="sign-in__button-purple" action="./search.html">
-              <button class="button_color_purple button">
-                <p class="button__text_white">Войти</p>
-                <p class="material-icons button__arrow_enable">arrow_forward</p>
-              </button>
-            </form>
-          </div>
+          <form class="sign-in__form" action="./search.html">
+            <div class="sign-in__email">
+              <div class="form-for-text">
+                <input class="form__sign-in" type="email" value="Email" name="email-sign-in">
+              </div>
+            </div>
+            <div class="sign-in__password">
+              <div class="form-for-text">
+                <input class="form__sign-in" type="text" value="Пароль" name="password-sign-in">
+              </div>
+            </div>
+            <div class="sign-in__button">
+              <div class="sign-in__button-purple"> 
+                <button class="button_color_purple button">
+                  <p class="button__text_white">Войти</p>
+                  <p class="material-icons button__arrow_enable">arrow_forward</p>
+                </button>
+              </div>
+            </div>
+          </form>
           <div class="sign-in__create">
             <p class="sign-in__question">Нет аккаунта на Toxin?</p>
             <form class="sign-in__button-white" action="./registration-sign-up.html">
@@ -96,7 +90,7 @@
     </main>
     <footer class="registration__footer">
       <div class="footer__menu">
-        <div class="footer__logo"><a href="./landing.html"><img src="imgs/logo.png" alt="Toxin label"></a>
+        <div class="footer__logo"><a class="footer__link" href="./landing.html"><img class="footer__image" src="imgs/logo.png" alt="Toxin label"></a>
           <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
         <nav class="footer__navigation">
@@ -111,20 +105,17 @@
         <nav class="footer__subscription">
           <h3 class="footer__h3">Подписка</h3>
           <div class="footer__subscription_text">Получайте специальные предложения и новости сервиса</div>
-          <form action="">
-            <legend>
-              <h3></h3>
-              <div class="form__email">
-                <input class="form__email_border" type="email" value="Your email adress">
-                <input class="material-icons form__email_arrow-forward" type="submit" value="arrow_forward">
-              </div>
-            </legend>
-          </form>
+          <div class="form-for-text">
+            <div class="form__email">
+              <input class="form__email_border" type="email" value="Your email adress" name="email-footer">
+              <input class="material-icons form__email_arrow-forward" type="submit" value="arrow_forward">
+            </div>
+          </div>
         </nav>
       </div>
       <aside class="footer__social">
         <div class="footer__copyright">Copyright © 2019 Toxin отель. Все права зачищены.</div>
-        <div class="footer__icons"><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-twitter.png" alt="twitter icon"></a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-facebook.png" alt="facebook icon"></a><a href="https://www.instagram.com/?hl=ru" target="_blank" rel="noopener noreferrer"><img src="imgs/icon-instagram.png" alt="instagram icon"></a>
+        <div class="footer__icons"><a class="social-network__link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-twitter.png" alt="twitter icon"></a><a class="social-network__link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-facebook.png" alt="facebook icon"></a><a class="social-network__link" href="https://www.instagram.com/?hl=ru" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-instagram.png" alt="instagram icon"></a>
         </div>
       </aside>
     </footer>
