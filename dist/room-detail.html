@@ -47,26 +47,29 @@
     </header>
     <div class="room-detail">
       <article class="room-detail__picture">
-        <div class="room-detail__picture_left"><img src="imgs/room-details-1.png" alt="not nice eclectic interior" width="981" height="485"></div>
-        <div class="room-detail__picture_right"><img src="imgs/room-details-2-1.png" alt="not nice eclectic interior, more then other pictures" width="459" height="243" style="display: block"><img src="imgs/room-details-2-2.png" alt="nice like american interior of work zone" width="459" height="242"></div>
+        <div class="room-detail__picture_left"><img class="room-detail__image_left" src="imgs/room-details-1.png" alt="apartment image"></div>
+        <div class="room-detail__picture_right"><img class="room-detail__image_right-top" src="imgs/room-details-2-1.png" alt="apartment image"><img class="room-detail__image_right-bottom" src="imgs/room-details-2-2.png" alt="apartment image"></div>
       </article>
       <article class="room-detail__info">
         <div class="room-detail__info_grid">
           <section class="room-detail__about-room">
             <h2 class="room-detail__about-room_title">Сведения о номере</h2>
-            <div class="icon-advantages"><img class="icon-advantages__image" src="imgs/insert_emoticon.svg" alt="icon smile" width="40" height="40">
+            <div class="icon-advantages">
+              <div class="icon-advantages__image icon-advantages__image_smile"></div>
               <div class="icon-advantages__text">
                 <h3 class="icon-advantages__title">Комфорт</h3>
                 <div class="icon-advantages__description">Шумопоглащающие стены</div>
               </div>
             </div>
-            <div class="icon-advantages"><img class="icon-advantages__image" src="imgs/location_city.svg" alt="icon building" width="40" height="40">
+            <div class="icon-advantages">
+              <div class="icon-advantages__image icon-advantages__image_home"></div>
               <div class="icon-advantages__text">
                 <h3 class="icon-advantages__title">Удобство</h3>
                 <div class="icon-advantages__description">Окно в каждой из спален</div>
               </div>
             </div>
-            <div class="icon-advantages__without-border"><img class="icon-advantages__image" src="imgs/whatshot.svg" alt="icon flame" width="40" height="40">
+            <div class="icon-advantages__without-border">
+              <div class="icon-advantages__image icon-advantages__image_hot"></div>
               <div class="icon-advantages__text">
                 <h3 class="icon-advantages__title">Уют</h3>
                 <div class="icon-advantages__description">Номер оснащен камином</div>
@@ -89,20 +92,20 @@
                 </div>
               </div>
               <div class="impressions__bullet-list">
-                <ul class="bullet-list" style="margin-bottom:-0.85rem;">
-                  <div class="bullet-list__disc" style="background:linear-gradient(0deg, #FFBA9C, #FFE39C);"></div>
+                <ul class="bullet-list  bullet-list_margin_low">
+                  <div class="bullet-list__disc  bullet-list__disc_excellent-color "></div>
                   <div class="bullet-list__text">Великолепно</div>
                 </ul>
-                <ul class="bullet-list" style="margin-bottom:-0.85rem;">
-                  <div class="bullet-list__disc" style="background:linear-gradient(0deg, #66D2EA, #6FCF97);"></div>
+                <ul class="bullet-list  bullet-list_margin_low">
+                  <div class="bullet-list__disc  bullet-list__disc_good-color "></div>
                   <div class="bullet-list__text">Хорошо</div>
                 </ul>
-                <ul class="bullet-list" style="margin-bottom:-0.9rem;">
-                  <div class="bullet-list__disc" style="background:linear-gradient(0deg, #8BA4F9, #BC9CFF);"></div>
+                <ul class="bullet-list  bullet-list_margin_big">
+                  <div class="bullet-list__disc  bullet-list__disc_satisfactorily-color "></div>
                   <div class="bullet-list__text">Удовлетворительно</div>
                 </ul>
-                <ul class="bullet-list" style="margin-bottom:;">
-                  <div class="bullet-list__disc" style="background:linear-gradient(0deg, rgba(61, 73, 117, 1), rgba(144, 144, 144, 1));"></div>
+                <ul class="bullet-list  bullet-list_margin_none">
+                  <div class="bullet-list__disc  bullet-list__disc_badly-color "></div>
                   <div class="bullet-list__text">Разочарован</div>
                 </ul>
               </div>
@@ -114,13 +117,15 @@
             </div>
             <div class="room-detail__comments_margin">
               <div class="comments">
-                <div class="comments__profile-photo"><img class="comments__profile-image" src="imgs/murad-true.png" alt="Cinque Terre" width="48" height="48"></div>
+                <div class="comments__profile-photo">
+                  <div class="comments__profile-image comments__profile-image_boy"></div>
+                </div>
                 <div class="comments__profile-name">
                   <h3 class="comments__name">Мурад Сарафанов</h3>
                   <div class="comments__date">5 дней назад</div>
                 </div>
                 <div class="comments__like-button">
-                  <div class="like-button">
+                  <label class="like-button">
                     <input class="like-button__input" type="checkbox">
                     <div class="like-button__background">
                       <div class="like-button__empty-white"></div>
@@ -128,20 +133,22 @@
                     </div>
                     <div class="like-button__favorite_border material-icons">favorite_border</div>
                     <div class="like-button__favorite material-icons">favorite</div>
-                  </div>
+                  </label>
                 </div>
                 <div class="comments__description">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</div>
               </div>
             </div>
             <div class="room-detail__comments_margin">
               <div class="comments">
-                <div class="comments__profile-photo"><img class="comments__profile-image" src="imgs/girl image.png" alt="Cinque Terre" width="48" height="48"></div>
+                <div class="comments__profile-photo">
+                  <div class="comments__profile-image comments__profile-image_girl"></div>
+                </div>
                 <div class="comments__profile-name">
                   <h3 class="comments__name">Патрисия Стёклышкова</h3>
                   <div class="comments__date">Неделю назад</div>
                 </div>
                 <div class="comments__like-button">
-                  <div class="like-button">
+                  <label class="like-button">
                     <input class="like-button__input" type="checkbox">
                     <div class="like-button__background">
                       <div class="like-button__empty-white"></div>
@@ -149,7 +156,7 @@
                     </div>
                     <div class="like-button__favorite_border material-icons">favorite_border</div>
                     <div class="like-button__favorite material-icons">favorite</div>
-                  </div>
+                  </label>
                 </div>
                 <div class="comments__description">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</div>
               </div>
@@ -158,16 +165,16 @@
           <section class="room-detail__rules">
             <h2 class="room-detail__rules_title">Правила</h2>
             <div class="room-detail__rules_bullet">
-              <ul class="bullet-list_grey" style="margin-bottom:;">
-                <div class="bullet-list_grey__disc" style="background:background: rgba(31, 32, 65, 0.75);"></div>
+              <ul class="bullet-list__grey-disk bullet-list_margin_none">
+                <div class="bullet-list__grey"></div>
                 <div class="bullet-list__text">Нельзя с питомцами</div>
               </ul>
-              <ul class="bullet-list_grey" style="margin-bottom:-0.1rem;">
-                <div class="bullet-list_grey__disc" style="background:background: rgba(31, 32, 65, 0.75);"></div>
+              <ul class="bullet-list__grey-disk bullet-list_margin_none">
+                <div class="bullet-list__grey"></div>
                 <div class="bullet-list__text">Без вечеринок и мероприятий</div>
               </ul>
-              <ul class="bullet-list_grey" style="margin-bottom:;">
-                <div class="bullet-list_grey__disc" style="background:background: rgba(31, 32, 65, 0.75);"></div>
+              <ul class="bullet-list__grey-disk bullet-list_margin_none">
+                <div class="bullet-list__grey"></div>
                 <div class="bullet-list__text">Время прибытия — после 13:00, а выезд до 12:00</div>
               </ul>
             </div>

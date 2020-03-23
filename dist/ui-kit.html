@@ -1,725 +1,88 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My app</title>
-  <link href="main.css" rel="stylesheet"></head>
-  <body>
-    <div>
-            <h1 class="fonts-list fonts-list__header_h1">H1</h1>
-            <h1 class="fonts-list__header_h1">This one is the sub-section or widget title</h1>
-            <h2 class="fonts-list fonts-list__header_h2">H2</h2>
-            <h2 class="fonts-list__header_h2"> Next one is the item title inside widgets</h2>
-            <h3 class="fonts-list fonts-list__header_h3">H3</h3>
-            <h3 class="fonts-list__header_h3">This is a label or CTA text</h3>
-            <div class="fonts-list">body</div>
-            <div class="fonts-list__simple-text">This is the body text which is used for most of the design, like paragraphs, lists, etc.</div>
-    </div>
-        <div class="color">
-          <div class="color-example color-example__dark-shade-100"></div>
-          <div class="color__title">Dark Shade 100%</div>
-          <div class="color__color">#1F2041</div>
-        </div>
-        <div class="color">
-          <div class="color-example color-example__dark-shade-075"></div>
-          <div class="color__title">Dark Shade 75%</div>
-          <div class="color__color">#1F2041</div>
-        </div>
-        <div class="color">
-          <div class="color-example color-example__dark-shade-050"></div>
-          <div class="color__title">Dark Shade 50%</div>
-          <div class="color__color">#1F2041</div>
-        </div>
-        <div class="color">
-          <div class="color-example color-example__dark-shade-025"></div>
-          <div class="color__title">Dark Shade 25%</div>
-          <div class="color__color">#1F2041</div>
-        </div>
-        <div class="color">
-          <div class="color-example color-example__dark-shade-005"></div>
-          <div class="color__title">Dark Shade 5%</div>
-          <div class="color__color">#1F2041</div>
-        </div>
-        <div class="color">
-          <div class="color-example color-example__purple"></div>
-          <div class="color__title">Purple</div>
-          <div class="color__color">#BC9CFF</div>
-        </div>
-        <div class="color">
-          <div class="color-example color-example__green"></div>
-          <div class="color__title">Green</div>
-          <div class="color__color">#6FCF97</div>
-        </div>
-        <div class="form-for-text">
-          <div class="form__email">
-            <input class="form__email_border" type="email" value="Your email adress" name="email-footer">
-            <input class="material-icons form__email_arrow-forward" type="submit" value="arrow_forward">
-          </div>
-        </div>
-        <div class="form-for-text">
-          <input class="form__sign-in" type="email" value="Email" name="email-sign-in">
-        </div>
-        <div class="form-for-text">
-          <input class="form__sign-up" type="email" value="Email" name="email-sign-up">
-        </div>
-    <div>
-            <div class="iqdropdown js-iqdropdown_people">
-              <p class="iqdropdown-selection"></p>
-              <p class="material-icons iqdropdown_icon">expand_more</p>
-              <div class="iqdropdown-menu">
-                <div class="iqdropdown-menu-option" data-id="item+1">
-                  <div class="iqdropdown-item-container">
-                    <p class="iqdropdown-item">Взрослые</p>
-                    <p class="iqdropdown-description"></p>
-                  </div>
-                </div>
-                <div class="iqdropdown-menu-option" data-id="item+2">
-                  <div class="iqdropdown-item-container">
-                    <p class="iqdropdown-item">Дети</p>
-                    <p class="iqdropdown-description"></p>
-                  </div>
-                </div>
-                <div class="iqdropdown-menu-option" data-id="item+3">
-                  <div class="iqdropdown-item-container">
-                    <p class="iqdropdown-item">Младенцы</p>
-                    <p class="iqdropdown-description"></p>
-                  </div>
-                </div>
-                <div class="iqdropdown-clear-or-apply">
-                  <h3 class="iqdropdown-clear">Очистить</h3>
-                  <h3 class="iqdropdown-apply">Применить</h3>
-                </div>
-              </div>
-            </div>
-            <div class="iqdropdown js-iqdropdown_options">
-              <p class="iqdropdown-selection"></p>
-              <p class="material-icons iqdropdown_icon">expand_more</p>
-              <div class="iqdropdown-menu">
-                <div class="iqdropdown-menu-option" data-id="item+1">
-                  <div class="iqdropdown-item-container">
-                    <p class="iqdropdown-item">Спальни</p>
-                    <p class="iqdropdown-description"></p>
-                  </div>
-                </div>
-                <div class="iqdropdown-menu-option" data-id="item+2">
-                  <div class="iqdropdown-item-container">
-                    <p class="iqdropdown-item">Кровати</p>
-                    <p class="iqdropdown-description"></p>
-                  </div>
-                </div>
-                <div class="iqdropdown-menu-option" data-id="item+3">
-                  <div class="iqdropdown-item-container">
-                    <p class="iqdropdown-item">Ванные комнаты</p>
-                    <p class="iqdropdown-description"></p>
-                  </div>
-                </div>
-                <div class="iqdropdown-clear-or-apply">
-                  <h3 class="iqdropdown-clear">Очистить</h3>
-                  <h3 class="iqdropdown-apply">Применить</h3>
-                </div>
-              </div>
-            </div>
-    </div>
-    <div>
-            <label class="checkbox-toggle">
-              <div class="checkbox-toggle__gradient">
-                <div class="checkbox-toggle__white">
-                  <input class="checkbox-toggle__input" type="checkbox">
-                  <div class="checkbox-toggle__circle"></div>
-                  <div class="checkbox-toggle__text">Получать спецпредложения</div>
-                </div>
-              </div>
-            </label>
-    </div>
-    <div>
-            <label class="checkbox-button__container">Можно курить
-              <input class="checkbox-button__input" type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-            </label>
-            <label class="checkbox-button__container">Можно с питомцами
-              <input class="checkbox-button__input" type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-            </label>
-            <label class="checkbox-button__container">Можно пригласить гостей (до 10 человек)
-              <input class="checkbox-button__input" type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-            </label>
-    </div>
-    <div>
-            <div class="checkbox-radio">
-              <label class="checkbox-radio__container">Мужчина
-                <input class="checkbox-radio__input" type="radio" name="gender" value="Мужчина" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
-              </label>
-              <label class="checkbox-radio__container">Женщина
-                <input class="checkbox-radio__input" type="radio" name="gender" value="Женщина" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
-              </label>
-            </div>
-    </div>
-    <div>
-            <div class="star-rating">
-              <div class="star-rating__empty"></div>
-              <div class="star-rating__empty"></div>
-              <div class="star-rating__filled"></div>
-              <div class="star-rating__filled"></div>
-              <div class="star-rating__filled"></div>
-            </div>
-            <div class="star-rating">
-              <div class="star-rating__empty"></div>
-              <div class="star-rating__empty"></div>
-              <div class="star-rating__empty"></div>
-              <div class="star-rating__empty"></div>
-              <div class="star-rating__filled"></div>
-            </div>
-            <div class="star-rating">
-              <div class="star-rating__empty"></div>
-              <div class="star-rating__empty"></div>
-              <div class="star-rating__empty"></div>
-              <div class="star-rating__filled"></div>
-              <div class="star-rating__filled"></div>
-            </div>
-            <div class="star-rating">
-              <div class="star-rating__filled"></div>
-              <div class="star-rating__filled"></div>
-              <div class="star-rating__filled"></div>
-              <div class="star-rating__filled"></div>
-              <div class="star-rating__filled"></div>
-            </div>
-    </div>
-    <div></div>
-    <div>
-            <div class="like-button">
-              <input class="like-button__input" type="checkbox">
-              <div class="like-button__background">
-                <div class="like-button__empty-white"></div>
-                <div class="like-button__num">11</div>
-              </div>
-              <div class="like-button__favorite_border material-icons">favorite_border</div>
-              <div class="like-button__favorite material-icons">favorite</div>
-            </div>
-    </div>
-    <div>
-            <label class="calendar__double">
-              <input class="datepicker-here calendar__datepicker" type="checkbox" id="js-datepicker__double" data-range="true" data-multiple-dates-separator=" - " clearButton="true" data-position="bottom left">
-              <div class="calendar__arrival-date">
-                <div class="calendar__date">19.08.2019</div><span class="material-icons calendar__icon_double">expand_more</span>
-              </div>
-              <div class="calendar__departure-date">
-                <div class="calendar__date">23.08.2019</div><span class="material-icons calendar__icon_double">expand_more</span>
-              </div>
-            </label>
-    </div>
-    <div>
-            <div class="range-slider">
-              <h3 class="range-slider__amount-of-money">Диапазон цены</h3>
-              <input class="js-range-slider__input" type="text" name="example_name" value="">
-            </div>
-            <div class="range-slider__description">Стоимость за сутки пребывания в номере</div>
-    </div>
-    <div>
-            <div class="checkbox-expendable">
-              <button class="checkbox-expendable__btn js-checkbox-expendable"> 
-                <h3 class="checkbox-expendable__title">Дополнительные удобства</h3><span class="material-icons checkbox-expendable__icons">keyboard_arrow_down</span>
-              </button>
-              <div class="js-checkbox-expendable_hiden checkbox-expendable__hiden">
-                      <label class="checkbox-button__container">Завтрак
-                        <input class="checkbox-button__input" type="checkbox" checked><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-                      </label>
-                      <label class="checkbox-button__container">Письменный стол
-                        <input class="checkbox-button__input" type="checkbox" checked><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-                      </label>
-                      <label class="checkbox-button__container">Стул для кормления
-                        <input class="checkbox-button__input" type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-                      </label>
-                      <label class="checkbox-button__container">Кроватка
-                        <input class="checkbox-button__input" type="checkbox"><span class="checkbox-button__checkmark"></span><span class="checkbox-button__checkmark_white"></span>
-                      </label>
-              </div>
-            </div>
-    </div>
-    <div>
-            <div class="pagination"><span class="pagination__start">1</span><span class="pagination__grid-item">2</span><span class="pagination__grid-item">3</span><span class="pagination__grid-item">..</span><span class="pagination__grid-item">15</span><span class="pagination__circle"><span class="material-icons pagination__arrow">arrow_forward</span></span></div>
-            <div class="pagination__description">1 - 12 из 100+ вариантов аренды</div>
-    </div>
-    <div>
-            <label class="checkbox-rich__container">
-              <div class="checkbox-rich__title">Широкий коридор</div>
-              <input class="checkbox-rich__input" type="checkbox">
-              <div class="checkbox-rich__checkmark-container"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark_white"></span></div>
-              <div class="checkbox-rich__korridor-width">Ширина коридоров в номере не менее 91см</div>
-            </label>
-            <label class="checkbox-rich__container">
-              <div class="checkbox-rich__title">Помощник для инвалидов</div>
-              <input class="checkbox-rich__input" type="checkbox">
-              <div class="checkbox-rich__checkmark-container"><span class="checkbox-rich__checkmark"></span><span class="checkbox-rich__checkmark_white"></span></div>
-              <div class="checkbox-rich__korridor-width">На 1 этаже вас встретит специалист и проводит до номера</div>
-            </label>
-    </div>
-    <div>
-    </div>
-    <div>
-            <div class="icon-advantages"><img class="icon-advantages__image" src="imgs/insert_emoticon.svg" alt="icon smile" width="40" height="40">
-              <div class="icon-advantages__text">
-                <h3 class="icon-advantages__title">Комфорт</h3>
-                <div class="icon-advantages__description">Шумопоглащающие стены</div>
-              </div>
-            </div>
-            <div class="icon-advantages"><img class="icon-advantages__image" src="imgs/location_city.svg" alt="icon building" width="40" height="40">
-              <div class="icon-advantages__text">
-                <h3 class="icon-advantages__title">Удобство</h3>
-                <div class="icon-advantages__description">Окно в каждой из спален</div>
-              </div>
-            </div>
-            <div class="icon-advantages__without-border"><img class="icon-advantages__image" src="imgs/whatshot.svg" alt="icon flame" width="40" height="40">
-              <div class="icon-advantages__text">
-                <h3 class="icon-advantages__title">Уют</h3>
-                <div class="icon-advantages__description">Номер оснащен камином</div>
-              </div>
-            </div>
-    </div>
-    <div>
-            <div class="comments">
-              <div class="comments__profile-photo"><img class="comments__profile-image" src="imgs/murad-true.png" alt="Cinque Terre" width="48" height="48"></div>
-              <div class="comments__profile-name">
-                <h3 class="comments__name">Мурад Сарафанов</h3>
-                <div class="comments__date">5 дней назад</div>
-              </div>
-              <div class="comments__like-button">
-                      <div class="like-button">
-                        <input class="like-button__input" type="checkbox">
-                        <div class="like-button__background">
-                          <div class="like-button__empty-white"></div>
-                          <div class="like-button__num">12</div>
-                        </div>
-                        <div class="like-button__favorite_border material-icons">favorite_border</div>
-                        <div class="like-button__favorite material-icons">favorite</div>
-                      </div>
-              </div>
-              <div class="comments__description">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</div>
-            </div>
-            <div class="comments">
-              <div class="comments__profile-photo"><img class="comments__profile-image" src="imgs/girl image.png" alt="Cinque Terre" width="48" height="48"></div>
-              <div class="comments__profile-name">
-                <h3 class="comments__name">Патрисия Стёклышкова</h3>
-                <div class="comments__date">Неделю назад</div>
-              </div>
-              <div class="comments__like-button">
-                      <div class="like-button">
-                        <input class="like-button__input" type="checkbox">
-                        <div class="like-button__background">
-                          <div class="like-button__empty-white"></div>
-                          <div class="like-button__num">2</div>
-                        </div>
-                        <div class="like-button__favorite_border material-icons">favorite_border</div>
-                        <div class="like-button__favorite material-icons">favorite</div>
-                      </div>
-              </div>
-              <div class="comments__description">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</div>
-            </div>
-    </div>
-    <div>
-            <div class="header"><a class="header__link-image" href="./landing.html"><img class="header__image" src="imgs/logo.png" alt="Toxin label"></a>
-              <nav class="header__menu">
-                <ul class="header__list">
-                  <li class="header__point"><a class="header__link" href="">О нас</a></li>
-                  <li class="header__point">
-                    <div class="header__dropdown"><a class="header__link">Услуги</a><span class="material-icons header__icon">keyboard_arrow_down</span></div>
-                  </li>
-                  <li class="header__point"><a class="header__link" href="">Вакансии</a></li>
-                  <li class="header__point"><a class="header__link" href="">Новости</a></li>
-                  <li class="header__point">
-                    <div class="header__dropdown"><a class="header__link">Соглашения</a><span class="material-icons header__icon">keyboard_arrow_down</span></div>
-                  </li>
-                </ul>
-                <form class="header__login" action="./registration-sign-in.html">
-                        <button class="button_color_white button">
-                          <p class="button__text_purple"></p>
-                          <p class="material-icons button__arrow_disable">arrow_forward</p>
-                        </button>
-                </form>
-                <form class="header__register" action="./registration-sign-up.html">
-                        <button class="button_color_purple button">
-                          <p class="button__text_white"></p>
-                          <p class="material-icons button__arrow_disable">arrow_forward</p>
-                        </button>
-                </form>
-              </nav>
-            </div>
-    </div>
-    <div>
-            <div class="header"><img class="header__image" src="imgs/logo.png" alt="Toxin label">
-              <div class="header__menu">
-                <ul class="header__list">
-                  <li class="header__point"><a class="header__link_bold" href="">Home</a></li>
-                  <li class="header__point"><a class="header__link" href="">About Us</a></li>
-                  <li class="header__point">
-                    <div class="header__dropdown"><span class="header__link">Services</span><span class="material-icons">keyboard_arrow_down</span></div>
-                  </li>
-                  <li class="header__point"><a class="header__link" href="">Careers</a></li>
-                  <li class="header__point"><a class="header__link" href="">News</a></li>
-                  <li class="header__point"><a class="header__link" href="">Documentation</a></li>
-                </ul>
-                <div class="header__login_in">Cosmin Negoita</div>
-              </div>
-            </div>
-    </div>
-    <div>
-            <div class="footer__menu">
-              <div class="footer__logo"><a class="footer__link" href="./landing.html"><img class="footer__image" src="imgs/logo.png" alt="Toxin label"></a>
-                <div class="footer__logo_text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
-              </div>
-              <nav class="footer__navigation">
-                      <h3 class="footer-links__title">Навигация</h3><a class="footer-links_point" href="./aaa.html">О нас</a><a class="footer-links_point" href="./aaa.html">Новости</a><a class="footer-links_point" href="./aaa.html">Служба поддержки</a><a class="footer-links_point" href="./aaa.html">Услуги</a>
-              </nav>
-              <nav class="footer__about">
-                      <h3 class="footer-links__title">О нас</h3><a class="footer-links_point" href="./aaa.html">О сервисе</a><a class="footer-links_point" href="./aaa.html">Наша команда</a><a class="footer-links_point" href="./aaa.html">Вакансии</a><a class="footer-links_point" href="./aaa.html">Инвесторы</a>
-              </nav>
-              <nav class="footer__support">
-                      <h3 class="footer-links__title">Служба поддержки</h3><a class="footer-links_point" href="./aaa.html">Соглашения</a><a class="footer-links_point" href="./aaa.html">Сообщества</a><a class="footer-links_point" href="./aaa.html">Связь с нами</a>
-              </nav>
-              <nav class="footer__subscription">
-                <h3 class="footer__h3">Подписка</h3>
-                <div class="footer__subscription_text">Получайте специальные предложения и новости сервиса</div>
-                      <div class="form-for-text">
-                        <div class="form__email">
-                          <input class="form__email_border" type="email" value="Your email adress" name="email-footer">
-                          <input class="material-icons form__email_arrow-forward" type="submit" value="arrow_forward">
-                        </div>
-                      </div>
-              </nav>
-            </div>
-            <aside class="footer__social">
-              <div class="footer__copyright">Copyright © 2019 Toxin отель. Все права зачищены.</div>
-              <div class="footer__icons"><a class="social-network__link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-twitter.png" alt="twitter icon"></a><a class="social-network__link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-facebook.png" alt="facebook icon"></a><a class="social-network__link" href="https://www.instagram.com/?hl=ru" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-instagram.png" alt="instagram icon"></a>
-              </div>
-            </aside>
-    </div>
-    <div>
-            <div class="footer-mobile"><img src="imgs/logo.png" alt="Toxin label" width="105" height="40">
-              <div class="footer-mobile__text">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
-                
-              </div>
-              <div class="footer-mobile__icons"><a class="social-network__link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-twitter.png" alt="twitter icon"></a><a class="social-network__link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-facebook.png" alt="facebook icon"></a><a class="social-network__link" href="https://www.instagram.com/?hl=ru" target="_blank" rel="noopener noreferrer"><img class="social-network__image" src="imgs/icon-instagram.png" alt="instagram icon"></a>
-              </div>
-            </div>
-    </div>
-    <div>
-            <article class="pick-up-numbers">
-              <header class="pick-up-numbers__header">
-                <h2 class="pick-up-numbers__title">Найдём номера под ваши пожелания</h2>
-              </header>
-              <form class="pick-up-numbers__form" action="./search.html">
-                <div class="pick-up-numbers__container">
-                  <h3 class="pick-up-numbers__arrival">Прибытие</h3>
-                  <h3 class="pick-up-numbers__departure">Выезд</h3>
-                  <div class="pick-up-numbers__calendar">
-                          <label class="calendar__double">
-                            <input class="datepicker-here calendar__datepicker" type="checkbox" id="js-datepicker__double" data-range="true" data-multiple-dates-separator=" - " clearButton="true" data-position="bottom left">
-                            <div class="calendar__arrival-date">
-                              <div class="calendar__date">ДД.ММ.ГГГГ</div><span class="material-icons calendar__icon_double">expand_more</span>
-                            </div>
-                            <div class="calendar__departure-date">
-                              <div class="calendar__date">ДД.ММ.ГГГГ</div><span class="material-icons calendar__icon_double">expand_more</span>
-                            </div>
-                          </label>
-                  </div>
-                  <h3 class="pick-up-numbers__quest">Гости</h3>
-                  <div class="pick-up-numbers__dropdown">
-                          <div class="iqdropdown js-iqdropdown_people">
-                            <p class="iqdropdown-selection"></p>
-                            <p class="material-icons iqdropdown_icon">expand_more</p>
-                            <div class="iqdropdown-menu">
-                              <div class="iqdropdown-menu-option" data-id="item+1">
-                                <div class="iqdropdown-item-container">
-                                  <p class="iqdropdown-item">Взрослые</p>
-                                  <p class="iqdropdown-description"></p>
-                                </div>
-                              </div>
-                              <div class="iqdropdown-menu-option" data-id="item+2">
-                                <div class="iqdropdown-item-container">
-                                  <p class="iqdropdown-item">Дети</p>
-                                  <p class="iqdropdown-description"></p>
-                                </div>
-                              </div>
-                              <div class="iqdropdown-menu-option" data-id="item+3">
-                                <div class="iqdropdown-item-container">
-                                  <p class="iqdropdown-item">Младенцы</p>
-                                  <p class="iqdropdown-description"></p>
-                                </div>
-                              </div>
-                              <div class="iqdropdown-clear-or-apply">
-                                <h3 class="iqdropdown-clear">Очистить</h3>
-                                <h3 class="iqdropdown-apply">Применить</h3>
-                              </div>
-                            </div>
-                          </div>
-                  </div>
-                </div>
-                <div class="pick-up-numbers__button">
-                        <button class="button_color_purple button">
-                          <p class="button__text_white">Подобрать номер</p>
-                          <p class="material-icons button__arrow_enable">arrow_forward</p>
-                        </button>
-                </div>
-              </form>
-            </article>
-    </div>
-    <div>
-            <article class="sing-up">
-              <header class="sign-up__header">
-                <h2 class="sing-up__title">Регистрация аккаунта</h2>
-              </header>
-              <form class="sign-up__form" action="./search.html">
-                <div class="sing-up__name">
-                        <div class="form-for-text">
-                          <input class="form__sign-up" type="text" value="Имя" name="name">
-                        </div>
-                </div>
-                <div class="sing-up__surname">
-                        <div class="form-for-text">
-                          <input class="form__sign-up" type="text" value="Фамилия" name="surname">
-                        </div>
-                </div>
-                <div class="sing-up__gender">
-                        <div class="checkbox-radio">
-                          <label class="checkbox-radio__container">Мужчина
-                            <input class="checkbox-radio__input" type="radio" name="gender" value="Мужчина" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
-                          </label>
-                          <label class="checkbox-radio__container">Женщина
-                            <input class="checkbox-radio__input" type="radio" name="gender" value="Женщина" checked><span class="checkbox-radio__checkmark"></span><span class="checkbox-radio__checkmark_white"></span>
-                          </label>
-                        </div>
-                </div>
-                <div class="sing-up__birthday">
-                  <h3 class="sing-up__birthday_title">Дата рождения</h3>
-                        <label class="calendar__single">
-                          <input class="calendar__birthday" type="text" id="js-datepicker__birthday" value="ДД.ММ.ГГГГ">
-                        </label>
-                </div>
-                <div class="sing-up__enter">
-                  <h3 class="sing-up__enter_title">данные для входа в сервис</h3>
-                </div>
-                <div class="sing-up__registration">
-                        <div class="form-for-text">
-                          <input class="form__sign-up" type="email" value="Email" name="email">
-                        </div>
-                </div>
-                <div class="sing-up__registration">
-                        <div class="form-for-text">
-                          <input class="form__sign-up" type="text" value="Пароль" name="password">
-                        </div>
-                </div>
-                <div class="sing-up__toggle-checkbox">
-                        <label class="checkbox-toggle">
-                          <div class="checkbox-toggle__gradient">
-                            <div class="checkbox-toggle__white">
-                              <input class="checkbox-toggle__input" type="checkbox">
-                              <div class="checkbox-toggle__circle"></div>
-                              <div class="checkbox-toggle__text">Получать спецпредложения</div>
-                            </div>
-                          </div>
-                        </label>
-                </div>
-                <div class="sing-up__button">
-                        <button class="button_color_purple button">
-                          <p class="button__text_white">Перейти к оплате</p>
-                          <p class="material-icons button__arrow_enable">arrow_forward</p>
-                        </button>
-                </div>
-              </form>
-              <div class="sing-up__authorization">
-                <p class="sing-up__authorization_text">Уже есть аккаунт на Toxin</p>
-                <form class="sing-up__button-white" action="./registration-sign-in.html">
-                        <button class="button_color_white button">
-                          <p class="button__text_purple">Войти</p>
-                          <p class="material-icons button__arrow_disable">arrow_forward</p>
-                        </button>
-                </form>
-              </div>
-            </article>
-    </div>
-    <div>
-            <article class="sign-in">
-              <header class="sign-in__header">
-                <h2 class="sign-in__title">Войти</h2>
-              </header>
-              <form class="sign-in__form" action="./search.html">
-                <div class="sign-in__email">
-                        <div class="form-for-text">
-                          <input class="form__sign-in" type="email" value="Email" name="email-sign-in">
-                        </div>
-                </div>
-                <div class="sign-in__password">
-                        <div class="form-for-text">
-                          <input class="form__sign-in" type="text" value="Пароль" name="password-sign-in">
-                        </div>
-                </div>
-                <div class="sign-in__button">
-                  <div class="sign-in__button-purple"> 
-                          <button class="button_color_purple button">
-                            <p class="button__text_white">Войти</p>
-                            <p class="material-icons button__arrow_enable">arrow_forward</p>
-                          </button>
-                  </div>
-                </div>
-              </form>
-              <div class="sign-in__create">
-                <p class="sign-in__question">Нет аккаунта на Toxin?</p>
-                <form class="sign-in__button-white" action="./registration-sign-up.html">
-                        <button class="button_color_white button">
-                          <p class="button__text_purple">Создать</p>
-                          <p class="material-icons button__arrow_disable">arrow_forward</p>
-                        </button>
-                </form>
-              </div>
-            </article>
-    </div>
-    <div>
-            <div class="booking">
-              <header class="booking__head">
-                <div class="booking__tytle">
-                  <h3 class="booking__symbol">№</h3>
-                  <h2 class="booking__number">888</h2>
-                  <h3 class="booking__lux">люкс</h3>
-                </div>
-                <div class="booking__cost">
-                  <p class="booking__price">9 990₽</p><span class="booking__per-day">в сутки</span>
-                </div>
-              </header>
-              <form class="booking__form" action="./landing.html">
-                <div class="booking__pick-date">
-                  <h3 class="booking__arrival">Прибытие</h3>
-                  <h3 class="booking__departure">Выезд</h3>
-                        <label class="calendar__double">
-                          <input class="datepicker-here calendar__datepicker" type="checkbox" id="js-datepicker__double" data-range="true" data-multiple-dates-separator=" - " clearButton="true" data-position="bottom left">
-                          <div class="calendar__arrival-date">
-                            <div class="calendar__date">19.08.2019</div><span class="material-icons calendar__icon_double">expand_more</span>
-                          </div>
-                          <div class="calendar__departure-date">
-                            <div class="calendar__date">23.08.2019</div><span class="material-icons calendar__icon_double">expand_more</span>
-                          </div>
-                        </label>
-                </div>
-                <div class="booking__guests">
-                  <h3 class="booking__guests_title">Гости</h3>
-                  <div class="booking__dropdown">
-                          <div class="iqdropdown js-iqdropdown_people">
-                            <p class="iqdropdown-selection"></p>
-                            <p class="material-icons iqdropdown_icon">expand_more</p>
-                            <div class="iqdropdown-menu">
-                              <div class="iqdropdown-menu-option" data-id="item+1">
-                                <div class="iqdropdown-item-container">
-                                  <p class="iqdropdown-item">Взрослые</p>
-                                  <p class="iqdropdown-description"></p>
-                                </div>
-                              </div>
-                              <div class="iqdropdown-menu-option" data-id="item+2">
-                                <div class="iqdropdown-item-container">
-                                  <p class="iqdropdown-item">Дети</p>
-                                  <p class="iqdropdown-description"></p>
-                                </div>
-                              </div>
-                              <div class="iqdropdown-menu-option" data-id="item+3">
-                                <div class="iqdropdown-item-container">
-                                  <p class="iqdropdown-item">Младенцы</p>
-                                  <p class="iqdropdown-description"></p>
-                                </div>
-                              </div>
-                              <div class="iqdropdown-clear-or-apply">
-                                <h3 class="iqdropdown-clear">Очистить</h3>
-                                <h3 class="iqdropdown-apply">Применить</h3>
-                              </div>
-                            </div>
-                          </div>
-                  </div>
-                </div>
-                <div class="booking__text"><span class="booking__align_left">9 990₽ х 4 суток</span><span class="booking__align_right">39 960₽</span></div>
-                <div class="booking__text_fee"><span class="booking__align_left">Сбор за услуги: скидка 2 179₽</span><span class="material-icons booking__align_center">error_outline</span><span class="booking__align_right">0₽</span></div>
-                <div class="booking__text_fee"><span class="booking__align_left">Сбор за дополнительные услуги</span><span class="material-icons booking__align_center">error_outline</span><span class="booking__align_right">300₽</span></div>
-                <div class="booking__total">
-                  <h2>Итого</h2>
-                  <div class="booking__total_border"></div>
-                  <h2 class="booking__total_price">38 081₽</h2>
-                </div>
-                <div class="booking__button">
-                        <button class="button_color_purple button">
-                          <p class="button__text_white">Забронировать</p>
-                          <p class="material-icons button__arrow_enable">arrow_forward</p>
-                        </button>
-                </div>
-              </form>
-            </div>
-    </div>
-    <div>
-            <div class="hotel-room"><a class="hotel-room__link"><img class="hotel-room__img" src="./assets/images/room-2.png"></a>
-              <div class="hotel-room__circles">
-              </div>
-              <div class="hotel-room__text">
-                <div class="hotel-room__number">
-                  <h4 class="hotel-room__symbol">№</h4>
-                  <h4 class="hotel-room__room-number">888</h4>
-                </div>
-                <div class="hotel-room__cost">
-                  <p class="hotel-room__price">9900₽</p><span class="hotel-room__per-day">в сутки</span>
-                </div>
-              </div>
-              <div class="hotel-room__raiting">
-                      <div class="star-rating">
-                        <div class="star-rating__filled"></div>
-                        <div class="star-rating__filled"></div>
-                        <div class="star-rating__filled"></div>
-                        <div class="star-rating__filled"></div>
-                        <div class="star-rating__filled"></div>
-                      </div>
-                <div class="hotel-room__review">
-                  <h4 class="hotel-room__review_numeric"></h4><span>Отзывов</span>
-                </div>
-              </div>
-            </div>
-            <div class="hotel-room"><a class="hotel-room__link"><img class="hotel-room__img" src="./assets/images/room-1.png"></a>
-              <div class="hotel-room__circles">
-              </div>
-              <div class="hotel-room__text">
-                <div class="hotel-room__number">
-                  <h4 class="hotel-room__symbol">№</h4>
-                  <h4 class="hotel-room__room-number">840</h4>
-                  <h4 class="hotel-room__lux">люкс</h4>
-                </div>
-                <div class="hotel-room__cost">
-                  <p class="hotel-room__price">9990₽</p><span class="hotel-room__per-day">в сутки</span>
-                </div>
-              </div>
-              <div class="hotel-room__raiting">
-                      <div class="star-rating">
-                        <div class="star-rating__filled"></div>
-                        <div class="star-rating__filled"></div>
-                        <div class="star-rating__filled"></div>
-                        <div class="star-rating__filled"></div>
-                        <div class="star-rating__filled"></div>
-                      </div>
-                <div class="hotel-room__review">
-                  <h4 class="hotel-room__review_numeric"></h4><span>Отзывов</span>
-                </div>
-              </div>
-            </div>
-    </div>
-    <div>
-            <div class="impressions">
-              <h2 class="impressions__title">Впечатления от номера</h2>
-              <div class="impressions__circle">
-                <div class="impressions__circle_info">
-                  <div class="impressions__circle_info_number">300</div>
-                  <div class="impressions__circle_info_text">голосов</div>
-                </div>
-                <div class="impressions__circle_part">
-                  <div class="impressions__circle_part_left-top"></div>
-                  <div class="impressions__circle_part_left-bottom"></div>
-                  <div class="impressions__circle_part_right-top"></div>
-                  <div class="impressions__circle_part_right-bottom"></div>
-                </div>
-              </div>
-              <div class="impressions__bullet-list">
-              </div>
-            </div>
-    </div>
-  <script type="text/javascript" src="bundle.js"></script></body>
-</html>
+<head><link href="main.css" rel="stylesheet"></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve './../../components/blocks/social-network/imgs' in 'E:\Projects\FSD-v1\src':
+  Error: Can't resolve './../../components/blocks/social-network/imgs' in 'E:\Projects\FSD-v1\src'
+  Module not found: Error: Can't resolve './../../components/complexBlocks/header/imgs/logo.png' in 'E:\Projects\FSD-v1\src':
+  Error: Can't resolve './../../components/complexBlocks/header/imgs/logo.png' in 'E:\Projects\FSD-v1\src'
+  Module not found: Error: Can't resolve './../../components/complexBlocks/hotel-room-card/imgs' in 'E:\Projects\FSD-v1\src':
+  Error: Can't resolve './../../components/complexBlocks/hotel-room-card/imgs' in 'E:\Projects\FSD-v1\src'
+  
+  - compiler.js:79 childCompiler.runAsChild
+    [FSD-v1]/[html-webpack-plugin]/lib/compiler.js:79:16
+  
+  - Compiler.js:343 compile
+    [FSD-v1]/[webpack]/lib/Compiler.js:343:11
+  
+  - Compiler.js:681 hooks.afterCompile.callAsync.err
+    [FSD-v1]/[webpack]/lib/Compiler.js:681:15
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [FSD-v1]/[tapable]/lib/Hook.js:154:20
+  
+  - Compiler.js:678 compilation.seal.err
+    [FSD-v1]/[webpack]/lib/Compiler.js:678:31
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [FSD-v1]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1423 hooks.optimizeAssets.callAsync.err
+    [FSD-v1]/[webpack]/lib/Compilation.js:1423:35
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [FSD-v1]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1414 hooks.optimizeChunkAssets.callAsync.err
+    [FSD-v1]/[webpack]/lib/Compilation.js:1414:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [FSD-v1]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1409 hooks.additionalAssets.callAsync.err
+    [FSD-v1]/[webpack]/lib/Compilation.js:1409:36
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [FSD-v1]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1405 hooks.optimizeTree.callAsync.err
+    [FSD-v1]/[webpack]/lib/Compilation.js:1405:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [FSD-v1]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1342 Compilation.seal
+    [FSD-v1]/[webpack]/lib/Compilation.js:1342:27
+  
+  - Compiler.js:675 compilation.finish.err
+    [FSD-v1]/[webpack]/lib/Compiler.js:675:18
+  
+  - Compilation.js:1261 hooks.finishModules.callAsync.err
+    [FSD-v1]/[webpack]/lib/Compilation.js:1261:4
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [FSD-v1]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1253 Compilation.finish
+    [FSD-v1]/[webpack]/lib/Compilation.js:1253:28
+  
+  - Compiler.js:672 hooks.make.callAsync.err
+    [FSD-v1]/[webpack]/lib/Compiler.js:672:17
+  
+  
+  - Compilation.js:1185 _addModuleChain
+    [FSD-v1]/[webpack]/lib/Compilation.js:1185:12
+  
+  - Compilation.js:1097 processModuleDependencies.err
+    [FSD-v1]/[webpack]/lib/Compilation.js:1097:9
+  
+  - next_tick.js:61 process._tickCallback
+    internal/process/next_tick.js:61:11
+  
+</pre><script type="text/javascript" src="bundle.js"></script>
