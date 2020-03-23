@@ -5,7 +5,7 @@ mixin header(buttonTextOne, buttonTextTwo, login)
 
   .header
     a(href="./landing.html").header__link-image
-      img(src="imgs/logo.png" alt="Toxin label" ).header__image
+      img(src=require("./../../components/complexBlocks/header/imgs/logo.png") alt="Toxin label" ).header__image
     nav.header__menu
       ul.header__list
         each i in links

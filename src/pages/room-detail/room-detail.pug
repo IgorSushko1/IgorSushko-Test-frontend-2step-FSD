@@ -17,10 +17,10 @@ block main
   .room-detail
     article.room-detail__picture
       .room-detail__picture_left
-        img(src=("imgs/room-details-1.png") alt="apartment image").room-detail__image_left
+        img(src=require(`./imgs/room-details-1.png`) alt="apartment image").room-detail__image_left
       .room-detail__picture_right
-        img(src="imgs/room-details-2-1.png" alt="apartment image").room-detail__image_right-top
-        img(src="imgs/room-details-2-2.png" alt="apartment image").room-detail__image_right-bottom
+        img(src=require(`./imgs/room-details-2-1.png`) alt="apartment image").room-detail__image_right-top
+        img(src=require(`./imgs/room-details-2-2.png`) alt="apartment image").room-detail__image_right-bottom
 
     article.room-detail__info
       .room-detail__info_grid
@@ -28,21 +28,21 @@ block main
           h2.room-detail__about-room_title Сведения о номере
           +icon-advantages([
             {
-              img: "imgs/insert_emoticon.svg",
+              img: "smile",
               alt: "icon smile",
               size: 40,
               title: "Комфорт",
               text: "Шумопоглащающие стены"
             },
             {
-              img: "imgs/location_city.svg",
+              img: "home",
               alt: "icon building",
               size: 40,
               title: "Удобство",
               text: "Окно в каждой из спален"
             },
             {
-              img: "imgs/whatshot.svg",
+              img: "hot",
               alt: "icon flame",
               size: 40,
               title: "Уют",
@@ -63,10 +63,9 @@ block main
             h2.room-detail__comments_title_h2 Отзывы посетителей номера
             span.room-detail__comments_title_span 2 отзыва
           .room-detail__comments_margin
-            +comments("imgs/murad-true.png", "Мурад Сарафанов", "5 дней назад", "12", "checked", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+            +comments("boy", "Мурад Сарафанов", "5 дней назад", "12", "checked", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
           .room-detail__comments_margin
-            +comments("imgs/girl image.png", "Патрисия Стёклышкова", "Неделю назад", "2", "", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
-
+            +comments("girl", "Патрисия Стёклышкова", "Неделю назад", "2", "", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
         section.room-detail__rules
           h2.room-detail__rules_title Правила
           .room-detail__rules_bullet

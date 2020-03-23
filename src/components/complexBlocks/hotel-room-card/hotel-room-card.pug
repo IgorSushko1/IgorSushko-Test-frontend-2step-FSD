@@ -4,7 +4,7 @@ include ../../blocks/pagination-circle/pagination-circle.pug
 mixin hotel-room-card(imgName, numberOfStars, roomNumber, price, lux, review, ref, numOfPugination, alt)
   .hotel-room
     a(href=ref).hotel-room__link
-      img(src=imgName, alt=alt ).hotel-room__img
+      img(src=require(`./../../components/complexBlocks/hotel-room-card/imgs/${imgName}`), alt=alt ).hotel-room__img
     .hotel-room__circles
       +pagination-circle(numOfPugination)
     .hotel-room__text

@@ -1,9 +1,9 @@
 mixin social-network(socialNetwork)
-  - var twitter = {link:"https://twitter.com/", image:"imgs/icon-twitter.png", alt:"twitter icon"}
-  - var facebook = {link:"https://www.facebook.com/", image:"imgs/icon-facebook.png", alt:"facebook icon"}
-  - var instagram = {link:"https://www.instagram.com/?hl=ru", image:"imgs/icon-instagram.png", alt:"instagram icon"}
+  - var twitter = {link:"https://twitter.com/", image:"icon-twitter.png", alt:"twitter icon"}
+  - var facebook = {link:"https://www.facebook.com/", image:"icon-facebook.png", alt:"facebook icon"}
+  - var instagram = {link:"https://www.instagram.com/?hl=ru", image:"icon-instagram.png", alt:"instagram icon"}
 
   - socialNetwork = (socialNetwork =="twitter") ? twitter : (socialNetwork =="facebook") ? facebook : (socialNetwork =="instagram") ? instagram : false
 
   a(href=socialNetwork.link target="_blank" rel="noopener noreferrer").social-network__link
-    img(src=socialNetwork.image alt=socialNetwork.alt).social-network__image
+    img(src=require(`./../../components/blocks/social-network/imgs/${socialNetwork.image}`) alt=socialNetwork.alt).social-network__image

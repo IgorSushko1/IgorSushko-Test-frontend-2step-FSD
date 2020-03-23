@@ -8,6 +8,14 @@
 
   &__profile-image {
     margin-top: -0.25rem;
+    width: 48px;
+    height: 48px;
+    &_boy {
+      background: url('imgs/boy image.png') center no-repeat;
+    }
+    &_girl {
+      background: url('imgs/girl image.png') center no-repeat;
+    }
   }
 
   &__name {

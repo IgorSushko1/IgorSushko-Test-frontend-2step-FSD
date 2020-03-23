@@ -1,9 +1,14 @@
 include ../like-button/like-button.pug
 
 mixin comments(img, name, date, likes, check, text)
+  -var imgs = ["boy", "girl"]
+  - var photo
+  each actor in imgs
+    if(img == actor)
+      - photo = actor
   .comments
     .comments__profile-photo
-      img(src=img alt="Cinque Terre" width="48" height="48").comments__profile-image
+      div(class=`comments__profile-image comments__profile-image_${photo}`)
     .comments__profile-name
       h3.comments__name= name
       .comments__date= date

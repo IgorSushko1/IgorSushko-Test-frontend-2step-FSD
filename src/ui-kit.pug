@@ -110,21 +110,21 @@ html
       include ./components/blocks/icon-advantages/icon-advantages.pug
       +icon-advantages([
         {
-          img: "imgs/insert_emoticon.svg",
+          img: "smile",
           alt: "icon smile",
           size: 40,
           title: "Комфорт",
           text: "Шумопоглащающие стены"
         },
         {
-          img: "imgs/location_city.svg",
+          img: "home",
           alt: "icon building",
           size: 40,
           title: "Удобство",
           text: "Окно в каждой из спален"
         },
         {
-          img: "imgs/whatshot.svg",
+          img: "hot",
           alt: "icon flame",
           size: 40,
           title: "Уют",
@@ -133,8 +133,8 @@ html
         }])
     .uikit__comments
       include ./components/blocks/comments/comments.pug
-      +comments("imgs/murad-true.png", "Мурад Сарафанов", "5 дней назад", "12", "checked", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
-      +comments("imgs/girl image.png", "Патрисия Стёклышкова", "Неделю назад", "2", "", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
+      +comments("boy", "Мурад Сарафанов", "5 дней назад", "12", "checked", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+      +comments("girl", "Патрисия Стёклышкова", "Неделю назад", "2", "", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
     .uikit__header
       include ./components/complexBlocks/header/header.pug
       +header
@@ -143,10 +143,10 @@ html
       +header__login
     .uikit__footer
       include ./components/complexBlocks/footer/footer.pug
-      +footer
+      //- +footer
     .uikit__footer-mobile
       include ./components/complexBlocks/footer-mobile/footer-mobile.pug
-      +footer-mobile
+      //- +footer-mobile
     .uikit__pick-up-numbers
       include ./components/complexBlocks/pick-up-numbers/pick-up-numbers.pug
       +pick-up-numbers

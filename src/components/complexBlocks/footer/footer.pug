@@ -6,7 +6,7 @@ mixin footer
   .footer__menu
     .footer__logo
       a(href="./landing.html").footer__link
-        img(src="imgs/logo.png" alt="Toxin label" ).footer__image
+        img(src=require(`./../../components/complexBlocks/footer/imgs/logo.png`) alt="Toxin label" ).footer__image
       .footer__logo_text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
     nav.footer__navigation
       +footer-links("Навигация", "О нас", "Новости", "Служба поддержки", "Услуги")

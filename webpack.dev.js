@@ -62,12 +62,16 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]',
-          outputPath: 'imgs',
-        },
-      }
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'imgs/',
+          },
+        }, {
+          loader: 'image-webpack-loader'
+        }],
+      },
     ],
   },
   devServer: {
@@ -119,10 +123,6 @@ module.exports = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
     }),
-    // new CopyWebpackPlugin([{
-    //   from: './src/assets/images/',
-    //   to: './imgs',
-    // }]),
     new CopyWebpackPlugin([{
       from: './src/assets/favicons/',
       to: './favicons',
