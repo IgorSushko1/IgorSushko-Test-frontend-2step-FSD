@@ -8,17 +8,17 @@ mixin calendar(arrivalDate, departureDate, id, type )
     label.calendar__double
       input(type="checkbox" id="js-datepicker__double" data-range="true" data-multiple-dates-separator=" - " clearButton="true" class="datepicker-here" data-position="bottom left").calendar__datepicker
       .calendar__arrival-date
-        div.calendar__date= arrivalDate
+        .calendar__date= arrivalDate
         span.material-icons.calendar__icon_double expand_more
       .calendar__departure-date
-        div.calendar__date= departureDate
+        .calendar__date= departureDate
         span.material-icons.calendar__icon_double expand_more
 
   if (type == "single")
     label.calendar__single
       input(type="checkbox" id="js-datepicker__single" data-multiple-dates-separator=" - " data-range="true" class=`datepicker-here` data-position="bottom left").calendar__single-field
       .calendar__range
-        div.calendar__date= arrivalDate
+        .calendar__date= arrivalDate
       span.material-icons.calendar__icon expand_more
 
   if (type == "birthday")

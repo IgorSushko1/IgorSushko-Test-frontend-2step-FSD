@@ -7,7 +7,7 @@ html
     title My app
 
   body
-    div
+    .uikit__font-list
       include ./components/blocks/fonts-list/fonts-list.pug
       +fonts-list
 
@@ -26,28 +26,28 @@ html
     +form-for-text("email","Email", "email-sign-in", "sign-in")
     +form-for-text("email","Email", "email-sign-up", "sign-up")
 
-    div
+    .uikit__iqdropdown
       include ./components/blocks/iqdropdown/iqdropdown.pug
       +iqdropdown({arr:["Взрослые", "Дети", "Младенцы"], classForJs:"js-iqdropdown_people"})
       +iqdropdown({arr:["Спальни", "Кровати", "Ванные комнаты"], classForJs:"js-iqdropdown_options"})
-    div
+    .uikit__checkbox-toggle
       include ./components/blocks/checkbox-toggle/checkbox-toggle.pug
       +checkbox-toggle("Получать спецпредложения")
-    div
+    .uikit__checkbox-button
       include ./components/blocks/checkbox-button/checkbox-button.pug
       +checkbox-button("Можно курить", "")
       +checkbox-button("Можно с питомцами", checked)
       +checkbox-button("Можно пригласить гостей (до 10 человек)", checked)
-    div
+    .uikit__checkbox-radio
       include ./components/blocks/checkbox-radio/checkbox-radio.pug
       +checkbox-radio(["Мужчина","Женщина"])
-    div
+    .uikit__star-rating
       include ./components/blocks/star-rating/star-rating.pug
       +star-rating(3)
       +star-rating(1)
       +star-rating(2)
       +star-rating(5)
-    div
+    .uikit__button
     include ./components/blocks/button/button.pug
       form(action="landing.html")
         +button({
@@ -75,16 +75,16 @@ html
         arrow: "enable",
         color: "purple"
       })
-    div
+    .uikit__like-button
       include ./components/blocks/like-button/like-button.pug
       +like-button({value: 11})
-    div
+    .uikit__calendar
       include ./components/blocks/calendar/calendar.pug
       +calendar("19.08.2019", "23.08.2019", "#datepicker", "duble")
-    div
+    .uikit__range-slider
       include ./components/blocks/range-slider/range-slider.pug
       +range-slider
-    div
+    .uikit__checkbox-expendable
       include ./components/blocks/checkbox-expendable/checkbox-expendable.pug
       +checkbox-expendable({title: "Дополнительные удобства", textsAndChecked: {
         "Завтрак": "checked",
@@ -92,10 +92,10 @@ html
         "Стул для кормления": "unchecked",
         "Кроватка": "unchecked"
       }})
-    div
+    .uikit__pagination
       include ./components/blocks/pagination/pagination.pug
       +pagination
-    div
+    .uikit__checkbox-rich
       include ./components/blocks/checkbox-rich/checkbox-rich.pug
       +checkbox-rich({titlesAndChecked: {
         "Широкий коридор": unchecked,
@@ -103,10 +103,10 @@ html
       }, texts: ["Ширина коридоров в номере не менее 91см",
       "На 1 этаже вас встретит специалист и проводит до номера"
       ]})
-    div
+    .uikit__bullet-list
       include ./components/blocks/bullet-list/bullet-list.pug
       +bullet-list("bullet list", "grey" ,"Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, выезд до 12:00")
-    div
+    .uikit__icon-advantages
       include ./components/blocks/icon-advantages/icon-advantages.pug
       +icon-advantages([
         {
@@ -131,44 +131,45 @@ html
           text: "Номер оснащен камином",
           borderStyle: "__without-border"
         }])
-    div
+    .uikit__comments
       include ./components/blocks/comments/comments.pug
       +comments("imgs/murad-true.png", "Мурад Сарафанов", "5 дней назад", "12", "checked", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
       +comments("imgs/girl image.png", "Патрисия Стёклышкова", "Неделю назад", "2", "", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
-    div
+    .uikit__header
       include ./components/complexBlocks/header/header.pug
       +header
-    div
+    .uikit__header-login
       include ./components/complexBlocks/header/header__login.pug
       +header__login
-    div
+    .uikit__footer
       include ./components/complexBlocks/footer/footer.pug
       +footer
-    div
+    .uikit__footer-mobile
       include ./components/complexBlocks/footer-mobile/footer-mobile.pug
       +footer-mobile
-    div
+    .uikit__pick-up-numbers
       include ./components/complexBlocks/pick-up-numbers/pick-up-numbers.pug
       +pick-up-numbers
-    div
+    .uikit__sign-up
       include ./components/complexBlocks/sign-up/sign-up.pug
       +sign-up
-    div
+    .uikit__sign-in
       include ./components/complexBlocks/sign-in/sign-in.pug
       +sign-in
-    div
+    .uikit__booking-room
       include ./components/complexBlocks/booking/booking.pug
       +booking-room
-    div
+    .uikit__hotel-room-card
       include ./components/complexBlocks/hotel-room-card/hotel-room-card.pug
       +hotel-room-card("./assets/images/room-2.png", "4", "888", "9900₽", "not lux")
       +hotel-room-card("./assets/images/room-1.png", "5", "840", "9990₽", "lux")
-    div
+    .uikit__impressions
       include ./components/complexBlocks/impressions/impressions.pug
-      +impressions({title: "Впечатления от номера", voiceNumber: 300, bulletListBuild:[
-        {color:"linear-gradient(0deg, #FFBA9C, #FFE39C)", impression: "Великолепно", margin: "-0.85rem"},
-        {color:"linear-gradient(0deg, #66D2EA, #6FCF97)", impression: "Хорошо", margin: "-0.85rem"},
-        {color:"linear-gradient(0deg, #8BA4F9, #BC9CFF)", impression: "Удовлетворительно", margin: "-0.9rem"},
-        {color:"linear-gradient(0deg, rgba(61, 73, 117, 1), rgba(144, 144, 144, 1))", impression: "Разочарован"},
-        ]
-      })
+        +impressions({title: "Впечатления от номера", voiceNumber: 300, bulletListBuild:[
+          {color:"excellent", impression: "Великолепно", margin: "low", type:"color"},
+          {color:"good", impression: "Хорошо", margin: "low", type:"color"},
+          {color:"satisfactorily", impression: "Удовлетворительно", margin: "big", type:"color"},
+          {color:"badly", impression: "Разочарован", margin: "none", type:"color"},
+          ]
+        })
+
