@@ -7,6 +7,18 @@
   font-size: 0.875rem;
   line-height: 1.56rem;
 
+  &_margin {
+    &_low {
+      margin-bottom: -0.85rem;
+    }
+    &_big {
+      margin-bottom: -0.9rem;
+    }
+    &_none {
+      margin-bottom: 0rem;
+    }
+  }
+
   &__disc {
     position: absolute;
     width: 0.625rem;
@@ -15,25 +27,44 @@
     left: 1.625rem;
     margin-top: 0.437rem;
     border-radius: 50%;
+
+    &_excellent-color {
+      background: linear-gradient(0deg, #ffba9c, #ffe39c);
+    }
+
+    &_good-color {
+      background: linear-gradient(0deg, #66d2ea, #6fcf97);
+    }
+
+    &_satisfactorily-color {
+      background: linear-gradient(0deg, #8ba4f9, #bc9cff);
+    }
+
+    &_badly-color {
+      background: linear-gradient(
+        0deg,
+        rgba(61, 73, 117, 1),
+        rgba(144, 144, 144, 1)
+      );
+    }
   }
 
   &__text {
     display: block;
   }
-}
 
-.bullet-list_grey {
-  position: relative;
-  list-style-type: none;
-  font-size: 0.875rem;
-  line-height: 1.56rem;
-  margin: 0rem;
-  padding-left: 1.3rem;
-  padding-top: 0.63rem;
-  width: 15rem;
-  letter-spacing: -0.005rem;
-
-  &__disc {
+  &__grey-disk {
+    position: relative;
+    list-style-type: none;
+    font-size: 0.875rem;
+    line-height: 1.56rem;
+    margin: 0rem;
+    padding-left: 1.3rem;
+    padding-top: 0.63rem;
+    width: 15rem;
+    letter-spacing: -0.005rem;
+  }
+  &__grey {
     position: absolute;
     background: $dark-shade-025;
     margin-top: 0.437rem;

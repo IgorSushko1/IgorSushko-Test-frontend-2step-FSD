@@ -13,7 +13,7 @@ mixin icon-advantages(data)
   each obj in data
     - newClass = obj.borderStyle ? `icon-advantages${obj.borderStyle}` : "icon-advantages"
     div(class=newClass)
-      img(src=obj.img alt=obj.alt width=obj.size height=obj.size ).icon-advantages__image
+      img(src=obj.img alt=obj.alt).icon-advantages__image
       .icon-advantages__text
         h3.icon-advantages__title= obj.title
         .icon-advantages__description= obj.text

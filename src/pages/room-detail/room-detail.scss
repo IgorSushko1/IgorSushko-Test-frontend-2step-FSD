@@ -19,6 +19,21 @@
   &__picture_left {
     grid-row: 1/3;
   }
+  &__image {
+    &_left {
+      width: 981px;
+      height: 485px;
+    }
+    &_right-top {
+      width: 459px;
+      height: 243px;
+      display: block;
+    }
+    &_right-bottom {
+      width: 459px;
+      height: 242px;
+    }
+  }
 
   &__picture_right {
     grid-row: 1/3;

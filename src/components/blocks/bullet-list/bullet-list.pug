@@ -1,9 +1,22 @@
-mixin bullet-list(colors, text, margins, type)
+mixin bullet-list(color, text, margin, type)
+
+  - var colorsStyle = ["excellent", "good", "satisfactorily", "badly", "grey"]
+  - var colored;
+  each col in colorsStyle
+    if (col == color)
+      - colored = col
+
+  - var margins = ["low", "big", "none"];
+  - var marginForUl = "none";
+  each marg in margins
+    if(marg == margin)
+      - marginForUl = marg;
+
   if(type === "color")
-    ul(style={ "margin-bottom": margins}).bullet-list
-      div(style={background:  colors}).bullet-list__disc
+    ul(class=`bullet-list  bullet-list_margin_${marginForUl}`)
+      div(class=`bullet-list__disc  bullet-list__disc_${colored}-color `)
       .bullet-list__text= text
   if(type === "grey")
-    ul(style={ "margin-bottom": margins}).bullet-list_grey
-      div(style={background:  colors}).bullet-list_grey__disc
+    ul(class=`bullet-list__grey-disk bullet-list_margin_${marginForUl}`)
+      .bullet-list__grey
       .bullet-list__text= text
