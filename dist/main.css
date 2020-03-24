@@ -1861,6 +1861,7 @@
   overflow: hidden;
   position: relative; }
   .registration__sign-in_image {
+    background: url(imgs/registration-background-image-interior.png) center no-repeat;
     position: relative;
     top: -1.43rem;
     left: 0rem;
@@ -1872,6 +1873,7 @@
   overflow: hidden;
   position: relative; }
   .registration__background-up_image {
+    background: url(imgs/registration-background-image-interior.png) center no-repeat;
     position: relative;
     top: -2.81rem;
     left: 0rem;
