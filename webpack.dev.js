@@ -82,7 +82,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'ui-kit.html',
-      template: './src/ui-kit.pug',
+      template: './src/pages/ui-kit/ui-kit.pug',
     }),
     new HtmlWebpackPlugin({
       filename: 'landing.html',
@@ -114,9 +114,6 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
-      options: {
-        // hmr: process.env.NODE_ENV === 'development',
-      },
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
